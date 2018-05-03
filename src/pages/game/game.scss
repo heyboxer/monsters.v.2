@@ -1,0 +1,134 @@
+page-game {
+  height: auto;
+
+  & .content {
+    background-color: $primary-dark-color;
+  }
+
+  #on-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+  }
+
+  .svg-container {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  .container {
+    position: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 30;
+  }
+
+  .icon-close {
+    transform: scale(1.25);
+  }
+
+  .btn-reset {
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 30;
+    opacity: .5;
+  }
+
+  .icon-reset {
+    transform: scale(1, -1) rotate(-90deg);
+  }
+
+  .screen {
+    position: relative;
+    z-index: 0;
+    flex-grow: 2;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  .placeholder {
+    &-name {
+      display: block;
+      padding: 5px;
+      color: grey;
+      font-size: 5em;
+      font-weight: bold;
+      text-shadow: 1px 1px white;
+    }
+
+    &-id {
+      display: block;
+      color: grey;
+      font-size: 7em;
+      font-weight: bold;
+      text-shadow: 1px 1px white;
+
+      &:before {
+        content: 'id: ';
+      }
+    }
+  }
+
+  .panel {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: $primary-light-color;
+    border-bottom: 25px solid $primary-color;
+    border-top: 1px solid $primary-dark-color;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    overflow-y: auto;
+
+    &__item{
+      flex-shrink: 0;
+      margin: 0 10px;
+
+      &--fraud {
+        width: 10px;
+        height: 100%;
+      }
+    }
+
+    &__doubled + .panel__doubled {
+      margin-left: -7px;
+    }
+
+    &-container {
+      //
+    }
+  }
+
+    @import './monsters-styles/zombie.scss';
+}
