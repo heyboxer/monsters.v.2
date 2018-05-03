@@ -14,7 +14,7 @@ export class Node {
   }
 
   get isRoot() {
-    return this.parent ? true : false;
+    return this.parent == null ? true : false;
   }
 
   getKey() {
@@ -58,7 +58,7 @@ export class Node {
     const [first, ...rest] = keys;
     const child = this.getChild(first);
 
-    if(!rest.length) return this.getChild(first);
+    if(!rest.length) return child;
 
     return child ? child.getDeepChild(rest) : undefined;
   }

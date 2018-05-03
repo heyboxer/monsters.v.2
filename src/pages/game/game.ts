@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Node } from '../../app/model/node.model/node';
 
 import zombie from './temp-zombie';
 
@@ -16,15 +15,13 @@ import zombie from './temp-zombie';
   selector: 'page-game',
   templateUrl: 'game.html',
 })
-export class GamePage {
+export class GamePage implements AfterViewInit {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    const leftEye = zombie.getChild('eyes').getChild('eyeLeft');
-
-    console.log(leftEye);
+  ngAfterViewInit() {
+    zombie().appendTo('nb-target');
   }
 
 }

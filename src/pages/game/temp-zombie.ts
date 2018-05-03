@@ -1,6 +1,14 @@
-import { Node } from '../../app/model/node.model/node';
+import { Node } from '../../app/model/node.model';
+import { RootMeta } from '../../app/model/root-meta.model';
+import { Element } from '../../app/model/element.model';
+import { SvgBuilder } from '../../app/model/svg-builder';
 
-const zombie = new Node('zombie', '');
+const config = {
+	viewBox: [0, 0, 233.58, 324.24],
+	width: 'auto',
+	height: '95%',
+}
+const zombie = new Node('zombie', new RootMeta(config));
 
 const eyes = zombie.addChild('eyes', '');
 
@@ -12,6 +20,7 @@ eyeLeft.addChild('eyeball', {
 	rx: 27.81,
 	ry: 16.86,
 });
+
 eyeLeft.addChild('pupil', {
 	tag: 'circle',
 	cx: 74.18,
@@ -35,5 +44,7 @@ eyeRight.addChild('pupil', {
 	r: 8.32,
 });
 
+const zombieEl = new Element(zombie);
+const zombieNode = () => new SvgBuilder(zombieEl);
 
-export default zombie;
+export default zombieNode;
