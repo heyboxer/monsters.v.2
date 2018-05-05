@@ -1,10 +1,11 @@
 import { Element } from './element.model';
+import { Meta } from './meta.model';
 
 const svgNamespaceAttributes = ['xmlns:xlink', 'xmlns'];
 
 export class SvgBuilder {
   private element : Element;
-  private namespace = 'http://www.w3.org/2000/svg';
+  // private namespace = 'http://www.w3.org/2000/svg';
 
   constructor(element) {
     this.element = element;
@@ -24,32 +25,50 @@ export class SvgBuilder {
     return container;
   }
 
-  private makeFigure(element: Element) {
-    const fn = (err, children) => {
-      if(err) return;
+  private makeDomNode(pattern: Meta) : SVGElement{
+    const tag = pattern.getTagName();
+    const attrs = pattern.getAttrs();
 
-      return children[0];
-    }
-
-    const child = element.getChildren(fn).getChildren(fn).getChildren(fn);
-    const { tag, ...args } = child.node.meta;
     const node = document.createElementNS('http://www.w3.org/2000/svg', tag);
 
-    Object.keys(args).forEach(v => {
-      return node.setAttributeNS(null, v, args[v]);
+    Object.keys(attrs).forEach(v => {
+      return node.setAttributeNS(null, v, attrs[v]);
     });
 
     return node;
   }
 
+  private makeFigure(element: Element, container?: (HTMLElement | SVGElement)) {
+    const root = container || document.createElement('svg');
+
+    const fn = (parent, err, children) => {
+      if(err) throw err;
+
+      if(!children.length) return parent;
+
+      children.forEach((v) => {
+        const meta = v.node.getMeta();
+        const node = this.makeDomNode(meta);
+
+        if(v.hasChildren()) v.getChildren(fn.bind(null, node));
+
+        return parent.appendChild(node);
+      });
+
+      return parent;
+    }
+
+    const dom = element.getChildren(fn.bind(null, root));
+
+    return dom;
+  }
+
   public appendTo(id : string): SVGElement {
     const target = document.getElementById(id);
-    const container = this.makeContainer();
-    const figure = this.makeFigure(this.element);
+    const figure = this.makeFigure(this.element, this.makeContainer());
 
-    container.appendChild(figure);
-    target.appendChild(container);
+    target.appendChild(figure);
 
-    return container;
+    return figure;
   }
 }
