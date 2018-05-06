@@ -1,10 +1,10 @@
-import { Element } from './element.model';
+import { Explorer } from './explorer.model';
 import { Meta } from './meta.model';
 
 const svgNamespaceAttributes = ['xmlns:xlink', 'xmlns'];
 
 export class SvgBuilder {
-  private element : Element;
+  private element : Explorer;
   // private namespace = 'http://www.w3.org/2000/svg';
 
   constructor(element) {
@@ -38,7 +38,7 @@ export class SvgBuilder {
     return node;
   }
 
-  private makeFigure(element: Element, container?: (HTMLElement | SVGElement)) {
+  private makeFigure(element: Explorer, container?: (HTMLElement | SVGElement)) {
     const root = container || document.createElement('svg');
 
     const fn = (parent, err, children) => {
@@ -63,12 +63,7 @@ export class SvgBuilder {
     return dom;
   }
 
-  public appendTo(id : string): SVGElement {
-    const target = document.getElementById(id);
-    const figure = this.makeFigure(this.element, this.makeContainer());
-
-    target.appendChild(figure);
-
-    return figure;
+  public getDom(): SVGElement {
+    return this.makeFigure(this.element, this.makeContainer());
   }
 }

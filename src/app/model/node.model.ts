@@ -1,14 +1,23 @@
+import { RootMeta } from './root-meta.model';
+import { Meta } from './meta.model';
+import src from './elements.repository';
+import uuid from 'uuid/v4';
+
 export class Node {
   readonly parent: Node | null = null;
   readonly key: string | number;
-  readonly meta: Object | null;
+  readonly meta: any;
   readonly children: Map<string | number, Node>;
+  readonly id: string;
 
-  constructor(key, meta = null, parent?, isRoot = true) {
+  constructor(key, meta = null, id = uuid(), parent?, isRoot = true) {
     this.parent = isRoot ? null : parent;
     this.key = key;
     this.meta = meta;
     this.children = new Map();
+    this.id = id;
+
+    src.add(id, this);
 
     if(!isRoot && !parent) throw new Error('Non root node must have parent');
   }
@@ -26,47 +35,55 @@ export class Node {
   }
 
   addChild(key, meta) {
-    const child = new Node(key, meta, this, false);
-    this.children.set(key, child);
+    const id = uuid();
+    const child = new Node(key, meta, id, this, false);
+    this.children.set(id, child);
 
     return child;
   }
 
-  getChild(key) {
-    return this.children.get(key);
+  getChild(id) {
+    return this.children.get(id);
   }
 
   hasChildren() {
     return !!this.children.size;
   }
 
-  hasChild(key) {
-    return this.children.has(key);
+  hasChild(id) {
+    return this.children.has(id);
   }
 
   getParent() {
     return this.parent;
   }
 
-  removeChild(key) {
-    return this.children.delete(key);
+  getChildByKey(key) : Node | undefined {
+    const [ first ] = this.getChildren(key);
+    return first ? first : undefined;
   }
 
   getDeepChild(keys) {
     if(!keys.length) return undefined;
 
     const [first, ...rest] = keys;
-    const child = this.getChild(first);
+    const child = this.getChildByKey(first);
 
     if(!rest.length) return child;
 
     return child ? child.getDeepChild(rest) : undefined;
   }
 
-  getChildren() {
+  getChildren(key?: string) : Array< Node > {
     const arr = [];
 
-    this.children.forEach((v, k) => {
+    this.children.forEach(v => {
+      const k = v.getKey();
+
+      if(key && key !== k) {
+        return;
+      }
+
       return arr.push(v);
     });
 

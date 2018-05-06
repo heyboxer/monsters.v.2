@@ -2,6 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import zombie from './temp-zombie';
+import ElementsRepository from '../../app/model/elements.repository';
 
 /**
  * Generated class for the GamePage page.
@@ -21,7 +22,15 @@ export class GamePage implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    zombie().appendTo('nb-target');
+    const svg = zombie.builder.getDom();
+
+    const target = document.getElementById('nb-target');
+
+    target.appendChild(svg);
+
+    const element = zombie.ast;
+
+    console.log(ElementsRepository);
   }
 
 }

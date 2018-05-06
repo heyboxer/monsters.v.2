@@ -1,7 +1,6 @@
 import { Node } from './node.model';
-import { RootMeta } from './root-meta.model';
 
-export class Element {
+export class Explorer {
   readonly structure: Node;
   protected node: Node;
 
@@ -12,17 +11,16 @@ export class Element {
     this.node = tree;
   }
 
-  protected getRootMeta() : RootMeta {
-    return this.structure.getMeta() as RootMeta;
+  protected getRootMeta() {
+    return this.structure.getMeta();
   }
 
-  protected makeDescendant(node) : Element {
-    return new Fragment(this.structure, node);
+  protected makeDescendant(node) : ExplorationPoint {
+    return new ExplorationPoint(this.structure, node);
   }
 
   getRootAttributes() : Object {
     const meta = this.getRootMeta();
-
     return {
       ...meta.getAttrs(),
       'xmlns': 'http://www.w3.org/2000/svg',
@@ -48,11 +46,11 @@ export class Element {
   }
 
   public getRootElement() {
-    return new Element(this.structure);
+    return new Explorer(this.structure);
   }
 }
 
-class Fragment extends Element {
+class ExplorationPoint extends Explorer {
   protected node: Node;
 
   constructor(tree, node) {

@@ -2,13 +2,13 @@ export class RootMeta {
   public viewBox: Number[];
   public width: number | string;
   public height: number | string;
-  public className: string;
+  public class: string;
 
-  constructor({ viewBox, width, height, className }) {
+  constructor({ viewBox, width, height, class: className }) {
     this.viewBox = viewBox;
     this.width = width;
     this.height = height;
-    this.className = className;
+    this.class = className;
   }
 
   getViewBox() : string {
@@ -20,7 +20,7 @@ export class RootMeta {
       width: this.width,
       height: this.height,
       viewBox: this.getViewBox(),
-      class: this.className,
+      class: this.class,
     };
   }
 }
