@@ -74,12 +74,12 @@ export class GamePage implements AfterViewInit {
 
     const element = document.getElementsByClassName('eyes').item(0);
 
-    const { height, width, x, y } = element.getBBox();
+    const { height, width, x, y } = (element as SVGGraphicsElement).getBBox();
 
-    gls.setAttribute('width', width * 2);
-    gls.setAttribute('height', height * 2);
-    gls.setAttribute('x', x - width/2);
-    gls.setAttribute('y', y - height/2);
+    gls.setAttribute('width', (width * 2).toString());
+    gls.setAttribute('height', (height * 2).toString());
+    gls.setAttribute('x', (x - width/2).toString());
+    gls.setAttribute('y', (y - height/2).toString());
 
     element.appendChild(gls);
 
