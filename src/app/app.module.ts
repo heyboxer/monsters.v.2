@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 //data model
-import { ModelModule } from './model/model.module';
+// import { ModelModule } from './model/model.module';
 
 import { MyApp } from './app.component';
 

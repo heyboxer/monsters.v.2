@@ -1,7 +1,7 @@
 <ion-content fixed no-bounce>
   <div id="container" class="container">
     <div id="nb-target" class="screen zombie__screen">
-      <div id="on-screen">
+      <!-- <div id="on-screen"> -->
 
         <!-- MONSTER START -->
         <!-- <svg id="monster" class="zombie zombie__screen svg-container" viewBox="0 0 233.58 324.24" height="95%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -60,7 +60,7 @@
         </svg> -->
         <!-- MONSTER END -->
 
-      </div>
+      <!-- </div> -->
       <button ion-button icon-only outline class="btn-close" (click)="endGame()">
         <ion-icon name="close" class="icon-close"></ion-icon>
       </button>
@@ -71,6 +71,9 @@
     </div>
     <div id="panel" class="panel-container">
       <ul class="panel">
+        <li id="test" class="panel__item">
+
+        </li>
         <!-- <li *ngFor="let item of getItems()" class="panel__item{{item.el.doubled ? ' panel__doubled' : ''}}">
             <img
             id="{{item.id}}"

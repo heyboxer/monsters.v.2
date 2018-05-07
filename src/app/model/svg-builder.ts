@@ -66,4 +66,8 @@ export class SvgBuilder {
   public getDom(): SVGElement {
     return this.makeFigure(this.element, this.makeContainer());
   }
+
+  public getElements(): (SVGElement) {
+    return this.makeFigure(this.element, document.createElementNS('http://www.w3.org/2000/svg', 'g'));
+  }
 }
