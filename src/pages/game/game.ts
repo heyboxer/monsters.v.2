@@ -1,58 +1,58 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import zombie from './temp-zombie';
-import glasses from './temp-glasses';
-import ElementsRepository from '../../app/model/elements.repository';
+import { MonstersService } from '../../components/monsters/monsters.service';
 
-/**
- * Generated class for the GamePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import ElementsRepository from '../../app/model/elements.repository';
 
 @IonicPage()
 @Component({
   selector: 'page-game',
   templateUrl: 'game.html',
+  providers: [ MonstersService ],
 })
-export class GamePage implements AfterViewInit {
+export class GamePage implements AfterViewInit, OnInit {
   private glasses = null;
+  monsters: { id, component }[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private monstersService: MonstersService) {
   }
 
   ngAfterViewInit() {
-    const svg = zombie.builder.getDom();
-    const gls = glasses.builder.getDom();
+    // const svg = zombie.builder.getDom();
+    // const gls = glasses.builder.getDom();
+    //
+    // gls.setAttribute('width', '200');
+    // gls.setAttribute('height', '100%');
+    //
+    // const target = document.getElementById('nb-target');
+    // const panel = document.getElementById('test');
+    //
+    // target.appendChild(svg);
+    // panel.appendChild(gls);
+    //
+    // const appendGlasses = () => this.appendGlasses();
+    // const removeGlasses = () => this.removeGlasses();
+    //
+    // gls.addEventListener('click', function(ev) {
+    //   const el = this;
+    //   ev.preventDefault();
+    //
+    //   if(el.classList.contains('blocked')) {
+    //     removeGlasses();
+    //     el.classList.remove('blocked');
+    //   } else {
+    //     el.classList.add('blocked');
+    //     appendGlasses();
+    //   };
+    //
+    //
+    // });
+  }
 
-    gls.setAttribute('width', '200');
-    gls.setAttribute('height', '100%');
-
-    const target = document.getElementById('nb-target');
-    const panel = document.getElementById('test');
-
-    target.appendChild(svg);
-    panel.appendChild(gls);
-
-    const appendGlasses = () => this.appendGlasses();
-    const removeGlasses = () => this.removeGlasses();
-
-    gls.addEventListener('click', function(ev) {
-      const el = this;
-      ev.preventDefault();
-
-      if(el.classList.contains('blocked')) {
-        removeGlasses();
-        el.classList.remove('blocked');
-      } else {
-        el.classList.add('blocked');
-        appendGlasses();
-      };
-
-
-    });
+  ngOnInit() {
+    this.monsters = this.monstersService.getMonsters();
+    console.log(this.monsters);
   }
 
   removeGlasses() {

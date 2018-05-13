@@ -3,39 +3,40 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+// import { File } from '@ionic-native/file';
 
-//data model
+// Modules
+import { ComponentsModule } from '../components/components.module';
 // import { ModelModule } from './model/model.module';
 
+// Components
 import { MyApp } from './app.component';
 
 // Pages
 import { HomePage } from '../pages/home/home';
 import { GamePage } from '../pages/game/game';
 
-//DB
-import { SQLite } from '@ionic-native/sqlite';
-
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    GamePage
+    GamePage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    GamePage
+    GamePage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    SQLite,
+    // File,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

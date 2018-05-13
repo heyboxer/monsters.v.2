@@ -25678,6 +25678,68 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.zombie {
+  right: 0;
+}
+
+.zombie__screen {
+  background-color: #f46540;
+}
+
+.zombie .body {
+  fill: #cdcdcd;
+}
+
+.zombie .face {
+  fill: #00ad5e;
+}
+
+.zombie .nose {
+  fill: #20654d;
+}
+
+.zombie .pupil {
+  fill: #f24943;
+}
+
+.zombie .steam-part {
+  stroke-width: 2.63px;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+.zombie {
+  right: 0;
+}
+
+.zombie__screen {
+  background-color: #f46540;
+}
+
+.zombie .body {
+  fill: #cdcdcd;
+}
+
+.zombie .face {
+  fill: #00ad5e;
+}
+
+.zombie .nose {
+  fill: #20654d;
+}
+
+.zombie .pupil {
+  fill: #f24943;
+}
+
+.zombie .steam-part {
+  stroke-width: 2.63px;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
 page-game {
   height: auto;
 }
@@ -25832,37 +25894,6 @@ page-game .panel__item--fraud {
 
 page-game .panel__doubled + .panel__doubled {
   margin-left: -7px;
-}
-
-page-game .zombie {
-  right: 0;
-}
-
-page-game .zombie__screen {
-  background-color: #f46540;
-}
-
-page-game .zombie .body {
-  fill: #cdcdcd;
-}
-
-page-game .zombie .face {
-  fill: #00ad5e;
-}
-
-page-game .zombie .nose {
-  fill: #20654d;
-}
-
-page-game .zombie .pupil {
-  fill: #f24943;
-}
-
-page-game .zombie .steam-part {
-  stroke-width: 2.63px;
-  stroke: #000;
-  stroke-miterlimit: 10;
-  fill: none;
 }
 
 page-game .cls-1 {
