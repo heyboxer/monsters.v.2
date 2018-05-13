@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 // Modules
 import { ComponentsModule } from '../components/components.module';
-// import { ModelModule } from './model/model.module';
+import { ModelModule } from '../model/model.module';
 
 // Components
 import { MyApp } from './app.component';
@@ -25,7 +25,8 @@ import { GamePage } from '../pages/game/game';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    ComponentsModule
+    ComponentsModule,
+    ModelModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

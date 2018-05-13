@@ -8,8 +8,6 @@ import { GlassComponent } from './glass/glass';
 import { MonstersComponent } from './monsters.component';
 import { MonstersDirective } from './monsters.directive';
 
-// import { MonstersService } from './monsters.service';
-
 @NgModule({
 	declarations: [ZombieComponent, GlassComponent, MonstersComponent, MonstersDirective],
 	providers: [],

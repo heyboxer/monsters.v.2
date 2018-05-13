@@ -1,19 +1,15 @@
-import { RootMeta } from './root-meta.model';
-import { Meta } from './meta.model';
 import src from './elements.repository';
 import uuid from 'uuid/v4';
 
 export class Node {
   readonly parent: Node | null = null;
   readonly key: string | number;
-  readonly meta: any;
   readonly children: Map<string | number, Node>;
   readonly id: string;
 
-  constructor(key, meta = null, id = uuid(), parent?, isRoot = true) {
+  constructor(key, id = uuid(), parent?, isRoot = true) {
     this.parent = isRoot ? null : parent;
     this.key = key;
-    this.meta = meta;
     this.children = new Map();
     this.id = id;
 
@@ -30,13 +26,9 @@ export class Node {
     return this.key;
   }
 
-  getMeta() {
-    return this.meta;
-  }
-
-  addChild(key, meta) {
+  addChild(key) {
     const id = uuid();
-    const child = new Node(key, meta, id, this, false);
+    const child = new Node(key, id, this, false);
     this.children.set(id, child);
 
     return child;

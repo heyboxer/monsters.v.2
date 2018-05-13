@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
+import { ElementComponentModel } from '../../../model/element-component.model';
 
 @Component({
   selector: 'glass',
   templateUrl: 'glass.svg'
 })
-export class GlassComponent {
-
-  constructor() {
-
+export class GlassComponent extends ElementComponentModel {
+  constructor(element: ElementRef) {
+    super('glass', element.nativeElement);
   }
-
 }

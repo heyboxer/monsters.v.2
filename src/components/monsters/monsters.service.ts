@@ -5,6 +5,8 @@ import { ZombieComponent } from './zombie/zombie';
 
 @Injectable()
 export class MonstersService {
+  constructor() {
+  }
   getMonsters() {
     return [
       {
