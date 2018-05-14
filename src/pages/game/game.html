@@ -2,9 +2,7 @@
   <div id="container" class="container">
     <div id="nb-target" class="screen zombie__screen">
       <!-- <div id="on-screen"> -->
-      <div>
-        <monster [monsterId]="monsterId"></monster>
-      </div>
+      <monster [monsterId]="monsterId"></monster>
 
       <!-- </div> -->
       <button ion-button icon-only outline class="btn-close" (click)="endGame()">
@@ -16,23 +14,7 @@
       </button>
     </div>
     <div id="panel" class="panel-container">
-      <ul class="panel">
-        <li id="test" class="panel__item">
-        </li>
-        <!-- <li *ngFor="let item of getItems()" class="panel__item{{item.el.doubled ? ' panel__doubled' : ''}}">
-            <img
-            id="{{item.id}}"
-            src="assets/imgs/GameItems/{{item.el.name}}.svg"
-            alt="image of {{item.el.name}}"
-            data-blocked="false"
-            class="GameItem
-                  {{item.el.vertical? 'GameItem--vertical' : ''}}
-                  GameItem__{{item.el.name}}">
-        </li> -->
-        <li class="panel__item panel__item--fraud">
-
-        </li>
-      </ul>
+      <trinkets></trinkets>
     </div>
   </div>
   <div id="active-ct"></div>

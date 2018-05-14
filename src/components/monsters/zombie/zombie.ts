@@ -1,12 +1,14 @@
-import { Component, ElementRef } from '@angular/core';
-import { ElementComponentModel } from '../../../model/element-component.model';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { MonsterModel } from '../monster.model';
+import { MonsterPartDirective } from '../monster-part.directive';
 
 @Component({
   selector: 'zombie',
-  templateUrl: 'zombie.svg'
+  templateUrl: 'zombie.html'
 })
-export class ZombieComponent extends ElementComponentModel {
-  constructor(element: ElementRef) {
-    super('zombie', element.nativeElement);
+export class ZombieComponent extends MonsterModel {
+
+  constructor(private el: ElementRef, protected renderer: Renderer2) {
+    super('zombie', el.nativeElement);
   }
 }

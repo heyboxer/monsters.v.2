@@ -1,7 +1,6 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, ViewChildren, OnInit, OnDestroy } from '@angular/core';
 import ElementRepository from './element.repository';
 import { ElementModel } from './element.model';
-import * as $ from 'jquery';
 
 
 @Component({
@@ -9,7 +8,7 @@ import * as $ from 'jquery';
 })
 export class ElementComponentModel implements OnInit, OnDestroy {
   private repo = ElementRepository;
-  private element: ElementModel;
+  protected element: ElementModel;
 
     constructor(private name: string, private node: HTMLElement) {
     };
@@ -17,9 +16,6 @@ export class ElementComponentModel implements OnInit, OnDestroy {
     ngOnInit() {
       this.element = new ElementModel(this.name, this.node);
       this.add(this.element);
-
-      const monsters = $( this.node ).find('[data-monster]').get();
-      const data = monsters.map(m => ({ node: m, data: $(m).data('monster')}));
     };
 
     ngOnDestroy() {

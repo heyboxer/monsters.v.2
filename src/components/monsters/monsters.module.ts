@@ -2,16 +2,17 @@ import { NgModule } from '@angular/core';
 
 // List of Monsters
 import { ZombieComponent } from './zombie/zombie';
-import { GlassComponent } from './glass/glass';
+import { SkeletonComponent } from './skeleton/skeleton';
 
-// Services
+
 import { MonstersComponent } from './monsters.component';
-import { MonstersDirective } from './monsters.directive';
+import { MonstersHostDirective } from './monsters-host.directive';
+import { MonsterPartDirective } from './monster-part.directive';
 
 @NgModule({
-	declarations: [ZombieComponent, GlassComponent, MonstersComponent, MonstersDirective],
+	declarations: [ZombieComponent, SkeletonComponent, MonstersComponent, MonstersHostDirective, MonsterPartDirective],
 	providers: [],
-	entryComponents: [ZombieComponent, GlassComponent],
+	entryComponents: [ZombieComponent, SkeletonComponent],
 	exports: [MonstersComponent]
 })
 export class MonstersModule {}

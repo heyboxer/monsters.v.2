@@ -25678,6 +25678,36 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+skeleton .skeleton {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+skeleton .skeleton__screen {
+  background-color: black;
+}
+
+skeleton .skeleton .head--figure {
+  fill: #fff;
+}
+
+skeleton .skeleton .jaw {
+  fill: #fff;
+}
+
+skeleton .skeleton .tooth {
+  fill: #000;
+}
+
+skeleton .skeleton .rib {
+  fill: #fff;
+}
+
+skeleton .skeleton .pupil {
+  fill: #f24942;
+}
+
 .zombie {
   right: 0;
 }
@@ -25755,6 +25785,12 @@ page-game #on-screen {
   width: 100%;
   height: 100%;
   z-index: 20;
+}
+
+page-game .monster {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 page-game .svg-container {

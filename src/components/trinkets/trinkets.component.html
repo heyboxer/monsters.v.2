@@ -1,0 +1,6 @@
+<ul class="panel">
+  <li *ngFor="let trinket of trinkets" class="panel__item">
+    <ng-template trinket-host trinket-id="{{ trinket.id }}"></ng-template>
+  </li>
+  <li class="panel__item panel__item--fraud"></li>
+</ul>
