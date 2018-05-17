@@ -6,7 +6,8 @@ page-game {
   }
 
   #on-screen {
-    position: absolute;
+    position: relative;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
@@ -18,6 +19,8 @@ page-game {
     display: block;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 0;
   }
 
   .svg-container {
@@ -134,7 +137,8 @@ page-game {
     }
 
     &-container {
-      //
+      position: relative;
+      z-index: 0;
     }
   }
 

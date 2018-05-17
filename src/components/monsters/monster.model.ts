@@ -1,5 +1,4 @@
 import { Component, ViewChildren, QueryList, Renderer2, AfterViewInit } from '@angular/core';
-import { ElementComponentModel } from '../../model/element-component.model';
 import { MonsterPartDirective } from './monster-part.directive';
 import { Node } from '../../app/model/node.model';
 
@@ -10,26 +9,17 @@ export abstract class MonsterModel implements AfterViewInit {
   @ViewChildren(MonsterPartDirective) parts: QueryList<MonsterPartDirective>;
   protected renderer: Renderer2;
 
-  constructor(private name, private element: HTMLElement) {
-    // super(name, el);
-  }
+  constructor(private name, private element: HTMLElement) {}
 
-  ngAfterViewInit() {
-    const array = this.parts.map(v => v);
-
-    const fn = (element: HTMLElement) => {
-      if(element.hasAttribute('monster-part') && element.hasAttribute('part-type')) {
-
-      }
-      return;
-    }
-
-    this.eachElement(this.element.children, fn);
-  }
+  ngAfterViewInit() {}
 
   eachElement = (arr: HTMLCollection, cb: Function) : void => {
     return Array.from(arr).forEach(v => {
       return cb(v);
     });
+  }
+
+  getParts() {
+    return this.parts;
   }
 }

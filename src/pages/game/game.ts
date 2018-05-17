@@ -1,5 +1,12 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit, ViewChild, Renderer2, ContentChild, ViewContainerRef, ComponentFactoryResolver, Injector, ApplicationRef } from '@angular/core';
+import { TrinketsComponent } from '../../components/trinkets/trinkets.component';
+import { MonstersComponent } from '../../components/monsters/monsters.component';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+import { Game } from '../../components/game/game.service';
+import { ItemHolderComponent } from '../../components/item-holder/item-holder.component';
+// import { CursorStateService } from '../../components/game/cursor-state.service';
+
 
 // import { MonstersService } from '../../components/monsters/monsters.service';
 
@@ -9,89 +16,94 @@ import ElementsRepo from '../../model/element.repository';
 @Component({
   selector: 'page-game',
   templateUrl: 'game.html',
+  providers: [],
 })
-export class GamePage implements AfterViewInit, OnInit {
+export class GamePage extends Game implements AfterViewInit {
   private glasses = null;
   monsterId: string | number;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild( TrinketsComponent ) trinkets: TrinketsComponent;
+  @ViewChild( MonstersComponent ) monsters: MonstersComponent;
+  @ViewChild( ItemHolderComponent ) holder: ItemHolderComponent;
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    readonly renderer: Renderer2,
+    private componentFactoryResolver: ComponentFactoryResolver,
+    private injector: Injector,
+    private app: ApplicationRef
+  ) {
+    super(renderer);
     this.monsterId = 2;
   }
 
   ngAfterViewInit() {
-    // const svg = zombie.builder.getDom();
-    // const gls = glasses.builder.getDom();
-    //
-    // gls.setAttribute('width', '200');
-    // gls.setAttribute('height', '100%');
-    //
-    // const target = document.getElementById('nb-target');
-    // const panel = document.getElementById('test');
-    //
-    // target.appendChild(svg);
-    // panel.appendChild(gls);
-    //
-    // const appendGlasses = () => this.appendGlasses();
-    // const removeGlasses = () => this.removeGlasses();
-    //
-    // gls.addEventListener('click', function(ev) {
-    //   const el = this;
-    //   ev.preventDefault();
-    //
-    //   if(el.classList.contains('blocked')) {
-    //     removeGlasses();
-    //     el.classList.remove('blocked');
-    //   } else {
-    //     el.classList.add('blocked');
-    //     appendGlasses();
-    //   };
-    //
-    //
-    // });
-  }
+    const instances = this.trinkets.getInstances();
 
-  ngOnInit() {
-    // this.monsters = this.monstersService.getMonsters();
-    // console.log(this.monsters);
-  }
+    const setHolderPosition = () => {
+      const { x,y } = this.position.get();
+      const { width, height } = this.holder.getSize();
 
-  removeGlasses() {
-    // const eyes = document.getElementsByClassName('eye');
-    //
-    // Array.from(eyes).forEach(v => {
-    //   return v.setAttribute('visibility', 'visible');
-    // });
-    //
-    // return this.glasses.remove();
-  }
+      this.holder.setAttributes({
+        style: `left: ${x - width / 2}px; top: ${y - height / 2}px`,
+      });
+    };
 
-  appendGlasses() {
-    // if(this.glasses) {
-    //   this.removeGlasses();
-    // }
-    //
-    // const gls = glasses.builder.getDom();
-    //
-    // const element = document.getElementsByClassName('eyes').item(0);
-    //
-    // const { height, width, x, y } = (element as SVGGraphicsElement).getBBox();
-    //
-    // gls.setAttribute('width', (width * 2).toString());
-    // gls.setAttribute('height', (height * 2).toString());
-    // gls.setAttribute('x', (x - width/2).toString());
-    // gls.setAttribute('y', (y - height/2).toString());
-    //
-    // element.appendChild(gls);
-    //
-    // const eyes = document.getElementsByClassName('eye');
-    //
-    // Array.from(eyes).forEach(v => {
-    //   return v.setAttribute('visibility', 'hidden');
-    // });
-    //
-    // this.glasses = gls;
-    //
-    // return;
+    const parts = this.monsters.getCurrentMonster().getParts();
+
+    const innerEyes = {
+      renderer: this.renderer,
+      eyeLeft: parts.find(p => p.type === 'eyeLeft').element,
+      eyeRight: parts.find(p => p.type === 'eyeRight').element,
+      close: function() {
+        this.renderer.setAttribute(this.eyeLeft, 'visibility', 'hidden');
+        this.renderer.setAttribute(this.eyeRight, 'visibility', 'hidden');
+      },
+      open: function() {
+        this.renderer.setAttribute(this.eyeLeft, 'visibility',  'visible');
+        this.renderer.setAttribute(this.eyeRight, 'visibility',  'visible');
+      },
+    }
+
+    const eyes = parts.find(p => p.type === 'eyes');
+
+    instances.forEach(({ component, node }) => {
+      this.renderer.listen(node, 'mousedown', (ev) => {
+        this.holder.loadComponent(component);
+        setHolderPosition();
+
+        this.renderer.addClass(node, 'blocked');
+        const unblock = this.renderer.listen(node, 'click', (ev) => ev.preventDefault());
+
+        const rmMouseMove = this.renderer.listen(window, 'mousemove', setHolderPosition);
+
+        const rmMouseDown = this.renderer.listen(window, 'mouseup', (ev) => {
+          this.holder.clear();
+          rmMouseMove();
+          rmMouseDown();
+
+          innerEyes.close();
+          const viewContainerRef = eyes.viewContainerRef;
+          const factory = this.componentFactoryResolver.resolveComponentFactory(component);
+
+          const { instance } = viewContainerRef.createComponent(factory);
+
+          this.renderer.removeClass(node, 'blocked');
+          unblock();
+
+          return;
+        });
+
+        return;
+      });
+    });
+
+
+    // this.holder.loadComponent(component);
+
+    // this.holder.clear();
+
   }
 
 }

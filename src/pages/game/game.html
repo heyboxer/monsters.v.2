@@ -1,10 +1,10 @@
 <ion-content fixed no-bounce>
   <div id="container" class="container">
+    <item-holder></item-holder>
     <div id="nb-target" class="screen zombie__screen">
-      <!-- <div id="on-screen"> -->
-      <monster [monsterId]="monsterId"></monster>
-
-      <!-- </div> -->
+      <div id="on-screen">
+        <monster [monsterId]="monsterId"></monster>
+      </div>
       <button ion-button icon-only outline class="btn-close" (click)="endGame()">
         <ion-icon name="close" class="icon-close"></ion-icon>
       </button>

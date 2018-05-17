@@ -22,7 +22,7 @@ webpackEmptyAsyncContext.id = 109;
 
 var map = {
 	"../pages/game/game.module": [
-		293,
+		303,
 		0
 	]
 };
@@ -42,13 +42,301 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 194:
+/***/ 151:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(259);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TrinketsComponent = /** @class */ (function () {
+    function TrinketsComponent(componentFactoryResolver, trinketsService) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.trinketsService = trinketsService;
+    }
+    ;
+    TrinketsComponent.prototype.ngOnInit = function () {
+        this.trinkets = this.trinketsService.getTrinkets();
+    };
+    TrinketsComponent.prototype.ngAfterViewInit = function () {
+        this.loadTrinkets();
+    };
+    TrinketsComponent.prototype.loadTrinkets = function () {
+        var _this = this;
+        this.instances = this.hosts.map(function (_a) {
+            var id = _a.id, viewContainerRef = _a.viewContainerRef;
+            var trinket = _this.trinkets.find(function (e) { return e.id == id; });
+            var componentFactory = _this.componentFactoryResolver.resolveComponentFactory(trinket.component);
+            viewContainerRef.clear();
+            var instance = viewContainerRef.createComponent(componentFactory).instance;
+            return __assign({}, instance, { component: trinket.component });
+        });
+        return;
+    };
+    TrinketsComponent.prototype.getInstances = function () {
+        return this.instances;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__["a" /* TrinketHostDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
+    ], TrinketsComponent.prototype, "hosts", void 0);
+    TrinketsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'trinkets',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/'<ul class="panel">\n  <li *ngFor="let trinket of trinkets" class="panel__item">\n    <ng-template trinket-host trinket-id="{{ trinket.id }}"></ng-template>\n  </li>\n  <li class="panel__item panel__item--fraud"></li>\n</ul>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/,
+            providers: [__WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]],
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]])
+    ], TrinketsComponent);
+    return TrinketsComponent;
+}());
+
+//# sourceMappingURL=trinkets.component.js.map
+
+/***/ }),
+
+/***/ 152:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketHostDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TrinketHostDirective = /** @class */ (function () {
+    function TrinketHostDirective(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('trinket-id'),
+        __metadata("design:type", String)
+    ], TrinketHostDirective.prototype, "id", void 0);
+    TrinketHostDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[trinket-host]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], TrinketHostDirective);
+    return TrinketHostDirective;
+}());
+
+//# sourceMappingURL=trinket-host.directive.js.map
+
+/***/ }),
+
+/***/ 153:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlassComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(260);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var GlassComponent = /** @class */ (function (_super) {
+    __extends(GlassComponent, _super);
+    function GlassComponent(element) {
+        return _super.call(this, 'glass', element.nativeElement) || this;
+    }
+    GlassComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: '[glass]',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 301.28 112.68">\n  <path class="cls-1" d="M96.84,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.17,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z"/>\n  <path class="cls-1" d="M204.44,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.16,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z"/>\n  <path class="cls-2" d="M137.65,49.83a18.36,18.36,0,0,1,26,0"/>\n  <path class="cls-3" d="M6.16,22.4a11.53,11.53,0,0,1,-0.66,-16.24h0a11.53,11.53,0,0,1,16.24,-0.66l34.09,31.41"/>\n  <path class="cls-3" d="M295.12,22.4a11.53,11.53,0,0,0,0.66,-16.24h0a11.53,11.53,0,0,0,-16.24,-0.66l-34.09,31.41"/>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], GlassComponent);
+    return GlassComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=glass.js.map
+
+/***/ }),
+
+/***/ 154:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementRepository; });
+// import { Injectable } from "@angular/core";
+// @Injectable()
+var ElementRepository = /** @class */ (function () {
+    function ElementRepository() {
+        this.elements = [];
+    }
+    ;
+    ElementRepository.prototype.add = function (element) {
+        var arr = this.elements.slice();
+        this.elements = arr.concat([element]);
+        return this;
+    };
+    ElementRepository.prototype.removeById = function (id) {
+        var arr = this.elements.slice().filter(function (e) { return e.getId() == id; });
+        this.elements = arr;
+        return this;
+    };
+    return ElementRepository;
+}());
+
+/* harmony default export */ __webpack_exports__["b"] = (new ElementRepository());
+//# sourceMappingURL=element.repository.js.map
+
+/***/ }),
+
+/***/ 158:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_service__ = __webpack_require__(262);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var MonstersComponent = /** @class */ (function () {
+    function MonstersComponent(componentFactoryResolver, monstersService) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.monstersService = monstersService;
+    }
+    MonstersComponent.prototype.ngOnInit = function () {
+        this.monsters = this.monstersService.getMonsters();
+        this.loadMonster(this.monsterId);
+    };
+    MonstersComponent.prototype.ngAfterViewInit = function () {
+    };
+    MonstersComponent.prototype.loadMonster = function (id) {
+        var monster = this.monsters.find(function (e) { return e.id == id; });
+        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(monster.component);
+        var viewContainerRef = this.monsterHost.viewContainerRef;
+        viewContainerRef.clear();
+        var instance = viewContainerRef.createComponent(componentFactory).instance;
+        this.monster = instance;
+    };
+    MonstersComponent.prototype.getCurrentMonster = function () {
+        return this.monster;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Object)
+    ], MonstersComponent.prototype, "monsterId", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */])
+    ], MonstersComponent.prototype, "monsterHost", void 0);
+    MonstersComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'monster',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/'<ng-template monster-host></ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/,
+            // styleUrls: ['monsters.component.scss'],
+            providers: [__WEBPACK_IMPORTED_MODULE_2__monsters_service__["a" /* MonstersService */]],
+            host: {
+                '[class.monster]': 'true'
+            }
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_2__monsters_service__["a" /* MonstersService */]])
+    ], MonstersComponent);
+    return MonstersComponent;
+}());
+
+//# sourceMappingURL=monsters.component.js.map
+
+/***/ }),
+
+/***/ 159:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersHostDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MonstersHostDirective = /** @class */ (function () {
+    function MonstersHostDirective(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+    MonstersHostDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[monster-host]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], MonstersHostDirective);
+    return MonstersHostDirective;
+}());
+
+//# sourceMappingURL=monsters-host.directive.js.map
+
+/***/ }),
+
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZombieComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(161);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -91,13 +379,13 @@ var ZombieComponent = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 195:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(162);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -118,16 +406,10 @@ var MonsterModel = /** @class */ (function () {
                 return cb(v);
             });
         };
-        // super(name, el);
     }
-    MonsterModel.prototype.ngAfterViewInit = function () {
-        var array = this.parts.map(function (v) { return v; });
-        var fn = function (element) {
-            if (element.hasAttribute('monster-part') && element.hasAttribute('part-type')) {
-            }
-            return;
-        };
-        this.eachElement(this.element.children, fn);
+    MonsterModel.prototype.ngAfterViewInit = function () { };
+    MonsterModel.prototype.getParts = function () {
+        return this.parts;
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__monster_part_directive__["a" /* MonsterPartDirective */]),
@@ -144,13 +426,13 @@ var MonsterModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterPartDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -186,13 +468,13 @@ var MonsterPartDirective = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SkeletonComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(161);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -235,11 +517,73 @@ var SkeletonComponent = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 201:
+/***/ 165:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersHostDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(166);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ItemHolderComponent = /** @class */ (function () {
+    function ItemHolderComponent(componentFactoryResolver, r, el) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.r = r;
+        this.el = el.nativeElement;
+    }
+    ItemHolderComponent.prototype.clear = function () {
+        this.host.viewContainerRef.clear();
+        return this;
+    };
+    ItemHolderComponent.prototype.loadComponent = function (component) {
+        this.clear();
+        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(component);
+        var instance = this.host.viewContainerRef.createComponent(componentFactory);
+        return instance;
+    };
+    ItemHolderComponent.prototype.setAttributes = function (obj) {
+        var _this = this;
+        var attrs = Object.keys(obj);
+        attrs.forEach(function (attr) { return _this.r.setAttribute(_this.el, attr, obj[attr]); });
+        return;
+    };
+    ItemHolderComponent.prototype.getSize = function () {
+        return { width: this.el.offsetWidth, height: this.el.offsetHeight };
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__template_host_directive__["a" /* TemplateHostDriective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__template_host_directive__["a" /* TemplateHostDriective */])
+    ], ItemHolderComponent.prototype, "host", void 0);
+    ItemHolderComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'item-holder',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/item-holder/item-holder.html"*/'<ng-template template-host></ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/item-holder/item-holder.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], ItemHolderComponent);
+    return ItemHolderComponent;
+}());
+
+//# sourceMappingURL=item-holder.component.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TemplateHostDriective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -251,106 +595,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var MonstersHostDirective = /** @class */ (function () {
-    function MonstersHostDirective(viewContainerRef) {
+var TemplateHostDriective = /** @class */ (function () {
+    function TemplateHostDriective(viewContainerRef) {
         this.viewContainerRef = viewContainerRef;
     }
-    MonstersHostDirective = __decorate([
+    TemplateHostDriective = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
-            selector: '[monster-host]',
+            selector: '[template-host]',
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
-    ], MonstersHostDirective);
-    return MonstersHostDirective;
+    ], TemplateHostDriective);
+    return TemplateHostDriective;
 }());
 
-//# sourceMappingURL=monsters-host.directive.js.map
+//# sourceMappingURL=template-host.directive.js.map
 
 /***/ }),
 
-/***/ 202:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlassComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(285);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var GlassComponent = /** @class */ (function (_super) {
-    __extends(GlassComponent, _super);
-    function GlassComponent(element) {
-        return _super.call(this, 'glass', element.nativeElement) || this;
-    }
-    GlassComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'glass',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/'<svg width="200" height="100%" viewBox="0 0 301.28 112.68" class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <g>\n    <path d="M96.84,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.17,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z" class="cls-1"></path>\n    <path d="M204.44,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.16,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z" class="cls-1"></path>\n    <path d="M137.65,49.83a18.36,18.36,0,0,1,26,0" class="cls-2"></path>\n    <path d="M6.16,22.4a11.53,11.53,0,0,1,-0.66,-16.24h0a11.53,11.53,0,0,1,16.24,-0.66l34.09,31.41" class="cls-3"></path>\n    <path d="M295.12,22.4a11.53,11.53,0,0,0,0.66,-16.24h0a11.53,11.53,0,0,0,-16.24,-0.66l-34.09,31.41" class="cls-3"></path>\n  </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], GlassComponent);
-    return GlassComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
-
-//# sourceMappingURL=glass.js.map
-
-/***/ }),
-
-/***/ 203:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementRepository; });
-// import { Injectable } from "@angular/core";
-// @Injectable()
-var ElementRepository = /** @class */ (function () {
-    function ElementRepository() {
-        this.elements = [];
-    }
-    ;
-    ElementRepository.prototype.add = function (element) {
-        var arr = this.elements.slice();
-        this.elements = arr.concat([element]);
-        return this;
-    };
-    ElementRepository.prototype.removeById = function (id) {
-        var arr = this.elements.slice().filter(function (e) { return e.getId() == id; });
-        this.elements = arr;
-        return this;
-    };
-    return ElementRepository;
-}());
-
-/* harmony default export */ __webpack_exports__["b"] = (new ElementRepository());
-//# sourceMappingURL=element.repository.js.map
-
-/***/ }),
-
-/***/ 204:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(233);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -358,7 +626,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 227:
+/***/ 233:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -366,12 +634,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_game_game__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -434,91 +702,13 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 278:
+/***/ 259:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(284);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var ComponentsModule = /** @class */ (function () {
-    function ComponentsModule() {
-    }
-    ComponentsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [],
-            imports: [__WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__["a" /* MonstersModule */], __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__["a" /* TrinketsModule */]],
-            exports: [__WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__["a" /* MonstersModule */], __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__["a" /* TrinketsModule */]]
-        })
-    ], ComponentsModule);
-    return ComponentsModule;
-}());
-
-;
-//# sourceMappingURL=components.module.js.map
-
-/***/ }),
-
-/***/ 279:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_component__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__monsters_host_directive__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__monster_part_directive__ = __webpack_require__(196);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-// List of Monsters
-
-
-
-
-
-var MonstersModule = /** @class */ (function () {
-    function MonstersModule() {
-    }
-    MonstersModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */], __WEBPACK_IMPORTED_MODULE_3__monsters_component__["a" /* MonstersComponent */], __WEBPACK_IMPORTED_MODULE_4__monsters_host_directive__["a" /* MonstersHostDirective */], __WEBPACK_IMPORTED_MODULE_5__monster_part_directive__["a" /* MonsterPartDirective */]],
-            providers: [],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */]],
-            exports: [__WEBPACK_IMPORTED_MODULE_3__monsters_component__["a" /* MonstersComponent */]]
-        })
-    ], MonstersModule);
-    return MonstersModule;
-}());
-
-//# sourceMappingURL=monsters.module.js.map
-
-/***/ }),
-
-/***/ 282:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_service__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__glass_glass__ = __webpack_require__(153);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -530,142 +720,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-var MonstersComponent = /** @class */ (function () {
-    function MonstersComponent(componentFactoryResolver, monstersService) {
-        this.componentFactoryResolver = componentFactoryResolver;
-        this.monstersService = monstersService;
+var TrinketsService = /** @class */ (function () {
+    function TrinketsService() {
     }
-    MonstersComponent.prototype.ngOnInit = function () {
-        this.monsters = this.monstersService.getMonsters();
-        this.loadMonster(this.monsterId);
-    };
-    MonstersComponent.prototype.loadMonster = function (id) {
-        var monster = this.monsters.find(function (e) { return e.id == id; });
-        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(monster.component);
-        var viewContainerRef = this.monsterHost.viewContainerRef;
-        viewContainerRef.clear();
-        viewContainerRef.createComponent(componentFactory);
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Object)
-    ], MonstersComponent.prototype, "monsterId", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */])
-    ], MonstersComponent.prototype, "monsterHost", void 0);
-    MonstersComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'monster',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/'<ng-template monster-host></ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_2__monsters_service__["a" /* MonstersService */]],
-            host: {
-                '[class.monster]': 'true'
-            }
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_2__monsters_service__["a" /* MonstersService */]])
-    ], MonstersComponent);
-    return MonstersComponent;
-}());
-
-//# sourceMappingURL=monsters.component.js.map
-
-/***/ }),
-
-/***/ 283:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(200);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var MonstersService = /** @class */ (function () {
-    function MonstersService() {
-    }
-    MonstersService.prototype.getMonsters = function () {
+    TrinketsService.prototype.getTrinkets = function () {
         return [
             {
-                id: 2,
-                component: __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */],
-            },
-            {
-                id: 3,
-                component: __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */],
+                id: 1,
+                component: __WEBPACK_IMPORTED_MODULE_1__glass_glass__["a" /* GlassComponent */],
             },
         ];
     };
-    MonstersService = __decorate([
+    TrinketsService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [])
-    ], MonstersService);
-    return MonstersService;
+    ], TrinketsService);
+    return TrinketsService;
 }());
 
-//# sourceMappingURL=monsters.service.js.map
+//# sourceMappingURL=trinkets.service.js.map
 
 /***/ }),
 
-/***/ 284:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trinkets_component__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__trinket_host_directive__ = __webpack_require__(289);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-var TrinketsModule = /** @class */ (function () {
-    function TrinketsModule() {
-    }
-    TrinketsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_4__trinket_host_directive__["a" /* TrinketHostDirective */]],
-            providers: [],
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */]],
-            exports: [__WEBPACK_IMPORTED_MODULE_3__trinkets_component__["a" /* TrinketsComponent */]]
-        })
-    ], TrinketsModule);
-    return TrinketsModule;
-}());
-
-//# sourceMappingURL=trinkets.module.js.map
-
-/***/ }),
-
-/***/ 285:
+/***/ 260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(261);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -708,12 +792,12 @@ var ElementComponentModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 286:
+/***/ 261:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_uuid_v4__);
 
 var ElementModel = /** @class */ (function () {
@@ -746,14 +830,14 @@ var ElementModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 287:
+/***/ 262:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(163);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -766,99 +850,527 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TrinketsComponent = /** @class */ (function () {
-    function TrinketsComponent(componentFactoryResolver, trinketsService) {
-        this.componentFactoryResolver = componentFactoryResolver;
-        this.trinketsService = trinketsService;
+var MonstersService = /** @class */ (function () {
+    function MonstersService() {
     }
-    TrinketsComponent.prototype.ngOnInit = function () {
-        this.trinkets = this.trinketsService.getTrinkets();
-    };
-    TrinketsComponent.prototype.ngAfterViewInit = function () {
-        this.loadTrinkets();
-    };
-    TrinketsComponent.prototype.loadTrinkets = function () {
-        var _this = this;
-        this.hosts.forEach(function (_a) {
-            var id = _a.id, viewContainerRef = _a.viewContainerRef;
-            var trinket = _this.trinkets.find(function (e) { return e.id == id; });
-            var componentFactory = _this.componentFactoryResolver.resolveComponentFactory(trinket.component);
-            viewContainerRef.clear();
-            viewContainerRef.createComponent(componentFactory);
-        });
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__["a" /* TrinketHostDirective */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */]) === "function" && _a || Object)
-    ], TrinketsComponent.prototype, "hosts", void 0);
-    TrinketsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'trinkets',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/'<ul class="panel">\n  <li *ngFor="let trinket of trinkets" class="panel__item">\n    <ng-template trinket-host trinket-id="{{ trinket.id }}"></ng-template>\n  </li>\n  <li class="panel__item panel__item--fraud"></li>\n</ul>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]],
-        }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]) === "function" && _c || Object])
-    ], TrinketsComponent);
-    return TrinketsComponent;
-    var _a, _b, _c;
-}());
-
-//# sourceMappingURL=trinkets.component.js.map
-
-/***/ }),
-
-/***/ 288:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__glass_glass__ = __webpack_require__(202);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var TrinketsService = /** @class */ (function () {
-    function TrinketsService() {
-    }
-    TrinketsService.prototype.getTrinkets = function () {
+    MonstersService.prototype.getMonsters = function () {
         return [
             {
-                id: 1,
-                component: __WEBPACK_IMPORTED_MODULE_1__glass_glass__["a" /* GlassComponent */],
-            },
-            {
                 id: 2,
-                component: __WEBPACK_IMPORTED_MODULE_1__glass_glass__["a" /* GlassComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */],
             },
             {
                 id: 3,
-                component: __WEBPACK_IMPORTED_MODULE_1__glass_glass__["a" /* GlassComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */],
             },
         ];
     };
-    TrinketsService = __decorate([
+    MonstersService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [])
-    ], TrinketsService);
-    return TrinketsService;
+    ], MonstersService);
+    return MonstersService;
 }());
 
-//# sourceMappingURL=trinkets.service.js.map
+//# sourceMappingURL=monsters.service.js.map
 
 /***/ }),
 
-/***/ 289:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketHostDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_state_service__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cursor_position__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cursor_position_state__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__listner_register_class__ = __webpack_require__(269);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+
+
+
+
+var lib = {
+    setPosition: function (register, ev) {
+        return register.set(ev.clientX, ev.clientY);
+    },
+    nullifyPosition: function (register) {
+        return register.set(undefined, undefined);
+    },
+    changeCursorStateToDown: function (cursor, ev) {
+        cursor.down();
+    },
+    changeCursorStateToUp: function (cursor, ev) {
+        cursor.up();
+    },
+    bind: function (name, context) {
+        var args = [];
+        for (var _i = 2; _i < arguments.length; _i++) {
+            args[_i - 2] = arguments[_i];
+        }
+        return (_a = (this[name])).bind.apply(_a, [context].concat(args));
+        var _a;
+    }
+};
+var Game = /** @class */ (function () {
+    function Game(renderer) {
+        this.cursor = new __WEBPACK_IMPORTED_MODULE_0__cursor_state_service__["a" /* CursorState */]();
+        this.cursorOnScreen = new __WEBPACK_IMPORTED_MODULE_2__cursor_position_state__["a" /* CursorPositionState */]();
+        this.register = new __WEBPACK_IMPORTED_MODULE_3__listner_register_class__["a" /* ListnerRegister */]();
+        this.position = new __WEBPACK_IMPORTED_MODULE_1__cursor_position__["a" /* CursorPosition */]();
+        this.r = renderer;
+        this.triggerOnMouseMove(lib.bind('setPosition', this, this.position));
+        this.triggerOnMouseOut(lib.bind('nullifyPosition', this, this.position));
+        this.triggerOnMouseUp(lib.changeCursorStateToUp.bind(null, this.cursor));
+        this.triggerOnMouseDown(lib.changeCursorStateToDown.bind(null, this.cursor));
+        this.cursor.setFns('down', function () {
+            var args = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                args[_i] = arguments[_i];
+            }
+            console.log(args);
+        });
+    }
+    Game.prototype.triggerListner = function (event, fn) {
+        var config = { target: window, event: event, fn: fn };
+        if (this.register.has(config)) {
+            this.register.remove(config).rmFunc();
+            return;
+        }
+        else {
+            var rmFunc = this.r.listen(window, event, fn);
+            this.register.add(__assign({}, config, { rmFunc: rmFunc }), function (err, register) {
+                if (err)
+                    console.log(err);
+                return;
+            });
+        }
+        return;
+    };
+    Game.prototype.triggerOnMouseMove = function (fn) {
+        this.triggerListner('mousemove', fn);
+        return;
+    };
+    Game.prototype.triggerOnMouseDown = function (fn) {
+        this.triggerListner('mousedown', fn);
+        return;
+    };
+    Game.prototype.triggerOnMouseUp = function (fn) {
+        this.triggerListner('mouseup', fn);
+        return;
+    };
+    Game.prototype.triggerOnMouseOut = function (fn) {
+        this.triggerListner('mouseout', fn);
+        return;
+    };
+    Game.prototype.removeListners = function () {
+        this.register.forEach(function (_a) {
+            var rmFunc = _a.rmFunc;
+            if (!rmFunc)
+                return;
+            return setTimeout(rmFunc, 0);
+        });
+        this.register.clear();
+        return;
+    };
+    return Game;
+}());
+
+;
+//# sourceMappingURL=game.service.js.map
+
+/***/ }),
+
+/***/ 266:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CursorState; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
+
+var CursorState = /** @class */ (function () {
+    function CursorState() {
+        var _this = this;
+        this.stateMethodsHandler = function (name) {
+            return function (obj) {
+                return _this.fnsRegister[name].forEach(function (fn) {
+                    return fn(obj, _this);
+                });
+            };
+        };
+        this.fnsRegister = { up: [], down: [], grab: [], drop: [] };
+        this.state = new __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default.a({
+            init: 'mouseup',
+            transitions: [
+                { name: 'down', from: 'mouseup', to: 'mousedown' },
+                { name: 'up', from: 'mousedown', to: 'mouseup' },
+                { name: 'grab', from: 'mousedown', to: 'grabbed' },
+                { name: 'drop', from: 'grabbed', to: 'mouseup' },
+            ],
+            methods: {
+                onDown: this.stateMethodsHandler('down'),
+                onUp: this.stateMethodsHandler('up'),
+                onGrab: this.stateMethodsHandler('grab'),
+                onDrop: this.stateMethodsHandler('drop'),
+            }
+        });
+    }
+    ;
+    CursorState.prototype.setFns = function (name) {
+        var fns = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            fns[_i - 1] = arguments[_i];
+        }
+        var oldFns = this.fnsRegister[name];
+        this.fnsRegister[name] = oldFns.concat(fns);
+        return this;
+    };
+    CursorState.prototype.up = function () {
+        this.state.up();
+        return this;
+    };
+    CursorState.prototype.down = function () {
+        this.state.down();
+        return this;
+    };
+    return CursorState;
+}());
+
+//# sourceMappingURL=cursor-state.service.js.map
+
+/***/ }),
+
+/***/ 267:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CursorPosition; });
+var CursorPosition = /** @class */ (function () {
+    function CursorPosition() {
+        this.handlers = [];
+    }
+    ;
+    CursorPosition.prototype.set = function (x, y) {
+        var _this = this;
+        this.positionX = x;
+        this.positionY = y;
+        if (this.handlers.length) {
+            this.handlers.forEach(function (fn) {
+                setTimeout(function () { return fn(_this.get()); }, 0);
+                return;
+            });
+        }
+        return this;
+    };
+    CursorPosition.prototype.get = function () {
+        return this.positionX && this.positionX ?
+            { x: this.positionX, y: this.positionY } :
+            undefined;
+    };
+    CursorPosition.prototype.setHandler = function () {
+        var fns = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            fns[_i] = arguments[_i];
+        }
+        this.handlers = this.handlers.concat(fns);
+        return this;
+    };
+    CursorPosition.prototype.rmHandler = function (fn) {
+        this.handlers = this.handlers.filter(function (func) { return func !== fn; });
+        return this;
+    };
+    return CursorPosition;
+}());
+
+//# sourceMappingURL=cursor-position.js.map
+
+/***/ }),
+
+/***/ 268:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CursorPositionState; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
+
+var CursorPositionState = /** @class */ (function () {
+    function CursorPositionState() {
+        var _this = this;
+        this.stateMethodsHandler = function (name) {
+            return function (obj) {
+                return _this.fnsRegister[name].forEach(function (fn) {
+                    return fn(obj, _this);
+                });
+            };
+        };
+        this.fnsRegister = { toDisplay: [], toDashboard: [], toDisplayBorder: [], goOut: [] };
+        this.state = new __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default.a({
+            init: 'out',
+            transitions: [
+                { name: 'goOut', from: 'onDisplayBorder', to: 'outScreen' },
+                { name: 'goOut', from: 'onDisplay', to: 'outScreen' },
+                { name: 'goOut', from: 'onDashboard', to: 'outScreen' },
+                { name: 'toDisplayBorder', from: 'outScreen', to: 'onDisplayBorder' },
+                { name: 'toDisplayBorder', from: 'onDashboard', to: 'onDisplayBorder' },
+                { name: 'toDisplayBorder', from: 'onDisplay', to: 'onDisplayBorder' },
+                { name: 'toDisplay', from: 'onDisplayBorder', to: 'onDisplay' },
+                { name: 'toDisplay', from: 'onDashboard', to: 'onDisplay' },
+                { name: 'toDashboard', from: 'onDisplayBorder', to: 'onDashboard' },
+                { name: 'toDashboard', from: 'outScreen', to: 'onDashboard' },
+                { name: 'toDashboard', from: 'onDisplay', to: 'onDashboard' },
+            ],
+            methods: {
+                onGoOut: this.stateMethodsHandler('out'),
+                onToDisplayBorder: this.stateMethodsHandler('displayBorder'),
+                onToDisplay: this.stateMethodsHandler('display'),
+                onToDashboard: this.stateMethodsHandler('dashboard'),
+            }
+        });
+    }
+    CursorPositionState.prototype.setFns = function (name) {
+        var fns = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            fns[_i - 1] = arguments[_i];
+        }
+        var oldFns = this.fnsRegister[name];
+        this.fnsRegister[name] = oldFns.concat(fns);
+        return this;
+    };
+    CursorPositionState.prototype.toDashboard = function () {
+        this.state.toDashboard();
+        return this;
+    };
+    CursorPositionState.prototype.toDisplay = function () {
+        this.state.toDisplay();
+        return this;
+    };
+    CursorPositionState.prototype.toDisplayBorder = function () {
+        this.state.toDisplayBorder();
+        return this;
+    };
+    CursorPositionState.prototype.goOut = function () {
+        this.state.goOut();
+        return this;
+    };
+    return CursorPositionState;
+}());
+
+//# sourceMappingURL=cursor-position-state.js.map
+
+/***/ }),
+
+/***/ 269:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnerRegister; });
+var Listner = /** @class */ (function () {
+    function Listner(_a) {
+        var target = _a.target, event = _a.event, fn = _a.fn, rmFunc = _a.rmFunc;
+        this.target = target;
+        this.event = event;
+        this.fn = fn;
+        this.rmFunc = rmFunc;
+    }
+    ;
+    Listner.prototype.getConfig = function () {
+        return {
+            target: this.target,
+            event: this.event,
+            fn: this.fn,
+            rmFunc: this.rmFunc,
+        };
+    };
+    Listner.prototype.compare = function (listner) {
+        var _this = this;
+        return !Object.keys(listner).find(function (v) {
+            return listner[v] !== _this[v];
+        });
+    };
+    return Listner;
+}());
+var ListnerRegister = /** @class */ (function () {
+    function ListnerRegister() {
+        this.register = [];
+    }
+    ;
+    Object.defineProperty(ListnerRegister.prototype, "length", {
+        get: function () {
+            return this.register.length;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ListnerRegister.prototype.find = function (listner) {
+        return this.register.find(function (v) { return v.compare(listner); });
+    };
+    ListnerRegister.prototype.add = function (listner, callback) {
+        if (this.has(listner))
+            return callback(new Error('Instance already exists'));
+        var arr = this.register.slice();
+        this.register = arr.concat([new Listner(listner)]);
+        return callback(null, this);
+    };
+    ListnerRegister.prototype.has = function (listner) {
+        return !!this.find(listner);
+    };
+    ListnerRegister.prototype.remove = function (listner) {
+        var instance = this.find(listner);
+        if (!instance)
+            return false;
+        this.register = this.register.filter(function (i) { return i !== instance; });
+        return instance.getConfig();
+    };
+    ListnerRegister.prototype.clear = function () {
+        this.register = [];
+        return this;
+    };
+    ListnerRegister.prototype.forEach = function (fn) {
+        this.register.slice().forEach(fn);
+        return this;
+    };
+    return ListnerRegister;
+}());
+
+//# sourceMappingURL=listner-register.class.js.map
+
+/***/ }),
+
+/***/ 295:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(299);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var ComponentsModule = /** @class */ (function () {
+    function ComponentsModule() {
+    }
+    ComponentsModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__["a" /* MonstersModule */], __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__["a" /* TrinketsModule */], __WEBPACK_IMPORTED_MODULE_3__game_game_module__["a" /* GameModule */], __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__["a" /* ItemHolderModule */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__["a" /* MonstersModule */], __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__["a" /* TrinketsModule */], __WEBPACK_IMPORTED_MODULE_3__game_game_module__["a" /* GameModule */], __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__["a" /* ItemHolderModule */]]
+        })
+    ], ComponentsModule);
+    return ComponentsModule;
+}());
+
+;
+//# sourceMappingURL=components.module.js.map
+
+/***/ }),
+
+/***/ 296:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_component__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__monsters_host_directive__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__monster_part_directive__ = __webpack_require__(162);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+// List of Monsters
+
+
+
+
+
+var MonstersModule = /** @class */ (function () {
+    function MonstersModule() {
+    }
+    MonstersModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */], __WEBPACK_IMPORTED_MODULE_3__monsters_component__["a" /* MonstersComponent */], __WEBPACK_IMPORTED_MODULE_4__monsters_host_directive__["a" /* MonstersHostDirective */], __WEBPACK_IMPORTED_MODULE_5__monster_part_directive__["a" /* MonsterPartDirective */]],
+            providers: [],
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_3__monsters_component__["a" /* MonstersComponent */]]
+        })
+    ], MonstersModule);
+    return MonstersModule;
+}());
+
+//# sourceMappingURL=monsters.module.js.map
+
+/***/ }),
+
+/***/ 297:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trinkets_component__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__trinket_host_directive__ = __webpack_require__(152);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var TrinketsModule = /** @class */ (function () {
+    function TrinketsModule() {
+    }
+    TrinketsModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_4__trinket_host_directive__["a" /* TrinketHostDirective */]],
+            providers: [],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]],
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_3__trinkets_component__["a" /* TrinketsComponent */]]
+        })
+    ], TrinketsModule);
+    return TrinketsModule;
+}());
+
+//# sourceMappingURL=trinkets.module.js.map
+
+/***/ }),
+
+/***/ 298:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -866,39 +1378,70 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
-var TrinketHostDirective = /** @class */ (function () {
-    function TrinketHostDirective(viewContainerRef) {
-        this.viewContainerRef = viewContainerRef;
+// import { CursorStateService } from './cursor-state.service';
+var GameModule = /** @class */ (function () {
+    function GameModule() {
     }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('trinket-id'),
-        __metadata("design:type", String)
-    ], TrinketHostDirective.prototype, "id", void 0);
-    TrinketHostDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
-            selector: '[trinket-host]',
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]) === "function" && _a || Object])
-    ], TrinketHostDirective);
-    return TrinketHostDirective;
-    var _a;
+    GameModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [],
+            // providers: [GameService, CursorStateService],
+            imports: [],
+            entryComponents: [],
+            exports: []
+        })
+    ], GameModule);
+    return GameModule;
 }());
 
-//# sourceMappingURL=trinket-host.directive.js.map
+//# sourceMappingURL=game.module.js.map
 
 /***/ }),
 
-/***/ 290:
+/***/ 299:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(166);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ItemHolderModule = /** @class */ (function () {
+    function ItemHolderModule() {
+    }
+    ItemHolderModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_1__item_holder_component__["a" /* ItemHolderComponent */], __WEBPACK_IMPORTED_MODULE_2__template_host_directive__["a" /* TemplateHostDriective */]],
+            providers: [],
+            imports: [],
+            entryComponents: [],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__item_holder_component__["a" /* ItemHolderComponent */], __WEBPACK_IMPORTED_MODULE_2__template_host_directive__["a" /* TemplateHostDriective */]]
+        })
+    ], ItemHolderModule);
+    return ItemHolderModule;
+}());
+
+//# sourceMappingURL=item-holder.module.js.map
+
+/***/ }),
+
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModelModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(154);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -924,15 +1467,15 @@ var ModelModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 291:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_game_game__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -970,7 +1513,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 292:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1016,7 +1559,21 @@ var HomePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__ = __webpack_require__(165);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1028,97 +1585,105 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var GamePage = /** @class */ (function () {
-    function GamePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.glasses = null;
-        this.monsterId = 2;
+
+
+
+
+var GamePage = /** @class */ (function (_super) {
+    __extends(GamePage, _super);
+    function GamePage(navCtrl, navParams, renderer, componentFactoryResolver, injector, app) {
+        var _this = _super.call(this, renderer) || this;
+        _this.navCtrl = navCtrl;
+        _this.navParams = navParams;
+        _this.renderer = renderer;
+        _this.componentFactoryResolver = componentFactoryResolver;
+        _this.injector = injector;
+        _this.app = app;
+        _this.glasses = null;
+        _this.monsterId = 2;
+        return _this;
     }
     GamePage.prototype.ngAfterViewInit = function () {
-        // const svg = zombie.builder.getDom();
-        // const gls = glasses.builder.getDom();
-        //
-        // gls.setAttribute('width', '200');
-        // gls.setAttribute('height', '100%');
-        //
-        // const target = document.getElementById('nb-target');
-        // const panel = document.getElementById('test');
-        //
-        // target.appendChild(svg);
-        // panel.appendChild(gls);
-        //
-        // const appendGlasses = () => this.appendGlasses();
-        // const removeGlasses = () => this.removeGlasses();
-        //
-        // gls.addEventListener('click', function(ev) {
-        //   const el = this;
-        //   ev.preventDefault();
-        //
-        //   if(el.classList.contains('blocked')) {
-        //     removeGlasses();
-        //     el.classList.remove('blocked');
-        //   } else {
-        //     el.classList.add('blocked');
-        //     appendGlasses();
-        //   };
-        //
-        //
-        // });
+        var _this = this;
+        var instances = this.trinkets.getInstances();
+        var setHolderPosition = function () {
+            var _a = _this.position.get(), x = _a.x, y = _a.y;
+            var _b = _this.holder.getSize(), width = _b.width, height = _b.height;
+            _this.holder.setAttributes({
+                style: "left: " + (x - width / 2) + "px; top: " + (y - height / 2) + "px",
+            });
+        };
+        var parts = this.monsters.getCurrentMonster().getParts();
+        var innerEyes = {
+            renderer: this.renderer,
+            eyeLeft: parts.find(function (p) { return p.type === 'eyeLeft'; }).element,
+            eyeRight: parts.find(function (p) { return p.type === 'eyeRight'; }).element,
+            close: function () {
+                this.renderer.setAttribute(this.eyeLeft, 'visibility', 'hidden');
+                this.renderer.setAttribute(this.eyeRight, 'visibility', 'hidden');
+            },
+            open: function () {
+                this.renderer.setAttribute(this.eyeLeft, 'visibility', 'visible');
+                this.renderer.setAttribute(this.eyeRight, 'visibility', 'visible');
+            },
+        };
+        var eyes = parts.find(function (p) { return p.type === 'eyes'; });
+        instances.forEach(function (_a) {
+            var component = _a.component, node = _a.node;
+            _this.renderer.listen(node, 'mousedown', function (ev) {
+                _this.holder.loadComponent(component);
+                setHolderPosition();
+                _this.renderer.addClass(node, 'blocked');
+                var unblock = _this.renderer.listen(node, 'click', function (ev) { return ev.preventDefault(); });
+                var rmMouseMove = _this.renderer.listen(window, 'mousemove', setHolderPosition);
+                var rmMouseDown = _this.renderer.listen(window, 'mouseup', function (ev) {
+                    _this.holder.clear();
+                    rmMouseMove();
+                    rmMouseDown();
+                    innerEyes.close();
+                    var viewContainerRef = eyes.viewContainerRef;
+                    var factory = _this.componentFactoryResolver.resolveComponentFactory(component);
+                    var instance = viewContainerRef.createComponent(factory).instance;
+                    _this.renderer.removeClass(node, 'blocked');
+                    unblock();
+                    return;
+                });
+                return;
+            });
+        });
+        // this.holder.loadComponent(component);
+        // this.holder.clear();
     };
-    GamePage.prototype.ngOnInit = function () {
-        // this.monsters = this.monstersService.getMonsters();
-        // console.log(this.monsters);
-    };
-    GamePage.prototype.removeGlasses = function () {
-        // const eyes = document.getElementsByClassName('eye');
-        //
-        // Array.from(eyes).forEach(v => {
-        //   return v.setAttribute('visibility', 'visible');
-        // });
-        //
-        // return this.glasses.remove();
-    };
-    GamePage.prototype.appendGlasses = function () {
-        // if(this.glasses) {
-        //   this.removeGlasses();
-        // }
-        //
-        // const gls = glasses.builder.getDom();
-        //
-        // const element = document.getElementsByClassName('eyes').item(0);
-        //
-        // const { height, width, x, y } = (element as SVGGraphicsElement).getBBox();
-        //
-        // gls.setAttribute('width', (width * 2).toString());
-        // gls.setAttribute('height', (height * 2).toString());
-        // gls.setAttribute('x', (x - width/2).toString());
-        // gls.setAttribute('y', (y - height/2).toString());
-        //
-        // element.appendChild(gls);
-        //
-        // const eyes = document.getElementsByClassName('eye');
-        //
-        // Array.from(eyes).forEach(v => {
-        //   return v.setAttribute('visibility', 'hidden');
-        // });
-        //
-        // this.glasses = gls;
-        //
-        // return;
-    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */])
+    ], GamePage.prototype, "trinkets", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */])
+    ], GamePage.prototype, "monsters", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */])
+    ], GamePage.prototype, "holder", void 0);
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-game',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <div id="nb-target" class="screen zombie__screen">\n      <!-- <div id="on-screen"> -->\n      <monster [monsterId]="monsterId"></monster>\n\n      <!-- </div> -->\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <trinkets></trinkets>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/,
+            selector: 'page-game',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <item-holder></item-holder>\n    <div id="nb-target" class="screen zombie__screen">\n      <div id="on-screen">\n        <monster [monsterId]="monsterId"></monster>\n      </div>\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <trinkets></trinkets>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/,
+            providers: [],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
     ], GamePage);
     return GamePage;
-}());
+}(__WEBPACK_IMPORTED_MODULE_4__components_game_game_service__["a" /* Game */]));
 
 //# sourceMappingURL=game.js.map
 
 /***/ })
 
-},[204]);
+},[210]);
 //# sourceMappingURL=main.js.map
