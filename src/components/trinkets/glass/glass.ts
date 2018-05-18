@@ -1,9 +1,9 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, HostBinding } from '@angular/core';
 import { ElementComponentModel } from '../../../model/element-component.model';
 
 @Component({
-  selector: '[glass]',
-  templateUrl: 'glass.svg'
+  selector: 'glass',
+  templateUrl: 'glass.svg',
 })
 export class GlassComponent extends ElementComponentModel {
   constructor(element: ElementRef) {

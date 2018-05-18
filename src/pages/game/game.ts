@@ -50,6 +50,11 @@ export class GamePage extends Game implements AfterViewInit {
       });
     };
 
+    var glassesOn = false;
+    const displayH = document.getElementById('nb-target').offsetHeight;
+
+    const isOnDisplay = (y) => displayH > y ? true : false;
+
     const parts = this.monsters.getCurrentMonster().getParts();
 
     const innerEyes = {
@@ -66,10 +71,11 @@ export class GamePage extends Game implements AfterViewInit {
       },
     }
 
-    const eyes = parts.find(p => p.type === 'eyes');
+    const eyes = parts.find(p => p.type === 'eyes' && p.name == 'eyes');
+    const eyesContainer = parts.find(p => p.name === 'container');
 
-    instances.forEach(({ component, node }) => {
-      this.renderer.listen(node, 'mousedown', (ev) => {
+    const instanceFunc = ({ component, node }) => {
+      const rmMouseDown = this.renderer.listen(node, 'mousedown', (ev) => {
         this.holder.loadComponent(component);
         setHolderPosition();
 
@@ -78,26 +84,48 @@ export class GamePage extends Game implements AfterViewInit {
 
         const rmMouseMove = this.renderer.listen(window, 'mousemove', setHolderPosition);
 
-        const rmMouseDown = this.renderer.listen(window, 'mouseup', (ev) => {
-          this.holder.clear();
-          rmMouseMove();
-          rmMouseDown();
+        const rmMouseUp = this.renderer.listen(window, 'mouseup', ({ clientY }) => {
+          if(isOnDisplay(clientY)) {
+            this.holder.clear();
+            rmMouseMove();
+            rmMouseUp();
+            rmMouseDown();
 
-          innerEyes.close();
-          const viewContainerRef = eyes.viewContainerRef;
-          const factory = this.componentFactoryResolver.resolveComponentFactory(component);
+            glassesOn = true;
 
-          const { instance } = viewContainerRef.createComponent(factory);
+            innerEyes.close();
 
-          this.renderer.removeClass(node, 'blocked');
-          unblock();
+            const { width, height, x, y } = (eyes.element as SVGGraphicsElement).getBBox();
 
+            const viewContainerRef = eyes.viewContainerRef;
+            const factory = this.componentFactoryResolver.resolveComponentFactory(component);
+
+            const ref = factory.create(this.injector, [], eyesContainer.element);
+            this.app.attachView(ref.hostView);
+
+            // const { instance } = viewContainerRef.createComponent(factory);
+            const glassesInstance = ref.instance.node.firstChild;
+
+
+            this.renderer.setAttribute(glassesInstance, 'width', (width * 2).toString());
+            this.renderer.setAttribute(glassesInstance, 'height', (height * 2).toString());
+            this.renderer.setAttribute(glassesInstance, 'x', (x - width/2).toString());
+            this.renderer.setAttribute(glassesInstance, 'y', (y - height/2).toString());
+          } else {
+            this.renderer.removeClass(node, 'blocked');
+            this.holder.clear();
+            unblock();
+            rmMouseMove();
+            rmMouseUp();
+          }
           return;
         });
 
         return;
       });
-    });
+    }
+
+    instances.forEach(instanceFunc);
 
 
     // this.holder.loadComponent(component);

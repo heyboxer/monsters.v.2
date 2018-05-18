@@ -22,7 +22,7 @@ webpackEmptyAsyncContext.id = 109;
 
 var map = {
 	"../pages/game/game.module": [
-		282,
+		303,
 		0
 	]
 };
@@ -46,41 +46,583 @@ module.exports = webpackAsyncContext;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var ElementsRepository = /** @class */ (function () {
-    function ElementsRepository() {
-        this.elements = [];
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(259);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
     }
-    ElementsRepository.prototype.add = function (id, node) {
-        var arr = this.elements.slice();
-        var e = new Element(id, node);
-        this.elements = arr.concat([e]);
+    return t;
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TrinketsComponent = /** @class */ (function () {
+    function TrinketsComponent(componentFactoryResolver, trinketsService) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.trinketsService = trinketsService;
+    }
+    ;
+    TrinketsComponent.prototype.ngOnInit = function () {
+        this.trinkets = this.trinketsService.getTrinkets();
+    };
+    TrinketsComponent.prototype.ngAfterViewInit = function () {
+        this.loadTrinkets();
+    };
+    TrinketsComponent.prototype.loadTrinkets = function () {
+        var _this = this;
+        this.instances = this.hosts.map(function (_a) {
+            var id = _a.id, viewContainerRef = _a.viewContainerRef;
+            var trinket = _this.trinkets.find(function (e) { return e.id == id; });
+            var componentFactory = _this.componentFactoryResolver.resolveComponentFactory(trinket.component);
+            viewContainerRef.clear();
+            var instance = viewContainerRef.createComponent(componentFactory).instance;
+            return __assign({}, instance, { component: trinket.component });
+        });
         return;
     };
-    ElementsRepository.prototype.get = function () {
-        return this.elements.slice();
+    TrinketsComponent.prototype.getInstances = function () {
+        return this.instances;
     };
-    return ElementsRepository;
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__["a" /* TrinketHostDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
+    ], TrinketsComponent.prototype, "hosts", void 0);
+    TrinketsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'trinkets',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/'<ul class="panel">\n  <li *ngFor="let trinket of trinkets" class="panel__item">\n    <ng-template trinket-host trinket-id="{{ trinket.id }}"></ng-template>\n  </li>\n  <li class="panel__item panel__item--fraud"></li>\n</ul>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/,
+            providers: [__WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]],
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]])
+    ], TrinketsComponent);
+    return TrinketsComponent;
 }());
-var Element = /** @class */ (function () {
-    function Element(id, node) {
-        this.id = id;
-        // this.root = root;
-        this.node = node;
-    }
-    return Element;
-}());
-/* harmony default export */ __webpack_exports__["a"] = (new ElementsRepository());
-//# sourceMappingURL=elements.repository.js.map
+
+//# sourceMappingURL=trinkets.component.js.map
 
 /***/ }),
 
-/***/ 195:
+/***/ 152:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketHostDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TrinketHostDirective = /** @class */ (function () {
+    function TrinketHostDirective(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('trinket-id'),
+        __metadata("design:type", String)
+    ], TrinketHostDirective.prototype, "id", void 0);
+    TrinketHostDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[trinket-host]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], TrinketHostDirective);
+    return TrinketHostDirective;
+}());
+
+//# sourceMappingURL=trinket-host.directive.js.map
+
+/***/ }),
+
+/***/ 153:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlassComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(260);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var GlassComponent = /** @class */ (function (_super) {
+    __extends(GlassComponent, _super);
+    function GlassComponent(element) {
+        return _super.call(this, 'glass', element.nativeElement) || this;
+    }
+    GlassComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'glass',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/'<svg width="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 301.28 112.68">\n  <path class="cls-1" d="M96.84,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.17,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z"/>\n  <path class="cls-1" d="M204.44,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.16,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z"/>\n  <path class="cls-2" d="M137.65,49.83a18.36,18.36,0,0,1,26,0"/>\n  <path class="cls-3" d="M6.16,22.4a11.53,11.53,0,0,1,-0.66,-16.24h0a11.53,11.53,0,0,1,16.24,-0.66l34.09,31.41"/>\n  <path class="cls-3" d="M295.12,22.4a11.53,11.53,0,0,0,0.66,-16.24h0a11.53,11.53,0,0,0,-16.24,-0.66l-34.09,31.41"/>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], GlassComponent);
+    return GlassComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=glass.js.map
+
+/***/ }),
+
+/***/ 154:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementRepository; });
+// import { Injectable } from "@angular/core";
+// @Injectable()
+var ElementRepository = /** @class */ (function () {
+    function ElementRepository() {
+        this.elements = [];
+    }
+    ;
+    ElementRepository.prototype.add = function (element) {
+        var arr = this.elements.slice();
+        this.elements = arr.concat([element]);
+        return this;
+    };
+    ElementRepository.prototype.removeById = function (id) {
+        var arr = this.elements.slice().filter(function (e) { return e.getId() == id; });
+        this.elements = arr;
+        return this;
+    };
+    return ElementRepository;
+}());
+
+/* harmony default export */ __webpack_exports__["b"] = (new ElementRepository());
+//# sourceMappingURL=element.repository.js.map
+
+/***/ }),
+
+/***/ 158:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_service__ = __webpack_require__(262);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var MonstersComponent = /** @class */ (function () {
+    function MonstersComponent(componentFactoryResolver, monstersService) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.monstersService = monstersService;
+    }
+    MonstersComponent.prototype.ngOnInit = function () {
+        this.monsters = this.monstersService.getMonsters();
+        this.loadMonster(this.monsterId);
+    };
+    MonstersComponent.prototype.ngAfterViewInit = function () {
+    };
+    MonstersComponent.prototype.loadMonster = function (id) {
+        var monster = this.monsters.find(function (e) { return e.id == id; });
+        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(monster.component);
+        var viewContainerRef = this.monsterHost.viewContainerRef;
+        viewContainerRef.clear();
+        var instance = viewContainerRef.createComponent(componentFactory).instance;
+        this.monster = instance;
+    };
+    MonstersComponent.prototype.getCurrentMonster = function () {
+        return this.monster;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Object)
+    ], MonstersComponent.prototype, "monsterId", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */])
+    ], MonstersComponent.prototype, "monsterHost", void 0);
+    MonstersComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'monster',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/'<ng-template monster-host></ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/,
+            // styleUrls: ['monsters.component.scss'],
+            providers: [__WEBPACK_IMPORTED_MODULE_2__monsters_service__["a" /* MonstersService */]],
+            host: {
+                '[class.monster]': 'true'
+            }
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_2__monsters_service__["a" /* MonstersService */]])
+    ], MonstersComponent);
+    return MonstersComponent;
+}());
+
+//# sourceMappingURL=monsters.component.js.map
+
+/***/ }),
+
+/***/ 159:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersHostDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MonstersHostDirective = /** @class */ (function () {
+    function MonstersHostDirective(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+    MonstersHostDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[monster-host]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], MonstersHostDirective);
+    return MonstersHostDirective;
+}());
+
+//# sourceMappingURL=monsters-host.directive.js.map
+
+/***/ }),
+
+/***/ 160:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZombieComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(161);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ZombieComponent = /** @class */ (function (_super) {
+    __extends(ZombieComponent, _super);
+    function ZombieComponent(el, renderer) {
+        var _this = _super.call(this, 'zombie', el.nativeElement) || this;
+        _this.el = el;
+        _this.renderer = renderer;
+        return _this;
+    }
+    ZombieComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'zombie',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/'<svg width="auto" height="95%" viewBox="0 0 233.58 324.24" class="zombie svg-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <g class="">\n    <path monster-part part-type="body" class="body" d="M260.9,280.8c0-64.94-53.13-118.07-118.07-118.07h0c-64.94,0-118.07,53.13-118.07,118.07V539.15H260.9Z"></path>\n    <g monster-part part-type="head" class="head">\n      <g monster-part part-type="head-figure" class="head-figure">\n        <g class="hair">\n          <polygon points="132.33 -0.05 96.08 48.13 87.64 48.13 79.21 48.13 132.33 -0.05" class="hair-part"></polygon>\n          <polygon points="145.47 -0.05 109.21 48.13 100.78 48.13 92.34 48.13 145.47 -0.05" class="hair-part"></polygon>\n          <polygon points="158.6 -0.05 122.35 48.13 113.91 48.13 105.48 48.13 158.6 -0.05" class="hair-part"></polygon>\n        </g>\n        <rect monster-part part-type="face" x="18.13" y="47.84" width="168.14" height="168.14" rx="52.98" ry="52.98" class="face"></rect>\n      </g>\n      <g monster-part part-type="eyes" part-name="eyes" class="eyes">\n        <g monster-part part-type="eyeLeft" class="eye eye--left" visibility="visible">\n          <ellipse monster-part part-type="eyeball" cx="66.08" cy="97.54" rx="27.81" ry="16.86" class="eyeball"></ellipse>\n          <circle monster-part part-type="pupil" cx="74.18" cy="97.32" r="8.32" class="pupil"></circle>\n        </g>\n        <g monster-part part-type="eyeRight" class="eye eye--right" visibility="visible">\n          <ellipse monster-part part-type="eyeball" cx="135.7" cy="97.54" rx="27.81" ry="16.86" class="eyeball"></ellipse>\n          <circle monster-part part-type="pupil" cx="142.93" cy="97.32" r="8.32" class="pupil"></circle>\n        </g>\n        <g monster-part part-type="eyes" part-name="container"></g>\n      </g>\n      <path monster-part part-type="nose" d="M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z" class="nose"></path>\n      <path monster-part part-type="mouth" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z" class="mouth"></path>\n      <g class="steams">\n        <g class="steam steam--right">\n          <line x1="128.09" y1="159.01" x2="162.15" y2="124.95" class="steam-part"></line>\n          <line x1="130.88" y1="148.79" x2="138.31" y2="156.22" class="steam-part"></line>\n          <line x1="136.14" y1="143.53" x2="143.57" y2="150.96" class="steam-part"></line>\n          <line x1="141.4" y1="138.26" x2="148.84" y2="145.69" class="steam-part"></line>\n          <line x1="146.67" y1="133" x2="154.1" y2="140.43" class="steam-part"></line>\n          <line x1="151.93" y1="127.74" x2="159.36" y2="135.17" class="steam-part"></line>\n        </g>\n      </g>\n    </g>\n  </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]])
+    ], ZombieComponent);
+    return ZombieComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__monster_model__["a" /* MonsterModel */]));
+
+//# sourceMappingURL=zombie.js.map
+
+/***/ }),
+
+/***/ 161:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(162);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MonsterModel = /** @class */ (function () {
+    function MonsterModel(name, element) {
+        this.name = name;
+        this.element = element;
+        this.eachElement = function (arr, cb) {
+            return Array.from(arr).forEach(function (v) {
+                return cb(v);
+            });
+        };
+    }
+    MonsterModel.prototype.ngAfterViewInit = function () { };
+    MonsterModel.prototype.getParts = function () {
+        return this.parts;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__monster_part_directive__["a" /* MonsterPartDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
+    ], MonsterModel.prototype, "parts", void 0);
+    MonsterModel = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
+        __metadata("design:paramtypes", [Object, HTMLElement])
+    ], MonsterModel);
+    return MonsterModel;
+}());
+
+//# sourceMappingURL=monster.model.js.map
+
+/***/ }),
+
+/***/ 162:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterPartDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MonsterPartDirective = /** @class */ (function () {
+    function MonsterPartDirective(el, viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+        this.id = __WEBPACK_IMPORTED_MODULE_1_uuid___default()();
+        this.element = el.nativeElement;
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('part-type'),
+        __metadata("design:type", String)
+    ], MonsterPartDirective.prototype, "type", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('part-name'),
+        __metadata("design:type", String)
+    ], MonsterPartDirective.prototype, "name", void 0);
+    MonsterPartDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[monster-part]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], MonsterPartDirective);
+    return MonsterPartDirective;
+}());
+
+//# sourceMappingURL=monster-part.directive.js.map
+
+/***/ }),
+
+/***/ 163:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SkeletonComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(161);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SkeletonComponent = /** @class */ (function (_super) {
+    __extends(SkeletonComponent, _super);
+    function SkeletonComponent(el, renderer) {
+        var _this = _super.call(this, 'skeleton', el.nativeElement) || this;
+        _this.el = el;
+        _this.renderer = renderer;
+        return _this;
+    }
+    SkeletonComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'skeleton',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/skeleton/skeleton.html"*/'<svg class="skeleton svg-container" viewBox="0 0 200.62 322.01" width="auto" height="90%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n   <g class="">\n      <g class="head">\n         <ellipse class="head head--figure" cx="99.95" cy="67.37" rx="89.2" ry="67.38"></ellipse>\n         <g class="content">\n            <g class="jaws">\n               <g class="jaw jaw--top">\n                  <rect class="jaw" x="43.33" y="95.52" width="113.24" height="63.9"></rect>\n                  <g class="teeth">\n                     <rect class="tooth" x="53.24" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="69.77" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="86.3" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="102.83" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="119.37" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="135.9" y="143.29" width="10.75" height="10.75"></rect>\n                  </g>\n               </g>\n               <g class="jaw jaw--bottom">\n                  <rect class="jaw" x="43.33" y="169.54" width="113.24" height="28.52"></rect>\n                  <g class="teeth">\n                     <rect class="tooth" x="53.24" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="69.77" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="86.3" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="102.83" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="119.37" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="135.9" y="178.43" width="10.75" height="10.75"></rect>\n                  </g>\n               </g>\n            </g>\n            <g class="eyes">\n               <g class="eye eye--right">\n                  <circle class="eyeball" cx="129.44" cy="66.37" r="25.31"></circle>\n                  <circle class="pupil" cx="136.88" cy="58.14" r="10.09"></circle>\n               </g>\n               <g class="eye eye--left">\n                  <circle class="eyeball" cx="70.45" cy="66.37" r="25.31"></circle>\n                  <circle class="pupil" cx="72.84" cy="76.61" r="10.09"></circle>\n               </g>\n            </g>\n            <polygon class="nose" points="99.95 91.72 112.37 113.24 124.8 134.76 99.95 134.76 75.09 134.76 87.52 113.24 99.95 91.72"></polygon>\n         </g>\n      </g>\n      <g class="body">\n         <rect class="rib" y="227.64" width="200.62" height="21.55"></rect>\n         <rect class="rib" y="264.11" width="200.62" height="21.55"></rect>\n         <rect class="rib" y="300.59" width="200.62" height="21.55"></rect>\n      </g>\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/skeleton/skeleton.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]])
+    ], SkeletonComponent);
+    return SkeletonComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__monster_model__["a" /* MonsterModel */]));
+
+//# sourceMappingURL=skeleton.js.map
+
+/***/ }),
+
+/***/ 165:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(166);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ItemHolderComponent = /** @class */ (function () {
+    function ItemHolderComponent(componentFactoryResolver, r, el) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.r = r;
+        this.el = el.nativeElement;
+    }
+    ItemHolderComponent.prototype.clear = function () {
+        this.host.viewContainerRef.clear();
+        return this;
+    };
+    ItemHolderComponent.prototype.loadComponent = function (component) {
+        this.clear();
+        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(component);
+        var instance = this.host.viewContainerRef.createComponent(componentFactory);
+        return instance;
+    };
+    ItemHolderComponent.prototype.setAttributes = function (obj) {
+        var _this = this;
+        var attrs = Object.keys(obj);
+        attrs.forEach(function (attr) { return _this.r.setAttribute(_this.el, attr, obj[attr]); });
+        return;
+    };
+    ItemHolderComponent.prototype.getSize = function () {
+        return { width: this.el.offsetWidth, height: this.el.offsetHeight };
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__template_host_directive__["a" /* TemplateHostDriective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__template_host_directive__["a" /* TemplateHostDriective */])
+    ], ItemHolderComponent.prototype, "host", void 0);
+    ItemHolderComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'item-holder',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/item-holder/item-holder.html"*/'<ng-template template-host></ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/item-holder/item-holder.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], ItemHolderComponent);
+    return ItemHolderComponent;
+}());
+
+//# sourceMappingURL=item-holder.component.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TemplateHostDriective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TemplateHostDriective = /** @class */ (function () {
+    function TemplateHostDriective(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+    TemplateHostDriective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[template-host]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], TemplateHostDriective);
+    return TemplateHostDriective;
+}());
+
+//# sourceMappingURL=template-host.directive.js.map
+
+/***/ }),
+
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(233);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -88,22 +630,20 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 218:
+/***/ 233:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_components_module__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__model_model_module__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_game_game__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -142,8 +682,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/game/game.module#GamePageModule', name: 'GamePage', segment: 'game', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_5__components_components_module__["ComponentsModule"],
-                __WEBPACK_IMPORTED_MODULE_6__model_model_module__["ModelModule"]
+                __WEBPACK_IMPORTED_MODULE_5__components_components_module__["a" /* ComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_6__model_model_module__["a" /* ModelModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
@@ -166,251 +706,780 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 244:
+/***/ 259:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_model_parser_model__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_model_parser_model___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__app_model_parser_model__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__glass_glass__ = __webpack_require__(153);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-var eyeLeft = {
-    tag: 'g',
-    config: {
-        class: 'eye eye--left',
-    },
-    children: {
-        'eyeball': {
-            tag: 'ellipse',
-            config: {
-                cx: 66.08, cy: 97.54, rx: 27.81, ry: 16.86,
-                class: 'eyeball'
-            }
-        },
-        'pupil': {
-            tag: 'circle',
-            config: {
-                cx: 74.18, cy: 97.32, r: 8.32,
-                class: 'pupil'
-            }
-        },
-    },
-};
-var eyeRight = {
-    tag: 'g',
-    config: {
-        class: 'eye eye--right',
-    },
-    children: {
-        'eyeball': {
-            tag: 'ellipse',
-            config: {
-                cx: 135.7, cy: 97.54, rx: 27.81, ry: 16.86,
-                class: 'eyeball'
-            }
-        },
-        'pupil': {
-            tag: 'circle',
-            config: {
-                cx: 142.93, cy: 97.32, r: 8.32,
-                class: 'pupil'
-            }
-        },
-    },
-};
-var eyes = {
-    tag: 'g',
-    config: { class: 'eyes' },
-    children: {
-        eyeLeft: eyeLeft,
-        eyeRight: eyeRight
+
+var TrinketsService = /** @class */ (function () {
+    function TrinketsService() {
     }
-};
-var hair = {
-    tag: 'g',
-    config: { class: 'hair' },
-    children: {
-        'hairPart': {
-            tag: 'polygon',
-            config: {
-                points: '132.33 -0.05 96.08 48.13 87.64 48.13 79.21 48.13 132.33 -0.05',
-                class: 'hair-part'
+    TrinketsService.prototype.getTrinkets = function () {
+        return [
+            {
+                id: 1,
+                component: __WEBPACK_IMPORTED_MODULE_1__glass_glass__["a" /* GlassComponent */],
             },
-            siblings: [
-                { points: '145.47 -0.05 109.21 48.13 100.78 48.13 92.34 48.13 145.47 -0.05', },
-                { points: '158.6 -0.05 122.35 48.13 113.91 48.13 105.48 48.13 158.6 -0.05', },
-            ]
-        },
-    }
-};
-var face = {
-    tag: 'rect',
-    config: {
-        'x': 18.13, 'y': 47.84, 'width': 168.14, 'height': 168.14, 'rx': 52.98, 'ry': 52.98,
-        class: 'face'
-    }
-};
-var headFigure = {
-    tag: 'g',
-    config: { class: 'head-figure' },
-    children: { hair: hair, face: face }
-};
-var nose = {
-    key: 'nose',
-    tag: 'path',
-    config: {
-        d: 'M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z',
-        class: 'nose'
-    }
-};
-var mouth = {
-    key: 'mouth',
-    tag: 'path',
-    config: {
-        d: 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z',
-        class: 'mouth'
-    }
-};
-var steamRight = {
-    key: 'steamRight',
-    tag: 'g',
-    config: {
-        class: 'steam steam--right'
-    },
-    children: {
-        'steamPart': {
-            key: 'steamPart',
-            tag: 'line',
-            config: {
-                'x1': 128.09, 'y1': 159.01, 'x2': 162.15, 'y2': 124.95,
-                class: 'steam-part'
-            },
-            siblings: [
-                { 'x1': 130.88, 'y1': 148.79, 'x2': 138.31, 'y2': 156.22, },
-                { 'x1': 136.14, 'y1': 143.53, 'x2': 143.57, 'y2': 150.96, },
-                { 'x1': 141.4, 'y1': 138.26, 'x2': 148.84, 'y2': 145.69, },
-                { 'x1': 146.67, 'y1': 133, 'x2': 154.1, 'y2': 140.43, },
-                { 'x1': 151.93, 'y1': 127.74, 'x2': 159.36, 'y2': 135.17, }
-            ]
-        }
-    }
-};
-var steams = {
-    key: 'steams',
-    tag: 'g',
-    config: {
-        class: 'steams',
-    },
-    children: { steamRight: steamRight, }
-};
-var head = {
-    key: 'head',
-    tag: 'g',
-    config: {
-        class: 'head'
-    },
-    children: { headFigure: headFigure, eyes: eyes, nose: nose, mouth: mouth, steams: steams }
-};
-var body = {
-    key: 'body',
-    tag: 'path',
-    config: {
-        class: 'body',
-        d: 'M260.9,280.8c0-64.94-53.13-118.07-118.07-118.07h0c-64.94,0-118.07,53.13-118.07,118.07V539.15H260.9Z',
-    },
-};
-var zombie = {
-    key: 'zombie',
-    tag: 'g',
-    config: {
-        class: '',
-    },
-    children: {
-        body: body, head: head
-    }
-};
-var structure = {
-    key: 'zombie',
-    meta: {
-        viewBox: [0, 0, 233.58, 324.24],
-        width: 'auto',
-        height: '95%',
-        class: 'zombie svg-container',
-    },
-    zombie: zombie,
-};
-/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_0__app_model_parser_model___default.a(structure));
-//# sourceMappingURL=temp-zombie.js.map
+        ];
+    };
+    TrinketsService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], TrinketsService);
+    return TrinketsService;
+}());
+
+//# sourceMappingURL=trinkets.service.js.map
 
 /***/ }),
 
-/***/ 245:
-/***/ (function(module, __webpack_exports__) {
+/***/ 260:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// import { Node } from './node.model';
-// import { RootMeta } from './root-meta.model';
-// import { Meta } from './meta.model';
-// import { Explorer } from './explorer.model';
-// import { SvgBuilder } from './svg-builder';
-//
-// export default class {
-//   public builder : SvgBuilder;
-//   public ast: Node;
-//
-//   constructor({ key, meta, ...descendants}) {
-//     this.ast = this.makeAbstractSyntaxTree(key, meta, descendants);
-//
-//     const explorer = new Explorer(this.ast);
-//     this.builder = new SvgBuilder(explorer);
-//   }
-//
-//   private makeAbstractSyntaxTree(key, meta, descendants: Object) : Node {
-//     const root = new Node(key, new RootMeta(meta));
-//     const childrenNames = Object.keys(descendants);
-//
-//     const rec = (name, obj, parent: Node) => {
-//       const { config, tag, children = {}, siblings = {} } = obj;
-//
-//       const newParent = parent.addChild(name);
-//
-//       if(siblings.length) {
-//         siblings.forEach(attrs => rec(
-//           name,
-//           {
-//             tag,
-//             config: { ...config, ...attrs }
-//           },
-//           parent
-//         ));
-//       }
-//
-//       const childrenNames = Object.keys(children);
-//
-//       if(childrenNames.length) {
-//         return childrenNames.forEach(name => rec(name, children[name], newParent));
-//       }
-//
-//       return;
-//     }
-//
-//     childrenNames.forEach(v => rec(v, descendants[v], root));
-//
-//     return root;
-//   }
-// }
-//# sourceMappingURL=parser.model.js.map
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(261);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ElementComponentModel = /** @class */ (function () {
+    function ElementComponentModel(name, node) {
+        this.name = name;
+        this.node = node;
+        this.repo = __WEBPACK_IMPORTED_MODULE_1__element_repository__["b" /* default */];
+    }
+    ;
+    ElementComponentModel.prototype.ngOnInit = function () {
+        this.element = new __WEBPACK_IMPORTED_MODULE_2__element_model__["a" /* ElementModel */](this.name, this.node);
+        this.add(this.element);
+    };
+    ;
+    ElementComponentModel.prototype.ngOnDestroy = function () {
+        this.repo.removeById(this.element.getId());
+    };
+    ;
+    ElementComponentModel.prototype.add = function (element) {
+        return this.repo.add(element);
+    };
+    ElementComponentModel = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
+        __metadata("design:paramtypes", [String, HTMLElement])
+    ], ElementComponentModel);
+    return ElementComponentModel;
+}());
+
+//# sourceMappingURL=element-component.model.js.map
 
 /***/ }),
 
-/***/ 280:
+/***/ 261:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_uuid_v4__);
+
+var ElementModel = /** @class */ (function () {
+    function ElementModel(name, node, root) {
+        this.name = name;
+        this.node = node;
+        this.id = __WEBPACK_IMPORTED_MODULE_0_uuid_v4___default()();
+        this.root = root || this.node;
+    }
+    ;
+    ElementModel.prototype.getId = function () {
+        return this.id;
+    };
+    ElementModel.prototype.getName = function () {
+        return this.name;
+    };
+    ElementModel.prototype.getRoot = function () {
+        return this.root;
+    };
+    ElementModel.prototype.getNode = function () {
+        return this.node;
+    };
+    ElementModel.prototype.isRoot = function () {
+        return this.root.isSameNode(this.node);
+    };
+    return ElementModel;
+}());
+
+//# sourceMappingURL=element.model.js.map
+
+/***/ }),
+
+/***/ 262:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(163);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var MonstersService = /** @class */ (function () {
+    function MonstersService() {
+    }
+    MonstersService.prototype.getMonsters = function () {
+        return [
+            {
+                id: 2,
+                component: __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */],
+            },
+            {
+                id: 3,
+                component: __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */],
+            },
+        ];
+    };
+    MonstersService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], MonstersService);
+    return MonstersService;
+}());
+
+//# sourceMappingURL=monsters.service.js.map
+
+/***/ }),
+
+/***/ 265:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_state_service__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cursor_position__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cursor_position_state__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__listner_register_class__ = __webpack_require__(269);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+
+
+
+
+var lib = {
+    setPosition: function (register, ev) {
+        return register.set(ev.clientX, ev.clientY);
+    },
+    nullifyPosition: function (register) {
+        return register.set(undefined, undefined);
+    },
+    changeCursorStateToDown: function (cursor, ev) {
+        cursor.down();
+    },
+    changeCursorStateToUp: function (cursor, ev) {
+        cursor.up();
+    },
+    bind: function (name, context) {
+        var args = [];
+        for (var _i = 2; _i < arguments.length; _i++) {
+            args[_i - 2] = arguments[_i];
+        }
+        return (_a = (this[name])).bind.apply(_a, [context].concat(args));
+        var _a;
+    }
+};
+var Game = /** @class */ (function () {
+    function Game(renderer) {
+        this.cursor = new __WEBPACK_IMPORTED_MODULE_0__cursor_state_service__["a" /* CursorState */]();
+        this.cursorOnScreen = new __WEBPACK_IMPORTED_MODULE_2__cursor_position_state__["a" /* CursorPositionState */]();
+        this.register = new __WEBPACK_IMPORTED_MODULE_3__listner_register_class__["a" /* ListnerRegister */]();
+        this.position = new __WEBPACK_IMPORTED_MODULE_1__cursor_position__["a" /* CursorPosition */]();
+        this.r = renderer;
+        this.triggerOnMouseMove(lib.bind('setPosition', this, this.position));
+        this.triggerOnMouseOut(lib.bind('nullifyPosition', this, this.position));
+        this.triggerOnMouseUp(lib.changeCursorStateToUp.bind(null, this.cursor));
+        this.triggerOnMouseDown(lib.changeCursorStateToDown.bind(null, this.cursor));
+        this.cursor.setFns('down', function () {
+            var args = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                args[_i] = arguments[_i];
+            }
+            console.log(args);
+        });
+    }
+    Game.prototype.triggerListner = function (event, fn) {
+        var config = { target: window, event: event, fn: fn };
+        if (this.register.has(config)) {
+            this.register.remove(config).rmFunc();
+            return;
+        }
+        else {
+            var rmFunc = this.r.listen(window, event, fn);
+            this.register.add(__assign({}, config, { rmFunc: rmFunc }), function (err, register) {
+                if (err)
+                    console.log(err);
+                return;
+            });
+        }
+        return;
+    };
+    Game.prototype.triggerOnMouseMove = function (fn) {
+        this.triggerListner('mousemove', fn);
+        return;
+    };
+    Game.prototype.triggerOnMouseDown = function (fn) {
+        this.triggerListner('mousedown', fn);
+        return;
+    };
+    Game.prototype.triggerOnMouseUp = function (fn) {
+        this.triggerListner('mouseup', fn);
+        return;
+    };
+    Game.prototype.triggerOnMouseOut = function (fn) {
+        this.triggerListner('mouseout', fn);
+        return;
+    };
+    Game.prototype.removeListners = function () {
+        this.register.forEach(function (_a) {
+            var rmFunc = _a.rmFunc;
+            if (!rmFunc)
+                return;
+            return setTimeout(rmFunc, 0);
+        });
+        this.register.clear();
+        return;
+    };
+    return Game;
+}());
+
+;
+//# sourceMappingURL=game.service.js.map
+
+/***/ }),
+
+/***/ 266:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CursorState; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
+
+var CursorState = /** @class */ (function () {
+    function CursorState() {
+        var _this = this;
+        this.stateMethodsHandler = function (name) {
+            return function (obj) {
+                return _this.fnsRegister[name].forEach(function (fn) {
+                    return fn(obj, _this);
+                });
+            };
+        };
+        this.fnsRegister = { up: [], down: [], grab: [], drop: [] };
+        this.state = new __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default.a({
+            init: 'mouseup',
+            transitions: [
+                { name: 'down', from: 'mouseup', to: 'mousedown' },
+                { name: 'up', from: 'mousedown', to: 'mouseup' },
+                { name: 'grab', from: 'mousedown', to: 'grabbed' },
+                { name: 'drop', from: 'grabbed', to: 'mouseup' },
+            ],
+            methods: {
+                onDown: this.stateMethodsHandler('down'),
+                onUp: this.stateMethodsHandler('up'),
+                onGrab: this.stateMethodsHandler('grab'),
+                onDrop: this.stateMethodsHandler('drop'),
+            }
+        });
+    }
+    ;
+    CursorState.prototype.setFns = function (name) {
+        var fns = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            fns[_i - 1] = arguments[_i];
+        }
+        var oldFns = this.fnsRegister[name];
+        this.fnsRegister[name] = oldFns.concat(fns);
+        return this;
+    };
+    CursorState.prototype.up = function () {
+        this.state.up();
+        return this;
+    };
+    CursorState.prototype.down = function () {
+        this.state.down();
+        return this;
+    };
+    return CursorState;
+}());
+
+//# sourceMappingURL=cursor-state.service.js.map
+
+/***/ }),
+
+/***/ 267:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CursorPosition; });
+var CursorPosition = /** @class */ (function () {
+    function CursorPosition() {
+        this.handlers = [];
+    }
+    ;
+    CursorPosition.prototype.set = function (x, y) {
+        var _this = this;
+        this.positionX = x;
+        this.positionY = y;
+        if (this.handlers.length) {
+            this.handlers.forEach(function (fn) {
+                setTimeout(function () { return fn(_this.get()); }, 0);
+                return;
+            });
+        }
+        return this;
+    };
+    CursorPosition.prototype.get = function () {
+        return this.positionX && this.positionX ?
+            { x: this.positionX, y: this.positionY } :
+            undefined;
+    };
+    CursorPosition.prototype.setHandler = function () {
+        var fns = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            fns[_i] = arguments[_i];
+        }
+        this.handlers = this.handlers.concat(fns);
+        return this;
+    };
+    CursorPosition.prototype.rmHandler = function (fn) {
+        this.handlers = this.handlers.filter(function (func) { return func !== fn; });
+        return this;
+    };
+    return CursorPosition;
+}());
+
+//# sourceMappingURL=cursor-position.js.map
+
+/***/ }),
+
+/***/ 268:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CursorPositionState; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
+
+var CursorPositionState = /** @class */ (function () {
+    function CursorPositionState() {
+        var _this = this;
+        this.stateMethodsHandler = function (name) {
+            return function (obj) {
+                return _this.fnsRegister[name].forEach(function (fn) {
+                    return fn(obj, _this);
+                });
+            };
+        };
+        this.fnsRegister = { toDisplay: [], toDashboard: [], toDisplayBorder: [], goOut: [] };
+        this.state = new __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default.a({
+            init: 'out',
+            transitions: [
+                { name: 'goOut', from: 'onDisplayBorder', to: 'outScreen' },
+                { name: 'goOut', from: 'onDisplay', to: 'outScreen' },
+                { name: 'goOut', from: 'onDashboard', to: 'outScreen' },
+                { name: 'toDisplayBorder', from: 'outScreen', to: 'onDisplayBorder' },
+                { name: 'toDisplayBorder', from: 'onDashboard', to: 'onDisplayBorder' },
+                { name: 'toDisplayBorder', from: 'onDisplay', to: 'onDisplayBorder' },
+                { name: 'toDisplay', from: 'onDisplayBorder', to: 'onDisplay' },
+                { name: 'toDisplay', from: 'onDashboard', to: 'onDisplay' },
+                { name: 'toDashboard', from: 'onDisplayBorder', to: 'onDashboard' },
+                { name: 'toDashboard', from: 'outScreen', to: 'onDashboard' },
+                { name: 'toDashboard', from: 'onDisplay', to: 'onDashboard' },
+            ],
+            methods: {
+                onGoOut: this.stateMethodsHandler('out'),
+                onToDisplayBorder: this.stateMethodsHandler('displayBorder'),
+                onToDisplay: this.stateMethodsHandler('display'),
+                onToDashboard: this.stateMethodsHandler('dashboard'),
+            }
+        });
+    }
+    CursorPositionState.prototype.setFns = function (name) {
+        var fns = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            fns[_i - 1] = arguments[_i];
+        }
+        var oldFns = this.fnsRegister[name];
+        this.fnsRegister[name] = oldFns.concat(fns);
+        return this;
+    };
+    CursorPositionState.prototype.toDashboard = function () {
+        this.state.toDashboard();
+        return this;
+    };
+    CursorPositionState.prototype.toDisplay = function () {
+        this.state.toDisplay();
+        return this;
+    };
+    CursorPositionState.prototype.toDisplayBorder = function () {
+        this.state.toDisplayBorder();
+        return this;
+    };
+    CursorPositionState.prototype.goOut = function () {
+        this.state.goOut();
+        return this;
+    };
+    return CursorPositionState;
+}());
+
+//# sourceMappingURL=cursor-position-state.js.map
+
+/***/ }),
+
+/***/ 269:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnerRegister; });
+var Listner = /** @class */ (function () {
+    function Listner(_a) {
+        var target = _a.target, event = _a.event, fn = _a.fn, rmFunc = _a.rmFunc;
+        this.target = target;
+        this.event = event;
+        this.fn = fn;
+        this.rmFunc = rmFunc;
+    }
+    ;
+    Listner.prototype.getConfig = function () {
+        return {
+            target: this.target,
+            event: this.event,
+            fn: this.fn,
+            rmFunc: this.rmFunc,
+        };
+    };
+    Listner.prototype.compare = function (listner) {
+        var _this = this;
+        return !Object.keys(listner).find(function (v) {
+            return listner[v] !== _this[v];
+        });
+    };
+    return Listner;
+}());
+var ListnerRegister = /** @class */ (function () {
+    function ListnerRegister() {
+        this.register = [];
+    }
+    ;
+    Object.defineProperty(ListnerRegister.prototype, "length", {
+        get: function () {
+            return this.register.length;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ListnerRegister.prototype.find = function (listner) {
+        return this.register.find(function (v) { return v.compare(listner); });
+    };
+    ListnerRegister.prototype.add = function (listner, callback) {
+        if (this.has(listner))
+            return callback(new Error('Instance already exists'));
+        var arr = this.register.slice();
+        this.register = arr.concat([new Listner(listner)]);
+        return callback(null, this);
+    };
+    ListnerRegister.prototype.has = function (listner) {
+        return !!this.find(listner);
+    };
+    ListnerRegister.prototype.remove = function (listner) {
+        var instance = this.find(listner);
+        if (!instance)
+            return false;
+        this.register = this.register.filter(function (i) { return i !== instance; });
+        return instance.getConfig();
+    };
+    ListnerRegister.prototype.clear = function () {
+        this.register = [];
+        return this;
+    };
+    ListnerRegister.prototype.forEach = function (fn) {
+        this.register.slice().forEach(fn);
+        return this;
+    };
+    return ListnerRegister;
+}());
+
+//# sourceMappingURL=listner-register.class.js.map
+
+/***/ }),
+
+/***/ 295:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(299);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var ComponentsModule = /** @class */ (function () {
+    function ComponentsModule() {
+    }
+    ComponentsModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__["a" /* MonstersModule */], __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__["a" /* TrinketsModule */], __WEBPACK_IMPORTED_MODULE_3__game_game_module__["a" /* GameModule */], __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__["a" /* ItemHolderModule */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__["a" /* MonstersModule */], __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__["a" /* TrinketsModule */], __WEBPACK_IMPORTED_MODULE_3__game_game_module__["a" /* GameModule */], __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__["a" /* ItemHolderModule */]]
+        })
+    ], ComponentsModule);
+    return ComponentsModule;
+}());
+
+;
+//# sourceMappingURL=components.module.js.map
+
+/***/ }),
+
+/***/ 296:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_component__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__monsters_host_directive__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__monster_part_directive__ = __webpack_require__(162);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+// List of Monsters
+
+
+
+
+
+var MonstersModule = /** @class */ (function () {
+    function MonstersModule() {
+    }
+    MonstersModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */], __WEBPACK_IMPORTED_MODULE_3__monsters_component__["a" /* MonstersComponent */], __WEBPACK_IMPORTED_MODULE_4__monsters_host_directive__["a" /* MonstersHostDirective */], __WEBPACK_IMPORTED_MODULE_5__monster_part_directive__["a" /* MonsterPartDirective */]],
+            providers: [],
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_3__monsters_component__["a" /* MonstersComponent */]]
+        })
+    ], MonstersModule);
+    return MonstersModule;
+}());
+
+//# sourceMappingURL=monsters.module.js.map
+
+/***/ }),
+
+/***/ 297:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trinkets_component__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__trinket_host_directive__ = __webpack_require__(152);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var TrinketsModule = /** @class */ (function () {
+    function TrinketsModule() {
+    }
+    TrinketsModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_4__trinket_host_directive__["a" /* TrinketHostDirective */]],
+            providers: [],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]],
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_3__trinkets_component__["a" /* TrinketsComponent */]]
+        })
+    ], TrinketsModule);
+    return TrinketsModule;
+}());
+
+//# sourceMappingURL=trinkets.module.js.map
+
+/***/ }),
+
+/***/ 298:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+// import { CursorStateService } from './cursor-state.service';
+var GameModule = /** @class */ (function () {
+    function GameModule() {
+    }
+    GameModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [],
+            // providers: [GameService, CursorStateService],
+            imports: [],
+            entryComponents: [],
+            exports: []
+        })
+    ], GameModule);
+    return GameModule;
+}());
+
+//# sourceMappingURL=game.module.js.map
+
+/***/ }),
+
+/***/ 299:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(166);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ItemHolderModule = /** @class */ (function () {
+    function ItemHolderModule() {
+    }
+    ItemHolderModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_1__item_holder_component__["a" /* ItemHolderComponent */], __WEBPACK_IMPORTED_MODULE_2__template_host_directive__["a" /* TemplateHostDriective */]],
+            providers: [],
+            imports: [],
+            entryComponents: [],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__item_holder_component__["a" /* ItemHolderComponent */], __WEBPACK_IMPORTED_MODULE_2__template_host_directive__["a" /* TemplateHostDriective */]]
+        })
+    ], ItemHolderModule);
+    return ItemHolderModule;
+}());
+
+//# sourceMappingURL=item-holder.module.js.map
+
+/***/ }),
+
+/***/ 300:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModelModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(154);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var ModelModule = /** @class */ (function () {
+    function ModelModule() {
+    }
+    ModelModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            imports: [],
+            providers: [__WEBPACK_IMPORTED_MODULE_1__element_repository__["a" /* ElementRepository */]]
+        })
+    ], ModelModule);
+    return ModelModule;
+}());
+
+;
+//# sourceMappingURL=model.module.js.map
+
+/***/ }),
+
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_game_game__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -448,13 +1517,13 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 281:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__game_game__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -488,29 +1557,27 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 283:
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/home/ned4ded/dev/monsters.v.2/src/components/components.module.js'");
-
-/***/ }),
-
-/***/ 284:
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/home/ned4ded/dev/monsters.v.2/src/model/model.module.js.map'");
-
-/***/ }),
-
 /***/ 50:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__temp_zombie__ = __webpack_require__(244);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_model_elements_repository__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__ = __webpack_require__(165);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -524,36 +1591,122 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-/**
- * Generated class for the GamePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var GamePage = /** @class */ (function () {
-    function GamePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
+
+
+var GamePage = /** @class */ (function (_super) {
+    __extends(GamePage, _super);
+    function GamePage(navCtrl, navParams, renderer, componentFactoryResolver, injector, app) {
+        var _this = _super.call(this, renderer) || this;
+        _this.navCtrl = navCtrl;
+        _this.navParams = navParams;
+        _this.renderer = renderer;
+        _this.componentFactoryResolver = componentFactoryResolver;
+        _this.injector = injector;
+        _this.app = app;
+        _this.glasses = null;
+        _this.monsterId = 2;
+        return _this;
     }
     GamePage.prototype.ngAfterViewInit = function () {
-        var svg = __WEBPACK_IMPORTED_MODULE_2__temp_zombie__["a" /* default */].builder.getDom();
-        var target = document.getElementById('nb-target');
-        target.appendChild(svg);
-        var element = __WEBPACK_IMPORTED_MODULE_2__temp_zombie__["a" /* default */].ast;
-        console.log(__WEBPACK_IMPORTED_MODULE_3__app_model_elements_repository__["a" /* default */]);
+        var _this = this;
+        var instances = this.trinkets.getInstances();
+        var setHolderPosition = function () {
+            var _a = _this.position.get(), x = _a.x, y = _a.y;
+            var _b = _this.holder.getSize(), width = _b.width, height = _b.height;
+            _this.holder.setAttributes({
+                style: "left: " + (x - width / 2) + "px; top: " + (y - height / 2) + "px",
+            });
+        };
+        var glassesOn = false;
+        var displayH = document.getElementById('nb-target').offsetHeight;
+        var isOnDisplay = function (y) { return displayH > y ? true : false; };
+        var parts = this.monsters.getCurrentMonster().getParts();
+        var innerEyes = {
+            renderer: this.renderer,
+            eyeLeft: parts.find(function (p) { return p.type === 'eyeLeft'; }).element,
+            eyeRight: parts.find(function (p) { return p.type === 'eyeRight'; }).element,
+            close: function () {
+                this.renderer.setAttribute(this.eyeLeft, 'visibility', 'hidden');
+                this.renderer.setAttribute(this.eyeRight, 'visibility', 'hidden');
+            },
+            open: function () {
+                this.renderer.setAttribute(this.eyeLeft, 'visibility', 'visible');
+                this.renderer.setAttribute(this.eyeRight, 'visibility', 'visible');
+            },
+        };
+        var eyes = parts.find(function (p) { return p.type === 'eyes' && p.name == 'eyes'; });
+        var eyesContainer = parts.find(function (p) { return p.name === 'container'; });
+        var instanceFunc = function (_a) {
+            var component = _a.component, node = _a.node;
+            var rmMouseDown = _this.renderer.listen(node, 'mousedown', function (ev) {
+                _this.holder.loadComponent(component);
+                setHolderPosition();
+                _this.renderer.addClass(node, 'blocked');
+                var unblock = _this.renderer.listen(node, 'click', function (ev) { return ev.preventDefault(); });
+                var rmMouseMove = _this.renderer.listen(window, 'mousemove', setHolderPosition);
+                var rmMouseUp = _this.renderer.listen(window, 'mouseup', function (_a) {
+                    var clientY = _a.clientY;
+                    if (isOnDisplay(clientY)) {
+                        _this.holder.clear();
+                        rmMouseMove();
+                        rmMouseUp();
+                        rmMouseDown();
+                        glassesOn = true;
+                        innerEyes.close();
+                        var _b = eyes.element.getBBox(), width = _b.width, height = _b.height, x = _b.x, y = _b.y;
+                        var viewContainerRef = eyes.viewContainerRef;
+                        var factory = _this.componentFactoryResolver.resolveComponentFactory(component);
+                        var ref = factory.create(_this.injector, [], eyesContainer.element);
+                        _this.app.attachView(ref.hostView);
+                        // const { instance } = viewContainerRef.createComponent(factory);
+                        var glassesInstance = ref.instance.node.firstChild;
+                        _this.renderer.setAttribute(glassesInstance, 'width', (width * 2).toString());
+                        _this.renderer.setAttribute(glassesInstance, 'height', (height * 2).toString());
+                        _this.renderer.setAttribute(glassesInstance, 'x', (x - width / 2).toString());
+                        _this.renderer.setAttribute(glassesInstance, 'y', (y - height / 2).toString());
+                    }
+                    else {
+                        _this.renderer.removeClass(node, 'blocked');
+                        _this.holder.clear();
+                        unblock();
+                        rmMouseMove();
+                        rmMouseUp();
+                    }
+                    return;
+                });
+                return;
+            });
+        };
+        instances.forEach(instanceFunc);
+        // this.holder.loadComponent(component);
+        // this.holder.clear();
     };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]),
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]) === "function" && _a || Object)
+    ], GamePage.prototype, "trinkets", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]),
+        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]) === "function" && _b || Object)
+    ], GamePage.prototype, "monsters", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]),
+        __metadata("design:type", typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]) === "function" && _c || Object)
+    ], GamePage.prototype, "holder", void 0);
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-game',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <div id="nb-target" class="screen zombie__screen">\n      <div id="on-screen">\n\n        <!-- MONSTER START -->\n        <!-- <svg id="monster" class="zombie zombie__screen svg-container" viewBox="0 0 233.58 324.24" height="95%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n        	<g class="zombie">\n        		<path class="body" d="M260.9,280.8c0-64.94-53.13-118.07-118.07-118.07h0c-64.94,0-118.07,53.13-118.07,118.07V539.15H260.9Z"></path>\n        		<g class="head">\n        			<g class="head-figure">\n        				<g class="hair">\n        					<polygon class="hair-part" points="132.33 -0.05 96.08 48.13 87.64 48.13 79.21 48.13 132.33 -0.05"></polygon>\n        					<polygon class="hair-part" points="145.47 -0.05 109.21 48.13 100.78 48.13 92.34 48.13 145.47 -0.05"></polygon>\n        					<polygon class="hair-part" points="158.6 -0.05 122.35 48.13 113.91 48.13 105.48 48.13 158.6 -0.05"></polygon>\n        				</g>\n        				<rect class="face" x="18.13" y="47.84" width="168.14" height="168.14" rx="52.98" ry="52.98"></rect>\n        			</g>\n        			<g class="eyes">\n        				<g class="eye eye--left">\n                  <clipPath id="eyeball--left-mask">\n                    <ellipse class="" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n                  </clipPath>\n                  <ellipse class="eyeball" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n        					<circle class="pupil pupil--left" cx="74.18" cy="97.32" r="8.32"></circle>\n                  <ellipse clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="66.08" cy="64" rx="27.81" ry="16.86"></ellipse>\n        				</g>\n        				<g class="eye eye--right">\n                  <clipPath id="eyeball--right-mask">\n                    <ellipse class="" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n                  </clipPath>\n\n                  <ellipse class="eyeball" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n        					<circle class="pupil pupil--right" cx="142.93" cy="97.32" r="8.32"></circle>\n                  <ellipse clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="135.7" cy="64" rx="27.81" ry="16.86"></ellipse>\n        				</g>\n        			</g>\n        			<path class="nose" d="M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z"></path>\n        			<path class="mouth" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z"></path>\n        			<g class="steams decor__steams">\n        				<g class="steam steam--right">\n        					<line class="steam-part" x1="128.09" y1="159.01" x2="162.15" y2="124.95"></line>\n        					<line class="steam-part" x1="130.88" y1="148.79" x2="138.31" y2="156.22"></line>\n        					<line class="steam-part" x1="136.14" y1="143.53" x2="143.57" y2="150.96"></line>\n        					<line class="steam-part" x1="141.4" y1="138.26" x2="148.84" y2="145.69"></line>\n        					<line class="steam-part" x1="146.67" y1="133" x2="154.1" y2="140.43"></line>\n        					<line class="steam-part" x1="151.93" y1="127.74" x2="159.36" y2="135.17"></line>\n        				</g>\n        				<g class="steam steam--left">\n        					<line class="steam-part" x1="40.51" y1="170.93" x2="74.57" y2="204.99"></line>\n        					<line class="steam-part" x1="50.73" y1="173.71" x2="43.3" y2="181.14"></line>\n        					<line class="steam-part" x1="55.99" y1="178.98" x2="48.56" y2="186.41"></line>\n        					<line class="steam-part" x1="61.26" y1="184.24" x2="53.84" y2="191.67"></line>\n        					<line class="steam-part" x1="66.52" y1="189.5" x2="59.09" y2="196.94"></line>\n        					<line class="steam-part" x1="71.79" y1="194.77" x2="64.35" y2="202.2"></line>\n        				</g>\n        			</g>\n        		</g>\n        	</g>\n        </svg> -->\n        <!-- MONSTER END -->\n\n      </div>\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <ul class="panel">\n        <!-- <li *ngFor="let item of getItems()" class="panel__item{{item.el.doubled ? \' panel__doubled\' : \'\'}}">\n            <img\n            id="{{item.id}}"\n            src="assets/imgs/GameItems/{{item.el.name}}.svg"\n            alt="image of {{item.el.name}}"\n            data-blocked="false"\n            class="GameItem\n                  {{item.el.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.el.name}}">\n        </li> -->\n        <li class="panel__item panel__item--fraud">\n\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/,
+            selector: 'page-game',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <item-holder></item-holder>\n    <div id="nb-target" class="screen zombie__screen">\n      <div id="on-screen">\n        <monster [monsterId]="monsterId"></monster>\n      </div>\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <trinkets></trinkets>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/,
+            providers: [],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _j || Object])
     ], GamePage);
     return GamePage;
-}());
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
+}(__WEBPACK_IMPORTED_MODULE_4__components_game_game_service__["a" /* Game */]));
 
 //# sourceMappingURL=game.js.map
 
 /***/ })
 
-},[195]);
+},[210]);
 //# sourceMappingURL=main.js.map

@@ -7,7 +7,8 @@ import uuid from 'uuid';
 })
 export class MonsterPartDirective {
   @Input('part-type') type: string;
-  
+  @Input('part-name') name: string;
+
   readonly element: HTMLElement;
   readonly id = uuid();
 
