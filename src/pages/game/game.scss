@@ -32,11 +32,11 @@ page-game {
   }
 
   .container {
-    position: fixed;
+    overflow: hidden;
     display: flex;
     flex-flow: column nowrap;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 
   }
 
@@ -76,14 +76,10 @@ page-game {
   .screen {
     position: relative;
     z-index: 0;
-    flex-grow: 2;
     width: 100%;
+    flex: 1;
 
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
+    display: block;
   }
 
   .placeholder {
@@ -139,6 +135,7 @@ page-game {
     &-container {
       position: relative;
       z-index: 0;
+      flex: 0 0 200px;
     }
   }
 
