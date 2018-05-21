@@ -25688,10 +25688,38 @@ monster {
   z-index: 0;
 }
 
+alien .alien {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow: visible;
+}
+
+alien .alien__screen {
+  background-color: black;
+}
+
+alien .alien .head--figure {
+  fill: #6fc055;
+}
+
+alien .alien .mouth {
+  fill: #f24943;
+}
+
+alien .alien .iris {
+  fill: #586ab1;
+}
+
+alien .alien .body--figure {
+  fill: #6fc055;
+}
+
 skeleton .skeleton {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  overflow: visible;
 }
 
 skeleton .skeleton__screen {

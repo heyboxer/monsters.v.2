@@ -1,0 +1,27 @@
+alien {
+  .alien {
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: visible;
+
+    &__screen {
+      background-color: black;
+    }
+
+    & .head--figure {
+      fill: #6fc055;
+    }
+
+    & .mouth {
+      fill: #f24943,
+    }
+
+    & .iris {
+      fill: #586ab1,
+    }
+
+    & .body--figure {
+      fill: #6fc055;
+    }
+  }
+}

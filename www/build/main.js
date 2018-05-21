@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,16 +13,16 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 109;
+webpackEmptyAsyncContext.id = 110;
 
 /***/ }),
 
-/***/ 150:
+/***/ 151:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/game/game.module": [
-		303,
+		305,
 		0
 	]
 };
@@ -37,19 +37,19 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 150;
+webpackAsyncContext.id = 151;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 151:
+/***/ 152:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(261);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -116,7 +116,7 @@ var TrinketsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 152:
+/***/ 153:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -153,13 +153,13 @@ var TrinketHostDirective = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 153:
+/***/ 154:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlassComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(262);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -199,7 +199,7 @@ var GlassComponent = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 154:
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -229,14 +229,14 @@ var ElementRepository = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 158:
+/***/ 159:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_service__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_service__ = __webpack_require__(264);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -297,7 +297,7 @@ var MonstersComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 159:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -330,13 +330,13 @@ var MonstersHostDirective = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 160:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZombieComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(78);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -368,7 +368,7 @@ var ZombieComponent = /** @class */ (function (_super) {
     }
     ZombieComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'zombie',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/'<svg width="auto" height="95%" viewBox="0 0 233.58 324.24" class="zombie svg-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <g class="">\n    <path monster-part part-type="body" class="body" d="M260.9,280.8c0-64.94-53.13-118.07-118.07-118.07h0c-64.94,0-118.07,53.13-118.07,118.07V539.15H260.9Z"></path>\n    <g monster-part part-type="head" class="head">\n      <g monster-part part-type="head-figure" class="head-figure">\n        <g class="hair">\n          <polygon points="132.33 -0.05 96.08 48.13 87.64 48.13 79.21 48.13 132.33 -0.05" class="hair-part"></polygon>\n          <polygon points="145.47 -0.05 109.21 48.13 100.78 48.13 92.34 48.13 145.47 -0.05" class="hair-part"></polygon>\n          <polygon points="158.6 -0.05 122.35 48.13 113.91 48.13 105.48 48.13 158.6 -0.05" class="hair-part"></polygon>\n        </g>\n        <rect monster-part part-type="face" x="18.13" y="47.84" width="168.14" height="168.14" rx="52.98" ry="52.98" class="face"></rect>\n      </g>\n      <g monster-part part-type="eyes" part-name="eyes" class="eyes">\n        <g monster-part part-type="eyeLeft" class="eye eye--left" visibility="visible">\n          <ellipse monster-part part-type="eyeball" cx="66.08" cy="97.54" rx="27.81" ry="16.86" class="eyeball"></ellipse>\n          <circle monster-part part-type="pupil" cx="74.18" cy="97.32" r="8.32" class="pupil"></circle>\n        </g>\n        <g monster-part part-type="eyeRight" class="eye eye--right" visibility="visible">\n          <ellipse monster-part part-type="eyeball" cx="135.7" cy="97.54" rx="27.81" ry="16.86" class="eyeball"></ellipse>\n          <circle monster-part part-type="pupil" cx="142.93" cy="97.32" r="8.32" class="pupil"></circle>\n        </g>\n        <g monster-part part-type="eyes" part-name="container"></g>\n      </g>\n      <path monster-part part-type="nose" d="M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z" class="nose"></path>\n      <path monster-part part-type="mouth" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z" class="mouth"></path>\n      <g class="steams">\n        <g class="steam steam--right">\n          <line x1="128.09" y1="159.01" x2="162.15" y2="124.95" class="steam-part"></line>\n          <line x1="130.88" y1="148.79" x2="138.31" y2="156.22" class="steam-part"></line>\n          <line x1="136.14" y1="143.53" x2="143.57" y2="150.96" class="steam-part"></line>\n          <line x1="141.4" y1="138.26" x2="148.84" y2="145.69" class="steam-part"></line>\n          <line x1="146.67" y1="133" x2="154.1" y2="140.43" class="steam-part"></line>\n          <line x1="151.93" y1="127.74" x2="159.36" y2="135.17" class="steam-part"></line>\n        </g>\n      </g>\n    </g>\n  </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/
+            selector: 'zombie',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/'<svg width="auto" height="95%" viewBox="0 0 233.58 324.24" class="zombie svg-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <g class="">\n    <path monster-part part-type="body" class="body" d="M260.9,280.8c0-64.94-53.13-118.07-118.07-118.07h0c-64.94,0-118.07,53.13-118.07,118.07V539.15H260.9Z"></path>\n    <g monster-part part-type="head" class="head">\n      <g monster-part part-type="head-figure" class="head-figure">\n        <g class="hair">\n          <polygon points="132.33 -0.05 96.08 48.13 87.64 48.13 79.21 48.13 132.33 -0.05" class="hair-part"></polygon>\n          <polygon points="145.47 -0.05 109.21 48.13 100.78 48.13 92.34 48.13 145.47 -0.05" class="hair-part"></polygon>\n          <polygon points="158.6 -0.05 122.35 48.13 113.91 48.13 105.48 48.13 158.6 -0.05" class="hair-part"></polygon>\n        </g>\n        <rect monster-part part-type="face" x="18.13" y="47.84" width="168.14" height="168.14" rx="52.98" ry="52.98" class="face"></rect>\n      </g>\n      <g monster-part part-type="eyes" part-name="eyes" class="eyes">\n        <g monster-part part-type="eyeLeft" class="eye eye--left" visibility="visible">\n          <ellipse monster-part part-type="eyeball" cx="66.08" cy="97.54" rx="27.81" ry="16.86" class="eyeball"></ellipse>\n          <circle monster-part part-type="pupil" cx="74.18" cy="97.32" r="8.32" class="pupil"></circle>\n        </g>\n        <g monster-part part-type="eyeRight" class="eye eye--right" visibility="visible">\n          <ellipse monster-part part-type="eyeball" cx="135.7" cy="97.54" rx="27.81" ry="16.86" class="eyeball"></ellipse>\n          <circle monster-part part-type="pupil" cx="142.93" cy="97.32" r="8.32" class="pupil"></circle>\n        </g>\n      </g>\n      <g monster-part part-type="eyes" part-name="container"></g>\n      <path monster-part part-type="nose" d="M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z" class="nose"></path>\n      <path monster-part part-type="mouth" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z" class="mouth"></path>\n      <g class="steams">\n        <g class="steam steam--right">\n          <line x1="128.09" y1="159.01" x2="162.15" y2="124.95" class="steam-part"></line>\n          <line x1="130.88" y1="148.79" x2="138.31" y2="156.22" class="steam-part"></line>\n          <line x1="136.14" y1="143.53" x2="143.57" y2="150.96" class="steam-part"></line>\n          <line x1="141.4" y1="138.26" x2="148.84" y2="145.69" class="steam-part"></line>\n          <line x1="146.67" y1="133" x2="154.1" y2="140.43" class="steam-part"></line>\n          <line x1="151.93" y1="127.74" x2="159.36" y2="135.17" class="steam-part"></line>\n        </g>\n      </g>\n    </g>\n  </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]])
     ], ZombieComponent);
@@ -379,60 +379,13 @@ var ZombieComponent = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 161:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(162);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var MonsterModel = /** @class */ (function () {
-    function MonsterModel(name, element) {
-        this.name = name;
-        this.element = element;
-        this.eachElement = function (arr, cb) {
-            return Array.from(arr).forEach(function (v) {
-                return cb(v);
-            });
-        };
-    }
-    MonsterModel.prototype.ngAfterViewInit = function () { };
-    MonsterModel.prototype.getParts = function () {
-        return this.parts;
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__monster_part_directive__["a" /* MonsterPartDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
-    ], MonsterModel.prototype, "parts", void 0);
-    MonsterModel = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
-        __metadata("design:paramtypes", [Object, HTMLElement])
-    ], MonsterModel);
-    return MonsterModel;
-}());
-
-//# sourceMappingURL=monster.model.js.map
-
-/***/ }),
-
 /***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterPartDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -478,7 +431,7 @@ var MonsterPartDirective = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SkeletonComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(78);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -510,7 +463,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
     }
     SkeletonComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'skeleton',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/skeleton/skeleton.html"*/'<svg class="skeleton svg-container" viewBox="0 0 200.62 322.01" width="auto" height="90%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n   <g class="">\n      <g class="head">\n         <ellipse class="head head--figure" cx="99.95" cy="67.37" rx="89.2" ry="67.38"></ellipse>\n         <g class="content">\n            <g class="jaws">\n               <g class="jaw jaw--top">\n                  <rect class="jaw" x="43.33" y="95.52" width="113.24" height="63.9"></rect>\n                  <g class="teeth">\n                     <rect class="tooth" x="53.24" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="69.77" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="86.3" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="102.83" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="119.37" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="135.9" y="143.29" width="10.75" height="10.75"></rect>\n                  </g>\n               </g>\n               <g class="jaw jaw--bottom">\n                  <rect class="jaw" x="43.33" y="169.54" width="113.24" height="28.52"></rect>\n                  <g class="teeth">\n                     <rect class="tooth" x="53.24" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="69.77" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="86.3" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="102.83" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="119.37" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="135.9" y="178.43" width="10.75" height="10.75"></rect>\n                  </g>\n               </g>\n            </g>\n            <g class="eyes">\n               <g class="eye eye--right">\n                  <circle class="eyeball" cx="129.44" cy="66.37" r="25.31"></circle>\n                  <circle class="pupil" cx="136.88" cy="58.14" r="10.09"></circle>\n               </g>\n               <g class="eye eye--left">\n                  <circle class="eyeball" cx="70.45" cy="66.37" r="25.31"></circle>\n                  <circle class="pupil" cx="72.84" cy="76.61" r="10.09"></circle>\n               </g>\n            </g>\n            <polygon class="nose" points="99.95 91.72 112.37 113.24 124.8 134.76 99.95 134.76 75.09 134.76 87.52 113.24 99.95 91.72"></polygon>\n         </g>\n      </g>\n      <g class="body">\n         <rect class="rib" y="227.64" width="200.62" height="21.55"></rect>\n         <rect class="rib" y="264.11" width="200.62" height="21.55"></rect>\n         <rect class="rib" y="300.59" width="200.62" height="21.55"></rect>\n      </g>\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/skeleton/skeleton.html"*/
+            selector: 'skeleton',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/skeleton/skeleton.html"*/'<svg class="skeleton svg-container" viewBox="0 0 200.62 322.01" width="auto" height="90%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n   <g class="">\n      <g class="head">\n         <ellipse class="head head--figure" cx="99.95" cy="67.37" rx="89.2" ry="67.38"></ellipse>\n         <g class="content">\n            <g class="jaws">\n               <g class="jaw jaw--top">\n                  <rect class="jaw" x="43.33" y="95.52" width="113.24" height="63.9"></rect>\n                  <g class="teeth">\n                     <rect class="tooth" x="53.24" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="69.77" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="86.3" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="102.83" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="119.37" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="135.9" y="143.29" width="10.75" height="10.75"></rect>\n                  </g>\n               </g>\n               <g class="jaw jaw--bottom">\n                  <rect class="jaw" x="43.33" y="169.54" width="113.24" height="28.52"></rect>\n                  <g class="teeth">\n                     <rect class="tooth" x="53.24" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="69.77" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="86.3" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="102.83" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="119.37" y="178.43" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="135.9" y="178.43" width="10.75" height="10.75"></rect>\n                  </g>\n               </g>\n            </g>\n            <g monster-part part-type="eyes" part-name="eyes" class="eyes">\n               <g monster-part part-type="eyeRight" class="eye eye--right">\n                  <circle class="eyeball" cx="129.44" cy="66.37" r="25.31"></circle>\n                  <circle class="pupil" cx="136.88" cy="58.14" r="10.09"></circle>\n               </g>\n               <g monster-part part-type="eyeLeft" class="eye eye--left">\n                  <circle class="eyeball" cx="70.45" cy="66.37" r="25.31"></circle>\n                  <circle class="pupil" cx="72.84" cy="76.61" r="10.09"></circle>\n               </g>\n            </g>\n            <g monster-part part-type="eyes" part-name="container"></g>\n            <polygon class="nose" points="99.95 91.72 112.37 113.24 124.8 134.76 99.95 134.76 75.09 134.76 87.52 113.24 99.95 91.72"></polygon>\n         </g>\n      </g>\n      <g class="body">\n         <rect class="rib" y="227.64" width="200.62" height="21.55"></rect>\n         <rect class="rib" y="264.11" width="200.62" height="21.55"></rect>\n         <rect class="rib" y="300.59" width="200.62" height="21.55"></rect>\n      </g>\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/skeleton/skeleton.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]])
     ], SkeletonComponent);
@@ -521,13 +474,219 @@ var SkeletonComponent = /** @class */ (function (_super) {
 
 /***/ }),
 
+/***/ 164:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlienComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(78);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AlienComponent = /** @class */ (function (_super) {
+    __extends(AlienComponent, _super);
+    function AlienComponent(el, renderer) {
+        var _this = _super.call(this, 'alien', el.nativeElement) || this;
+        _this.el = el;
+        _this.renderer = renderer;
+        return _this;
+    }
+    AlienComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'alien',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/alien/alien.html"*/'<svg class="alien svg-container" viewBox="0 0 165.37 302.36" width="80%" height="80%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n	<g class="">\n		<g class="head">\n			<path class="head head--figure" d="M82.67,153.65a39.12,39.12,0,0,1-33.88-19.56L5.25,58.69A39.13,39.13,0,0,1,39.13,0H126.2a39.13,39.13,0,0,1,33.88,58.69l-43.53,75.4A39.13,39.13,0,0,1,82.67,153.65Z"></path>\n			<g class="content">\n				<path class="mouth" d="M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z"></path>\n				<g monster-part part-type="eyes" part-name="eyes" class="eyes">\n					<g monster-part part-type="eyeLeft" class="eye eye--left">\n						<path class="eyeball" d="M25.19,26.89A52.14,52.14,0,0,0,77.36,79.06,52.14,52.14,0,0,0,25.19,26.89Z"></path>\n						<circle class="iris" cx="51.86" cy="53.61" r="15.32"></circle>\n						<circle class="pupil" cx="51.86" cy="53.61" r="7.21"></circle>\n					</g>\n					<g monster-part part-type="eyeRight" class="eye eye--right">\n						<path class="eyeball" d="M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z"></path>\n						<circle class="iris" cx="113.53" cy="53.61" r="15.32"></circle>\n						<circle class="pupil" cx="113.53" cy="53.61" r="4.75"></circle>\n					</g>\n				</g>\n        <g monster-part part-type="eyes" part-name="container"></g>\n				<g class="nose">\n					<circle class="nostril nostril--left" cx="76.75" cy="99.18" r="2.49"></circle>\n					<circle class="nostril nostril--right" cx="88.6" cy="99.18" r="2.49"></circle>\n				</g>\n			</g>\n		</g>\n		<ellipse class="body body--figure" cx="82.66" cy="285.78" rx="50.36" ry="139.24"></ellipse>\n	</g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/alien/alien.html"*/
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _b || Object])
+    ], AlienComponent);
+    return AlienComponent;
+    var _a, _b;
+}(__WEBPACK_IMPORTED_MODULE_1__monster_model__["a" /* MonsterModel */]));
+
+//# sourceMappingURL=alien.js.map
+
+/***/ }),
+
 /***/ 165:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameFinistStateMachine; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
+
+var GameFinistStateMachine = /** @class */ (function () {
+    function GameFinistStateMachine() {
+        var _this = this;
+        this.stateMethodsHandler = function (name) {
+            return function (obj) {
+                return _this.fnsRegister[name].forEach(function (fn) {
+                    return fn(obj, _this);
+                });
+            };
+        };
+        this.fnsRegister = { select: [], grab: [], moveIn: [], moveOut: [], destroy: [], place: [], unselect: [] };
+        this.state = new __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default.a({
+            init: 'idle',
+            transitions: [
+                { name: 'select', from: 'idle', to: 'itemSelected' },
+                { name: 'unselect', from: 'itemSelected', to: 'idle' },
+                { name: 'grab', from: 'itemSelected', to: 'draggedOut' },
+                { name: 'moveIn', from: 'draggedOut', to: 'draggedIn' },
+                { name: 'moveOut', from: 'draggedIn', to: 'draggedOut' },
+                { name: 'destroy', from: 'draggedOut', to: 'idle' },
+                { name: 'place', from: 'draggedIn', to: 'idle' },
+            ],
+            methods: {
+                onSelect: this.stateMethodsHandler('select'),
+                onUnselect: this.stateMethodsHandler('unselect'),
+                onGrab: this.stateMethodsHandler('grab'),
+                onMoveIn: this.stateMethodsHandler('moveIn'),
+                onMoveOut: this.stateMethodsHandler('moveOut'),
+                onDestroy: this.stateMethodsHandler('destroy'),
+                onPlace: this.stateMethodsHandler('place'),
+            }
+        });
+    }
+    ;
+    GameFinistStateMachine.prototype.setFns = function (name) {
+        var fns = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            fns[_i - 1] = arguments[_i];
+        }
+        var oldFns = this.fnsRegister[name];
+        this.fnsRegister[name] = oldFns.concat(fns);
+        return this;
+    };
+    GameFinistStateMachine.prototype.select = function () {
+        this.state.select();
+        return this;
+    };
+    GameFinistStateMachine.prototype.unselect = function () {
+        this.state.unselect();
+        return this;
+    };
+    GameFinistStateMachine.prototype.grab = function () {
+        this.state.grab();
+        return this;
+    };
+    GameFinistStateMachine.prototype.moveOut = function () {
+        this.state.moveOut();
+        return this;
+    };
+    GameFinistStateMachine.prototype.moveIn = function () {
+        this.state.moveIn();
+        return this;
+    };
+    GameFinistStateMachine.prototype.destroy = function () {
+        this.state.destroy();
+        return this;
+    };
+    GameFinistStateMachine.prototype.place = function () {
+        this.state.place();
+        return this;
+    };
+    GameFinistStateMachine.prototype.isIdle = function () {
+        return this.state.is('idle');
+    };
+    GameFinistStateMachine.prototype.isDraggedOut = function () {
+        return this.state.is('draggedOut');
+    };
+    GameFinistStateMachine.prototype.isDraggedIn = function () {
+        return this.state.is('draggedIn');
+    };
+    return GameFinistStateMachine;
+}());
+
+//# sourceMappingURL=game-fsm.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnersHandler; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(270);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+
+var ListnersHandler = /** @class */ (function () {
+    function ListnersHandler(r) {
+        this.r = r;
+        this.register = new __WEBPACK_IMPORTED_MODULE_0__listner_register_class__["a" /* ListnerRegister */]();
+    }
+    ;
+    ListnersHandler.prototype.addListner = function (target, event, fn) {
+        var config = { target: target, event: event, fn: fn };
+        if (!this.register.has(config)) {
+            var rmFunc = this.r.listen(target, event, fn);
+            this.register.add(__assign({}, config, { rmFunc: rmFunc }), function (err, register) {
+                if (err)
+                    console.log(err);
+                return;
+            });
+            return true;
+        }
+        ;
+        return false;
+    };
+    ListnersHandler.prototype.removeListner = function (target, event, fn) {
+        var config = { target: target, event: event, fn: fn };
+        if (this.register.has(config)) {
+            var config_1 = { target: target, event: event, fn: fn };
+            this.register.remove(config_1).rmFunc();
+            return true;
+        }
+        return false;
+    };
+    ListnersHandler.prototype.removeListners = function () {
+        this.register.forEach(function (_a) {
+            var rmFunc = _a.rmFunc;
+            if (!rmFunc)
+                return;
+            return setTimeout(rmFunc, 0);
+        });
+        this.register.clear();
+        return;
+    };
+    return ListnersHandler;
+}());
+
+//# sourceMappingURL=listners-handler.js.map
+
+/***/ }),
+
+/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(168);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -583,7 +742,7 @@ var ItemHolderComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 166:
+/***/ 168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -616,13 +775,13 @@ var TemplateHostDriective = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 210:
+/***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(235);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -630,7 +789,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 233:
+/***/ 235:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -638,12 +797,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(301);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_game_game__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -706,13 +865,13 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 259:
+/***/ 261:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__glass_glass__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__glass_glass__ = __webpack_require__(154);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -733,6 +892,14 @@ var TrinketsService = /** @class */ (function () {
                 id: 1,
                 component: __WEBPACK_IMPORTED_MODULE_1__glass_glass__["a" /* GlassComponent */],
             },
+            {
+                id: 2,
+                component: __WEBPACK_IMPORTED_MODULE_1__glass_glass__["a" /* GlassComponent */],
+            },
+            {
+                id: 3,
+                component: __WEBPACK_IMPORTED_MODULE_1__glass_glass__["a" /* GlassComponent */],
+            },
         ];
     };
     TrinketsService = __decorate([
@@ -746,14 +913,14 @@ var TrinketsService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 260:
+/***/ 262:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(263);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -796,12 +963,12 @@ var ElementComponentModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 261:
+/***/ 263:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_uuid_v4__);
 
 var ElementModel = /** @class */ (function () {
@@ -834,14 +1001,15 @@ var ElementModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 262:
+/***/ 264:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(164);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -854,11 +1022,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MonstersService = /** @class */ (function () {
     function MonstersService() {
     }
     MonstersService.prototype.getMonsters = function () {
         return [
+            {
+                id: 1,
+                component: __WEBPACK_IMPORTED_MODULE_3__alien_alien__["a" /* AlienComponent */],
+            },
             {
                 id: 2,
                 component: __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */],
@@ -880,24 +1053,14 @@ var MonstersService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 265:
+/***/ 267:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_state_service__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cursor_position__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cursor_position_state__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__listner_register_class__ = __webpack_require__(269);
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
-};
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(166);
 
 
 
@@ -925,65 +1088,16 @@ var lib = {
 };
 var Game = /** @class */ (function () {
     function Game(renderer) {
-        this.cursor = new __WEBPACK_IMPORTED_MODULE_0__cursor_state_service__["a" /* CursorState */]();
-        this.cursorOnScreen = new __WEBPACK_IMPORTED_MODULE_2__cursor_position_state__["a" /* CursorPositionState */]();
-        this.register = new __WEBPACK_IMPORTED_MODULE_3__listner_register_class__["a" /* ListnerRegister */]();
-        this.position = new __WEBPACK_IMPORTED_MODULE_1__cursor_position__["a" /* CursorPosition */]();
+        this.cursor = new __WEBPACK_IMPORTED_MODULE_1__game_fsm__["a" /* GameFinistStateMachine */]();
+        this.position = new __WEBPACK_IMPORTED_MODULE_0__cursor_position__["a" /* CursorPosition */]();
         this.r = renderer;
-        this.triggerOnMouseMove(lib.bind('setPosition', this, this.position));
-        this.triggerOnMouseOut(lib.bind('nullifyPosition', this, this.position));
-        this.triggerOnMouseUp(lib.changeCursorStateToUp.bind(null, this.cursor));
-        this.triggerOnMouseDown(lib.changeCursorStateToDown.bind(null, this.cursor));
-        this.cursor.setFns('down', function () {
-            var args = [];
-            for (var _i = 0; _i < arguments.length; _i++) {
-                args[_i] = arguments[_i];
-            }
-            console.log(args);
-        });
+        this.listners = new __WEBPACK_IMPORTED_MODULE_2__listners_handler__["a" /* ListnersHandler */](this.r);
+        // this.triggerOnMouseMove(lib.bind('setPosition', this, this.position));
+        // this.triggerOnMouseOut(lib.bind('nullifyPosition', this, this.position));
+        // this.triggerOnMouseUp(lib.changeCursorStateToUp.bind(null, this.cursor));
+        // this.triggerOnMouseDown(lib.changeCursorStateToDown.bind(null, this.cursor));
+        // this.cursor.setFns('down', (...args) => { console.log(args) });
     }
-    Game.prototype.triggerListner = function (event, fn) {
-        var config = { target: window, event: event, fn: fn };
-        if (this.register.has(config)) {
-            this.register.remove(config).rmFunc();
-            return;
-        }
-        else {
-            var rmFunc = this.r.listen(window, event, fn);
-            this.register.add(__assign({}, config, { rmFunc: rmFunc }), function (err, register) {
-                if (err)
-                    console.log(err);
-                return;
-            });
-        }
-        return;
-    };
-    Game.prototype.triggerOnMouseMove = function (fn) {
-        this.triggerListner('mousemove', fn);
-        return;
-    };
-    Game.prototype.triggerOnMouseDown = function (fn) {
-        this.triggerListner('mousedown', fn);
-        return;
-    };
-    Game.prototype.triggerOnMouseUp = function (fn) {
-        this.triggerListner('mouseup', fn);
-        return;
-    };
-    Game.prototype.triggerOnMouseOut = function (fn) {
-        this.triggerListner('mouseout', fn);
-        return;
-    };
-    Game.prototype.removeListners = function () {
-        this.register.forEach(function (_a) {
-            var rmFunc = _a.rmFunc;
-            if (!rmFunc)
-                return;
-            return setTimeout(rmFunc, 0);
-        });
-        this.register.clear();
-        return;
-    };
     return Game;
 }());
 
@@ -992,67 +1106,7 @@ var Game = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 266:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CursorState; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
-
-var CursorState = /** @class */ (function () {
-    function CursorState() {
-        var _this = this;
-        this.stateMethodsHandler = function (name) {
-            return function (obj) {
-                return _this.fnsRegister[name].forEach(function (fn) {
-                    return fn(obj, _this);
-                });
-            };
-        };
-        this.fnsRegister = { up: [], down: [], grab: [], drop: [] };
-        this.state = new __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default.a({
-            init: 'mouseup',
-            transitions: [
-                { name: 'down', from: 'mouseup', to: 'mousedown' },
-                { name: 'up', from: 'mousedown', to: 'mouseup' },
-                { name: 'grab', from: 'mousedown', to: 'grabbed' },
-                { name: 'drop', from: 'grabbed', to: 'mouseup' },
-            ],
-            methods: {
-                onDown: this.stateMethodsHandler('down'),
-                onUp: this.stateMethodsHandler('up'),
-                onGrab: this.stateMethodsHandler('grab'),
-                onDrop: this.stateMethodsHandler('drop'),
-            }
-        });
-    }
-    ;
-    CursorState.prototype.setFns = function (name) {
-        var fns = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            fns[_i - 1] = arguments[_i];
-        }
-        var oldFns = this.fnsRegister[name];
-        this.fnsRegister[name] = oldFns.concat(fns);
-        return this;
-    };
-    CursorState.prototype.up = function () {
-        this.state.up();
-        return this;
-    };
-    CursorState.prototype.down = function () {
-        this.state.down();
-        return this;
-    };
-    return CursorState;
-}());
-
-//# sourceMappingURL=cursor-state.service.js.map
-
-/***/ }),
-
-/***/ 267:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1098,81 +1152,7 @@ var CursorPosition = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 268:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CursorPositionState; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
-
-var CursorPositionState = /** @class */ (function () {
-    function CursorPositionState() {
-        var _this = this;
-        this.stateMethodsHandler = function (name) {
-            return function (obj) {
-                return _this.fnsRegister[name].forEach(function (fn) {
-                    return fn(obj, _this);
-                });
-            };
-        };
-        this.fnsRegister = { toDisplay: [], toDashboard: [], toDisplayBorder: [], goOut: [] };
-        this.state = new __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default.a({
-            init: 'out',
-            transitions: [
-                { name: 'goOut', from: 'onDisplayBorder', to: 'outScreen' },
-                { name: 'goOut', from: 'onDisplay', to: 'outScreen' },
-                { name: 'goOut', from: 'onDashboard', to: 'outScreen' },
-                { name: 'toDisplayBorder', from: 'outScreen', to: 'onDisplayBorder' },
-                { name: 'toDisplayBorder', from: 'onDashboard', to: 'onDisplayBorder' },
-                { name: 'toDisplayBorder', from: 'onDisplay', to: 'onDisplayBorder' },
-                { name: 'toDisplay', from: 'onDisplayBorder', to: 'onDisplay' },
-                { name: 'toDisplay', from: 'onDashboard', to: 'onDisplay' },
-                { name: 'toDashboard', from: 'onDisplayBorder', to: 'onDashboard' },
-                { name: 'toDashboard', from: 'outScreen', to: 'onDashboard' },
-                { name: 'toDashboard', from: 'onDisplay', to: 'onDashboard' },
-            ],
-            methods: {
-                onGoOut: this.stateMethodsHandler('out'),
-                onToDisplayBorder: this.stateMethodsHandler('displayBorder'),
-                onToDisplay: this.stateMethodsHandler('display'),
-                onToDashboard: this.stateMethodsHandler('dashboard'),
-            }
-        });
-    }
-    CursorPositionState.prototype.setFns = function (name) {
-        var fns = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            fns[_i - 1] = arguments[_i];
-        }
-        var oldFns = this.fnsRegister[name];
-        this.fnsRegister[name] = oldFns.concat(fns);
-        return this;
-    };
-    CursorPositionState.prototype.toDashboard = function () {
-        this.state.toDashboard();
-        return this;
-    };
-    CursorPositionState.prototype.toDisplay = function () {
-        this.state.toDisplay();
-        return this;
-    };
-    CursorPositionState.prototype.toDisplayBorder = function () {
-        this.state.toDisplayBorder();
-        return this;
-    };
-    CursorPositionState.prototype.goOut = function () {
-        this.state.goOut();
-        return this;
-    };
-    return CursorPositionState;
-}());
-
-//# sourceMappingURL=cursor-position-state.js.map
-
-/***/ }),
-
-/***/ 269:
+/***/ 270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1249,16 +1229,229 @@ var ListnerRegister = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 295:
+/***/ 271:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameLogic; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__game_fsm__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listners_handler__ = __webpack_require__(166);
+
+
+var lib = {
+    mouseEnterOnItem: function (instance, ev) {
+        // console.log('mouseEnter');
+        this.next(instance);
+        this.fsm.select();
+    },
+    mouseLeaveFromItem: function (instance, ev) {
+        // console.log('mouseLeave');
+        this.fsm.unselect();
+    },
+};
+var GameLogic = /** @class */ (function () {
+    function GameLogic(r, items, dashboard, container) {
+        var _this = this;
+        this.r = r;
+        this.dashboard = dashboard;
+        this.fsm = new __WEBPACK_IMPORTED_MODULE_0__game_fsm__["a" /* GameFinistStateMachine */]();
+        this.prev = function () { };
+        this.next = function () {
+            var args = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                args[_i] = arguments[_i];
+            }
+            _this.prev = function () {
+                return args;
+            };
+            return;
+        };
+        this.itemsMouseEnterListners = function (arg) {
+            var items = _this.items.filter(function (item) { return !item.deactivated; });
+            if (_this.activeElement) {
+                var _a = _this.container, instance = _a.instance, mouseEnterOnItem = _a.mouseEnterOnItem;
+                arg ?
+                    _this.listners.addListner(instance, 'mouseenter', mouseEnterOnItem) :
+                    _this.listners.removeListner(instance, 'mouseenter', mouseEnterOnItem);
+            }
+            return items.forEach(function (_a) {
+                var instance = _a.instance, mouseEnterOnItem = _a.mouseEnterOnItem;
+                return arg ?
+                    _this.listners.addListner(instance, 'mouseenter', mouseEnterOnItem) :
+                    _this.listners.removeListner(instance, 'mouseenter', mouseEnterOnItem);
+            });
+        };
+        this.itemMouseLeaveListner = function (arg, i) {
+            var inst = i || _this.prev()[0];
+            if (inst === _this.container.instance) {
+                var _a = _this.container, instance_1 = _a.instance, mouseLeaveFromItem_1 = _a.mouseLeaveFromItem;
+                return arg ?
+                    _this.listners.addListner(instance_1, 'mouseleave', mouseLeaveFromItem_1) :
+                    _this.listners.removeListner(instance_1, 'mouseleave', mouseLeaveFromItem_1);
+            }
+            var _b = _this.items.find(function (el) { return el.instance === inst; }), instance = _b.instance, mouseLeaveFromItem = _b.mouseLeaveFromItem;
+            return arg ?
+                _this.listners.addListner(instance, 'mouseleave', mouseLeaveFromItem) :
+                _this.listners.removeListner(instance, 'mouseleave', mouseLeaveFromItem);
+        };
+        this.itemMouseDownListner = function (arg) {
+            return arg ?
+                _this.listners.addListner(window, 'mousedown', _this.mouseDown) :
+                _this.listners.removeListner(window, 'mousedown', _this.mouseDown);
+        };
+        this.itemMouseUpListner = function (arg) {
+            return arg ?
+                _this.listners.addListner(window, 'mouseup', _this.mouseUp) :
+                _this.listners.removeListner(window, 'mouseup', _this.mouseUp);
+        };
+        this.listenCursorPosition = function (arg) {
+            return arg ?
+                _this.listners.addListner(window, 'mousemove', _this.handleCursorPosition) :
+                _this.listners.removeListner(window, 'mousemove', _this.handleCursorPosition);
+        };
+        this.handleCursorPosition = function (ev) {
+            var inst = _this.prev()[0];
+            var item = _this.items.find(function (item) { return item.instance === inst; });
+            // console.log('cursor');
+            var clientX = ev.clientX, clientY = ev.clientY;
+            var top = _this.dashboard.offsetTop;
+            var bottom = top + _this.dashboard.offsetHeight;
+            var left = _this.dashboard.offsetLeft;
+            var right = left + _this.dashboard.offsetWidth;
+            var isOnDashboard = function () { return clientX > left && clientX < right && clientY > top && clientY < bottom; };
+            _this.callbacks.onItemDragging.forEach(function (fn) { return fn(item, ev); });
+            if (isOnDashboard()) {
+                if (!_this.fsm.isDraggedOut()) {
+                    _this.fsm.moveOut();
+                }
+            }
+            else {
+                if (!_this.fsm.isDraggedIn()) {
+                    _this.fsm.moveIn();
+                }
+            }
+        };
+        this.mouseDown = function (ev) {
+            // console.log('mouseDown');
+            _this.fsm.grab();
+            var inst = _this.prev()[0];
+            if (inst === _this.container.instance) {
+                var item_1 = _this.items.find(function (item) { return item.instance === _this.activeElement; });
+                var children = Array.from(_this.container.instance.children);
+                children.forEach(function (ch) {
+                    _this.r.removeChild(_this.container.instance, ch);
+                });
+                return _this.callbacks.onContainerClick.forEach(function (fn) { return fn(item_1, ev); });
+            }
+            var item = _this.items.find(function (item) { return item.instance === inst; });
+            _this.callbacks.onItemClick.forEach(function (fn) { return fn(item, ev); });
+            _this.deactivateInstance(inst);
+            return;
+        };
+        this.mouseUp = function (ev) {
+            // console.log('mouseUp');
+            var inst = _this.prev()[0];
+            var item = _this.items.find(function (item) { return item.instance === inst; });
+            _this.callbacks.afterItemDropped.forEach(function (fn) { return fn(item, ev); });
+            if (_this.fsm.isDraggedIn()) {
+                if (inst === _this.container.instance) {
+                    var item_2 = _this.items.find(function (item) { return item.instance === _this.activeElement; });
+                    _this.callbacks.afterItemPlaced.forEach(function (fn) { return fn(item_2, ev); });
+                    return _this.fsm.place();
+                }
+                if (_this.activeElement) {
+                    _this.activateInstance(_this.activeElement);
+                }
+                ;
+                _this.setActiveElement(inst);
+                _this.callbacks.afterItemPlaced.forEach(function (fn) { return fn(item, ev); });
+                return _this.fsm.place();
+            }
+            if (_this.fsm.isDraggedOut()) {
+                if (inst === _this.container.instance) {
+                    _this.activateInstance(_this.activeElement);
+                    _this.setActiveElement(null);
+                    return _this.fsm.destroy();
+                }
+                _this.activateInstance(inst);
+                return _this.fsm.destroy();
+            }
+            return;
+        };
+        this.listners = new __WEBPACK_IMPORTED_MODULE_1__listners_handler__["a" /* ListnersHandler */](this.r);
+        this.callbacks = {
+            onItemClick: [],
+            afterItemDropped: [],
+            afterItemPlaced: [],
+            onItemDragging: [],
+            onContainerClick: [],
+        };
+        this.container = {
+            instance: container,
+            mouseEnterOnItem: lib.mouseEnterOnItem.bind(this, container),
+            mouseLeaveFromItem: lib.mouseLeaveFromItem.bind(this, container),
+        };
+        this.items = items.map(function (item) { return ({
+            instance: item.node,
+            component: item.component,
+            deactivated: false,
+            mouseEnterOnItem: lib.mouseEnterOnItem.bind(_this, item.node),
+            mouseLeaveFromItem: lib.mouseLeaveFromItem.bind(_this, item.node),
+        }); });
+        this.itemsMouseEnterListners(true);
+        this.fsm.setFns('select', this.itemsMouseEnterListners.bind(this, false), this.itemMouseLeaveListner.bind(this, true, null), this.itemMouseDownListner.bind(this, true));
+        this.fsm.setFns('unselect', this.itemMouseLeaveListner.bind(this, false, null), this.itemsMouseEnterListners.bind(this, true), this.itemMouseDownListner.bind(this, false));
+        this.fsm.setFns('grab', this.itemMouseLeaveListner.bind(this, false, null), this.itemMouseDownListner.bind(this, false), this.itemMouseUpListner.bind(this, true), this.listenCursorPosition.bind(this, true));
+        this.fsm.setFns('destroy', this.listenCursorPosition.bind(this, false), this.itemMouseUpListner.bind(this, false), this.itemsMouseEnterListners.bind(this, true));
+        this.fsm.setFns('place', this.listenCursorPosition.bind(this, false), this.itemMouseUpListner.bind(this, false), this.itemsMouseEnterListners.bind(this, true));
+    }
+    ;
+    GameLogic.prototype.activateInstance = function (i) {
+        var item = this.items.find(function (item) { return item.instance === i; });
+        if (!item)
+            return undefined;
+        this.r.removeClass(item.instance, 'blocked');
+        item.deactivated = false;
+        return;
+    };
+    GameLogic.prototype.deactivateInstance = function (i) {
+        var item = this.items.find(function (item) { return item.instance === i; });
+        if (!item)
+            return undefined;
+        this.r.addClass(item.instance, 'blocked');
+        item.deactivated = true;
+        return;
+    };
+    GameLogic.prototype.setActiveElement = function (i) {
+        this.activeElement = i;
+        return;
+    };
+    GameLogic.prototype.setFns = function (name) {
+        var fns = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            fns[_i - 1] = arguments[_i];
+        }
+        var oldFns = this.callbacks[name];
+        this.callbacks[name] = oldFns.concat(fns);
+        return this;
+    };
+    return GameLogic;
+}());
+
+//# sourceMappingURL=game-logic.js.map
+
+/***/ }),
+
+/***/ 297:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(301);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1288,17 +1481,18 @@ var ComponentsModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 296:
+/***/ 298:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_component__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__monsters_host_directive__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__monster_part_directive__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__zombie_zombie__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__skeleton_skeleton__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__monsters_component__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__monsters_host_directive__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__monster_part_directive__ = __webpack_require__(162);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1312,15 +1506,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var MonstersModule = /** @class */ (function () {
     function MonstersModule() {
     }
     MonstersModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */], __WEBPACK_IMPORTED_MODULE_3__monsters_component__["a" /* MonstersComponent */], __WEBPACK_IMPORTED_MODULE_4__monsters_host_directive__["a" /* MonstersHostDirective */], __WEBPACK_IMPORTED_MODULE_5__monster_part_directive__["a" /* MonsterPartDirective */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_3__skeleton_skeleton__["a" /* SkeletonComponent */], __WEBPACK_IMPORTED_MODULE_1__alien_alien__["a" /* AlienComponent */], __WEBPACK_IMPORTED_MODULE_4__monsters_component__["a" /* MonstersComponent */], __WEBPACK_IMPORTED_MODULE_5__monsters_host_directive__["a" /* MonstersHostDirective */], __WEBPACK_IMPORTED_MODULE_6__monster_part_directive__["a" /* MonsterPartDirective */]],
             providers: [],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_1__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__["a" /* SkeletonComponent */]],
-            exports: [__WEBPACK_IMPORTED_MODULE_3__monsters_component__["a" /* MonstersComponent */]]
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__zombie_zombie__["a" /* ZombieComponent */], __WEBPACK_IMPORTED_MODULE_3__skeleton_skeleton__["a" /* SkeletonComponent */], __WEBPACK_IMPORTED_MODULE_1__alien_alien__["a" /* AlienComponent */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_4__monsters_component__["a" /* MonstersComponent */]]
         })
     ], MonstersModule);
     return MonstersModule;
@@ -1330,16 +1525,16 @@ var MonstersModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 297:
+/***/ 299:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trinkets_component__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__trinket_host_directive__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trinkets_component__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__trinket_host_directive__ = __webpack_require__(153);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1370,7 +1565,7 @@ var TrinketsModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 298:
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1403,14 +1598,14 @@ var GameModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 299:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(168);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1439,13 +1634,13 @@ var ItemHolderModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 300:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModelModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(155);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1471,15 +1666,15 @@ var ModelModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 301:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_game_game__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1517,7 +1712,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 302:
+/***/ 304:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1563,11 +1758,12 @@ var HomePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(167);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1593,6 +1789,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var GamePage = /** @class */ (function (_super) {
     __extends(GamePage, _super);
     function GamePage(navCtrl, navParams, renderer, componentFactoryResolver, injector, app) {
@@ -1604,22 +1801,13 @@ var GamePage = /** @class */ (function (_super) {
         _this.injector = injector;
         _this.app = app;
         _this.glasses = null;
-        _this.monsterId = 2;
+        _this.monsterId = Math.round(Math.random() * (3 - 1) + 1);
         return _this;
+        //
     }
     GamePage.prototype.ngAfterViewInit = function () {
         var _this = this;
         var instances = this.trinkets.getInstances();
-        var setHolderPosition = function () {
-            var _a = _this.position.get(), x = _a.x, y = _a.y;
-            var _b = _this.holder.getSize(), width = _b.width, height = _b.height;
-            _this.holder.setAttributes({
-                style: "left: " + (x - width / 2) + "px; top: " + (y - height / 2) + "px",
-            });
-        };
-        var glassesOn = false;
-        var displayH = document.getElementById('nb-target').offsetHeight;
-        var isOnDisplay = function (y) { return displayH > y ? true : false; };
         var parts = this.monsters.getCurrentMonster().getParts();
         var innerEyes = {
             renderer: this.renderer,
@@ -1636,50 +1824,43 @@ var GamePage = /** @class */ (function (_super) {
         };
         var eyes = parts.find(function (p) { return p.type === 'eyes' && p.name == 'eyes'; });
         var eyesContainer = parts.find(function (p) { return p.name === 'container'; });
-        var instanceFunc = function (_a) {
-            var component = _a.component, node = _a.node;
-            var rmMouseDown = _this.renderer.listen(node, 'mousedown', function (ev) {
-                _this.holder.loadComponent(component);
-                setHolderPosition();
-                _this.renderer.addClass(node, 'blocked');
-                var unblock = _this.renderer.listen(node, 'click', function (ev) { return ev.preventDefault(); });
-                var rmMouseMove = _this.renderer.listen(window, 'mousemove', setHolderPosition);
-                var rmMouseUp = _this.renderer.listen(window, 'mouseup', function (_a) {
-                    var clientY = _a.clientY;
-                    if (isOnDisplay(clientY)) {
-                        _this.holder.clear();
-                        rmMouseMove();
-                        rmMouseUp();
-                        rmMouseDown();
-                        glassesOn = true;
-                        innerEyes.close();
-                        var _b = eyes.element.getBBox(), width = _b.width, height = _b.height, x = _b.x, y = _b.y;
-                        var viewContainerRef = eyes.viewContainerRef;
-                        var factory = _this.componentFactoryResolver.resolveComponentFactory(component);
-                        var ref = factory.create(_this.injector, [], eyesContainer.element);
-                        _this.app.attachView(ref.hostView);
-                        // const { instance } = viewContainerRef.createComponent(factory);
-                        var glassesInstance = ref.instance.node.firstChild;
-                        _this.renderer.setAttribute(glassesInstance, 'width', (width * 2).toString());
-                        _this.renderer.setAttribute(glassesInstance, 'height', (height * 2).toString());
-                        _this.renderer.setAttribute(glassesInstance, 'x', (x - width / 2).toString());
-                        _this.renderer.setAttribute(glassesInstance, 'y', (y - height / 2).toString());
-                    }
-                    else {
-                        _this.renderer.removeClass(node, 'blocked');
-                        _this.holder.clear();
-                        unblock();
-                        rmMouseMove();
-                        rmMouseUp();
-                    }
-                    return;
-                });
-                return;
+        var dashboard = document.getElementById('panel');
+        this.logic = new __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__["a" /* GameLogic */](this.renderer, instances, dashboard, eyesContainer.element);
+        var setHolderPosition = function (item, event) {
+            var _a = event, x = _a.clientX, y = _a.clientY;
+            var _b = _this.holder.getSize(), width = _b.width, height = _b.height;
+            _this.holder.setAttributes({
+                style: "left: " + (x - width / 2) + "px; top: " + (y - height / 2) + "px",
             });
         };
-        instances.forEach(instanceFunc);
-        // this.holder.loadComponent(component);
-        // this.holder.clear();
+        this.logic.setFns('onItemDragging', setHolderPosition);
+        this.logic.setFns('onItemClick', function (_a, ev) {
+            var component = _a.component;
+            _this.holder.loadComponent(component);
+        }, setHolderPosition);
+        this.logic.setFns('afterItemDropped', function () {
+            _this.holder.clear();
+        });
+        this.logic.setFns('onContainerClick', function (_a, ev) {
+            var component = _a.component;
+            _this.holder.loadComponent(component);
+        }, function () {
+            // innerEyes.open();
+        });
+        this.logic.setFns('afterItemPlaced', function (_a) {
+            // innerEyes.close();
+            var component = _a.component;
+            var _b = eyes.element.getBBox(), width = _b.width, height = _b.height, x = _b.x, y = _b.y;
+            var viewContainerRef = eyes.viewContainerRef;
+            var factory = _this.componentFactoryResolver.resolveComponentFactory(component);
+            var ref = factory.create(_this.injector, [], eyesContainer.element);
+            _this.app.attachView(ref.hostView);
+            var glassesInstance = ref.instance.node.firstChild;
+            _this.renderer.setAttribute(glassesInstance, 'width', (width * 2).toString());
+            _this.renderer.setAttribute(glassesInstance, 'height', (height * 2).toString());
+            _this.renderer.setAttribute(glassesInstance, 'x', (x - width / 2).toString());
+            _this.renderer.setAttribute(glassesInstance, 'y', (y - height / 2).toString());
+        });
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]),
@@ -1690,8 +1871,8 @@ var GamePage = /** @class */ (function (_super) {
         __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]) === "function" && _b || Object)
     ], GamePage.prototype, "monsters", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]),
-        __metadata("design:type", typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]) === "function" && _c || Object)
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]),
+        __metadata("design:type", typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]) === "function" && _c || Object)
     ], GamePage.prototype, "holder", void 0);
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -1706,7 +1887,54 @@ var GamePage = /** @class */ (function (_super) {
 
 //# sourceMappingURL=game.js.map
 
+/***/ }),
+
+/***/ 78:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(162);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MonsterModel = /** @class */ (function () {
+    function MonsterModel(name, element) {
+        this.name = name;
+        this.element = element;
+        this.eachElement = function (arr, cb) {
+            return Array.from(arr).forEach(function (v) {
+                return cb(v);
+            });
+        };
+    }
+    MonsterModel.prototype.ngAfterViewInit = function () { };
+    MonsterModel.prototype.getParts = function () {
+        return this.parts;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__monster_part_directive__["a" /* MonsterPartDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
+    ], MonsterModel.prototype, "parts", void 0);
+    MonsterModel = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
+        __metadata("design:paramtypes", [Object, HTMLElement])
+    ], MonsterModel);
+    return MonsterModel;
+}());
+
+//# sourceMappingURL=monster.model.js.map
+
 /***/ })
 
-},[210]);
+},[212]);
 //# sourceMappingURL=main.js.map

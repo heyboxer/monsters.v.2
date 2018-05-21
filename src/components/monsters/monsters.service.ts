@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { ZombieComponent } from './zombie/zombie';
 import { SkeletonComponent } from './skeleton/skeleton';
+import { AlienComponent } from './alien/alien';
 
 @Injectable()
 export class MonstersService {
@@ -9,6 +10,10 @@ export class MonstersService {
   }
   getMonsters() {
     return [
+      {
+        id: 1,
+        component: AlienComponent,
+      },
       {
         id: 2,
         component: ZombieComponent,

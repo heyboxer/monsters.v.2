@@ -2,7 +2,8 @@ skeleton {
   .skeleton {
     left: 50%;
     transform: translateX(-50%);
-    
+    overflow: visible;
+
     &__screen {
       background-color: black;
     }
