@@ -55,6 +55,10 @@ export class GameFinistStateMachine {
     return this;
   }
 
+  private next(fn: Function) : void {
+
+  }
+
   select() {
     this.state.select();
     return this;

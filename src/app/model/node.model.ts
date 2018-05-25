@@ -4,14 +4,16 @@ import uuid from 'uuid/v4';
 export class Node {
   readonly parent: Node | null = null;
   readonly key: string | number;
+  readonly meta: any;
   readonly children: Map<string | number, Node>;
   readonly id: string;
 
-  constructor(key, id = uuid(), parent?, isRoot = true) {
+  constructor(key, meta, id = uuid(), parent?, isRoot = true) {
     this.parent = isRoot ? null : parent;
     this.key = key;
     this.children = new Map();
     this.id = id;
+    this.meta = meta;
 
     src.add(id, this);
 
@@ -26,9 +28,9 @@ export class Node {
     return this.key;
   }
 
-  addChild(key) {
+  addChild(key, meta) {
     const id = uuid();
-    const child = new Node(key, id, this, false);
+    const child = new Node(key, meta, id, this, false);
     this.children.set(id, child);
 
     return child;

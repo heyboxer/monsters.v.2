@@ -37,7 +37,8 @@ export class GamePage extends Game implements AfterViewInit {
     private app: ApplicationRef
   ) {
     super(renderer);
-    this.monsterId = Math.round(Math.random() * (3 - 1) + 1);
+    this.monsterId = 2;
+    // this.monsterId = Math.round(Math.random() * (3 - 1) + 1);
 //
   }
 
@@ -46,8 +47,8 @@ export class GamePage extends Game implements AfterViewInit {
     const parts = this.monsters.getCurrentMonster().getParts();
     const innerEyes = {
       renderer: this.renderer,
-      eyeLeft: parts.find(p => p.type === 'eyeLeft').element,
-      eyeRight: parts.find(p => p.type === 'eyeRight').element,
+      // eyeLeft: parts.find(p => p.type === 'eyeLeft').element,
+      // eyeRight: parts.find(p => p.type === 'eyeRight').element,
       close: function() {
         this.renderer.setAttribute(this.eyeLeft, 'visibility', 'hidden');
         this.renderer.setAttribute(this.eyeRight, 'visibility', 'hidden');
@@ -58,13 +59,15 @@ export class GamePage extends Game implements AfterViewInit {
       },
     }
 
-    const eyes = parts.find(p => p.type === 'eyes' && p.name == 'eyes');
-    const eyesContainer = parts.find(p => p.name === 'container');
+    const monster = this.monsters.getCurrentMonster();
+
+    const eyes = monster.getGroup('eyes');
+    const eyesContainer = monster.getContainer('eyes')
 
     const dashboard = document.getElementById('panel');
 
 
-    this.logic = new GameLogic(this.renderer, instances, dashboard, eyesContainer.element);
+    this.logic = new GameLogic(this.renderer, instances, this.monsters.getCurrentMonster(), dashboard, eyesContainer.element);
 
     const setHolderPosition = (item, event) => {
       const { clientX: x, clientY: y } = (event as MouseEvent);
@@ -82,8 +85,10 @@ export class GamePage extends Game implements AfterViewInit {
 
     this.logic.setFns(
       'onItemClick',
-      ({ component }, ev) => {
-        this.holder.loadComponent(component);
+      (item, ev) => {
+        item.deactivate();
+        this.renderer.addClass(item.instance, 'blocked');
+        this.holder.loadComponent(item.component);
       },
       setHolderPosition,
     );
@@ -107,26 +112,25 @@ export class GamePage extends Game implements AfterViewInit {
 
     this.logic.setFns(
       'afterItemPlaced',
-      ({ component }) => {
+      (ref, item) => {
         // innerEyes.close();
 
         const { width, height, x, y } = (eyes.element as SVGGraphicsElement).getBBox();
 
-        const viewContainerRef = eyes.viewContainerRef;
-        const factory = this.componentFactoryResolver.resolveComponentFactory(component);
+        monster.render(item.component, 'eyes', (instance) => {
+          this.renderer.setAttribute(instance, 'width', (width * 2).toString());
+          this.renderer.setAttribute(instance, 'height', (height * 2).toString());
+          this.renderer.setAttribute(instance, 'x', (x - width/2).toString());
+          this.renderer.setAttribute(instance, 'y', (y - height/2).toString());
 
-        const ref = factory.create(this.injector, [], eyesContainer.element);
-        this.app.attachView(ref.hostView);
+          ref.AddActiveElementCopy(item, instance);
 
-        const glassesInstance = (ref.instance as { node }).node.firstChild;
-
-
-        this.renderer.setAttribute(glassesInstance, 'width', (width * 2).toString());
-        this.renderer.setAttribute(glassesInstance, 'height', (height * 2).toString());
-        this.renderer.setAttribute(glassesInstance, 'x', (x - width/2).toString());
-        this.renderer.setAttribute(glassesInstance, 'y', (y - height/2).toString());
+          return;
+        });
       }
     )
+
+    this.logic.start();
 
   }
 
