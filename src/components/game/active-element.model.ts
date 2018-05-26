@@ -86,7 +86,7 @@ export class ActiveElementModel {
   }
 }
 
-class ActiveElementDescendentModel extends ActiveElementModel {
+export class ActiveElementDescendentModel extends ActiveElementModel {
   public type: ActiveElementType = 'copy';
 
   constructor(obj: ActiveElementConfig, private parent: ActiveElementModel) {

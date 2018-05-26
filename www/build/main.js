@@ -404,6 +404,9 @@ var MonsterPartDirective = /** @class */ (function () {
         this.viewContainerRef = viewContainerRef;
         this.id = __WEBPACK_IMPORTED_MODULE_1_uuid___default()();
         this.element = el.nativeElement;
+        if (this.type === 'container') {
+            this.content = null;
+        }
     }
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('part-type'),
@@ -425,10 +428,10 @@ var MonsterPartDirective = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
             selector: '[monster-part]',
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]) === "function" && _b || Object])
     ], MonsterPartDirective);
     return MonsterPartDirective;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=monster-part.directive.js.map
@@ -1251,17 +1254,6 @@ var ListnerRegister = /** @class */ (function () {
 
 
 
-var lib = {
-    mouseEnterOnItem: function (item, ev) {
-        // console.log('mouseEnter');
-        this.next(item);
-        this.fsm.select();
-    },
-    mouseLeaveFromItem: function (item, ev) {
-        // console.log('mouseLeave');
-        this.fsm.unselect();
-    },
-};
 var GameLogic = /** @class */ (function () {
     function GameLogic(r, items, monster, dashboard, container) {
         var _this = this;
@@ -1270,23 +1262,12 @@ var GameLogic = /** @class */ (function () {
         this.dashboard = dashboard;
         this.fsm = new __WEBPACK_IMPORTED_MODULE_1__game_fsm__["a" /* GameFinistStateMachine */]();
         this.items = [];
-        this.prev = function () { };
-        this.next = function () {
-            var args = [];
-            for (var _i = 0; _i < arguments.length; _i++) {
-                args[_i] = arguments[_i];
-            }
-            _this.prev = function () {
-                return args;
-            };
-            return;
-        };
         this.itemsMouseEnterListners = function (arg) {
             var items = _this.items.filter(function (item) { return item.isActive(); });
             return items.forEach(function (item) { return _this.makeListner(arg)(item.instance, 'mouseenter', item.getFn('mouseEnterOnItem')); });
         };
-        this.itemMouseLeaveListner = function (arg, i) {
-            var item = i || _this.prev()[0];
+        this.itemMouseLeaveListner = function (arg) {
+            var item = _this.getLast();
             return _this.makeListner(arg)(item.instance, 'mouseleave', item.getFn('mouseLeaveFromItem'));
         };
         this.itemMouseDownListner = function (arg) {
@@ -1299,7 +1280,7 @@ var GameLogic = /** @class */ (function () {
             return _this.makeListner(arg)(window, 'mousemove', _this.handleCursorPosition);
         };
         this.handleCursorPosition = function (ev) {
-            var item = _this.prev()[0];
+            var item = _this.getLast();
             // console.log('cursor');
             var clientX = ev.clientX, clientY = ev.clientY;
             var top = _this.dashboard.offsetTop;
@@ -1307,7 +1288,7 @@ var GameLogic = /** @class */ (function () {
             var left = _this.dashboard.offsetLeft;
             var right = left + _this.dashboard.offsetWidth;
             var isOnDashboard = function () { return clientX > left && clientX < right && clientY > top && clientY < bottom; };
-            _this.callbacks.onItemDragging.forEach(function (fn) { return fn(item, ev); });
+            _this.callbacks.onItemDragging.forEach(function (fn) { return fn(_this, item, ev); });
             if (isOnDashboard()) {
                 if (!_this.fsm.isDraggedOut()) {
                     _this.fsm.moveOut();
@@ -1322,53 +1303,32 @@ var GameLogic = /** @class */ (function () {
         this.mouseDown = function (ev) {
             // console.log('mouseDown');
             _this.fsm.grab();
-            var item = _this.prev()[0];
-            if (item.isCopy()) {
-                _this.monster.clear('eyes');
-                _this.removeActiveElement(item);
-                return _this.callbacks.onContainerClick.forEach(function (fn) { return fn(item.parent, ev); });
-            }
-            _this.callbacks.onItemClick.forEach(function (fn) { return fn(item, ev); });
+            var item = _this.getLast();
+            _this.callbacks.onItemClick.forEach(function (fn) { return fn(_this, item, ev); });
             return;
         };
         this.mouseUp = function (ev) {
             // console.log('mouseUp');
-            var item = _this.prev()[0];
+            var item = _this.getLast();
+            _this.updateLast(null);
             _this.callbacks.afterItemDropped.forEach(function (fn) { return fn(_this, item, ev); });
             if (_this.fsm.isDraggedIn()) {
-                if (item.isCopy()) {
-                    _this.callbacks.afterItemPlaced.forEach(function (fn) { return fn(_this, item, ev); });
-                    return _this.fsm.place();
-                }
-                if (_this.activeElement) {
-                    _this.activateInstance(_this.activeElement.instance);
-                }
-                ;
-                _this.setActiveElement(item);
                 _this.callbacks.afterItemPlaced.forEach(function (fn) { return fn(_this, item, ev); });
-                _this.fsm.place();
-                return;
+                return _this.fsm.place();
             }
             if (_this.fsm.isDraggedOut()) {
-                if (item.isCopy()) {
-                    _this.activateInstance(_this.activeElement.instance);
-                    _this.setActiveElement(null);
-                    _this.fsm.destroy();
-                    return;
-                }
-                _this.activateInstance(item.instance);
+                _this.callbacks.afterItemDesroyed.forEach(function (fn) { return fn(_this, item, ev); });
                 _this.fsm.destroy();
                 return;
             }
-            return;
         };
         this.listners = new __WEBPACK_IMPORTED_MODULE_2__listners_handler__["a" /* ListnersHandler */](this.r);
         this.callbacks = {
             onItemClick: [],
             afterItemDropped: [],
             afterItemPlaced: [],
+            afterItemDesroyed: [],
             onItemDragging: [],
-            onContainerClick: [],
         };
         items.forEach(function (item) {
             return _this.addActiveElement(new __WEBPACK_IMPORTED_MODULE_0__active_element_model__["a" /* ActiveElementModel */]({ instance: item.node, component: item.component }));
@@ -1380,6 +1340,13 @@ var GameLogic = /** @class */ (function () {
         this.fsm.setFns('place', this.listenCursorPosition.bind(this, false), this.itemMouseUpListner.bind(this, false), this.itemsMouseEnterListners.bind(this, true));
     }
     ;
+    GameLogic.prototype.updateLast = function (arg) {
+        this.lastActive = arg;
+        return this;
+    };
+    GameLogic.prototype.getLast = function () {
+        return this.lastActive;
+    };
     GameLogic.prototype.start = function () {
         this.itemsMouseEnterListners(true);
         return this;
@@ -1388,39 +1355,39 @@ var GameLogic = /** @class */ (function () {
         this.listners.removeListners();
         return this;
     };
+    GameLogic.prototype.mouseEnterOnItem = function (item, ev) {
+        this.updateLast(item);
+        this.fsm.select();
+        return;
+    };
+    GameLogic.prototype.mouseLeaveFromItem = function (ev, element) {
+        this.fsm.unselect();
+        return;
+    };
     GameLogic.prototype.addActiveElement = function (element) {
-        element.addFn('mouseEnterOnItem', lib.mouseEnterOnItem.bind(this, element));
-        element.addFn('mouseLeaveFromItem', lib.mouseLeaveFromItem.bind(this, element));
+        element.addFn('mouseEnterOnItem', this.mouseEnterOnItem.bind(this, element));
+        element.addFn('mouseLeaveFromItem', this.mouseLeaveFromItem.bind(this, element));
         this.items.push(element);
         return this;
     };
-    GameLogic.prototype.AddActiveElementCopy = function (element, instance) {
+    GameLogic.prototype.addActiveElementCopy = function (element, instance) {
         var copy = element.copy(instance);
         this.addActiveElement(copy);
-        return this;
+        return copy;
     };
     GameLogic.prototype.removeActiveElement = function (element) {
         var filtered = this.items.filter(function (e) { return e !== element; });
         this.items = filtered;
         return this;
     };
+    GameLogic.prototype.findActiveElementByInstance = function (instance) {
+        return this.items.find(function (e) { return e.instance === instance; });
+    };
     GameLogic.prototype.makeListner = function (arg) {
         var _this = this;
         return function (e, ev, fn) {
             return _this.listners[arg ? 'addListner' : 'removeListner'](e, ev, fn);
         };
-    };
-    GameLogic.prototype.activateInstance = function (i) {
-        var item = this.items.find(function (item) { return item.instance === i; });
-        if (!item)
-            return undefined;
-        this.r.removeClass(item.instance, 'blocked');
-        item.activate();
-        return;
-    };
-    GameLogic.prototype.setActiveElement = function (i) {
-        this.activeElement = i;
-        return;
     };
     GameLogic.prototype.setFns = function (name) {
         var fns = [];
@@ -1443,6 +1410,7 @@ var GameLogic = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveElementModel; });
+/* unused harmony export ActiveElementDescendentModel */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1534,6 +1502,7 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
     };
     return ActiveElementDescendentModel;
 }(ActiveElementModel));
+
 //# sourceMappingURL=active-element.model.js.map
 
 /***/ }),
@@ -1924,7 +1893,7 @@ var GamePage = /** @class */ (function (_super) {
         var eyesContainer = monster.getContainer('eyes');
         var dashboard = document.getElementById('panel');
         this.logic = new __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__["a" /* GameLogic */](this.renderer, instances, this.monsters.getCurrentMonster(), dashboard, eyesContainer.element);
-        var setHolderPosition = function (item, event) {
+        var setHolderPosition = function (ref, item, event) {
             var _a = event, x = _a.clientX, y = _a.clientY;
             var _b = _this.holder.getSize(), width = _b.width, height = _b.height;
             _this.holder.setAttributes({
@@ -1932,31 +1901,48 @@ var GamePage = /** @class */ (function (_super) {
             });
         };
         this.logic.setFns('onItemDragging', setHolderPosition);
-        this.logic.setFns('onItemClick', function (item, ev) {
+        this.logic.setFns('onItemClick', function (ref, item, ev) {
+            if (item.isCopy()) {
+                var parent = item.isCopy();
+                monster.clear('eyes');
+                ref.removeActiveElement(item);
+                (item).deleteCopy();
+                _this.holder.loadComponent(parent.component);
+                return;
+            }
             item.deactivate();
             _this.renderer.addClass(item.instance, 'blocked');
             _this.holder.loadComponent(item.component);
+            return;
         }, setHolderPosition);
         this.logic.setFns('afterItemDropped', function () {
             _this.holder.clear();
         });
-        this.logic.setFns('onContainerClick', function (_a, ev) {
-            var component = _a.component;
-            _this.holder.loadComponent(component);
-        }, function () {
-            // innerEyes.open();
-        });
         this.logic.setFns('afterItemPlaced', function (ref, item) {
             // innerEyes.close();
+            var content = monster.getContainer('eyes').content;
+            if (content) {
+                var active = ref.findActiveElementByInstance(content);
+                var parent = active.isCopy();
+                parent.activate();
+                _this.renderer.removeClass(parent.instance, 'blocked');
+                ref.removeActiveElement(active);
+            }
             var _a = eyes.element.getBBox(), width = _a.width, height = _a.height, x = _a.x, y = _a.y;
             monster.render(item.component, 'eyes', function (instance) {
                 _this.renderer.setAttribute(instance, 'width', (width * 2).toString());
                 _this.renderer.setAttribute(instance, 'height', (height * 2).toString());
                 _this.renderer.setAttribute(instance, 'x', (x - width / 2).toString());
                 _this.renderer.setAttribute(instance, 'y', (y - height / 2).toString());
-                ref.AddActiveElementCopy(item, instance);
+                var copy = ref.addActiveElementCopy(item, instance);
                 return;
             });
+        });
+        this.logic.setFns('afterItemDesroyed', function (ref, item) {
+            var parent = item.isCopy();
+            var el = parent ? parent : item;
+            el.activate();
+            _this.renderer.removeClass(el.instance, 'blocked');
         });
         this.logic.start();
     };
@@ -2038,20 +2024,24 @@ var MonsterModel = /** @class */ (function () {
     };
     MonsterModel.prototype.render = function (component, name, callback) {
         if (callback === void 0) { callback = function (instance) { }; }
-        var _a = this.getContainer(name), container = _a.viewContainerRef, element = _a.element;
+        var obj = this.getContainer(name);
+        var container = obj.viewContainerRef, element = obj.element, content = obj.content;
         this.clear(name);
         var factory = this.componentFactoryResolver.resolveComponentFactory(component);
         var ref = factory.create(this.injector, [], element);
         // this.app.attachView(ref.hostView);
         var instance = ref.instance.node.firstChild;
+        obj.content = instance;
         return callback(instance);
     };
     MonsterModel.prototype.clear = function (name) {
         var _this = this;
-        var element = this.getContainer(name).element;
+        var object = this.getContainer(name);
+        var element = object.element;
         var children = Array.from(element.children).forEach(function (e) {
             return _this.renderer.removeChild(element, e);
         });
+        object.content = null;
         return this;
     };
     __decorate([

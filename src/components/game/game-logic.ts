@@ -1,35 +1,21 @@
 import { Renderer2, ComponentRef } from '@angular/core';
 
-import { ActiveElementModel } from './active-element.model';
+import { ActiveElementModel, ActiveElementDescendentModel } from './active-element.model';
 import { GameFinistStateMachine } from './game-fsm';
 import { ListnersHandler } from './listners-handler';
-
-const lib = {
-  mouseEnterOnItem: function(item, ev) {
-    // console.log('mouseEnter');
-    this.next(item);
-    this.fsm.select();
-  },
-
-  mouseLeaveFromItem: function(item, ev) {
-    // console.log('mouseLeave');
-    this.fsm.unselect();
-  },
-}
 
 export class GameLogic {
   private fsm = new GameFinistStateMachine();
   private listners: ListnersHandler;
-  private activeElement: ActiveElementModel;
+  private lastActive: ActiveElementModel;
   private items: ActiveElementModel[] = [];
-  private prev: Function = () => {};
 
   private callbacks: {
     onItemClick: Function[];
     afterItemDropped: Function[];
     afterItemPlaced: Function[];
+    afterItemDesroyed: Function[];
     onItemDragging: Function[];
-    onContainerClick: Function[];
   };
 
   constructor(
@@ -45,8 +31,8 @@ export class GameLogic {
       onItemClick: [],
       afterItemDropped: [],
       afterItemPlaced: [],
+      afterItemDesroyed: [],
       onItemDragging: [],
-      onContainerClick: [],
     }
 
     items.forEach(
@@ -91,6 +77,15 @@ export class GameLogic {
     );
   };
 
+  private updateLast(arg: ActiveElementModel | null) :this {
+    this.lastActive = arg;
+    return this;
+  }
+
+  private getLast() {
+    return this.lastActive;
+  }
+
   public start() : this {
     this.itemsMouseEnterListners(true);
     return this;
@@ -101,17 +96,26 @@ export class GameLogic {
     return this;
   }
 
-  private addActiveElement(
-    element: ActiveElementModel
-  ) {
+  private mouseEnterOnItem(item, ev) {
+    this.updateLast(item);
+    this.fsm.select();
+    return;
+  }
+
+  private mouseLeaveFromItem(ev, element) {
+    this.fsm.unselect();
+    return;
+  }
+
+  private addActiveElement(element: ActiveElementModel) {
     element.addFn(
       'mouseEnterOnItem',
-      lib.mouseEnterOnItem.bind(this, element)
+      this.mouseEnterOnItem.bind(this, element)
     );
 
     element.addFn(
       'mouseLeaveFromItem',
-      lib.mouseLeaveFromItem.bind(this, element)
+      this.mouseLeaveFromItem.bind(this, element)
     );
 
     this.items.push(element);
@@ -119,29 +123,23 @@ export class GameLogic {
     return this;
   }
 
-  public AddActiveElementCopy(
-    element: ActiveElementModel,
-    instance: HTMLElement
-  ) {
+  public addActiveElementCopy(element: ActiveElementModel, instance: HTMLElement) {
     const copy = element.copy(instance);
 
     this.addActiveElement(copy);
 
-    return this;
+    return copy;
   }
 
-  private removeActiveElement(element) {
+  public removeActiveElement(element) {
     const filtered = this.items.filter(e => e !== element);
     this.items = filtered;
 
     return this;
   }
 
-  private next = (...args: any[]) => {
-    this.prev = () => {
-      return args;
-    };
-    return;
+  public findActiveElementByInstance(instance) {
+    return this.items.find(e => e.instance === instance);
   }
 
   private makeListner(arg: boolean) {
@@ -159,8 +157,8 @@ export class GameLogic {
     );
   }
 
-  private itemMouseLeaveListner = (arg: boolean, i) => {
-    const item = i || this.prev()[0];
+  private itemMouseLeaveListner = (arg: boolean) => {
+    const item = this.getLast();
 
     return this.makeListner(arg)(
         item.instance, 'mouseleave', item.getFn('mouseLeaveFromItem')
@@ -182,7 +180,7 @@ export class GameLogic {
   }
 
   private handleCursorPosition = (ev: MouseEvent) => {
-    const item = this.prev()[0];
+    const item = this.getLast();
     // console.log('cursor');
 
     const { clientX, clientY } = ev;
@@ -193,7 +191,7 @@ export class GameLogic {
 
     const isOnDashboard = () => clientX > left && clientX < right && clientY > top && clientY < bottom;
 
-    this.callbacks.onItemDragging.forEach(fn => fn(item, ev));
+    this.callbacks.onItemDragging.forEach(fn => fn(this, item, ev));
 
     if(isOnDashboard()) {
       if(!this.fsm.isDraggedOut()) {
@@ -206,82 +204,36 @@ export class GameLogic {
     }
   }
 
-  private activateInstance(i) {
-    const item = this.items.find(item => item.instance === i);
-    if(!item) return undefined;
-
-    this.r.removeClass(item.instance, 'blocked');
-
-    item.activate();
-    return;
-  }
-
   private mouseDown = (ev) => {
     // console.log('mouseDown');
     this.fsm.grab();
 
-    const item = this.prev()[0];
+    const item = this.getLast();
 
-    if(item.isCopy()) {
-      this.monster.clear('eyes');
-      this.removeActiveElement(item);
-
-      return this.callbacks.onContainerClick.forEach(fn => fn(item.parent, ev));
-    }
-
-    this.callbacks.onItemClick.forEach(fn => fn(item, ev));
+    this.callbacks.onItemClick.forEach(fn => fn(this, item, ev));
     return;
   }
 
   private mouseUp = (ev) => {
     // console.log('mouseUp');
-    const item = this.prev()[0];
+    const item = this.getLast();
+    this.updateLast(null);
     this.callbacks.afterItemDropped.forEach(fn => fn(this, item, ev));
 
+
     if(this.fsm.isDraggedIn()) {
-      if(item.isCopy()) {
-        this.callbacks.afterItemPlaced.forEach(fn => fn(this, item, ev));
-        return this.fsm.place();
-      }
-
-      if(this.activeElement) {
-        this.activateInstance(this.activeElement.instance);
-      };
-
-      this.setActiveElement(item);
-
       this.callbacks.afterItemPlaced.forEach(fn => fn(this, item, ev));
-      this.fsm.place()
-      return;
+      return this.fsm.place();
     }
+
     if(this.fsm.isDraggedOut()) {
-
-      if(item.isCopy()) {
-        this.activateInstance(this.activeElement.instance);
-
-        this.setActiveElement(null);
-
-        this.fsm.destroy()
-        return;
-      }
-
-      this.activateInstance(item.instance);
+      this.callbacks.afterItemDesroyed.forEach(fn => fn(this, item, ev));
       this.fsm.destroy()
       return;
     }
-
-    return;
   }
 
-  private setActiveElement(i: ActiveElementModel) {
-    this.activeElement = i;
-    return;
-  }
-
-  public setFns(
-    name: string,
-    ...fns: any[]
-  ): GameLogic {
+  public setFns(name: string, ...fns: any[]): GameLogic {
     const oldFns = this.callbacks[name];
     this.callbacks[name] = [...oldFns, ...fns];
     return this;

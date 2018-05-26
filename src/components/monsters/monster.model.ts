@@ -42,7 +42,8 @@ export abstract class MonsterModel implements AfterViewInit {
   }
 
   public render(component, name, callback = (instance) => {}) {
-    const { viewContainerRef: container, element  } = this.getContainer(name);
+    const obj = this.getContainer(name);
+    const { viewContainerRef: container, element, content  } = obj;
 
     this.clear(name);
 
@@ -53,15 +54,21 @@ export abstract class MonsterModel implements AfterViewInit {
 
     const instance = (ref.instance as { node }).node.firstChild;
 
+    obj.content = instance;
+
     return callback(instance);
   }
 
   public clear(name) {
-    const { element } = this.getContainer(name);
+    const object = this.getContainer(name);
+    const { element } = object;
+
 
     const children = Array.from(element.children).forEach(e => {
       return this.renderer.removeChild(element, e);
     });
+
+    object.content = null;
 
     return this;
   }

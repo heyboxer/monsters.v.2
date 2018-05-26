@@ -15,11 +15,15 @@ export class MonsterPartDirective {
 
   readonly element: HTMLElement;
   readonly id = uuid();
+  public content;
 
   constructor(
     el: ElementRef,
     readonly viewContainerRef: ViewContainerRef
   ) {
     this.element = el.nativeElement;
+    if(this.type === 'container') {
+      this.content = null;
+    }
   }
 }

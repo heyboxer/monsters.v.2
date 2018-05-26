@@ -69,7 +69,7 @@ export class GamePage extends Game implements AfterViewInit {
 
     this.logic = new GameLogic(this.renderer, instances, this.monsters.getCurrentMonster(), dashboard, eyesContainer.element);
 
-    const setHolderPosition = (item, event) => {
+    const setHolderPosition = (ref, item, event) => {
       const { clientX: x, clientY: y } = (event as MouseEvent);
       const { width, height } = this.holder.getSize();
 
@@ -85,10 +85,23 @@ export class GamePage extends Game implements AfterViewInit {
 
     this.logic.setFns(
       'onItemClick',
-      (item, ev) => {
+      (ref, item, ev) => {
+        if(item.isCopy()) {
+          const parent = item.isCopy();
+          monster.clear('eyes');
+          ref.removeActiveElement(item);
+          (item).deleteCopy();
+
+          this.holder.loadComponent(parent.component);
+
+          return;
+        }
+
         item.deactivate();
         this.renderer.addClass(item.instance, 'blocked');
         this.holder.loadComponent(item.component);
+
+        return;
       },
       setHolderPosition,
     );
@@ -101,19 +114,19 @@ export class GamePage extends Game implements AfterViewInit {
     );
 
     this.logic.setFns(
-      'onContainerClick',
-      ({ component }, ev) => {
-        this.holder.loadComponent(component);
-      },
-      () => {
-        // innerEyes.open();
-      },
-    );
-
-    this.logic.setFns(
       'afterItemPlaced',
       (ref, item) => {
         // innerEyes.close();
+
+        const { content } = monster.getContainer('eyes');
+
+        if(content) {
+          const active = ref.findActiveElementByInstance(content);
+          const parent = active.isCopy();
+          parent.activate();
+          this.renderer.removeClass(parent.instance, 'blocked');
+          ref.removeActiveElement(active);
+        }
 
         const { width, height, x, y } = (eyes.element as SVGGraphicsElement).getBBox();
 
@@ -123,15 +136,25 @@ export class GamePage extends Game implements AfterViewInit {
           this.renderer.setAttribute(instance, 'x', (x - width/2).toString());
           this.renderer.setAttribute(instance, 'y', (y - height/2).toString());
 
-          ref.AddActiveElementCopy(item, instance);
+          const copy = ref.addActiveElementCopy(item, instance);
 
           return;
         });
       }
     )
 
-    this.logic.start();
+    this.logic.setFns(
+      'afterItemDesroyed',
+      (ref, item) => {
+        const parent = item.isCopy();
+        const el = parent ? parent : item;
 
+        el.activate();
+        this.renderer.removeClass(el.instance, 'blocked');
+      }
+    )
+
+    this.logic.start();
   }
 
 }
