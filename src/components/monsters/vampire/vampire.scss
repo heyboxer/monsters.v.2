@@ -1,0 +1,39 @@
+vampire {
+  .dracula {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    &__screen {
+      background-color: #3b457e;
+    }
+
+    & .face {
+      fill: #cf6cac;
+    }
+
+    & .ear {
+      fill: #cf6cac;
+    }
+
+    & .nose {
+      fill: #9a5790;
+    }
+
+    & .nose {
+      fill: #9a5790;
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+
+    & .mouth-figure {
+      fill: #8a4242;
+    }
+
+    & .blood {
+      fill: #f24943;
+    }
+  }
+}

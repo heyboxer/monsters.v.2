@@ -37,27 +37,14 @@ export class GamePage extends Game implements AfterViewInit {
     private app: ApplicationRef
   ) {
     super(renderer);
-    this.monsterId = 2;
-    // this.monsterId = Math.round(Math.random() * (3 - 1) + 1);
+    // this.monsterId = 3;
+    this.monsterId = Math.round(Math.random() * (6 - 1) + 1);
 //
   }
 
   ngAfterViewInit() {
     const instances = this.trinkets.getInstances();
     const parts = this.monsters.getCurrentMonster().getParts();
-    const innerEyes = {
-      renderer: this.renderer,
-      // eyeLeft: parts.find(p => p.type === 'eyeLeft').element,
-      // eyeRight: parts.find(p => p.type === 'eyeRight').element,
-      close: function() {
-        this.renderer.setAttribute(this.eyeLeft, 'visibility', 'hidden');
-        this.renderer.setAttribute(this.eyeRight, 'visibility', 'hidden');
-      },
-      open: function() {
-        this.renderer.setAttribute(this.eyeLeft, 'visibility',  'visible');
-        this.renderer.setAttribute(this.eyeRight, 'visibility',  'visible');
-      },
-    }
 
     const monster = this.monsters.getCurrentMonster();
 
@@ -66,8 +53,7 @@ export class GamePage extends Game implements AfterViewInit {
 
     const dashboard = document.getElementById('panel');
 
-
-    this.logic = new GameLogic(this.renderer, instances, this.monsters.getCurrentMonster(), dashboard, eyesContainer.element);
+    this.logic = new GameLogic(this.renderer, instances, dashboard);
 
     const setHolderPosition = (ref, item, event) => {
       const { clientX: x, clientY: y } = (event as MouseEvent);
@@ -85,11 +71,14 @@ export class GamePage extends Game implements AfterViewInit {
 
     this.logic.setFns(
       'onItemClick',
-      (ref, item, ev) => {
+      (items, item, ev) => {
         if(item.isCopy()) {
+          const { after } = item.meta;
+          after ? after(monster) : null;
+
           const parent = item.isCopy();
-          monster.clear('eyes');
-          ref.removeActiveElement(item);
+          monster.clear(item.meta.container);
+          items.removeActiveElement(item);
           (item).deleteCopy();
 
           this.holder.loadComponent(parent.component);
@@ -115,28 +104,39 @@ export class GamePage extends Game implements AfterViewInit {
 
     this.logic.setFns(
       'afterItemPlaced',
-      (ref, item) => {
-        // innerEyes.close();
+      (items, item) => {
+        const { before } = item.meta;
 
-        const { content } = monster.getContainer('eyes');
+        before ? before(monster) : null;
+
+        const { content } = monster.getContainer(item.meta.container);
+        const { element } = monster.getGroup(item.meta.container);
 
         if(content) {
-          const active = ref.findActiveElementByInstance(content);
+          const active = items.findActiveElementByInstance(content);
+          const { after } = active.meta;
+
+          after ? after(monster) : null;
+
           const parent = active.isCopy();
           parent.activate();
           this.renderer.removeClass(parent.instance, 'blocked');
-          ref.removeActiveElement(active);
+          items.removeActiveElement(active);
         }
 
-        const { width, height, x, y } = (eyes.element as SVGGraphicsElement).getBBox();
+        const config = (element as SVGGraphicsElement).getBBox();
 
-        monster.render(item.component, 'eyes', (instance) => {
-          this.renderer.setAttribute(instance, 'width', (width * 2).toString());
-          this.renderer.setAttribute(instance, 'height', (height * 2).toString());
-          this.renderer.setAttribute(instance, 'x', (x - width/2).toString());
-          this.renderer.setAttribute(instance, 'y', (y - height/2).toString());
+        monster.render(item.component, item.meta.container, (instance) => {
+          const { attr } = item.meta;
 
-          const copy = ref.addActiveElementCopy(item, instance);
+          Object.keys(attr).forEach(name => {
+            const funcs = attr[name];
+            const fn = funcs[monster.name] || funcs['default'];
+            this.renderer.setAttribute(instance, name, fn(config).toString());
+            return;
+          });
+
+          const copy = items.addActiveElementCopy(item, instance);
 
           return;
         });

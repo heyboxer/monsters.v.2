@@ -6,11 +6,13 @@ type ActiveElementType = 'original' | 'copy';
 export interface ActiveElementConfig {
   instance: HTMLElement,
   component: ComponentRef<any>,
+  meta: Object,
 }
 
 export class ActiveElementModel {
   public instance: HTMLElement;
   public component: ComponentRef<any>;
+  public meta: Object;
   public state: ActiveElementState = 'activated';
   public type: ActiveElementType = 'original';
   private funcReg: Map<string, (ev) => void> = new Map();
@@ -23,6 +25,7 @@ export class ActiveElementModel {
   constructor(obj: ActiveElementConfig) {
     this.instance = obj.instance;
     this.component = obj.component;
+    this.meta = obj.meta;
     this.breakpoints = { afterActivation: [], afterDeactivation: [] };
   };
 
@@ -49,6 +52,7 @@ export class ActiveElementModel {
       {
         instance,
         component: this.component,
+        meta: this.meta,
       },
       this
     );

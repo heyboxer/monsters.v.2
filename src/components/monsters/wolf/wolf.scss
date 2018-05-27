@@ -1,0 +1,45 @@
+wolf {
+  .wolf {
+    left: 0;
+
+    &__screen {
+      background-color: #4eb959;
+    }
+
+    & .body {
+      fill: #666;
+    }
+
+    & .tongue {
+      fill: #f24942;
+    }
+
+    & .jaw {
+      fill: #666;
+    }
+
+    & .cheek {
+      fill: #666;
+    }
+
+    & .saliva {
+      fill: #80b7e5;
+    }
+
+    & .snout {
+      fill: #666;
+    }
+
+    & .face {
+      fill: #666;
+    }
+
+    & .ear {
+      fill: #666;
+    }
+
+    & .eyeball-part {
+      fill: #f1ea35;
+    }
+  }
+}

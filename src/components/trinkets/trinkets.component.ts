@@ -12,7 +12,7 @@ import { TrinketsService } from './trinkets.service';
   // }
 })
 export class TrinketsComponent implements AfterViewInit, OnInit {
-  public trinkets: { id, component }[];
+  public trinkets: { id, component, meta }[];
   public instances;
 
   @ViewChildren(TrinketHostDirective) hosts: QueryList<TrinketHostDirective>;
@@ -40,7 +40,7 @@ export class TrinketsComponent implements AfterViewInit, OnInit {
 
       const { instance } = viewContainerRef.createComponent(componentFactory);
 
-      return { ...instance, component: trinket.component };
+      return { ...instance, component: trinket.component, meta: trinket.meta };
     });
 
     return;

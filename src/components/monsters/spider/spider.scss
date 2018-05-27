@@ -1,0 +1,37 @@
+spider {
+.spider {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__screen {
+    background-color: #f1ea35;
+  }
+
+  & .leg {
+    stroke-width: 8.05px;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    fill: none;
+  }
+
+  & .web {
+    stroke-width: 2.5px;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    fill: none;
+  }
+
+  & .eyeball {
+    fill: #058d5a;
+  }
+
+  & .body-part--colored {
+    fill: #058d5a;
+  }
+
+  & .tooth {
+    fill: #fff;
+  }
+}
+}

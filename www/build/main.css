@@ -25715,6 +25715,37 @@ alien .alien .body--figure {
   fill: #6fc055;
 }
 
+.zombie {
+  right: 0;
+}
+
+.zombie__screen {
+  background-color: #f46540;
+}
+
+.zombie .body {
+  fill: #cdcdcd;
+}
+
+.zombie .face {
+  fill: #00ad5e;
+}
+
+.zombie .nose {
+  fill: #20654d;
+}
+
+.zombie .pupil {
+  fill: #f24943;
+}
+
+.zombie .steam-part {
+  stroke-width: 2.63px;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
 skeleton .skeleton {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -25746,6 +25777,126 @@ skeleton .skeleton .pupil {
   fill: #f24942;
 }
 
+spider .spider {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+spider .spider__screen {
+  background-color: #f1ea35;
+}
+
+spider .spider .leg {
+  stroke-width: 8.05px;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+spider .spider .web {
+  stroke-width: 2.5px;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+spider .spider .eyeball {
+  fill: #058d5a;
+}
+
+spider .spider .body-part--colored {
+  fill: #058d5a;
+}
+
+spider .spider .tooth {
+  fill: #fff;
+}
+
+vampire .dracula {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+vampire .dracula__screen {
+  background-color: #3b457e;
+}
+
+vampire .dracula .face {
+  fill: #cf6cac;
+}
+
+vampire .dracula .ear {
+  fill: #cf6cac;
+}
+
+vampire .dracula .nose {
+  fill: #9a5790;
+}
+
+vampire .dracula .nose {
+  fill: #9a5790;
+}
+
+vampire .dracula .tooth {
+  fill: #fff;
+}
+
+vampire .dracula .mouth-figure {
+  fill: #8a4242;
+}
+
+vampire .dracula .blood {
+  fill: #f24943;
+}
+
+wolf .wolf {
+  left: 0;
+}
+
+wolf .wolf__screen {
+  background-color: #4eb959;
+}
+
+wolf .wolf .body {
+  fill: #666;
+}
+
+wolf .wolf .tongue {
+  fill: #f24942;
+}
+
+wolf .wolf .jaw {
+  fill: #666;
+}
+
+wolf .wolf .cheek {
+  fill: #666;
+}
+
+wolf .wolf .saliva {
+  fill: #80b7e5;
+}
+
+wolf .wolf .snout {
+  fill: #666;
+}
+
+wolf .wolf .face {
+  fill: #666;
+}
+
+wolf .wolf .ear {
+  fill: #666;
+}
+
+wolf .wolf .eyeball-part {
+  fill: #f1ea35;
+}
+
 .zombie {
   right: 0;
 }
@@ -25775,6 +25926,43 @@ skeleton .skeleton .pupil {
   stroke: #000;
   stroke-miterlimit: 10;
   fill: none;
+}
+
+.eyes-trinket .cls-1 {
+  fill: #00bcc5;
+}
+
+.eyes-trinket .cls-2 {
+  fill: #fff;
+}
+
+.eyes-trinket .cls-3 {
+  fill: #b4b4b5;
+}
+
+.glass .cls-1 {
+  fill: #c39dc8;
+}
+
+.glass .cls-1,
+.glass .cls-2,
+.glass .cls-3 {
+  stroke: #596bb1;
+  stroke-miterlimit: 10;
+}
+
+.glass .cls-1,
+.glass .cls-2 {
+  stroke-width: 7.71px;
+}
+
+.glass .cls-2,
+.glass .cls-3 {
+  fill: none;
+}
+
+.glass .cls-3 {
+  stroke-width: 4.94px;
 }
 
 page-game {
@@ -25932,31 +26120,6 @@ page-game .panel-container {
   -webkit-flex: 0 0 200px;
   -ms-flex: 0 0 200px;
   flex: 0 0 200px;
-}
-
-page-game .cls-1 {
-  fill: #c39dc8;
-}
-
-page-game .cls-1,
-page-game .cls-2,
-page-game .cls-3 {
-  stroke: #596bb1;
-  stroke-miterlimit: 10;
-}
-
-page-game .cls-1,
-page-game .cls-2 {
-  stroke-width: 7.71px;
-}
-
-page-game .cls-2,
-page-game .cls-3 {
-  fill: none;
-}
-
-page-game .cls-3 {
-  stroke-width: 4.94px;
 }
 
 page-game .blocked {

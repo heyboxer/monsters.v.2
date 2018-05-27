@@ -1,3 +1,26 @@
-// zombie {
+.glass {
+  & .cls-1 {
+    fill: #c39dc8;
+  }
 
-// }
+  & .cls-1,
+  & .cls-2,
+  & .cls-3 {
+    stroke: #596bb1;
+    stroke-miterlimit: 10;
+  }
+
+  & .cls-1,
+  & .cls-2 {
+    stroke-width: 7.71px;
+  }
+
+  & .cls-2,
+  & .cls-3 {
+    fill: none;
+  }
+
+  & .cls-3 {
+    stroke-width: 4.94px;
+  }
+}
