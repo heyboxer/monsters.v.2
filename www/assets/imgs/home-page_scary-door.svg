@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.31 198.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1ea35;
+      }
+      .cls-3 {
+        fill: #4c4c4c;
+      }
+      .cls-4 {
+        fill: #666;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Слой_2" data-name="Слой 2"><rect class="cls-1" x="13.95" y="14.37" width="80.23" height="183.11"/><ellipse class="cls-2" cx="72.21" cy="195" rx="2.1" ry="13.08" transform="translate(-132.25 232.94) rotate(-80.19)"/><rect class="cls-2" x="59" y="174" width="7.8" height="24.19"/><ellipse class="cls-2" cx="42.51" cy="195" rx="2.1" ry="13.08" transform="translate(-156.89 203.68) rotate(-80.19)"/><rect class="cls-2" x="29.31" y="174" width="7.8" height="24.19"/><rect class="cls-3" x="16.88" y="16.41" width="74.55" height="166.92"/><rect class="cls-4" x="23.59" y="23.52" width="61.13" height="109.2"/><rect class="cls-4" x="23.59" y="139.82" width="61.13" height="35.83"/><rect class="cls-4" y="7.97" width="14.07" height="189.43"/><rect class="cls-4" x="94.24" y="7.97" width="14.07" height="189.43"/><rect class="cls-4" x="47.12" y="-47.12" width="14.07" height="108.31" transform="translate(61.19 -47.12) rotate(90)"/><rect x="82.98" y="31.81" width="19.69" height="2.96" transform="translate(126.12 -59.54) rotate(90)"/><rect x="83.03" y="164.53" width="19.69" height="2.9" transform="translate(258.86 73.1) rotate(90)"/></g>
+  </g>
+</svg>

@@ -14,7 +14,7 @@ export class GameLogic {
   constructor(
     private r: Renderer2,
     items: { node, component }[],
-    private dashboard,
+    dashboard: Function,
   ){
     this.listners = new ListnersHandler(this.r);
 
@@ -64,6 +64,7 @@ export class GameLogic {
 
   public over() : this {
     this.listners.removeListners();
+    this.repo.clear();
     return this;
   }
 

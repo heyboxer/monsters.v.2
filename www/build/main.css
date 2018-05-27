@@ -26131,6 +26131,27 @@ page-home .container {
   background-color: black;
 }
 
+page-home .image {
+  position: absolute;
+  width: 231.8px;
+  height: 424.2px;
+  top: 8%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: transparent url("../assets/imgs/home-page_scary-door.svg") no-repeat center;
+}
+
+page-home .btn-play {
+  position: absolute;
+  width: 78.3px;
+  height: 93.9px;
+  left: 50%;
+  top: 34%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 page-home .logo {
   position: absolute;
   width: 291.9px;
@@ -26139,4 +26160,142 @@ page-home .logo {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+select-page .container {
+  background-color: #003d4e;
+}
+
+select-page .cls-1 {
+  fill: #003d4e;
+}
+
+select-page .bg {
+  border-top: 22px solid #001826;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+select-page .bg__content {
+  width: 100%;
+  height: 100%;
+}
+
+select-page .list {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+select-page .item {
+  position: absolute;
+}
+
+select-page .monsters {
+  position: absolute;
+  z-index: 10;
+}
+
+select-page .monsters__alien {
+  height: 19.38%;
+}
+
+.mobile select-page .monsters__alien {
+  height: 14.443%;
+}
+
+select-page .monsters__yaga {
+  height: 20.805%;
+  -webkit-transform: rotate(-20grad);
+  transform: rotate(-20grad);
+}
+
+.mobile select-page .monsters__yaga {
+  height: 15.518%;
+}
+
+select-page .monsters__skeleton {
+  height: 18.251%;
+}
+
+.mobile select-page .monsters__skeleton {
+  height: 13.602%;
+}
+
+select-page .monsters__mummy {
+  height: 19.425%;
+}
+
+.mobile select-page .monsters__mummy {
+  height: 14.476%;
+}
+
+select-page .monsters__spider {
+  height: 18.063%;
+}
+
+.mobile select-page .monsters__spider {
+  height: 13.462%;
+}
+
+select-page .monsters__ghost {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  height: 18.523%;
+}
+
+.mobile select-page .monsters__ghost {
+  height: 13.816%;
+}
+
+select-page .monsters__doctor {
+  height: 21.549%;
+}
+
+.mobile select-page .monsters__doctor {
+  height: 16.06%;
+}
+
+select-page .monsters__bed {
+  height: 13.694%;
+}
+
+.mobile select-page .monsters__bed {
+  height: 10.2%;
+}
+
+select-page .monsters__wolf {
+  height: 12.439%;
+}
+
+.mobile select-page .monsters__wolf {
+  height: 9.271%;
+}
+
+select-page .monsters__yeti {
+  height: 19.951%;
+}
+
+.mobile select-page .monsters__yeti {
+  height: 14.868%;
+}
+
+select-page .monsters__vampire {
+  height: 21%;
+}
+
+.mobile select-page .monsters__vampire {
+  height: 15.4%;
+}
+
+select-page .monsters__zombie {
+  height: 22.09%;
+}
+
+.mobile select-page .monsters__zombie {
+  height: 16.463%;
 }

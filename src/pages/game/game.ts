@@ -6,12 +6,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Game } from '../../components/game/game.service';
 import { GameLogic } from '../../components/game/game-logic';
 import { ItemHolderComponent } from '../../components/item-holder/item-holder.component';
-// import { CursorStateService } from '../../components/game/cursor-state.service';
 
 
-// import { MonstersService } from '../../components/monsters/monsters.service';
 
-import ElementsRepo from '../../model/element.repository';
 
 @IonicPage()
 @Component({
@@ -20,40 +17,52 @@ import ElementsRepo from '../../model/element.repository';
   providers: [],
 })
 export class GamePage extends Game implements AfterViewInit {
-  private glasses = null;
   monsterId: string | number;
   private logic: GameLogic;
 
   @ViewChild( TrinketsComponent ) trinkets: TrinketsComponent;
-  @ViewChild( MonstersComponent ) monsters: MonstersComponent;
+  @ViewChild( MonstersComponent ) monster: MonstersComponent;
   @ViewChild( ItemHolderComponent ) holder: ItemHolderComponent;
 
   constructor(
     public navCtrl: NavController,
-    public navParams: NavParams,
+    public params: NavParams,
     readonly renderer: Renderer2,
     private componentFactoryResolver: ComponentFactoryResolver,
     private injector: Injector,
     private app: ApplicationRef
   ) {
     super(renderer);
-    // this.monsterId = 3;
-    this.monsterId = Math.round(Math.random() * (6 - 1) + 1);
+    this.monsterId = this.params.get('monster');
 //
   }
 
   ngAfterViewInit() {
     const instances = this.trinkets.getInstances();
-    const parts = this.monsters.getCurrentMonster().getParts();
+    const parts = this.monster.getCurrentMonster().getParts();
 
-    const monster = this.monsters.getCurrentMonster();
+    const monster = this.monster.getCurrentMonster();
 
-    const eyes = monster.getGroup('eyes');
-    const eyesContainer = monster.getContainer('eyes')
+    const canPlace = (ev) => {
+      const { clientX, clientY } = (ev as MouseEvent);
+      const dashboard = document.getElementById('panel');
+      const top = dashboard.offsetTop;
+      const bottom = top + dashboard.offsetHeight;
+      const left = dashboard.offsetLeft;
+      const right = left + dashboard.offsetWidth;
 
-    const dashboard = document.getElementById('panel');
+      const isOnDashboard = () => clientX > left && clientX < right && clientY > top && clientY < bottom;
 
-    this.logic = new GameLogic(this.renderer, instances, dashboard);
+      const { clientHeight: bodyH, clientWidth: bodyW } = document.getElementsByTagName('body').item(0);
+
+      const isNearEdges = (p) => {
+        return clientX < p || clientX > bodyW - p || clientY < p || clientY > bodyH - p;
+      };
+
+      return isOnDashboard() || isNearEdges(40);
+    };
+
+    this.logic = new GameLogic(this.renderer, instances, canPlace);
 
     const setHolderPosition = (ref, item, event) => {
       const { clientX: x, clientY: y } = (event as MouseEvent);
@@ -154,6 +163,29 @@ export class GamePage extends Game implements AfterViewInit {
       }
     )
 
+    this.logic.setFns(
+      'afterClear',
+      (ref, items) => {
+        items.forEach(el => {
+          el.activate();
+          this.renderer.removeClass(el.instance, 'blocked');
+        })
+      }
+    )
+
+    this.logic.start();
+  }
+
+  endGame() {
+    this.logic.over();
+    this.holder.clear();
+    this.navCtrl.pop();
+  }
+
+  reset() {
+    this.logic.over();
+    this.holder.clear();
+    this.monster.getCurrentMonster().clearAll();
     this.logic.start();
   }
 

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.51 282.94">
+  <defs>
+    <style>
+      .cls-2 {
+        fill: #fff;
+      }
+      .cls-3 {
+        fill: #f7decb;
+      }
+      .cls-4 {
+        fill: #f24943;
+      }
+      .cls-5,
+      .cls-6 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+      .cls-5 {
+        stroke-width: 1px;
+      }
+      .cls-6 {
+        stroke-width: 1.84px;
+      }
+      .cls-7 {
+        fill: #ebba96;
+      }
+      .cls-8 {
+        fill: #c39dc8;
+      }
+    </style>
+  </defs>
+  <title>Asset 3</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Слой_1" data-name="Слой 1"><rect class="cls-1" x="44.01" y="260.7" width="6.8" height="3.02"/><rect class="cls-1" x="44.01" y="263.72" width="6.8" height="3.02"/><rect class="cls-1" x="44.01" y="266.74" width="6.8" height="3.02"/><rect class="cls-1" x="44.01" y="269.77" width="6.8" height="3.02"/><rect class="cls-1" x="44.01" y="272.79" width="6.8" height="3.02"/><rect class="cls-1" x="42.03" y="182.43" width="10.89" height="91.3"/><rect class="cls-1" x="43.99" y="275.79" width="6.83" height="5.84"/><path class="cls-1" d="M49.58,279.2l-18.42,3.72c-.6.12-1.22-.45-1.39-1.28h0a1.37,1.37,0,0,1,.78-1.72l15-4.22c.6-.12,4.69,1,4.85,1.78h0A1.37,1.37,0,0,1,49.58,279.2Z"/><rect class="cls-1" x="43.99" y="280.29" width="6.83" height="1.34"/><rect class="cls-1" x="70.01" y="260.7" width="6.8" height="3.02"/><rect class="cls-1" x="70.01" y="263.72" width="6.8" height="3.02"/><rect class="cls-1" x="70.01" y="266.74" width="6.8" height="3.02"/><rect class="cls-1" x="70.01" y="269.77" width="6.8" height="3.02"/><rect class="cls-1" x="70.01" y="272.79" width="6.8" height="3.02"/><rect class="cls-1" x="68.03" y="182.43" width="10.89" height="91.3"/><rect class="cls-1" x="69.99" y="275.79" width="6.83" height="5.84"/><path class="cls-1" d="M75.58,279.2l-18.42,3.72c-.6.12-1.22-.45-1.39-1.28h0a1.37,1.37,0,0,1,.78-1.72l15-4.22c.6-.12,4.69,1,4.85,1.78h0A1.37,1.37,0,0,1,75.58,279.2Z"/><rect class="cls-1" x="69.99" y="280.29" width="6.83" height="1.34"/><path class="cls-2" d="M83.08,101.27A23,23,0,0,0,60.17,78.36h0a23,23,0,0,0-22.91,22.91v131H83.08Z"/><ellipse class="cls-3" cx="60.28" cy="52.83" rx="15" ry="35.82"/><ellipse class="cls-3" cx="45.02" cy="51.82" rx="3.45" ry="8.23"/><ellipse class="cls-3" cx="75.37" cy="51.82" rx="3.45" ry="8.23"/><rect class="cls-2" x="49.55" width="21.47" height="27.68"/><rect class="cls-4" x="58.49" y="7.01" width="3.58" height="15.67"/><rect class="cls-4" x="58.49" y="7.01" width="3.58" height="15.67" transform="translate(75.13 -45.43) rotate(90)"/><circle class="cls-5" cx="54.3" cy="43.73" r="1.99"/><circle class="cls-6" cx="65.47" cy="41.93" r="3.68"/><rect class="cls-2" x="56.08" y="70.74" width="3.33" height="4.63"/><rect class="cls-2" x="61.15" y="70.74" width="3.33" height="4.63"/><rect class="cls-4" x="53.34" y="68.65" width="13.88" height="2.24"/><rect class="cls-7" x="58.62" y="49.4" width="3.33" height="16.42"/><path class="cls-3" d="M47,100.21,11.61,185.67c-.87,2.11-8.53-1-7.67-3.15L39.38,97.06a4.16,4.16,0,0,1,5.41-2.26h0A4.16,4.16,0,0,1,47,100.21Z"/><rect class="cls-3" x="2.14" y="180.22" width="2.42" height="13.69" rx="1.21" ry="1.21" transform="translate(71.3 12.75) rotate(22.32)"/><rect class="cls-3" x="4.87" y="181.34" width="2.42" height="13.69" rx="1.21" ry="1.21" transform="translate(71.93 11.79) rotate(22.32)"/><rect class="cls-3" x="7.59" y="182.45" width="2.42" height="13.69" rx="1.21" ry="1.21" transform="translate(72.56 10.84) rotate(22.32)"/><rect class="cls-3" x="9.86" y="178.51" width="2.42" height="12.41" rx="1.21" ry="1.21" transform="translate(-70.36 18.55) rotate(-22.68)"/><rect class="cls-3" x="4.06" y="183.61" width="7.13" height="4.21" transform="translate(71.11 11.02) rotate(22.32)"/><polygon class="cls-2" points="4.34 176.56 39.41 91.98 50.96 96.73 15.88 181.3 4.34 176.56"/><path class="cls-3" d="M73.58,100.21,109,185.67c.87,2.11,8.53-1,7.67-3.15L81.25,97.06a4.16,4.16,0,0,0-5.41-2.26h0A4.16,4.16,0,0,0,73.58,100.21Z"/><rect class="cls-3" x="116.06" y="180.22" width="2.42" height="13.69" rx="1.21" ry="1.21" transform="translate(296.81 315.56) rotate(157.68)"/><rect class="cls-3" x="113.33" y="181.34" width="2.42" height="13.69" rx="1.21" ry="1.21" transform="translate(291.99 318.75) rotate(157.68)"/><rect class="cls-3" x="110.61" y="182.45" width="2.42" height="13.69" rx="1.21" ry="1.21" transform="translate(287.16 321.95) rotate(157.68)"/><rect class="cls-3" x="103.35" y="183.5" width="12.41" height="2.42" rx="1.21" ry="1.21" transform="translate(-103.12 214.58) rotate(-67.32)"/><rect class="cls-3" x="109.43" y="183.61" width="7.13" height="4.21" transform="translate(288.07 314.59) rotate(157.68)"/><polygon class="cls-2" points="116.29 176.56 81.21 91.98 69.67 96.73 104.74 181.3 116.29 176.56"/><rect x="109.43" y="180.27" width="3.33" height="20.67" transform="translate(245.79 15.87) rotate(67.86)"/><rect x="86.96" y="224.66" width="76.67" height="1.67" transform="translate(286.95 24.46) rotate(67.86)"/><rect x="129.28" y="235.48" width="3.13" height="7.88" transform="translate(303.31 28) rotate(67.86)"/><rect class="cls-2" x="105.56" y="213.98" width="35.67" height="13.67" transform="matrix(0.38, 0.93, -0.93, 0.38, 281.42, 23.31)"/><rect class="cls-8" x="122.1" y="226.38" width="12.67" height="13.67" transform="translate(296.06 26.36) rotate(67.86)"/><rect x="115.18" y="210.59" width="8.5" height="1" transform="matrix(0.93, -0.38, 0.38, 0.93, -70.74, 60.57)"/><rect x="116.5" y="213.83" width="8.5" height="1" transform="matrix(0.93, -0.38, 0.38, 0.93, -71.87, 61.3)"/><rect x="117.82" y="217.07" width="8.5" height="1" transform="translate(-72.99 62.04) rotate(-22.14)"/><rect x="119.14" y="220.31" width="8.5" height="1" transform="translate(-74.11 62.78) rotate(-22.14)"/><rect x="120.46" y="223.55" width="8.5" height="1" transform="translate(-75.24 63.51) rotate(-22.14)"/><rect x="121.78" y="226.8" width="8.5" height="1" transform="matrix(0.93, -0.38, 0.38, 0.93, -76.36, 64.25)"/><rect x="123.1" y="230.04" width="8.5" height="1" transform="translate(-77.49 64.98) rotate(-22.14)"/></g>
+  </g>
+</svg>

@@ -12,17 +12,9 @@ const lib: { [key: string] : (item: ActiveElementModel, ev: Event) => void } = {
     return;
   },
   handleCursorPosition: function(item, ev) {
-    const { clientX, clientY } = (ev as MouseEvent);
-    const top = this.dashboard.offsetTop;
-    const bottom = top + this.dashboard.offsetHeight;
-    const left = this.dashboard.offsetLeft;
-    const right = left + this.dashboard.offsetWidth;
-
-    const isOnDashboard = () => clientX > left && clientX < right && clientY > top && clientY < bottom;
-
     this.callbacks.onItemDragging.forEach(fn => fn(this, item, ev));
 
-    if(isOnDashboard()) {
+    if(this.onDashboard(ev)) {
       if(!this.fsm.isDraggedOut()) {
         this.fsm.moveOut();
       }
@@ -70,11 +62,12 @@ export class ActiveElementRepository {
     afterItemPlaced: Function[];
     afterItemDesroyed: Function[];
     onItemDragging: Function[];
+    afterClear: Function[];
   };
 
   constructor(
     private fsm: GameFinistStateMachine,
-    private dashboard: HTMLElement,
+    private onDashboard: Function,
     items: { node, component, meta? }[]
   ) {
     this.callbacks = {
@@ -83,6 +76,7 @@ export class ActiveElementRepository {
       afterItemPlaced: [],
       afterItemDesroyed: [],
       onItemDragging: [],
+      afterClear: [],
     }
 
     items.forEach(item => this.addActiveElement(new ActiveElementModel(
@@ -139,6 +133,17 @@ export class ActiveElementRepository {
 
   public getActive() {
     return this.items.filter(item => item.isActive());
+  }
+
+  public clear() {
+    const filtered = this.items.filter(e => e.type === 'original');
+    this.items = filtered;
+
+    const originals = this.items.forEach(e => e.deleteAllCopies());
+
+    this.callbacks.afterClear.forEach(fn => fn(this, this.items));
+
+    return;
   }
 
   public setFns(name: string, ...fns: any[]): this {

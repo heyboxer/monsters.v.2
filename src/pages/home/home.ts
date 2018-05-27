@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { GamePage as SelectCharPage  } from '../game/game';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { SelectPage } from '../select/select';
+
+@IonicPage()
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
 })
 export class HomePage {
 
@@ -12,8 +14,7 @@ export class HomePage {
 
   }
 
-  selectGame() {
-    this.navCtrl.push(SelectCharPage);
+  select() {
+    this.navCtrl.push(SelectPage);
   }
-
 }

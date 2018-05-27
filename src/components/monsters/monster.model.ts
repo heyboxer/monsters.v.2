@@ -74,24 +74,35 @@ export abstract class MonsterModel implements AfterViewInit {
   }
 
 
-    private trigger(name, arg: boolean) {
+    private trigger(name, fn) {
       const gr = this.getParts((p) => p.name === name);
 
-      gr.forEach(({ element }) => {
-        this.renderer.setAttribute(element, 'visibility', (arg ? 'hidden' : 'visible'));
-        return;
-      });
+      gr.forEach(({ element }) => fn(element));
     }
 
     public close(name) {
-      this.trigger(name, true);
+      this.trigger(name, (element) => {
+        this.renderer.setAttribute(element, 'visibility', 'hidden');
+        return;
+      });
 
       return () => this.open(name);
     }
 
     public open(name) {
-      this.trigger(name, false);
+      this.trigger(name, (element) => {
+        element.removeAttribute('visibility');
+      });
 
       return () => this.close(name);;
+    }
+
+    public clearAll() {
+      this.getContainers().forEach(({ group }) => this.clear(group));
+      this.getParts(p => p.type !== 'container').forEach(({name}) => {
+        this.open(name);
+      });
+
+      return;
     }
 }

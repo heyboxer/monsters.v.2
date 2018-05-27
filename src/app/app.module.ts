@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 // Modules
 import { ComponentsModule } from '../components/components.module';
+import { BackgroundModule } from '../pages/select/background/bg.module';
 import { ModelModule } from '../model/model.module';
 
 // Components
@@ -14,24 +15,29 @@ import { MyApp } from './app.component';
 
 // Pages
 import { HomePage } from '../pages/home/home';
+import { SelectPage } from '../pages/select/select';
 import { GamePage } from '../pages/game/game';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    SelectPage,
     GamePage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ComponentsModule,
+    BackgroundModule,
     ModelModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
+    SelectPage,
     GamePage,
   ],
   providers: [

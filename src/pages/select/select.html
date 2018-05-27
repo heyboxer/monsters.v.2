@@ -1,0 +1,12 @@
+<ion-content class="container" fixed no-bounce>
+  <div class="bg">
+    <div class="list" [class.mobile]="isIphone()">
+        <img *ngFor="let monster of monsters" (click)="beginGame(monster.id)" src="assets/imgs/monsters/{{monster.name}}.svg" alt="placholder" class="monsters monsters__{{monster.name}}" [style.left.px]="monster.left" [style.top.px]="monster.top">
+    </div>
+
+    <background-mobile *ngIf="isIphone(); else tablet"></background-mobile>
+    <ng-template #tablet>
+      <background-tablet></background-tablet>
+    </ng-template>
+  </div>
+</ion-content>

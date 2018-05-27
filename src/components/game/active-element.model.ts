@@ -66,6 +66,11 @@ export class ActiveElementModel {
     return this;
   }
 
+  public deleteAllCopies(): ActiveElementModel {
+    this.children.forEach(ch => this.deleteCopy(ch));
+    return this;
+  }
+
   public isCopy(): boolean | ActiveElementModel {
     return false;
   }
