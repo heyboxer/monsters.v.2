@@ -1,5 +1,7 @@
 import { Component, ElementRef, Renderer2, ComponentFactoryResolver, Injector, ApplicationRef, AfterViewInit } from '@angular/core';
 import { MonsterModel } from '../monster.model';
+
+// @ts-ignore: Unreachable code error
 import Snap from 'imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js';
 
 const aniamtions = function(instance) {

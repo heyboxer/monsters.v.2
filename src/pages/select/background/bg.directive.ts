@@ -3,7 +3,7 @@ import { Directive, ElementRef, Input, HostListener, AfterViewInit } from '@angu
 @Directive({
   selector: '[background-anchor]',
 })
-export abstract class BackgroundAnchorDirective implements AfterViewInit {
+export class BackgroundAnchorDirective implements AfterViewInit {
   readonly element: HTMLElement;
   public top: number;
   public left: number;

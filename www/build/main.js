@@ -772,6 +772,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+// @ts-ignore: Unreachable code error
 
 var aniamtions = function (instance) {
     var _this = this;
@@ -1627,9 +1628,10 @@ var BackgroundAnchorDirective = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
             selector: '[background-anchor]',
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object])
     ], BackgroundAnchorDirective);
     return BackgroundAnchorDirective;
+    var _a;
 }());
 
 //# sourceMappingURL=bg.directive.js.map
