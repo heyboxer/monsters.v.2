@@ -5,6 +5,7 @@ import { MonstersService } from '../../components/monsters/monsters.service';
 import { GamePage } from '../game/game';
 
 import { BackgroundTabletComponent } from './background/background-tablet.component';
+import { BackgroundMobileComponent } from './background/background-mobile.component';
 
 @Component({
   selector: 'select-page',
@@ -15,6 +16,7 @@ export class SelectPage implements AfterViewInit {
   private monsters: { name, top?, left? }[];
 
   @ViewChild(BackgroundTabletComponent) bg: BackgroundTabletComponent;
+  @ViewChild(BackgroundMobileComponent) bgMobile: BackgroundMobileComponent;
 
   constructor(
     public navCtrl: NavController,
@@ -26,7 +28,7 @@ export class SelectPage implements AfterViewInit {
 
   ngAfterViewInit() {
     this.monsters = this.repo.getMonsters().map(m => {
-      const { top, left } = this.bg.find(m.name);
+      const { top, left } = this.isIphone() ? this.bgMobile.find(m.name) : this.bg.find(m.name);
       return { name: m.name, top: Math.floor(top), left: Math.floor(left), id: m.id };
     });
 

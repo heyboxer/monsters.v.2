@@ -12,6 +12,6 @@ export class BackgroundMobileComponent extends BackgroundComponent implements Af
   }
 
   ngAfterViewInit() {
-    console.log(this);
+    
   }
 }
