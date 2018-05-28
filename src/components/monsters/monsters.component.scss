@@ -1,4 +1,23 @@
 monster {
   position: relative;
   z-index: 0;
+
+  &.skeleton__screen {
+    background-color: #000;
+  }
+  &.zombie__screen {
+    background-color: #f46540;
+  }
+  &.wolf__screen {
+    background-color: #4eb959;
+  }
+  &.vampire__screen {
+    background-color: #3b457e;
+  }
+  &.spider__screen {
+    background-color: #f1ea35;
+  }
+  &.alien__screen {
+    background-color: #000;
+  }
 }

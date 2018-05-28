@@ -17,11 +17,12 @@ import { ItemHolderComponent } from '../../components/item-holder/item-holder.co
   providers: [],
 })
 export class GamePage extends Game implements AfterViewInit {
-  monsterId: string | number;
+  private monsterId: string | number;
+  private monster;
   private logic: GameLogic;
 
   @ViewChild( TrinketsComponent ) trinkets: TrinketsComponent;
-  @ViewChild( MonstersComponent ) monster: MonstersComponent;
+  @ViewChild( MonstersComponent ) monsterComponent: MonstersComponent;
   @ViewChild( ItemHolderComponent ) holder: ItemHolderComponent;
 
   constructor(
@@ -34,14 +35,12 @@ export class GamePage extends Game implements AfterViewInit {
   ) {
     super(renderer);
     this.monsterId = this.params.get('monster');
-//
   }
 
   ngAfterViewInit() {
-    const instances = this.trinkets.getInstances();
-    const parts = this.monster.getCurrentMonster().getParts();
+    this.monster = this.monsterComponent.getCurrentMonster();
 
-    const monster = this.monster.getCurrentMonster();
+    const instances = this.trinkets.getInstances();
 
     const canPlace = (ev) => {
       const { clientX, clientY } = (ev as MouseEvent);
@@ -83,10 +82,10 @@ export class GamePage extends Game implements AfterViewInit {
       (items, item, ev) => {
         if(item.isCopy()) {
           const { after } = item.meta;
-          after ? after(monster) : null;
+          after ? after(this.monster) : null;
 
           const parent = item.isCopy();
-          monster.clear(item.meta.container);
+          this.monster.clear(item.meta.container);
           items.removeActiveElement(item);
           (item).deleteCopy();
 
@@ -116,16 +115,16 @@ export class GamePage extends Game implements AfterViewInit {
       (items, item) => {
         const { before } = item.meta;
 
-        before ? before(monster) : null;
+        before ? before(this.monster) : null;
 
-        const { content } = monster.getContainer(item.meta.container);
-        const { element } = monster.getGroup(item.meta.container);
+        const { content } = this.monster.getContainer(item.meta.container);
+        const { element } = this.monster.getGroup(item.meta.container);
 
         if(content) {
           const active = items.findActiveElementByInstance(content);
           const { after } = active.meta;
 
-          after ? after(monster) : null;
+          after ? after(this.monster) : null;
 
           const parent = active.isCopy();
           parent.activate();
@@ -135,12 +134,12 @@ export class GamePage extends Game implements AfterViewInit {
 
         const config = (element as SVGGraphicsElement).getBBox();
 
-        monster.render(item.component, item.meta.container, (instance) => {
+        this.monster.render(item.component, item.meta.container, (instance) => {
           const { attr } = item.meta;
 
           Object.keys(attr).forEach(name => {
             const funcs = attr[name];
-            const fn = funcs[monster.name] || funcs['default'];
+            const fn = funcs[this.monster.name] || funcs['default'];
             this.renderer.setAttribute(instance, name, fn(config).toString());
             return;
           });
@@ -174,6 +173,8 @@ export class GamePage extends Game implements AfterViewInit {
     )
 
     this.logic.start();
+
+    this.monster.animate();
   }
 
   endGame() {
@@ -185,7 +186,7 @@ export class GamePage extends Game implements AfterViewInit {
   reset() {
     this.logic.over();
     this.holder.clear();
-    this.monster.getCurrentMonster().clearAll();
+    this.monster.clearAll();
     this.logic.start();
   }
 

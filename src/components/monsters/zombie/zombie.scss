@@ -2,10 +2,6 @@
   .zombie {
     right: 0;
 
-    &__screen {
-      background-color: #f46540;
-    }
-
     & .body {
       fill: #cdcdcd;
     }
@@ -20,6 +16,12 @@
 
     & .pupil {
       fill: #f24943;
+    }
+
+    & .eyeball {
+      &--lid {
+        fill: #00A45F,
+      }
     }
 
     & .steam-part {

@@ -10,7 +10,8 @@ import { MonsterModel } from './monster.model';
   // styleUrls: ['monsters.component.scss'],
   providers: [ MonstersService ],
   host: {
-    '[class.monster]':'true'
+    '[class]':'monster.name + "__screen"',
+    '[class.monster]':'true',
   }
 })
 export class MonstersComponent implements OnInit, AfterViewInit {

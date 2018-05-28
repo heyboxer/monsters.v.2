@@ -9,7 +9,7 @@ export abstract class MonsterModel implements AfterViewInit {
   @ViewChildren(MonsterPartDirective) parts: QueryList<MonsterPartDirective>;
   protected renderer: Renderer2;
 
-  constructor(private name, private element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef) {}
+  constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef) {}
 
   ngAfterViewInit() {}
 
@@ -20,6 +20,10 @@ export abstract class MonsterModel implements AfterViewInit {
   public getParts(fn = (el) => true) {
     const parts = this.getPartsArray();
     return parts.filter(fn);
+  }
+
+  public getRoot() {
+    return this.getPart(p => p.type === 'root');
   }
 
   public getPart(arg: ((i) => boolean) | string) {
@@ -104,5 +108,9 @@ export abstract class MonsterModel implements AfterViewInit {
       });
 
       return;
+    }
+
+    public animate(): any {
+      return false;
     }
 }

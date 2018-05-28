@@ -25688,15 +25688,35 @@ monster {
   z-index: 0;
 }
 
+monster.skeleton__screen {
+  background-color: #000;
+}
+
+monster.zombie__screen {
+  background-color: #f46540;
+}
+
+monster.wolf__screen {
+  background-color: #4eb959;
+}
+
+monster.vampire__screen {
+  background-color: #3b457e;
+}
+
+monster.spider__screen {
+  background-color: #f1ea35;
+}
+
+monster.alien__screen {
+  background-color: #000;
+}
+
 alien .alien {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   overflow: visible;
-}
-
-alien .alien__screen {
-  background-color: black;
 }
 
 alien .alien .head--figure {
@@ -25784,10 +25804,6 @@ spider .spider {
   transform: translateX(-50%);
 }
 
-spider .spider__screen {
-  background-color: #f1ea35;
-}
-
 spider .spider .leg {
   stroke-width: 8.05px;
   stroke: #000;
@@ -25857,10 +25873,6 @@ wolf .wolf {
   left: 0;
 }
 
-wolf .wolf__screen {
-  background-color: #4eb959;
-}
-
 wolf .wolf .body {
   fill: #666;
 }
@@ -25901,10 +25913,6 @@ wolf .wolf .eyeball-part {
   right: 0;
 }
 
-.zombie__screen {
-  background-color: #f46540;
-}
-
 .zombie .body {
   fill: #cdcdcd;
 }
@@ -25919,6 +25927,10 @@ wolf .wolf .eyeball-part {
 
 .zombie .pupil {
   fill: #f24943;
+}
+
+.zombie .eyeball--lid {
+  fill: #00A45F;
 }
 
 .zombie .steam-part {

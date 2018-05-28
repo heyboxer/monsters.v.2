@@ -2,7 +2,7 @@ import { Directive, ElementRef, Input, ViewContainerRef } from '@angular/core';
 
 import uuid from 'uuid';
 
-export type MonsterPartTypes = 'group' | 'container' | 'element';
+export type MonsterPartTypes = 'group' | 'container' | 'element' | 'root';
 
 @Directive({
   selector: '[monster-part]',
