@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { GlassComponent } from './glass/glass';
 import { EyesComponent } from './eyes/eyes';
+import { HoodComponent } from './hood/hood';
 
 @Injectable()
 export class TrinketsService {
@@ -59,6 +60,59 @@ export class TrinketsService {
             y: {
               default: ({y, height}) => y - height / 2,
               skeleton: ({y, height}) => (y - height / 2) + 15
+            }
+          }
+        }
+      },
+      {
+        id: 3,
+        component: HoodComponent,
+        meta: {
+          container: 'head-figure',
+          before: (monster) => {
+            if(monster.animate()) {
+              const smile = monster.animate('smile')(true)();
+              const smileLids = monster.animate('smileLids')(true)();
+            }
+          },
+          after: (monster) => {
+            if(monster.animate()) {
+              const smile = monster.animate('smile')(false)();
+              const smileLids = monster.animate('smileLids')(false)();
+            }
+          },
+          attr: {
+            width: {
+              default: ({width}) => width * 0.3,
+              skeleton: ({width}) => width * 0.55,
+              alien: ({width}) => width * 0.55,
+              zombie: ({width}) => width * 0.38,
+              wolf: ({width}) => width * 0.81,
+              spider: ({width}) => width * 1.5,
+            },
+            height: {
+              default: ({height}) => height * 0.3,
+              skeleton: ({height}) => height * 0.55,
+              alien: ({height}) => height * 0.55,
+              zombie: ({height}) => height * 0.38,
+              wolf: ({height}) => height * 0.81,
+              spider: ({height}) => height * 1.5,
+            },
+            x: {
+              default: ({x, width}) => 0,
+              vampire: ({x, width}) => x,
+              skeleton: ({x, width}) => x - 30,
+              alien: ({x, width}) => x - 30,
+              zombie: ({x, width}) => -2.5,
+              spider: ({x, width}) => x - width,
+            },
+            y: {
+              default: ({y, height}) => 0,
+              vampire: ({y, height}) => y,
+              skeleton: ({y, height}) => y - 30,
+              alien: ({y, height}) => y - 50,
+              zombie: ({y, height}) => -5,
+              spider: ({y, height}) => y - height,
             }
           }
         }

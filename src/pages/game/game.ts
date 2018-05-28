@@ -173,8 +173,6 @@ export class GamePage extends Game implements AfterViewInit {
     )
 
     this.logic.start();
-
-    this.monster.animate();
   }
 
   endGame() {

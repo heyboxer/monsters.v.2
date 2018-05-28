@@ -25940,6 +25940,17 @@ wolf .wolf .eyeball-part {
   fill: none;
 }
 
+.zombie .fadeIn {
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear;
+  fill: #F24943;
+}
+
+.zombie .fadeOut {
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear;
+}
+
 .eyes-trinket .cls-1 {
   fill: #00bcc5;
 }
@@ -25975,6 +25986,22 @@ wolf .wolf .eyeball-part {
 
 .glass .cls-3 {
   stroke-width: 4.94px;
+}
+
+.hood .cls-1 {
+  fill: #f1ea35;
+}
+
+.hood .cls-2 {
+  fill: #cf6cac;
+}
+
+.hood .cls-3 {
+  fill: #00b8ce;
+}
+
+.hood .cls-4 {
+  fill: #f24943;
 }
 
 page-game {

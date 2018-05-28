@@ -110,7 +110,7 @@ export abstract class MonsterModel implements AfterViewInit {
       return;
     }
 
-    public animate(): any {
+    public animate(name?, cb?): any {
       return false;
     }
 }
