@@ -80,13 +80,19 @@ export class GamePage extends Game implements AfterViewInit {
     this.logic.setFns(
       'onItemClick',
       (items, item, ev) => {
-        const { after, multiple } = item.meta;
+        const { after, multiple, onScreen } = item.meta;
 
         if(item.isCopy()) {
           after ? after(this.monster) : null;
 
           const parent = item.isCopy();
-          this.monster.clear(item.meta.container);
+
+          if(!onScreen) {
+            this.monster.clear(item.meta.container);
+          } else {
+            this.monsterComponent.remove(item.instance);
+          }
+
           items.removeActiveElement(item);
           (item).deleteCopy();
 
@@ -122,11 +128,23 @@ export class GamePage extends Game implements AfterViewInit {
 
         before ? before(this.monster) : null;
 
+        if(onScreen) {
+          this.monsterComponent.render(item.component, (instance) => {
+            const { style: position } = (this.holder.getAttributes() as { style });
+            const style = `position: absolute; z-index: 11; ${position}`;
+
+            this.renderer.setAttribute(instance, 'style', style);
+
+            items.addActiveElementCopy(item, instance);
+          });
+
+          return;
+        }
+
         const { content } = this.monster.getContainer(item.meta.container);
         const { element } = this.monster.getGroup(item.meta.container);
 
         if(content) {
-          console.log(items);
           const active = items.findActiveElementByInstance(content);
           const { after } = active.meta;
 

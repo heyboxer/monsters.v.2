@@ -79,11 +79,16 @@ var GamePage = /** @class */ (function (_super) {
         };
         this.logic.setFns('onItemDragging', setHolderPosition);
         this.logic.setFns('onItemClick', function (items, item, ev) {
-            var _a = item.meta, after = _a.after, multiple = _a.multiple;
+            var _a = item.meta, after = _a.after, multiple = _a.multiple, onScreen = _a.onScreen;
             if (item.isCopy()) {
                 after ? after(_this.monster) : null;
                 var parent = item.isCopy();
-                _this.monster.clear(item.meta.container);
+                if (!onScreen) {
+                    _this.monster.clear(item.meta.container);
+                }
+                else {
+                    _this.monsterComponent.remove(item.instance);
+                }
                 items.removeActiveElement(item);
                 (item).deleteCopy();
                 _this.holder.loadComponent(parent.component);
@@ -102,10 +107,18 @@ var GamePage = /** @class */ (function (_super) {
         this.logic.setFns('afterItemPlaced', function (items, item, ev) {
             var _a = item.meta, before = _a.before, multiple = _a.multiple, onScreen = _a.onScreen;
             before ? before(_this.monster) : null;
+            if (onScreen) {
+                _this.monsterComponent.render(item.component, function (instance) {
+                    var position = _this.holder.getAttributes().style;
+                    var style = "position: absolute; z-index: 11; " + position;
+                    _this.renderer.setAttribute(instance, 'style', style);
+                    items.addActiveElementCopy(item, instance);
+                });
+                return;
+            }
             var content = _this.monster.getContainer(item.meta.container).content;
             var element = _this.monster.getGroup(item.meta.container).element;
             if (content) {
-                console.log(items);
                 var active = items.findActiveElementByInstance(content);
                 var after = active.meta.after;
                 after ? after(_this.monster) : null;
@@ -613,9 +626,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var MonstersComponent = /** @class */ (function () {
-    function MonstersComponent(componentFactoryResolver, monstersService) {
+    function MonstersComponent(componentFactoryResolver, monstersService, viewContainerRef, renderer) {
         this.componentFactoryResolver = componentFactoryResolver;
         this.monstersService = monstersService;
+        this.viewContainerRef = viewContainerRef;
+        this.renderer = renderer;
+        this.onScreen = [];
     }
     MonstersComponent.prototype.ngOnInit = function () {
         this.monsters = this.monstersService.getMonsters();
@@ -631,8 +647,29 @@ var MonstersComponent = /** @class */ (function () {
         var instance = viewContainerRef.createComponent(componentFactory).instance;
         this.monster = instance;
     };
-    MonstersComponent.prototype.render = function (component) {
-        console.log(this.screen);
+    MonstersComponent.prototype.render = function (component, cb) {
+        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(component);
+        var viewContainerRef = this.screen.viewContainerRef;
+        var _a = viewContainerRef.createComponent(componentFactory), hostView = _a.hostView, instance = _a.instance;
+        this.addOnScreen(instance.node, hostView);
+        return cb(instance.node);
+    };
+    MonstersComponent.prototype.addOnScreen = function (instance, host) {
+        this.onScreen = this.onScreen.concat([{ instance: instance, host: host }]);
+        return this;
+    };
+    MonstersComponent.prototype.remove = function (instance) {
+        var host = this.onScreen.find(function (_a) {
+            var i = _a.instance;
+            return i === instance;
+        }).host;
+        var index = this.screen.viewContainerRef.indexOf(host);
+        this.screen.viewContainerRef.remove(index);
+        this.onScreen = this.onScreen.filter(function (_a) {
+            var i = _a.instance;
+            return i !== instance;
+        });
+        return this;
     };
     MonstersComponent.prototype.getCurrentMonster = function () {
         return this.monster;
@@ -643,15 +680,15 @@ var MonstersComponent = /** @class */ (function () {
     ], MonstersComponent.prototype, "monsterId", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]) === "function" && _a || Object)
     ], MonstersComponent.prototype, "monsterHost", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */]),
-        __metadata("design:type", HTMLElement)
+        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */]) === "function" && _b || Object)
     ], MonstersComponent.prototype, "screen", void 0);
     MonstersComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'monster',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/'<ng-template monster-host></ng-template>\n<!-- <div monster-screen></div> -->\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/,
+            selector: 'monster',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/'<ng-template monster-host></ng-template>\n<ng-template monster-screen></ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/,
             // styleUrls: ['monsters.component.scss'],
             providers: [__WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */]],
             host: {
@@ -659,9 +696,10 @@ var MonstersComponent = /** @class */ (function () {
                 '[class.monster]': 'true',
             }
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */]])
+        __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _f || Object])
     ], MonstersComponent);
     return MonstersComponent;
+    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=monsters.component.js.map
@@ -2035,10 +2073,10 @@ var MonsterModel = /** @class */ (function () {
     MonsterModel.prototype.getContainers = function () {
         return this.getParts(function (p) { return p.type === 'container'; });
     };
-    MonsterModel.prototype.render = function (component, name, multiple, callback) {
+    MonsterModel.prototype.render = function (component, name, callback) {
         if (callback === void 0) { callback = function (instance) { }; }
         var obj = this.getContainer(name);
-        var element = obj.element, content = obj.content;
+        var container = obj.viewContainerRef, element = obj.element, content = obj.content;
         this.clear(name);
         var factory = this.componentFactoryResolver.resolveComponentFactory(component);
         var ref = factory.create(this.injector, [], element);

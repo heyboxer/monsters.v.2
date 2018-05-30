@@ -1,5 +1,6 @@
 import { Component, ViewChildren, QueryList, Renderer2, ComponentFactoryResolver, Injector, ApplicationRef, AfterViewInit } from '@angular/core';
 import { MonsterPartDirective, MonsterPartTypes } from './monster-part.directive';
+import { Node } from '../../app/model/node.model';
 
 @Component({
 
@@ -44,9 +45,9 @@ export abstract class MonsterModel implements AfterViewInit {
     return this.getParts((p) => p.type === 'container');
   }
 
-  public render(component, name, multiple, callback = (instance) => {}) {
+  public render(component, name, callback = (instance) => {}) {
     const obj = this.getContainer(name);
-    const { element, content  } = obj;
+    const { viewContainerRef: container, element, content  } = obj;
 
     this.clear(name);
 
@@ -76,39 +77,40 @@ export abstract class MonsterModel implements AfterViewInit {
     return this;
   }
 
-  private trigger(name, fn) {
-    const gr = this.getParts((p) => p.name === name);
 
-    gr.forEach(({ element }) => fn(element));
-  }
+    private trigger(name, fn) {
+      const gr = this.getParts((p) => p.name === name);
 
-  public close(name) {
-    this.trigger(name, (element) => {
-      this.renderer.setAttribute(element, 'visibility', 'hidden');
+      gr.forEach(({ element }) => fn(element));
+    }
+
+    public close(name) {
+      this.trigger(name, (element) => {
+        this.renderer.setAttribute(element, 'visibility', 'hidden');
+        return;
+      });
+
+      return () => this.open(name);
+    }
+
+    public open(name) {
+      this.trigger(name, (element) => {
+        element.removeAttribute('visibility');
+      });
+
+      return () => this.close(name);;
+    }
+
+    public clearAll() {
+      this.getContainers().forEach(({ group }) => this.clear(group));
+      this.getParts(p => p.type !== 'container').forEach(({name}) => {
+        this.open(name);
+      });
+
       return;
-    });
+    }
 
-    return () => this.open(name);
-  }
-
-  public open(name) {
-    this.trigger(name, (element) => {
-      element.removeAttribute('visibility');
-    });
-
-    return () => this.close(name);;
-  }
-
-  public clearAll() {
-    this.getContainers().forEach(({ group }) => this.clear(group));
-    this.getParts(p => p.type !== 'container').forEach(({name}) => {
-      this.open(name);
-    });
-
-    return;
-  }
-
-  public animate(name?, cb?): any {
-    return false;
-  }
+    public animate(name?, cb?): any {
+      return false;
+    }
 }
