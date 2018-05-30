@@ -1,6 +1,10 @@
 import { Component, ElementRef, Renderer2, ComponentFactoryResolver, Injector, ApplicationRef, AfterViewInit } from '@angular/core';
 import { MonsterModel } from '../monster.model';
 
+import { AnimationSetController } from '../animation/animation-set.controller';
+import { AnimationSequenceController } from '../animation/animation-sequence.controller';
+
+
 // @ts-ignore: Unreachable code error
 import Snap from 'imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js';
 
@@ -124,7 +128,6 @@ const aniamtions = function(instance) {
 })
 export class ZombieComponent extends MonsterModel implements AfterViewInit {
   private snap;
-  private animation: boolean;
 
   constructor(el: ElementRef, protected renderer: Renderer2,  componentFactoryResolver: ComponentFactoryResolver, injector: Injector,
   app: ApplicationRef) {
@@ -133,6 +136,76 @@ export class ZombieComponent extends MonsterModel implements AfterViewInit {
 
   ngAfterViewInit() {
     this.snap = aniamtions.bind(this)(this.getRoot());
+
+    const anims = {
+      lid: {
+        close: (l, cb) => l.animate({cy: 97.54,}, 42, cb),
+        open: (l, cb) => l.animate({cy: 64,}, 84, cb),
+      },
+      pupil: {
+        left: (instance, cb) => {
+          const { cx } = instance.attr();
+          instance.animate({cx: Number(cx) - 10}, 100, cb);
+          return;
+        },
+        right: (instance, cb) => {
+          const { cx } = instance.attr();
+
+          instance.animate({cx: Number(cx) + 10}, 250, cb);
+          return;
+        }
+      }
+    }
+
+    this.loadAnimations(anims);
+
+    const pupils = this.getParts(p => p.name === 'pupil');
+
+    const scheme = [
+      'pupilsGoLeft',
+      'pupilsGoRight'
+    ];
+
+    const animations = {
+      pupilsGoLeft: () => pupils.forEach(l => {
+        l.animations.run('left');
+        return l.animations;
+      }),
+      pupilsGoRight: (cb) => pupils.forEach(l => {
+        l.animations.run('right');
+        cb(l.animations);
+        return;
+      }),
+    };
+
+    const seq = new AnimationSequenceController(scheme, animations);
+
+    // seq.run(1000);
+    // console.time('clear');
+    //
+    // setTimeout(() => {
+    //   seq.clear();
+    //   console.timeEnd('clear');
+    // }, 3200);
+
+  }
+
+  protected loadAnimations(animations) {
+    const partNames = Object.keys(animations);
+
+    partNames.forEach(name => {
+      this.getParts(part => part.name === name)
+        .forEach(part => {
+          return part.setAnimations(
+            new AnimationSetController(
+              Snap(part.element),
+              animations[name]
+            )
+          );
+        });
+    });
+
+
   }
 
   public animate(name) {

@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { GlassComponent } from './glass/glass';
 import { EyesComponent } from './eyes/eyes';
 import { HoodComponent } from './hood/hood';
+import { MoleComponent } from './mole/mole';
 
 @Injectable()
 export class TrinketsService {
@@ -10,6 +11,15 @@ export class TrinketsService {
   }
   getTrinkets() {
     return [
+      {
+        id: 4,
+        component: MoleComponent,
+        meta: {
+          container: 'root',
+          onScreen: true,
+          multiple: true,
+        }
+      },
       {
         id: 1,
         component: EyesComponent,
@@ -117,6 +127,7 @@ export class TrinketsService {
           }
         }
       },
+
     ]
   }
 }

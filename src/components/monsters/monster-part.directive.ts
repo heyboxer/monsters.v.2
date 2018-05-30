@@ -1,8 +1,10 @@
 import { Directive, ElementRef, Input, ViewContainerRef } from '@angular/core';
 
+import { AnimationSetController } from './animation/animation-set.controller';
+
 import uuid from 'uuid';
 
-export type MonsterPartTypes = 'group' | 'container' | 'element' | 'root';
+export type MonsterPartTypes = 'group' | 'container' | 'element' | 'root' ;
 
 @Directive({
   selector: '[monster-part]',
@@ -15,15 +17,29 @@ export class MonsterPartDirective {
 
   readonly element: HTMLElement;
   readonly id = uuid();
+  public animations: AnimationSetController;
   public content;
+  public copies;
 
   constructor(
     el: ElementRef,
     readonly viewContainerRef: ViewContainerRef
   ) {
     this.element = el.nativeElement;
-    if(this.type === 'container') {
-      this.content = null;
-    }
+  }
+
+  public setAnimations(controller) {
+    this.animations = controller;
+    return;
+  }
+
+  public setCopy(instance) {
+    this.copies = [...this.copies, instance ];
+    return;
+  }
+
+  public removeCopy(instance) {
+    this.copies = this.copies.filter(instance !== instance);
+    return;
   }
 }

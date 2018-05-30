@@ -1,0 +1,12 @@
+.mole {
+  & .cls-1 {
+    fill: #796356;
+  }
+
+  & .cls-2 {
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 1.5px;
+  }
+}

@@ -80,8 +80,9 @@ export class GamePage extends Game implements AfterViewInit {
     this.logic.setFns(
       'onItemClick',
       (items, item, ev) => {
+        const { after, multiple } = item.meta;
+
         if(item.isCopy()) {
-          const { after } = item.meta;
           after ? after(this.monster) : null;
 
           const parent = item.isCopy();
@@ -94,8 +95,11 @@ export class GamePage extends Game implements AfterViewInit {
           return;
         }
 
-        item.deactivate();
-        this.renderer.addClass(item.instance, 'blocked');
+        if(!multiple) {
+          item.deactivate();
+          this.renderer.addClass(item.instance, 'blocked');
+        }
+
         this.holder.loadComponent(item.component);
 
         return;
@@ -112,15 +116,15 @@ export class GamePage extends Game implements AfterViewInit {
 
     this.logic.setFns(
       'afterItemPlaced',
-      (items, item) => {
-        const { before } = item.meta;
+      (items, item, ev) => {
+        const { before, multiple, onScreen } = item.meta;
 
         before ? before(this.monster) : null;
 
         const { content } = this.monster.getContainer(item.meta.container);
         const { element } = this.monster.getGroup(item.meta.container);
 
-        if(content) {
+        if(content && !multiple) {
           const active = items.findActiveElementByInstance(content);
           const { after } = active.meta;
 
@@ -132,9 +136,22 @@ export class GamePage extends Game implements AfterViewInit {
           items.removeActiveElement(active);
         }
 
-        const config = (element as SVGGraphicsElement).getBBox();
+        // if(content && multiple)
 
         this.monster.render(item.component, item.meta.container, (instance) => {
+          const copy = items.addActiveElementCopy(item, instance);
+
+          if(onScreen) {
+            const { style } = (this.holder.getAttributes() as { style });
+
+            const styles = `position: absolute; z-index: 11; ${ style }`;
+
+            this.renderer.setAttribute(instance, 'style', styles);
+            return;
+          };
+
+          const config = (element as SVGGraphicsElement).getBBox();
+
           const { attr } = item.meta;
 
           Object.keys(attr).forEach(name => {
@@ -143,8 +160,6 @@ export class GamePage extends Game implements AfterViewInit {
             this.renderer.setAttribute(instance, name, fn(config).toString());
             return;
           });
-
-          const copy = items.addActiveElementCopy(item, instance);
 
           return;
         });

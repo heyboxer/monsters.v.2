@@ -26004,6 +26004,17 @@ wolf .wolf .eyeball-part {
   fill: #f24943;
 }
 
+.mole .cls-1 {
+  fill: #796356;
+}
+
+.mole .cls-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 1.5px;
+}
+
 page-game {
   height: auto;
 }
@@ -26020,6 +26031,10 @@ page-game #on-screen {
   width: 100%;
   height: 100%;
   z-index: 20;
+}
+
+page-game .trinket--screen {
+  position: absolute;
 }
 
 page-game .monster {

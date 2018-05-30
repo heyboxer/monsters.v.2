@@ -8,6 +8,8 @@ import { TemplateHostDriective } from './template-host.directive';
 })
 export class ItemHolderComponent {
   private el: HTMLElement;
+  private attr: Object;
+
   @ViewChild(TemplateHostDriective) host: TemplateHostDriective;
 
   constructor(
@@ -33,7 +35,13 @@ export class ItemHolderComponent {
     return instance;
   }
 
+  public getAttributes() {
+    return this.attr;
+  }
+
   public setAttributes(obj: Object): void {
+    this.attr = obj;
+
     const attrs = Object.keys(obj);
 
     attrs.forEach(attr => this.r.setAttribute(this.el, attr, obj[attr]));
