@@ -119,12 +119,14 @@ export class GamePage extends Game implements AfterViewInit {
       (items, item, ev) => {
         const { before, multiple, onScreen } = item.meta;
 
+
         before ? before(this.monster) : null;
 
         const { content } = this.monster.getContainer(item.meta.container);
         const { element } = this.monster.getGroup(item.meta.container);
 
-        if(content && !multiple) {
+        if(content) {
+          console.log(items);
           const active = items.findActiveElementByInstance(content);
           const { after } = active.meta;
 
@@ -136,19 +138,9 @@ export class GamePage extends Game implements AfterViewInit {
           items.removeActiveElement(active);
         }
 
-        // if(content && multiple)
 
         this.monster.render(item.component, item.meta.container, (instance) => {
           const copy = items.addActiveElementCopy(item, instance);
-
-          if(onScreen) {
-            const { style } = (this.holder.getAttributes() as { style });
-
-            const styles = `position: absolute; z-index: 11; ${ style }`;
-
-            this.renderer.setAttribute(instance, 'style', styles);
-            return;
-          };
 
           const config = (element as SVGGraphicsElement).getBBox();
 

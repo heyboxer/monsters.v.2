@@ -12,10 +12,11 @@ import { WolfComponent } from './wolf/wolf';
 
 import { MonstersComponent } from './monsters.component';
 import { MonstersHostDirective } from './monsters-host.directive';
+import { MonstersScreenDirective } from './monsters-screen.directive';
 import { MonsterPartDirective } from './monster-part.directive';
 
 @NgModule({
-	declarations: [ZombieComponent, SkeletonComponent, AlienComponent, BedComponent, SpiderComponent, VampireComponent,WolfComponent, MonstersComponent, MonstersHostDirective, MonsterPartDirective],
+	declarations: [ZombieComponent, SkeletonComponent, AlienComponent, BedComponent, SpiderComponent, VampireComponent,WolfComponent, MonstersComponent, MonstersHostDirective, MonstersScreenDirective, MonsterPartDirective],
 	providers: [],
 	entryComponents: [ZombieComponent, SkeletonComponent, AlienComponent, BedComponent, SpiderComponent, VampireComponent,WolfComponent,],
 	exports: [MonstersComponent]

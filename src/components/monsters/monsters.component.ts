@@ -1,6 +1,7 @@
 import { Component, Input, OnInit, AfterViewInit, ViewChild, ComponentFactoryResolver } from '@angular/core';
 
 import { MonstersHostDirective } from './monsters-host.directive';
+import { MonstersScreenDirective } from './monsters-screen.directive';
 import { MonstersService } from './monsters.service';
 import { MonsterModel } from './monster.model';
 
@@ -19,6 +20,7 @@ export class MonstersComponent implements OnInit, AfterViewInit {
   private monsters: { id, component }[];
   private monster;
   @ViewChild(MonstersHostDirective) monsterHost: MonstersHostDirective;
+  @ViewChild(MonstersScreenDirective) screen: HTMLElement;
 
   constructor(
     private componentFactoryResolver: ComponentFactoryResolver, private monstersService: MonstersService
@@ -41,6 +43,10 @@ export class MonstersComponent implements OnInit, AfterViewInit {
     viewContainerRef.clear();
     const { instance } = viewContainerRef.createComponent(componentFactory);
     this.monster = instance;
+  }
+
+  render(component) {
+    console.log(this.screen);
   }
 
   public getCurrentMonster() {

@@ -19,7 +19,6 @@ export class MonsterPartDirective {
   readonly id = uuid();
   public animations: AnimationSetController;
   public content;
-  public copies;
 
   constructor(
     el: ElementRef,
@@ -30,16 +29,6 @@ export class MonsterPartDirective {
 
   public setAnimations(controller) {
     this.animations = controller;
-    return;
-  }
-
-  public setCopy(instance) {
-    this.copies = [...this.copies, instance ];
-    return;
-  }
-
-  public removeCopy(instance) {
-    this.copies = this.copies.filter(instance !== instance);
     return;
   }
 }

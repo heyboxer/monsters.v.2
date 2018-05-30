@@ -15,7 +15,6 @@ export class TrinketsService {
         id: 4,
         component: MoleComponent,
         meta: {
-          container: 'root',
           onScreen: true,
           multiple: true,
         }
