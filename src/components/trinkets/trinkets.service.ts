@@ -17,6 +17,22 @@ export class TrinketsService {
         meta: {
           onScreen: true,
           multiple: true,
+          random: true,
+          before: (monster, host, instance) => {
+            // const { top, left, width, height } = instance.getBoundingClientRect();
+            //
+            // console.log(monster.isOnMonster(top, left, width, height));
+            // if(monster.animate()) {
+            //   const smile = monster.animate('smile')(true)();
+            //   const smileLids = monster.animate('smileLids')(true)();
+            // }
+          },
+          after: (monster, host, instance) => {
+            // if(monster.animate()) {
+            //   const smile = monster.animate('smile')(false)();
+            //   const smileLids = monster.animate('smileLids')(false)();
+            // }
+          },
         }
       },
       {

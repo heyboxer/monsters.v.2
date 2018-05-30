@@ -15,6 +15,7 @@ export class ActiveElementModel {
   public meta: Object;
   public state: ActiveElementState = 'activated';
   public type: ActiveElementType = 'original';
+  public randomArr: number[];
   private funcReg: Map<string, (ev) => void> = new Map();
   private children: ActiveElementDescendentModel[] = [];
   private breakpoints: {

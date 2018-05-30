@@ -17,6 +17,33 @@ export abstract class MonsterModel implements AfterViewInit {
     return this.parts.toArray();
   }
 
+  public isOnMonster(t, l, width, height) {
+    const point = (x, y) => ({
+        x,
+        y,
+        isDeeper: function({x, y}) {
+          console.log(x, y, this, x < this.x && y < this.y);
+          return x < this.x && y < this.y;
+        },
+      });
+
+    const rect = {
+      topLeft: point(l, t),
+      bottomRight: point(l + width, t + height),
+    }
+
+    const { element } = this.getRoot();
+
+    const { top, right, bottom, left } = element.getBoundingClientRect();
+
+    const monster = {
+      topLeft: point(left, top),
+      bottomRight: point(right, bottom),
+    }
+
+    return rect.bottomRight.isDeeper( monster.topLeft ) || monster.bottomRight.isDeeper( rect.topLeft );
+  }
+
   public getParts(fn = (el) => true) {
     const parts = this.getPartsArray();
     return parts.filter(fn);

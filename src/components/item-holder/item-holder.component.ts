@@ -30,7 +30,7 @@ export class ItemHolderComponent {
 
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(component);
 
-    const instance = this.host.viewContainerRef.createComponent(componentFactory);
+    const { instance } = this.host.viewContainerRef.createComponent(componentFactory);
 
     return instance;
   }

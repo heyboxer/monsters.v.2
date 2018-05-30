@@ -8,8 +8,6 @@ import { GameLogic } from '../../components/game/game-logic';
 import { ItemHolderComponent } from '../../components/item-holder/item-holder.component';
 
 
-
-
 @IonicPage()
 @Component({
   selector: 'page-game',
@@ -80,7 +78,7 @@ export class GamePage extends Game implements AfterViewInit {
     this.logic.setFns(
       'onItemClick',
       (items, item, ev) => {
-        const { after, multiple, onScreen } = item.meta;
+        const { after, multiple, onScreen, random } = item.meta;
 
         if(item.isCopy()) {
           after ? after(this.monster) : null;
@@ -93,10 +91,14 @@ export class GamePage extends Game implements AfterViewInit {
             this.monsterComponent.remove(item.instance);
           }
 
+          const holderInstance = this.holder.loadComponent(parent.component);
+
+          if(random) {
+            (holderInstance as { hide }).hide(item.randomArr);
+          }
+
           items.removeActiveElement(item);
           (item).deleteCopy();
-
-          this.holder.loadComponent(parent.component);
 
           return;
         }
@@ -106,7 +108,13 @@ export class GamePage extends Game implements AfterViewInit {
           this.renderer.addClass(item.instance, 'blocked');
         }
 
-        this.holder.loadComponent(item.component);
+        const holderInstance = this.holder.loadComponent(item.component);
+
+        if(random) {
+          const selected = (holderInstance as { randomize }).randomize((selected) => {
+            item.randomArr = selected;
+          });
+        }
 
         return;
       },
@@ -125,17 +133,23 @@ export class GamePage extends Game implements AfterViewInit {
       (items, item, ev) => {
         const { before, multiple, onScreen } = item.meta;
 
-
-        before ? before(this.monster) : null;
+        before ? before(this.monster, this.monsterComponent, item.instance) : null;
 
         if(onScreen) {
           this.monsterComponent.render(item.component, (instance) => {
             const { style: position } = (this.holder.getAttributes() as { style });
+
             const style = `position: absolute; z-index: 11; ${position}`;
 
-            this.renderer.setAttribute(instance, 'style', style);
+            this.renderer.setAttribute((instance as { node }).node, 'style', style);
 
-            items.addActiveElementCopy(item, instance);
+            const copy = items.addActiveElementCopy(item, (instance as { node }).node);
+
+            if(item.meta.random) {
+              instance.hide(item.randomArr);
+              copy.randomArr = item.randomArr;
+              item.randomArr = null;
+            }
           });
 
           return;
@@ -148,7 +162,7 @@ export class GamePage extends Game implements AfterViewInit {
           const active = items.findActiveElementByInstance(content);
           const { after } = active.meta;
 
-          after ? after(this.monster) : null;
+          after ? after(this.monster, this.monsterComponent, item.instance) : null;
 
           const parent = active.isCopy();
           parent.activate();
@@ -203,6 +217,8 @@ export class GamePage extends Game implements AfterViewInit {
   endGame() {
     this.logic.over();
     this.holder.clear();
+    this.monster.clearAll();
+    this.monsterComponent.clearAll();
     this.navCtrl.pop();
   }
 
@@ -210,6 +226,7 @@ export class GamePage extends Game implements AfterViewInit {
     this.logic.over();
     this.holder.clear();
     this.monster.clearAll();
+    this.monsterComponent.clearAll();
     this.logic.start();
   }
 

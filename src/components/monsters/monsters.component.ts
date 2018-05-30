@@ -52,11 +52,11 @@ export class MonstersComponent implements OnInit, AfterViewInit {
   public render(component, cb) {
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(component);
     const viewContainerRef = this.screen.viewContainerRef;
-    const { hostView, instance} = viewContainerRef.createComponent(componentFactory);
+    const { hostView, instance } = viewContainerRef.createComponent(componentFactory);
 
     this.addOnScreen((instance as { node }).node, hostView);
 
-    return cb((instance as { node }).node);
+    return cb(instance);
   }
 
   private addOnScreen(instance, host) {
@@ -72,6 +72,11 @@ export class MonstersComponent implements OnInit, AfterViewInit {
 
     this.onScreen = this.onScreen.filter(({instance: i}) => i !== instance);
 
+    return this;
+  }
+
+  public clearAll() {
+    this.screen.viewContainerRef.clear();
     return this;
   }
 

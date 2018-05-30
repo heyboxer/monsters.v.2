@@ -8,9 +8,10 @@ import { MoleComponent } from './mole/mole';
 
 import { TrinketsComponent } from './trinkets.component';
 import { TrinketHostDirective } from './trinket-host.directive';
+import { TrinketRandomPartDirective } from './trinket-random-part.directive';
 
 @NgModule({
-	declarations: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, TrinketsComponent, TrinketHostDirective ],
+	declarations: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, TrinketsComponent, TrinketHostDirective, TrinketRandomPartDirective ],
 	providers: [],
 	imports: [ CommonModule ],
 	entryComponents: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent ],

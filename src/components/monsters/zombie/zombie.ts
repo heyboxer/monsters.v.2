@@ -18,6 +18,9 @@ const aniamtions = function(instance) {
   }
 
   return {
+    getRoot: () => {
+      return root;
+    },
     eyes: (cb = () => {}) => {
       const eyesMovement = this.snap.eyesMovement();
       const blink = this.snap.blink();
@@ -135,7 +138,7 @@ export class ZombieComponent extends MonsterModel implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.snap = aniamtions.bind(this)(this.getRoot());
+    this.snap = aniamtions.bind(this)(this.getRoot().element);
 
     const anims = {
       lid: {
@@ -189,6 +192,11 @@ export class ZombieComponent extends MonsterModel implements AfterViewInit {
     // }, 3200);
 
   }
+
+  // isOnMonster(top, right, bootom, left) {
+  //   console.log(Snap.getElementByPoint(top, left));
+  //   return;
+  // }
 
   protected loadAnimations(animations) {
     const partNames = Object.keys(animations);

@@ -4,7 +4,7 @@ import { AnimationSetController } from './animation/animation-set.controller';
 
 import uuid from 'uuid';
 
-export type MonsterPartTypes = 'group' | 'container' | 'element' | 'root' ;
+export type MonsterPartTypes = 'group' | 'container' | 'element' | 'root';
 
 @Directive({
   selector: '[monster-part]',
@@ -14,6 +14,7 @@ export class MonsterPartDirective {
   @Input('part-name') name: string;
   @Input('part-name-mod') mod: string;
   @Input('part-group') group: string;
+  @Input('part-outline') outline: true = true;
 
   readonly element: HTMLElement;
   readonly id = uuid();
