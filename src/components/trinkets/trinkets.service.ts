@@ -19,19 +19,18 @@ export class TrinketsService {
           multiple: true,
           random: true,
           before: (monster, host, instance) => {
-            // const { top, left, width, height } = instance.getBoundingClientRect();
-            //
-            // console.log(monster.isOnMonster(top, left, width, height));
-            // if(monster.animate()) {
-            //   const smile = monster.animate('smile')(true)();
-            //   const smileLids = monster.animate('smileLids')(true)();
-            // }
+            if(monster.animate() && monster.isOnMonster( instance.getBoundingClientRect() )) {
+              console.log('before');
+              const smile = monster.animate('smile')(true)();
+              const smileLids = monster.animate('smileLids')(true)();
+            }
           },
-          after: (monster, host, instance) => {
-            // if(monster.animate()) {
-            //   const smile = monster.animate('smile')(false)();
-            //   const smileLids = monster.animate('smileLids')(false)();
-            // }
+          after: (monster, host) => {
+            if(monster.animate()) {
+              console.log('after');
+              const smile = monster.animate('smile')(false)();
+              const smileLids = monster.animate('smileLids')(false)();
+            }
           },
         }
       },

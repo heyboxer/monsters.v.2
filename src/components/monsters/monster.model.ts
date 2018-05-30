@@ -17,31 +17,39 @@ export abstract class MonsterModel implements AfterViewInit {
     return this.parts.toArray();
   }
 
-  public isOnMonster(t, l, width, height) {
-    const point = (x, y) => ({
-        x,
-        y,
-        isDeeper: function({x, y}) {
-          console.log(x, y, this, x < this.x && y < this.y);
-          return x < this.x && y < this.y;
-        },
-      });
+  public isOnMonster({ top, left, bottom, right }) {
+    const point = (x, y) => ({ x, y,});
 
-    const rect = {
-      topLeft: point(l, t),
-      bottomRight: point(l + width, t + height),
-    }
+    const rect = (p1, p2) => ({
+      p1, p2,
+      onRect: function(point) {
+        const compareX = (x) => {
+          return (p1.x <= point.x) && (point.x <= p2.x);
+        }
 
-    const { element } = this.getRoot();
+        const compareY = (x) => {
+          return (p1.y <= point.y) && (point.y <= p2.y);
+        }
 
-    const { top, right, bottom, left } = element.getBoundingClientRect();
+        return compareX(point.x) && compareY(point.y);
+      }
+    });
 
-    const monster = {
-      topLeft: point(left, top),
-      bottomRight: point(right, bottom),
-    }
+    const outline = this.getParts(p => p.outline).map(p => {
+      const { top, right, left, bottom } = p.element.getBoundingClientRect();
 
-    return rect.bottomRight.isDeeper( monster.topLeft ) || monster.bottomRight.isDeeper( rect.topLeft );
+      const point1 = point(Number(left), Number(top));
+      const point2 = point(Number(right), Number(bottom));
+
+      return rect( point1, point2 );
+    });
+
+    const leftTop = point(Number(left), Number(top));
+    const rightBottom = point(Number(right), Number(bottom));
+
+    return outline.find(
+      rect => rect.onRect(leftTop) || rect.onRect(rightBottom)
+    ) ? true : false;
   }
 
   public getParts(fn = (el) => true) {

@@ -14,9 +14,9 @@ export class MonsterPartDirective {
   @Input('part-name') name: string;
   @Input('part-name-mod') mod: string;
   @Input('part-group') group: string;
-  @Input('part-outline') outline: true = true;
+  @Input('part-outline') outline: boolean;
 
-  readonly element: HTMLElement;
+  readonly element: HTMLElement | SVGGraphicsElement;
   readonly id = uuid();
   public animations: AnimationSetController;
   public content;

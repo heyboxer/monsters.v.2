@@ -133,8 +133,6 @@ export class GamePage extends Game implements AfterViewInit {
       (items, item, ev) => {
         const { before, multiple, onScreen } = item.meta;
 
-        before ? before(this.monster, this.monsterComponent, item.instance) : null;
-
         if(onScreen) {
           this.monsterComponent.render(item.component, (instance) => {
             const { style: position } = (this.holder.getAttributes() as { style });
@@ -144,6 +142,8 @@ export class GamePage extends Game implements AfterViewInit {
             this.renderer.setAttribute((instance as { node }).node, 'style', style);
 
             const copy = items.addActiveElementCopy(item, (instance as { node }).node);
+
+            before ? before(this.monster, this.monsterComponent, copy.instance) : null;
 
             if(item.meta.random) {
               instance.hide(item.randomArr);
@@ -173,6 +173,8 @@ export class GamePage extends Game implements AfterViewInit {
 
         this.monster.render(item.component, item.meta.container, (instance) => {
           const copy = items.addActiveElementCopy(item, instance);
+
+          before ? before(this.monster, this.monsterComponent, copy.instance) : null;
 
           const config = (element as SVGGraphicsElement).getBBox();
 
