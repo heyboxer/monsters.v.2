@@ -26256,6 +26256,14 @@ yeti .yeti .tooth {
   stroke-width: 1.5px;
 }
 
+.moustache .cls-1 {
+  fill: #fa953c;
+}
+
+.snivel .cls-1 {
+  fill: #D2DF3D;
+}
+
 page-game {
   height: auto;
 }

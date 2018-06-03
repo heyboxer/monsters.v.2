@@ -34,8 +34,9 @@
             <ellipse monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="135.7" cy="64" rx="27.81" ry="16.86"></ellipse>
           </g>
           <g monster-part part-group="eyes" part-type="container"></g>
-          <path monster-part part-outline="true" d="M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z" class="nose"></path>
-          <path monster-part part-name="mouth" part-type="element" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z" class="mouth"></path>
+          <g monster-part part-name="mouth" part-type="group">
+            <path monster-part part-name="mouth" part-type="element" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z" class="mouth"></path>
+          </g>
           <g class="steams">
             <g class="steam steam--right">
               <line x1="128.09" y1="159.01" x2="162.15" y2="124.95" class="steam-part"></line>
@@ -53,6 +54,11 @@
              <line class="steam-part" x1="66.52" y1="189.5" x2="59.09" y2="196.94"></line>
              <line class="steam-part" x1="71.79" y1="194.77" x2="64.35" y2="202.2"></line>
             </g>
+          </g>
+          <g monster-part part-group="mouth" part-type="container"></g>
+          <g monster-part part-group="nose" part-type="container"></g>
+          <g monster-part part-name="nose" part-type="group">
+            <path monster-part part-outline="true" d="M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z" class="nose"></path>
           </g>
         </g>
       </g>
