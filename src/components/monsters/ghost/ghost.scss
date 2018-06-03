@@ -1,0 +1,23 @@
+ghost {
+  .ghost {
+    & .body {
+      fill: #b7e3ee;
+    }
+
+    & .eyeball {
+      fill: #fff;
+    }
+
+    & .ubula {
+      fill: #f24943;
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+
+    & .mouth {
+      clip-path: url(#mouth-clip-path);
+    }
+  }
+}

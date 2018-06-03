@@ -2,8 +2,8 @@
    <g class="wolf">
       <rect class="body" x="-21" y="192.5" width="194.13" height="465.27"></rect>
       <g class="head">
-         <g class="mouth">
-            <rect class="tongue" x="24.31" y="119.4" width="226.72" height="55.94" rx="27.93" ry="27.97"></rect>
+         <g monster-part part-name="mouth" part-type="group" class="mouth">
+            <rect monster-part part-name="tongue" part-type="element" part-group="mouth" class="tongue" x="24.31" y="119.4" width="226.72" height="55.94" rx="27.93" ry="27.97"></rect>
             <rect class="jaw" x="23.78" y="175.24" width="195.57" height="20.31"></rect>
             <rect class="cheek" x="23.78" y="106.91" width="125.28" height="74.65"></rect>
             <g class="teeth">
@@ -18,6 +18,7 @@
                <path class="saliva" d="M176.22,161.17a2.35,2.35,0,1,1-4.65.12c0-1.47.84-8,2.13-8S176.19,159.7,176.22,161.17Z"></path>
             </g>
          </g>
+
          <g class="nose">
             <polygon class="snout" points="219.34 119.39 23.78 119.39 23.78 61.81 219.34 96.35 219.34 119.39"></polygon>
             <circle class="nose-figure" cx="218.98" cy="95.93" r="8.93"></circle>
@@ -52,5 +53,7 @@
          </g>
          <g monster-part part-group="eyes" part-type="container"></g>
       </g>
+      <g monster-part part-group="mouth" part-type="container"></g>
+
    </g>
 </svg>

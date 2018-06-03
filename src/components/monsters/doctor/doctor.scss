@@ -1,0 +1,52 @@
+doctor {
+  .doctor {
+    left: 50%;
+    transform: translateX(-50%);
+    
+    & .body {
+      fill: #fff;
+    }
+
+    & .hat {
+      fill: #fff;
+    }
+
+    & .head-figure {
+      fill: #f7decb;
+    }
+
+    & .ear {
+      fill: #f7decb;
+    }
+
+    & .nose {
+      fill: #ebba96;
+    }
+
+    & .mouth-figure {
+      fill: #f24943;
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+
+    & .cross {
+      fill: #f24943;
+    }
+
+    & .eye {
+      stroke: #fff;
+      stroke-miterlimit: 10;
+
+      &--left {
+        stroke-width: 3.27px;
+      }
+
+      &--right {
+        stroke-width: 6.03px;
+      }
+    }
+  }
+
+}

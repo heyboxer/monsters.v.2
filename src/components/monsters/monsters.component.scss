@@ -2,6 +2,26 @@ monster {
   position: relative;
   z-index: 0;
 
+  &.mummy__screen {
+    background-color: #3f2721;
+  }
+
+  &.ghost__screen {
+    background-color: #000;
+  }
+
+  &.yeti {
+    background-color: #fff;
+  }
+
+  &.doctor__screen {
+    background-color: #f24943;
+  }
+
+  &.yaga__screen {
+    background-color: #72538e;
+  }
+
   &.skeleton__screen {
     background-color: #000;
   }

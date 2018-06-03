@@ -1,0 +1,49 @@
+mummy {
+  .mummy {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    & .head--figure {
+      fill: #fff;
+    }
+
+    & .ear {
+      fill: #b48d69;
+    }
+
+    & .head-part {
+      fill: #ffd7a5;
+
+      &--dark {
+        fill: #e1b285;
+      }
+
+      &--empty {
+        fill: #000;
+      }
+    }
+
+    & .body-part {
+      fill: #ffd7a5;
+
+      &--dark {
+        fill: #e1b285;
+      }
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+
+    & .eyeball {
+      fill: #f24943;
+    }
+
+    & .decor {
+      &__bandage {
+        fill: #e1b285;
+      }
+    }
+  }
+}

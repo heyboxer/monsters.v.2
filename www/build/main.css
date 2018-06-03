@@ -25688,6 +25688,26 @@ monster {
   z-index: 0;
 }
 
+monster.mummy__screen {
+  background-color: #3f2721;
+}
+
+monster.ghost__screen {
+  background-color: #000;
+}
+
+monster.yeti {
+  background-color: #fff;
+}
+
+monster.doctor__screen {
+  background-color: #f24943;
+}
+
+monster.yaga__screen {
+  background-color: #72538e;
+}
+
 monster.skeleton__screen {
   background-color: #000;
 }
@@ -25764,6 +25784,125 @@ alien .alien .body--figure {
   stroke: #000;
   stroke-miterlimit: 10;
   fill: none;
+}
+
+doctor .doctor {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+doctor .doctor .body {
+  fill: #fff;
+}
+
+doctor .doctor .hat {
+  fill: #fff;
+}
+
+doctor .doctor .head-figure {
+  fill: #f7decb;
+}
+
+doctor .doctor .ear {
+  fill: #f7decb;
+}
+
+doctor .doctor .nose {
+  fill: #ebba96;
+}
+
+doctor .doctor .mouth-figure {
+  fill: #f24943;
+}
+
+doctor .doctor .tooth {
+  fill: #fff;
+}
+
+doctor .doctor .cross {
+  fill: #f24943;
+}
+
+doctor .doctor .eye {
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+doctor .doctor .eye--left {
+  stroke-width: 3.27px;
+}
+
+doctor .doctor .eye--right {
+  stroke-width: 6.03px;
+}
+
+ghost .ghost .body {
+  fill: #b7e3ee;
+}
+
+ghost .ghost .eyeball {
+  fill: #fff;
+}
+
+ghost .ghost .ubula {
+  fill: #f24943;
+}
+
+ghost .ghost .tooth {
+  fill: #fff;
+}
+
+ghost .ghost .mouth {
+  -webkit-clip-path: url(#mouth-clip-path);
+  clip-path: url(#mouth-clip-path);
+}
+
+mummy .mummy {
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+mummy .mummy .head--figure {
+  fill: #fff;
+}
+
+mummy .mummy .ear {
+  fill: #b48d69;
+}
+
+mummy .mummy .head-part {
+  fill: #ffd7a5;
+}
+
+mummy .mummy .head-part--dark {
+  fill: #e1b285;
+}
+
+mummy .mummy .head-part--empty {
+  fill: #000;
+}
+
+mummy .mummy .body-part {
+  fill: #ffd7a5;
+}
+
+mummy .mummy .body-part--dark {
+  fill: #e1b285;
+}
+
+mummy .mummy .tooth {
+  fill: #fff;
+}
+
+mummy .mummy .eyeball {
+  fill: #f24943;
+}
+
+mummy .mummy .decor__bandage {
+  fill: #e1b285;
 }
 
 skeleton .skeleton {
@@ -25909,6 +26048,82 @@ wolf .wolf .eyeball-part {
   fill: #f1ea35;
 }
 
+wolf .wolf .tooth {
+  fill: white;
+}
+
+yaga .yaga {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+yaga .yaga .body-figure {
+  fill: #20654d;
+}
+
+yaga .yaga .ornament-part {
+  fill: #f24943;
+}
+
+yaga .yaga .mouth-figure {
+  fill: #f24943;
+}
+
+yaga .yaga .tooth {
+  fill: #fff;
+}
+
+yaga .yaga .face {
+  fill: #00b15d;
+}
+
+yaga .yaga .eyeball {
+  fill: #fff;
+}
+
+yaga .yaga .nose {
+  fill: #20654d;
+}
+
+yeti .yeti {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+yeti .yeti .body {
+  fill: #cdcdcd;
+}
+
+yeti .yeti .hair {
+  fill: #9a9b9b;
+}
+
+yeti .yeti .face {
+  fill: #cdcdcd;
+}
+
+yeti .yeti .nose {
+  fill: #9a9b9b;
+}
+
+yeti .yeti .ear {
+  fill: #cdcdcd;
+}
+
+yeti .yeti .jaw {
+  fill: #cdcdcd;
+}
+
+yeti .yeti .lips {
+  fill: #f24943;
+}
+
+yeti .yeti .tooth {
+  fill: #fff;
+}
+
 .zombie {
   right: 0;
 }
@@ -25951,6 +26166,21 @@ wolf .wolf .eyeball-part {
   transition: fill .2s linear;
 }
 
+.beard .cls-1 {
+  fill: #97623f;
+}
+
+.beard .cls-2 {
+  fill: #fff;
+  stroke: #f24942;
+  stroke-miterlimit: 10;
+  stroke-width: 4.03px;
+}
+
+.beard .cls-3 {
+  fill: #b27d51;
+}
+
 .eyes-trinket .cls-1 {
   fill: #00bcc5;
 }
@@ -25986,6 +26216,17 @@ wolf .wolf .eyeball-part {
 
 .glass .cls-3 {
   stroke-width: 4.94px;
+}
+
+.heart .cls-1 {
+  fill: #f24943;
+}
+
+.heart .cls-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2.66px;
 }
 
 .hood .cls-1 {

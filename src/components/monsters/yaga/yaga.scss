@@ -1,0 +1,34 @@
+yaga {
+  .yaga {
+    left: 50%;
+    transform: translateX(-50%);
+
+    & .body-figure {
+      fill: #20654d;
+    }
+
+    & .ornament-part {
+      fill: #f24943;
+    }
+
+    & .mouth-figure {
+      fill: #f24943;
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+
+    & .face {
+      fill: #00b15d;
+    }
+
+    & .eyeball {
+      fill: #fff;
+    }
+
+    & .nose {
+      fill: #20654d;
+    }
+  }
+}
