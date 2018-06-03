@@ -46,6 +46,7 @@ export class TrinketsService {
               vampire: ({width}) => width * 2.87,
               wolf: ({width}) => width * 1.6,
               ghost: ({width}) => width * 3.5,
+              yeti: ({width}) => width * 2,
 
             },
             height: {
@@ -59,6 +60,7 @@ export class TrinketsService {
               vampire: ({height}) => height * 1.83,
               wolf: ({height}) => height * 1.6,
               ghost: ({height}) => height * 1.76,
+              yeti: ({height}) => height * 2,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -71,6 +73,7 @@ export class TrinketsService {
               vampire: ({x, width}) => (x - (width * 2.87) / 2) + width / 2,
               wolf: ({x, width}) => x - 20,
               ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
+              yeti: ({x, width}) => (x - (width * 2) / 2) + width / 2,
 
             },
             y: {
@@ -83,6 +86,7 @@ export class TrinketsService {
               spider: ({y, height}) => y - 10,
               vampire: ({y, height}) => y - 30,
               wolf: ({y, height}) => y - 10,
+              yeti: ({y, height}) => y,
 
             }
           }
