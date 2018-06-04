@@ -63,7 +63,6 @@ export class TrinketsService {
               wolf: ({x, width}) => (x - 17 / 2) + width / 2,
               ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
               yeti: ({x, width}) => (x - 24 / 2) + width / 2,
-
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,

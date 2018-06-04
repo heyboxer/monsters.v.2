@@ -3833,15 +3833,16 @@ var TrinketRandomModel = /** @class */ (function (_super) {
                 _this.afterInit = _this.afterInit.concat([function () { return _this.randomize(cb); }]);
                 return;
             }
-            var random = Math.round((_this.parts.length - 1) * Math.random()) + 1;
+            var random = Math.round((_this.parts.length - 1) * Math.random());
             var parts = _this.parts.reduce(function (acc, el) { return acc.concat([el]); }, []);
             var randomParts = function (arr, acc, cur) {
                 if (!cur)
                     return acc;
                 var randomIndex = Math.round((arr.length - 1) * Math.random());
                 var randomPart = arr[randomIndex];
+                var partIndex = parts.indexOf(randomPart);
                 var filteredArray = arr.slice(0, randomIndex).concat(arr.slice(randomIndex + 1, arr.length));
-                return randomParts(filteredArray, acc.concat([randomIndex]), cur - 1);
+                return randomParts(filteredArray, acc.concat([partIndex]), cur - 1);
             };
             var selected = randomParts(parts, [], random);
             _this.hide(selected);
@@ -3866,13 +3867,14 @@ var TrinketRandomModel = /** @class */ (function (_super) {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */]) === "function" && _a || Object)
     ], TrinketRandomModel.prototype, "parts", void 0);
     TrinketRandomModel = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
         __metadata("design:paramtypes", [Object, Object])
     ], TrinketRandomModel);
     return TrinketRandomModel;
+    var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__model_element_component_model__["a" /* ElementComponentModel */]));
 
 //# sourceMappingURL=trinket-random.model.js.map

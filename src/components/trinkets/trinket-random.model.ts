@@ -27,7 +27,7 @@ export class TrinketRandomModel extends ElementComponentModel implements AfterVi
       return;
     }
 
-    const random = Math.round((this.parts.length - 1) * Math.random()) + 1;
+    const random = Math.round((this.parts.length - 1) * Math.random());
 
     const parts = this.parts.reduce((acc, el) => [...acc, el], []);
 
@@ -37,10 +37,11 @@ export class TrinketRandomModel extends ElementComponentModel implements AfterVi
       const randomIndex = Math.round((arr.length - 1) * Math.random());
 
       const randomPart = arr[randomIndex];
+      const partIndex = parts.indexOf(randomPart);
 
       const filteredArray = arr.slice(0, randomIndex).concat(arr.slice(randomIndex + 1, arr.length));
 
-      return randomParts(filteredArray, [...acc, randomIndex], cur - 1);
+      return randomParts(filteredArray, [...acc, partIndex], cur - 1);
     }
 
     const selected = randomParts(parts, [], random);
