@@ -1411,7 +1411,7 @@ var aniamtions = function (instance) {
             };
         },
         smile: function (arg) {
-            var el = _this.getPart(function (p) { return p.name == 'mouth'; }).element;
+            var el = _this.getPart(function (p) { return p.name == 'mouth' && p.type == "element"; }).element;
             var mouth = __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(el);
             var value = 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z';
             var smileForward = function (cb) {
@@ -2953,7 +2953,7 @@ var TrinketsService = /** @class */ (function () {
                             },
                             doctor: function (_a) {
                                 var x = _a.x, width = _a.width;
-                                return (x - (width * 5) / 2) + width / 2;
+                                return (x - (15) / 2) + width / 2;
                             },
                             spider: function (_a) {
                                 var x = _a.x, width = _a.width;
@@ -3003,7 +3003,7 @@ var TrinketsService = /** @class */ (function () {
                             },
                             doctor: function (_a) {
                                 var y = _a.y, height = _a.height;
-                                return y - 30;
+                                return y + height;
                             },
                             spider: function (_a) {
                                 var y = _a.y, height = _a.height;
@@ -3236,20 +3236,26 @@ var TrinketsService = /** @class */ (function () {
                 meta: {
                     container: 'mouth',
                     before: function (monster) {
-                        if (monster.name !== 'wolf') {
-                            monster.close('mouth');
+                        if (monster.name === 'wolf') {
+                            monster.close('tongue');
+                        }
+                        else if (monster.name === 'skeleton') {
+                            return;
                         }
                         else {
-                            monster.close('tongue');
+                            monster.close('mouth');
                         }
                         return;
                     },
                     after: function (monster) {
-                        if (monster.name !== 'wolf') {
-                            monster.open('mouth');
+                        if (monster.name === 'wolf') {
+                            monster.open('tongue');
+                        }
+                        else if (monster.name === 'skeleton') {
+                            return;
                         }
                         else {
-                            monster.open('tongue');
+                            monster.open('mouth');
                         }
                         return;
                     },

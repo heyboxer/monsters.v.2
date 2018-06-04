@@ -57,7 +57,7 @@ export class TrinketsService {
               alien: ({x, width}) => x + width - 7,
               skeleton: ({x, width}) => x + width - 22,
               yaga: ({x, width}) => (x - 15 / 2) + width / 2,
-              doctor: ({x, width}) => (x - (width * 5) / 2) + width / 2,
+              doctor: ({x, width}) => (x - (15) / 2) + width / 2,
               spider: ({x, width}) => (x - (width * 6.6) / 2) + width / 2,
               vampire: ({x, width}) => (x - 24 / 2) + width / 2,
               wolf: ({x, width}) => (x - 17 / 2) + width / 2,
@@ -72,7 +72,7 @@ export class TrinketsService {
               alien: ({y, height}) => y + height,
               skeleton: ({y, height}) => y + height,
               yaga: ({y, height}) => y + height,
-              doctor: ({y, height}) => y - 30,
+              doctor: ({y, height}) => y + height,
               spider: ({y, height}) => y - 10,
               vampire: ({y, height}) => y + height,
               wolf: ({y, height}) => y + height - 7,
@@ -152,18 +152,22 @@ export class TrinketsService {
         meta: {
           container: 'mouth',
           before: (monster) => {
-            if(monster.name !== 'wolf') {
-              monster.close('mouth');
-            } else {
+            if(monster.name === 'wolf') {
               monster.close('tongue');
+            } else if(monster.name === 'skeleton') {
+              return;
+            } else {
+              monster.close('mouth');
             }
             return;
           },
           after: (monster) => {
-            if(monster.name !== 'wolf') {
-              monster.open('mouth');
-            } else {
+            if(monster.name === 'wolf') {
               monster.open('tongue');
+            } else if(monster.name === 'skeleton') {
+              return;
+            } else {
+              monster.open('mouth');
             }
             return;
           },
