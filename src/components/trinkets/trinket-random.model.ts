@@ -14,7 +14,7 @@ export class TrinketRandomModel extends ElementComponentModel implements AfterVi
   @ViewChildren(TrinketRandomPartDirective) protected parts: QueryList<TrinketRandomPartDirective>;
   constructor(name, element){
     super(name, element);
-  };
+  }
 
   ngAfterViewInit() {
     this.initiated = true;

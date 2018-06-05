@@ -3,11 +3,11 @@ import { MonsterPartDirective, MonsterPartTypes } from './monster-part.directive
 import { Node } from '../../app/model/node.model';
 
 @Component({
-
 })
 export abstract class MonsterModel implements AfterViewInit {
   @ViewChildren(MonsterPartDirective) parts: QueryList<MonsterPartDirective>;
   protected renderer: Renderer2;
+  private emotion = 'default';
 
   constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef) {}
 
@@ -112,40 +112,58 @@ export abstract class MonsterModel implements AfterViewInit {
     return this;
   }
 
+  public makeSad() {
+    this.emotion = 'sad';
+    return this;
+  }
 
-    private trigger(name, fn) {
-      const gr = this.getParts((p) => p.name === name);
+  public makeJoyjul() {
+    this.emotion = 'joyful';
+    return this;
+  }
 
-      gr.forEach(({ element }) => fn(element));
-    }
+  public clearEmotion() {
+    this.emotion = 'default';
+    return this;
+  }
 
-    public close(name) {
-      this.trigger(name, (element) => {
-        this.renderer.setAttribute(element, 'visibility', 'hidden');
-        return;
-      });
+  public getEmotion() {
+    return this.emotion;
+  }
 
-      return () => this.open(name);
-    }
+  private trigger(name, fn) {
+    const gr = this.getParts((p) => p.name === name);
 
-    public open(name) {
-      this.trigger(name, (element) => {
-        element.removeAttribute('visibility');
-      });
+    gr.forEach(({ element }) => fn(element));
+  }
 
-      return () => this.close(name);;
-    }
-
-    public clearAll() {
-      this.getContainers().forEach(({ group }) => this.clear(group));
-      this.getParts(p => p.type !== 'container').forEach(({name}) => {
-        this.open(name);
-      });
-
+  public close(name) {
+    this.trigger(name, (element) => {
+      this.renderer.setAttribute(element, 'visibility', 'hidden');
       return;
-    }
+    });
 
-    public animate(name?, cb?): any {
-      return false;
-    }
+    return () => this.open(name);
+  }
+
+  public open(name) {
+    this.trigger(name, (element) => {
+      element.removeAttribute('visibility');
+    });
+
+    return () => this.close(name);;
+  }
+
+  public clearAll() {
+    this.getContainers().forEach(({ group }) => this.clear(group));
+    this.getParts(p => p.type !== 'container').forEach(({name}) => {
+      this.open(name);
+    });
+
+    return;
+  }
+
+  public animate(name?, cb?): any {
+    return false;
+  }
 }

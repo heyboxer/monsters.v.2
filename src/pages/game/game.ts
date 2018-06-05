@@ -81,7 +81,6 @@ export class GamePage extends Game implements AfterViewInit {
         const { after, multiple, onScreen, random } = item.meta;
 
         if(item.isCopy()) {
-          after ? after(this.monster) : null;
 
           const parent = item.isCopy();
 
@@ -99,6 +98,10 @@ export class GamePage extends Game implements AfterViewInit {
 
           items.removeActiveElement(item);
           (item).deleteCopy();
+
+          console.log(item.instance);
+
+          after ? after(this.monster, items, item.instance) : null;
 
           return;
         }
@@ -141,9 +144,14 @@ export class GamePage extends Game implements AfterViewInit {
 
             this.renderer.setAttribute((instance as { node }).node, 'style', style);
 
+            before ? before(this.monster, items, (instance as { node }).node) : null;
+
             const copy = items.addActiveElementCopy(item, (instance as { node }).node);
 
-            before ? before(this.monster, this.monsterComponent, copy.instance) : null;
+            if(this.monster.isOnMonster( instance.node.getBoundingClientRect() )) {
+              copy.onMonster = true;
+            }
+
 
             if(item.meta.random) {
               instance.hide(item.randomArr);
@@ -158,23 +166,26 @@ export class GamePage extends Game implements AfterViewInit {
         const { content } = this.monster.getContainer(item.meta.container);
         const { element } = this.monster.getGroup(item.meta.container);
 
-        if(content) {
+        if( content ) {
           const active = items.findActiveElementByInstance(content);
           const { after } = active.meta;
 
-          after ? after(this.monster, this.monsterComponent, item.instance) : null;
 
           const parent = active.isCopy();
           parent.activate();
           this.renderer.removeClass(parent.instance, 'blocked');
+
           items.removeActiveElement(active);
+          console.log(item.instance);
+          after ? after(this.monster, items, item.instance) : null;
         }
 
 
         this.monster.render(item.component, item.meta.container, (instance) => {
+          before ? before(this.monster, items, instance) : null;
+
           const copy = items.addActiveElementCopy(item, instance);
 
-          before ? before(this.monster, this.monsterComponent, copy.instance) : null;
 
           const config = (element as SVGGraphicsElement).getBBox();
 

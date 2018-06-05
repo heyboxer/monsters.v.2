@@ -9,6 +9,44 @@ import { BeardComponent } from './beard/beard';
 import { MoustacheComponent } from './moustache/moustache';
 import { SnivelComponent } from './snivel/snivel';
 
+const zombieJoyAnimBefore = (monster, repo, instance) => {
+  const filtered = repo.getCopies().filter(i => {
+      if(i.meta.onScreen) {
+        return i.onMonster && i.meta.emotion === 'joyful';
+      }
+
+      return i.meta.emotion === 'joyful';
+  });
+
+  const onMonster = monster.isOnMonster( instance.getBoundingClientRect() );
+
+  if(monster.animate() && filtered.length === 0 && monster.getEmotion() !== 'joyful' && onMonster) {
+    monster.makeJoyjul();
+
+    const smile = monster.animate('smile')(true)();
+    const smileLids = monster.animate('smileLids')(true)();
+  };
+
+  return;
+}
+
+const zombieJoyAnimAfter = (monster, repo, instance) => {
+  const filtered = repo.getCopies().filter(i => {
+      if(i.meta.onScreen) {
+        return i.onMonster && i.meta.emotion === 'joyful';
+      }
+
+      return i.meta.emotion === 'joyful';
+  });
+
+  if(monster.animate() && filtered.length === 0 && monster.getEmotion() === 'joyful') {
+    monster.clearEmotion()
+
+    const smile = monster.animate('smile')(false)();
+    const smileLids = monster.animate('smileLids')(false)();
+  }
+}
+
 @Injectable()
 export class TrinketsService {
   constructor() {
@@ -20,6 +58,7 @@ export class TrinketsService {
         component: SnivelComponent,
         meta: {
           container: 'nose',
+          emotion: 'sad',
           attr: {
             width: {
               default: ({width}) => width * 1.5,
@@ -237,13 +276,13 @@ export class TrinketsService {
           onScreen: true,
           multiple: true,
           random: true,
-          before: (monster, host, instance) => {
+          before: (monster, items, instance) => {
             if(monster.animate() && monster.isOnMonster( instance.getBoundingClientRect() )) {
               const smile = monster.animate('smile')(true)();
               const smileLids = monster.animate('smileLids')(true)();
             }
           },
-          after: (monster, host) => {
+          after: (monster, items) => {
             if(monster.animate()) {
               const smile = monster.animate('smile')(false)();
               const smileLids = monster.animate('smileLids')(false)();
@@ -255,6 +294,9 @@ export class TrinketsService {
         id: 5,
         component: HeartComponent,
         meta: {
+          before: zombieJoyAnimBefore,
+          after: zombieJoyAnimAfter,
+          emotion: 'joyful',
           onScreen: true,
           multiple: true,
         }
@@ -332,18 +374,9 @@ export class TrinketsService {
         component: HoodComponent,
         meta: {
           container: 'head-figure',
-          before: (monster) => {
-            if(monster.animate()) {
-              const smile = monster.animate('smile')(true)();
-              const smileLids = monster.animate('smileLids')(true)();
-            }
-          },
-          after: (monster) => {
-            if(monster.animate()) {
-              const smile = monster.animate('smile')(false)();
-              const smileLids = monster.animate('smileLids')(false)();
-            }
-          },
+          emotion: 'joyful',
+          before: zombieJoyAnimBefore,
+          after: zombieJoyAnimAfter,
           attr: {
             width: {
               default: ({width}) => width * 0.3,

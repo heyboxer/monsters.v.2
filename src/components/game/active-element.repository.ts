@@ -135,6 +135,10 @@ export class ActiveElementRepository {
     return this.items.filter(item => item.isActive());
   }
 
+  public getCopies() {
+    return this.items.filter(item => item.isCopy());
+  }
+
   public clear() {
     const filtered = this.items.filter(e => e.type === 'original');
     this.items = filtered;

@@ -81,20 +81,21 @@ var GamePage = /** @class */ (function (_super) {
         this.logic.setFns('onItemClick', function (items, item, ev) {
             var _a = item.meta, after = _a.after, multiple = _a.multiple, onScreen = _a.onScreen, random = _a.random;
             if (item.isCopy()) {
-                after ? after(_this.monster) : null;
-                var parent_1 = item.isCopy();
+                var parent = item.isCopy();
                 if (!onScreen) {
                     _this.monster.clear(item.meta.container);
                 }
                 else {
                     _this.monsterComponent.remove(item.instance);
                 }
-                var holderInstance_1 = _this.holder.loadComponent(parent_1.component);
+                var holderInstance_1 = _this.holder.loadComponent(parent.component);
                 if (random) {
                     holderInstance_1.hide(item.randomArr);
                 }
                 items.removeActiveElement(item);
                 (item).deleteCopy();
+                console.log(item.instance);
+                after ? after(_this.monster, items, item.instance) : null;
                 return;
             }
             if (!multiple) {
@@ -119,8 +120,11 @@ var GamePage = /** @class */ (function (_super) {
                     var position = _this.holder.getAttributes().style;
                     var style = "position: absolute; z-index: 11; " + position;
                     _this.renderer.setAttribute(instance.node, 'style', style);
+                    before ? before(_this.monster, items, instance.node) : null;
                     var copy = items.addActiveElementCopy(item, instance.node);
-                    before ? before(_this.monster, _this.monsterComponent, copy.instance) : null;
+                    if (_this.monster.isOnMonster(instance.node.getBoundingClientRect())) {
+                        copy.onMonster = true;
+                    }
                     if (item.meta.random) {
                         instance.hide(item.randomArr);
                         copy.randomArr = item.randomArr;
@@ -134,15 +138,16 @@ var GamePage = /** @class */ (function (_super) {
             if (content) {
                 var active = items.findActiveElementByInstance(content);
                 var after = active.meta.after;
-                after ? after(_this.monster, _this.monsterComponent, item.instance) : null;
-                var parent_2 = active.isCopy();
-                parent_2.activate();
-                _this.renderer.removeClass(parent_2.instance, 'blocked');
+                var parent = active.isCopy();
+                parent.activate();
+                _this.renderer.removeClass(parent.instance, 'blocked');
                 items.removeActiveElement(active);
+                console.log(item.instance);
+                after ? after(_this.monster, items, item.instance) : null;
             }
             _this.monster.render(item.component, item.meta.container, function (instance) {
+                before ? before(_this.monster, items, instance) : null;
                 var copy = items.addActiveElementCopy(item, instance);
-                before ? before(_this.monster, _this.monsterComponent, copy.instance) : null;
                 var config = element.getBBox();
                 var attr = item.meta.attr;
                 Object.keys(attr).forEach(function (name) {
@@ -184,29 +189,25 @@ var GamePage = /** @class */ (function (_super) {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]) === "function" && _a || Object)
     ], GamePage.prototype, "trinkets", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */])
+        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]) === "function" && _b || Object)
     ], GamePage.prototype, "monsterComponent", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */])
+        __metadata("design:type", typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]) === "function" && _c || Object)
     ], GamePage.prototype, "holder", void 0);
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-game',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <item-holder></item-holder>\n    <div id="nb-target" class="screen zombie__screen">\n      <div id="on-screen">\n        <monster [monsterId]="monsterId"></monster>\n      </div>\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <trinkets></trinkets>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/,
             providers: [],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
+        __metadata("design:paramtypes", [typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _j || Object])
     ], GamePage);
     return GamePage;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 }(__WEBPACK_IMPORTED_MODULE_4__components_game_game_service__["a" /* Game */]));
 
 //# sourceMappingURL=game.js.map
@@ -295,6 +296,7 @@ var MonsterModel = /** @class */ (function () {
         this.componentFactoryResolver = componentFactoryResolver;
         this.injector = injector;
         this.app = app;
+        this.emotion = 'default';
     }
     MonsterModel.prototype.ngAfterViewInit = function () { };
     MonsterModel.prototype.getPartsArray = function () {
@@ -369,6 +371,21 @@ var MonsterModel = /** @class */ (function () {
         object.content = null;
         return this;
     };
+    MonsterModel.prototype.makeSad = function () {
+        this.emotion = 'sad';
+        return this;
+    };
+    MonsterModel.prototype.makeJoyjul = function () {
+        this.emotion = 'joyful';
+        return this;
+    };
+    MonsterModel.prototype.clearEmotion = function () {
+        this.emotion = 'default';
+        return this;
+    };
+    MonsterModel.prototype.getEmotion = function () {
+        return this.emotion;
+    };
     MonsterModel.prototype.trigger = function (name, fn) {
         var gr = this.getParts(function (p) { return p.name === name; });
         gr.forEach(function (_a) {
@@ -409,13 +426,14 @@ var MonsterModel = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__monster_part_directive__["a" /* MonsterPartDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */]) === "function" && _a || Object)
     ], MonsterModel.prototype, "parts", void 0);
     MonsterModel = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
-        __metadata("design:paramtypes", [Object, HTMLElement, __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
+        __metadata("design:paramtypes", [Object, Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _d || Object])
     ], MonsterModel);
     return MonsterModel;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=monster.model.js.map
@@ -2815,6 +2833,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+var zombieJoyAnimBefore = function (monster, repo, instance) {
+    var filtered = repo.getCopies().filter(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && i.meta.emotion === 'joyful';
+        }
+        return i.meta.emotion === 'joyful';
+    });
+    var onMonster = monster.isOnMonster(instance.getBoundingClientRect());
+    if (monster.animate() && filtered.length === 0 && monster.getEmotion() !== 'joyful' && onMonster) {
+        monster.makeJoyjul();
+        var smile = monster.animate('smile')(true)();
+        var smileLids = monster.animate('smileLids')(true)();
+    }
+    ;
+    return;
+};
+var zombieJoyAnimAfter = function (monster, repo, instance) {
+    var filtered = repo.getCopies().filter(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && i.meta.emotion === 'joyful';
+        }
+        return i.meta.emotion === 'joyful';
+    });
+    if (monster.animate() && filtered.length === 0 && monster.getEmotion() === 'joyful') {
+        monster.clearEmotion();
+        var smile = monster.animate('smile')(false)();
+        var smileLids = monster.animate('smileLids')(false)();
+    }
+};
 var TrinketsService = /** @class */ (function () {
     function TrinketsService() {
     }
@@ -2825,6 +2872,7 @@ var TrinketsService = /** @class */ (function () {
                 component: __WEBPACK_IMPORTED_MODULE_8__snivel_snivel__["a" /* SnivelComponent */],
                 meta: {
                     container: 'nose',
+                    emotion: 'sad',
                     attr: {
                         width: {
                             default: function (_a) {
@@ -3456,13 +3504,13 @@ var TrinketsService = /** @class */ (function () {
                     onScreen: true,
                     multiple: true,
                     random: true,
-                    before: function (monster, host, instance) {
+                    before: function (monster, items, instance) {
                         if (monster.animate() && monster.isOnMonster(instance.getBoundingClientRect())) {
                             var smile = monster.animate('smile')(true)();
                             var smileLids = monster.animate('smileLids')(true)();
                         }
                     },
-                    after: function (monster, host) {
+                    after: function (monster, items) {
                         if (monster.animate()) {
                             var smile = monster.animate('smile')(false)();
                             var smileLids = monster.animate('smileLids')(false)();
@@ -3474,6 +3522,9 @@ var TrinketsService = /** @class */ (function () {
                 id: 5,
                 component: __WEBPACK_IMPORTED_MODULE_5__heart_heart__["a" /* HeartComponent */],
                 meta: {
+                    before: zombieJoyAnimBefore,
+                    after: zombieJoyAnimAfter,
+                    emotion: 'joyful',
                     onScreen: true,
                     multiple: true,
                 }
@@ -3605,18 +3656,9 @@ var TrinketsService = /** @class */ (function () {
                 component: __WEBPACK_IMPORTED_MODULE_3__hood_hood__["a" /* HoodComponent */],
                 meta: {
                     container: 'head-figure',
-                    before: function (monster) {
-                        if (monster.animate()) {
-                            var smile = monster.animate('smile')(true)();
-                            var smileLids = monster.animate('smileLids')(true)();
-                        }
-                    },
-                    after: function (monster) {
-                        if (monster.animate()) {
-                            var smile = monster.animate('smile')(false)();
-                            var smileLids = monster.animate('smileLids')(false)();
-                        }
-                    },
+                    emotion: 'joyful',
+                    before: zombieJoyAnimBefore,
+                    after: zombieJoyAnimAfter,
                     attr: {
                         width: {
                             default: function (_a) {
@@ -3850,7 +3892,6 @@ var TrinketRandomModel = /** @class */ (function (_super) {
         };
         return _this;
     }
-    ;
     TrinketRandomModel.prototype.ngAfterViewInit = function () {
         var _this = this;
         this.initiated = true;
@@ -3867,14 +3908,13 @@ var TrinketRandomModel = /** @class */ (function (_super) {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
     ], TrinketRandomModel.prototype, "parts", void 0);
     TrinketRandomModel = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
         __metadata("design:paramtypes", [Object, Object])
     ], TrinketRandomModel);
     return TrinketRandomModel;
-    var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__model_element_component_model__["a" /* ElementComponentModel */]));
 
 //# sourceMappingURL=trinket-random.model.js.map
@@ -4511,6 +4551,9 @@ var ActiveElementRepository = /** @class */ (function () {
     };
     ActiveElementRepository.prototype.getActive = function () {
         return this.items.filter(function (item) { return item.isActive(); });
+    };
+    ActiveElementRepository.prototype.getCopies = function () {
+        return this.items.filter(function (item) { return item.isCopy(); });
     };
     ActiveElementRepository.prototype.clear = function () {
         var _this = this;

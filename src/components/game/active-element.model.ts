@@ -2,6 +2,7 @@ import { ComponentRef } from '@angular/core';
 
 type ActiveElementState = 'deactivated' | 'activated';
 type ActiveElementType = 'original' | 'copy';
+type ActiveElementEmotion = 'default' | 'sad' | 'joyful';
 
 export interface ActiveElementConfig {
   instance: HTMLElement,
