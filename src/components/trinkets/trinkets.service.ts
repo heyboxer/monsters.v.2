@@ -63,6 +63,8 @@ export class TrinketsService {
           before: (monster) => {
             if(
               monster.name === 'mummy' ||
+              monster.name === 'yaga' ||
+              monster.name === 'doctor' ||
               monster.name === 'zombie'
             ) {
               monster.close('body');
@@ -73,6 +75,8 @@ export class TrinketsService {
           after: (monster) => {
             if(
               monster.name === 'mummy' ||
+              monster.name === 'yaga' ||
+              monster.name === 'doctor' ||
               monster.name === 'zombie'
             ) {
               monster.open('body');
@@ -85,11 +89,11 @@ export class TrinketsService {
               default: ({width}) => width * 1.5,
               zombie: ({width}) => 245,
               mummy: ({width}) => width * 0.7,
-              alien: ({width}) => 11,
-              skeleton: ({width}) => 22,
-              yaga: ({width}) => 15,
-              doctor: ({width}) => 15,
-              spider: ({width}) => 28,
+              alien: ({width}) => width * 1.3,
+              skeleton: ({width}) => width * 1.3,
+              yaga: ({width}) => width,
+              doctor: ({width}) => width,
+              spider: ({width}) => width * 1.44,
               vampire: ({width}) => 24,
               wolf: ({width}) => 17,
               ghost: ({width}) => 15,
@@ -100,11 +104,11 @@ export class TrinketsService {
               default: ({height}) => height * 1.5,
               zombie: ({height}) => 210,
               mummy: ({height}) => 121.5,
-              alien: ({height}) => 20,
-              skeleton: ({height}) => 78,
-              yaga: ({height}) => 26,
-              doctor: ({height}) => 26,
-              spider: ({height}) => 49,
+              alien: ({height}) => height * 0.56,
+              skeleton: ({height}) => height * 1.3,
+              yaga: ({height}) => height,
+              doctor: ({height}) => 190,
+              spider: ({height}) => height * 1.1,
               vampire: ({height}) => 42,
               wolf: ({height}) => 30,
               ghost: ({height}) => 26,
@@ -114,11 +118,11 @@ export class TrinketsService {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
               zombie: ({x, width}) => (x - (width) / 2) + width / 2,
               mummy: ({x, width}) => 25,
-              alien: ({x, width}) => x + width - 7,
-              skeleton: ({x, width}) => x + width - 22,
-              yaga: ({x, width}) => (x - 15 / 2) + width / 2,
-              doctor: ({x, width}) => (x - (15) / 2) + width / 2,
-              spider: ({x, width}) => (x - (width * 6.6) / 2) + width / 2,
+              alien: ({x, width}) => (x - (width * 1.3) / 2) + width / 2,
+              skeleton: ({x, width}) => (x - (width * 1.3) / 2) + width / 2,
+              yaga: ({x, width}) => (x - width / 2) + width / 2,
+              doctor: ({x, width}) => (x - width / 2) + width / 2,
+              spider: ({x, width}) => ((x - (width * 1.4) / 2) + width / 2) - 3,
               vampire: ({x, width}) => (x - 24 / 2) + width / 2,
               wolf: ({x, width}) => (x - 17 / 2) + width / 2,
               ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
@@ -128,11 +132,11 @@ export class TrinketsService {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
               zombie: ({y, height}) => y - 10,
               mummy: ({y, height}) => y - 10,
-              alien: ({y, height}) => y + height,
-              skeleton: ({y, height}) => y + height,
-              yaga: ({y, height}) => y + height,
-              doctor: ({y, height}) => y + height,
-              spider: ({y, height}) => y - 10,
+              alien: ({y, height}) => y,
+              skeleton: ({y, height}) => y - 20,
+              yaga: ({y, height}) => y,
+              doctor: ({y, height}) => y,
+              spider: ({y, height}) => y + 71,
               vampire: ({y, height}) => y + height,
               wolf: ({y, height}) => y + height - 7,
               yeti: ({y, height}) => y + height,

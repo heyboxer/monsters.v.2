@@ -26246,6 +26246,101 @@ yeti .yeti .tooth {
   stroke-miterlimit: 10;
 }
 
+.dress--skeleton .cls-1 {
+  fill: #ab4e8a;
+}
+
+.dress--skeleton .cls-2 {
+  fill: #586ab1;
+}
+
+.dress--skeleton .cls-3 {
+  fill: #fff;
+}
+
+.dress--skeleton .cls-4 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--yaga .cls-1 {
+  fill: #ab4e8a;
+}
+
+.dress--yaga .cls-2 {
+  fill: #fff;
+}
+
+.dress--yaga .cls-3 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--yaga .cls-4 {
+  fill: #586ab1;
+}
+
+.dress--doctor .cls-1 {
+  fill: #ab4e8a;
+}
+
+.dress--doctor .cls-2 {
+  fill: #586ab1;
+}
+
+.dress--doctor .cls-3 {
+  fill: #fff;
+}
+
+.dress--doctor .cls-4 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--spider .cls-1 {
+  fill: #ab4e8a;
+}
+
+.dress--spider .cls-2 {
+  fill: #586ab1;
+}
+
+.dress--spider .cls-3 {
+  fill: #fff;
+}
+
+.dress--spider .cls-4 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--alien .cls-1 {
+  fill: #ab4e8a;
+}
+
+.dress--alien .cls-2 {
+  fill: #586ab1;
+}
+
+.dress--alien .cls-3 {
+  fill: #fff;
+}
+
+.dress--alien .cls-4 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
 .eyes-trinket .cls-1 {
   fill: #00bcc5;
 }
