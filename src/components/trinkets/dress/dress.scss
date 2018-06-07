@@ -1,0 +1,71 @@
+.dress {
+  & .cls-1 {
+    fill: #ab4e8a;
+  }
+
+  & .cls-2 {
+    fill: #586ab1;
+  }
+
+  & .cls-3 {
+    fill: #fff;
+  }
+
+  & .cls-4 {
+    fill: none;
+    stroke: #000;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+
+  &--mummy {
+    & .cls-1,
+    & .cls-6 {
+      fill: none;
+    }
+
+    & .cls-3 {
+      fill: #ab4e8a;
+    }
+
+    & .cls-4 {
+      fill: #586ab1;
+    }
+
+    & .cls-5 {
+      fill: #fff;
+    }
+
+    & .cls-6 {
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+    }
+
+  }
+
+  &--zombie {
+    & .cls-1,
+    & .cls-6 {
+      fill: none;
+    }
+
+    & .cls-3 {
+      fill: #ab4e8a;
+    }
+
+    & .cls-4 {
+      fill: #586ab1;
+    }
+
+    & .cls-5 {
+      fill: #fff;
+    }
+
+    & .cls-6 {
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+    }
+  }
+}

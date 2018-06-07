@@ -80,7 +80,7 @@ export abstract class MonsterModel implements AfterViewInit {
     return this.getParts((p) => p.type === 'container');
   }
 
-  public render(component, name, callback = (instance) => {}) {
+  public render(component, name, callback = (instance, ref?) => {}) {
     const obj = this.getContainer(name);
     const { viewContainerRef: container, element, content  } = obj;
 
@@ -89,13 +89,13 @@ export abstract class MonsterModel implements AfterViewInit {
     const factory = this.componentFactoryResolver.resolveComponentFactory(component);
 
     const ref = factory.create(this.injector, [], element);
-    // this.app.attachView(ref.hostView);
+    this.app.attachView(ref.hostView);
 
-    const instance = (ref.instance as { node }).node.firstChild;
+    const instance = (ref.instance as { node }).node.children.item(0);
 
     obj.content = instance;
 
-    return callback(instance);
+    return callback(instance, ref);
   }
 
   public clear(name) {

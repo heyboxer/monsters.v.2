@@ -64,9 +64,10 @@ export class GamePage extends Game implements AfterViewInit {
     const setHolderPosition = (ref, item, event) => {
       const { clientX: x, clientY: y } = (event as MouseEvent);
       const { width, height } = this.holder.getSize();
+      const { width: instanceW, height: instanceH } = item.instance.getBoundingClientRect();
 
       this.holder.setAttributes({
-        style: `left: ${x - width / 2}px; top: ${y - height / 2}px`,
+        style: `left: ${x}px; top: ${y}px; transform: translate(-50%, -50%)`,
       });
     };
 
@@ -99,16 +100,14 @@ export class GamePage extends Game implements AfterViewInit {
           items.removeActiveElement(item);
           (item).deleteCopy();
 
-          console.log(item.instance);
-
           after ? after(this.monster, items, item.instance) : null;
 
           return;
         }
 
         if(!multiple) {
-          item.deactivate();
-          this.renderer.addClass(item.instance, 'blocked');
+          // item.deactivate();
+          // this.renderer.addClass(item.instance, 'blocked');
         }
 
         const holderInstance = this.holder.loadComponent(item.component);
@@ -117,6 +116,10 @@ export class GamePage extends Game implements AfterViewInit {
           const selected = (holderInstance as { randomize }).randomize((selected) => {
             item.randomArr = selected;
           });
+        }
+
+        if(item.meta.uniq) {
+          console.log(this.holder)
         }
 
         return;
@@ -138,10 +141,10 @@ export class GamePage extends Game implements AfterViewInit {
 
         if(onScreen) {
           this.monsterComponent.render(item.component, (instance) => {
+
             const { style: position } = (this.holder.getAttributes() as { style });
 
             const style = `position: absolute; z-index: 11; ${position}`;
-
             this.renderer.setAttribute((instance as { node }).node, 'style', style);
 
             before ? before(this.monster, items, (instance as { node }).node) : null;
@@ -172,33 +175,51 @@ export class GamePage extends Game implements AfterViewInit {
 
 
           const parent = active.isCopy();
-          parent.activate();
-          this.renderer.removeClass(parent.instance, 'blocked');
+          // parent.activate();
+          // this.renderer.removeClass(parent.instance, 'blocked');
 
           items.removeActiveElement(active);
-          console.log(item.instance);
           after ? after(this.monster, items, item.instance) : null;
         }
 
 
-        this.monster.render(item.component, item.meta.container, (instance) => {
-          before ? before(this.monster, items, instance) : null;
+        this.monster.render(item.component, item.meta.container, (instance, ref) => {
 
-          const copy = items.addActiveElementCopy(item, instance);
+          const func = (instance, async?: boolean) => {
+            before ? before(this.monster, items, instance) : null;
 
+            const copy = items.addActiveElementCopy(item, instance);
 
-          const config = (element as SVGGraphicsElement).getBBox();
+            const config = (element as SVGGraphicsElement).getBBox();
 
-          const { attr } = item.meta;
+            const { attr } = item.meta;
 
-          Object.keys(attr).forEach(name => {
-            const funcs = attr[name];
-            const fn = funcs[this.monster.name] || funcs['default'];
-            this.renderer.setAttribute(instance, name, fn(config).toString());
+            Object.keys(attr).forEach(name => {
+              const funcs = attr[name];
+              const fn = funcs[this.monster.name] || funcs['default'];
+              this.renderer.setAttribute(instance, name, fn(config).toString());
+              return;
+            });
+
+            if(async) {
+              this.logic.stop();
+              this.logic.start();
+            }
+
             return;
-          });
+          }
 
-          return;
+          if(item.meta.uniq) {
+            ref.instance.load(this.monster.name);
+            ref.instance.getInstance((node) => {
+              const svg = node.children.item(0);
+
+              func(svg, true);
+            });
+          } else {
+            func(instance);
+            return;
+          }
         });
       }
     )
@@ -209,8 +230,8 @@ export class GamePage extends Game implements AfterViewInit {
         const parent = item.isCopy();
         const el = parent ? parent : item;
 
-        el.activate();
-        this.renderer.removeClass(el.instance, 'blocked');
+        // el.activate();
+        // this.renderer.removeClass(el.instance, 'blocked');
       }
     )
 
@@ -218,8 +239,8 @@ export class GamePage extends Game implements AfterViewInit {
       'afterClear',
       (ref, items) => {
         items.forEach(el => {
-          el.activate();
-          this.renderer.removeClass(el.instance, 'blocked');
+          // el.activate();
+          // this.renderer.removeClass(el.instance, 'blocked');
         })
       }
     )

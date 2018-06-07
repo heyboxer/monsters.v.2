@@ -8,6 +8,7 @@ import { HeartComponent } from './heart/heart';
 import { BeardComponent } from './beard/beard';
 import { MoustacheComponent } from './moustache/moustache';
 import { SnivelComponent } from './snivel/snivel';
+import { DressComponent } from './dress/dress';
 
 const zombieJoyAnimBefore = (monster, repo, instance) => {
   const filtered = repo.getCopies().filter(i => {
@@ -53,6 +54,92 @@ export class TrinketsService {
   }
   getTrinkets() {
     return [
+      {
+        id: 9,
+        component: DressComponent,
+        meta: {
+          container: 'body',
+          uniq: true,
+          before: (monster) => {
+            if(
+              monster.name === 'mummy' ||
+              monster.name === 'zombie'
+            ) {
+              monster.close('body');
+            }
+
+            return;
+          },
+          after: (monster) => {
+            if(
+              monster.name === 'mummy' ||
+              monster.name === 'zombie'
+            ) {
+              monster.open('body');
+            };
+
+            return;
+          },
+          attr: {
+            width: {
+              default: ({width}) => width * 1.5,
+              zombie: ({width}) => 245,
+              mummy: ({width}) => width * 0.7,
+              alien: ({width}) => 11,
+              skeleton: ({width}) => 22,
+              yaga: ({width}) => 15,
+              doctor: ({width}) => 15,
+              spider: ({width}) => 28,
+              vampire: ({width}) => 24,
+              wolf: ({width}) => 17,
+              ghost: ({width}) => 15,
+              yeti: ({width}) => 24,
+
+            },
+            height: {
+              default: ({height}) => height * 1.5,
+              zombie: ({height}) => 210,
+              mummy: ({height}) => 121.5,
+              alien: ({height}) => 20,
+              skeleton: ({height}) => 78,
+              yaga: ({height}) => 26,
+              doctor: ({height}) => 26,
+              spider: ({height}) => 49,
+              vampire: ({height}) => 42,
+              wolf: ({height}) => 30,
+              ghost: ({height}) => 26,
+              yeti: ({height}) => 42,
+            },
+            x: {
+              default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
+              zombie: ({x, width}) => (x - (width) / 2) + width / 2,
+              mummy: ({x, width}) => 25,
+              alien: ({x, width}) => x + width - 7,
+              skeleton: ({x, width}) => x + width - 22,
+              yaga: ({x, width}) => (x - 15 / 2) + width / 2,
+              doctor: ({x, width}) => (x - (15) / 2) + width / 2,
+              spider: ({x, width}) => (x - (width * 6.6) / 2) + width / 2,
+              vampire: ({x, width}) => (x - 24 / 2) + width / 2,
+              wolf: ({x, width}) => (x - 17 / 2) + width / 2,
+              ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
+              yeti: ({x, width}) => (x - 24 / 2) + width / 2,
+            },
+            y: {
+              default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
+              zombie: ({y, height}) => y - 10,
+              mummy: ({y, height}) => y - 10,
+              alien: ({y, height}) => y + height,
+              skeleton: ({y, height}) => y + height,
+              yaga: ({y, height}) => y + height,
+              doctor: ({y, height}) => y + height,
+              spider: ({y, height}) => y - 10,
+              vampire: ({y, height}) => y + height,
+              wolf: ({y, height}) => y + height - 7,
+              yeti: ({y, height}) => y + height,
+            }
+          }
+        }
+      },
       {
         id: 8,
         component: SnivelComponent,

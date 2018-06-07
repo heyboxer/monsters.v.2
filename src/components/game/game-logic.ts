@@ -62,6 +62,11 @@ export class GameLogic {
     return this;
   }
 
+  public stop() : this {
+    this.itemsMouseEnterListners(false);
+    return this;
+  }
+
   public over() : this {
     this.listners.removeListners();
     this.repo.clear();

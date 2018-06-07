@@ -26181,6 +26181,71 @@ yeti .yeti .tooth {
   fill: #b27d51;
 }
 
+.dress .cls-1 {
+  fill: #ab4e8a;
+}
+
+.dress .cls-2 {
+  fill: #586ab1;
+}
+
+.dress .cls-3 {
+  fill: #fff;
+}
+
+.dress .cls-4 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--mummy .cls-1,
+.dress--mummy .cls-6 {
+  fill: none;
+}
+
+.dress--mummy .cls-3 {
+  fill: #ab4e8a;
+}
+
+.dress--mummy .cls-4 {
+  fill: #586ab1;
+}
+
+.dress--mummy .cls-5 {
+  fill: #fff;
+}
+
+.dress--mummy .cls-6 {
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--zombie .cls-1,
+.dress--zombie .cls-6 {
+  fill: none;
+}
+
+.dress--zombie .cls-3 {
+  fill: #ab4e8a;
+}
+
+.dress--zombie .cls-4 {
+  fill: #586ab1;
+}
+
+.dress--zombie .cls-5 {
+  fill: #fff;
+}
+
+.dress--zombie .cls-6 {
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
 .eyes-trinket .cls-1 {
   fill: #00bcc5;
 }

@@ -10,7 +10,7 @@ export class ElementComponentModel implements OnInit, OnDestroy {
   private repo = ElementRepository;
   protected element: ElementModel;
 
-    constructor(private name: string, private node: HTMLElement) {
+    constructor(private name: string, public node: HTMLElement) {
     };
 
     ngOnInit() {
