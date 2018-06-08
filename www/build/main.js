@@ -17,7 +17,7 @@ webpackJsonp([2],[
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(178);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -193,7 +193,7 @@ var MonsterModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(291);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -321,11 +321,11 @@ var ElementComponentModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(299);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(191);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -557,7 +557,7 @@ var GamePage = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(193);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -689,7 +689,7 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(290);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -964,7 +964,7 @@ var HoodComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoleComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(292);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1405,11 +1405,56 @@ var TrinketUniqPartDirective = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BraComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(170);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BraComponent = /** @class */ (function (_super) {
+    __extends(BraComponent, _super);
+    function BraComponent(element) {
+        return _super.call(this, 'bra', element.nativeElement) || this;
+    }
+    BraComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'bra',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="bra" width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.76 152.07">\n      <rect class="cls-1" y="91.44" width="276.76" height="16.33"></rect>\n      <rect class="cls-1" x="60.01" width="18.78" height="100.42"></rect>\n      <rect class="cls-1" x="197.98" width="18.78" height="100.42"></rect>\n      <path class="cls-1" d="M136.34,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-1" d="M237.2,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-2" d="M57.43,118.43l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.56,4.96z"></path>\n      <path class="cls-2" d="M78.67,143.75l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M103.57,120.07l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M157.47,116.39l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M173.81,142.93l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M189.73,116l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M210.56,135.58l-9.56,-12.3a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n</svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.64 71.08">\n      <polygon class="cls-1" points="160.64 50.37 0 50.37 4 42.74 160.64 42.74 160.64 50.37"/>\n      <rect class="cls-1" x="24.84" width="8.78" height="46.94"/>\n      <rect class="cls-1" x="89.33" width="8.78" height="46.94"/>\n      <path class="cls-1" d="M60.52,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-1" d="M107.66,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-2" d="M23.64,55.36l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M33.56,67.19l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M45.2,56.12l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M70.4,54.41l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M78,66.81l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M85.48,54.22,81,48.46a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M95.21,63.38l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.67 29.48">\n      <polygon class="cls-1" points="102.67 16.91 0 16.91 9.67 12.28 92.67 12.28 102.67 16.91"/>\n      <polygon class="cls-1" points="34.69 14.83 29.36 14.83 29.36 1 34.69 0.33 34.69 14.83"/>\n      <polygon class="cls-1" points="73.81 14.83 68.49 14.83 68.49 0 73.81 1 73.81 14.83"/>\n      <path class="cls-1" d="M51,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-1" d="M79.61,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-2" d="M28.63,19.94l-2.71-3.49A1.4,1.4,0,1,1,28.35,15l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M34.65,27.12l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M41.72,20.4,39,16.91a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M57,19.36l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4L57,15l.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M61.63,26.89,58.92,23.4A1.4,1.4,0,1,1,61.35,22l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M66.15,19.24l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M72.06,24.8l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.55 79.39">\n    <rect class="cls-1" y="62.4" width="109.55" height="4.57"/>\n    <polygon class="cls-1" points="54.08 64.92 48.82 64.92 48.82 0 54.08 9.5 54.08 64.92"/>\n    <rect class="cls-1" x="87.48" y="36.78" width="5.26" height="28.13"/>\n    <path class="cls-1" d="M70.21,65.83a13.56,13.56,0,1,1-27.11,0"/>\n    <path class="cls-1" d="M98.46,65.83a13.56,13.56,0,0,1-27.11,0"/>\n    <path class="cls-2" d="M48.1,70l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M54,77.06l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M61,70.42,58.35,67a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48A1.39,1.39,0,1,1,63.71,67Z"/>\n    <path class="cls-2" d="M76.13,69.39l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M80.7,76.83,78,73.38A1.39,1.39,0,1,1,80.43,72l.28.48L81,72a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M85.17,69.28l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M91,74.77l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.3 36.88">\n    <rect class="cls-1" y="21.04" width="72.3" height="4.27"/>\n    <polygon class="cls-1" points="20.58 23.39 15.68 23.39 15.68 0 20.58 6.33 20.58 23.39"/>\n    <polygon class="cls-1" points="56.62 23.39 51.72 23.39 51.72 6.83 56.62 0.67 56.62 23.39"/>\n    <path class="cls-1" d="M35.62,24.24a12.64,12.64,0,1,1-25.28,0"/>\n    <path class="cls-1" d="M62,24.24a12.64,12.64,0,1,1-25.28,0"/>\n    <path class="cls-2" d="M15,28.09l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29L15,24l.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M20.55,34.71l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45A1.29,1.29,0,1,1,23,31.49Z"/>\n    <path class="cls-2" d="M27.06,28.52l-2.5-3.22A1.29,1.29,0,1,1,26.8,24l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M41.14,27.56l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M45.4,34.49l-2.5-3.22A1.29,1.29,0,1,1,45.14,30l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M49.56,27.45l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M55,32.57l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.67 144.21">\n    <polygon class="cls-1" points="121.67 42.83 0 42.83 5.67 33.24 116 33.24 121.67 42.83"/>\n    <polygon class="cls-1" points="26.13 38.52 15.11 38.52 15.11 0.33 26.13 6 26.13 38.52"/>\n    <polygon class="cls-1" points="107.15 38.52 96.12 38.52 96.12 6.33 107.15 0 107.15 38.52"/>\n    <path class="cls-1" d="M59.93,40.43a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-1" d="M119.15,40.43a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-2" d="M13.59,49.1,8,41.87A2.91,2.91,0,1,1,13,39l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M26.06,64l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M40.69,50.06l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M72.34,47.9l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M81.93,63.48l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M91.28,47.66l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M103.51,59.17l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <rect class="cls-1" x="2.88" y="108.61" width="116.88" height="9.59"/>\n    <polygon class="cls-1" points="26.13 113.88 15.11 113.88 15.11 79.35 26.13 85.98 26.13 113.88"/>\n    <polygon class="cls-1" points="107.15 113.88 96.12 113.88 96.12 85.59 107.15 79.74 107.15 113.88"/>\n    <path class="cls-1" d="M59.93,115.79a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-1" d="M119.15,115.79a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-2" d="M13.59,124.46,8,117.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M26.06,139.32l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M40.69,125.42l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M72.34,123.26,66.72,116a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1A2.91,2.91,0,1,1,78,116Z"/>\n    <path class="cls-2" d="M81.93,138.84l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M91.28,123l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M103.51,134.53l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.13 58.25">\n    <polygon class="cls-1" points="79.13 44.12 0 44.12 1.5 38.91 77.38 38.91 79.13 44.12"/>\n    <polygon class="cls-1" points="20.45 41.77 14.46 41.77 14.46 8.38 20.63 0 20.45 41.77"/>\n    <polygon class="cls-1" points="64.48 41.77 58.49 41.77 58.49 0 64.48 7.75 64.48 41.77"/>\n    <path class="cls-1" d="M38.82,42.81a15.44,15.44,0,1,1-30.88,0"/>\n    <path class="cls-1" d="M71,42.81a15.44,15.44,0,1,1-30.88,0"/>\n    <path class="cls-2" d="M13.64,47.52l-3.05-3.93A1.58,1.58,0,1,1,13.32,42l.32.55L14,42a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M20.42,55.6l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M28.36,48l-3.05-3.93A1.58,1.58,0,1,1,28,42.53l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M45.56,46.87l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M50.77,55.34l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M55.85,46.74,52.8,42.81a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M62.5,53l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.87 45.46">\n    <rect class="cls-1" y="23.72" width="70.87" height="5.85"/>\n    <polygon class="cls-1" points="14.07 26.94 7.34 26.94 7.34 7 14.07 0 14.07 26.94"/>\n    <polygon class="cls-1" points="63.54 26.94 56.81 26.94 56.81 0.67 63.54 6.67 63.54 26.94"/>\n    <path class="cls-1" d="M34.71,28.11A17.35,17.35,0,1,1,0,28.11"/>\n    <path class="cls-1" d="M70.87,28.11a17.35,17.35,0,1,1-34.69,0"/>\n    <path class="cls-2" d="M6.42,33.4,3,29a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62A1.77,1.77,0,1,1,9.85,29Z"/>\n    <path class="cls-2" d="M14,42.48,10.6,38.06a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M23,34l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M42.28,32.67l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M48.14,42.18l-3.43-4.41A1.77,1.77,0,1,1,47.78,36l.36.62L48.5,36a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M53.85,32.52l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M61.32,39.55l-3.43-4.41A1.77,1.77,0,1,1,61,33.36l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332.83 137.75">\n    <path class="cls-1" d="M332.83,111.74,0,112l1.77-9.69,329.33-.08Z"/>\n    <polygon class="cls-1" points="158.35 107.43 147.33 107.43 67.84 4.67 75.53 0 158.35 107.43"/>\n    <polygon class="cls-1" points="239.37 107.43 228.34 107.43 292.5 28.33 298.2 35 239.37 107.43"/>\n    <path class="cls-1" d="M192.15,109.34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-1" d="M251.37,109.34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-2" d="M145.81,118l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M158.28,132.87l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M172.91,119l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M204.56,116.81l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M214.15,132.39l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M223.5,116.57l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M235.73,128.08l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 144.43">\n    <polygon class="cls-1" points="220 122.09 0 122.09 2 113.85 218.83 113.67 220 122.09"/>\n    <polygon class="cls-1" points="200.24 118.38 190.76 118.38 190.76 0 200.24 30 200.24 118.38"/>\n    <polygon class="cls-1" points="27.96 118.38 18.49 118.38 18.49 36.5 27.96 5.17 27.96 118.38"/>\n    <path class="cls-1" d="M110,120a24.4,24.4,0,0,1-48.8,0"/>\n    <path class="cls-1" d="M160.85,120a24.4,24.4,0,0,1-48.8,0"/>\n    <path class="cls-2" d="M70.19,127.47l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M80.9,140.23,76.08,134a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M93.46,128.29l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M120.64,126.44l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M128.88,139.82l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M136.91,126.23,132.09,120a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M147.41,136.12l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 62.44">\n    <rect class="cls-1" y="26.84" width="174" height="9.59"/>\n    <polygon class="cls-1" points="70.85 32.11 59.83 32.11 12.97 0 24 0 70.85 32.11"/>\n    <polygon class="cls-1" points="151.87 32.11 140.84 32.11 173.97 3.5 173.5 13.5 151.87 32.11"/>\n    <path class="cls-1" d="M104.65,34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-1" d="M163.87,34A28.41,28.41,0,1,1,107,34"/>\n    <path class="cls-2" d="M58.32,42.69,52.7,35.46a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M70.78,57.55l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M85.41,43.65l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M117.06,41.49l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M126.65,57.07,121,49.85a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M136,41.25,130.38,34a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M148.23,52.76l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], BraComponent);
+    return BraComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=bra.js.map
+
+/***/ }),
+/* 173 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(176);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1509,7 +1554,7 @@ var MonstersComponent = /** @class */ (function () {
 //# sourceMappingURL=monsters.component.js.map
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1541,7 +1586,7 @@ var MonstersHostDirective = /** @class */ (function () {
 //# sourceMappingURL=monsters-host.directive.js.map
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1573,23 +1618,23 @@ var MonstersScreenDirective = /** @class */ (function () {
 //# sourceMappingURL=monsters-screen.directive.js.map
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spider_spider__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__vampire_vampire__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wolf_wolf__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mummy_mummy__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__yaga_yaga__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__doctor_doctor__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__yeti_yeti__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ghost_ghost__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spider_spider__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__vampire_vampire__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wolf_wolf__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mummy_mummy__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__yaga_yaga__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__doctor_doctor__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__yeti_yeti__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ghost_ghost__ = __webpack_require__(188);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1689,16 +1734,16 @@ var MonstersService = /** @class */ (function () {
 //# sourceMappingURL=monsters.service.js.map
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZombieComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(294);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_sequence_controller__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_sequence_controller__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -1924,13 +1969,13 @@ var ZombieComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=zombie.js.map
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterPartDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(293);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1986,7 +2031,7 @@ var MonsterPartDirective = /** @class */ (function () {
 //# sourceMappingURL=monster-part.directive.js.map
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2035,7 +2080,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=skeleton.js.map
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2084,7 +2129,7 @@ var AlienComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=alien.js.map
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2133,7 +2178,7 @@ var SpiderComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=spider.js.map
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2182,7 +2227,7 @@ var VampireComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=vampire.js.map
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2231,7 +2276,7 @@ var WolfComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=wolf.js.map
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2280,7 +2325,7 @@ var MummyComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=mummy.js.map
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2329,7 +2374,7 @@ var YagaComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yaga.js.map
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2378,7 +2423,7 @@ var DoctorComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=doctor.js.map
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2427,7 +2472,7 @@ var YetiComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yeti.js.map
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2476,12 +2521,12 @@ var GhostComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=ghost.js.map
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameFinistStateMachine; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
 
 var GameFinistStateMachine = /** @class */ (function () {
@@ -2572,12 +2617,12 @@ var GameFinistStateMachine = /** @class */ (function () {
 //# sourceMappingURL=game-fsm.js.map
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnersHandler; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(303);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -2632,13 +2677,13 @@ var ListnersHandler = /** @class */ (function () {
 //# sourceMappingURL=listners-handler.js.map
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(192);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2697,7 +2742,7 @@ var ItemHolderComponent = /** @class */ (function () {
 //# sourceMappingURL=item-holder.component.js.map
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2729,17 +2774,17 @@ var TemplateHostDriective = /** @class */ (function () {
 //# sourceMappingURL=template-host.directive.js.map
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2806,13 +2851,13 @@ var SelectPage = /** @class */ (function () {
 //# sourceMappingURL=select.js.map
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundTabletComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(195);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2853,13 +2898,13 @@ var BackgroundTabletComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-tablet.component.js.map
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2892,7 +2937,7 @@ var BackgroundComponent = /** @class */ (function () {
 //# sourceMappingURL=bg.component.js.map
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2951,13 +2996,13 @@ var BackgroundAnchorDirective = /** @class */ (function () {
 //# sourceMappingURL=bg.directive.js.map
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundMobileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(195);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2998,7 +3043,6 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-mobile.component.js.map
 
 /***/ }),
-/* 197 */,
 /* 198 */,
 /* 199 */,
 /* 200 */,
@@ -3041,20 +3085,20 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 /* 237 */,
 /* 238 */,
 /* 239 */,
-/* 240 */
+/* 240 */,
+/* 241 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(264);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
-/* 241 */,
 /* 242 */,
 /* 243 */,
 /* 244 */,
@@ -3076,7 +3120,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* 260 */,
 /* 261 */,
 /* 262 */,
-/* 263 */
+/* 263 */,
+/* 264 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3084,14 +3129,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(239);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(338);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(339);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(340);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_game_game__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3159,7 +3204,6 @@ var AppModule = /** @class */ (function () {
 //# sourceMappingURL=app.module.js.map
 
 /***/ }),
-/* 264 */,
 /* 265 */,
 /* 266 */,
 /* 267 */,
@@ -3184,7 +3228,8 @@ var AppModule = /** @class */ (function () {
 /* 286 */,
 /* 287 */,
 /* 288 */,
-/* 289 */
+/* 289 */,
+/* 290 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3199,7 +3244,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__moustache_moustache__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__snivel_snivel__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dress_dress__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bra_bra__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bra_bra__ = __webpack_require__(172);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3279,7 +3324,7 @@ var TrinketsService = /** @class */ (function () {
                             },
                             alien: function (_a) {
                                 var width = _a.width;
-                                return width * 1.3;
+                                return 79.1;
                             },
                             skeleton: function (_a) {
                                 var width = _a.width;
@@ -3287,31 +3332,31 @@ var TrinketsService = /** @class */ (function () {
                             },
                             yaga: function (_a) {
                                 var width = _a.width;
-                                return width;
+                                return 139.95;
                             },
                             doctor: function (_a) {
                                 var width = _a.width;
-                                return width;
+                                return 93.99;
                             },
                             spider: function (_a) {
                                 var width = _a.width;
-                                return width * 1.44;
+                                return 146;
                             },
                             vampire: function (_a) {
                                 var width = _a.width;
-                                return 140;
+                                return 70.86;
                             },
                             wolf: function (_a) {
                                 var width = _a.width;
-                                return 217;
+                                return 194.5;
                             },
                             ghost: function (_a) {
                                 var width = _a.width;
-                                return 318.25;
+                                return 220;
                             },
                             yeti: function (_a) {
                                 var width = _a.width;
-                                return 326;
+                                return 332.8;
                             },
                         },
                         height: {
@@ -3329,7 +3374,7 @@ var TrinketsService = /** @class */ (function () {
                             },
                             alien: function (_a) {
                                 var height = _a.height;
-                                return height * 0.56;
+                                return 58.25;
                             },
                             skeleton: function (_a) {
                                 var height = _a.height;
@@ -3337,31 +3382,31 @@ var TrinketsService = /** @class */ (function () {
                             },
                             yaga: function (_a) {
                                 var height = _a.height;
-                                return height;
+                                return 101.45;
                             },
                             doctor: function (_a) {
                                 var height = _a.height;
-                                return 190;
+                                return 47.97;
                             },
                             spider: function (_a) {
                                 var height = _a.height;
-                                return height * 1.1;
+                                return 173;
                             },
                             vampire: function (_a) {
                                 var height = _a.height;
-                                return 120;
+                                return 45.46;
                             },
                             wolf: function (_a) {
                                 var height = _a.height;
-                                return 274;
+                                return 69.8;
                             },
                             ghost: function (_a) {
                                 var height = _a.height;
-                                return 159.6;
+                                return 145.5;
                             },
                             yeti: function (_a) {
                                 var height = _a.height;
-                                return 237;
+                                return 137.75;
                             },
                         },
                         x: {
@@ -3379,7 +3424,7 @@ var TrinketsService = /** @class */ (function () {
                             },
                             alien: function (_a) {
                                 var x = _a.x, width = _a.width;
-                                return (x - (width * 1.3) / 2) + width / 2;
+                                return ((x - (71.9) / 2) + width / 2) - 3.5;
                             },
                             skeleton: function (_a) {
                                 var x = _a.x, width = _a.width;
@@ -3387,19 +3432,19 @@ var TrinketsService = /** @class */ (function () {
                             },
                             yaga: function (_a) {
                                 var x = _a.x, width = _a.width;
-                                return (x - width / 2) + width / 2;
+                                return x;
                             },
                             doctor: function (_a) {
                                 var x = _a.x, width = _a.width;
-                                return (x - width / 2) + width / 2;
+                                return (x - 93.99 / 2) + width / 2;
                             },
                             spider: function (_a) {
                                 var x = _a.x, width = _a.width;
-                                return ((x - (width * 1.4) / 2) + width / 2) - 3;
+                                return ((x - (146) / 2) + width / 2);
                             },
                             vampire: function (_a) {
                                 var x = _a.x, width = _a.width;
-                                return (x - (140) / 2) + width / 2;
+                                return (x - (70.86) / 2) + width / 2;
                             },
                             wolf: function (_a) {
                                 var x = _a.x, width = _a.width;
@@ -3407,11 +3452,11 @@ var TrinketsService = /** @class */ (function () {
                             },
                             ghost: function (_a) {
                                 var x = _a.x, width = _a.width;
-                                return (x - (318.25) / 2) + width / 2;
+                                return ((x - (220) / 2) + width / 2) - 0.25;
                             },
                             yeti: function (_a) {
                                 var x = _a.x, width = _a.width;
-                                return ((x - 326 / 2) + width / 2) + 7;
+                                return x + 1.5;
                             },
                         },
                         y: {
@@ -3421,7 +3466,7 @@ var TrinketsService = /** @class */ (function () {
                             },
                             ghost: function (_a) {
                                 var y = _a.y, height = _a.height;
-                                return y + 220;
+                                return y + 105;
                             },
                             zombie: function (_a) {
                                 var y = _a.y, height = _a.height;
@@ -3433,7 +3478,7 @@ var TrinketsService = /** @class */ (function () {
                             },
                             alien: function (_a) {
                                 var y = _a.y, height = _a.height;
-                                return y;
+                                return y + 10;
                             },
                             skeleton: function (_a) {
                                 var y = _a.y, height = _a.height;
@@ -3445,15 +3490,15 @@ var TrinketsService = /** @class */ (function () {
                             },
                             doctor: function (_a) {
                                 var y = _a.y, height = _a.height;
-                                return y;
+                                return y + 15;
                             },
                             spider: function (_a) {
                                 var y = _a.y, height = _a.height;
-                                return y + 71;
+                                return y + 80;
                             },
                             vampire: function (_a) {
                                 var y = _a.y, height = _a.height;
-                                return y + 57;
+                                return y + 82;
                             },
                             wolf: function (_a) {
                                 var y = _a.y, height = _a.height;
@@ -3461,7 +3506,7 @@ var TrinketsService = /** @class */ (function () {
                             },
                             yeti: function (_a) {
                                 var y = _a.y, height = _a.height;
-                                return y;
+                                return y + 22;
                             },
                         }
                     }
@@ -4618,7 +4663,7 @@ var TrinketsService = /** @class */ (function () {
 //# sourceMappingURL=trinkets.service.js.map
 
 /***/ }),
-/* 290 */
+/* 291 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4655,7 +4700,7 @@ var ElementModel = /** @class */ (function () {
 //# sourceMappingURL=element.model.js.map
 
 /***/ }),
-/* 291 */
+/* 292 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4741,15 +4786,15 @@ var TrinketRandomModel = /** @class */ (function (_super) {
 //# sourceMappingURL=trinket-random.model.js.map
 
 /***/ }),
-/* 292 */,
 /* 293 */,
-/* 294 */
+/* 294 */,
+/* 295 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSetController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_model__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_model__ = __webpack_require__(296);
 
 
 var once = function (fn) {
@@ -4873,7 +4918,7 @@ var AnimationSetControllerSpecified = /** @class */ (function () {
 //# sourceMappingURL=animation-set.controller.js.map
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4908,13 +4953,13 @@ var AnimationModel = /** @class */ (function () {
 //# sourceMappingURL=animation.model.js.map
 
 /***/ }),
-/* 296 */
+/* 297 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSequenceController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__ = __webpack_require__(298);
 
 
 var AnimationSequenceController = /** @class */ (function () {
@@ -4975,7 +5020,7 @@ var AnimationSequenceController = /** @class */ (function () {
 //# sourceMappingURL=animation-sequence.controller.js.map
 
 /***/ }),
-/* 297 */
+/* 298 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5009,15 +5054,15 @@ var AnimationSequenceModel = /** @class */ (function () {
 //# sourceMappingURL=animation-sequence.model.js.map
 
 /***/ }),
-/* 298 */,
-/* 299 */
+/* 299 */,
+/* 300 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(190);
 
 
 
@@ -5062,7 +5107,7 @@ var Game = /** @class */ (function () {
 //# sourceMappingURL=game.service.js.map
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5107,8 +5152,8 @@ var CursorPosition = /** @class */ (function () {
 //# sourceMappingURL=cursor-position.js.map
 
 /***/ }),
-/* 301 */,
-/* 302 */
+/* 302 */,
+/* 303 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5184,14 +5229,14 @@ var ListnerRegister = /** @class */ (function () {
 //# sourceMappingURL=listner-register.class.js.map
 
 /***/ }),
-/* 303 */
+/* 304 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameLogic; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(190);
 
 
 
@@ -5264,12 +5309,12 @@ var GameLogic = /** @class */ (function () {
 //# sourceMappingURL=game-logic.js.map
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveElementRepository; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(306);
 
 var lib = {
     mouseEnterOnItem: function (item, ev) {
@@ -5398,7 +5443,7 @@ var ActiveElementRepository = /** @class */ (function () {
 //# sourceMappingURL=active-element.repository.js.map
 
 /***/ }),
-/* 305 */
+/* 306 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5506,7 +5551,6 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 //# sourceMappingURL=active-element.model.js.map
 
 /***/ }),
-/* 306 */,
 /* 307 */,
 /* 308 */,
 /* 309 */,
@@ -5531,14 +5575,15 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 /* 328 */,
 /* 329 */,
 /* 330 */,
-/* 331 */
+/* 331 */,
+/* 332 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(335);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(337);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5569,28 +5614,28 @@ var ComponentsModule = /** @class */ (function () {
 //# sourceMappingURL=components.module.js.map
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(333);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(178);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5632,7 +5677,7 @@ var MonstersModule = /** @class */ (function () {
 //# sourceMappingURL=monsters.module.js.map
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5681,7 +5726,7 @@ var BedComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=bed.js.map
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5697,7 +5742,7 @@ var BedComponent = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dress_dress__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bra_bra__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bra_bra__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__trinkets_component__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__trinket_host_directive__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__trinket_random_part_directive__ = __webpack_require__(164);
@@ -5742,51 +5787,6 @@ var TrinketsModule = /** @class */ (function () {
 //# sourceMappingURL=trinkets.module.js.map
 
 /***/ }),
-/* 335 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BraComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(170);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var BraComponent = /** @class */ (function (_super) {
-    __extends(BraComponent, _super);
-    function BraComponent(element) {
-        return _super.call(this, 'bra', element.nativeElement) || this;
-    }
-    BraComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'bra',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="bra" width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.76 152.07">\n      <rect class="cls-1" y="91.44" width="276.76" height="16.33"></rect>\n      <rect class="cls-1" x="60.01" width="18.78" height="100.42"></rect>\n      <rect class="cls-1" x="197.98" width="18.78" height="100.42"></rect>\n      <path class="cls-1" d="M136.34,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-1" d="M237.2,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-2" d="M57.43,118.43l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.56,4.96z"></path>\n      <path class="cls-2" d="M78.67,143.75l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M103.57,120.07l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M157.47,116.39l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M173.81,142.93l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M189.73,116l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M210.56,135.58l-9.56,-12.3a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n</svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.64 71.08">\n      <polygon class="cls-1" points="160.64 50.37 0 50.37 4 42.74 160.64 42.74 160.64 50.37"/>\n      <rect class="cls-1" x="24.84" width="8.78" height="46.94"/>\n      <rect class="cls-1" x="89.33" width="8.78" height="46.94"/>\n      <path class="cls-1" d="M60.52,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-1" d="M107.66,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-2" d="M23.64,55.36l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M33.56,67.19l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M45.2,56.12l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M70.4,54.41l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M78,66.81l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M85.48,54.22,81,48.46a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M95.21,63.38l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.67 29.48">\n      <polygon class="cls-1" points="102.67 16.91 0 16.91 9.67 12.28 92.67 12.28 102.67 16.91"/>\n      <polygon class="cls-1" points="34.69 14.83 29.36 14.83 29.36 1 34.69 0.33 34.69 14.83"/>\n      <polygon class="cls-1" points="73.81 14.83 68.49 14.83 68.49 0 73.81 1 73.81 14.83"/>\n      <path class="cls-1" d="M51,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-1" d="M79.61,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-2" d="M28.63,19.94l-2.71-3.49A1.4,1.4,0,1,1,28.35,15l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M34.65,27.12l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M41.72,20.4,39,16.91a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M57,19.36l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4L57,15l.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M61.63,26.89,58.92,23.4A1.4,1.4,0,1,1,61.35,22l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M66.15,19.24l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M72.06,24.8l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], BraComponent);
-    return BraComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=bra.js.map
-
-/***/ }),
 /* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5825,8 +5825,8 @@ var GameModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(192);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5860,9 +5860,9 @@ var ItemHolderModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5928,8 +5928,8 @@ var ModelModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(239);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5966,5 +5966,5 @@ var MyApp = /** @class */ (function () {
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
-],[240]);
+],[241]);
 //# sourceMappingURL=main.js.map
