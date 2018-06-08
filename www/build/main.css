@@ -25941,6 +25941,7 @@ spider .spider {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  overflow: visible;
 }
 
 spider .spider .leg {
@@ -26179,6 +26180,14 @@ yeti .yeti .tooth {
 
 .beard .cls-3 {
   fill: #b27d51;
+}
+
+.bra .cls-1 {
+  fill: #ab4e8a;
+}
+
+.bra .cls-2 {
+  fill: #fff;
 }
 
 .dress .cls-1 {

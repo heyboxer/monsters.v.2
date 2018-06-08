@@ -17,7 +17,7 @@ webpackJsonp([2],[
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(177);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -193,7 +193,7 @@ var MonsterModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(290);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -321,11 +321,11 @@ var ElementComponentModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(190);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -557,7 +557,7 @@ var GamePage = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(192);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -659,11 +659,11 @@ webpackEmptyAsyncContext.id = 112;
 
 var map = {
 	"../pages/game/game.module": [
-		340,
+		341,
 		1
 	],
 	"../pages/home/home.module": [
-		341,
+		342,
 		0
 	]
 };
@@ -689,7 +689,7 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(289);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -964,7 +964,7 @@ var HoodComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoleComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(291);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1241,7 +1241,7 @@ var SnivelComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DressComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(170);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1281,6 +1281,83 @@ var DressComponent = /** @class */ (function (_super) {
 
 /***/ }),
 /* 170 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketUniqModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_part_directive__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_element_component_model__ = __webpack_require__(21);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TrinketUniqModel = /** @class */ (function (_super) {
+    __extends(TrinketUniqModel, _super);
+    function TrinketUniqModel(name, element) {
+        var _this = _super.call(this, name, element) || this;
+        _this.afterInit = [];
+        _this.initiated = false;
+        return _this;
+    }
+    TrinketUniqModel.prototype.ngAfterViewInit = function () {
+        this.initiated = true;
+        if (!this.afterInit.length)
+            this.load('default');
+        this.afterInit.forEach(function (fn) { return fn(); });
+    };
+    TrinketUniqModel.prototype.load = function (name) {
+        var _this = this;
+        if (!this.initiated) {
+            this.afterInit = this.afterInit.concat([function () { return _this.load(name); }]);
+            return;
+        }
+        var part = this.parts.find(function (p) { return p.name === name; }) || this.parts.find(function (p) { return p.name === 'default'; });
+        part.show();
+        return;
+    };
+    TrinketUniqModel.prototype.getInstance = function (cb) {
+        var _this = this;
+        if (!this.initiated) {
+            this.afterInit = this.afterInit.concat([function () { return _this.getInstance(cb); }]);
+            return;
+        }
+        cb(this.node);
+        return;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
+    ], TrinketUniqModel.prototype, "parts", void 0);
+    TrinketUniqModel = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
+        __metadata("design:paramtypes", [Object, Object])
+    ], TrinketUniqModel);
+    return TrinketUniqModel;
+}(__WEBPACK_IMPORTED_MODULE_2__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=trinket-uniq.model.js.map
+
+/***/ }),
+/* 171 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1324,15 +1401,15 @@ var TrinketUniqPartDirective = /** @class */ (function () {
 //# sourceMappingURL=trinket-uniq-part.directive.js.map
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(175);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1432,7 +1509,7 @@ var MonstersComponent = /** @class */ (function () {
 //# sourceMappingURL=monsters.component.js.map
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1464,7 +1541,7 @@ var MonstersHostDirective = /** @class */ (function () {
 //# sourceMappingURL=monsters-host.directive.js.map
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1496,23 +1573,23 @@ var MonstersScreenDirective = /** @class */ (function () {
 //# sourceMappingURL=monsters-screen.directive.js.map
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spider_spider__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__vampire_vampire__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wolf_wolf__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mummy_mummy__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__yaga_yaga__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__doctor_doctor__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__yeti_yeti__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ghost_ghost__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spider_spider__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__vampire_vampire__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__wolf_wolf__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mummy_mummy__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__yaga_yaga__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__doctor_doctor__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__yeti_yeti__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ghost_ghost__ = __webpack_require__(187);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1612,7 +1689,7 @@ var MonstersService = /** @class */ (function () {
 //# sourceMappingURL=monsters.service.js.map
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1847,7 +1924,7 @@ var ZombieComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=zombie.js.map
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1909,7 +1986,7 @@ var MonsterPartDirective = /** @class */ (function () {
 //# sourceMappingURL=monster-part.directive.js.map
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1958,7 +2035,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=skeleton.js.map
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2007,7 +2084,7 @@ var AlienComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=alien.js.map
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2056,7 +2133,7 @@ var SpiderComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=spider.js.map
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2105,7 +2182,7 @@ var VampireComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=vampire.js.map
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2154,7 +2231,7 @@ var WolfComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=wolf.js.map
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2203,7 +2280,7 @@ var MummyComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=mummy.js.map
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2252,7 +2329,7 @@ var YagaComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yaga.js.map
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2301,7 +2378,7 @@ var DoctorComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=doctor.js.map
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2350,7 +2427,7 @@ var YetiComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yeti.js.map
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2399,7 +2476,7 @@ var GhostComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=ghost.js.map
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2495,7 +2572,7 @@ var GameFinistStateMachine = /** @class */ (function () {
 //# sourceMappingURL=game-fsm.js.map
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2555,13 +2632,13 @@ var ListnersHandler = /** @class */ (function () {
 //# sourceMappingURL=listners-handler.js.map
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(191);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2620,7 +2697,7 @@ var ItemHolderComponent = /** @class */ (function () {
 //# sourceMappingURL=item-holder.component.js.map
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2652,17 +2729,17 @@ var TemplateHostDriective = /** @class */ (function () {
 //# sourceMappingURL=template-host.directive.js.map
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2729,13 +2806,13 @@ var SelectPage = /** @class */ (function () {
 //# sourceMappingURL=select.js.map
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundTabletComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(194);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2776,13 +2853,13 @@ var BackgroundTabletComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-tablet.component.js.map
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(195);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2815,7 +2892,7 @@ var BackgroundComponent = /** @class */ (function () {
 //# sourceMappingURL=bg.component.js.map
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2874,13 +2951,13 @@ var BackgroundAnchorDirective = /** @class */ (function () {
 //# sourceMappingURL=bg.directive.js.map
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundMobileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(194);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2921,7 +2998,6 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-mobile.component.js.map
 
 /***/ }),
-/* 196 */,
 /* 197 */,
 /* 198 */,
 /* 199 */,
@@ -2964,20 +3040,20 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 /* 236 */,
 /* 237 */,
 /* 238 */,
-/* 239 */
+/* 239 */,
+/* 240 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(263);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
-/* 240 */,
 /* 241 */,
 /* 242 */,
 /* 243 */,
@@ -2999,7 +3075,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* 259 */,
 /* 260 */,
 /* 261 */,
-/* 262 */
+/* 262 */,
+/* 263 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3007,14 +3084,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(337);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(340);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_game_game__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3082,7 +3159,6 @@ var AppModule = /** @class */ (function () {
 //# sourceMappingURL=app.module.js.map
 
 /***/ }),
-/* 263 */,
 /* 264 */,
 /* 265 */,
 /* 266 */,
@@ -3107,7 +3183,8 @@ var AppModule = /** @class */ (function () {
 /* 285 */,
 /* 286 */,
 /* 287 */,
-/* 288 */
+/* 288 */,
+/* 289 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3122,6 +3199,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__moustache_moustache__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__snivel_snivel__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dress_dress__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bra_bra__ = __webpack_require__(335);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3131,6 +3209,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3175,6 +3254,219 @@ var TrinketsService = /** @class */ (function () {
     }
     TrinketsService.prototype.getTrinkets = function () {
         return [
+            {
+                id: 10,
+                component: __WEBPACK_IMPORTED_MODULE_10__bra_bra__["a" /* BraComponent */],
+                meta: {
+                    container: 'body',
+                    uniq: true,
+                    before: function (monster) {
+                        monster.open('body');
+                    },
+                    attr: {
+                        width: {
+                            default: function (_a) {
+                                var width = _a.width;
+                                return width * 1.5;
+                            },
+                            zombie: function (_a) {
+                                var width = _a.width;
+                                return 160;
+                            },
+                            mummy: function (_a) {
+                                var width = _a.width;
+                                return 204;
+                            },
+                            alien: function (_a) {
+                                var width = _a.width;
+                                return width * 1.3;
+                            },
+                            skeleton: function (_a) {
+                                var width = _a.width;
+                                return 200.69;
+                            },
+                            yaga: function (_a) {
+                                var width = _a.width;
+                                return width;
+                            },
+                            doctor: function (_a) {
+                                var width = _a.width;
+                                return width;
+                            },
+                            spider: function (_a) {
+                                var width = _a.width;
+                                return width * 1.44;
+                            },
+                            vampire: function (_a) {
+                                var width = _a.width;
+                                return 140;
+                            },
+                            wolf: function (_a) {
+                                var width = _a.width;
+                                return 217;
+                            },
+                            ghost: function (_a) {
+                                var width = _a.width;
+                                return 318.25;
+                            },
+                            yeti: function (_a) {
+                                var width = _a.width;
+                                return 326;
+                            },
+                        },
+                        height: {
+                            default: function (_a) {
+                                var height = _a.height;
+                                return height * 1.5;
+                            },
+                            zombie: function (_a) {
+                                var height = _a.height;
+                                return 71;
+                            },
+                            mummy: function (_a) {
+                                var height = _a.height;
+                                return 50;
+                            },
+                            alien: function (_a) {
+                                var height = _a.height;
+                                return height * 0.56;
+                            },
+                            skeleton: function (_a) {
+                                var height = _a.height;
+                                return 110.29;
+                            },
+                            yaga: function (_a) {
+                                var height = _a.height;
+                                return height;
+                            },
+                            doctor: function (_a) {
+                                var height = _a.height;
+                                return 190;
+                            },
+                            spider: function (_a) {
+                                var height = _a.height;
+                                return height * 1.1;
+                            },
+                            vampire: function (_a) {
+                                var height = _a.height;
+                                return 120;
+                            },
+                            wolf: function (_a) {
+                                var height = _a.height;
+                                return 274;
+                            },
+                            ghost: function (_a) {
+                                var height = _a.height;
+                                return 159.6;
+                            },
+                            yeti: function (_a) {
+                                var height = _a.height;
+                                return 237;
+                            },
+                        },
+                        x: {
+                            default: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (width * 1.5) / 2) + width / 2;
+                            },
+                            zombie: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x + 10;
+                            },
+                            mummy: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return ((x - (204) / 2) + width / 2) + 9;
+                            },
+                            alien: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (width * 1.3) / 2) + width / 2;
+                            },
+                            skeleton: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 0;
+                            },
+                            yaga: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - width / 2) + width / 2;
+                            },
+                            doctor: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - width / 2) + width / 2;
+                            },
+                            spider: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return ((x - (width * 1.4) / 2) + width / 2) - 3;
+                            },
+                            vampire: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (140) / 2) + width / 2;
+                            },
+                            wolf: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x;
+                            },
+                            ghost: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (318.25) / 2) + width / 2;
+                            },
+                            yeti: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return ((x - 326 / 2) + width / 2) + 7;
+                            },
+                        },
+                        y: {
+                            default: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return (y - (height * 1.5) / 2) + height / 2;
+                            },
+                            ghost: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 220;
+                            },
+                            zombie: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 20;
+                            },
+                            mummy: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 2;
+                            },
+                            alien: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y;
+                            },
+                            skeleton: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y - 20;
+                            },
+                            yaga: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y;
+                            },
+                            doctor: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y;
+                            },
+                            spider: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 71;
+                            },
+                            vampire: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 57;
+                            },
+                            wolf: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y;
+                            },
+                            yeti: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y;
+                            },
+                        }
+                    }
+                }
+            },
             {
                 id: 9,
                 component: __WEBPACK_IMPORTED_MODULE_9__dress_dress__["a" /* DressComponent */],
@@ -4326,7 +4618,7 @@ var TrinketsService = /** @class */ (function () {
 //# sourceMappingURL=trinkets.service.js.map
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4363,7 +4655,7 @@ var ElementModel = /** @class */ (function () {
 //# sourceMappingURL=element.model.js.map
 
 /***/ }),
-/* 290 */
+/* 291 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4447,83 +4739,6 @@ var TrinketRandomModel = /** @class */ (function (_super) {
 }(__WEBPACK_IMPORTED_MODULE_2__model_element_component_model__["a" /* ElementComponentModel */]));
 
 //# sourceMappingURL=trinket-random.model.js.map
-
-/***/ }),
-/* 291 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketUniqModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_part_directive__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_element_component_model__ = __webpack_require__(21);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var TrinketUniqModel = /** @class */ (function (_super) {
-    __extends(TrinketUniqModel, _super);
-    function TrinketUniqModel(name, element) {
-        var _this = _super.call(this, name, element) || this;
-        _this.afterInit = [];
-        _this.initiated = false;
-        return _this;
-    }
-    TrinketUniqModel.prototype.ngAfterViewInit = function () {
-        this.initiated = true;
-        if (!this.afterInit.length)
-            this.load('default');
-        this.afterInit.forEach(function (fn) { return fn(); });
-    };
-    TrinketUniqModel.prototype.load = function (name) {
-        var _this = this;
-        if (!this.initiated) {
-            this.afterInit = this.afterInit.concat([function () { return _this.load(name); }]);
-            return;
-        }
-        var part = this.parts.find(function (p) { return p.name === name; }) || this.parts.find(function (p) { return p.name === 'default'; });
-        part.show();
-        return;
-    };
-    TrinketUniqModel.prototype.getInstance = function (cb) {
-        var _this = this;
-        if (!this.initiated) {
-            this.afterInit = this.afterInit.concat([function () { return _this.getInstance(cb); }]);
-            return;
-        }
-        cb(this.node);
-        return;
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
-    ], TrinketUniqModel.prototype, "parts", void 0);
-    TrinketUniqModel = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
-        __metadata("design:paramtypes", [Object, Object])
-    ], TrinketUniqModel);
-    return TrinketUniqModel;
-}(__WEBPACK_IMPORTED_MODULE_2__model_element_component_model__["a" /* ElementComponentModel */]));
-
-//# sourceMappingURL=trinket-uniq.model.js.map
 
 /***/ }),
 /* 292 */,
@@ -4801,8 +5016,8 @@ var AnimationSequenceModel = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(189);
 
 
 
@@ -4975,8 +5190,8 @@ var ListnerRegister = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameLogic; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(189);
 
 
 
@@ -5324,8 +5539,8 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(337);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5360,22 +5575,22 @@ var ComponentsModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(333);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(177);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5482,10 +5697,11 @@ var BedComponent = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dress_dress__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__trinkets_component__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__trinket_host_directive__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__trinket_random_part_directive__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__trinket_uniq_part_directive__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bra_bra__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__trinkets_component__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__trinket_host_directive__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__trinket_random_part_directive__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__trinket_uniq_part_directive__ = __webpack_require__(171);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5507,16 +5723,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var TrinketsModule = /** @class */ (function () {
     function TrinketsModule() {
     }
     TrinketsModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_12__trinket_host_directive__["a" /* TrinketHostDirective */], __WEBPACK_IMPORTED_MODULE_13__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */], __WEBPACK_IMPORTED_MODULE_14__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_13__trinket_host_directive__["a" /* TrinketHostDirective */], __WEBPACK_IMPORTED_MODULE_14__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */], __WEBPACK_IMPORTED_MODULE_15__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]],
             providers: [],
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */]],
-            exports: [__WEBPACK_IMPORTED_MODULE_11__trinkets_component__["a" /* TrinketsComponent */]]
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_12__trinkets_component__["a" /* TrinketsComponent */]]
         })
     ], TrinketsModule);
     return TrinketsModule;
@@ -5526,6 +5743,51 @@ var TrinketsModule = /** @class */ (function () {
 
 /***/ }),
 /* 335 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BraComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(170);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BraComponent = /** @class */ (function (_super) {
+    __extends(BraComponent, _super);
+    function BraComponent(element) {
+        return _super.call(this, 'bra', element.nativeElement) || this;
+    }
+    BraComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'bra',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="bra" width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.76 152.07">\n      <rect class="cls-1" y="91.44" width="276.76" height="16.33"></rect>\n      <rect class="cls-1" x="60.01" width="18.78" height="100.42"></rect>\n      <rect class="cls-1" x="197.98" width="18.78" height="100.42"></rect>\n      <path class="cls-1" d="M136.34,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-1" d="M237.2,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-2" d="M57.43,118.43l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.56,4.96z"></path>\n      <path class="cls-2" d="M78.67,143.75l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M103.57,120.07l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M157.47,116.39l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M173.81,142.93l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M189.73,116l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M210.56,135.58l-9.56,-12.3a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n</svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.64 71.08">\n      <polygon class="cls-1" points="160.64 50.37 0 50.37 4 42.74 160.64 42.74 160.64 50.37"/>\n      <rect class="cls-1" x="24.84" width="8.78" height="46.94"/>\n      <rect class="cls-1" x="89.33" width="8.78" height="46.94"/>\n      <path class="cls-1" d="M60.52,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-1" d="M107.66,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-2" d="M23.64,55.36l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M33.56,67.19l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M45.2,56.12l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M70.4,54.41l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M78,66.81l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M85.48,54.22,81,48.46a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M95.21,63.38l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.67 29.48">\n      <polygon class="cls-1" points="102.67 16.91 0 16.91 9.67 12.28 92.67 12.28 102.67 16.91"/>\n      <polygon class="cls-1" points="34.69 14.83 29.36 14.83 29.36 1 34.69 0.33 34.69 14.83"/>\n      <polygon class="cls-1" points="73.81 14.83 68.49 14.83 68.49 0 73.81 1 73.81 14.83"/>\n      <path class="cls-1" d="M51,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-1" d="M79.61,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-2" d="M28.63,19.94l-2.71-3.49A1.4,1.4,0,1,1,28.35,15l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M34.65,27.12l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M41.72,20.4,39,16.91a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M57,19.36l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4L57,15l.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M61.63,26.89,58.92,23.4A1.4,1.4,0,1,1,61.35,22l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M66.15,19.24l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M72.06,24.8l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], BraComponent);
+    return BraComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=bra.js.map
+
+/***/ }),
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5557,14 +5819,14 @@ var GameModule = /** @class */ (function () {
 //# sourceMappingURL=game.module.js.map
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(191);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5592,15 +5854,15 @@ var ItemHolderModule = /** @class */ (function () {
 //# sourceMappingURL=item-holder.module.js.map
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5628,7 +5890,7 @@ var BackgroundModule = /** @class */ (function () {
 //# sourceMappingURL=bg.module.js.map
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5659,15 +5921,15 @@ var ModelModule = /** @class */ (function () {
 //# sourceMappingURL=model.module.js.map
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(238);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5704,5 +5966,5 @@ var MyApp = /** @class */ (function () {
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
-],[239]);
+],[240]);
 //# sourceMappingURL=main.js.map
