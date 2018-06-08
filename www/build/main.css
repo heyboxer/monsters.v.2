@@ -26341,6 +26341,94 @@ yeti .yeti .tooth {
   stroke-miterlimit: 10;
 }
 
+.dress--vampire .cls-1,
+.dress--vampire .cls-6 {
+  fill: none;
+}
+
+.dress--vampire .cls-3 {
+  fill: #ab4e8a;
+}
+
+.dress--vampire .cls-4 {
+  fill: #586ab1;
+}
+
+.dress--vampire .cls-5 {
+  fill: #fff;
+}
+
+.dress--vampire .cls-6 {
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--yeti .cls-1,
+.dress--yeti .cls-6 {
+  fill: none;
+}
+
+.dress--yeti .cls-3 {
+  fill: #ab4e8a;
+}
+
+.dress--yeti .cls-4 {
+  fill: #586ab1;
+}
+
+.dress--yeti .cls-5 {
+  fill: #fff;
+}
+
+.dress--yeti .cls-6 {
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--ghost .cls-1,
+.dress--ghost .cls-6 {
+  fill: none;
+}
+
+.dress--ghost .cls-3 {
+  fill: #ab4e8a;
+}
+
+.dress--ghost .cls-4 {
+  fill: #586ab1;
+}
+
+.dress--ghost .cls-5 {
+  fill: #fff;
+}
+
+.dress--ghost .cls-6 {
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.dress--wolf .cls-1 {
+  fill: #ab4e8a;
+}
+
+.dress--wolf .cls-2 {
+  fill: #586ab1;
+}
+
+.dress--wolf .cls-3 {
+  fill: #fff;
+}
+
+.dress--wolf .cls-4 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
 .eyes-trinket .cls-1 {
   fill: #00bcc5;
 }

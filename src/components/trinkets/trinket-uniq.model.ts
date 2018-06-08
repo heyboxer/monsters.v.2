@@ -29,9 +29,7 @@ export class TrinketUniqModel extends ElementComponentModel implements AfterView
       return;
     }
 
-    console.log(this.parts);
-
-    const part = this.parts.find(p => p.name === name);
+    const part = this.parts.find(p => p.name === name) || this.parts.find(p => p.name === 'default');
     part.show();
     return;
   }

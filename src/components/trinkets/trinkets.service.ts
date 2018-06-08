@@ -62,10 +62,7 @@ export class TrinketsService {
           uniq: true,
           before: (monster) => {
             if(
-              monster.name === 'mummy' ||
-              monster.name === 'yaga' ||
-              monster.name === 'doctor' ||
-              monster.name === 'zombie'
+              ['mummy', 'yaga', 'yeti', 'doctor', 'vampire', 'zombie', 'wolf'].includes(monster.name)
             ) {
               monster.close('body');
             }
@@ -74,10 +71,7 @@ export class TrinketsService {
           },
           after: (monster) => {
             if(
-              monster.name === 'mummy' ||
-              monster.name === 'yaga' ||
-              monster.name === 'doctor' ||
-              monster.name === 'zombie'
+              ['mummy', 'yaga', 'yeti', 'doctor', 'vampire', 'zombie', 'wolf'].includes(monster.name)
             ) {
               monster.open('body');
             };
@@ -94,10 +88,10 @@ export class TrinketsService {
               yaga: ({width}) => width,
               doctor: ({width}) => width,
               spider: ({width}) => width * 1.44,
-              vampire: ({width}) => 24,
-              wolf: ({width}) => 17,
-              ghost: ({width}) => 15,
-              yeti: ({width}) => 24,
+              vampire: ({width}) => 140,
+              wolf: ({width}) => 217,
+              ghost: ({width}) => 318.25,
+              yeti: ({width}) => 326,
 
             },
             height: {
@@ -109,10 +103,10 @@ export class TrinketsService {
               yaga: ({height}) => height,
               doctor: ({height}) => 190,
               spider: ({height}) => height * 1.1,
-              vampire: ({height}) => 42,
-              wolf: ({height}) => 30,
-              ghost: ({height}) => 26,
-              yeti: ({height}) => 42,
+              vampire: ({height}) => 120,
+              wolf: ({height}) => 274,
+              ghost: ({height}) => 159.6,
+              yeti: ({height}) => 237,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -123,13 +117,14 @@ export class TrinketsService {
               yaga: ({x, width}) => (x - width / 2) + width / 2,
               doctor: ({x, width}) => (x - width / 2) + width / 2,
               spider: ({x, width}) => ((x - (width * 1.4) / 2) + width / 2) - 3,
-              vampire: ({x, width}) => (x - 24 / 2) + width / 2,
-              wolf: ({x, width}) => (x - 17 / 2) + width / 2,
-              ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
-              yeti: ({x, width}) => (x - 24 / 2) + width / 2,
+              vampire: ({x, width}) => (x - (140) / 2) + width / 2,
+              wolf: ({x, width}) => x,
+              ghost: ({x, width}) => (x - (318.25) / 2) + width / 2,
+              yeti: ({x, width}) => ((x - 326 / 2) + width / 2) + 7,
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
+              ghost: ({y, height}) => y + 220,
               zombie: ({y, height}) => y - 10,
               mummy: ({y, height}) => y - 10,
               alien: ({y, height}) => y,
@@ -137,9 +132,9 @@ export class TrinketsService {
               yaga: ({y, height}) => y,
               doctor: ({y, height}) => y,
               spider: ({y, height}) => y + 71,
-              vampire: ({y, height}) => y + height,
-              wolf: ({y, height}) => y + height - 7,
-              yeti: ({y, height}) => y + height,
+              vampire: ({y, height}) => y + 57,
+              wolf: ({y, height}) => y,
+              yeti: ({y, height}) => y,
             }
           }
         }
