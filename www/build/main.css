@@ -25696,7 +25696,7 @@ monster.ghost__screen {
   background-color: #000;
 }
 
-monster.yeti {
+monster.yeti__screen {
   background-color: #fff;
 }
 
@@ -25837,6 +25837,10 @@ doctor .doctor .eye--right {
   stroke-width: 6.03px;
 }
 
+ghost .ghost {
+  overflow: visible;
+}
+
 ghost .ghost .body {
   fill: #b7e3ee;
 }
@@ -25863,6 +25867,7 @@ mummy .mummy {
   bottom: 0;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  overflow: visible;
 }
 
 mummy .mummy .head--figure {
@@ -26091,6 +26096,7 @@ yeti .yeti {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  overflow: visible;
 }
 
 yeti .yeti .body {
@@ -26519,6 +26525,30 @@ yeti .yeti .tooth {
 
 .snivel .cls-1 {
   fill: #D2DF3D;
+}
+
+.wig .cls-1 {
+  fill: #cf6cac;
+}
+
+.wig .cls-2 {
+  fill: #00b8ce;
+}
+
+.wig--color--white .cls-1 {
+  fill: #fff;
+}
+
+.wig--color--white .cls-2 {
+  fill: #00b8ce;
+}
+
+.wig--color--yellow .cls-1 {
+  fill: #ffaf47;
+}
+
+.wig--color--yellow .cls-2 {
+  fill: #00b8ce;
 }
 
 page-game {

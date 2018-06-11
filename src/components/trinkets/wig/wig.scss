@@ -1,0 +1,26 @@
+.wig {
+  & .cls-1{
+    fill:#cf6cac;
+  }
+  & .cls-2{
+    fill:#00b8ce;
+  }
+
+  &--color--white {
+    & .cls-1{
+      fill:#fff;
+    }
+    & .cls-2{
+      fill:#00b8ce;
+    }
+  }
+
+  &--color--yellow {
+    & .cls-1{
+      fill:#ffaf47;
+    }
+    & .cls-2{
+      fill:#00b8ce;
+    }
+  }
+}

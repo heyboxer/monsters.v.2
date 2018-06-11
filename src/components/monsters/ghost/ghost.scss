@@ -1,5 +1,7 @@
 ghost {
   .ghost {
+    overflow: visible;
+    
     & .body {
       fill: #b7e3ee;
     }

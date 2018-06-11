@@ -3,6 +3,7 @@ mummy {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
+    overflow: visible;
 
     & .head--figure {
       fill: #fff;
