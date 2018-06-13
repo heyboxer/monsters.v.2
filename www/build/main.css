@@ -26182,6 +26182,7 @@ yeti .yeti .tooth {
 
 .zombie {
   right: 0;
+  overflow: visible;
 }
 
 .zombie .body {
@@ -26568,20 +26569,152 @@ yeti .yeti .tooth {
   stroke-width: 2.66px;
 }
 
-.hood .cls-1 {
-  fill: #f1ea35;
-}
-
-.hood .cls-2 {
-  fill: #cf6cac;
-}
-
-.hood .cls-3 {
+.hood--color--blue .cls-1 {
   fill: #00b8ce;
 }
 
-.hood .cls-4 {
+.hood--color--blue .cls-2 {
+  fill: #f1ea35;
+}
+
+.hood--color--blue .cls-3 {
+  fill: #586ab1;
+}
+
+.hood--color--blue .cls-4 {
   fill: #f24943;
+}
+
+.hood--color .cls-1, .hood--color--yellow .cls-1 {
+  fill: #f1ea35;
+}
+
+.hood--color .cls-2, .hood--color--yellow .cls-2 {
+  fill: #cf6cac;
+}
+
+.hood--color .cls-3, .hood--color--yellow .cls-3 {
+  fill: #00b8ce;
+}
+
+.hood--color .cls-4, .hood--color--yellow .cls-4 {
+  fill: #f24943;
+}
+
+.hood--color--pink .cls-1 {
+  fill: #cf6cac;
+}
+
+.hood--color--pink .cls-2 {
+  fill: #f1ea35;
+}
+
+.hood--color--pink .cls-3 {
+  fill: #00b8ce;
+}
+
+.hood--color--pink .cls-4 {
+  fill: #f24943;
+}
+
+.hood--color--violet .cls-1 {
+  fill: #9a5790;
+}
+
+.hood--color--violet .cls-2 {
+  fill: #586ab1;
+}
+
+.hood--color--violet .cls-3 {
+  fill: #f1ea35;
+}
+
+.hood--color--violet .cls-4 {
+  fill: #00b15d;
+}
+
+.hood--color--green .cls-1 {
+  fill: #00b15d;
+}
+
+.hood--color--green .cls-2 {
+  fill: #cf6cac;
+}
+
+.hood--color--green .cls-3 {
+  fill: #f9e830;
+}
+
+.hood--color--green .cls-4 {
+  fill: #586ab1;
+}
+
+.hood--color--red .cls-1 {
+  fill: #f24942;
+}
+
+.hood--color--red .cls-2 {
+  fill: #f1ea35;
+}
+
+.hood--color--red .cls-3 {
+  fill: #00bcc5;
+}
+
+.hood--color--red .cls-4 {
+  fill: #586ab1;
+}
+
+.hood--color--darkblue .cls-1 {
+  fill: #586ab1;
+}
+
+.hood--color--darkblue .cls-2 {
+  fill: #00b15d;
+}
+
+.hood--color--darkblue .cls-3 {
+  fill: #f9e830;
+}
+
+.hood--color--darkblue .cls-4 {
+  fill: #f24943;
+}
+
+.hood--color--darkblue.hood--alien .cls-2 {
+  fill: #9a5790;
+}
+
+.hood--color--darkblue.hood--alien .cls-3 {
+  fill: #f1ea35;
+}
+
+.hood--color--darkblue.hood--alien .cls-4 {
+  fill: #f24943;
+}
+
+.hood--spider .cls-1 {
+  fill: #f24942;
+}
+
+.hood--spider .cls-2 {
+  fill: #00b15d;
+}
+
+.hood--spider .cls-3 {
+  fill: #f9e830;
+}
+
+.hood--spider .cls-4 {
+  fill: #586ab1;
+}
+
+.hood--spider .cls-5 {
+  fill: #00b8ce;
+}
+
+.hood--spider .cls-6 {
+  fill: #cf6cac;
 }
 
 .lips .cls-1 {

@@ -1,17 +1,79 @@
 .hood {
-  & .cls-1 {
-    fill: #f1ea35;
+
+  &--color {
+    &--blue {
+      & .cls-1{fill:#00b8ce;}
+      & .cls-2{fill:#f1ea35;}
+      & .cls-3{fill:#586ab1;}
+      & .cls-4{fill:#f24943;}
+    },
+
+    &--yellow {
+      & .cls-1 {
+        fill: #f1ea35;
+      }
+
+      & .cls-2 {
+        fill: #cf6cac;
+      }
+
+      & .cls-3 {
+        fill: #00b8ce;
+      }
+
+      & .cls-4 {
+        fill: #f24943;
+      }
+    }
+
+    &--pink {
+      & .cls-1{fill:#cf6cac;}
+      & .cls-2{fill:#f1ea35;}
+      & .cls-3{fill:#00b8ce;}
+      & .cls-4{fill:#f24943;}
+    }
+
+    &--violet {
+      & .cls-1{fill:#9a5790;}
+      & .cls-2{fill:#586ab1;}
+      & .cls-3{fill:#f1ea35;}
+      & .cls-4{fill:#00b15d;}
+    }
+
+    &--green {
+      & .cls-1{fill:#00b15d;}
+      & .cls-2{fill:#cf6cac;}
+      & .cls-3{fill:#f9e830;}
+      & .cls-4{fill:#586ab1;}
+    }
+
+    &--red {
+      & .cls-1{fill:#f24942;}
+      & .cls-2{fill:#f1ea35;}
+      & .cls-3{fill:#00bcc5;}
+      & .cls-4{fill:#586ab1;}
+    }
+
+    &--darkblue {
+      & .cls-1{fill:#586ab1;}
+      & .cls-2{fill:#00b15d;}
+      & .cls-3{fill:#f9e830;}
+      & .cls-4{fill:#f24943;}
+
+      &.hood--alien {
+        & .cls-2{fill:#9a5790;}
+        & .cls-3{fill:#f1ea35;}
+        & .cls-4{fill:#f24943;}
+      }
+    }
   }
 
-  & .cls-2 {
-    fill: #cf6cac;
-  }
-
-  & .cls-3 {
-    fill: #00b8ce;
-  }
-
-  & .cls-4 {
-    fill: #f24943;
+  &--spider {
+    & .cls-1{fill:#f24942;}
+    & .cls-2{fill:#00b15d;}
+    & .cls-3{fill:#f9e830;}
+    & .cls-4{fill:#586ab1;}
+    & .cls-5{fill:#00b8ce;}
+    & .cls-6{fill:#cf6cac;}
   }
 }

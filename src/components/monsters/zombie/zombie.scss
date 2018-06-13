@@ -1,6 +1,7 @@
 // zombie {
   .zombie {
     right: 0;
+    overflow: visible;
 
     & .body {
       fill: #cdcdcd;
