@@ -80,10 +80,11 @@ export class MonstersService {
         name: 'ghost',
         component: GhostComponent,
       },
-      // {
-      //   id: 4,
-      //   component: BedComponent,
-      // },
+      {
+        id: 12,
+        name: 'bed',
+        component: BedComponent,
+      },
     ]
   }
 }

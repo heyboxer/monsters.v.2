@@ -25692,6 +25692,10 @@ monster.mummy__screen {
   background-color: #3f2721;
 }
 
+monster.bed__screen {
+  background-color: #003D4E;
+}
+
 monster.ghost__screen {
   background-color: #000;
 }
@@ -25755,35 +25759,34 @@ alien .alien .body--figure {
   fill: #6fc055;
 }
 
-.zombie {
+bed .bed {
   right: 0;
+  bottom: 0;
 }
 
-.zombie__screen {
-  background-color: #f46540;
+bed .bed .tooth,
+bed .bed .nostril {
+  fill: #4c4c4c;
 }
 
-.zombie .body {
-  fill: #cdcdcd;
+bed .bed .eyeball {
+  fill: #fff;
 }
 
-.zombie .face {
-  fill: #00ad5e;
+bed .bed .sheets {
+  fill: #fff;
 }
 
-.zombie .nose {
-  fill: #20654d;
-}
-
-.zombie .pupil {
+bed .bed .iris {
   fill: #f24943;
 }
 
-.zombie .steam-part {
-  stroke-width: 2.63px;
-  stroke: #000;
-  stroke-miterlimit: 10;
-  fill: none;
+bed .bed .frame {
+  fill: #9a9b9b;
+}
+
+bed .bed .blanket {
+  fill: #00bcc5;
 }
 
 doctor .doctor {
@@ -26268,6 +26271,26 @@ yeti .yeti .tooth {
   stroke-miterlimit: 10;
 }
 
+.dress--bed .cls-1 {
+  fill: #ab4e8a;
+}
+
+.dress--bed .cls-2 {
+  fill: #586ab1;
+}
+
+.dress--bed .cls-3 {
+  fill: #fff;
+}
+
+.dress--bed .cls-4 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
 .dress--mummy .cls-1,
 .dress--mummy .cls-6 {
   fill: none;
@@ -26630,6 +26653,14 @@ yeti .yeti .tooth {
 
 .wig--color--yellow .cls-2 {
   fill: #00b8ce;
+}
+
+.wig--bed .cls-1 {
+  fill: #cf6cac;
+}
+
+.wig--bed .cls-2 {
+  fill: #f1ea35;
 }
 
 page-game {

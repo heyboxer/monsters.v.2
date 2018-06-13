@@ -1,32 +1,31 @@
-// zombie {
-  .zombie {
+bed {
+  .bed {
     right: 0;
+    bottom: 0;
 
-    &__screen {
-      background-color: #f46540;
+    & .tooth,
+    & .nostril {
+      fill: #4c4c4c;
     }
 
-    & .body {
-      fill: #cdcdcd;
+    & .eyeball {
+      fill: #fff;
     }
 
-    & .face {
-      fill: #00ad5e;
+    & .sheets {
+      fill: #fff;
     }
 
-    & .nose {
-      fill: #20654d;
-    }
-
-    & .pupil {
+    & .iris {
       fill: #f24943;
     }
 
-    & .steam-part {
-      stroke-width: 2.63px;
-      stroke: #000;
-      stroke-miterlimit: 10;
-      fill: none;
+    & .frame {
+      fill: #9a9b9b;
+    }
+
+    & .blanket {
+      fill: #00bcc5;
     }
   }
-// }
+}

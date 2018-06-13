@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+ import { Injectable } from '@angular/core';
 
 import { GlassComponent } from './glass/glass';
 import { EyesComponent } from './eyes/eyes';
@@ -151,6 +151,7 @@ export class TrinketsService {
               yeti: ({width}) => 93.325,
               ghost: ({width}) => 137.74,
               wolf: ({width}) => 79.76,
+              bed: ({width}) => 41.571,
             },
             height: {
               default: ({height}) => height * 1.5,
@@ -165,6 +166,7 @@ export class TrinketsService {
               yeti: ({height}) => 41.1,
               ghost: ({height}) => 90.24,
               wolf: ({height}) => 31.785,
+              bed: ({height}) => 27.56,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -179,6 +181,7 @@ export class TrinketsService {
               yeti: ({x, width}) => ((x - (93.325) / 2) + width / 2),
               ghost: ({x, width}) => ((x - (137.74) / 2) + width / 2),
               wolf: ({x, width}) => x + 50,
+              bed: ({x, width}) => ((x - (41.57) / 2) + width / 2),
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
@@ -193,6 +196,7 @@ export class TrinketsService {
               yeti: ({y, height}) => y,
               ghost: ({y, height}) => y + 20,
               wolf: ({y, height}) => y + 10,
+              bed: ({y, height}) => y - 19,
             }
           }
         }
@@ -230,6 +234,7 @@ export class TrinketsService {
               yeti: ({width}) => 188.1,
               ghost: ({width}) => 164.2,
               wolf: ({width}) => 170.5,
+              bed: ({width}) => 90.1,
             },
             height: {
               default: ({height}) => height * 1.5,
@@ -244,6 +249,7 @@ export class TrinketsService {
               yeti: ({height}) => 188.3,
               ghost: ({height}) => 243.8,
               wolf: ({height}) => 151.5,
+              bed: ({height}) => 90.18,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -258,6 +264,7 @@ export class TrinketsService {
               yeti: ({x, width}) => ((x - (188.1) / 2) + width / 2),
               ghost: ({x, width}) => ((x - (164.2) / 2) + width / 2) - 0.25,
               wolf: ({x, width}) => x - 15,
+              bed: ({x, width}) => ((x - (90.1) / 2) + width / 2) - 10,
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
@@ -272,6 +279,7 @@ export class TrinketsService {
               yeti: ({y, height}) => y - 5,
               ghost: ({y, height}) => y - 7,
               wolf: ({y, height}) => y - 33,
+              bed: ({y, height}) => y + 20,
             }
           }
         }
@@ -283,7 +291,18 @@ export class TrinketsService {
           container: 'body',
           uniq: true,
           before: (monster) => {
-            monster.open('body');
+            if(monster.name === 'bed') {
+              monster.close('eyes');
+            }
+
+            return;
+          },
+          after: (monster) => {
+            if(monster.name === 'bed') {
+              monster.open('eyes');
+            }
+
+            return;
           },
           attr: {
             width: {
@@ -299,6 +318,7 @@ export class TrinketsService {
               wolf: ({width}) => 194.5,
               ghost: ({width}) => 220,
               yeti: ({width}) => 332.8,
+              bed: ({width}) => 65.47,
             },
             height: {
               default: ({height}) => height * 1.5,
@@ -313,6 +333,7 @@ export class TrinketsService {
               wolf: ({height}) => 69.8,
               ghost: ({height}) => 145.5,
               yeti: ({height}) => 137.75,
+              bed: ({height}) => 35.973,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -327,6 +348,7 @@ export class TrinketsService {
               wolf: ({x, width}) => x,
               ghost: ({x, width}) => ((x - (220) / 2) + width / 2) - 0.25,
               yeti: ({x, width}) => x + 1.5,
+              bed: ({x, width}) => x - 85.5,
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
@@ -341,6 +363,7 @@ export class TrinketsService {
               vampire: ({y, height}) => y + 82,
               wolf: ({y, height}) => y,
               yeti: ({y, height}) => y + 22,
+              bed: ({y, height}) => y - 60,
             }
           }
         }
@@ -383,6 +406,7 @@ export class TrinketsService {
               wolf: ({width}) => 217,
               ghost: ({width}) => 318.25,
               yeti: ({width}) => 326,
+              bed: ({width}) => 159.49,
 
             },
             height: {
@@ -398,6 +422,7 @@ export class TrinketsService {
               wolf: ({height}) => 274,
               ghost: ({height}) => 159.6,
               yeti: ({height}) => 237,
+              bed: ({height}) => 27.637,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -412,6 +437,7 @@ export class TrinketsService {
               wolf: ({x, width}) => x,
               ghost: ({x, width}) => (x - (318.25) / 2) + width / 2,
               yeti: ({x, width}) => ((x - 326 / 2) + width / 2) + 7,
+              bed: ({x, width}) => x - 37,
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
@@ -426,6 +452,7 @@ export class TrinketsService {
               vampire: ({y, height}) => y + 57,
               wolf: ({y, height}) => y,
               yeti: ({y, height}) => y,
+              bed: ({y, height}) => y + 8,
             }
           }
         }
@@ -450,6 +477,7 @@ export class TrinketsService {
               wolf: ({width}) => 17,
               ghost: ({width}) => 15,
               yeti: ({width}) => 24,
+              bed: ({width}) => 11.64,
 
             },
             height: {
@@ -465,6 +493,7 @@ export class TrinketsService {
               wolf: ({height}) => 30,
               ghost: ({height}) => 26,
               yeti: ({height}) => 42,
+              bed: ({height}) => 20.4,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -479,6 +508,7 @@ export class TrinketsService {
               wolf: ({x, width}) => (x - 17 / 2) + width / 2,
               ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
               yeti: ({x, width}) => (x - 24 / 2) + width / 2,
+              bed: ({x, width}) => (x - 11.64 / 2) + width / 2,
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
@@ -492,6 +522,7 @@ export class TrinketsService {
               vampire: ({y, height}) => y + height,
               wolf: ({y, height}) => y + height - 7,
               yeti: ({y, height}) => y + height,
+              bed: ({y, height}) => y + height,
             }
           }
         }
@@ -515,6 +546,7 @@ export class TrinketsService {
               wolf: ({width}) => 71,
               ghost: ({width}) => 127,
               yeti: ({width}) => 127,
+              bed: ({width}) => 95.74,
 
             },
             height: {
@@ -530,6 +562,7 @@ export class TrinketsService {
               wolf: ({height}) => 28,
               ghost: ({height}) => 51,
               yeti: ({height}) => 51,
+              bed: ({height}) => 38.9,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -544,6 +577,7 @@ export class TrinketsService {
               wolf: ({x, width}) => x + width - 67,
               ghost: ({x, width}) => (x - 127 / 2) + width / 2,
               yeti: ({x, width}) => (x - 127 / 2) + width / 2,
+              bed: ({x, width}) => (x - 95.74 / 2) + width / 2,
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
@@ -557,6 +591,7 @@ export class TrinketsService {
               vampire: ({y, height}) => y - 11,
               wolf: ({y, height}) => y - 10,
               yeti: ({y, height}) => y - 18,
+              bed: ({y, height}) => y - 26,
             }
           }
         }
@@ -600,6 +635,7 @@ export class TrinketsService {
               wolf: ({width}) => width * 1.6,
               ghost: ({width}) => width * 3.5,
               yeti: ({width}) => width * 2,
+              bed: ({width}) => 58.36,
 
             },
             height: {
@@ -615,6 +651,7 @@ export class TrinketsService {
               wolf: ({height}) => height * 1.6,
               ghost: ({height}) => height * 1.76,
               yeti: ({height}) => height * 2,
+              bed: ({height}) => 46.5,
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
@@ -629,6 +666,7 @@ export class TrinketsService {
               wolf: ({x, width}) => x - 20,
               ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
               yeti: ({x, width}) => (x - (width * 2) / 2) + width / 2,
+              bed: ({x, width}) => (x - (58.36) / 2) + width / 2,
 
             },
             y: {
@@ -642,6 +680,7 @@ export class TrinketsService {
               vampire: ({y, height}) => y - 30,
               wolf: ({y, height}) => y - 10,
               yeti: ({y, height}) => y,
+              bed: ({y, height}) => y - 10,
             }
           }
         }
@@ -695,21 +734,25 @@ export class TrinketsService {
             width: {
               default: ({width}) => width * 1.5,
               mummy: ({width}) => width * 2.88,
+              bed: ({width}) => 73.414,
 
             },
             height: {
               default: ({height}) => height * 1.5,
               mummy: ({height}) => height * 2.88,
+              bed: ({height}) => 23.414,
 
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
               mummy: ({x, width}) => (x - (width * 2.88) / 2) + width / 2,
+              bed: ({x, width}) => ((x - (73.414) / 2) + width / 2),
 
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
               mummy: ({y, height}) => (y - (height * 2.88) / 2) + height / 2,
+              bed: ({y, height}) => ((y - (23.414) / 2) + height / 2) - 5,
 
             }
           }
@@ -725,22 +768,26 @@ export class TrinketsService {
               default: ({width}) => width * 2,
               skeleton: ({width}) => width * 2.113,
               mummy: ({width}) => width * 3.82,
+              bed: ({width}) => 75.79,
             },
             height: {
               default: ({height}) => height * 2,
               skeleton: ({height}) => height * 2.113,
               mummy: ({height}) => height * 3.82,
+              bed: ({height}) => 26.578,
             },
             x: {
               default: ({x, width}) => x - width / 2,
               skeleton: ({x, width}) => (x - width / 2) - 6,
               mummy: ({x, width}) => (x - (width * 3.82) / 2) + width / 2,
+              bed: ({x, width}) => (x - (75.79) / 2) + width / 2,
 
             },
             y: {
               default: ({y, height}) => y - height / 2,
               skeleton: ({y, height}) => (y - height / 2) + 15,
               mummy: ({y, height}) => (y - (height * 3.82) / 2) + height / 2,
+              bed: ({y, height}) => ((y - (26.578) / 2) + height / 2) + 9,
 
             }
           }

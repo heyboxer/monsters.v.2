@@ -18,6 +18,28 @@
     stroke-miterlimit: 10;
   }
 
+  &--bed {
+    & .cls-1 {
+      fill: #ab4e8a;
+    }
+
+    & .cls-2 {
+      fill: #586ab1;
+    }
+
+    & .cls-3 {
+      fill: #fff;
+    }
+
+    & .cls-4 {
+      fill: none;
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 0.5px;
+    }
+  }
+
   &--mummy {
     & .cls-1,
     & .cls-6 {
