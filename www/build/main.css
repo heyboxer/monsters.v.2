@@ -25845,6 +25845,13 @@ ghost .ghost .body {
   fill: #b7e3ee;
 }
 
+ghost .ghost .eyelash {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
 ghost .ghost .eyeball {
   fill: #fff;
 }
@@ -25874,8 +25881,19 @@ mummy .mummy .head--figure {
   fill: #fff;
 }
 
+mummy .mummy .mouth-figure--dark {
+  fill: #e1b285;
+}
+
 mummy .mummy .ear {
   fill: #b48d69;
+}
+
+mummy .mummy .eyelash {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
 }
 
 mummy .mummy .head-part {
@@ -25925,6 +25943,13 @@ skeleton .skeleton .head--figure {
   fill: #fff;
 }
 
+skeleton .skeleton .eyelash {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
 skeleton .skeleton .jaw {
   fill: #fff;
 }
@@ -25954,6 +25979,13 @@ spider .spider .leg {
   stroke: #000;
   stroke-miterlimit: 10;
   fill: none;
+}
+
+spider .spider .eyelash {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
 }
 
 spider .spider .web {
@@ -26068,6 +26100,13 @@ yaga .yaga .body-figure {
   fill: #20654d;
 }
 
+yaga .yaga .eyelash {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
 yaga .yaga .ornament-part {
   fill: #f24943;
 }
@@ -26101,6 +26140,13 @@ yeti .yeti {
 
 yeti .yeti .body {
   fill: #cdcdcd;
+}
+
+yeti .yeti .eyelash {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
 }
 
 yeti .yeti .hair {
@@ -26137,6 +26183,13 @@ yeti .yeti .tooth {
 
 .zombie .body {
   fill: #cdcdcd;
+}
+
+.zombie .eyelash {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
 }
 
 .zombie .face {
@@ -26506,6 +26559,34 @@ yeti .yeti .tooth {
 
 .hood .cls-4 {
   fill: #f24943;
+}
+
+.lips .cls-1 {
+  fill: #c65aa0;
+}
+
+.lips .cls-2 {
+  fill: #ab4e8a;
+}
+
+.lips .cls-3 {
+  fill: #f770ac;
+}
+
+.lips--vampire .cls-1 {
+  fill: #f770ac;
+}
+
+.lips--vampire .cls-2 {
+  fill: #ab4e8a;
+}
+
+.lips--vampire .cls-3 {
+  fill: #9a5790;
+}
+
+.lips--vampire .cls-4 {
+  fill: #fff;
 }
 
 .mole .cls-1 {

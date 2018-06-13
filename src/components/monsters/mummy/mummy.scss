@@ -9,8 +9,19 @@ mummy {
       fill: #fff;
     }
 
+    & .mouth-figure--dark {
+      fill: rgb(225, 178, 133);
+    }
+
     & .ear {
       fill: #b48d69;
+    }
+
+    & .eyelash {
+      fill:none;
+      stroke:#000;
+      stroke-miterlimit:10;
+      stroke-width:2px;
     }
 
     & .head-part {

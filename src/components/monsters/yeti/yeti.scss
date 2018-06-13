@@ -8,6 +8,14 @@ yeti {
       fill: #cdcdcd;
     }
 
+
+    & .eyelash {
+      fill:none;
+      stroke:#000;
+      stroke-miterlimit:10;
+      stroke-width:0.5px;
+    }
+
     & .hair {
       fill: #9a9b9b;
     }

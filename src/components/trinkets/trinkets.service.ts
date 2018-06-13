@@ -11,6 +11,7 @@ import { SnivelComponent } from './snivel/snivel';
 import { DressComponent } from './dress/dress';
 import { BraComponent } from './bra/bra';
 import { WigComponent } from './wig/wig';
+import { LipsComponent } from './lips/lips';
 
 const zombieJoyAnimBefore = (monster, repo, instance) => {
   const filtered = repo.getCopies().filter(i => {
@@ -56,6 +57,146 @@ export class TrinketsService {
   }
   getTrinkets() {
     return [
+      {
+        id: 12,
+        component: LipsComponent,
+        meta: {
+          container: 'mouth',
+          uniq: true,
+          before: (monster, repo, instance) => {
+            monster.open('eyelashes');
+
+            if(monster.name === 'skeleton') {
+              monster.close('teeth');
+              monster.open('hidden-jaw');
+            }
+
+            if(monster.name === 'zombie') {
+              zombieJoyAnimBefore(monster, repo, instance);
+            }
+
+            if(monster.name === 'mummy') {
+              monster.open('mouth-fraud');
+            }
+
+            if(monster.name === 'spider') {
+              monster.close('mouth-decor');
+            }
+
+            if(monster.name === 'wolf') {
+              monster.close('tongue');
+              monster.close('drooling');
+              monster.close('jaw');
+              monster.close('teeth');
+              monster.open('jaw-closed');
+            }
+
+            if(monster.name === 'vampire') {
+              monster.close('mouth-figure');
+              monster.close('teeth');
+            }
+
+            if(!['skeleton', 'wolf', 'vampire'].includes(monster.name)) {
+              monster.close('mouth');
+            }
+          },
+          after: (monster, repo, instance) => {
+            monster.close('eyelashes');
+
+            if(monster.name === 'skeleton') {
+              monster.open('teeth');
+              monster.close('hidden-jaw');
+            }
+
+            if(monster.name === 'zombie') {
+              zombieJoyAnimAfter(monster, repo, instance);
+            }
+
+            if(monster.name === 'mummy') {
+              monster.close('mouth-fraud');
+            }
+
+            if(monster.name === 'spider') {
+              monster.open('mouth-decor');
+            }
+
+            if(monster.name === 'wolf') {
+              monster.open('tongue');
+              monster.open('drooling');
+              monster.open('jaw');
+              monster.open('teeth');
+              monster.close('jaw-closed');
+            }
+
+            if(monster.name === 'vampire') {
+              monster.open('mouth-figure');
+              monster.open('teeth');
+            }
+
+            if(!['skeleton', 'wolf', 'vampire'].includes(monster.name)) {
+              monster.open('mouth');
+            }
+          },
+          attr: {
+            width: {
+              default: ({width}) => width * 1.5,
+              skeleton: ({width}) => 99.84,
+              zombie: ({width}) => 89.5,
+              mummy: ({width}) => 122.3,
+              yaga: ({width}) => 73.3,
+              doctor: ({width}) => 74.8,
+              spider: ({width}) => 117.876,
+              alien: ({width}) => 94.78,
+              vampire: ({width}) => 56.56,
+              yeti: ({width}) => 93.325,
+              ghost: ({width}) => 137.74,
+              wolf: ({width}) => 79.76,
+            },
+            height: {
+              default: ({height}) => height * 1.5,
+              skeleton: ({height}) => 80.52,
+              zombie: ({height}) => 76.5,
+              mummy: ({height}) => 94.6,
+              yaga: ({height}) => 73.4,
+              doctor: ({height}) => 85.62,
+              spider: ({height}) => 119.6,
+              alien: ({height}) => 59.46,
+              vampire: ({height}) => 94.4,
+              yeti: ({height}) => 41.1,
+              ghost: ({height}) => 90.24,
+              wolf: ({height}) => 31.785,
+            },
+            x: {
+              default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
+              skeleton: ({x, width}) => (x - (99.84) / 2) + width / 2,
+              zombie: ({x, width}) => x + 10,
+              mummy: ({x, width}) => ((x - (122.3) / 2) + width / 2) + 2,
+              yaga: ({x, width}) => x - 20,
+              doctor: ({x, width}) => (x - 74.8 / 2) + width / 2,
+              spider: ({x, width}) => (x - 117.876 / 2) + width / 2,
+              alien: ({x, width}) => ((x - (94.78) / 2) + width / 2) + 5,
+              vampire: ({x, width}) => (x - (56.56) / 2) + width / 2,
+              yeti: ({x, width}) => ((x - (93.325) / 2) + width / 2),
+              ghost: ({x, width}) => ((x - (137.74) / 2) + width / 2),
+              wolf: ({x, width}) => x + 50,
+            },
+            y: {
+              default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
+              skeleton: ({y, height}) => y + 10,
+              zombie: ({y, height}) => y - 45,
+              mummy: ({y, height}) => y - 60,
+              yaga: ({y, height}) => y - 30,
+              doctor: ({y, height}) => y - 85.62 + 35,
+              spider: ({y, height}) => y,
+              alien: ({y, height}) => y - 15,
+              vampire: ({y, height}) => y - 40,
+              yeti: ({y, height}) => y,
+              ghost: ({y, height}) => y + 20,
+              wolf: ({y, height}) => y + 10,
+            }
+          }
+        }
+      },
       {
         id: 11,
         component: WigComponent,

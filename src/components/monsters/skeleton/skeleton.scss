@@ -12,6 +12,13 @@ skeleton {
       fill: #fff;
     }
 
+    & .eyelash {
+      fill:none;
+      stroke:#000;
+      stroke-miterlimit:10;
+      stroke-width:2px;
+    }
+
     & .jaw {
       fill: #fff;
     }

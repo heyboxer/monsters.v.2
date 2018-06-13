@@ -1,0 +1,26 @@
+.lips {
+  & .cls-1{
+    fill:#c65aa0;
+  }
+  & .cls-2{
+    fill:#ab4e8a;
+  }
+  & .cls-3{
+    fill:#f770ac;
+  }
+
+  &--vampire {
+    & .cls-1{
+      fill:#f770ac;
+    }
+    & .cls-2{
+      fill:#ab4e8a;
+    }
+    & .cls-3{
+      fill:#9a5790;
+    }
+    & .cls-4{
+      fill:#fff;
+    }
+  }
+}

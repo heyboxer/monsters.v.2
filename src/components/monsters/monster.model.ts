@@ -93,9 +93,9 @@ export abstract class MonsterModel implements AfterViewInit {
 
     const instance = (ref.instance as { node }).node.children.item(0);
 
-    obj.content = instance;
+    obj.content = ref.instance;
 
-    return callback(instance, ref);
+    return callback(ref.instance, ref);
   }
 
   public clear(name) {
@@ -158,6 +158,10 @@ export abstract class MonsterModel implements AfterViewInit {
     this.getContainers().forEach(({ group }) => this.clear(group));
     this.getParts(p => p.type !== 'container').forEach(({name}) => {
       this.open(name);
+    });
+
+    this.getParts(p => p.hidden).forEach(({name}) => {
+      this.close(name);
     });
 
     return;

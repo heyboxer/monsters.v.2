@@ -118,10 +118,6 @@ export class GamePage extends Game implements AfterViewInit {
           });
         }
 
-        if(item.meta.uniq) {
-          console.log(this.holder)
-        }
-
         return;
       },
       setHolderPosition,
@@ -141,7 +137,6 @@ export class GamePage extends Game implements AfterViewInit {
 
         if(onScreen) {
           this.monsterComponent.render(item.component, (instance) => {
-
             const { style: position } = (this.holder.getAttributes() as { style });
 
             const style = `position: absolute; z-index: 11; ${position}`;
@@ -170,7 +165,8 @@ export class GamePage extends Game implements AfterViewInit {
         const { element } = this.monster.getGroup(item.meta.container);
 
         if( content ) {
-          const active = items.findActiveElementByInstance(content);
+          const contentElement = content.node.children.item(0);
+          const active = items.findActiveElementByInstance(contentElement);
           const { after } = active.meta;
 
 
@@ -217,7 +213,8 @@ export class GamePage extends Game implements AfterViewInit {
               func(svg, true);
             });
           } else {
-            func(instance);
+            const instanceElement = instance.node.children.item(0);
+            func(instanceElement);
             return;
           }
         });

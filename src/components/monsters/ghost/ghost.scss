@@ -1,9 +1,16 @@
 ghost {
   .ghost {
     overflow: visible;
-    
+
     & .body {
       fill: #b7e3ee;
+    }
+
+    & .eyelash {
+      fill:none;
+      stroke:#000;
+      stroke-miterlimit:10;
+      stroke-width:2px;
     }
 
     & .eyeball {

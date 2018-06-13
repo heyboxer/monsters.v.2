@@ -7,6 +7,13 @@ yaga {
       fill: #20654d;
     }
 
+    & .eyelash {
+      fill:none;
+      stroke:#000;
+      stroke-miterlimit:10;
+      stroke-width:2px;
+    }
+
     & .ornament-part {
       fill: #f24943;
     }

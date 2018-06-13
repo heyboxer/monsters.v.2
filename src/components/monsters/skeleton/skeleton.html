@@ -12,7 +12,7 @@
             <g monster-part part-name="mouth" part-type="group" class="jaws">
                <g class="jaw jaw--top">
                   <rect class="jaw" x="43.33" y="95.52" width="113.24" height="63.9"></rect>
-                  <g class="teeth">
+                  <g monster-part part-name="teeth" part-type="group" class="teeth">
                      <rect class="tooth" x="53.24" y="143.29" width="10.75" height="10.75"></rect>
                      <rect class="tooth" x="69.77" y="143.29" width="10.75" height="10.75"></rect>
                      <rect class="tooth" x="86.3" y="143.29" width="10.75" height="10.75"></rect>
@@ -23,7 +23,10 @@
                </g>
                <g class="jaw jaw--bottom">
                   <rect class="jaw" x="43.33" y="169.54" width="113.24" height="28.52"></rect>
-                  <g class="teeth">
+                  <g monster-part part-name="hidden-jaw" part-type="group" part-hidden="true" visibility="hidden">
+                    <rect class="jaw" x="43.33" y="149.54" width="113.24" height="28.52"></rect>
+                  </g>
+                  <g monster-part part-name="teeth" part-type="group" class="teeth">
                      <rect class="tooth" x="53.24" y="178.43" width="10.75" height="10.75"></rect>
                      <rect class="tooth" x="69.77" y="178.43" width="10.75" height="10.75"></rect>
                      <rect class="tooth" x="86.3" y="178.43" width="10.75" height="10.75"></rect>
@@ -33,6 +36,16 @@
                   </g>
                </g>
             </g>
+            <svg width="139.9" height="25.56" x="30" y="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.32 20.25">
+              <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">
+                <line class="eyelash" x1="0.71" y1="8.19" x2="12.06" y2="19.54"/>
+                <line class="eyelash" x1="1.95" y1="4.45" x2="13.3" y2="15.8"/>
+                <line class="eyelash" x1="3.2" y1="0.71" x2="14.55" y2="12.06"/>
+                <line class="eyelash" x1="89.77" y1="12.06" x2="101.12" y2="0.71"/>
+                <line class="eyelash" x1="91.02" y1="15.8" x2="102.37" y2="4.45"/>
+                <line class="eyelash" x1="92.26" y1="19.54" x2="103.61" y2="8.19"/>
+              </g>
+            </svg>
             <g monster-part part-name="eyes" part-type="group" class="eyes">
                <g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--right">
                   <circle class="eyeball" cx="129.44" cy="66.37" r="25.31"></circle>
