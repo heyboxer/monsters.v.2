@@ -12,6 +12,7 @@ import { DressComponent } from './dress/dress';
 import { BraComponent } from './bra/bra';
 import { WigComponent } from './wig/wig';
 import { LipsComponent } from './lips/lips';
+import { LollipopComponent } from './lollipop/lollipop';
 
 const zombieJoyAnimBefore = (monster, repo, instance) => {
   const filtered = repo.getCopies().filter(i => {
@@ -57,6 +58,82 @@ export class TrinketsService {
   }
   getTrinkets() {
     return [
+      {
+        id: 13,
+        component: LollipopComponent,
+        meta: {
+          container: 'mouth',
+          uniq: true,
+          before: (monster, repo, instance) => {
+
+          },
+          after: (monster, repo, instance) => {
+
+          },
+          attr: {
+            width: {
+              default: ({width}) => width * 1.5,
+              skeleton: ({width}) => 69.96,
+              zombie: ({width}) => 99.1,
+              mummy: ({width}) => 101.163,
+              yaga: ({width}) => 36,
+              doctor: ({width}) => 36.07,
+              spider: ({width}) => 113,
+              alien: ({width}) => 75.84,
+              vampire: ({width}) => 74.68,
+              yeti: ({width}) => 91.884,
+              ghost: ({width}) => 98.34,
+              wolf: ({width}) => 36.06,
+              bed: ({width}) => 63.77,
+            },
+            height: {
+              default: ({height}) => height * 1.5,
+              skeleton: ({height}) => 104.667,
+              zombie: ({height}) => 72.6,
+              mummy: ({height}) => 89.37,
+              yaga: ({height}) => 124.9,
+              doctor: ({height}) => 66.44,
+              spider: ({height}) => 140.9,
+              alien: ({height}) => 70.92,
+              vampire: ({height}) => 72.17,
+              yeti: ({height}) => 44.3,
+              ghost: ({height}) => 64.22,
+              wolf: ({height}) => 95.2,
+              bed: ({height}) => 34.39,
+            },
+            x: {
+              default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
+              skeleton: ({x, width}) => ((x - (69.96) / 2) + width / 2) + 20,
+              zombie: ({x, width}) => x + 10,
+              mummy: ({x, width}) => x + 25,
+              yaga: ({x, width}) => x + width - 26,
+              doctor: ({x, width}) => (x - 36.07 / 2) + width / 2,
+              spider: ({x, width}) => ((x - 113 / 2) + width / 2) - 7,
+              alien: ({x, width}) => x - 5,
+              vampire: ({x, width}) => x - 55,
+              yeti: ({x, width}) => x + (width / 2) - 2,
+              ghost: ({x, width}) => x - 10,
+              wolf: ({x, width}) => x + width - 36.06 - 5,
+              bed: ({x, width}) => x - 3,
+            },
+            y: {
+              default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
+              skeleton: ({y, height}) => y + 65,
+              zombie: ({y, height}) => y + 10,
+              mummy: ({y, height}) => y + 20,
+              yaga: ({y, height}) => y,
+              doctor: ({y, height}) => y + height - 10,
+              spider: ({y, height}) => y + 15,
+              alien: ({y, height}) => y + 3,
+              vampire: ({y, height}) => y + 20,
+              yeti: ({y, height}) => y + 10,
+              ghost: ({y, height}) => y + (height / 2) + 15,
+              wolf: ({y, height}) => y + height - 35,
+              bed: ({y, height}) => y - 2,
+            }
+          }
+        }
+      },
       {
         id: 12,
         component: LipsComponent,

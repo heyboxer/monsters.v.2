@@ -17,7 +17,7 @@ webpackJsonp([2],[
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(181);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -197,7 +197,7 @@ var MonsterModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(295);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -260,12 +260,7 @@ var ElementComponentModel = /** @class */ (function () {
 /* 40 */,
 /* 41 */,
 /* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -342,6 +337,11 @@ var TrinketUniqModel = /** @class */ (function (_super) {
 //# sourceMappingURL=trinket-uniq.model.js.map
 
 /***/ }),
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
 /* 49 */,
 /* 50 */,
 /* 51 */,
@@ -402,11 +402,11 @@ var TrinketUniqModel = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(195);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -637,7 +637,7 @@ var GamePage = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -739,11 +739,11 @@ webpackEmptyAsyncContext.id = 113;
 
 var map = {
 	"../pages/game/game.module": [
-		343,
+		344,
 		1
 	],
 	"../pages/home/home.module": [
-		344,
+		345,
 		0
 	]
 };
@@ -769,7 +769,7 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(294);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -1044,7 +1044,7 @@ var HoodComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoleComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(296);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1321,7 +1321,7 @@ var SnivelComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DressComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(43);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1410,7 +1410,7 @@ var TrinketUniqPartDirective = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BraComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(43);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1455,7 +1455,7 @@ var BraComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WigComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(43);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1500,7 +1500,7 @@ var WigComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LipsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(43);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1543,11 +1543,56 @@ var LipsComponent = /** @class */ (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LollipopComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(43);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LollipopComponent = /** @class */ (function (_super) {
+    __extends(LollipopComponent, _super);
+    function LollipopComponent(element) {
+        return _super.call(this, 'lollipop', element.nativeElement) || this;
+    }
+    LollipopComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'lollipop',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lollipop/lollipop.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="lollipop" width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 177.13">\n    <rect class="cls-1" y="24.6" width="67" height="13"/>\n    <rect class="cls-2" x="30.72" y="53.32" width="6.96" height="123.81"/>\n    <circle class="cls-1" cx="33.5" cy="30.6" r="30.6"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.97 104.67">\n    <path class="cls-1" d="M32.78,10.06a11.53,11.53,0,0,0-16.34-9A11.53,11.53,0,0,0,0,10.79c0,.25,0,.49,0,.74s0,.5,0,.74V31.94a16.38,16.38,0,0,0,32.76,0V13a11.24,11.24,0,0,0,0-2.94Z"/>\n    <line class="cls-2" x1="16.44" y1="7.48" x2="16.44" y2="39.96"/>\n    <circle cx="10.12" cy="6.72" r="0.23"/>\n    <circle cx="12.88" cy="17.42" r="0.23"/>\n    <circle cx="4.41" cy="11.36" r="0.23"/>\n    <circle cx="9.64" cy="12.08" r="0.23"/>\n    <circle cx="3.01" cy="21.02" r="0.23"/>\n    <circle cx="25.91" cy="13.38" r="0.23"/>\n    <circle cx="28.67" cy="24.09" r="0.23"/>\n    <circle cx="20.2" cy="18.03" r="0.23"/>\n    <circle cx="25.43" cy="18.74" r="0.23"/>\n    <circle cx="18.79" cy="27.68" r="0.23"/>\n    <circle cx="5.75" cy="35.26" r="0.23" transform="translate(-29.79 38.86) rotate(-86.53)"/>\n    <circle cx="3.65" cy="24.4" r="0.23" transform="translate(-20.93 26.57) rotate(-86.53)"/>\n    <circle cx="11.74" cy="30.97" r="0.23" transform="translate(-19.88 40.81) rotate(-86.53)"/>\n    <circle cx="6.56" cy="29.93" r="0.23" transform="translate(-23.71 34.67) rotate(-86.53)"/>\n    <circle cx="13.72" cy="21.41" r="0.23" transform="translate(-8.48 33.81) rotate(-86.53)"/>\n    <circle cx="4.28" cy="20.8" r="0.23" transform="translate(-8.19 3.61) rotate(-24.33)"/>\n    <circle cx="12.9" cy="13.87" r="0.23" transform="translate(-4.57 6.55) rotate(-24.33)"/>\n    <circle cx="10.87" cy="24.09" r="0.23" transform="translate(-8.96 6.62) rotate(-24.33)"/>\n    <circle cx="9.37" cy="19.03" r="0.23" transform="translate(-7.01 5.55) rotate(-24.33)"/>\n    <circle cx="20.24" cy="21.39" r="0.23" transform="translate(-7.01 10.24) rotate(-24.33)"/>\n    <circle cx="26.4" cy="6.32" r="0.23" transform="translate(17.21 31.87) rotate(-83.69)"/>\n    <circle cx="27.96" cy="17.27" r="0.23" transform="translate(7.72 43.17) rotate(-83.69)"/>\n    <circle cx="20.21" cy="10.31" r="0.23" transform="translate(7.74 29.27) rotate(-83.69)"/>\n    <circle cx="25.33" cy="11.6" r="0.23" transform="translate(11.01 35.5) rotate(-83.69)"/>\n    <circle cx="17.75" cy="19.76" r="0.23" transform="translate(-3.83 35.23) rotate(-83.69)"/>\n    <circle cx="20.9" cy="35.39" r="0.23" transform="translate(-15.7 54.11) rotate(-86.53)"/>\n    <circle cx="18.8" cy="24.54" r="0.23" transform="translate(-6.84 41.82) rotate(-86.53)"/>\n    <circle cx="26.88" cy="31.1" r="0.23" transform="translate(-5.79 56.06) rotate(-86.53)"/>\n    <circle cx="21.71" cy="30.07" r="0.23" transform="translate(-9.62 49.92) rotate(-86.53)"/>\n    <circle cx="28.87" cy="21.55" r="0.23" transform="translate(5.61 49.06) rotate(-86.53)"/>\n    <circle cx="13.48" cy="45.25" r="0.23" transform="translate(-32.51 55.97) rotate(-86.53)"/>\n    <circle cx="11.37" cy="34.4" r="0.23" transform="translate(-23.65 43.67) rotate(-86.53)"/>\n    <circle cx="19.46" cy="40.96" r="0.23" transform="translate(-22.61 57.91) rotate(-86.53)"/>\n    <circle cx="14.28" cy="39.93" r="0.23" transform="translate(-26.44 51.77) rotate(-86.53)"/>\n    <circle cx="21.45" cy="31.41" r="0.23" transform="translate(-11.21 50.92) rotate(-86.53)"/>\n    <rect class="cls-3" x="5.73" y="35.63" width="36" height="6.99" transform="translate(-17.97 20.29) rotate(-34.45)"/>\n    <rect class="cls-4" x="47.74" y="42.92" width="3.74" height="66.52" transform="translate(-34.4 41.43) rotate(-34.45)"/>\n    <circle class="cls-3" cx="23.57" cy="38.9" r="16.44" transform="translate(-17.87 20.16) rotate(-34.45)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.11 72.6">\n    <path class="cls-1" d="M29.85,9.16A10.5,10.5,0,0,0,15,1,10.5,10.5,0,0,0,0,9.82c0,.22,0,.45,0,.67s0,.45,0,.67V29.09a14.91,14.91,0,1,0,29.83,0V11.84a10.24,10.24,0,0,0,0-2.68Z"/>\n    <line class="cls-2" x1="14.97" y1="6.82" x2="14.97" y2="36.39"/>\n    <circle cx="9.22" cy="6.12" r="0.21"/>\n    <circle cx="11.73" cy="15.87" r="0.21"/>\n    <circle cx="4.02" cy="10.35" r="0.21"/>\n    <circle cx="8.78" cy="11" r="0.21"/>\n    <circle cx="2.74" cy="19.14" r="0.21"/>\n    <circle cx="23.6" cy="12.19" r="0.21"/>\n    <circle cx="26.11" cy="21.94" r="0.21"/>\n    <circle cx="18.39" cy="16.42" r="0.21"/>\n    <circle cx="23.16" cy="17.07" r="0.21"/>\n    <circle cx="17.12" cy="25.21" r="0.21"/>\n    <circle cx="5.24" cy="32.11" r="0.21" transform="translate(-27.13 35.39) rotate(-86.53)"/>\n    <circle cx="3.32" cy="22.22" r="0.21" transform="translate(-19.06 24.19) rotate(-86.53)"/>\n    <circle cx="10.69" cy="28.2" r="0.21" transform="translate(-18.11 37.16) rotate(-86.53)"/>\n    <circle cx="5.97" cy="27.26" r="0.21" transform="translate(-21.6 31.57) rotate(-86.53)"/>\n    <circle cx="12.5" cy="19.5" r="0.21" transform="translate(-7.72 30.79) rotate(-86.53)"/>\n    <circle cx="3.9" cy="18.94" r="0.21" transform="translate(-7.46 3.29) rotate(-24.33)"/>\n    <circle cx="11.75" cy="12.63" r="0.21" transform="translate(-4.16 5.96) rotate(-24.33)"/>\n    <circle cx="9.9" cy="21.94" r="0.21" transform="translate(-8.16 6.03) rotate(-24.33)"/>\n    <circle cx="8.53" cy="17.33" r="0.21" transform="translate(-6.38 5.05) rotate(-24.33)"/>\n    <circle cx="18.44" cy="19.48" r="0.21" transform="translate(-6.39 9.33) rotate(-24.33)"/>\n    <circle cx="24.04" cy="5.76" r="0.21" transform="translate(15.67 29.02) rotate(-83.69)"/>\n    <circle cx="25.46" cy="15.73" r="0.21" transform="translate(7.03 39.31) rotate(-83.69)"/>\n    <circle cx="18.4" cy="9.39" r="0.21" transform="translate(7.05 26.65) rotate(-83.69)"/>\n    <circle cx="23.07" cy="10.57" r="0.21" transform="translate(10.03 32.33) rotate(-83.69)"/>\n    <circle cx="16.17" cy="17.99" r="0.21" transform="translate(-3.49 32.08) rotate(-83.69)"/>\n    <circle cx="19.03" cy="32.23" r="0.21" transform="translate(-14.29 49.28) rotate(-86.53)"/>\n    <circle cx="17.12" cy="22.35" r="0.21" transform="translate(-6.23 38.08) rotate(-86.53)"/>\n    <circle cx="24.48" cy="28.33" r="0.21" transform="translate(-5.27 51.05) rotate(-86.53)"/>\n    <circle cx="19.77" cy="27.39" r="0.21" transform="translate(-8.76 45.46) rotate(-86.53)"/>\n    <circle cx="26.29" cy="19.63" r="0.21" transform="translate(5.11 44.68) rotate(-86.53)"/>\n    <circle cx="12.27" cy="41.21" r="0.21" transform="translate(-29.61 50.97) rotate(-86.53)"/>\n    <circle cx="10.36" cy="31.33" r="0.21" transform="translate(-21.54 39.77) rotate(-86.53)"/>\n    <circle cx="17.72" cy="37.31" r="0.21" transform="translate(-20.59 52.74) rotate(-86.53)"/>\n    <circle cx="13.01" cy="36.36" r="0.21" transform="translate(-24.08 47.15) rotate(-86.53)"/>\n    <circle cx="19.53" cy="28.61" r="0.21" transform="translate(-10.2 46.37) rotate(-86.53)"/>\n    <rect class="cls-3" x="7.95" y="26.8" width="36" height="6.99" transform="translate(-13.44 36.57) rotate(-58.47)"/>\n    <polygon class="cls-4" points="99.11 72.51 92.05 72.6 35.35 37.81 37.3 34.62 99.11 72.51"/>\n    <circle class="cls-3" cx="25.72" cy="30.15" r="16.44" transform="translate(-13.43 36.31) rotate(-58.47)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="lollipop--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.16 89.37">\n    <path class="cls-1" d="M93.32,5.63A10.5,10.5,0,0,0,76.53,3.15a10.5,10.5,0,0,0-11,13.47c.06.21.13.43.21.64s.17.42.26.62l6.22,16.8a14.91,14.91,0,1,0,28-10.36l-6-16.17a10.24,10.24,0,0,0-.93-2.51Z"/>\n    <line class="cls-2" x1="78.55" y1="8.6" x2="88.82" y2="36.34"/>\n    <circle cx="72.91" cy="9.94" r="0.21" transform="translate(1.09 25.94) rotate(-20.32)"/>\n    <circle cx="78.65" cy="18.22" r="0.21" transform="translate(-1.43 28.45) rotate(-20.32)"/>\n    <circle cx="69.5" cy="15.72" r="0.21" transform="translate(-1.13 25.12) rotate(-20.32)"/>\n    <circle cx="74.19" cy="14.68" r="0.21" transform="translate(-0.48 26.68) rotate(-20.32)"/>\n    <circle cx="71.36" cy="24.41" r="0.21" transform="translate(-4.03 26.3) rotate(-20.32)"/>\n    <circle cx="88.5" cy="10.64" r="0.21" transform="translate(1.81 31.4) rotate(-20.32)"/>\n    <circle cx="94.24" cy="18.92" r="0.21" transform="translate(-0.7 33.91) rotate(-20.32)"/>\n    <circle cx="85.09" cy="16.42" r="0.21" transform="translate(-0.4 30.57) rotate(-20.32)"/>\n    <circle cx="89.79" cy="15.37" r="0.21" transform="translate(0.25 32.14) rotate(-20.32)"/>\n    <circle cx="86.95" cy="25.11" r="0.21" transform="translate(-3.31 31.76) rotate(-20.32)"/>\n    <circle cx="78.21" cy="35.7" r="0.21" transform="translate(-6.99 24.21) rotate(-16.85)"/>\n    <circle cx="72.98" cy="27.09" r="0.21" transform="translate(-4.72 22.32) rotate(-16.85)"/>\n    <circle cx="81.96" cy="30.14" r="0.21" transform="translate(-5.22 25.06) rotate(-16.85)"/>\n    <circle cx="77.21" cy="30.9" r="0.21" transform="translate(-5.64 23.71) rotate(-16.85)"/>\n    <circle cx="80.63" cy="21.35" r="0.21" transform="translate(-2.73 24.29) rotate(-16.85)"/>\n    <circle cx="72.38" cy="23.81" r="0.21" transform="translate(4.15 57.74) rotate(-44.65)"/>\n    <circle cx="77.55" cy="15.17" r="0.21" transform="translate(11.72 58.88) rotate(-44.65)"/>\n    <circle cx="79.04" cy="24.54" r="0.21" transform="translate(5.56 62.64) rotate(-44.65)"/>\n    <circle cx="76.16" cy="20.7" r="0.21" transform="translate(7.44 59.5) rotate(-44.65)"/>\n    <circle cx="86.2" cy="19.27" r="0.21" transform="translate(11.33 66.14) rotate(-44.65)"/>\n    <circle cx="86.69" cy="4.46" r="0.21" transform="translate(1.5 21.12) rotate(-14.01)"/>\n    <circle cx="91.48" cy="13.32" r="0.21" transform="translate(-0.5 22.54) rotate(-14.01)"/>\n    <circle cx="82.66" cy="9.82" r="0.21" transform="translate(0.08 20.3) rotate(-14.01)"/>\n    <circle cx="87.44" cy="9.31" r="0.21" transform="translate(0.35 21.45) rotate(-14.01)"/>\n    <circle cx="83.55" cy="18.67" r="0.21" transform="translate(-2.03 20.78) rotate(-14.01)"/>\n    <circle cx="91.19" cy="31.03" r="0.21" transform="translate(-5.08 27.77) rotate(-16.85)"/>\n    <circle cx="85.96" cy="22.42" r="0.21" transform="translate(-2.81 25.88) rotate(-16.85)"/>\n    <circle cx="94.94" cy="25.47" r="0.21" transform="translate(-3.31 28.62) rotate(-16.85)"/>\n    <circle cx="90.19" cy="26.22" r="0.21" transform="translate(-3.73 27.27) rotate(-16.85)"/>\n    <circle cx="93.61" cy="16.68" r="0.21" transform="translate(-0.82 27.86) rotate(-16.85)"/>\n    <circle cx="87.96" cy="41.79" r="0.21" transform="translate(-8.34 27.3) rotate(-16.85)"/>\n    <circle cx="82.73" cy="33.19" r="0.21" transform="translate(-6.07 25.41) rotate(-16.85)"/>\n    <circle cx="91.72" cy="36.24" r="0.21" transform="translate(-6.57 28.15) rotate(-16.85)"/>\n    <circle cx="86.97" cy="36.99" r="0.21" transform="translate(-6.99 26.8) rotate(-16.85)"/>\n    <circle cx="90.39" cy="27.45" r="0.21" transform="translate(-4.08 27.38) rotate(-16.85)"/>\n    <rect class="cls-3" x="55.16" y="43.57" width="36" height="6.99" transform="matrix(-0.52, -0.85, 0.85, -0.52, 71.3, 134.03)"/>\n    <polygon class="cls-4" points="0 89.28 7.06 89.37 63.76 54.58 61.81 51.39 0 89.28"/>\n    <circle class="cls-3" cx="73.39" cy="46.92" r="16.44" transform="matrix(0.85, -0.52, 0.52, 0.85, -13.7, 45.31)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.07 124.89">\n    <path class="cls-1" d="M25.15,3.86a7.2,7.2,0,0,0-11.52-1.7A7.2,7.2,0,0,0,6.12,11.4c0,.15.09.29.15.44s.11.29.18.43l4.27,11.52A10.23,10.23,0,1,0,29.9,16.68L25.79,5.59a7,7,0,0,0-.64-1.72Z"/>\n    <line class="cls-2" x1="15.02" y1="5.9" x2="22.06" y2="24.93"/>\n    <circle cx="11.15" cy="6.82" r="0.15" transform="translate(-1.67 4.3) rotate(-20.32)"/>\n    <circle cx="15.09" cy="12.5" r="0.15" transform="translate(-3.4 6.02) rotate(-20.32)"/>\n    <circle cx="8.81" cy="10.78" r="0.15" transform="translate(-3.2 3.73) rotate(-20.32)"/>\n    <circle cx="12.03" cy="10.07" r="0.15" transform="translate(-2.75 4.8) rotate(-20.32)"/>\n    <circle cx="10.08" cy="16.74" r="0.15" transform="translate(-5.19 4.54) rotate(-20.32)"/>\n    <circle cx="21.85" cy="7.3" r="0.15" transform="translate(-1.18 8.04) rotate(-20.32)"/>\n    <circle cx="25.79" cy="12.98" r="0.15" transform="translate(-2.9 9.76) rotate(-20.32)"/>\n    <circle cx="19.51" cy="11.26" r="0.15" transform="translate(-2.7 7.48) rotate(-20.32)"/>\n    <circle cx="22.73" cy="10.55" r="0.15" transform="translate(-2.25 8.55) rotate(-20.32)"/>\n    <circle cx="20.78" cy="17.22" r="0.15" transform="translate(-4.69 8.29) rotate(-20.32)"/>\n    <circle cx="14.78" cy="24.49" r="0.15" transform="translate(-6.47 5.34) rotate(-16.85)"/>\n    <circle cx="11.19" cy="18.59" r="0.15" transform="translate(-4.91 4.04) rotate(-16.85)"/>\n    <circle cx="17.36" cy="20.68" r="0.15" transform="translate(-5.25 5.92) rotate(-16.85)"/>\n    <circle cx="14.1" cy="21.2" r="0.15" transform="translate(-5.54 5) rotate(-16.85)"/>\n    <circle cx="16.45" cy="14.65" r="0.15" transform="translate(-3.54 5.4) rotate(-16.85)"/>\n    <circle cx="10.78" cy="16.34" r="0.15" transform="translate(-8.37 12.29) rotate(-44.65)"/>\n    <circle cx="14.33" cy="10.41" r="0.15" transform="translate(-3.18 13.08) rotate(-44.65)"/>\n    <circle cx="15.36" cy="16.84" r="0.15" transform="translate(-7.4 15.65) rotate(-44.65)"/>\n    <circle cx="13.38" cy="14.2" r="0.15" transform="translate(-6.12 13.5) rotate(-44.65)"/>\n    <circle cx="20.26" cy="13.22" r="0.15" transform="translate(-3.44 18.06) rotate(-44.65)"/>\n    <circle cx="20.6" cy="3.06" r="0.15" transform="translate(-0.13 5.08) rotate(-14.01)"/>\n    <circle cx="23.89" cy="9.14" r="0.15" transform="translate(-1.5 6.06) rotate(-14.01)"/>\n    <circle cx="17.84" cy="6.74" r="0.15" transform="translate(-1.1 4.52) rotate(-14.01)"/>\n    <circle cx="21.12" cy="6.38" r="0.15" transform="translate(-0.92 5.3) rotate(-14.01)"/>\n    <circle cx="18.45" cy="12.81" r="0.15" transform="translate(-2.55 4.85) rotate(-14.01)"/>\n    <circle cx="23.69" cy="21.29" r="0.15" transform="translate(-5.15 7.78) rotate(-16.85)"/>\n    <circle cx="20.1" cy="15.38" r="0.15" transform="translate(-3.6 6.49) rotate(-16.85)"/>\n    <circle cx="26.26" cy="17.47" r="0.15" transform="translate(-3.94 8.36) rotate(-16.85)"/>\n    <circle cx="23.01" cy="17.99" r="0.15" transform="translate(-4.23 7.44) rotate(-16.85)"/>\n    <circle cx="25.35" cy="11.45" r="0.15" transform="translate(-2.23 7.84) rotate(-16.85)"/>\n    <circle cx="21.48" cy="28.67" r="0.15" transform="translate(-7.39 7.46) rotate(-16.85)"/>\n    <circle cx="17.89" cy="22.77" r="0.15" transform="translate(-5.83 6.16) rotate(-16.85)"/>\n    <circle cx="24.05" cy="24.86" r="0.15" transform="translate(-6.17 8.04) rotate(-16.85)"/>\n    <circle cx="20.8" cy="25.38" r="0.15" transform="translate(-6.46 7.12) rotate(-16.85)"/>\n    <circle cx="23.14" cy="18.83" r="0.15" transform="translate(-4.47 7.52) rotate(-16.85)"/>\n    <rect class="cls-3" x="0.04" y="33.12" width="36" height="6.99" transform="translate(35.69 73.41) rotate(-179.4)"/>\n    <polygon class="cls-4" points="14.87 124.64 18.71 124.89 19.41 48.56 15.67 48.53 14.87 124.64"/>\n    <circle class="cls-3" cx="18.04" cy="36.34" r="16.44" transform="translate(-18.49 54) rotate(-89.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.07 66.44">\n    <rect class="cls-3" x="0.04" y="13.22" width="36" height="6.99" transform="translate(35.89 33.61) rotate(-179.4)"/>\n    <polygon class="cls-4" points="14.87 66.19 18.71 66.44 19.41 28.67 15.67 28.63 14.87 66.19"/>\n    <circle class="cls-3" cx="18.04" cy="16.44" r="16.44" transform="translate(1.41 34.31) rotate(-89.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="lollipop--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 140.91">\n    <rect class="cls-1" x="48.76" y="13.17" width="36" height="6.99" transform="translate(2.28 40.69) rotate(-34.45)"/>\n    <rect class="cls-2" x="90.77" y="20.47" width="3.74" height="66.52" transform="translate(-14.15 61.83) rotate(-34.45)"/>\n    <circle class="cls-1" cx="66.61" cy="16.45" r="16.44" transform="translate(2.38 40.57) rotate(-34.45)"/>\n    <rect class="cls-3" x="48.38" y="92.44" width="36" height="6.99" transform="translate(110.07 -12.24) rotate(56.68)"/>\n    <rect class="cls-2" x="26.95" y="87.82" width="3.74" height="66.52" transform="translate(114.16 30.48) rotate(56.68)"/>\n    <circle class="cls-3" cx="66.61" cy="95.79" r="16.44" transform="translate(-41.67 52.34) rotate(-33.32)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.84 70.92">\n    <rect class="cls-3" x="-1.36" y="13.13" width="36" height="6.99" transform="translate(-6.86 17.59) rotate(-47.31)"/>\n    <rect class="cls-4" x="48.25" y="13.74" width="3.74" height="66.52" transform="translate(-18.41 51.98) rotate(-47.31)"/>\n    <circle class="cls-3" cx="16.44" cy="16.44" r="16.44" transform="translate(-6.79 17.38) rotate(-47.31)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.68 72.17">\n    <rect class="cls-3" x="40.04" y="13.14" width="36" height="6.99" transform="translate(30.24 -36.97) rotate(46.6)"/>\n    <rect class="cls-4" x="23.58" y="14.69" width="3.74" height="66.52" transform="translate(42.81 -3.49) rotate(46.6)"/>\n    <circle class="cls-3" cx="58.23" cy="16.44" r="16.44" transform="translate(4.62 44.51) rotate(-43.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="lollipop--color--darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.88 44.3">\n    <rect class="cls-3" x="-1.3" y="14.69" width="36" height="6.99" transform="translate(-5.81 28.31) rotate(-71.65)"/>\n    <rect class="cls-4" x="57.86" y="-1.2" width="3.74" height="66.52" transform="translate(10.49 78.66) rotate(-71.65)"/>\n    <circle class="cls-3" cx="16.45" cy="18.1" r="16.44" transform="translate(-5.91 28.01) rotate(-71.65)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.34 64.22">\n    <path class="cls-1" d="M49.78,22.4A14.53,14.53,0,0,0,34.61,4.48a14.53,14.53,0,0,0-23.68,4c-.13.28-.25.57-.37.86s-.21.59-.3.88L1.37,33.34A20.64,20.64,0,0,0,39.9,48.14l8.56-22.28a14.16,14.16,0,0,0,1.33-3.46Z"/>\n    <line class="cls-2" x1="31.72" y1="11.99" x2="17.05" y2="50.2"/>\n    <circle cx="24.64" cy="8.24" r="0.29" transform="translate(8.12 28.28) rotate(-68.98)"/>\n    <circle cx="23.04" cy="22.08" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, -5.83, 35.67)"/>\n    <circle cx="15.82" cy="11.12" r="0.29" transform="translate(-0.23 21.9) rotate(-68.98)"/>\n    <circle cx="21.65" cy="14.32" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, 0.51, 29.4)"/>\n    <circle cx="9.81" cy="21.84" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, -14.1, 23.16)"/>\n    <circle cx="40.2" cy="23.21" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, 4.12, 52.41)"/>\n    <circle cx="38.6" cy="37.05" r="0.29" transform="translate(-9.83 59.8) rotate(-68.98)"/>\n    <circle cx="31.38" cy="26.09" r="0.29" transform="translate(-4.23 46.03) rotate(-68.98)"/>\n    <circle cx="37.21" cy="29.3" r="0.29" transform="translate(-3.49 53.52) rotate(-68.98)"/>\n    <circle cx="25.37" cy="36.82" r="0.29" transform="translate(-18.1 47.29) rotate(-68.98)"/>\n    <circle cx="6.6" cy="39.83" r="0.29" transform="translate(-32.38 29.33) rotate(-65.52)"/>\n    <circle cx="9.03" cy="26.11" r="0.29" transform="translate(-18.47 23.51) rotate(-65.52)"/>\n    <circle cx="15.58" cy="37.49" r="0.29" transform="translate(-24.99 36.13) rotate(-65.52)"/>\n    <circle cx="9.96" cy="33.93" r="0.29" transform="translate(-25.05 28.93) rotate(-65.52)"/>\n    <circle cx="22.23" cy="27.15" r="0.29" transform="translate(-11.69 36.13) rotate(-65.52)"/>\n    <circle cx="11.41" cy="22.16" r="0.29" transform="translate(-1.26 0.7) rotate(-3.32)"/>\n    <circle cx="24.68" cy="17.91" r="0.29" transform="translate(-1 1.46) rotate(-3.32)"/>\n    <circle cx="17.66" cy="29.01" r="0.29" transform="translate(-1.65 1.07) rotate(-3.32)"/>\n    <circle cx="18.19" cy="22.38" r="0.29" transform="translate(-1.26 1.09) rotate(-3.32)"/>\n    <circle cx="29.91" cy="30.07" r="0.29" transform="translate(-1.69 1.78) rotate(-3.32)"/>\n    <circle cx="43.96" cy="15.13" r="0.29" transform="translate(10.34 47.24) rotate(-62.67)"/>\n    <circle cx="40.85" cy="28.71" r="0.29" transform="translate(-3.41 51.83) rotate(-62.67)"/>\n    <circle cx="34.88" cy="17.02" r="0.29" transform="translate(3.74 40.2) rotate(-62.67)"/>\n    <circle cx="40.32" cy="20.85" r="0.29" transform="translate(3.28 47.1) rotate(-62.67)"/>\n    <circle cx="27.72" cy="27.02" r="0.29" transform="translate(-9.01 39.25) rotate(-62.67)"/>\n    <circle cx="24.36" cy="46.84" r="0.29" transform="translate(-28.37 49.59) rotate(-65.52)"/>\n    <circle cx="26.79" cy="33.12" r="0.29" transform="translate(-14.46 43.77) rotate(-65.52)"/>\n    <circle cx="33.33" cy="44.5" r="0.29" transform="translate(-20.98 56.39) rotate(-65.52)"/>\n    <circle cx="27.71" cy="40.94" r="0.29" transform="translate(-21.03 49.2) rotate(-65.52)"/>\n    <circle cx="39.99" cy="34.16" r="0.29" transform="translate(-7.67 56.39) rotate(-65.52)"/>\n    <circle cx="11.17" cy="55.08" r="0.29" transform="translate(-43.59 42.42) rotate(-65.52)"/>\n    <circle cx="13.6" cy="41.36" r="0.29" transform="translate(-29.68 36.6) rotate(-65.52)"/>\n    <circle cx="20.15" cy="52.74" r="0.29" transform="translate(-36.2 49.22) rotate(-65.52)"/>\n    <circle cx="14.53" cy="49.19" r="0.29" transform="translate(-36.26 42.02) rotate(-65.52)"/>\n    <circle cx="26.8" cy="42.4" r="0.29" transform="translate(-22.89 49.22) rotate(-65.52)"/>\n    <rect class="cls-3" x="5.16" y="34.61" width="36" height="6.99" transform="matrix(0.31, -0.95, 0.95, 0.31, -20.3, 48.08)"/>\n    <rect class="cls-4" x="64.31" y="18.71" width="3.74" height="66.52" transform="translate(-3.99 98.42) rotate(-71.65)"/>\n    <circle class="cls-3" cx="22.9" cy="38.01" r="16.44" transform="translate(-20.39 47.78) rotate(-71.65)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.06 95.19">\n    <rect class="cls-3" x="0.03" y="13.22" width="36" height="6.99" transform="translate(0.16 -0.17) rotate(0.54)"/>\n    <rect class="cls-4" x="16.11" y="28.65" width="3.74" height="66.52" transform="translate(0.58 -0.17) rotate(0.54)"/>\n    <circle class="cls-3" cx="18.03" cy="16.44" r="16.44" transform="translate(1.42 34.32) rotate(-89.46)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.77 34.39">\n    <path class="cls-1" d="M19,5.83A6.68,6.68,0,0,0,9.52.64,6.68,6.68,0,0,0,0,6.25c0,.14,0,.28,0,.43S0,7,0,7.11V18.5a9.49,9.49,0,0,0,19,0v-11a6.51,6.51,0,0,0,0-1.7Z"/>\n    <line class="cls-2" x1="9.52" y1="4.34" x2="9.52" y2="23.15"/>\n    <circle cx="5.87" cy="3.89" r="0.14"/>\n    <circle cx="7.46" cy="10.09" r="0.14"/>\n    <circle cx="2.56" cy="6.58" r="0.14"/>\n    <circle cx="5.58" cy="7" r="0.14"/>\n    <circle cx="1.74" cy="12.18" r="0.14"/>\n    <circle cx="15.01" cy="7.75" r="0.14"/>\n    <circle cx="16.61" cy="13.96" r="0.14"/>\n    <circle cx="11.7" cy="10.44" r="0.14"/>\n    <circle cx="14.73" cy="10.86" r="0.14"/>\n    <circle cx="10.89" cy="16.04" r="0.14"/>\n    <circle cx="3.33" cy="20.43" r="0.14" transform="translate(-17.26 22.52) rotate(-86.53)"/>\n    <circle cx="2.11" cy="14.14" r="0.14" transform="translate(-12.12 15.39) rotate(-86.53)"/>\n    <circle cx="6.8" cy="17.94" r="0.14" transform="translate(-11.52 23.64) rotate(-86.53)"/>\n    <circle cx="3.8" cy="17.34" r="0.14" transform="translate(-13.74 20.09) rotate(-86.53)"/>\n    <circle cx="7.95" cy="12.4" r="0.14" transform="translate(-4.91 19.59) rotate(-86.53)"/>\n    <circle cx="2.48" cy="12.05" r="0.14" transform="translate(-4.74 2.09) rotate(-24.33)"/>\n    <circle cx="7.47" cy="8.04" r="0.14" transform="translate(-2.65 3.79) rotate(-24.33)"/>\n    <circle cx="6.3" cy="13.96" r="0.14" transform="translate(-5.19 3.83) rotate(-24.33)"/>\n    <circle cx="5.43" cy="11.02" r="0.14" transform="translate(-4.06 3.22) rotate(-24.33)"/>\n    <circle cx="11.73" cy="12.39" r="0.14" transform="translate(-4.06 5.93) rotate(-24.33)"/>\n    <circle cx="15.29" cy="3.66" r="0.14" transform="translate(9.97 18.46) rotate(-83.69)"/>\n    <circle cx="16.2" cy="10.01" r="0.14" transform="translate(4.47 25.01) rotate(-83.69)"/>\n    <circle cx="11.71" cy="5.97" r="0.14" transform="translate(4.48 16.96) rotate(-83.69)"/>\n    <circle cx="14.67" cy="6.72" r="0.14" transform="translate(6.38 20.57) rotate(-83.69)"/>\n    <circle cx="10.29" cy="11.45" r="0.14" transform="translate(-2.22 20.41) rotate(-83.69)"/>\n    <circle cx="12.11" cy="20.51" r="0.14" transform="translate(-9.09 31.35) rotate(-86.53)"/>\n    <circle cx="10.89" cy="14.22" r="0.14" transform="translate(-3.96 24.23) rotate(-86.53)"/>\n    <circle cx="15.57" cy="18.02" r="0.14" transform="translate(-3.35 32.48) rotate(-86.53)"/>\n    <circle cx="12.58" cy="17.42" r="0.14" transform="translate(-5.57 28.92) rotate(-86.53)"/>\n    <circle cx="16.72" cy="12.49" r="0.14" transform="matrix(0.06, -1, 1, 0.06, 3.25, 28.42)"/>\n    <circle cx="7.81" cy="26.22" r="0.14" transform="translate(-18.83 32.42) rotate(-86.53)"/>\n    <circle cx="6.59" cy="19.93" r="0.14" transform="translate(-13.7 25.3) rotate(-86.53)"/>\n    <circle cx="11.27" cy="23.73" r="0.14" transform="translate(-13.1 33.55) rotate(-86.53)"/>\n    <circle cx="8.28" cy="23.13" r="0.14" transform="translate(-15.32 29.99) rotate(-86.53)"/>\n    <circle cx="12.42" cy="18.2" r="0.14" transform="translate(-6.49 29.5) rotate(-86.53)"/>\n    <rect class="cls-3" x="10.08" y="22.15" width="20.17" height="3.91" transform="translate(-7.48 39.08) rotate(-78.52)"/>\n    <polygon class="cls-4" points="63.77 31.54 63.77 33.85 26.56 26.26 26.97 24.21 63.77 31.54"/>\n    <circle class="cls-3" cx="20.02" cy="24.08" r="9.21" transform="translate(-7.56 38.91) rotate(-78.52)"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lollipop/lollipop.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], LollipopComponent);
+    return LollipopComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=lollipop.js.map
+
+/***/ }),
+/* 176 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(179);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1647,7 +1692,7 @@ var MonstersComponent = /** @class */ (function () {
 //# sourceMappingURL=monsters.component.js.map
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1679,7 +1724,7 @@ var MonstersHostDirective = /** @class */ (function () {
 //# sourceMappingURL=monsters-host.directive.js.map
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1711,24 +1756,24 @@ var MonstersScreenDirective = /** @class */ (function () {
 //# sourceMappingURL=monsters-screen.directive.js.map
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(192);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1834,16 +1879,16 @@ var MonstersService = /** @class */ (function () {
 //# sourceMappingURL=monsters.service.js.map
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZombieComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_sequence_controller__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_sequence_controller__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -2069,13 +2114,13 @@ var ZombieComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=zombie.js.map
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterPartDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2136,7 +2181,7 @@ var MonsterPartDirective = /** @class */ (function () {
 //# sourceMappingURL=monster-part.directive.js.map
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2185,7 +2230,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=skeleton.js.map
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2234,7 +2279,7 @@ var AlienComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=alien.js.map
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2274,16 +2319,16 @@ var BedComponent = /** @class */ (function (_super) {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'bed',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/bed/bed.html"*/'<svg class="bed svg-container" width="85%" height="85%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 235.284 249.38">\n  <g class="monster">\n    <g monster-part part-name="head-figure" part-type="group">\n      <ellipse class="head-figure" cx="89.06" cy="176.45" rx="38.45" ry="62.44"/>\n    </g>\n\n    <g monster-part part-name="mouth" part-type="group" class="mouth">\n      <polygon class="tooth" points="72.44 221 70.86 211.2 74.03 211.2 72.44 221"/>\n      <polygon class="tooth" points="77.53 221 75.95 211.2 79.12 211.2 77.53 221"/>\n      <polygon class="tooth" points="82.63 221 81.04 211.2 84.21 211.2 82.63 221"/>\n    </g>\n\n    <g monster-part part-name="nose" part-type="group" class="nose">\n      <circle class="nostril" cx="74.79" cy="191.75" r="1.44"/>\n      <circle class="nostril" cx="80.28" cy="191.75" r="1.44"/>\n    </g>\n\n    <g monster-part part-name="eyes" part-type="group" class="eyes">\n      <g class="eye eye--left">\n        <path class="eyeball" d="M56.66,176.28a13.34,13.34,0,0,0,18.88,0A13.34,13.34,0,0,0,56.66,176.28Z" transform="translate(0 -0.4)"/>\n        <circle class="iris" cx="66.1" cy="175.87" r="3.99"/>\n      </g>\n\n       <g class="eye eye--right">\n        <path class="eyeball" d="M79.53,176.28a13.34,13.34,0,0,0,18.88,0A13.34,13.34,0,0,0,79.53,176.28Z" transform="translate(0 -0.4)"/>\n        <circle class="iris" cx="88.97" cy="175.87" r="3.99"/>\n      </g>\n    </g>\n\n    <g monster-part part-group="eyes" part-type="container"></g>\n\n    <g monster-part part-group="body" part-type="container"></g>\n\n    <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n      <rect x="130.76" y="206.74" width="117.63" height="23.46" rx="11.73" ry="11.73"/>\n      <rect x="130.76" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n      <rect x="138.11" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n      <rect x="145.45" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n      <rect x="152.8" y="207.67" width="6.04" height="30.92" rx="3.02" ry="3.02"/>\n    </g>\n  </g>\n\n  <g class="bed">\n    <g class="sheets">\n      <rect class="sheets" x="160.18" y="-29.29" width="15.05" height="311.22" transform="translate(294.02 -41.79) rotate(90)"/>\n      <rect class="sheets" x="159.92" y="-43.93" width="15.05" height="311.22" transform="translate(279.12 -56.17) rotate(90)"/>\n      <path class="sheets" d="M17.72,20.67A84.23,84.23,0,0,0,102,104.95,84.23,84.23,0,0,0,17.72,20.67Z" transform="translate(0 -0.4)"/>\n    </g>\n\n    <g class="frame">\n      <circle class="frame" cx="10.03" cy="10.03" r="10.03"/>\n      <rect class="frame" x="2.81" y="19.26" width="15.05" height="219.75"/>\n      <rect class="frame" x="159.92" y="-14.17" width="15.05" height="311.22" transform="translate(308.88 -26.4) rotate(90)"/>\n      <rect class="frame" x="319.84" y="46.22" width="15.05" height="192.8"/>\n      <rect class="blanket" x="155.67" y="52.54" width="120.11" height="208.48" transform="translate(372.5 -59.35) rotate(90)"/>\n    </g>\n  </g>\n\n  <g monster-part part-group="head-figure" part-type="container"></g>\n  <g monster-part part-group="mouth" part-type="container"></g>\n	<g monster-part part-group="nose" part-type="container"></g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/bed/bed.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
     ], BedComponent);
     return BedComponent;
-    var _a, _b, _c, _d, _e;
 }(__WEBPACK_IMPORTED_MODULE_1__monster_model__["a" /* MonsterModel */]));
 
 //# sourceMappingURL=bed.js.map
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2332,7 +2377,7 @@ var SpiderComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=spider.js.map
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2381,7 +2426,7 @@ var VampireComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=vampire.js.map
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2430,7 +2475,7 @@ var WolfComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=wolf.js.map
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2479,7 +2524,7 @@ var MummyComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=mummy.js.map
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2528,7 +2573,7 @@ var YagaComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yaga.js.map
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2577,7 +2622,7 @@ var DoctorComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=doctor.js.map
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2626,7 +2671,7 @@ var YetiComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yeti.js.map
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2675,12 +2720,12 @@ var GhostComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=ghost.js.map
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameFinistStateMachine; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(306);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
 
 var GameFinistStateMachine = /** @class */ (function () {
@@ -2771,12 +2816,12 @@ var GameFinistStateMachine = /** @class */ (function () {
 //# sourceMappingURL=game-fsm.js.map
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnersHandler; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(307);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -2831,13 +2876,13 @@ var ListnersHandler = /** @class */ (function () {
 //# sourceMappingURL=listners-handler.js.map
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2896,7 +2941,7 @@ var ItemHolderComponent = /** @class */ (function () {
 //# sourceMappingURL=item-holder.component.js.map
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2928,17 +2973,17 @@ var TemplateHostDriective = /** @class */ (function () {
 //# sourceMappingURL=template-host.directive.js.map
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3005,13 +3050,13 @@ var SelectPage = /** @class */ (function () {
 //# sourceMappingURL=select.js.map
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundTabletComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(199);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3052,13 +3097,13 @@ var BackgroundTabletComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-tablet.component.js.map
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(200);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3091,7 +3136,7 @@ var BackgroundComponent = /** @class */ (function () {
 //# sourceMappingURL=bg.component.js.map
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3150,13 +3195,13 @@ var BackgroundAnchorDirective = /** @class */ (function () {
 //# sourceMappingURL=bg.directive.js.map
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundMobileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(199);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3197,7 +3242,6 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-mobile.component.js.map
 
 /***/ }),
-/* 201 */,
 /* 202 */,
 /* 203 */,
 /* 204 */,
@@ -3240,20 +3284,20 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 /* 241 */,
 /* 242 */,
 /* 243 */,
-/* 244 */
+/* 244 */,
+/* 245 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(268);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
-/* 245 */,
 /* 246 */,
 /* 247 */,
 /* 248 */,
@@ -3275,7 +3319,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* 264 */,
 /* 265 */,
 /* 266 */,
-/* 267 */
+/* 267 */,
+/* 268 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3283,14 +3328,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(343);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_game_game__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3358,7 +3403,6 @@ var AppModule = /** @class */ (function () {
 //# sourceMappingURL=app.module.js.map
 
 /***/ }),
-/* 268 */,
 /* 269 */,
 /* 270 */,
 /* 271 */,
@@ -3383,7 +3427,8 @@ var AppModule = /** @class */ (function () {
 /* 290 */,
 /* 291 */,
 /* 292 */,
-/* 293 */
+/* 293 */,
+/* 294 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3401,6 +3446,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bra_bra__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wig_wig__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lips_lips__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lollipop_lollipop__ = __webpack_require__(175);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3410,6 +3456,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3457,6 +3504,236 @@ var TrinketsService = /** @class */ (function () {
     }
     TrinketsService.prototype.getTrinkets = function () {
         return [
+            {
+                id: 13,
+                component: __WEBPACK_IMPORTED_MODULE_13__lollipop_lollipop__["a" /* LollipopComponent */],
+                meta: {
+                    container: 'mouth',
+                    uniq: true,
+                    before: function (monster, repo, instance) {
+                    },
+                    after: function (monster, repo, instance) {
+                    },
+                    attr: {
+                        width: {
+                            default: function (_a) {
+                                var width = _a.width;
+                                return width * 1.5;
+                            },
+                            skeleton: function (_a) {
+                                var width = _a.width;
+                                return 69.96;
+                            },
+                            zombie: function (_a) {
+                                var width = _a.width;
+                                return 99.1;
+                            },
+                            mummy: function (_a) {
+                                var width = _a.width;
+                                return 101.163;
+                            },
+                            yaga: function (_a) {
+                                var width = _a.width;
+                                return 36;
+                            },
+                            doctor: function (_a) {
+                                var width = _a.width;
+                                return 36.07;
+                            },
+                            spider: function (_a) {
+                                var width = _a.width;
+                                return 113;
+                            },
+                            alien: function (_a) {
+                                var width = _a.width;
+                                return 75.84;
+                            },
+                            vampire: function (_a) {
+                                var width = _a.width;
+                                return 74.68;
+                            },
+                            yeti: function (_a) {
+                                var width = _a.width;
+                                return 91.884;
+                            },
+                            ghost: function (_a) {
+                                var width = _a.width;
+                                return 98.34;
+                            },
+                            wolf: function (_a) {
+                                var width = _a.width;
+                                return 36.06;
+                            },
+                            bed: function (_a) {
+                                var width = _a.width;
+                                return 63.77;
+                            },
+                        },
+                        height: {
+                            default: function (_a) {
+                                var height = _a.height;
+                                return height * 1.5;
+                            },
+                            skeleton: function (_a) {
+                                var height = _a.height;
+                                return 104.667;
+                            },
+                            zombie: function (_a) {
+                                var height = _a.height;
+                                return 72.6;
+                            },
+                            mummy: function (_a) {
+                                var height = _a.height;
+                                return 89.37;
+                            },
+                            yaga: function (_a) {
+                                var height = _a.height;
+                                return 124.9;
+                            },
+                            doctor: function (_a) {
+                                var height = _a.height;
+                                return 66.44;
+                            },
+                            spider: function (_a) {
+                                var height = _a.height;
+                                return 140.9;
+                            },
+                            alien: function (_a) {
+                                var height = _a.height;
+                                return 70.92;
+                            },
+                            vampire: function (_a) {
+                                var height = _a.height;
+                                return 72.17;
+                            },
+                            yeti: function (_a) {
+                                var height = _a.height;
+                                return 44.3;
+                            },
+                            ghost: function (_a) {
+                                var height = _a.height;
+                                return 64.22;
+                            },
+                            wolf: function (_a) {
+                                var height = _a.height;
+                                return 95.2;
+                            },
+                            bed: function (_a) {
+                                var height = _a.height;
+                                return 34.39;
+                            },
+                        },
+                        x: {
+                            default: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (width * 1.5) / 2) + width / 2;
+                            },
+                            skeleton: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return ((x - (69.96) / 2) + width / 2) + 20;
+                            },
+                            zombie: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x + 10;
+                            },
+                            mummy: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x + 25;
+                            },
+                            yaga: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x + width - 26;
+                            },
+                            doctor: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - 36.07 / 2) + width / 2;
+                            },
+                            spider: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return ((x - 113 / 2) + width / 2) - 7;
+                            },
+                            alien: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x - 5;
+                            },
+                            vampire: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x - 55;
+                            },
+                            yeti: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x + (width / 2) - 2;
+                            },
+                            ghost: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x - 10;
+                            },
+                            wolf: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x + width - 36.06 - 5;
+                            },
+                            bed: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x - 3;
+                            },
+                        },
+                        y: {
+                            default: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return (y - (height * 1.5) / 2) + height / 2;
+                            },
+                            skeleton: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 65;
+                            },
+                            zombie: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 10;
+                            },
+                            mummy: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 20;
+                            },
+                            yaga: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y;
+                            },
+                            doctor: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + height - 10;
+                            },
+                            spider: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 15;
+                            },
+                            alien: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 3;
+                            },
+                            vampire: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 20;
+                            },
+                            yeti: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 10;
+                            },
+                            ghost: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + (height / 2) + 15;
+                            },
+                            wolf: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + height - 35;
+                            },
+                            bed: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y - 2;
+                            },
+                        }
+                    }
+                }
+            },
             {
                 id: 12,
                 component: __WEBPACK_IMPORTED_MODULE_12__lips_lips__["a" /* LipsComponent */],
@@ -5467,7 +5744,7 @@ var TrinketsService = /** @class */ (function () {
 //# sourceMappingURL=trinkets.service.js.map
 
 /***/ }),
-/* 294 */
+/* 295 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5504,7 +5781,7 @@ var ElementModel = /** @class */ (function () {
 //# sourceMappingURL=element.model.js.map
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5590,15 +5867,15 @@ var TrinketRandomModel = /** @class */ (function (_super) {
 //# sourceMappingURL=trinket-random.model.js.map
 
 /***/ }),
-/* 296 */,
 /* 297 */,
-/* 298 */
+/* 298 */,
+/* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSetController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_model__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_model__ = __webpack_require__(300);
 
 
 var once = function (fn) {
@@ -5722,7 +5999,7 @@ var AnimationSetControllerSpecified = /** @class */ (function () {
 //# sourceMappingURL=animation-set.controller.js.map
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5757,13 +6034,13 @@ var AnimationModel = /** @class */ (function () {
 //# sourceMappingURL=animation.model.js.map
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSequenceController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__ = __webpack_require__(302);
 
 
 var AnimationSequenceController = /** @class */ (function () {
@@ -5824,7 +6101,7 @@ var AnimationSequenceController = /** @class */ (function () {
 //# sourceMappingURL=animation-sequence.controller.js.map
 
 /***/ }),
-/* 301 */
+/* 302 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5858,15 +6135,15 @@ var AnimationSequenceModel = /** @class */ (function () {
 //# sourceMappingURL=animation-sequence.model.js.map
 
 /***/ }),
-/* 302 */,
-/* 303 */
+/* 303 */,
+/* 304 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(194);
 
 
 
@@ -5911,7 +6188,7 @@ var Game = /** @class */ (function () {
 //# sourceMappingURL=game.service.js.map
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5956,8 +6233,8 @@ var CursorPosition = /** @class */ (function () {
 //# sourceMappingURL=cursor-position.js.map
 
 /***/ }),
-/* 305 */,
-/* 306 */
+/* 306 */,
+/* 307 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6033,14 +6310,14 @@ var ListnerRegister = /** @class */ (function () {
 //# sourceMappingURL=listner-register.class.js.map
 
 /***/ }),
-/* 307 */
+/* 308 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameLogic; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(194);
 
 
 
@@ -6113,12 +6390,12 @@ var GameLogic = /** @class */ (function () {
 //# sourceMappingURL=game-logic.js.map
 
 /***/ }),
-/* 308 */
+/* 309 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveElementRepository; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(310);
 
 var lib = {
     mouseEnterOnItem: function (item, ev) {
@@ -6247,7 +6524,7 @@ var ActiveElementRepository = /** @class */ (function () {
 //# sourceMappingURL=active-element.repository.js.map
 
 /***/ }),
-/* 309 */
+/* 310 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6355,7 +6632,6 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 //# sourceMappingURL=active-element.model.js.map
 
 /***/ }),
-/* 310 */,
 /* 311 */,
 /* 312 */,
 /* 313 */,
@@ -6380,16 +6656,17 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 /* 332 */,
 /* 333 */,
 /* 334 */,
-/* 335 */
+/* 335 */,
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(337);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(340);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6418,28 +6695,28 @@ var ComponentsModule = /** @class */ (function () {
 //# sourceMappingURL=components.module.js.map
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(181);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6481,7 +6758,7 @@ var MonstersModule = /** @class */ (function () {
 //# sourceMappingURL=monsters.module.js.map
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6500,10 +6777,11 @@ var MonstersModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bra_bra__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__wig_wig__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lips_lips__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__trinkets_component__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__trinket_host_directive__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__trinket_random_part_directive__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__trinket_uniq_part_directive__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__trinkets_component__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__trinket_host_directive__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__trinket_random_part_directive__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__trinket_uniq_part_directive__ = __webpack_require__(171);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6528,16 +6806,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var TrinketsModule = /** @class */ (function () {
     function TrinketsModule() {
     }
     TrinketsModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_14__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_15__trinket_host_directive__["a" /* TrinketHostDirective */], __WEBPACK_IMPORTED_MODULE_16__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */], __WEBPACK_IMPORTED_MODULE_17__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */], __WEBPACK_IMPORTED_MODULE_15__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_16__trinket_host_directive__["a" /* TrinketHostDirective */], __WEBPACK_IMPORTED_MODULE_17__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */], __WEBPACK_IMPORTED_MODULE_18__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]],
             providers: [],
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */],],
-            exports: [__WEBPACK_IMPORTED_MODULE_14__trinkets_component__["a" /* TrinketsComponent */]]
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */],],
+            exports: [__WEBPACK_IMPORTED_MODULE_15__trinkets_component__["a" /* TrinketsComponent */]]
         })
     ], TrinketsModule);
     return TrinketsModule;
@@ -6546,7 +6825,7 @@ var TrinketsModule = /** @class */ (function () {
 //# sourceMappingURL=trinkets.module.js.map
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6578,14 +6857,14 @@ var GameModule = /** @class */ (function () {
 //# sourceMappingURL=game.module.js.map
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6613,15 +6892,15 @@ var ItemHolderModule = /** @class */ (function () {
 //# sourceMappingURL=item-holder.module.js.map
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6649,7 +6928,7 @@ var BackgroundModule = /** @class */ (function () {
 //# sourceMappingURL=bg.module.js.map
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6680,15 +6959,15 @@ var ModelModule = /** @class */ (function () {
 //# sourceMappingURL=model.module.js.map
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(241);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6725,5 +7004,5 @@ var MyApp = /** @class */ (function () {
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
-],[244]);
+],[245]);
 //# sourceMappingURL=main.js.map

@@ -26612,6 +26612,102 @@ yeti .yeti .tooth {
   fill: #fff;
 }
 
+.lollipop .cls-1 {
+  fill: #f24943;
+}
+
+.lollipop .cls-2 {
+  fill: #b4b4b5;
+}
+
+.lollipop--color--yellow .cls-1 {
+  fill: #cf6cac;
+}
+
+.lollipop--color--yellow .cls-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 0.37px;
+}
+
+.lollipop--color--yellow .cls-3 {
+  fill: #f1ea35;
+}
+
+.lollipop--color--yellow .cls-4 {
+  fill: #b4b4b5;
+}
+
+.lollipop--color--green .cls-1 {
+  fill: #cf6cac;
+}
+
+.lollipop--color--green .cls-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 0.37px;
+}
+
+.lollipop--color--green .cls-3 {
+  fill: #00b15d;
+}
+
+.lollipop--color--green .cls-4 {
+  fill: #b4b4b5;
+}
+
+.lollipop--color--blue .cls-1 {
+  fill: #cf6cac;
+}
+
+.lollipop--color--blue .cls-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 0.37px;
+}
+
+.lollipop--color--blue .cls-3 {
+  fill: #00bcc5;
+}
+
+.lollipop--color--blue .cls-4 {
+  fill: #b4b4b5;
+}
+
+.lollipop--color--darkblue .cls-1 {
+  fill: #cf6cac;
+}
+
+.lollipop--color--darkblue .cls-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 0.37px;
+}
+
+.lollipop--color--darkblue .cls-3 {
+  fill: #586ab1;
+}
+
+.lollipop--color--darkblue .cls-4 {
+  fill: #b4b4b5;
+}
+
+.lollipop--spider .cls-1 {
+  fill: #00b8ce;
+}
+
+.lollipop--spider .cls-2 {
+  fill: #b4b4b5;
+}
+
+.lollipop--spider .cls-3 {
+  fill: #f24943;
+}
+
 .mole .cls-1 {
   fill: #796356;
 }

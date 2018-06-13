@@ -1,0 +1,40 @@
+.lollipop {
+  & .cls-1{fill:#f24943;}
+  & .cls-2{fill:#b4b4b5;}
+
+  &--color {
+    &--yellow {
+      & .cls-1{fill:#cf6cac;}
+      & .cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:0.37px;}
+      & .cls-3{fill:#f1ea35;}
+      & .cls-4{fill:#b4b4b5;}
+    }
+
+    &--green {
+      & .cls-1{fill:#cf6cac;}
+      & .cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:0.37px;}
+      & .cls-3{fill:#00b15d;}
+      & .cls-4{fill:#b4b4b5;}
+    }
+
+    &--blue {
+      & .cls-1{fill:#cf6cac;}
+      & .cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:0.37px;}
+      & .cls-3{fill:#00bcc5;}
+      & .cls-4{fill:#b4b4b5;}
+    }
+
+    &--darkblue {
+      & .cls-1{fill:#cf6cac;}
+      & .cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:0.37px;}
+      & .cls-3{fill:#586ab1;}
+      & .cls-4{fill:#b4b4b5;}
+    }
+  }
+
+  &--spider {
+    & .cls-1{fill:#00b8ce;}
+    & .cls-2{fill:#b4b4b5;}
+    & .cls-3{fill:#f24943;}
+  }
+}
