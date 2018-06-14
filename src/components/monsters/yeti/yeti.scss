@@ -4,7 +4,7 @@ yeti {
     transform: translateX(-50%);
     overflow: visible;
 
-    & .body {
+    & .body, & .ear {
       fill: #cdcdcd;
     }
 

@@ -1,0 +1,43 @@
+.earrings {
+  & .cls-1{fill:#fff;}
+  & .cls-1,
+  & .cls-2{stroke:#fa953c;stroke-miterlimit:10;stroke-width:1.06px;}
+  & .cls-2{fill:#058d5a;}
+
+  &--default {
+    & .cls-1{fill:none;}
+    & .cls-1,
+    & .cls-2,
+    & .cls-3{stroke:#fa953c;stroke-miterlimit:10;stroke-width:3.17px;}
+    & .cls-2{fill:#fff;}
+    & .cls-3{fill:#058d5a;}
+  }
+
+  &--zombie {
+    & .cls-2{stroke:#fa953c;stroke-miterlimit:10;stroke-width:1.82px;}
+  }
+  &--yaga {
+    & .cls-2{stroke:#fa953c;stroke-miterlimit:10;stroke-width:0.4px;}
+  }
+  &--doctor {
+    & .cls-2{stroke:#fa953c;stroke-miterlimit:10;stroke-width:1.46px;}
+  }
+  &--spider {
+    & .cls-2{stroke:#fa953c;stroke-miterlimit:10;stroke-width:1.06px;}
+  }
+  &--ghost {
+    & .cls-2{stroke:#fa953c;stroke-miterlimit:10;stroke-width:1.74px;}
+  }
+  &--bed {
+    & .cls-2{stroke:#fa953c;stroke-miterlimit:10;stroke-width:0.91px;}
+  }
+  &--wolf {
+    & .cls-1{fill:none;}
+    & .cls-1,
+    & .cls-2,
+    & .cls-3{stroke:#fa953c;stroke-miterlimit:10;stroke-width:1.09px;}
+    & .cls-2{fill:#fff;}
+    & .cls-3{fill:#058d5a;}
+  }
+
+}

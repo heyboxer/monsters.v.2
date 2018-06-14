@@ -25743,7 +25743,7 @@ alien .alien {
   overflow: visible;
 }
 
-alien .alien .head--figure {
+alien .alien .head--figure, alien .alien .ear {
   fill: #6fc055;
 }
 
@@ -25846,7 +25846,7 @@ ghost .ghost {
   overflow: visible;
 }
 
-ghost .ghost .body {
+ghost .ghost .body, ghost .ghost .ear {
   fill: #b7e3ee;
 }
 
@@ -25945,6 +25945,10 @@ skeleton .skeleton__screen {
 }
 
 skeleton .skeleton .head--figure {
+  fill: #fff;
+}
+
+skeleton .skeleton .ear {
   fill: #fff;
 }
 
@@ -26125,7 +26129,7 @@ yaga .yaga .tooth {
   fill: #fff;
 }
 
-yaga .yaga .face {
+yaga .yaga .face, yaga .yaga .ear {
   fill: #00b15d;
 }
 
@@ -26144,7 +26148,7 @@ yeti .yeti {
   overflow: visible;
 }
 
-yeti .yeti .body {
+yeti .yeti .body, yeti .yeti .ear {
   fill: #cdcdcd;
 }
 
@@ -26190,6 +26194,10 @@ yeti .yeti .tooth {
 
 .zombie .body {
   fill: #cdcdcd;
+}
+
+.zombie .ear {
+  fill: #00ad5e;
 }
 
 .zombie .eyelash {
@@ -26522,6 +26530,97 @@ yeti .yeti .tooth {
   stroke: #000;
   stroke-linecap: round;
   stroke-miterlimit: 10;
+}
+
+.earrings .cls-1 {
+  fill: #fff;
+}
+
+.earrings .cls-1,
+.earrings .cls-2 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 1.06px;
+}
+
+.earrings .cls-2 {
+  fill: #058d5a;
+}
+
+.earrings--default .cls-1 {
+  fill: none;
+}
+
+.earrings--default .cls-1,
+.earrings--default .cls-2,
+.earrings--default .cls-3 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 3.17px;
+}
+
+.earrings--default .cls-2 {
+  fill: #fff;
+}
+
+.earrings--default .cls-3 {
+  fill: #058d5a;
+}
+
+.earrings--zombie .cls-2 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 1.82px;
+}
+
+.earrings--yaga .cls-2 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 0.4px;
+}
+
+.earrings--doctor .cls-2 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 1.46px;
+}
+
+.earrings--spider .cls-2 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 1.06px;
+}
+
+.earrings--ghost .cls-2 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 1.74px;
+}
+
+.earrings--bed .cls-2 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 0.91px;
+}
+
+.earrings--wolf .cls-1 {
+  fill: none;
+}
+
+.earrings--wolf .cls-1,
+.earrings--wolf .cls-2,
+.earrings--wolf .cls-3 {
+  stroke: #fa953c;
+  stroke-miterlimit: 10;
+  stroke-width: 1.09px;
+}
+
+.earrings--wolf .cls-2 {
+  fill: #fff;
+}
+
+.earrings--wolf .cls-3 {
+  fill: #058d5a;
 }
 
 .egg .cls-1 {

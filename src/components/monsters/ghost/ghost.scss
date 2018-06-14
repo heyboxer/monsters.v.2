@@ -2,7 +2,7 @@ ghost {
   .ghost {
     overflow: visible;
 
-    & .body {
+    & .body, & .ear {
       fill: #b7e3ee;
     }
 

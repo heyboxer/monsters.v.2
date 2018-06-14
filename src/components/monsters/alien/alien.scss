@@ -4,7 +4,7 @@ alien {
     transform: translateX(-50%);
     overflow: visible;
 
-    & .head--figure {
+    & .head--figure, & .ear {
       fill: #6fc055;
     }
 
