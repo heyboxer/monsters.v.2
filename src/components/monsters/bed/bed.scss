@@ -2,6 +2,7 @@ bed {
   .bed {
     right: 0;
     bottom: 0;
+    overflow: visible;
 
     & .tooth,
     & .nostril {

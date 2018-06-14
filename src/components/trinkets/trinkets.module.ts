@@ -14,6 +14,7 @@ import { BraComponent } from './bra/bra';
 import { WigComponent } from './wig/wig';
 import { LipsComponent } from './lips/lips';
 import { LollipopComponent } from './lollipop/lollipop';
+import { EggComponent } from './egg/egg';
 
 import { TrinketsComponent } from './trinkets.component';
 import { TrinketHostDirective } from './trinket-host.directive';
@@ -21,10 +22,10 @@ import { TrinketRandomPartDirective } from './trinket-random-part.directive';
 import { TrinketUniqPartDirective } from './trinket-uniq-part.directive';
 
 @NgModule({
-	declarations: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, LollipopComponent, TrinketsComponent, TrinketHostDirective, TrinketRandomPartDirective, TrinketUniqPartDirective ],
+	declarations: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, LollipopComponent, EggComponent, TrinketsComponent, TrinketHostDirective, TrinketRandomPartDirective, TrinketUniqPartDirective ],
 	providers: [],
 	imports: [ CommonModule ],
-	entryComponents: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, LollipopComponent, ],
+	entryComponents: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, EggComponent, LollipopComponent, ],
 	exports: [ TrinketsComponent ]
 })
 export class TrinketsModule {}

@@ -68,12 +68,20 @@ export abstract class MonsterModel implements AfterViewInit {
     return parts.find(fn);
   }
 
-  public getContainer(name: string) {
-    return this.getPart(p => p.group === name && p.type === 'container');
+  public getContainer(name: string | { name, mod }, all? :boolean) : Object | Object[]  {
+    const func = name instanceof Object ? ( p =>
+      p.group === (name as { name, mod }).name &&
+      p.type === 'container' &&
+      p.mod === (name as { name, mod }).mod ) :
+      ( p => p.group === name && p.type === 'container' );
+
+    return all? this.getParts(func) : this.getPart(func);
   }
 
-  public getGroup(name: string) {
-    return this.getPart(p => p.name === name && p.type === 'group');
+  public getGroup(name: string | { name }) {
+    const n = name instanceof Object? (name as { name }).name : name;
+
+    return this.getPart(p => p.name === n && p.type === 'group');
   }
 
   public getContainers() {
@@ -82,7 +90,7 @@ export abstract class MonsterModel implements AfterViewInit {
 
   public render(component, name, callback = (instance, ref?) => {}) {
     const obj = this.getContainer(name);
-    const { viewContainerRef: container, element, content  } = obj;
+    const { viewContainerRef: container, element, content  } = (obj as { viewContainerRef, element, content });
 
     this.clear(name);
 
@@ -93,23 +101,26 @@ export abstract class MonsterModel implements AfterViewInit {
 
     const instance = (ref.instance as { node }).node.children.item(0);
 
-    obj.content = ref.instance;
+    (obj as { viewContainerRef, element, content }).content = ref.instance;
 
     return callback(ref.instance, ref);
   }
 
   public clear(name) {
-    const object = this.getContainer(name);
-    const { element } = object;
+    const containers = this.getContainer(name, true);
 
+    return (containers as Object[]).forEach(c => {
+      const { element } = (c as { element });
 
-    const children = Array.from(element.children).forEach(e => {
-      return this.renderer.removeChild(element, e);
+      const children = Array.from(element.children).forEach(e => {
+        return this.renderer.removeChild(element, e);
+      });
+
+      (c as { content }).content = null;
+
+      return this;
     });
 
-    object.content = null;
-
-    return this;
   }
 
   public makeSad() {
@@ -156,6 +167,7 @@ export abstract class MonsterModel implements AfterViewInit {
 
   public clearAll() {
     this.getContainers().forEach(({ group }) => this.clear(group));
+
     this.getParts(p => p.type !== 'container').forEach(({name}) => {
       this.open(name);
     });

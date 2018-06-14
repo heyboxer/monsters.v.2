@@ -25762,6 +25762,7 @@ alien .alien .body--figure {
 bed .bed {
   right: 0;
   bottom: 0;
+  overflow: visible;
 }
 
 bed .bed .tooth,
@@ -25793,6 +25794,7 @@ doctor .doctor {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  overflow: visible;
 }
 
 doctor .doctor .body {
@@ -26097,6 +26099,7 @@ yaga .yaga {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  overflow: visible;
 }
 
 yaga .yaga .body-figure {
@@ -26519,6 +26522,18 @@ yeti .yeti .tooth {
   stroke: #000;
   stroke-linecap: round;
   stroke-miterlimit: 10;
+}
+
+.egg .cls-1 {
+  fill: #fff;
+}
+
+.egg .cls-2 {
+  fill: #ffcc34;
+}
+
+.egg .cls-3 {
+  fill: #e8b394;
 }
 
 .eyes-trinket .cls-1 {
