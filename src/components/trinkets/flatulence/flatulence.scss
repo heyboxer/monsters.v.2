@@ -1,0 +1,27 @@
+.flatulence {
+  &--default {
+    & .cls-1{fill:#cdcdcd;}
+  }
+
+  &--spider {
+    & .cls-1{fill:#fff;}
+  }
+
+  &--skeleton {
+    & .cls-1{opacity:0.79;}
+    & .cls-2{fill:#d0da3e;stroke:#d0da3e;stroke-miterlimit:10;stroke-width:1.08px;}
+  }
+  &--yeti {
+    & .cls-1,
+    & .cls-2,
+    & .cls-3{fill:#d0da3e;stroke:#d0da3e;stroke-miterlimit:10;}
+    & .cls-1{stroke-width:1.08px;}.cls-2{stroke-width:0.58px;}
+    & .cls-3{stroke-width:0.45px;}
+  }
+  &--wolf {
+    & .cls-1,
+    & .cls-3{opacity:0.64;}
+    & .cls-2,
+    & .cls-3{fill:#fff;}
+  }
+}

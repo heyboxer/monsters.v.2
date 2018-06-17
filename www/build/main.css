@@ -26647,6 +26647,55 @@ yeti .yeti .tooth {
   fill: #b4b4b5;
 }
 
+.flatulence--default .cls-1 {
+  fill: #cdcdcd;
+}
+
+.flatulence--spider .cls-1 {
+  fill: #fff;
+}
+
+.flatulence--skeleton .cls-1 {
+  opacity: 0.79;
+}
+
+.flatulence--skeleton .cls-2 {
+  fill: #d0da3e;
+  stroke: #d0da3e;
+  stroke-miterlimit: 10;
+  stroke-width: 1.08px;
+}
+
+.flatulence--yeti .cls-1,
+.flatulence--yeti .cls-2,
+.flatulence--yeti .cls-3 {
+  fill: #d0da3e;
+  stroke: #d0da3e;
+  stroke-miterlimit: 10;
+}
+
+.flatulence--yeti .cls-1 {
+  stroke-width: 1.08px;
+}
+
+.flatulence--yeti .cls-2 {
+  stroke-width: 0.58px;
+}
+
+.flatulence--yeti .cls-3 {
+  stroke-width: 0.45px;
+}
+
+.flatulence--wolf .cls-1,
+.flatulence--wolf .cls-3 {
+  opacity: 0.64;
+}
+
+.flatulence--wolf .cls-2,
+.flatulence--wolf .cls-3 {
+  fill: #fff;
+}
+
 .glass .cls-1 {
   fill: #c39dc8;
 }

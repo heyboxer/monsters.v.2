@@ -17,7 +17,7 @@ webpackJsonp([2],[
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(185);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -197,69 +197,14 @@ var MonsterModel = /** @class */ (function () {
 /* 16 */,
 /* 17 */,
 /* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(304);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var ElementComponentModel = /** @class */ (function () {
-    function ElementComponentModel(name, node) {
-        this.name = name;
-        this.node = node;
-        this.repo = __WEBPACK_IMPORTED_MODULE_1__element_repository__["b" /* default */];
-    }
-    ;
-    ElementComponentModel.prototype.ngOnInit = function () {
-        this.element = new __WEBPACK_IMPORTED_MODULE_2__element_model__["a" /* ElementModel */](this.name, this.node);
-        this.add(this.element);
-    };
-    ;
-    ElementComponentModel.prototype.ngOnDestroy = function () {
-        this.repo.removeById(this.element.getId());
-    };
-    ;
-    ElementComponentModel.prototype.add = function (element) {
-        return this.repo.add(element);
-    };
-    ElementComponentModel = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
-        __metadata("design:paramtypes", [String, HTMLElement])
-    ], ElementComponentModel);
-    return ElementComponentModel;
-}());
-
-//# sourceMappingURL=element-component.model.js.map
-
-/***/ }),
-/* 26 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketUniqModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_part_directive__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_element_component_model__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_part_directive__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_element_component_model__ = __webpack_require__(26);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -327,6 +272,61 @@ var TrinketUniqModel = /** @class */ (function (_super) {
 }(__WEBPACK_IMPORTED_MODULE_2__model_element_component_model__["a" /* ElementComponentModel */]));
 
 //# sourceMappingURL=trinket-uniq.model.js.map
+
+/***/ }),
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(299);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ElementComponentModel = /** @class */ (function () {
+    function ElementComponentModel(name, node) {
+        this.name = name;
+        this.node = node;
+        this.repo = __WEBPACK_IMPORTED_MODULE_1__element_repository__["b" /* default */];
+    }
+    ;
+    ElementComponentModel.prototype.ngOnInit = function () {
+        this.element = new __WEBPACK_IMPORTED_MODULE_2__element_model__["a" /* ElementModel */](this.name, this.node);
+        this.add(this.element);
+    };
+    ;
+    ElementComponentModel.prototype.ngOnDestroy = function () {
+        this.repo.removeById(this.element.getId());
+    };
+    ;
+    ElementComponentModel.prototype.add = function (element) {
+        return this.repo.add(element);
+    };
+    ElementComponentModel = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
+        __metadata("design:paramtypes", [String, HTMLElement])
+    ], ElementComponentModel);
+    return ElementComponentModel;
+}());
+
+//# sourceMappingURL=element-component.model.js.map
 
 /***/ }),
 /* 27 */,
@@ -408,53 +408,14 @@ var TrinketUniqModel = /** @class */ (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(155);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    HomePage.prototype.select = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__select_select__["a" /* SelectPage */]);
-    };
-    HomePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/'<!--\n  Generated template for the HomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content class="container" padding fixed no-bounce>\n  <div class="image">\n    <img class="btn-play" (click)="select()" src="assets/imgs/home-page_play.svg" alt="hit the btn to play!" />\n  </div>\n  <img src="assets/imgs/home-page_logo.svg" alt="logotype" class="logo">\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
-    ], HomePage);
-    return HomePage;
-}());
-
-//# sourceMappingURL=home.js.map
-
-/***/ }),
-/* 103 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(306);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(199);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -525,14 +486,14 @@ var GamePage = /** @class */ (function (_super) {
         this.logic.setFns('onItemClick', function (items, item, ev) {
             var _a = item.meta, after = _a.after, multiple = _a.multiple, onScreen = _a.onScreen, random = _a.random;
             if (item.isCopy()) {
-                var parent = item.isCopy();
+                var parent_1 = item.isCopy();
                 if (!onScreen) {
                     _this.monster.clear(item.meta.getContainer(_this.monster.name));
                 }
                 else {
                     _this.monsterComponent.remove(item.instance);
                 }
-                var holderInstance_1 = _this.holder.loadComponent(parent.component);
+                var holderInstance_1 = _this.holder.loadComponent(parent_1.component);
                 if (random) {
                     holderInstance_1.hide(item.randomArr);
                 }
@@ -583,7 +544,7 @@ var GamePage = /** @class */ (function (_super) {
                 var contentElement = content.node.children.item(0);
                 var active = items.findActiveElementByInstance(contentElement);
                 var after = active.meta.after;
-                var parent = active.isCopy();
+                var parent_2 = active.isCopy();
                 // parent.activate();
                 // this.renderer.removeClass(parent.instance, 'blocked');
                 items.removeActiveElement(active);
@@ -651,28 +612,71 @@ var GamePage = /** @class */ (function (_super) {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */])
     ], GamePage.prototype, "trinkets", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]),
-        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]) === "function" && _b || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */])
     ], GamePage.prototype, "monsterComponent", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]),
-        __metadata("design:type", typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]) === "function" && _c || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */])
     ], GamePage.prototype, "holder", void 0);
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-game',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <item-holder></item-holder>\n    <div id="nb-target" class="screen zombie__screen">\n      <div id="on-screen">\n        <monster [monsterId]="monsterId"></monster>\n      </div>\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <trinkets></trinkets>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/,
             providers: [],
         }),
-        __metadata("design:paramtypes", [typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _j || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
     ], GamePage);
     return GamePage;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 }(__WEBPACK_IMPORTED_MODULE_4__components_game_game_service__["a" /* Game */]));
 
 //# sourceMappingURL=game.js.map
+
+/***/ }),
+/* 103 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(201);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var HomePage = /** @class */ (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    HomePage.prototype.select = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__select_select__["a" /* SelectPage */]);
+    };
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/'<!--\n  Generated template for the HomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content class="container" padding fixed no-bounce>\n  <div class="image">\n    <img class="btn-play" (click)="select()" src="assets/imgs/home-page_play.svg" alt="hit the btn to play!" />\n  </div>\n  <img src="assets/imgs/home-page_logo.svg" alt="logotype" class="logo">\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+    ], HomePage);
+    return HomePage;
+}());
+
+//# sourceMappingURL=home.js.map
 
 /***/ }),
 /* 104 */,
@@ -745,11 +749,11 @@ webpackEmptyAsyncContext.id = 113;
 
 var map = {
 	"../pages/game/game.module": [
-		347,
+		348,
 		1
 	],
 	"../pages/home/home.module": [
-		346,
+		349,
 		0
 	]
 };
@@ -772,13 +776,1013 @@ module.exports = webpackAsyncContext;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(298);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TrinketsComponent = /** @class */ (function () {
+    function TrinketsComponent(componentFactoryResolver, trinketsService) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.trinketsService = trinketsService;
+    }
+    ;
+    TrinketsComponent.prototype.ngOnInit = function () {
+        this.trinkets = this.trinketsService.getTrinkets();
+    };
+    TrinketsComponent.prototype.ngAfterViewInit = function () {
+        this.loadTrinkets();
+    };
+    TrinketsComponent.prototype.loadTrinkets = function () {
+        var _this = this;
+        this.instances = this.hosts.map(function (_a) {
+            var id = _a.id, viewContainerRef = _a.viewContainerRef;
+            var trinket = _this.trinkets.find(function (e) { return e.id == id; });
+            var componentFactory = _this.componentFactoryResolver.resolveComponentFactory(trinket.component);
+            viewContainerRef.clear();
+            var instance = viewContainerRef.createComponent(componentFactory).instance;
+            return __assign({}, instance, { component: trinket.component, meta: trinket.meta });
+        });
+        return;
+    };
+    TrinketsComponent.prototype.getInstances = function () {
+        return this.instances;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__["a" /* TrinketHostDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
+    ], TrinketsComponent.prototype, "hosts", void 0);
+    TrinketsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'trinkets',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/'<ul class="panel">\n  <li *ngFor="let trinket of trinkets" class="panel__item">\n    <ng-template trinket-host trinket-id="{{ trinket.id }}"></ng-template>\n  </li>\n  <li class="panel__item panel__item--fraud"></li>\n</ul>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/,
+            providers: [__WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]],
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]])
+    ], TrinketsComponent);
+    return TrinketsComponent;
+}());
+
+//# sourceMappingURL=trinkets.component.js.map
+
+/***/ }),
+/* 156 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketHostDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TrinketHostDirective = /** @class */ (function () {
+    function TrinketHostDirective(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('trinket-id'),
+        __metadata("design:type", String)
+    ], TrinketHostDirective.prototype, "id", void 0);
+    TrinketHostDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[trinket-host]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], TrinketHostDirective);
+    return TrinketHostDirective;
+}());
+
+//# sourceMappingURL=trinket-host.directive.js.map
+
+/***/ }),
+/* 157 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlassComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(26);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var GlassComponent = /** @class */ (function (_super) {
+    __extends(GlassComponent, _super);
+    function GlassComponent(element) {
+        return _super.call(this, 'glass', element.nativeElement) || this;
+    }
+    GlassComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'glass',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/'<svg width="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 301.28 112.68" class="glass">\n  <path class="cls-1" d="M96.84,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.17,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z"/>\n  <path class="cls-1" d="M204.44,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.16,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z"/>\n  <path class="cls-2" d="M137.65,49.83a18.36,18.36,0,0,1,26,0"/>\n  <path class="cls-3" d="M6.16,22.4a11.53,11.53,0,0,1,-0.66,-16.24h0a11.53,11.53,0,0,1,16.24,-0.66l34.09,31.41"/>\n  <path class="cls-3" d="M295.12,22.4a11.53,11.53,0,0,0,0.66,-16.24h0a11.53,11.53,0,0,0,-16.24,-0.66l-34.09,31.41"/>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], GlassComponent);
+    return GlassComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=glass.js.map
+
+/***/ }),
+/* 158 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementRepository; });
+// import { Injectable } from "@angular/core";
+// @Injectable()
+var ElementRepository = /** @class */ (function () {
+    function ElementRepository() {
+        this.elements = [];
+    }
+    ;
+    ElementRepository.prototype.add = function (element) {
+        var arr = this.elements.slice();
+        this.elements = arr.concat([element]);
+        return this;
+    };
+    ElementRepository.prototype.removeById = function (id) {
+        var arr = this.elements.slice().filter(function (e) { return e.getId() == id; });
+        this.elements = arr;
+        return this;
+    };
+    return ElementRepository;
+}());
+
+/* harmony default export */ __webpack_exports__["b"] = (new ElementRepository());
+//# sourceMappingURL=element.repository.js.map
+
+/***/ }),
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EyesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(26);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EyesComponent = /** @class */ (function (_super) {
+    __extends(EyesComponent, _super);
+    function EyesComponent(element) {
+        return _super.call(this, 'eyes', element.nativeElement) || this;
+    }
+    EyesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'eyes',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/eyes/eyes.html"*/'<svg width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.99 42.03" class="eyes-trinket">\n         <path class="cls-1" d="M0.76,21c16.86,28,44.16,28,61,0c-16.85,-28,-44.14,-28,-61,0z"></path>\n         <path d="M0.18,7a14.15,14.15,0,0,0,1.16,3.1a10.71,10.71,0,0,0,1.86,2.52a10.75,10.75,0,0,0,2.52,1.86a14.25,14.25,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.03,-6.65z"></path>\n         <path d="M4.09,5.05a14.15,14.15,0,0,0,1.16,3.1a10.71,10.71,0,0,0,1.86,2.52a10.76,10.76,0,0,0,2.52,1.86a14.25,14.25,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.03,-6.65z"></path>\n         <path d="M8,3.59a14.15,14.15,0,0,0,1.16,3.1a10.69,10.69,0,0,0,1.84,2.52a10.77,10.77,0,0,0,2.52,1.86a14.27,14.27,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.01,-6.65z"></path>\n         <path d="M11.91,1.6a14.15,14.15,0,0,0,1.16,3.1a10.69,10.69,0,0,0,1.86,2.52a10.77,10.77,0,0,0,2.52,1.86a14.27,14.27,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.03,-6.65z"></path>\n         <path d="M15.82,0.67a14.15,14.15,0,0,0,1.18,3.09a10.7,10.7,0,0,0,1.86,2.52a10.74,10.74,0,0,0,2.52,1.86a14.25,14.25,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.05,-6.64z"></path>\n         <path d="M19.72,0a14.15,14.15,0,0,0,1.16,3.1a10.7,10.7,0,0,0,1.86,2.52a10.77,10.77,0,0,0,2.52,1.86a14.27,14.27,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.03,-6.65z"></path>\n         <path class="cls-2" d="M0.76,21a43.13,43.13,0,0,0,61,0a43.13,43.13,0,0,0,-61,0z"></path>\n         <path class="cls-3" d="M41.26,32.5a15.21,15.21,0,0,0,0,-23a43.31,43.31,0,0,0,-20,0a15.21,15.21,0,0,0,0,23a43.31,43.31,0,0,0,20,0z"></path>\n         <circle cx="31.27" cy="21.02" r="5.12"></circle>\n         <path class="cls-1" d="M131.24,21c-16.86,28,-44.16,28,-61,0c16.84,-28,44.13,-28,61,0z"></path>\n         <path d="M131.82,7a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.25,14.25,0,0,0,3.1,-1.17a10.75,10.75,0,0,0,2.52,-1.86a10.71,10.71,0,0,0,1.86,-2.52a14.15,14.15,0,0,0,1.13,-3.06z"></path>\n         <path d="M127.91,5.05a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.25,14.25,0,0,0,3.1,-1.17a10.76,10.76,0,0,0,2.52,-1.86a10.72,10.72,0,0,0,1.86,-2.52a14.15,14.15,0,0,0,1.13,-3.06z"></path>\n         <path d="M124,3.59a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.27,14.27,0,0,0,3.1,-1.17a10.77,10.77,0,0,0,2.51,-1.82a10.69,10.69,0,0,0,1.86,-2.52a14.16,14.16,0,0,0,1.14,-3.1z"></path>\n         <path d="M120.09,1.6a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.27,14.27,0,0,0,3.1,-1.17a10.77,10.77,0,0,0,2.52,-1.86a10.69,10.69,0,0,0,1.86,-2.52a14.15,14.15,0,0,0,1.13,-3.06z"></path>\n         <path d="M116.18,0.67a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.25,14.25,0,0,0,3.1,-1.17a10.74,10.74,0,0,0,2.52,-1.86a10.7,10.7,0,0,0,1.81,-2.49a14.15,14.15,0,0,0,1.18,-3.09z"></path>\n         <path d="M112.27,0a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.27,14.27,0,0,0,3.1,-1.17a10.77,10.77,0,0,0,2.52,-1.86a10.7,10.7,0,0,0,1.82,-2.48a14.15,14.15,0,0,0,1.17,-3.1z"></path>\n         <path class="cls-2" d="M131.24,21a43.13,43.13,0,0,1,-61,0a43.13,43.13,0,0,1,61,0z"></path>\n         <path class="cls-3" d="M90.73,32.5a15.21,15.21,0,0,1,0,-23a43.31,43.31,0,0,1,20,0a15.21,15.21,0,0,1,0,23a43.31,43.31,0,0,1,-20,0z"></path>\n         <circle cx="100.73" cy="21.02" r="5.12"></circle>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/eyes/eyes.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], EyesComponent);
+    return EyesComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=eyes.js.map
+
+/***/ }),
+/* 163 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HoodComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HoodComponent = /** @class */ (function (_super) {
+    __extends(HoodComponent, _super);
+    function HoodComponent(element) {
+        return _super.call(this, 'hood', element.nativeElement) || this;
+    }
+    HoodComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'hood',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/hood/hood.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="75" class="hood--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.1 289.03">\n    <polygon class="cls-1" points="84.05 72.85 126.08 180.94 168.1 289.03 84.05 289.03 0 289.03 42.02 180.94 84.05 72.85"/>\n    <path class="cls-1" d="M85.93,78.09l-3.82-1.37C83.81,72,86.89,70.4,89.62,69c2.46-1.27,4.4-2.28,5.56-5.5s.3-5.23-.78-7.78c-1.2-2.82-2.56-6-.86-10.74s4.78-6.32,7.51-7.73c2.46-1.27,4.4-2.28,5.56-5.5s.3-5.23-.78-7.78c-1.2-2.82-2.56-6-.86-10.74s4.78-6.32,7.51-7.73c2.46-1.27,4.4-2.28,5.56-5.5l3.82,1.37c-1.7,4.72-4.78,6.32-7.51,7.73-2.46,1.27-4.4,2.28-5.56,5.5s-.3,5.23.78,7.78c1.2,2.82,2.56,6,.86,10.74s-4.78,6.32-7.51,7.73c-2.46,1.27-4.4,2.28-5.56,5.5s-.3,5.23.78,7.78c1.2,2.82,2.56,6,.86,10.74s-4.78,6.32-7.51,7.73C89,73.86,87.09,74.87,85.93,78.09Z"/>\n    <path class="cls-1" d="M84.81,81l-3-2.69c3.33-3.75,6.79-4.09,9.84-4.39,2.75-.27,4.93-.48,7.2-3S101,66.14,101,63.37c-.07-3.07-.14-6.54,3.18-10.29S110.95,49,114,48.69c2.75-.27,4.93-.48,7.2-3s2.22-4.75,2.16-7.51c-.07-3.07-.14-6.54,3.18-10.29s6.79-4.09,9.84-4.39c2.75-.27,4.93-.48,7.2-3l3,2.69c-3.33,3.75-6.79,4.09-9.84,4.39-2.75.27-4.93.48-7.2,3s-2.22,4.75-2.16,7.51c.07,3.07.14,6.54-3.18,10.29s-6.79,4.09-9.84,4.39c-2.75.27-4.93.48-7.2,3S105,60.52,105,63.29c.07,3.07.14,6.54-3.18,10.29S95.06,77.67,92,78C89.26,78.24,87.08,78.45,84.81,81Z"/>\n    <path class="cls-1" d="M85.35,79.79l-3.49-2.08c2.56-4.31,5.9-5.29,8.84-6.16,2.65-.78,4.75-1.4,6.5-4.34s1.29-5.08.71-7.78c-.64-3-1.37-6.4,1.2-10.71s5.9-5.29,8.84-6.16c2.65-.78,4.75-1.4,6.5-4.34s1.29-5.08.71-7.79c-.64-3-1.37-6.4,1.2-10.71s5.9-5.29,8.84-6.16c2.65-.78,4.75-1.4,6.5-4.34l3.49,2.08c-2.56,4.31-5.9,5.29-8.84,6.16-2.65.78-4.75,1.4-6.5,4.34s-1.29,5.08-.71,7.79c.64,3,1.37,6.4-1.2,10.71s-5.9,5.29-8.84,6.16c-2.65.78-4.75,1.4-6.5,4.34s-1.29,5.08-.71,7.78c.64,3,1.37,6.4-1.2,10.71s-5.9,5.29-8.84,6.16C89.19,76.23,87.1,76.85,85.35,79.79Z"/>\n    <circle class="cls-2" cx="83.89" cy="163.19" r="15.22"/>\n    <circle class="cls-3" cx="61.58" cy="220.03" r="22"/>\n    <circle class="cls-4" cx="115.7" cy="253.17" r="22"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="hood--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.8 98.59">\n    <polygon class="cls-1" points="6.8 26.09 39.3 45.48 71.8 64.86 50.17 81.72 28.54 98.58 17.67 62.34 6.8 26.09"/>\n    <path class="cls-1" d="M8.34,27.07l-1.26.41A4.29,4.29,0,0,1,7.46,24,3,3,0,0,0,6,19.61a4.26,4.26,0,0,1-2-6.09A3,3,0,0,0,4.36,11,3,3,0,0,0,2.6,9.15a4.26,4.26,0,0,1-2-6.09A3,3,0,0,0,.93.53L2.19.12a4.29,4.29,0,0,1-.38,3.49,3,3,0,0,0-.33,2.53A3,3,0,0,0,3.24,8a4.26,4.26,0,0,1,2,6.09,3,3,0,0,0,1.43,4.37,4.26,4.26,0,0,1,2,6.09A3,3,0,0,0,8.34,27.07Z"/>\n    <path class="cls-1" d="M8.64,28,7.31,28A4.29,4.29,0,0,1,9,24.86a3,3,0,0,0,.29-4.59,4.26,4.26,0,0,1,.41-6.39A3,3,0,0,0,10,9.28a4.26,4.26,0,0,1,.41-6.39A3,3,0,0,0,11.6.66l1.32.08a4.29,4.29,0,0,1-1.65,3.1A3,3,0,0,0,10,6.07a3,3,0,0,0,1,2.37,4.26,4.26,0,0,1-.41,6.39,3,3,0,0,0-.29,4.59,4.26,4.26,0,0,1-.41,6.39A3,3,0,0,0,8.64,28Z"/>\n    <path class="cls-1" d="M8.53,27.62l-1.31.17a4.29,4.29,0,0,1,1-3.36,3,3,0,0,0-.58-4.57,4.26,4.26,0,0,1-.8-6.35A3,3,0,0,0,6.3,8.94a4.26,4.26,0,0,1-.8-6.35A3,3,0,0,0,6.3.17L7.62,0a4.29,4.29,0,0,1-1,3.36,3,3,0,0,0-.8,2.42A3,3,0,0,0,7.15,7.93,4.26,4.26,0,0,1,8,14.28a3,3,0,0,0,.58,4.57,4.26,4.26,0,0,1,.8,6.35A3,3,0,0,0,8.53,27.62Z"/>\n    <circle class="cls-2" cx="24.88" cy="49.38" r="4.97" transform="translate(-25.1 25.73) rotate(-37.94)"/>\n    <circle class="cls-3" cx="30.55" cy="68.48" r="7.18" transform="translate(-35.65 33.25) rotate(-37.94)"/>\n    <circle class="cls-4" cx="51.12" cy="66.15" r="7.18" transform="translate(-29.87 45.41) rotate(-37.94)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="hood--color--pink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.45 61.23">\n    <polygon class="cls-1" points="46.63 8.77 39.04 35 31.45 61.23 15.72 49.22 0 37.2 23.32 22.98 46.63 8.77"/>\n    <path class="cls-1" d="M46.24,10l-.52-.8a3.09,3.09,0,0,1,2.51-.37A2.14,2.14,0,0,0,51,7a3.07,3.07,0,0,1,3.88-2.5,2.19,2.19,0,0,0,1.83-.23,2.19,2.19,0,0,0,1-1.57A3.07,3.07,0,0,1,61.58.23,2.19,2.19,0,0,0,63.41,0l.52.8a3.1,3.1,0,0,1-2.51.37A2.14,2.14,0,0,0,58.62,3a3.07,3.07,0,0,1-3.88,2.5,2.14,2.14,0,0,0-2.79,1.8,3.07,3.07,0,0,1-3.88,2.5A2.19,2.19,0,0,0,46.24,10Z"/>\n    <path class="cls-1" d="M45.61,10.41l-.18-.94a3.1,3.1,0,0,1,2.47.59,2.14,2.14,0,0,0,3.26-.64,3.07,3.07,0,0,1,4.54-.88A2.14,2.14,0,0,0,59,7.9,3.07,3.07,0,0,1,63.49,7a2.19,2.19,0,0,0,1.78.46l.18.94A3.1,3.1,0,0,1,63,7.83a2.14,2.14,0,0,0-3.26.64,3.07,3.07,0,0,1-4.54.88,2.14,2.14,0,0,0-3.26.64,3.07,3.07,0,0,1-4.54.88A2.19,2.19,0,0,0,45.61,10.41Z"/>\n    <path class="cls-1" d="M45.88,10.26l-.36-.89a3.1,3.1,0,0,1,2.53.11,2.14,2.14,0,0,0,3.08-1.24,3.07,3.07,0,0,1,4.29-1.72,2.14,2.14,0,0,0,3.08-1.24,3.07,3.07,0,0,1,4.29-1.72,2.19,2.19,0,0,0,1.84.12l.36.89a3.1,3.1,0,0,1-2.53-.11A2.14,2.14,0,0,0,59.38,5.7a3.07,3.07,0,0,1-4.29,1.72A2.14,2.14,0,0,0,52,8.65a3.07,3.07,0,0,1-4.29,1.72A2.19,2.19,0,0,0,45.88,10.26Z"/>\n    <circle class="cls-2" cx="33.69" cy="25.65" r="3.58" transform="translate(-7.15 36.84) rotate(-52.61)"/>\n    <circle class="cls-3" cx="21.39" cy="33.09" r="5.18" transform="translate(-17.89 29.99) rotate(-52.61)"/>\n    <circle class="cls-4" cx="26.77" cy="47.03" r="5.18" transform="translate(-26.85 39.74) rotate(-52.61)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="hood--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.88 57.3">\n    <polygon class="cls-1" points="20.29 5.8 35.07 31.55 49.86 57.3 63.37 40.55 76.89 23.8 48.59 14.8 20.29 5.8"/>\n    <path class="cls-1" d="M20.28,6.52l.32-.94A3.21,3.21,0,0,0,18,5.82a2.22,2.22,0,0,1-3.26-1.13,3.19,3.19,0,0,0-4.54-1.57,2.27,2.27,0,0,1-1.9.21A2.27,2.27,0,0,1,6.92,2,3.19,3.19,0,0,0,2.38.43,2.27,2.27,0,0,1,.48.64l-.32.94a3.22,3.22,0,0,0,2.62-.24,2.27,2.27,0,0,1,1.9-.21A2.27,2.27,0,0,1,6,2.46,3.19,3.19,0,0,0,10.58,4a2.22,2.22,0,0,1,3.26,1.13,3.19,3.19,0,0,0,4.54,1.57A2.27,2.27,0,0,1,20.28,6.52Z"/>\n    <path class="cls-1" d="M21,6.75l0-1A3.22,3.22,0,0,0,18.61,7a2.22,2.22,0,0,1-3.45.16,3.19,3.19,0,0,0-4.79.22,2.22,2.22,0,0,1-3.45.16,3.19,3.19,0,0,0-4.8.22,2.27,2.27,0,0,1-1.69.9l0,1a3.22,3.22,0,0,0,2.35-1.2,2.27,2.27,0,0,1,1.69-.9,2.27,2.27,0,0,1,1.76.74A3.19,3.19,0,0,0,11.08,8a2.22,2.22,0,0,1,3.45-.16,3.19,3.19,0,0,0,4.79-.22A2.27,2.27,0,0,1,21,6.75Z"/>\n    <path class="cls-1" d="M20.69,6.67l.14-1a3.22,3.22,0,0,0-2.53.74,2.22,2.22,0,0,1-3.42-.49,3.19,3.19,0,0,0-4.75-.68,2.22,2.22,0,0,1-3.42-.49A3.19,3.19,0,0,0,2,4.09a2.27,2.27,0,0,1-1.82.57L0,5.64a3.22,3.22,0,0,0,2.53-.74,2.27,2.27,0,0,1,1.82-.57A2.27,2.27,0,0,1,5.95,5.39a3.19,3.19,0,0,0,4.75.68,2.22,2.22,0,0,1,3.42.49,3.19,3.19,0,0,0,4.75.68A2.27,2.27,0,0,1,20.69,6.67Z"/>\n    <circle class="cls-2" cx="36.79" cy="19.2" r="3.72" transform="translate(-1.25 35.79) rotate(-51.12)"/>\n    <circle class="cls-3" cx="51.04" cy="23.68" r="5.38" transform="translate(0.57 48.54) rotate(-51.12)"/>\n    <circle class="cls-4" cx="51.14" cy="41.1" r="5.63" transform="translate(-12.95 55.11) rotate(-51.12)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="hood--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.88 57.3">\n    <polygon class="cls-1" points="20.29 5.8 35.07 31.55 49.86 57.3 63.37 40.55 76.89 23.8 48.59 14.8 20.29 5.8"/>\n    <path class="cls-1" d="M20.28,6.52l.32-.94A3.21,3.21,0,0,0,18,5.82a2.22,2.22,0,0,1-3.26-1.13,3.19,3.19,0,0,0-4.54-1.57,2.27,2.27,0,0,1-1.9.21A2.27,2.27,0,0,1,6.92,2,3.19,3.19,0,0,0,2.38.43,2.27,2.27,0,0,1,.48.64l-.32.94a3.22,3.22,0,0,0,2.62-.24,2.27,2.27,0,0,1,1.9-.21A2.27,2.27,0,0,1,6,2.46,3.19,3.19,0,0,0,10.58,4a2.22,2.22,0,0,1,3.26,1.13,3.19,3.19,0,0,0,4.54,1.57A2.27,2.27,0,0,1,20.28,6.52Z"/>\n    <path class="cls-1" d="M21,6.75l0-1A3.22,3.22,0,0,0,18.61,7a2.22,2.22,0,0,1-3.45.16,3.19,3.19,0,0,0-4.79.22,2.22,2.22,0,0,1-3.45.16,3.19,3.19,0,0,0-4.8.22,2.27,2.27,0,0,1-1.69.9l0,1a3.22,3.22,0,0,0,2.35-1.2,2.27,2.27,0,0,1,1.69-.9,2.27,2.27,0,0,1,1.76.74A3.19,3.19,0,0,0,11.08,8a2.22,2.22,0,0,1,3.45-.16,3.19,3.19,0,0,0,4.79-.22A2.27,2.27,0,0,1,21,6.75Z"/>\n    <path class="cls-1" d="M20.69,6.67l.14-1a3.22,3.22,0,0,0-2.53.74,2.22,2.22,0,0,1-3.42-.49,3.19,3.19,0,0,0-4.75-.68,2.22,2.22,0,0,1-3.42-.49A3.19,3.19,0,0,0,2,4.09a2.27,2.27,0,0,1-1.82.57L0,5.64a3.22,3.22,0,0,0,2.53-.74,2.27,2.27,0,0,1,1.82-.57A2.27,2.27,0,0,1,5.95,5.39a3.19,3.19,0,0,0,4.75.68,2.22,2.22,0,0,1,3.42.49,3.19,3.19,0,0,0,4.75.68A2.27,2.27,0,0,1,20.69,6.67Z"/>\n    <circle class="cls-2" cx="36.79" cy="19.2" r="3.72" transform="translate(-1.25 35.79) rotate(-51.12)"/>\n    <circle class="cls-3" cx="51.04" cy="23.68" r="5.38" transform="translate(0.57 48.54) rotate(-51.12)"/>\n    <circle class="cls-4" cx="51.14" cy="41.1" r="5.63" transform="translate(-12.95 55.11) rotate(-51.12)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="hood--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.15 64.75">\n    <polygon class="cls-1" points="4.47 17.14 25.81 29.87 47.15 42.6 32.95 53.67 18.75 64.75 11.61 40.94 4.47 17.14"/>\n    <path class="cls-1" d="M5.48,17.78,4.65,18a2.82,2.82,0,0,1,.25-2.3A1.94,1.94,0,0,0,4,12.88a2.8,2.8,0,0,1-1.31-4,2,2,0,0,0,.21-1.66A2,2,0,0,0,1.71,6,2.8,2.8,0,0,1,.4,2,2,2,0,0,0,.61.35L1.44.08a2.82,2.82,0,0,1-.25,2.3A2,2,0,0,0,1,4,2,2,0,0,0,2.13,5.25a2.8,2.8,0,0,1,1.31,4,1.94,1.94,0,0,0,.94,2.87,2.8,2.8,0,0,1,1.31,4A2,2,0,0,0,5.48,17.78Z"/>\n    <path class="cls-1" d="M5.67,18.42l-.87-.06a2.82,2.82,0,0,1,1.08-2,1.94,1.94,0,0,0,.19-3,2.8,2.8,0,0,1,.27-4.2,1.94,1.94,0,0,0,.19-3,2.8,2.8,0,0,1,.27-4.2A2,2,0,0,0,7.62.43l.87.06a2.82,2.82,0,0,1-1.08,2A2,2,0,0,0,6.59,4a2,2,0,0,0,.62,1.55,2.8,2.8,0,0,1-.27,4.2,1.94,1.94,0,0,0-.19,3A2.8,2.8,0,0,1,6.49,17,2,2,0,0,0,5.67,18.42Z"/>\n    <path class="cls-1" d="M5.6,18.14l-.86.11A2.82,2.82,0,0,1,5.42,16,1.94,1.94,0,0,0,5,13a2.8,2.8,0,0,1-.53-4.17,1.94,1.94,0,0,0-.38-3A2.8,2.8,0,0,1,3.61,1.7,2,2,0,0,0,4.14.11L5,0a2.82,2.82,0,0,1-.68,2.21A2,2,0,0,0,3.79,3.8a2,2,0,0,0,.9,1.41,2.8,2.8,0,0,1,.53,4.17,1.94,1.94,0,0,0,.38,3,2.8,2.8,0,0,1,.53,4.17A2,2,0,0,0,5.6,18.14Z"/>\n    <circle class="cls-2" cx="16.34" cy="32.43" r="3.26" transform="translate(-16.48 16.9) rotate(-37.94)"/>\n    <circle class="cls-3" cx="20.06" cy="44.97" r="4.71" transform="translate(-23.41 21.84) rotate(-37.94)"/>\n    <circle class="cls-4" cx="33.57" cy="43.44" r="4.71" transform="translate(-19.62 29.82) rotate(-37.94)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="hood--color--darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.41 85.19">\n    <polygon class="cls-1" points="57.63 13.88 51.22 49.53 44.8 85.19 22.4 71.49 0 57.79 28.82 35.83 57.63 13.88"/>\n    <path class="cls-1" d="M57.28,15.58l-.79-1a4.11,4.11,0,0,1,3.26-.84A2.83,2.83,0,0,0,63.18,11,4.08,4.08,0,0,1,68,7.16,2.84,2.84,0,0,0,71.4,4.4,4.08,4.08,0,0,1,76.18.56,2.9,2.9,0,0,0,78.56,0l.79,1a4.11,4.11,0,0,1-3.26.84,2.84,2.84,0,0,0-3.44,2.76,4.08,4.08,0,0,1-4.78,3.84,2.83,2.83,0,0,0-3.44,2.76A4.08,4.08,0,0,1,59.65,15,2.9,2.9,0,0,0,57.28,15.58Z"/>\n    <path class="cls-1" d="M56.5,16.18,56.13,15a4.11,4.11,0,0,1,3.34.43,2.83,2.83,0,0,0,4.22-1.29,4.08,4.08,0,0,1,5.86-1.79A2.84,2.84,0,0,0,73.76,11a4.08,4.08,0,0,1,5.86-1.79A2.9,2.9,0,0,0,82,9.61l.37,1.21a4.11,4.11,0,0,1-3.34-.43,2.84,2.84,0,0,0-4.22,1.29A4.08,4.08,0,0,1,69,13.46a2.83,2.83,0,0,0-4.22,1.29,4.08,4.08,0,0,1-5.86,1.79A2.9,2.9,0,0,0,56.5,16.18Z"/>\n    <path class="cls-1" d="M56.85,15.94l-.59-1.12a4.11,4.11,0,0,1,3.36-.2,2.84,2.84,0,0,0,3.9-2.06A4.08,4.08,0,0,1,68.94,9.7a2.83,2.83,0,0,0,3.9-2.06,4.08,4.08,0,0,1,5.42-2.86,2.9,2.9,0,0,0,2.44-.1l.59,1.12a4.11,4.11,0,0,1-3.36.2A2.84,2.84,0,0,0,74,8.07a4.08,4.08,0,0,1-5.42,2.86A2.83,2.83,0,0,0,64.71,13a4.08,4.08,0,0,1-5.42,2.86A2.9,2.9,0,0,0,56.85,15.94Z"/>\n    <circle class="cls-2" cx="42.86" cy="37.93" r="4.75" transform="translate(-11.86 54.71) rotate(-58.55)"/>\n    <circle class="cls-3" cx="27.66" cy="49.44" r="6.87" transform="translate(-28.95 47.24) rotate(-58.55)"/>\n    <circle class="cls-4" cx="36.68" cy="67.09" r="6.87" transform="translate(-39.69 63.37) rotate(-58.55)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="hood--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.67 58.78">\n    <polygon class="cls-1" points="92.04 14.78 90.77 36.59 89.49 58.41 75.09 51.82 60.69 45.23 76.37 30 92.04 14.78"/>\n    <path class="cls-1" d="M92,15.82l-.55-.53a2.48,2.48,0,0,1,1.89-.74,1.71,1.71,0,0,0,1.86-1.9A2.46,2.46,0,0,1,97.75,10a1.71,1.71,0,0,0,1.86-1.9,2.46,2.46,0,0,1,2.59-2.64A1.75,1.75,0,0,0,103.58,5l.55.53a2.48,2.48,0,0,1-1.89.74,1.71,1.71,0,0,0-1.86,1.9,2.46,2.46,0,0,1-2.59,2.64,1.71,1.71,0,0,0-1.86,1.9,2.46,2.46,0,0,1-2.59,2.64A1.75,1.75,0,0,0,92,15.82Z"/>\n    <path class="cls-1" d="M91.53,16.23l-.31-.7a2.48,2.48,0,0,1,2,0,1.71,1.71,0,0,0,2.43-1.07A2.46,2.46,0,0,1,99.07,13a1.71,1.71,0,0,0,2.43-1.07,2.46,2.46,0,0,1,3.38-1.49,1.75,1.75,0,0,0,1.47,0l.31.7a2.48,2.48,0,0,1-2,0,1.71,1.71,0,0,0-2.43,1.07,2.46,2.46,0,0,1-3.38,1.49,1.71,1.71,0,0,0-2.43,1.07A2.46,2.46,0,0,1,93,16.28,1.75,1.75,0,0,0,91.53,16.23Z"/>\n    <path class="cls-1" d="M91.72,16.07l-.43-.63a2.48,2.48,0,0,1,2-.36,1.71,1.71,0,0,0,2.19-1.51,2.46,2.46,0,0,1,3-2.1,1.71,1.71,0,0,0,2.19-1.51,2.46,2.46,0,0,1,3-2.1,1.75,1.75,0,0,0,1.45-.23l.43.63a2.48,2.48,0,0,1-2,.36,1.71,1.71,0,0,0-2.19,1.51,2.46,2.46,0,0,1-3,2.1,1.71,1.71,0,0,0-2.19,1.51,2.46,2.46,0,0,1-3,2.1A1.75,1.75,0,0,0,91.72,16.07Z"/>\n    <circle class="cls-2" cx="84.93" cy="30.24" r="2.87" transform="translate(22.08 94.88) rotate(-65.41)"/>\n    <circle class="cls-3" cx="76.65" cy="38.23" r="4.15" transform="translate(9.99 92.02) rotate(-65.41)"/>\n    <circle class="cls-4" cx="83.06" cy="47.29" r="4.15" transform="translate(5.49 103.13) rotate(-65.41)"/>\n    <polygon class="cls-5" points="1.41 15.23 17.46 30.05 33.52 44.88 19.29 51.83 5.05 58.78 3.23 37.01 1.41 15.23"/>\n    <path class="cls-5" d="M2.16,16,1.4,16A2.48,2.48,0,0,1,2,14.11a1.71,1.71,0,0,0-.29-2.64,2.46,2.46,0,0,1-.4-3.68A1.75,1.75,0,0,0,1.83,6.4a1.75,1.75,0,0,0-.78-1.25,2.46,2.46,0,0,1-.4-3.68A1.75,1.75,0,0,0,1.13.08L1.9,0a2.48,2.48,0,0,1-.63,1.93A1.75,1.75,0,0,0,.78,3.32a1.75,1.75,0,0,0,.78,1.25,2.48,2.48,0,0,1,1,1.75A2.48,2.48,0,0,1,2,8.25a1.71,1.71,0,0,0,.29,2.64,2.46,2.46,0,0,1,.4,3.68A1.75,1.75,0,0,0,2.16,16Z"/>\n    <path class="cls-5" d="M2.21,16.55l-.74-.21a2.48,2.48,0,0,1,1.3-1.56,1.71,1.71,0,0,0,.71-2.56,2.46,2.46,0,0,1,1-3.56A1.71,1.71,0,0,0,5.19,6.1a2.46,2.46,0,0,1,1-3.56,1.75,1.75,0,0,0,1-1.11l.74.2a2.48,2.48,0,0,1-1.3,1.56,1.71,1.71,0,0,0-.71,2.56,2.46,2.46,0,0,1-1,3.56,1.71,1.71,0,0,0-.71,2.56,2.46,2.46,0,0,1-1,3.56A1.75,1.75,0,0,0,2.21,16.55Z"/>\n    <path class="cls-5" d="M2.2,16.3l-.76-.06a2.48,2.48,0,0,1,1-1.77,1.71,1.71,0,0,0,.22-2.65A2.46,2.46,0,0,1,3,8.12a1.71,1.71,0,0,0,.22-2.65,2.46,2.46,0,0,1,.3-3.69A1.75,1.75,0,0,0,4.22.51L5,.58A2.48,2.48,0,0,1,4,2.35,1.71,1.71,0,0,0,3.77,5a2.46,2.46,0,0,1-.3,3.69,1.71,1.71,0,0,0-.22,2.65A2.46,2.46,0,0,1,2.94,15,1.75,1.75,0,0,0,2.2,16.3Z"/>\n    <circle class="cls-6" cx="8.85" cy="30.54" r="2.87" transform="translate(-12.5 6.98) rotate(-26.03)"/>\n    <circle class="cls-3" cx="9.78" cy="42.01" r="4.15" transform="translate(-17.44 8.55) rotate(-26.03)"/>\n    <circle class="cls-4" cx="20.84" cy="42.8" r="4.15" transform="translate(-16.67 13.49) rotate(-26.03)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="hood--alien hood--color--darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.86 56.43">\n    <polygon class="cls-1" points="34.51 10.11 32.32 33.27 30.14 56.43 15.07 48.87 0 41.31 17.25 25.71 34.51 10.11"/>\n    <path class="cls-1" d="M34.75,10.62l-.54-.56a2.52,2.52,0,0,1,1.95-.68,1.74,1.74,0,0,0,2-1.86,2.5,2.5,0,0,1,2.72-2.59,1.74,1.74,0,0,0,2-1.86A2.5,2.5,0,0,1,45.52.46,1.78,1.78,0,0,0,46.95,0l.54.56a2.52,2.52,0,0,1-1.95.68,1.74,1.74,0,0,0-2,1.86A2.5,2.5,0,0,1,40.85,5.7a1.74,1.74,0,0,0-2,1.86,2.5,2.5,0,0,1-2.72,2.59A1.78,1.78,0,0,0,34.75,10.62Z"/>\n    <path class="cls-1" d="M34.3,11,34,10.3a2.52,2.52,0,0,1,2.06.09,1.74,1.74,0,0,0,2.51-1A2.5,2.5,0,0,1,42.08,8a1.74,1.74,0,0,0,2.51-1,2.5,2.5,0,0,1,3.49-1.4,1.78,1.78,0,0,0,1.49.1l.29.72a2.52,2.52,0,0,1-2.06-.09,1.74,1.74,0,0,0-2.51,1,2.5,2.5,0,0,1-3.49,1.4,1.74,1.74,0,0,0-2.51,1,2.5,2.5,0,0,1-3.49,1.4A1.78,1.78,0,0,0,34.3,11Z"/>\n    <path class="cls-1" d="M34.5,10.86l-.42-.65a2.52,2.52,0,0,1,2-.3A1.74,1.74,0,0,0,38.4,8.45a2.5,2.5,0,0,1,3.17-2A1.74,1.74,0,0,0,43.84,5a2.5,2.5,0,0,1,3.17-2,1.78,1.78,0,0,0,1.49-.19l.42.65a2.52,2.52,0,0,1-2,.3A1.74,1.74,0,0,0,44.6,5.16a2.5,2.5,0,0,1-3.17,2,1.74,1.74,0,0,0-2.28,1.46,2.5,2.5,0,0,1-3.17,2A1.78,1.78,0,0,0,34.5,10.86Z"/>\n    <circle class="cls-2" cx="27.09" cy="25.02" r="2.92" transform="translate(-7.42 38.02) rotate(-63.37)"/>\n    <circle class="cls-3" cx="18.39" cy="32.83" r="4.21" transform="translate(-19.21 34.55) rotate(-63.37)"/>\n    <circle class="cls-4" cx="23.97" cy="45.29" r="4.41" transform="translate(-27.26 46.41) rotate(-63.37)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="hood--color--violet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.41 87.61">\n    <polygon class="cls-1" points="53.95 15.5 50.39 51.55 46.84 87.61 23.42 75.74 0 63.87 26.97 39.68 53.95 15.5"/>\n    <path class="cls-1" d="M53.73,17.23l-.87-.92A4.11,4.11,0,0,1,56,15.21a2.83,2.83,0,0,0,3.21-3A4.08,4.08,0,0,1,63.71,8a2.84,2.84,0,0,0,3.21-3A4.08,4.08,0,0,1,71.38.75,2.9,2.9,0,0,0,73.7,0l.87.92A4.11,4.11,0,0,1,71.39,2a2.84,2.84,0,0,0-3.21,3,4.08,4.08,0,0,1-4.46,4.21,2.83,2.83,0,0,0-3.21,3,4.08,4.08,0,0,1-4.46,4.21A2.9,2.9,0,0,0,53.73,17.23Z"/>\n    <path class="cls-1" d="M53,17.88l-.47-1.18a4.11,4.11,0,0,1,3.36.17A2.83,2.83,0,0,0,60,15.25,4.08,4.08,0,0,1,65.7,13a2.84,2.84,0,0,0,4.1-1.62,4.08,4.08,0,0,1,5.7-2.25,2.9,2.9,0,0,0,2.44.17l.47,1.18A4.11,4.11,0,0,1,75,10.31a2.84,2.84,0,0,0-4.1,1.62,4.08,4.08,0,0,1-5.7,2.25,2.83,2.83,0,0,0-4.1,1.62,4.08,4.08,0,0,1-5.7,2.25A2.9,2.9,0,0,0,53,17.88Z"/>\n    <path class="cls-1" d="M53.33,17.62l-.68-1.07A4.11,4.11,0,0,1,56,16.08a2.84,2.84,0,0,0,3.72-2.36,4.08,4.08,0,0,1,5.18-3.28,2.83,2.83,0,0,0,3.72-2.36A4.08,4.08,0,0,1,73.78,4.8a2.9,2.9,0,0,0,2.42-.29l.68,1.07A4.11,4.11,0,0,1,73.55,6,2.84,2.84,0,0,0,69.83,8.4a4.08,4.08,0,0,1-5.18,3.28A2.83,2.83,0,0,0,60.93,14a4.08,4.08,0,0,1-5.18,3.28A2.9,2.9,0,0,0,53.33,17.62Z"/>\n    <circle class="cls-2" cx="41.14" cy="40.65" r="4.75" transform="translate(-13.72 58.97) rotate(-63.12)"/>\n    <circle class="cls-3" cx="26.9" cy="53.34" r="6.87" transform="translate(-32.83 53.22) rotate(-63.12)"/>\n    <circle class="cls-4" cx="36.91" cy="68.76" r="6.87" transform="translate(-41.1 70.6) rotate(-63.12)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="hood--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.35 76.6">\n    <polygon class="cls-1" points="65.47 9.49 51.81 43.05 38.16 76.6 19.08 58.57 0 40.53 32.73 25.01 65.47 9.49"/>\n    <path class="cls-1" d="M64.77,11.08,64.2,10a4.11,4.11,0,0,1,3.36-.14,2.83,2.83,0,0,0,3.93-2A4.08,4.08,0,0,1,77,5.05,2.9,2.9,0,0,0,79.4,5a2.9,2.9,0,0,0,1.49-1.93A4.08,4.08,0,0,1,86.37.29,2.9,2.9,0,0,0,88.81.24l.57,1.13A4.11,4.11,0,0,1,86,1.51a2.84,2.84,0,0,0-3.93,2,4.08,4.08,0,0,1-5.47,2.77,2.83,2.83,0,0,0-3.93,2A4.08,4.08,0,0,1,67.21,11,2.9,2.9,0,0,0,64.77,11.08Z"/>\n    <path class="cls-1" d="M63.89,11.51l-.11-1.26A4.11,4.11,0,0,1,67,11.36,2.83,2.83,0,0,0,71.34,11a4.08,4.08,0,0,1,6.11-.54A2.84,2.84,0,0,0,81.84,10a4.08,4.08,0,0,1,6.11-.54,2.9,2.9,0,0,0,2.29.85l.11,1.26a4.11,4.11,0,0,1-3.18-1.11,2.84,2.84,0,0,0-4.39.39,4.08,4.08,0,0,1-6.11.54,2.83,2.83,0,0,0-4.39.39,4.08,4.08,0,0,1-6.11.54A2.9,2.9,0,0,0,63.89,11.51Z"/>\n    <path class="cls-1" d="M64.27,11.34l-.35-1.22a4.11,4.11,0,0,1,3.33.5,2.84,2.84,0,0,0,4.24-1.2,4.08,4.08,0,0,1,5.9-1.68,2.83,2.83,0,0,0,4.24-1.2,4.08,4.08,0,0,1,5.9-1.68,2.9,2.9,0,0,0,2.41.41l.35,1.22A4.11,4.11,0,0,1,87,6,2.84,2.84,0,0,0,82.71,7.2a4.08,4.08,0,0,1-5.9,1.68,2.83,2.83,0,0,0-4.24,1.2,4.08,4.08,0,0,1-5.9,1.68A2.9,2.9,0,0,0,64.27,11.34Z"/>\n    <circle class="cls-2" cx="46.04" cy="29.96" r="4.75" transform="translate(-7.36 42.85) rotate(-46.62)"/>\n    <circle class="cls-3" cx="28.79" cy="38.08" r="6.87" transform="translate(-18.66 32.85) rotate(-46.62)"/>\n    <circle class="cls-4" cx="34" cy="55.71" r="6.87" transform="translate(-29.84 42.16) rotate(-46.62)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="hood--color--pink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.74 80.66">\n    <polygon class="cls-1" points="4.57 20.65 23.15 44.31 41.73 67.98 20.87 74.32 0 80.66 2.28 50.65 4.57 20.65"/>\n    <path class="cls-1" d="M5.43,21.81l-1.05-.05a3.41,3.41,0,0,1,1.28-2.48,2.35,2.35,0,0,0,.18-3.66,3.39,3.39,0,0,1,.26-5.09,2.36,2.36,0,0,0,.19-3.66,3.39,3.39,0,0,1,.26-5.09A2.41,2.41,0,0,0,7.51,0L8.56.05A3.41,3.41,0,0,1,7.28,2.54a2.41,2.41,0,0,0-1,1.78,2.41,2.41,0,0,0,.78,1.87,3.39,3.39,0,0,1-.26,5.09,2.35,2.35,0,0,0-.19,3.66A3.39,3.39,0,0,1,6.39,20,2.41,2.41,0,0,0,5.43,21.81Z"/>\n    <path class="cls-1" d="M5.37,22.62l-1-.44a3.41,3.41,0,0,1,2.11-1.83A2.35,2.35,0,0,0,8.06,17a3.39,3.39,0,0,1,2.13-4.63,2.35,2.35,0,0,0,1.53-3.33,3.39,3.39,0,0,1,2.13-4.63,2.41,2.41,0,0,0,1.56-1.3l1,.44a3.41,3.41,0,0,1-2.11,1.83,2.36,2.36,0,0,0-1.53,3.33,3.39,3.39,0,0,1-2.13,4.63,2.35,2.35,0,0,0-1.53,3.33,3.39,3.39,0,0,1-2.13,4.63A2.41,2.41,0,0,0,5.37,22.62Z"/>\n    <path class="cls-1" d="M5.41,22.27l-1-.25a3.41,3.41,0,0,1,1.73-2.2A2.35,2.35,0,0,0,7,16.27a3.39,3.39,0,0,1,1.22-4.94A2.35,2.35,0,0,0,9.1,7.77a3.39,3.39,0,0,1,1.22-4.94A2.41,2.41,0,0,0,11.6,1.26l1,.25a3.41,3.41,0,0,1-1.73,2.2A2.36,2.36,0,0,0,10,7.26,3.39,3.39,0,0,1,8.8,12.21a2.35,2.35,0,0,0-.88,3.55A3.39,3.39,0,0,1,6.7,20.71,2.41,2.41,0,0,0,5.41,22.27Z"/>\n    <circle cx="11.34" cy="43.09" r="3.95" transform="translate(-12.03 5.15) rotate(-16.89)"/>\n    <circle class="cls-2" cx="10.09" cy="58.88" r="5.71" transform="translate(-16.68 5.47) rotate(-16.89)"/>\n    <circle class="cls-3" cx="24.95" cy="62.38" r="5.71" transform="translate(-17.05 9.94) rotate(-16.89)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="hood--color--red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.59 54.77">\n    <polygon class="cls-1" points="46.8 6.78 37.05 30.77 27.29 54.77 13.64 41.87 0 28.98 23.4 17.88 46.8 6.78"/>\n    <path class="cls-1" d="M46.31,7.92l-.41-.81A2.94,2.94,0,0,1,48.3,7a2,2,0,0,0,2.81-1.42,2.91,2.91,0,0,1,3.91-2,2.07,2.07,0,0,0,1.75,0,2.07,2.07,0,0,0,1.07-1.38,2.91,2.91,0,0,1,3.91-2,2.07,2.07,0,0,0,1.75,0L63.9,1a2.94,2.94,0,0,1-2.4.1A2,2,0,0,0,58.68,2.5a2.91,2.91,0,0,1-3.91,2A2,2,0,0,0,52,5.9a2.91,2.91,0,0,1-3.91,2A2.07,2.07,0,0,0,46.31,7.92Z"/>\n    <path class="cls-1" d="M45.67,8.23l-.08-.9a2.94,2.94,0,0,1,2.27.8A2,2,0,0,0,51,7.84a2.91,2.91,0,0,1,4.37-.39,2,2,0,0,0,3.14-.28,2.91,2.91,0,0,1,4.37-.39,2.07,2.07,0,0,0,1.64.61l.08.9a2.94,2.94,0,0,1-2.27-.8,2,2,0,0,0-3.14.28,2.91,2.91,0,0,1-4.37.39,2,2,0,0,0-3.14.28,2.91,2.91,0,0,1-4.37.39A2.07,2.07,0,0,0,45.67,8.23Z"/>\n    <path class="cls-1" d="M45.95,8.11l-.25-.87a2.94,2.94,0,0,1,2.38.36,2,2,0,0,0,3-.86,2.91,2.91,0,0,1,4.22-1.2,2,2,0,0,0,3-.86,2.91,2.91,0,0,1,4.22-1.2,2.07,2.07,0,0,0,1.72.29l.25.87a2.94,2.94,0,0,1-2.38-.36,2,2,0,0,0-3,.86,2.91,2.91,0,0,1-4.22,1.2,2,2,0,0,0-3,.86,2.91,2.91,0,0,1-4.22,1.2A2.07,2.07,0,0,0,45.95,8.11Z"/>\n    <circle class="cls-2" cx="32.92" cy="21.42" r="3.4" transform="translate(-5.26 30.63) rotate(-46.62)"/>\n    <circle class="cls-3" cx="20.58" cy="27.23" r="4.91" transform="translate(-13.34 23.48) rotate(-46.62)"/>\n    <circle class="cls-4" cx="24.31" cy="39.83" r="4.91" transform="translate(-21.34 30.14) rotate(-46.62)"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/hood/hood.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], HoodComponent);
+    return HoodComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=hood.js.map
+
+/***/ }),
+/* 164 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketUniqPartDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TrinketUniqPartDirective = /** @class */ (function () {
+    function TrinketUniqPartDirective(el, templateRef, viewContainerRef) {
+        this.templateRef = templateRef;
+        this.viewContainerRef = viewContainerRef;
+        this.element = el.nativeElement;
+    }
+    TrinketUniqPartDirective.prototype.show = function () {
+        this.viewContainerRef.createEmbeddedView(this.templateRef);
+        return this;
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('part-name'),
+        __metadata("design:type", String)
+    ], TrinketUniqPartDirective.prototype, "name", void 0);
+    TrinketUniqPartDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[trinket-uniq-part]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* TemplateRef */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], TrinketUniqPartDirective);
+    return TrinketUniqPartDirective;
+}());
+
+//# sourceMappingURL=trinket-uniq-part.directive.js.map
+
+/***/ }),
+/* 165 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoleComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(300);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MoleComponent = /** @class */ (function (_super) {
+    __extends(MoleComponent, _super);
+    function MoleComponent(element) {
+        return _super.call(this, 'mole', element.nativeElement) || this;
+    }
+    MoleComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'mole',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/mole/mole.html"*/'<svg class="mole" width="75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.86 63.82">\n  <ng-template trinket-random-part>\n    <g>\n      <circle class="cls-1" cx="15.45" cy="19.12" r="11.25"></circle>\n      <line class="cls-2" x1="19.58" y1="18.74" x2="41.4" y2="12.04"></line>\n      <line class="cls-2" x1="14.79" y1="0.03" x2="15.45" y2="19.12"></line>\n      <line class="cls-2" x1="0.47" y1="28.23" x2="10.58" y2="20.99"></line>\n    </g>\n  </ng-template>\n\n  <ng-template trinket-random-part>\n    <g>\n       <circle class="cls-1" cx="44.61" cy="34.95" r="11.25" transform="translate(-11.8 40.41) rotate(-43.6)"></circle>\n       <line class="cls-2" x1="47.73" y1="37.68" x2="45" y2="55.89"></line>\n       <line class="cls-2" x1="27.68" y1="30.39" x2="39.89" y2="32.72"></line>\n     </g>\n  </ng-template>\n\n  <ng-template trinket-random-part>\n    <g>\n     <circle class="cls-1" cx="11.25" cy="52.57" r="11.25" transform="translate(-33.15 22.26) rotate(-43.6)"></circle>\n    </g>\n  </ng-template>\n\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/mole/mole.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], MoleComponent);
+    return MoleComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_random_model__["a" /* TrinketRandomModel */]));
+
+//# sourceMappingURL=mole.js.map
+
+/***/ }),
+/* 166 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketRandomPartDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TrinketRandomPartDirective = /** @class */ (function () {
+    function TrinketRandomPartDirective(el, templateRef, viewContainerRef) {
+        this.templateRef = templateRef;
+        this.viewContainerRef = viewContainerRef;
+        this.shown = false;
+        this.element = el.nativeElement;
+        this.show();
+    }
+    TrinketRandomPartDirective.prototype.show = function () {
+        if (!this.shown) {
+            this.viewContainerRef.createEmbeddedView(this.templateRef);
+            this.shown = true;
+        }
+        return this;
+    };
+    TrinketRandomPartDirective.prototype.hide = function () {
+        if (this.shown) {
+            this.viewContainerRef.clear();
+            this.shown = false;
+        }
+        return this;
+    };
+    TrinketRandomPartDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[trinket-random-part]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* TemplateRef */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], TrinketRandomPartDirective);
+    return TrinketRandomPartDirective;
+}());
+
+//# sourceMappingURL=trinket-random-part.directive.js.map
+
+/***/ }),
+/* 167 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeartComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(26);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HeartComponent = /** @class */ (function (_super) {
+    __extends(HeartComponent, _super);
+    function HeartComponent(element) {
+        return _super.call(this, 'heart', element.nativeElement) || this;
+    }
+    HeartComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'heart',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/heart/heart.svg"*/'<svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.6 138.47" class="heart">\n   <path class="cls-1" d="M51.65,133.57l-48.3,-62.16a25,25,0,1,1,43.29,-25l5,8.68l5,-8.68a25,25,0,1,1,43.29,25z"></path>\n   <line class="cls-2" x1="77.76" y1="63.18" x2="125.64" y2="15.3"></line>\n   <line class="cls-2" x1="8.59" y1="132.01" x2="32.54" y2="108.07"></line>\n   <line class="cls-2" x1="104.69" y1="13.3" x2="104.69" y2="36.58"></line>\n   <line class="cls-2" x1="111.34" y1="5.32" x2="111.34" y2="28.6"></line>\n   <line class="cls-2" x1="117.99" x2="117.99" y2="23.28"></line>\n   <line class="cls-2" x1="128.3" y1="35.58" x2="105.02" y2="35.58"></line>\n   <line class="cls-2" x1="136.28" y1="28.93" x2="113" y2="28.93"></line>\n   <line class="cls-2" x1="141.6" y1="22.28" x2="118.32" y2="22.28"></line>\n   <polygon points="2.11 138.47 7.99 127.95 13.87 117.43 18.51 122.07 23.16 126.72 12.64 132.6 2.11 138.47"></polygon>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/heart/heart.svg"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], HeartComponent);
+    return HeartComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=heart.js.map
+
+/***/ }),
+/* 168 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BeardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(26);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BeardComponent = /** @class */ (function (_super) {
+    __extends(BeardComponent, _super);
+    function BeardComponent(element) {
+        return _super.call(this, 'beard', element.nativeElement) || this;
+    }
+    BeardComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'beard',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/beard/beard.html"*/'<svg width="150" class="beard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.33 127.73">\n   <path class="cls-1" d="M144.35,33.21c0,-4.87,-20.48,-8.42,-21,-13.07a2.17,2.17,0,0,1,0.09,-0.87h-99.51a2.17,2.17,0,0,1,0.09,0.87c-0.57,4.65,-21,8.19,-21,13.06s20.48,8.42,21,13.07c0.6,4.85,-18.38,13.29,-17.22,17.82c1.2,4.74,21.9,2.91,23.67,7.22c1.87,4.54,-14,18,-11.54,21.92c2.57,4.2,21.57,-4,24.68,-0.61c3.31,3.65,-6.36,22,-2.54,24.6c4,2.77,17.23,-13,21.7,-11.52s6,22,10.89,22s6.37,-20.53,10.89,-22s17.68,14.3,21.69,11.52c3.82,-2.63,-5.85,-21,-2.54,-24.6c3.11,-3.43,22.11,4.81,24.68,0.61c2.42,-4,-13.41,-17.38,-11.54,-21.92c1.77,-4.31,22.46,-2.48,23.67,-7.22c1.16,-4.53,-17.81,-13,-17.22,-17.82c0.58,-4.64,21.06,-8.19,21.06,-13.06z"></path>\n   <path class="cls-2" d="M99.63,19.1c0,26.9,-51.93,26.9,-51.93,0z"></path>\n   <path class="cls-3" d="M80.78,20.68a62.4,62.4,0,0,1,-22.3,10.59a58.33,58.33,0,0,1,-23.26,1a54.7,54.7,0,0,1,-20.46,-7.73a51.16,51.16,0,0,1,-14.76,-14.2a47.44,47.44,0,0,0,17.56,7.42a43.61,43.61,0,0,0,17.66,-0.13a39.78,39.78,0,0,0,14.86,-6.63a36.51,36.51,0,0,0,10,-11z"></path>\n   <path class="cls-3" d="M87.23,0a36.51,36.51,0,0,0,10,11a39.78,39.78,0,0,0,14.86,6.62a43.61,43.61,0,0,0,17.66,0.13a47.44,47.44,0,0,0,17.56,-7.42a51.16,51.16,0,0,1,-14.76,14.18a54.7,54.7,0,0,1,-20.46,7.73a58.33,58.33,0,0,1,-23.26,-1a62.4,62.4,0,0,1,-22.3,-10.59z"></path>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/beard/beard.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], BeardComponent);
+    return BeardComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=beard.js.map
+
+/***/ }),
+/* 169 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoustacheComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(26);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MoustacheComponent = /** @class */ (function (_super) {
+    __extends(MoustacheComponent, _super);
+    function MoustacheComponent(element) {
+        return _super.call(this, 'moustache', element.nativeElement) || this;
+    }
+    MoustacheComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'moustache',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/moustache/moustache.html"*/'<svg width="150" class="moustache" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.42 44.04">\n   <path class="cls-1" d="M27.26,34.7a27.27,27.27,0,0,1,-26.86,-22.59a27.27,27.27,0,1,0,54.13,4.67a27.44,27.44,0,0,0,-0.4,-4.67a27.27,27.27,0,0,1,-26.87,22.59z"></path>\n   <path class="cls-1" d="M23.7,28a25.89,25.89,0,0,1,-18.06,-28a25.89,25.89,0,1,0,47.81,19.36a26,26,0,0,0,0.94,-4.36a25.89,25.89,0,0,1,-30.69,13z"></path>\n   <path class="cls-1" d="M81.15,34.7a27.27,27.27,0,0,0,26.85,-22.59a27.26,27.26,0,1,1,-53.73,0a27.27,27.27,0,0,0,26.88,22.59z"></path>\n   <path class="cls-1" d="M84.71,28a25.89,25.89,0,0,0,18.07,-28a25.88,25.88,0,1,1,-48.78,15a25.89,25.89,0,0,0,30.71,13z"></path>\n   <path class="cls-1" d="M27.9,24.18a22.33,22.33,0,0,1,-15.59,-24.18a22.33,22.33,0,1,0,42.05,13a22.33,22.33,0,0,1,-26.46,11.18z"></path>\n   <path class="cls-1" d="M80.52,24.18a22.33,22.33,0,0,0,15.58,-24.18a22.33,22.33,0,1,1,-42.05,13a22.33,22.33,0,0,0,26.47,11.18z"></path>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/moustache/moustache.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], MoustacheComponent);
+    return MoustacheComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=moustache.js.map
+
+/***/ }),
+/* 170 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SnivelComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(26);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SnivelComponent = /** @class */ (function (_super) {
+    __extends(SnivelComponent, _super);
+    function SnivelComponent(element) {
+        return _super.call(this, 'snivel', element.nativeElement) || this;
+    }
+    SnivelComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'snivel',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/snivel/snivel.html"*/'<svg width="25" class="snivel" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 32.49 121.17">\n         <path class="cls-1" d="M8.12,85.65c0,6.74,-0.82,8,-1.82,8s-1.82,-1.26,-1.82,-8a42.85,42.85,0,0,1,1.82,-12.2a42.85,42.85,0,0,1,1.82,12.2z"></path>\n         <path class="cls-1" d="M17.74,57.14c0,6.74,-0.82,8,-1.82,8s-1.82,-1.26,-1.82,-8a42.85,42.85,0,0,1,1.82,-12.2a42.85,42.85,0,0,1,1.82,12.2z"></path>\n         <path class="cls-1" d="M27.68,88.3c0,6.74,-0.82,8,-1.82,8s-1.86,-1.3,-1.86,-8a42.85,42.85,0,0,1,1.82,-12.2a42.85,42.85,0,0,1,1.86,12.2z"></path>\n         <path class="cls-1" d="M27.68,113.17c0,6.74,-0.82,8,-1.82,8s-1.82,-1.26,-1.82,-8a42.85,42.85,0,0,1,1.82,-12.17a42.85,42.85,0,0,1,1.82,12.17z"></path>\n         <path class="cls-1" d="M1.46,0a233.82,233.82,0,0,0,-1.46,27.35c0,23.9,2.89,43.27,6.47,43.27c3.09,0,5.67,-14.51,6.31,-33.91c-1.88,-7.47,-3.14,-21.1,-3.16,-36.71z"></path>\n         <path class="cls-1" d="M21.28,0h-9.8a233.79,233.79,0,0,1,1.46,27.35c0,3.21,-0.05,6.34,-0.15,9.35c1,3.85,2.1,6.06,3.3,6.06s2.53,-2.62,3.55,-7.1q-0.07,-3.1,-0.07,-6.32a224.61,224.61,0,0,1,1.71,-29.34z"></path>\n         <path class="cls-1" d="M11.47,0h-1.85c0,15.61,1.29,29.24,3.16,36.71c0.1,-3,0.15,-6.14,0.15,-9.35a233.79,233.79,0,0,0,-1.46,-27.36z"></path>\n         <path class="cls-1" d="M22.54,0c0,14.91,-1.18,28,-2.91,35.66c0.46,20.9,3.15,36.94,6.4,36.94c3.57,0,6.47,-19.37,6.47,-43.27a224.61,224.61,0,0,0,-1.72,-29.33z"></path>\n         <path class="cls-1" d="M21.28,0a224.61,224.61,0,0,0,-1.71,29.34q0,3.22,0.07,6.32c1.73,-7.66,2.88,-20.75,2.9,-35.66z"></path>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/snivel/snivel.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], SnivelComponent);
+    return SnivelComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
+
+//# sourceMappingURL=snivel.js.map
+
+/***/ }),
+/* 171 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DressComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DressComponent = /** @class */ (function (_super) {
+    __extends(DressComponent, _super);
+    function DressComponent(element) {
+        return _super.call(this, 'dress', element.nativeElement) || this;
+    }
+    DressComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'dress',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/dress/dress.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.5 86.5" class="dress">\n     <path class="cls-1" d="M172.5,46.51a46.64,46.64,0,0,0,-46.5,-46.51h-79.5a46.64,46.64,0,0,0,-46.5,46.51v40h172.5z"></path>\n     <polygon class="cls-2" points="13.5 7.8 72.04 39 89.19 0 27.16 0 13.5 7.8"></polygon>\n     <polygon class="cls-2" points="159 7.8 100.46 39 83.31 0 145.34 0 159 7.8"></polygon>\n     <circle class="cls-3" cx="27.81" cy="7.53" r="2.05"></circle>\n     <circle class="cls-3" cx="37.31" cy="6.35" r="2.05"></circle>\n     <circle class="cls-3" cx="40.79" cy="13.8" r="2.05"></circle>\n     <circle class="cls-3" cx="52.57" cy="8.35" r="2.05"></circle>\n     <circle class="cls-3" cx="69.46" cy="9.33" r="2.05"></circle>\n     <circle class="cls-3" cx="109.21" cy="27.3" r="2.05"></circle>\n     <circle class="cls-3" cx="101.21" cy="13" r="2.05"></circle>\n     <circle class="cls-3" cx="86.21" cy="10.55" r="7.13" transform="translate(17.79 64.05) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.11" cy="8.44" r="1.24" transform="translate(18.66 61.95) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.16" cy="12.49" r="1.24" transform="translate(16.99 66) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.16" cy="8.44" r="1.24" transform="translate(19.85 64.81) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.11" cy="12.49" r="1.24" transform="translate(15.8 63.13) rotate(-45)"></circle>\n     <circle class="cls-3" cx="86.21" cy="37.05" r="7.13" transform="translate(-0.95 71.81) rotate(-45)"></circle>\n     <circle class="cls-3" cx="86.21" cy="63.55" r="7.13" transform="translate(-19.69 79.58) rotate(-45)"></circle>\n     <circle class="cls-3" cx="108.96" cy="6.25" r="2.05"></circle>\n     <circle class="cls-3" cx="119.21" cy="10.25" r="2.05"></circle>\n     <circle class="cls-3" cx="132.46" cy="5.25" r="2.05"></circle>\n     <circle class="cls-3" cx="143.66" cy="9" r="2.05"></circle>\n     <circle class="cls-3" cx="121.71" cy="22.5" r="2.05"></circle>\n     <circle class="cls-3" cx="57.46" cy="18.17" r="2.05"></circle>\n     <circle class="cls-3" cx="66.3" cy="27.83" r="2.05"></circle>\n     <circle class="cls-1" cx="84.11" cy="34.95" r="1.24" transform="translate(-0.08 69.71) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.16" cy="39" r="1.24" transform="translate(-1.75 73.76) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.16" cy="34.95" r="1.24" transform="translate(1.11 72.57) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.11" cy="39" r="1.24" transform="translate(-2.94 70.89) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.17" cy="61.39" r="1.24" transform="translate(-18.76 77.49) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.22" cy="65.44" r="1.24" transform="translate(-20.43 81.54) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.22" cy="61.39" r="1.24" transform="translate(-17.57 80.36) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.17" cy="65.44" r="1.24" transform="translate(-21.62 78.68) rotate(-45)"></circle>\n     <line class="cls-4" x1="84.11" y1="8.44" x2="88.16" y2="12.49"></line>\n     <line class="cls-4" x1="88.16" y1="8.44" x2="84.11" y2="12.49"></line>\n     <line class="cls-4" x1="84.11" y1="34.94" x2="88.16" y2="38.99"></line>\n     <line class="cls-4" x1="88.16" y1="34.94" x2="84.11" y2="38.99"></line>\n     <line class="cls-4" x1="84.06" y1="61.5" x2="88.11" y2="65.55"></line>\n     <line class="cls-4" x1="88.11" y1="61.5" x2="84.06" y2="65.55"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 192.892 96" class="dress--mummy">\n    <path class="cls-3" d="M202.89,70a52.15,52.15,0,0,0,-52,-52h-88.89a52.15,52.15,0,0,0,-52,52v44.72h192.89z" transform="translate(-10 -18.02)"></path>\n    <polygon class="cls-4" points="15.1 8.72 80.56 43.61 99.73 0 30.37 0 15.1 8.72"></polygon>\n    <polygon class="cls-4" points="177.79 8.72 112.33 43.61 93.16 0 162.52 0 177.79 8.72"></polygon>\n    <circle class="cls-5" cx="31.1" cy="8.42" r="2.29"></circle>\n    <circle class="cls-5" cx="41.73" cy="7.1" r="2.29"></circle>\n    <circle class="cls-5" cx="45.61" cy="15.43" r="2.29"></circle>\n    <circle class="cls-5" cx="58.79" cy="9.33" r="2.29"></circle>\n    <circle class="cls-5" cx="77.68" cy="10.44" r="2.29"></circle>\n    <circle class="cls-5" cx="122.12" cy="30.53" r="2.29"></circle>\n    <circle class="cls-5" cx="113.18" cy="14.54" r="2.29"></circle>\n    <circle class="cls-5" cx="106.4" cy="29.82" r="7.97" transform="translate(0.08 65.95) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.05" cy="27.46" r="1.39" transform="translate(1.06 63.6) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.58" cy="31.99" r="1.39" transform="translate(-0.82 68.12) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.58" cy="27.46" r="1.39" transform="translate(2.38 66.8) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.05" cy="31.99" r="1.39" transform="translate(-2.15 64.92) rotate(-45)"></circle>\n    <circle class="cls-5" cx="106.4" cy="59.45" r="7.97" transform="translate(-20.87 74.63) rotate(-45)"></circle>\n    <circle class="cls-5" cx="106.4" cy="89.09" r="7.97" transform="translate(-41.83 83.31) rotate(-45)"></circle>\n    <circle class="cls-5" cx="121.84" cy="6.99" r="2.29"></circle>\n    <circle class="cls-5" cx="133.31" cy="11.46" r="2.29"></circle>\n    <circle class="cls-5" cx="148.12" cy="5.87" r="2.29"></circle>\n    <circle class="cls-5" cx="160.65" cy="10.06" r="2.29"></circle>\n    <circle class="cls-5" cx="136.1" cy="25.16" r="2.29"></circle>\n    <circle class="cls-5" cx="64.26" cy="20.31" r="2.29"></circle>\n    <circle class="cls-5" cx="74.13" cy="31.12" r="2.29"></circle>\n    <circle class="cls-3" cx="104.05" cy="57.1" r="1.39" transform="translate(-19.9 72.28) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.58" cy="61.63" r="1.39" transform="translate(-21.78 76.8) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.58" cy="57.1" r="1.39" transform="translate(-18.58 75.48) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.05" cy="61.63" r="1.39" transform="translate(-23.1 73.6) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.12" cy="86.67" r="1.39" transform="translate(-40.79 80.98) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.64" cy="91.2" r="1.39" transform="translate(-42.66 85.51) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.64" cy="86.67" r="1.39" transform="translate(-39.46 84.18) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.12" cy="91.2" r="1.39" transform="translate(-43.99 82.31) rotate(-45)"></circle>\n    <line class="cls-6" x1="94.05" y1="9.44" x2="98.58" y2="13.97"></line>\n    <line class="cls-6" x1="98.58" y1="9.44" x2="94.05" y2="13.97"></line>\n    <line class="cls-6" x1="94.05" y1="39.08" x2="98.58" y2="43.6"></line>\n    <line class="cls-6" x1="98.58" y1="39.08" x2="94.05" y2="43.6"></line>\n    <line class="cls-6" x1="93.99" y1="68.77" x2="98.52" y2="73.29"></line>\n    <line class="cls-6" x1="98.52" y1="68.77" x2="93.99" y2="73.29"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="dress--zombie" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 261 191.33">\n    <path class="cls-3" d="M251,215.33l-243.67,-0.66l0.51,-81.75s-3.84,-61.92,44.16,-74.73l101.56,-26.19c9.86,-1.28,27.73,-2.05,46.46,6.65c44.68,20.75,50.66,75.13,51,78.58zm17.33,-32" transform="translate(-7.33 -24)"></path>\n    <polygon class="cls-4" points="5.03 55.01 90.1 75.61 99.17 20.13 22.17 36 5.03 55.01"></polygon>\n    <polygon class="cls-4" points="190.95 7.12 126.42 66.26 91.67 22.06 159.17 0 190.95 7.12"></polygon>\n    <circle class="cls-5" cx="30.56" cy="73.95" r="2.7" transform="translate(-24.81 -14.04) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="41.31" cy="72.32" r="2.7" transform="translate(-24.06 -11.41) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="52.12" cy="82.33" r="2.7" transform="translate(-26.22 -8.4) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="61.88" cy="79.67" r="2.7" transform="translate(-25.25 -6.05) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="170" cy="44" r="2.7" transform="translate(-12.94 19.79) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="135.67" cy="78.67" r="2.7" transform="translate(-22.67 12.32) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="126.16" cy="56.79" r="2.7" transform="translate(-17.51 9.26) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="106.18" cy="58.59" r="9.41" transform="matrix(0.51, -0.86, 0.86, 0.51, -5.59, 96.24)"></circle>\n    <circle class="cls-3" cx="102.8" cy="56.59" r="1.64" transform="translate(-5.53 92.34) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="109.3" cy="60.43" r="1.64" transform="matrix(0.51, -0.86, 0.86, 0.51, -5.64, 99.83)"></circle>\n    <circle class="cls-3" cx="107.97" cy="55.26" r="1.64" transform="translate(-1.84 96.14) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="104.13" cy="61.77" r="1.64" transform="translate(-9.33 96.03) rotate(-59.44)"></circle>\n    <circle class="cls-5" cx="114.9" cy="92.46" r="9.41" transform="translate(-30.47 120.4) rotate(-59.44)"></circle>\n    <circle class="cls-5" cx="123.63" cy="126.32" r="9.41" transform="translate(-55.34 144.55) rotate(-59.44)"></circle>\n    <circle class="cls-5" cx="133.84" cy="45.61" r="2.7" transform="translate(-14.48 10.82) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="148.25" cy="47.35" r="2.7" transform="translate(-14.46 14.47) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="159.95" cy="38.66" r="2.7" transform="translate(-11.92 17.11) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="180.73" cy="37.91" r="2.7" transform="translate(-11.08 22.27) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="144.62" cy="68.33" r="2.7" transform="translate(-19.8 14.23) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="156" cy="61.67" r="2.7" transform="translate(-17.78 16.85) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="80" cy="75" r="2.7" transform="translate(-23.51 -1.68) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="86.42" cy="87.23" r="2.7" transform="translate(-26.36 0.31) rotate(-14.44)"></circle>\n    <circle class="cls-3" cx="111.52" cy="90.46" r="1.64" transform="translate(-30.41 116.5) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="118.02" cy="94.3" r="1.64" transform="translate(-30.52 123.99) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="116.69" cy="89.13" r="1.64" transform="matrix(0.51, -0.86, 0.86, 0.51, -26.72, 120.3)"></circle>\n    <circle class="cls-3" cx="112.85" cy="95.64" r="1.64" transform="translate(-34.21 120.19) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="120.3" cy="124.23" r="1.64" transform="translate(-55.18 140.66) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="126.8" cy="128.07" r="1.64" transform="translate(-55.28 148.15) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="125.47" cy="122.9" r="1.64" transform="translate(-51.48 144.46) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="121.63" cy="129.41" r="1.64" transform="translate(-58.98 144.35) rotate(-59.44)"></circle>\n    <line class="cls-6" x1="95.46" y1="32.59" x2="101.97" y2="36.43"></line>\n    <line class="cls-6" x1="100.64" y1="31.26" x2="96.8" y2="37.77"></line>\n    <line class="cls-6" x1="104.19" y1="66.46" x2="110.69" y2="70.3"></line>\n    <line class="cls-6" x1="109.36" y1="65.13" x2="105.52" y2="71.63"></line>\n    <line class="cls-6" x1="112.86" y1="100.41" x2="119.37" y2="104.25"></line>\n    <line class="cls-6" x1="118.04" y1="99.07" x2="114.19" y2="105.58"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="dress--skeleton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.5 86.5">\n   <path class="cls-1" d="M172.5,46.51a46.64,46.64,0,0,0,-46.5,-46.51h-79.5a46.64,46.64,0,0,0,-46.5,46.51v40h172.5z"></path>\n   <polygon class="cls-2" points="13.5 7.8 72.04 39 89.19 0 27.16 0 13.5 7.8"></polygon>\n   <polygon class="cls-2" points="159 7.8 100.46 39 83.31 0 145.34 0 159 7.8"></polygon>\n   <circle class="cls-3" cx="27.81" cy="7.53" r="2.05"></circle>\n   <circle class="cls-3" cx="37.31" cy="6.35" r="2.05"></circle>\n   <circle class="cls-3" cx="40.79" cy="13.8" r="2.05"></circle>\n   <circle class="cls-3" cx="52.57" cy="8.35" r="2.05"></circle>\n   <circle class="cls-3" cx="69.46" cy="9.33" r="2.05"></circle>\n   <circle class="cls-3" cx="109.21" cy="27.3" r="2.05"></circle>\n   <circle class="cls-3" cx="101.21" cy="13" r="2.05"></circle>\n   <circle class="cls-3" cx="86.21" cy="10.55" r="7.13" transform="translate(17.79 64.05) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.11" cy="8.44" r="1.24" transform="translate(18.66 61.95) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.16" cy="12.49" r="1.24" transform="translate(16.99 66) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.16" cy="8.44" r="1.24" transform="translate(19.85 64.81) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.11" cy="12.49" r="1.24" transform="translate(15.8 63.13) rotate(-45)"></circle>\n   <circle class="cls-3" cx="86.21" cy="37.05" r="7.13" transform="translate(-0.95 71.81) rotate(-45)"></circle>\n   <circle class="cls-3" cx="86.21" cy="63.55" r="7.13" transform="translate(-19.69 79.58) rotate(-45)"></circle>\n   <circle class="cls-3" cx="108.96" cy="6.25" r="2.05"></circle>\n   <circle class="cls-3" cx="119.21" cy="10.25" r="2.05"></circle>\n   <circle class="cls-3" cx="132.46" cy="5.25" r="2.05"></circle>\n   <circle class="cls-3" cx="143.66" cy="9" r="2.05"></circle>\n   <circle class="cls-3" cx="121.71" cy="22.5" r="2.05"></circle>\n   <circle class="cls-3" cx="57.46" cy="18.17" r="2.05"></circle>\n   <circle class="cls-3" cx="66.3" cy="27.83" r="2.05"></circle>\n   <circle class="cls-1" cx="84.11" cy="34.95" r="1.24" transform="translate(-0.08 69.71) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.16" cy="39" r="1.24" transform="translate(-1.75 73.76) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.16" cy="34.95" r="1.24" transform="translate(1.11 72.57) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.11" cy="39" r="1.24" transform="translate(-2.94 70.89) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.17" cy="61.39" r="1.24" transform="translate(-18.76 77.49) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.22" cy="65.44" r="1.24" transform="translate(-20.43 81.54) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.22" cy="61.39" r="1.24" transform="translate(-17.57 80.36) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.17" cy="65.44" r="1.24" transform="translate(-21.62 78.68) rotate(-45)"></circle>\n   <line class="cls-4" x1="84.11" y1="8.44" x2="88.16" y2="12.49"></line>\n   <line class="cls-4" x1="88.16" y1="8.44" x2="84.11" y2="12.49"></line>\n   <line class="cls-4" x1="84.11" y1="34.94" x2="88.16" y2="38.99"></line>\n   <line class="cls-4" x1="88.16" y1="34.94" x2="84.11" y2="38.99"></line>\n   <line class="cls-4" x1="84.06" y1="61.5" x2="88.11" y2="65.55"></line>\n   <line class="cls-4" x1="88.11" y1="61.5" x2="84.06" y2="65.55"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="dress--ghost" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 254.63 127.69">\n    <path class="cls-3" d="M267.83,92.44a68.84,68.84,0,0,0,-68.64,-68.64h-117.35a68.84,68.84,0,0,0,-68.64,68.64v59h254.63z" transform="translate(-13.2 -23.79)"></path>\n    <polygon class="cls-4" points="19.93 11.51 106.34 57.57 131.65 0 40.09 0 19.93 11.51"></polygon>\n    <polygon class="cls-4" points="234.7 11.51 148.29 57.57 122.98 0 214.54 0 234.7 11.51"></polygon>\n    <circle class="cls-5" cx="41.06" cy="11.11" r="3.03"></circle>\n    <circle class="cls-5" cx="55.08" cy="9.37" r="3.03"></circle>\n    <circle class="cls-5" cx="60.21" cy="20.37" r="3.03"></circle>\n    <circle class="cls-5" cx="77.61" cy="12.32" r="3.03"></circle>\n    <circle class="cls-5" cx="102.54" cy="13.78" r="3.03"></circle>\n    <circle class="cls-5" cx="161.21" cy="40.3" r="3.03"></circle>\n    <circle class="cls-5" cx="149.41" cy="19.19" r="3.03"></circle>\n    <circle class="cls-5" cx="140.46" cy="39.36" r="10.53" transform="translate(0.11 87.06) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.36" cy="36.26" r="1.83" transform="translate(1.39 83.95) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.33" cy="42.23" r="1.83" transform="translate(-1.08 89.93) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.33" cy="36.26" r="1.83" transform="translate(3.14 88.18) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.36" cy="42.23" r="1.83" transform="translate(-2.83 85.7) rotate(-45)"></circle>\n    <circle class="cls-5" cx="140.46" cy="78.48" r="10.53" transform="translate(-27.56 98.52) rotate(-45)"></circle>\n    <circle class="cls-5" cx="140.46" cy="117.6" r="10.53" transform="translate(-55.22 109.98) rotate(-45)"></circle>\n    <circle class="cls-5" cx="160.85" cy="9.23" r="3.03"></circle>\n    <circle class="cls-5" cx="175.98" cy="15.13" r="3.03"></circle>\n    <circle class="cls-5" cx="195.53" cy="7.75" r="3.03"></circle>\n    <circle class="cls-5" cx="212.07" cy="13.29" r="3.03"></circle>\n    <circle class="cls-5" cx="179.67" cy="33.21" r="3.03"></circle>\n    <circle class="cls-5" cx="84.82" cy="26.82" r="3.03"></circle>\n    <circle class="cls-5" cx="97.86" cy="41.09" r="3.03"></circle>\n    <circle class="cls-3" cx="137.35" cy="75.38" r="1.83" transform="translate(-26.27 95.41) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.33" cy="81.35" r="1.83" transform="translate(-28.75 101.39) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.33" cy="75.38" r="1.83" transform="translate(-24.52 99.64) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.35" cy="81.35" r="1.83" transform="translate(-30.5 97.16) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.44" cy="114.41" r="1.83" transform="translate(-53.84 106.9) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.42" cy="120.39" r="1.83" transform="translate(-56.32 112.88) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.42" cy="114.41" r="1.83" transform="translate(-52.09 111.13) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.44" cy="120.39" r="1.83" transform="translate(-58.07 108.66) rotate(-45)"></circle>\n    <line class="cls-6" x1="124.15" y1="12.46" x2="130.13" y2="18.44"></line>\n    <line class="cls-6" x1="130.13" y1="12.46" x2="124.15" y2="18.44"></line>\n    <line class="cls-6" x1="124.16" y1="51.58" x2="130.13" y2="57.56"></line>\n    <line class="cls-6" x1="130.13" y1="51.58" x2="124.16" y2="57.56"></line>\n    <line class="cls-6" x1="124.08" y1="90.78" x2="130.06" y2="96.75"></line>\n    <line class="cls-6" x1="130.06" y1="90.78" x2="124.08" y2="96.75"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="dress--wolf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218.5 274">\n    <path class="cls-1" d="M217.27,58.48A58.64,58.64,0,0,0,158.79,0h-100A58.64,58.64,0,0,0,.35,58.48Q.18,165,0,271.5L218.5,274Z"/>\n    <polygon class="cls-2" points="17.33 9.81 90.94 49.04 112.5 0 34.5 0 17.33 9.81"/>\n    <polygon class="cls-2" points="200.29 9.81 126.68 49.04 105.12 0 183.11 0 200.29 9.81"/>\n    <circle class="cls-3" cx="35.33" cy="9.47" r="2.58"/>\n    <circle class="cls-3" cx="47.27" cy="7.99" r="2.58"/>\n    <circle class="cls-3" cx="51.65" cy="17.36" r="2.58"/>\n    <circle class="cls-3" cx="66.46" cy="10.5" r="2.58"/>\n    <circle class="cls-3" cx="87.7" cy="11.74" r="2.58"/>\n    <circle class="cls-3" cx="137.69" cy="34.33" r="2.58"/>\n    <circle class="cls-3" cx="127.63" cy="16.35" r="2.58"/>\n    <circle class="cls-3" cx="108.76" cy="13.27" r="8.97" transform="translate(22.48 80.79) rotate(-45)"/>\n    <circle class="cls-1" cx="106.11" cy="10.62" r="1.56" transform="translate(23.57 78.14) rotate(-45)"/>\n    <circle class="cls-1" cx="111.21" cy="15.71" r="1.56" transform="translate(21.46 83.24) rotate(-45)"/>\n    <circle class="cls-1" cx="111.21" cy="10.62" r="1.56" transform="translate(25.06 81.74) rotate(-45)"/>\n    <circle class="cls-1" cx="106.11" cy="15.71" r="1.56" transform="translate(19.97 79.64) rotate(-45)"/>\n    <circle class="cls-3" cx="108.76" cy="46.59" r="8.97" transform="translate(-1.09 90.55) rotate(-45)"/>\n    <circle class="cls-3" cx="108.76" cy="79.92" r="8.97" transform="translate(-24.65 100.31) rotate(-45)"/>\n    <circle class="cls-3" cx="137.37" cy="7.86" r="2.58"/>\n    <circle class="cls-3" cx="150.26" cy="12.89" r="2.58"/>\n    <circle class="cls-3" cx="166.92" cy="6.6" r="2.58"/>\n    <circle class="cls-3" cx="181.01" cy="11.32" r="2.58"/>\n    <circle class="cls-3" cx="153.4" cy="28.29" r="2.58"/>\n    <circle class="cls-3" cx="72.61" cy="22.84" r="2.58"/>\n    <circle class="cls-3" cx="83.72" cy="35" r="2.58"/>\n    <circle class="cls-1" cx="106.11" cy="43.95" r="1.56" transform="translate(0.01 87.9) rotate(-45)"/>\n    <circle class="cls-1" cx="111.2" cy="49.04" r="1.56" transform="translate(-2.1 93) rotate(-45)"/>\n    <circle class="cls-1" cx="111.2" cy="43.95" r="1.56" transform="translate(1.5 91.5) rotate(-45)"/>\n    <circle class="cls-1" cx="106.11" cy="49.04" r="1.56" transform="translate(-3.59 89.4) rotate(-45)"/>\n    <circle class="cls-1" cx="106.19" cy="77.19" r="1.56" transform="translate(-23.48 97.7) rotate(-45)"/>\n    <circle class="cls-1" cx="111.28" cy="82.29" r="1.56" transform="translate(-25.59 102.79) rotate(-45)"/>\n    <circle class="cls-1" cx="111.28" cy="77.19" r="1.56" transform="translate(-21.99 101.3) rotate(-45)"/>\n    <circle class="cls-1" cx="106.19" cy="82.29" r="1.56" transform="translate(-27.08 99.19) rotate(-45)"/>\n    <line class="cls-4" x1="106.11" y1="10.62" x2="111.21" y2="15.71"/>\n    <line class="cls-4" x1="111.21" y1="10.62" x2="106.11" y2="15.71"/>\n    <line class="cls-4" x1="106.12" y1="43.94" x2="111.21" y2="49.03"/>\n    <line class="cls-4" x1="111.21" y1="43.94" x2="106.12" y2="49.03"/>\n    <line class="cls-4" x1="106.05" y1="77.33" x2="111.14" y2="82.42"/>\n    <line class="cls-4" x1="111.14" y1="77.33" x2="106.05" y2="82.42"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="dress--yaga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.71 232.13">\n    <path class="cls-1" d="M0,232.13v-176.74a54.08,54.08,0,0,1,53.92,-53.92h34.79v230.08z"></path>\n    <circle class="cls-2" cx="77.43" cy="55.01" r="3.92" transform="translate(-16.11 71.47) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.26" cy="53.86" r="0.68" transform="translate(-15.64 70.3) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.5" cy="56.07" r="0.68" transform="translate(-16.55 72.55) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.49" cy="53.84" r="0.68" transform="translate(-14.97 71.88) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.28" cy="56.08" r="0.68" transform="translate(-17.22 70.97) rotate(-45.37)"></circle>\n    <line class="cls-3" x1="76.26" y1="53.86" x2="78.5" y2="56.07"></line>\n    <line class="cls-3" x1="78.49" y1="53.84" x2="76.28" y2="56.08"></line>\n    <circle class="cls-2" cx="77.52" cy="69.58" r="3.92" transform="translate(-26.45 75.87) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.36" cy="68.43" r="0.68" transform="translate(-25.98 74.7) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.6" cy="70.64" r="0.68" transform="translate(-26.89 76.96) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.58" cy="68.41" r="0.68" transform="translate(-25.31 76.28) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.37" cy="70.65" r="0.68" transform="translate(-27.56 75.38) rotate(-45.37)"></circle>\n    <line class="cls-3" x1="76.36" y1="68.43" x2="78.6" y2="70.64"></line>\n    <line class="cls-3" x1="78.58" y1="68.41" x2="76.37" y2="70.65"></line>\n    <circle class="cls-2" cx="77.62" cy="84.14" r="3.92" transform="translate(-36.79 80.28) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.48" cy="82.96" r="0.68" transform="translate(-36.29 79.12) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.72" cy="85.17" r="0.68" transform="translate(-37.2 81.37) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.71" cy="82.95" r="0.68" transform="translate(-35.62 80.7) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.5" cy="85.19" r="0.68" transform="translate(-37.87 79.79) rotate(-45.37)"></circle>\n    <line class="cls-3" x1="76.42" y1="83.02" x2="78.66" y2="85.23"></line>\n    <line class="cls-3" x1="78.65" y1="83.01" x2="76.44" y2="85.25"></line>\n    <polygon class="cls-4" points="22.11 7.34 40.1 46.09 69.32 28.83 49.61 0 22.11 7.34"></polygon>\n    <circle class="cls-2" cx="43.91" cy="7.91" r="1.63" transform="translate(11.86 38.95) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="29.16" cy="10.16" r="1.63" transform="translate(3.89 27.91) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="35.86" cy="21.09" r="1.63" transform="translate(-2.19 37.9) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="47.11" cy="16.84" r="1.63" transform="translate(5.94 45.27) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="52.23" cy="25.7" r="1.63" transform="translate(0.87 53.11) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="43.16" cy="25.66" r="1.63" transform="translate(-2.87 45.73) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="41.58" cy="36.2" r="1.63" transform="translate(-12.08 48.83) rotate(-54.29)"></circle>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="dress--doctor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.76 116.13">\n    <path class="cls-1" d="M93.13,33.41a25.18,25.18,0,0,0,-25.13,-25.11h-42.89a25.18,25.18,0,0,0,-25.11,25.11l1.09,82.72h92.67z"></path>\n    <polygon class="cls-2" points="7.29 12.51 38.89 29.36 48.15 8.3 22.96 0 7.29 12.51"></polygon>\n    <polygon class="cls-2" points="85.84 12.51 54.24 29.36 44.98 8.3 70.86 0.69 85.84 12.51"></polygon>\n    <circle class="cls-3" cx="15.02" cy="12.37" r="1.11"></circle>\n    <circle class="cls-3" cx="20.76" cy="6.9" r="1.11"></circle>\n    <circle class="cls-3" cx="22.02" cy="15.75" r="1.11"></circle>\n    <circle class="cls-3" cx="24.26" cy="11.8" r="1.11"></circle>\n    <circle class="cls-3" cx="37.5" cy="13.34" r="1.11"></circle>\n    <circle class="cls-3" cx="55.51" cy="22.8" r="1.11"></circle>\n    <circle class="cls-3" cx="54.65" cy="15.32" r="1.11"></circle>\n    <circle class="cls-3" cx="46.55" cy="14" r="3.85" transform="translate(3.74 37.01) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.41" cy="12.86" r="0.67" transform="translate(4.21 35.88) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.6" cy="15.05" r="0.67" transform="translate(3.3 38.06) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.6" cy="12.86" r="0.67" transform="translate(4.85 37.42) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.41" cy="15.05" r="0.67" transform="translate(2.66 36.52) rotate(-45)"></circle>\n    <circle class="cls-3" cx="46.55" cy="28.31" r="3.85" transform="translate(-6.38 41.2) rotate(-45)"></circle>\n    <circle class="cls-3" cx="46.55" cy="38.61" r="3.85" transform="translate(-13.67 44.22) rotate(-45)"></circle>\n    <circle class="cls-3" cx="58.83" cy="11.68" r="1.11"></circle>\n    <circle class="cls-3" cx="66.4" cy="14.3" r="1.11"></circle>\n    <circle class="cls-3" cx="71.65" cy="7.8" r="1.11"></circle>\n    <circle class="cls-3" cx="77.56" cy="13.16" r="1.11"></circle>\n    <circle class="cls-3" cx="62.01" cy="19.94" r="1.11"></circle>\n    <circle class="cls-3" cx="31.02" cy="18.11" r="1.11"></circle>\n    <circle class="cls-3" cx="35.79" cy="23.33" r="1.11"></circle>\n    <circle class="cls-1" cx="45.41" cy="27.17" r="0.67" transform="translate(-5.91 40.07) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.59" cy="29.36" r="0.67" transform="translate(-6.82 42.25) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.59" cy="27.17" r="0.67" transform="translate(-5.27 41.61) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.41" cy="29.36" r="0.67" transform="translate(-7.46 40.71) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.44" cy="37.44" r="0.67" transform="translate(-13.17 43.1) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.63" cy="39.63" r="0.67" transform="translate(-14.07 45.28) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.63" cy="37.44" r="0.67" transform="translate(-12.53 44.64) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.44" cy="39.63" r="0.67" transform="translate(-14.71 43.74) rotate(-45)"></circle>\n    <line class="cls-4" x1="45.41" y1="12.86" x2="47.6" y2="15.05"></line>\n    <line class="cls-4" x1="47.6" y1="12.86" x2="45.41" y2="15.05"></line>\n    <line class="cls-4" x1="45.41" y1="27.17" x2="47.6" y2="29.35"></line>\n    <line class="cls-4" x1="47.6" y1="27.17" x2="45.41" y2="29.35"></line>\n    <line class="cls-4" x1="45.38" y1="37.5" x2="47.57" y2="39.69"></line>\n    <line class="cls-4" x1="47.57" y1="37.5" x2="45.38" y2="39.69"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="dress--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.33 243.73">\n    <path class="cls-1" d="M178.16,151.9a48,48,0,0,0,-47.86,-47.9h-81.83a48,48,0,0,0,-47.86,47.9l-0.61,91.83l178.33,-0.33q-0.08,-45.75,-0.17,-91.5z"></path>\n    <polygon class="cls-2" points="14.51 112.06 74.76 144.18 90.67 102.07 33.67 79.73 14.51 112.06"></polygon>\n    <polygon class="cls-2" points="164.27 112.06 104.01 144.18 86.67 101.73 145.33 79.07 164.27 112.06"></polygon>\n    <circle class="cls-3" cx="29.24" cy="111.78" r="2.11"></circle>\n    <circle class="cls-3" cx="38.67" cy="90.4" r="2.11"></circle>\n    <circle class="cls-3" cx="38.33" cy="102.07" r="2.11"></circle>\n    <circle class="cls-3" cx="55.67" cy="99.07" r="2.11"></circle>\n    <circle class="cls-3" cx="139.33" cy="90.07" r="2.11"></circle>\n    <circle class="cls-3" cx="129.33" cy="100.73" r="2.11"></circle>\n    <circle class="cls-3" cx="103.67" cy="102.4" r="2.11"></circle>\n    <circle class="cls-3" cx="42.6" cy="118.24" r="2.11"></circle>\n    <circle class="cls-3" cx="54.72" cy="112.62" r="2.11"></circle>\n    <circle class="cls-3" cx="72.11" cy="113.64" r="2.11"></circle>\n    <circle class="cls-3" cx="113.02" cy="132.13" r="2.11"></circle>\n    <circle class="cls-3" cx="104.79" cy="117.41" r="2.11"></circle>\n    <circle class="cls-3" cx="89.35" cy="114.89" r="7.34" transform="translate(-55.07 96.83) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.18" cy="112.72" r="1.28" transform="translate(-54.17 94.66) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.35" cy="116.89" r="1.28" transform="translate(-55.9 98.83) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.35" cy="112.72" r="1.28" transform="translate(-52.95 97.61) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.18" cy="116.89" r="1.28" transform="translate(-57.12 95.88) rotate(-45)"></circle>\n    <circle class="cls-3" cx="89.35" cy="142.17" r="7.34" transform="translate(-74.36 104.82) rotate(-45)"></circle>\n    <circle class="cls-3" cx="112.77" cy="110.47" r="2.11"></circle>\n    <circle class="cls-3" cx="123.32" cy="114.58" r="2.11"></circle>\n    <circle class="cls-3" cx="136.96" cy="109.44" r="2.11"></circle>\n    <circle class="cls-3" cx="148.48" cy="113.3" r="2.11"></circle>\n    <circle class="cls-3" cx="125.89" cy="127.19" r="2.11"></circle>\n    <circle class="cls-3" cx="59.76" cy="122.73" r="2.11"></circle>\n    <circle class="cls-3" cx="68.85" cy="132.68" r="2.11"></circle>\n    <circle class="cls-1" cx="87.18" cy="140" r="1.28" transform="translate(-73.46 102.65) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.35" cy="144.17" r="1.28" transform="translate(-75.19 106.82) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.35" cy="140" r="1.28" transform="translate(-72.24 105.6) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.18" cy="144.17" r="1.28" transform="translate(-76.41 103.87) rotate(-45)"></circle>\n    <line class="cls-4" x1="87.18" y1="112.72" x2="91.35" y2="116.89"></line>\n    <line class="cls-4" x1="91.35" y1="112.72" x2="87.18" y2="116.89"></line>\n    <line class="cls-4" x1="87.18" y1="140" x2="91.35" y2="144.17"></line>\n    <line class="cls-4" x1="91.35" y1="140" x2="87.18" y2="144.17"></line>\n    <polygon class="cls-2" points="14.88 32.99 75.13 65.11 91.03 23 34.03 0.67 14.88 32.99"></polygon>\n    <polygon class="cls-2" points="164.63 32.99 104.38 65.11 87.03 22.67 145.7 0 164.63 32.99"></polygon>\n    <circle class="cls-3" cx="29.6" cy="32.72" r="2.11"></circle>\n    <circle class="cls-3" cx="39.03" cy="11.33" r="2.11"></circle>\n    <circle class="cls-3" cx="38.7" cy="23" r="2.11"></circle>\n    <circle class="cls-3" cx="56.03" cy="20" r="2.11"></circle>\n    <circle class="cls-3" cx="139.7" cy="11" r="2.11"></circle>\n    <circle class="cls-3" cx="129.7" cy="21.67" r="2.11"></circle>\n    <circle class="cls-3" cx="104.03" cy="23.33" r="2.11"></circle>\n    <circle class="cls-3" cx="42.96" cy="39.17" r="2.11"></circle>\n    <circle class="cls-3" cx="55.09" cy="33.56" r="2.11"></circle>\n    <circle class="cls-3" cx="72.48" cy="34.57" r="2.11"></circle>\n    <circle class="cls-3" cx="113.39" cy="53.07" r="2.11"></circle>\n    <circle class="cls-3" cx="105.16" cy="38.35" r="2.11"></circle>\n    <circle class="cls-3" cx="89.72" cy="35.82" r="7.34" transform="translate(0.95 73.93) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.55" cy="33.66" r="1.28" transform="translate(1.84 71.76) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.72" cy="37.83" r="1.28" transform="translate(0.12 75.93) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.72" cy="33.66" r="1.28" transform="translate(3.06 74.71) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.55" cy="37.83" r="1.28" transform="translate(-1.1 72.98) rotate(-45)"></circle>\n    <circle class="cls-3" cx="89.72" cy="63.1" r="7.34" transform="translate(-18.34 81.92) rotate(-45)"></circle>\n    <circle class="cls-3" cx="113.13" cy="31.4" r="2.11"></circle>\n    <circle class="cls-3" cx="123.68" cy="35.52" r="2.11"></circle>\n    <circle class="cls-3" cx="137.32" cy="30.37" r="2.11"></circle>\n    <circle class="cls-3" cx="148.85" cy="34.23" r="2.11"></circle>\n    <circle class="cls-3" cx="126.26" cy="48.13" r="2.11"></circle>\n    <circle class="cls-3" cx="60.12" cy="43.67" r="2.11"></circle>\n    <circle class="cls-3" cx="69.22" cy="53.62" r="2.11"></circle>\n    <circle class="cls-1" cx="87.55" cy="60.94" r="1.28" transform="translate(-17.45 79.75) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.71" cy="65.11" r="1.28" transform="translate(-19.17 83.92) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.71" cy="60.94" r="1.28" transform="translate(-16.23 82.7) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.55" cy="65.11" r="1.28" transform="translate(-20.39 80.97) rotate(-45)"></circle>\n    <line class="cls-4" x1="87.55" y1="33.66" x2="91.72" y2="37.83"></line>\n    <line class="cls-4" x1="91.72" y1="33.66" x2="87.55" y2="37.83"></line>\n    <line class="cls-4" x1="87.55" y1="60.93" x2="91.72" y2="65.1"></line>\n    <line class="cls-4" x1="91.72" y1="60.93" x2="87.55" y2="65.1"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="dress--alien" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.91 156.21">\n    <path class="cls-1" d="M129.91,35a35.12,35.12,0,0,0,-35,-35h-59.91a35.12,35.12,0,0,0,-35,35l0.57,120.88l130.33,0.33z"></path>\n    <polygon class="cls-2" points="10.17 5.87 54.25 29.37 67.16 0 20.45 0 10.17 5.87"></polygon>\n    <polygon class="cls-2" points="119.74 5.87 75.65 29.37 62.74 0 109.45 0 119.74 5.87"></polygon>\n    <circle class="cls-3" cx="20.95" cy="5.67" r="1.54"></circle>\n    <circle class="cls-3" cx="28.1" cy="4.78" r="1.54"></circle>\n    <circle class="cls-3" cx="30.72" cy="10.39" r="1.54"></circle>\n    <circle class="cls-3" cx="39.59" cy="6.29" r="1.54"></circle>\n    <circle class="cls-3" cx="52.31" cy="7.03" r="1.54"></circle>\n    <circle class="cls-3" cx="82.25" cy="20.56" r="1.54"></circle>\n    <circle class="cls-3" cx="76.22" cy="9.79" r="1.54"></circle>\n    <circle class="cls-3" cx="64.93" cy="7.94" r="5.37" transform="translate(13.4 48.24) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.34" cy="6.36" r="0.93" transform="translate(14.06 46.65) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.39" cy="9.41" r="0.93" transform="translate(12.79 49.7) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.39" cy="6.36" r="0.93" transform="translate(14.95 48.81) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.34" cy="9.41" r="0.93" transform="translate(11.9 47.54) rotate(-45)"></circle>\n    <circle class="cls-3" cx="64.93" cy="27.9" r="5.37" transform="translate(-0.71 54.08) rotate(-45)"></circle>\n    <circle class="cls-3" cx="64.93" cy="47.86" r="5.37" transform="translate(-14.83 59.93) rotate(-45)"></circle>\n    <circle class="cls-3" cx="82.06" cy="4.71" r="1.54"></circle>\n    <circle class="cls-3" cx="89.78" cy="7.72" r="1.54"></circle>\n    <circle class="cls-3" cx="99.76" cy="3.95" r="1.54"></circle>\n    <circle class="cls-3" cx="108.19" cy="6.78" r="1.54"></circle>\n    <circle class="cls-3" cx="91.66" cy="16.94" r="1.54"></circle>\n    <circle class="cls-3" cx="43.27" cy="13.68" r="1.54"></circle>\n    <circle class="cls-3" cx="49.93" cy="20.96" r="1.54"></circle>\n    <circle class="cls-1" cx="63.34" cy="26.32" r="0.93" transform="translate(-0.06 52.5) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.39" cy="29.37" r="0.93" transform="translate(-1.32 55.54) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.39" cy="26.32" r="0.93" transform="translate(0.83 54.65) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.34" cy="29.37" r="0.93" transform="translate(-2.21 53.39) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.38" cy="46.23" r="0.93" transform="translate(-14.13 58.36) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.43" cy="49.28" r="0.93" transform="translate(-15.39 61.41) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.43" cy="46.23" r="0.93" transform="translate(-13.23 60.52) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.38" cy="49.28" r="0.93" transform="translate(-16.28 59.25) rotate(-45)"></circle>\n    <line class="cls-4" x1="63.34" y1="6.36" x2="66.39" y2="9.41"></line>\n    <line class="cls-4" x1="66.39" y1="6.36" x2="63.34" y2="9.41"></line>\n    <line class="cls-4" x1="63.34" y1="26.32" x2="66.39" y2="29.37"></line>\n    <line class="cls-4" x1="66.39" y1="26.32" x2="63.34" y2="29.37"></line>\n    <line class="cls-4" x1="63.3" y1="46.31" x2="66.35" y2="49.36"></line>\n    <line class="cls-4" x1="66.35" y1="46.31" x2="63.3" y2="49.36"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="dress--vampire" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 137.5 139.59">\n    <path class="cls-3" d="M137.5,37.22a37.07,37.07,0,0,0-37-37H37.35a37.07,37.07,0,0,0-37,37Q.2,88.54,0,139.85H137.25Q137.38,88.53,137.5,37.22Z" transform="translate(0 -0.26)"/>\n    <polygon class="cls-4" points="11.12 6.2 57.65 31 71.28 0 21.98 0 11.12 6.2"/>\n    <polygon class="cls-4" points="126.77 6.2 80.24 31 66.61 0 115.91 0 126.77 6.2"/>\n    <circle class="cls-5" cx="22.5" cy="5.98" r="1.63"/>\n    <circle class="cls-5" cx="30.05" cy="5.05" r="1.63"/>\n    <circle class="cls-5" cx="32.81" cy="10.97" r="1.63"/>\n    <circle class="cls-5" cx="42.18" cy="6.63" r="1.63"/>\n    <circle class="cls-5" cx="49.62" cy="8.73" r="1.63"/>\n    <circle class="cls-5" cx="87.2" cy="21.7" r="1.63"/>\n    <circle class="cls-5" cx="91.5" cy="3.86" r="1.63"/>\n    <circle class="cls-5" cx="68.92" cy="29.71" r="5.67" transform="translate(-0.82 57.18) rotate(-45)"/>\n    <circle class="cls-5" cx="68.92" cy="50.77" r="5.67" transform="translate(-15.71 63.35) rotate(-45)"/>\n    <circle class="cls-5" cx="88.13" cy="10.86" r="1.63"/>\n    <circle class="cls-5" cx="98" cy="9.23" r="1.63"/>\n    <circle class="cls-5" cx="105.68" cy="4.17" r="1.63"/>\n    <circle class="cls-5" cx="114.58" cy="7.15" r="1.63"/>\n    <circle class="cls-5" cx="97.13" cy="17.88" r="1.63"/>\n    <circle class="cls-5" cx="46.07" cy="14.44" r="1.63"/>\n    <circle class="cls-5" cx="53.09" cy="22.12" r="1.63"/>\n    <circle class="cls-3" cx="67.24" cy="28.03" r="0.99" transform="translate(-0.13 55.5) rotate(-45)"/>\n    <circle class="cls-3" cx="70.46" cy="31.25" r="0.99" transform="translate(-1.46 58.72) rotate(-45)"/>\n    <circle class="cls-3" cx="70.46" cy="28.03" r="0.99" transform="translate(0.81 57.78) rotate(-45)"/>\n    <circle class="cls-3" cx="67.24" cy="31.25" r="0.99" transform="translate(-2.4 56.44) rotate(-45)"/>\n    <circle class="cls-3" cx="67.29" cy="49.05" r="0.99" transform="translate(-14.97 61.69) rotate(-45)"/>\n    <circle class="cls-3" cx="70.51" cy="52.27" r="0.99" transform="translate(-16.31 64.91) rotate(-45)"/>\n    <circle class="cls-3" cx="70.51" cy="49.05" r="0.99" transform="translate(-14.03 63.97) rotate(-45)"/>\n    <circle class="cls-3" cx="67.29" cy="52.27" r="0.99" transform="translate(-17.25 62.63) rotate(-45)"/>\n    <line class="cls-6" x1="67.24" y1="27.77" x2="70.46" y2="30.99"/>\n    <line class="cls-6" x1="70.46" y1="27.77" x2="67.24" y2="30.99"/>\n    <line class="cls-6" x1="67.2" y1="48.88" x2="70.42" y2="52.1"/>\n    <line class="cls-6" x1="70.42" y1="48.88" x2="67.2" y2="52.1"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="dress--yeti" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 296.14 215.33">\n    <path class="cls-3" d="M296.14,107.39a80,80,0,0,0,-79.74,-79.74h-136.34a80,80,0,0,0,-79.74,79.74q-0.16,62.72,-0.32,125.43l295.33,2z" transform="translate(0 -19.49)"></path>\n    <polygon class="cls-4" points="20 16.67 62 132 153.26 59.48 54 0 20 16.67"></polygon>\n    <polygon class="cls-4" points="269.33 14 230 130.67 143.19 59.48 239.33 1.33 269.33 14"></polygon>\n    <circle class="cls-5" cx="47.33" cy="66.33" r="3.51"></circle>\n    <circle class="cls-5" cx="35.33" cy="37.83" r="3.51"></circle>\n    <circle class="cls-5" cx="57.33" cy="76.83" r="3.51"></circle>\n    <circle class="cls-5" cx="63.82" cy="95.83" r="3.51"></circle>\n    <circle class="cls-5" cx="65.33" cy="114.33" r="3.51"></circle>\n    <circle class="cls-5" cx="225.33" cy="114.82" r="3.51"></circle>\n    <circle class="cls-5" cx="148.17" cy="140.51" r="10.42" transform="translate(-55.96 126.43) rotate(-45)"></circle>\n    <circle class="cls-5" cx="148.17" cy="187.96" r="12.23" transform="translate(-89.51 140.33) rotate(-45)"></circle>\n    <circle class="cls-5" cx="247.32" cy="51.33" r="3.51"></circle>\n    <circle class="cls-5" cx="232.33" cy="76.32" r="3.51"></circle>\n    <circle class="cls-5" cx="228.33" cy="97.83" r="3.51"></circle>\n    <circle class="cls-5" cx="211.82" cy="98.83" r="3.51"></circle>\n    <circle class="cls-5" cx="78.33" cy="106.83" r="3.51"></circle>\n    <circle class="cls-3" cx="145.09" cy="137.43" r="1.81" transform="translate(-54.69 123.35) rotate(-45)"></circle>\n    <circle class="cls-3" cx="151" cy="143.35" r="1.81" transform="translate(-57.14 129.27) rotate(-45)"></circle>\n    <circle class="cls-3" cx="151" cy="137.43" r="1.81" transform="translate(-52.95 127.54) rotate(-45)"></circle>\n    <circle class="cls-3" cx="145.09" cy="143.35" r="1.81" transform="translate(-58.87 125.09) rotate(-45)"></circle>\n    <circle class="cls-3" cx="144.66" cy="184.25" r="2.13" transform="translate(-87.91 136.76) rotate(-45)"></circle>\n    <circle class="cls-3" cx="151.6" cy="191.19" r="2.13" transform="translate(-90.79 143.7) rotate(-45)"></circle>\n    <circle class="cls-3" cx="151.6" cy="184.25" r="2.13" transform="translate(-85.88 141.67) rotate(-45)"></circle>\n    <circle class="cls-3" cx="144.66" cy="191.19" r="2.13" transform="translate(-92.82 138.79) rotate(-45)"></circle>\n    <line class="cls-6" x1="145.09" y1="117.94" x2="151.01" y2="123.85"></line>\n    <line class="cls-6" x1="151.01" y1="117.94" x2="145.09" y2="123.85"></line>\n    <line class="cls-6" x1="144.47" y1="164.94" x2="151.41" y2="171.88"></line>\n    <line class="cls-6" x1="151.41" y1="164.94" x2="144.47" y2="171.88"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="dress--bed" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 159.49 27.64">\n    <path class="cls-1" d="M2.39,26.77,26.51,1.33l132.94.29,0,25.83Z"/>\n    <polygon class="cls-2" points="0 27.64 18.54 23.24 14.82 11.58 1.46 23.36 0 27.64"/>\n    <polygon class="cls-2" points="31.34 0 24.66 17.84 13.56 12.7 26.92 0.91 31.34 0"/>\n    <circle class="cls-3" cx="3.03" cy="24.86" r="0.59" transform="translate(-15.68 8.22) rotate(-41.41)"/>\n    <circle class="cls-3" cx="4.85" cy="22.8" r="0.59" transform="translate(-13.87 8.91) rotate(-41.41)"/>\n    <circle class="cls-3" cx="7.02" cy="23.75" r="0.59" transform="translate(-13.95 10.58) rotate(-41.41)"/>\n    <circle class="cls-3" cx="8.52" cy="20.33" r="0.59" transform="translate(-11.32 10.72) rotate(-41.41)"/>\n    <circle class="cls-3" cx="12.35" cy="17.34" r="0.59" transform="translate(-8.38 12.5) rotate(-41.41)"/>\n    <circle class="cls-3" cx="24.32" cy="13.66" r="0.59" transform="translate(-2.95 19.5) rotate(-41.41)"/>\n    <circle class="cls-3" cx="19.88" cy="12.1" r="0.59" transform="translate(-3.03 16.17) rotate(-41.41)"/>\n    <circle class="cls-3" cx="16.18" cy="14.42" r="2.05" transform="translate(0.78 29.67) rotate(-86.41)"/>\n    <circle class="cls-1" cx="15.33" cy="14.36" r="0.36" transform="matrix(0.06, -1, 1, 0.06, 0.03, 28.76)"/>\n    <circle class="cls-1" cx="16.97" cy="14.47" r="0.36" transform="translate(1.47 30.5) rotate(-86.41)"/>\n    <circle class="cls-1" cx="16.2" cy="13.59" r="0.36" transform="translate(1.62 28.91) rotate(-86.41)"/>\n    <circle class="cls-1" cx="16.1" cy="15.24" r="0.36" transform="translate(-0.12 30.35) rotate(-86.41)"/>\n    <circle class="cls-3" cx="20.27" cy="9.17" r="0.59" transform="translate(-1 15.7) rotate(-41.41)"/>\n    <circle class="cls-3" cx="23.24" cy="8.08" r="0.59" transform="translate(0.46 17.39) rotate(-41.41)"/>\n    <circle class="cls-3" cx="25.14" cy="4.49" r="0.59" transform="translate(3.31 17.75) rotate(-41.41)"/>\n    <circle class="cls-3" cx="28.27" cy="3.17" r="0.59" transform="translate(4.97 19.49) rotate(-41.41)"/>\n    <circle class="cls-3" cx="26.1" cy="10.25" r="0.59" transform="translate(-0.25 19.83) rotate(-41.41)"/>\n    <circle class="cls-3" cx="11.44" cy="21.52" r="0.59" transform="translate(-11.37 12.94) rotate(-41.41)"/>\n    <circle class="cls-3" cx="15.18" cy="21.92" r="0.59" transform="translate(-10.71 15.52) rotate(-41.41)"/>\n    <line class="cls-4" x1="15.33" y1="14.36" x2="16.97" y2="14.47"/>\n    <line class="cls-4" x1="16.2" y1="13.59" x2="16.1" y2="15.24"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/dress/dress.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], DressComponent);
+    return DressComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=dress.js.map
+
+/***/ }),
+/* 172 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BraComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BraComponent = /** @class */ (function (_super) {
+    __extends(BraComponent, _super);
+    function BraComponent(element) {
+        return _super.call(this, 'bra', element.nativeElement) || this;
+    }
+    BraComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'bra',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="bra" width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.76 152.07">\n      <rect class="cls-1" y="91.44" width="276.76" height="16.33"></rect>\n      <rect class="cls-1" x="60.01" width="18.78" height="100.42"></rect>\n      <rect class="cls-1" x="197.98" width="18.78" height="100.42"></rect>\n      <path class="cls-1" d="M136.34,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-1" d="M237.2,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-2" d="M57.43,118.43l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.56,4.96z"></path>\n      <path class="cls-2" d="M78.67,143.75l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M103.57,120.07l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M157.47,116.39l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M173.81,142.93l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M189.73,116l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M210.56,135.58l-9.56,-12.3a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n</svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.64 71.08">\n      <polygon class="cls-1" points="160.64 50.37 0 50.37 4 42.74 160.64 42.74 160.64 50.37"/>\n      <rect class="cls-1" x="24.84" width="8.78" height="46.94"/>\n      <rect class="cls-1" x="89.33" width="8.78" height="46.94"/>\n      <path class="cls-1" d="M60.52,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-1" d="M107.66,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-2" d="M23.64,55.36l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M33.56,67.19l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M45.2,56.12l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M70.4,54.41l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M78,66.81l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M85.48,54.22,81,48.46a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M95.21,63.38l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.67 29.48">\n      <polygon class="cls-1" points="102.67 16.91 0 16.91 9.67 12.28 92.67 12.28 102.67 16.91"/>\n      <polygon class="cls-1" points="34.69 14.83 29.36 14.83 29.36 1 34.69 0.33 34.69 14.83"/>\n      <polygon class="cls-1" points="73.81 14.83 68.49 14.83 68.49 0 73.81 1 73.81 14.83"/>\n      <path class="cls-1" d="M51,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-1" d="M79.61,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-2" d="M28.63,19.94l-2.71-3.49A1.4,1.4,0,1,1,28.35,15l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M34.65,27.12l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M41.72,20.4,39,16.91a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M57,19.36l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4L57,15l.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M61.63,26.89,58.92,23.4A1.4,1.4,0,1,1,61.35,22l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M66.15,19.24l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M72.06,24.8l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.55 79.39">\n    <rect class="cls-1" y="62.4" width="109.55" height="4.57"/>\n    <polygon class="cls-1" points="54.08 64.92 48.82 64.92 48.82 0 54.08 9.5 54.08 64.92"/>\n    <rect class="cls-1" x="87.48" y="36.78" width="5.26" height="28.13"/>\n    <path class="cls-1" d="M70.21,65.83a13.56,13.56,0,1,1-27.11,0"/>\n    <path class="cls-1" d="M98.46,65.83a13.56,13.56,0,0,1-27.11,0"/>\n    <path class="cls-2" d="M48.1,70l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M54,77.06l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M61,70.42,58.35,67a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48A1.39,1.39,0,1,1,63.71,67Z"/>\n    <path class="cls-2" d="M76.13,69.39l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M80.7,76.83,78,73.38A1.39,1.39,0,1,1,80.43,72l.28.48L81,72a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M85.17,69.28l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M91,74.77l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.3 36.88">\n    <rect class="cls-1" y="21.04" width="72.3" height="4.27"/>\n    <polygon class="cls-1" points="20.58 23.39 15.68 23.39 15.68 0 20.58 6.33 20.58 23.39"/>\n    <polygon class="cls-1" points="56.62 23.39 51.72 23.39 51.72 6.83 56.62 0.67 56.62 23.39"/>\n    <path class="cls-1" d="M35.62,24.24a12.64,12.64,0,1,1-25.28,0"/>\n    <path class="cls-1" d="M62,24.24a12.64,12.64,0,1,1-25.28,0"/>\n    <path class="cls-2" d="M15,28.09l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29L15,24l.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M20.55,34.71l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45A1.29,1.29,0,1,1,23,31.49Z"/>\n    <path class="cls-2" d="M27.06,28.52l-2.5-3.22A1.29,1.29,0,1,1,26.8,24l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M41.14,27.56l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M45.4,34.49l-2.5-3.22A1.29,1.29,0,1,1,45.14,30l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M49.56,27.45l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M55,32.57l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.67 144.21">\n    <polygon class="cls-1" points="121.67 42.83 0 42.83 5.67 33.24 116 33.24 121.67 42.83"/>\n    <polygon class="cls-1" points="26.13 38.52 15.11 38.52 15.11 0.33 26.13 6 26.13 38.52"/>\n    <polygon class="cls-1" points="107.15 38.52 96.12 38.52 96.12 6.33 107.15 0 107.15 38.52"/>\n    <path class="cls-1" d="M59.93,40.43a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-1" d="M119.15,40.43a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-2" d="M13.59,49.1,8,41.87A2.91,2.91,0,1,1,13,39l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M26.06,64l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M40.69,50.06l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M72.34,47.9l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M81.93,63.48l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M91.28,47.66l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M103.51,59.17l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <rect class="cls-1" x="2.88" y="108.61" width="116.88" height="9.59"/>\n    <polygon class="cls-1" points="26.13 113.88 15.11 113.88 15.11 79.35 26.13 85.98 26.13 113.88"/>\n    <polygon class="cls-1" points="107.15 113.88 96.12 113.88 96.12 85.59 107.15 79.74 107.15 113.88"/>\n    <path class="cls-1" d="M59.93,115.79a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-1" d="M119.15,115.79a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-2" d="M13.59,124.46,8,117.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M26.06,139.32l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M40.69,125.42l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M72.34,123.26,66.72,116a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1A2.91,2.91,0,1,1,78,116Z"/>\n    <path class="cls-2" d="M81.93,138.84l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M91.28,123l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M103.51,134.53l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.13 58.25">\n    <polygon class="cls-1" points="79.13 44.12 0 44.12 1.5 38.91 77.38 38.91 79.13 44.12"/>\n    <polygon class="cls-1" points="20.45 41.77 14.46 41.77 14.46 8.38 20.63 0 20.45 41.77"/>\n    <polygon class="cls-1" points="64.48 41.77 58.49 41.77 58.49 0 64.48 7.75 64.48 41.77"/>\n    <path class="cls-1" d="M38.82,42.81a15.44,15.44,0,1,1-30.88,0"/>\n    <path class="cls-1" d="M71,42.81a15.44,15.44,0,1,1-30.88,0"/>\n    <path class="cls-2" d="M13.64,47.52l-3.05-3.93A1.58,1.58,0,1,1,13.32,42l.32.55L14,42a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M20.42,55.6l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M28.36,48l-3.05-3.93A1.58,1.58,0,1,1,28,42.53l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M45.56,46.87l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M50.77,55.34l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M55.85,46.74,52.8,42.81a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M62.5,53l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.87 45.46">\n    <rect class="cls-1" y="23.72" width="70.87" height="5.85"/>\n    <polygon class="cls-1" points="14.07 26.94 7.34 26.94 7.34 7 14.07 0 14.07 26.94"/>\n    <polygon class="cls-1" points="63.54 26.94 56.81 26.94 56.81 0.67 63.54 6.67 63.54 26.94"/>\n    <path class="cls-1" d="M34.71,28.11A17.35,17.35,0,1,1,0,28.11"/>\n    <path class="cls-1" d="M70.87,28.11a17.35,17.35,0,1,1-34.69,0"/>\n    <path class="cls-2" d="M6.42,33.4,3,29a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62A1.77,1.77,0,1,1,9.85,29Z"/>\n    <path class="cls-2" d="M14,42.48,10.6,38.06a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M23,34l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M42.28,32.67l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M48.14,42.18l-3.43-4.41A1.77,1.77,0,1,1,47.78,36l.36.62L48.5,36a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M53.85,32.52l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M61.32,39.55l-3.43-4.41A1.77,1.77,0,1,1,61,33.36l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332.83 137.75">\n    <path class="cls-1" d="M332.83,111.74,0,112l1.77-9.69,329.33-.08Z"/>\n    <polygon class="cls-1" points="158.35 107.43 147.33 107.43 67.84 4.67 75.53 0 158.35 107.43"/>\n    <polygon class="cls-1" points="239.37 107.43 228.34 107.43 292.5 28.33 298.2 35 239.37 107.43"/>\n    <path class="cls-1" d="M192.15,109.34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-1" d="M251.37,109.34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-2" d="M145.81,118l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M158.28,132.87l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M172.91,119l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M204.56,116.81l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M214.15,132.39l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M223.5,116.57l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M235.73,128.08l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 144.43">\n    <polygon class="cls-1" points="220 122.09 0 122.09 2 113.85 218.83 113.67 220 122.09"/>\n    <polygon class="cls-1" points="200.24 118.38 190.76 118.38 190.76 0 200.24 30 200.24 118.38"/>\n    <polygon class="cls-1" points="27.96 118.38 18.49 118.38 18.49 36.5 27.96 5.17 27.96 118.38"/>\n    <path class="cls-1" d="M110,120a24.4,24.4,0,0,1-48.8,0"/>\n    <path class="cls-1" d="M160.85,120a24.4,24.4,0,0,1-48.8,0"/>\n    <path class="cls-2" d="M70.19,127.47l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M80.9,140.23,76.08,134a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M93.46,128.29l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M120.64,126.44l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M128.88,139.82l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M136.91,126.23,132.09,120a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M147.41,136.12l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 62.44">\n    <rect class="cls-1" y="26.84" width="174" height="9.59"/>\n    <polygon class="cls-1" points="70.85 32.11 59.83 32.11 12.97 0 24 0 70.85 32.11"/>\n    <polygon class="cls-1" points="151.87 32.11 140.84 32.11 173.97 3.5 173.5 13.5 151.87 32.11"/>\n    <path class="cls-1" d="M104.65,34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-1" d="M163.87,34A28.41,28.41,0,1,1,107,34"/>\n    <path class="cls-2" d="M58.32,42.69,52.7,35.46a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M70.78,57.55l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M85.41,43.65l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M117.06,41.49l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M126.65,57.07,121,49.85a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M136,41.25,130.38,34a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M148.23,52.76l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.47 35.97">\n    <rect class="cls-1" y="21.63" width="65.47" height="3.86"/>\n    <rect class="cls-1" x="14.2" width="4.44" height="23.76"/>\n    <rect class="cls-1" x="46.84" width="4.44" height="23.76"/>\n    <path class="cls-1" d="M32.25,24.53a11.45,11.45,0,1,1-22.89,0"/>\n    <path class="cls-1" d="M56.11,24.53a11.45,11.45,0,0,1-22.89,0"/>\n    <path class="cls-2" d="M13.59,28l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M18.61,34l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M24.5,28.4l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M37.25,27.53,35,24.62a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M41.12,33.81,38.85,30.9a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M44.88,27.44l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M49.81,32.07l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41L50,28a1.17,1.17,0,1,1,2,1.17Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], BraComponent);
+    return BraComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=bra.js.map
+
+/***/ }),
+/* 173 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WigComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var WigComponent = /** @class */ (function (_super) {
+    __extends(WigComponent, _super);
+    function WigComponent(element) {
+        return _super.call(this, 'wig', element.nativeElement) || this;
+    }
+    WigComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'wig',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/wig/wig.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="wig" width="120" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.69 170.82">\n         <circle class="cls-1" cx="16.76" cy="65.74" r="13.24"/>\n         <circle class="cls-1" cx="91.76" cy="13.24" r="13.24"/>\n         <circle class="cls-1" cx="91.26" cy="31.74" r="13.24"/>\n         <circle class="cls-1" cx="108.76" cy="43.74" r="13.24"/>\n         <circle class="cls-1" cx="40.59" cy="20.57" r="15.26"/>\n         <circle class="cls-1" cx="20" cy="42.5" r="20"/>\n         <circle class="cls-1" cx="64.5" cy="21" r="20"/>\n         <circle class="cls-1" cx="116.5" cy="21.5" r="20"/>\n         <circle class="cls-1" cx="150.5" cy="45" r="20"/>\n         <circle class="cls-1" cx="129" cy="46" r="20"/>\n         <circle class="cls-1" cx="45.64" cy="39.34" r="12.03"/>\n         <circle class="cls-1" cx="143.64" cy="25.34" r="12.03"/>\n         <circle class="cls-1" cx="145.14" cy="37.84" r="12.03"/>\n         <circle class="cls-1" cx="149.14" cy="49.34" r="12.03"/>\n         <circle class="cls-1" cx="145.5" cy="63" r="12.03"/>\n         <circle class="cls-1" cx="159.36" cy="67.36" r="10.06"/>\n         <circle class="cls-1" cx="159.06" cy="82.06" r="7.61"/>\n         <circle class="cls-1" cx="160.5" cy="94" r="7.61"/>\n         <circle class="cls-1" cx="13" cy="100.5" r="5.22"/>\n         <circle class="cls-1" cx="13" cy="110.28" r="5.22"/>\n         <circle class="cls-1" cx="13" cy="118.86" r="5.22"/>\n         <circle class="cls-1" cx="161" cy="108.19" r="5.22"/>\n         <circle class="cls-1" cx="161" cy="117.43" r="5.22"/>\n         <ellipse class="cls-1" cx="161.1" cy="136.43" rx="5.32" ry="15.13"/>\n         <circle class="cls-1" cx="13.48" cy="84.45" r="8.89"/>\n         <polygon class="cls-2" points="16.48 96.46 3.48 101.17 3.48 88.17 16.48 92.88 16.48 96.46"/>\n         <polygon class="cls-2" points="9.69 92.88 22.69 88.17 22.69 101.17 9.69 96.46 9.69 92.88"/>\n         <polygon class="cls-2" points="164 102.74 151 107.46 151 94.46 164 99.17 164 102.74"/>\n         <polygon class="cls-2" points="157.21 99.17 170.21 94.46 170.21 107.46 157.21 102.74 157.21 99.17"/>\n         <path class="cls-1" d="M13,127.16c-10.58,0-6.43,17.89,0,24.32C19.45,145.05,24.07,127.16,13,127.16Z"/>\n         <polygon class="cls-2" points="16.48 128.46 3.48 133.17 3.48 120.17 16.48 124.88 16.48 128.46"/>\n         <polygon class="cls-2" points="9.69 124.88 22.69 120.17 22.69 133.17 9.69 128.46 9.69 124.88"/>\n         <path class="cls-1" d="M161,146.49c-10.58,0-6.43,17.89,0,24.32C167.45,164.38,172.07,146.49,161,146.49Z"/>\n         <polygon class="cls-2" points="164.48 147.79 151.48 152.5 151.48 139.5 164.48 144.21 164.48 147.79"/>\n         <polygon class="cls-2" points="157.69 144.21 170.69 139.5 170.69 152.5 157.69 147.79 157.69 144.21"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="wig--color--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.71 203.3">\n   <circle class="cls-1" cx="15.83" cy="78.62" r="15.83"/>\n   <circle class="cls-1" cx="112.54" cy="15.83" r="15.83"/>\n   <circle class="cls-1" cx="111.94" cy="37.96" r="15.83"/>\n   <circle class="cls-1" cx="132.87" cy="52.31" r="15.83"/>\n   <circle class="cls-1" cx="51.34" cy="24.61" r="18.25"/>\n   <circle class="cls-1" cx="26.71" cy="50.83" r="23.92"/>\n   <circle class="cls-1" cx="79.94" cy="25.12" r="23.92"/>\n   <circle class="cls-1" cx="142.13" cy="25.71" r="23.92"/>\n   <circle class="cls-1" cx="182.79" cy="53.82" r="23.92"/>\n   <circle class="cls-1" cx="155.07" cy="60.02" r="23.92"/>\n   <circle class="cls-1" cx="57.38" cy="47.06" r="14.38"/>\n   <circle class="cls-1" cx="174.59" cy="30.31" r="14.38"/>\n   <circle class="cls-1" cx="176.38" cy="45.26" r="14.38"/>\n   <circle class="cls-1" cx="181.17" cy="59.02" r="14.38"/>\n   <circle class="cls-1" cx="176.81" cy="75.35" r="14.38"/>\n   <circle class="cls-1" cx="193.38" cy="80.56" r="12.03"/>\n   <circle class="cls-1" cx="183.02" cy="97.14" r="9.11"/>\n   <circle class="cls-1" cx="184.75" cy="111.42" r="9.11"/>\n   <circle class="cls-1" cx="185.34" cy="128.39" r="6.24"/>\n   <circle class="cls-1" cx="185.34" cy="139.44" r="6.24"/>\n   <ellipse class="cls-1" cx="185.46" cy="162.17" rx="6.36" ry="18.09"/>\n   <circle class="cls-1" cx="16.92" cy="101" r="10.64"/>\n   <polygon class="cls-2" points="188.93 121.88 173.38 127.52 173.38 111.97 188.93 117.6 188.93 121.88"/>\n   <polygon class="cls-2" points="180.8 117.6 196.35 111.97 196.35 127.52 180.8 121.88 180.8 117.6"/>\n   <path class="cls-1" d="M185.37,174.2c-12.65,0-7.69,21.4,0,29.09C193.06,195.6,198.58,174.2,185.37,174.2Z"/>\n   <polygon class="cls-2" points="189.51 175.76 173.96 181.39 173.96 165.84 189.51 171.48 189.51 175.76"/>\n   <polygon class="cls-2" points="181.38 171.48 196.93 165.84 196.93 181.39 181.38 175.76 181.38 171.48"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="wig--color--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.31 256.13">\n   <circle class="cls-1" cx="16.76" cy="65.74" r="13.24"/>\n   <circle class="cls-1" cx="91.76" cy="13.24" r="13.24"/>\n   <circle class="cls-1" cx="91.26" cy="31.74" r="13.24"/>\n   <circle class="cls-1" cx="108.76" cy="43.74" r="13.24"/>\n   <circle class="cls-1" cx="40.59" cy="20.57" r="15.26"/>\n   <circle class="cls-1" cx="20" cy="42.5" r="20"/>\n   <circle class="cls-1" cx="64.5" cy="21" r="20"/>\n   <circle class="cls-1" cx="116.5" cy="21.5" r="20"/>\n   <circle class="cls-1" cx="150.5" cy="45" r="20"/>\n   <circle class="cls-1" cx="129" cy="46" r="20"/>\n   <circle class="cls-1" cx="45.64" cy="39.34" r="12.03"/>\n   <circle class="cls-1" cx="143.64" cy="25.34" r="12.03"/>\n   <circle class="cls-1" cx="145.14" cy="37.84" r="12.03"/>\n   <circle class="cls-1" cx="149.14" cy="49.34" r="12.03"/>\n   <circle class="cls-1" cx="145.5" cy="63" r="12.03"/>\n   <circle class="cls-1" cx="159.36" cy="67.36" r="10.06"/>\n   <circle class="cls-1" cx="155.98" cy="85.64" r="14.63"/>\n   <circle class="cls-1" cx="158.75" cy="108.57" r="14.63"/>\n   <circle class="cls-1" cx="13" cy="100.5" r="5.22"/>\n   <circle class="cls-1" cx="13" cy="110.28" r="5.22"/>\n   <circle class="cls-1" cx="13" cy="118.86" r="5.22"/>\n   <circle class="cls-1" cx="159.71" cy="135.83" r="10.03"/>\n   <circle class="cls-1" cx="159.71" cy="153.58" r="10.03"/>\n   <ellipse class="cls-1" cx="159.9" cy="190.08" rx="10.22" ry="29.06"/>\n   <circle class="cls-1" cx="13.48" cy="84.45" r="8.89"/>\n   <polygon class="cls-2" points="16.48 96.46 3.48 101.17 3.48 88.17 16.48 92.88 16.48 96.46"/>\n   <polygon class="cls-2" points="9.69 92.88 22.69 88.17 22.69 101.17 9.69 96.46 9.69 92.88"/>\n   <polygon class="cls-2" points="165.47 125.37 140.5 134.42 140.5 109.45 165.47 118.5 165.47 125.37"/>\n   <polygon class="cls-2" points="152.42 118.5 177.39 109.45 177.39 134.42 152.42 125.37 152.42 118.5"/>\n   <path class="cls-1" d="M13,127.16c-10.58,0-6.43,17.89,0,24.32C19.45,145.05,24.07,127.16,13,127.16Z"/>\n   <polygon class="cls-2" points="16.48 128.46 3.48 133.17 3.48 120.17 16.48 124.88 16.48 128.46"/>\n   <polygon class="cls-2" points="9.69 124.88 22.69 120.17 22.69 133.17 9.69 128.46 9.69 124.88"/>\n   <path class="cls-1" d="M159.74,209.4c-20.32,0-12.35,34.37,0,46.72C172.1,243.77,181,209.4,159.74,209.4Z"/>\n   <polygon class="cls-2" points="166.4 211.9 141.42 220.95 141.42 195.97 166.4 205.02 166.4 211.9"/>\n   <polygon class="cls-2" points="153.34 205.02 178.31 195.97 178.31 220.95 153.34 211.9 153.34 205.02"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="wig--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.65 119.74">\n   <circle class="cls-1" cx="11.75" cy="46.08" r="9.28"/>\n   <circle class="cls-1" cx="64.32" cy="9.28" r="9.28"/>\n   <circle class="cls-1" cx="63.97" cy="22.25" r="9.28"/>\n   <circle class="cls-1" cx="76.24" cy="30.66" r="9.28"/>\n   <circle class="cls-1" cx="28.45" cy="14.42" r="10.69"/>\n   <circle class="cls-1" cx="14.02" cy="29.79" r="14.02"/>\n   <circle class="cls-1" cx="45.21" cy="14.72" r="14.02"/>\n   <circle class="cls-1" cx="81.66" cy="15.07" r="14.02"/>\n   <circle class="cls-1" cx="105.5" cy="31.54" r="14.02"/>\n   <circle class="cls-1" cx="90.42" cy="32.25" r="14.02"/>\n   <circle class="cls-1" cx="31.99" cy="27.58" r="8.43"/>\n   <circle class="cls-1" cx="100.69" cy="17.77" r="8.43"/>\n   <circle class="cls-1" cx="101.74" cy="26.53" r="8.43"/>\n   <circle class="cls-1" cx="104.55" cy="34.59" r="8.43"/>\n   <circle class="cls-1" cx="101.99" cy="44.16" r="8.43"/>\n   <circle class="cls-1" cx="108.7" cy="48.22" r="7.05"/>\n   <circle class="cls-1" cx="111.5" cy="57.52" r="5.34"/>\n   <circle class="cls-1" cx="112.51" cy="65.89" r="5.34"/>\n   <circle class="cls-1" cx="9.11" cy="70.45" r="3.66"/>\n   <circle class="cls-1" cx="9.11" cy="77.3" r="3.66"/>\n   <circle class="cls-1" cx="9.11" cy="83.32" r="3.66"/>\n   <circle class="cls-1" cx="112.86" cy="75.84" r="3.66"/>\n   <circle class="cls-1" cx="112.86" cy="82.32" r="3.66"/>\n   <ellipse class="cls-1" cx="112.93" cy="95.64" rx="3.73" ry="10.6"/>\n   <circle class="cls-1" cx="9.45" cy="59.2" r="6.23"/>\n   <polygon class="cls-2" points="11.55 67.61 2.44 70.92 2.44 61.8 11.55 65.11 11.55 67.61"/>\n   <polygon class="cls-2" points="6.79 65.11 15.9 61.8 15.9 70.92 6.79 67.61 6.79 65.11"/>\n   <polygon class="cls-2" points="114.96 72.02 105.85 75.33 105.85 66.21 114.96 69.51 114.96 72.02"/>\n   <polygon class="cls-2" points="110.2 69.51 119.31 66.21 119.31 75.33 110.2 72.02 110.2 69.51"/>\n   <path class="cls-1" d="M9.13,89.14c-7.41,0-4.51,12.54,0,17.05C13.63,101.68,16.87,89.14,9.13,89.14Z"/>\n   <polygon class="cls-2" points="11.55 90.05 2.44 93.35 2.44 84.23 11.55 87.54 11.55 90.05"/>\n   <polygon class="cls-2" points="6.79 87.54 15.9 84.23 15.9 93.35 6.79 90.05 6.79 87.54"/>\n   <path class="cls-1" d="M112.87,102.69c-7.41,0-4.51,12.54,0,17.05C117.38,115.23,120.62,102.69,112.87,102.69Z"/>\n   <polygon class="cls-2" points="115.3 103.6 106.19 106.9 106.19 97.79 115.3 101.09 115.3 103.6"/>\n   <polygon class="cls-2" points="110.53 101.09 119.65 97.79 119.65 106.9 110.53 103.6 110.53 101.09"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="wig--color--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.64 186.86">\n   <circle class="cls-1" cx="14.53" cy="71.31" r="8.09"/>\n   <circle class="cls-1" cx="60.38" cy="39.21" r="8.09"/>\n   <circle class="cls-1" cx="60.08" cy="50.52" r="8.09"/>\n   <circle class="cls-1" cx="70.78" cy="57.86" r="8.09"/>\n   <circle class="cls-1" cx="29.1" cy="43.69" r="9.33"/>\n   <circle class="cls-1" cx="18.74" cy="60.23" r="12.23"/>\n   <circle class="cls-1" cx="41.74" cy="28.73" r="12.23"/>\n   <circle class="cls-1" cx="53.24" cy="12.23" r="12.23"/>\n   <circle class="cls-1" cx="53.97" cy="28.73" r="12.23"/>\n   <circle class="cls-1" cx="69.24" cy="24.73" r="12.23"/>\n   <circle class="cls-1" cx="86.24" cy="33.23" r="12.23"/>\n   <circle class="cls-1" cx="37.74" cy="15.23" r="12.23"/>\n   <circle class="cls-1" cx="25.74" cy="27.73" r="12.23"/>\n   <circle class="cls-1" cx="43.72" cy="43.95" r="12.23"/>\n   <circle class="cls-1" cx="75.51" cy="44.26" r="12.23"/>\n   <circle class="cls-1" cx="96.3" cy="58.63" r="12.23"/>\n   <circle class="cls-1" cx="83.15" cy="59.24" r="12.23"/>\n   <circle class="cls-1" cx="32.19" cy="55.17" r="7.35"/>\n   <circle class="cls-1" cx="92.1" cy="46.61" r="7.35"/>\n   <circle class="cls-1" cx="93.02" cy="54.25" r="7.35"/>\n   <circle class="cls-1" cx="95.47" cy="61.28" r="7.35"/>\n   <circle class="cls-1" cx="93.24" cy="69.63" r="7.35"/>\n   <circle class="cls-1" cx="99.24" cy="75.73" r="6.15"/>\n   <circle class="cls-1" cx="101.53" cy="81.29" r="4.66"/>\n   <circle class="cls-1" cx="102.41" cy="88.59" r="4.66"/>\n   <circle class="cls-1" cx="14.24" cy="110.58" r="7.81"/>\n   <circle class="cls-1" cx="14.24" cy="125.21" r="7.81"/>\n   <circle class="cls-1" cx="14.24" cy="138.05" r="7.81"/>\n   <circle class="cls-1" cx="102.72" cy="97.26" r="3.19"/>\n   <circle class="cls-1" cx="102.72" cy="102.91" r="3.19"/>\n   <ellipse class="cls-1" cx="102.78" cy="114.53" rx="3.25" ry="9.25"/>\n   <circle class="cls-1" cx="14.96" cy="86.57" r="13.3"/>\n   <polygon class="cls-2" points="19.45 104.53 0 111.58 0 92.13 19.45 99.18 19.45 104.53"/>\n   <polygon class="cls-2" points="9.28 99.18 28.73 92.13 28.73 111.58 9.28 104.53 9.28 99.18"/>\n   <polygon class="cls-2" points="104.55 93.93 96.6 96.81 96.6 88.86 104.55 91.75 104.55 93.93"/>\n   <polygon class="cls-2" points="100.4 91.75 108.34 88.86 108.34 96.81 100.4 93.93 100.4 91.75"/>\n   <path class="cls-1" d="M14.27,150.47c-15.83,0-9.62,26.77,0,36.39C23.89,177.24,30.8,150.47,14.27,150.47Z"/>\n   <polygon class="cls-2" points="19.45 152.41 0 159.46 0 140.01 19.45 147.06 19.45 152.41"/>\n   <polygon class="cls-2" points="9.28 147.06 28.73 140.01 28.73 159.46 9.28 152.41 9.28 147.06"/>\n   <path class="cls-1" d="M102.73,120.68c-6.47,0-3.93,10.94,0,14.87C106.66,131.62,109.48,120.68,102.73,120.68Z"/>\n   <polygon class="cls-2" points="104.85 121.47 96.9 124.35 96.9 116.41 104.85 119.29 104.85 121.47"/>\n   <polygon class="cls-2" points="100.69 119.29 108.64 116.41 108.64 124.35 100.69 121.47 100.69 119.29"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="wig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.17 188.32">\n   <circle class="cls-1" cx="18.48" cy="72.47" r="14.6"/>\n   <circle class="cls-1" cx="101.16" cy="14.6" r="14.6"/>\n   <circle class="cls-1" cx="100.61" cy="34.99" r="14.6"/>\n   <circle class="cls-1" cx="119.9" cy="48.22" r="14.6"/>\n   <circle class="cls-1" cx="44.75" cy="22.68" r="16.82"/>\n   <circle class="cls-1" cx="22.05" cy="46.85" r="22.05"/>\n   <circle class="cls-1" cx="71.11" cy="23.15" r="22.05"/>\n   <circle class="cls-1" cx="78.89" cy="44.33" r="22.05"/>\n   <circle class="cls-1" cx="105.39" cy="47.33" r="22.05"/>\n   <circle class="cls-1" cx="159.39" cy="78.83" r="22.05"/>\n   <circle class="cls-1" cx="128.44" cy="23.7" r="22.05"/>\n   <circle class="cls-1" cx="165.92" cy="49.61" r="22.05"/>\n   <circle class="cls-1" cx="142.21" cy="50.72" r="22.05"/>\n   <circle class="cls-1" cx="50.32" cy="43.37" r="13.26"/>\n   <circle class="cls-1" cx="38.73" cy="66.94" r="13.26"/>\n   <circle class="cls-1" cx="58.73" cy="56.94" r="13.26"/>\n   <circle class="cls-1" cx="158.36" cy="27.94" r="13.26"/>\n   <circle class="cls-1" cx="160.01" cy="41.72" r="13.26"/>\n   <circle class="cls-1" cx="164.42" cy="54.4" r="13.26"/>\n   <circle class="cls-1" cx="160.41" cy="69.45" r="13.26"/>\n   <circle class="cls-1" cx="27.89" cy="85.33" r="13.26"/>\n   <circle class="cls-1" cx="175.68" cy="74.26" r="11.09"/>\n   <circle class="cls-1" cx="175.35" cy="90.47" r="8.4"/>\n   <circle class="cls-1" cx="176.94" cy="103.63" r="8.4"/>\n   <circle class="cls-1" cx="177.49" cy="119.27" r="5.76"/>\n   <circle class="cls-1" cx="177.49" cy="129.46" r="5.76"/>\n   <ellipse class="cls-1" cx="177.6" cy="150.41" rx="5.86" ry="16.68"/>\n   <circle class="cls-1" cx="14.86" cy="93.1" r="9.8"/>\n   <polygon class="cls-2" points="180.8 113.27 166.47 118.46 166.47 104.13 180.8 109.33 180.8 113.27"/>\n   <polygon class="cls-2" points="173.31 109.33 187.64 104.13 187.64 118.46 173.31 113.27 173.31 109.33"/>\n   <path class="cls-1" d="M177.51,161.5c-11.66,0-7.09,19.73,0,26.82C184.6,181.23,189.69,161.5,177.51,161.5Z"/>\n   <polygon class="cls-2" points="181.33 162.93 167 168.12 167 153.79 181.33 158.99 181.33 162.93"/>\n   <polygon class="cls-2" points="173.84 158.99 188.17 153.79 188.17 168.12 173.84 162.93 173.84 158.99"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="wig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.24 243.77">\n   <circle class="cls-1" cx="15.24" cy="59.78" r="12.04"/>\n   <circle class="cls-1" cx="83.44" cy="12.04" r="12.04"/>\n   <circle class="cls-1" cx="82.99" cy="28.86" r="12.04"/>\n   <circle class="cls-1" cx="98.9" cy="39.77" r="12.04"/>\n   <circle class="cls-1" cx="36.91" cy="18.71" r="13.87"/>\n   <circle class="cls-1" cx="18.19" cy="38.65" r="18.19"/>\n   <circle class="cls-1" cx="58.65" cy="19.1" r="18.19"/>\n   <circle class="cls-1" cx="105.94" cy="19.55" r="18.19"/>\n   <circle class="cls-1" cx="136.85" cy="40.92" r="18.19"/>\n   <circle class="cls-1" cx="117.3" cy="41.83" r="18.19"/>\n   <circle class="cls-1" cx="41.5" cy="35.78" r="10.94"/>\n   <circle class="cls-1" cx="130.62" cy="23.05" r="10.94"/>\n   <circle class="cls-1" cx="131.98" cy="34.41" r="10.94"/>\n   <circle class="cls-1" cx="135.62" cy="44.87" r="10.94"/>\n   <circle class="cls-1" cx="132.31" cy="57.29" r="10.94"/>\n   <circle class="cls-1" cx="144.91" cy="61.25" r="9.14"/>\n   <circle class="cls-1" cx="143" cy="81.61" r="13.91"/>\n   <circle class="cls-1" cx="145.63" cy="103.42" r="13.91"/>\n   <circle class="cls-1" cx="11.82" cy="91.39" r="4.75"/>\n   <circle class="cls-1" cx="11.82" cy="100.28" r="4.75"/>\n   <circle class="cls-1" cx="11.82" cy="108.08" r="4.75"/>\n   <circle class="cls-1" cx="146.55" cy="129.35" r="9.54"/>\n   <circle class="cls-1" cx="146.55" cy="146.23" r="9.54"/>\n   <ellipse class="cls-1" cx="146.72" cy="180.94" rx="9.72" ry="27.64"/>\n   <circle class="cls-1" cx="12.26" cy="76.79" r="8.09"/>\n   <polygon class="cls-2" points="14.99 87.71 3.17 91.99 3.17 80.17 14.99 84.46 14.99 87.71"/>\n   <polygon class="cls-2" points="8.81 84.46 20.63 80.17 20.63 91.99 8.81 87.71 8.81 84.46"/>\n   <polygon class="cls-2" points="152.03 119.4 128.28 128.01 128.28 104.26 152.03 112.86 152.03 119.4"/>\n   <polygon class="cls-2" points="139.61 112.86 163.36 104.26 163.36 128.01 139.61 119.4 139.61 112.86"/>\n   <path class="cls-1" d="M11.84,115.63c-9.62,0-5.85,16.27,0,22.12C17.69,131.9,21.88,115.63,11.84,115.63Z"/>\n   <polygon class="cls-2" points="14.99 116.81 3.17 121.09 3.17 109.27 14.99 113.56 14.99 116.81"/>\n   <polygon class="cls-2" points="8.81 113.56 20.63 109.27 20.63 121.09 8.81 116.81 8.81 113.56"/>\n   <path class="cls-1" d="M146.58,199.33c-19.33,0-11.75,32.69,0,44.44C158.33,232,166.77,199.33,146.58,199.33Z"/>\n   <polygon class="cls-2" points="152.91 201.7 129.16 210.3 129.16 186.55 152.91 195.16 152.91 201.7"/>\n   <polygon class="cls-2" points="140.49 195.16 164.24 186.55 164.24 210.3 140.49 201.7 140.49 195.16"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="wig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.5 151.48">\n     <circle class="cls-1" cx="16.76" cy="65.74" r="13.24"/>\n     <circle class="cls-1" cx="91.76" cy="13.24" r="13.24"/>\n     <circle class="cls-1" cx="91.26" cy="31.74" r="13.24"/>\n     <circle class="cls-1" cx="108.76" cy="43.74" r="13.24"/>\n     <circle class="cls-1" cx="40.59" cy="20.57" r="15.26"/>\n     <circle class="cls-1" cx="20" cy="42.5" r="20"/>\n     <circle class="cls-1" cx="64.5" cy="21" r="20"/>\n     <circle class="cls-1" cx="116.5" cy="21.5" r="20"/>\n     <circle class="cls-1" cx="150.5" cy="45" r="20"/>\n     <circle class="cls-1" cx="140.5" cy="47" r="20"/>\n     <circle class="cls-1" cx="45.64" cy="39.34" r="12.03"/>\n     <circle class="cls-1" cx="143.64" cy="25.34" r="12.03"/>\n     <circle class="cls-1" cx="145.14" cy="37.84" r="12.03"/>\n     <circle class="cls-1" cx="149.14" cy="49.34" r="12.03"/>\n     <circle class="cls-1" cx="13" cy="100.5" r="5.22"/>\n     <circle class="cls-1" cx="13" cy="110.28" r="5.22"/>\n     <circle class="cls-1" cx="13" cy="118.86" r="5.22"/>\n     <circle class="cls-1" cx="13.48" cy="84.45" r="8.89"/>\n     <polygon class="cls-2" points="16.48 96.46 3.48 101.17 3.48 88.17 16.48 92.88 16.48 96.46"/>\n     <polygon class="cls-2" points="9.69 92.88 22.69 88.17 22.69 101.17 9.69 96.46 9.69 92.88"/>\n     <path class="cls-1" d="M13,127.16c-10.58,0-6.43,17.89,0,24.32C19.45,145.05,24.07,127.16,13,127.16Z"/>\n     <polygon class="cls-2" points="16.48 128.46 3.48 133.17 3.48 120.17 16.48 124.88 16.48 128.46"/>\n     <polygon class="cls-2" points="9.69 124.88 22.69 120.17 22.69 133.17 9.69 128.46 9.69 124.88"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="wig--bed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.11 90.18">\n    <circle class="cls-1" cx="8.85" cy="34.71" r="6.99"/>\n    <circle class="cls-1" cx="48.45" cy="6.99" r="6.99"/>\n    <circle class="cls-1" cx="48.18" cy="16.76" r="6.99"/>\n    <circle class="cls-1" cx="57.42" cy="23.09" r="6.99"/>\n    <circle class="cls-1" cx="21.43" cy="10.86" r="8.05"/>\n    <circle class="cls-1" cx="10.56" cy="22.44" r="10.56"/>\n    <circle class="cls-1" cx="34.05" cy="11.09" r="10.56"/>\n    <circle class="cls-1" cx="61.51" cy="11.35" r="10.56"/>\n    <circle class="cls-1" cx="79.46" cy="23.76" r="10.56"/>\n    <circle class="cls-1" cx="68.1" cy="24.29" r="10.56"/>\n    <circle class="cls-1" cx="24.1" cy="20.77" r="6.35"/>\n    <circle class="cls-1" cx="75.84" cy="13.38" r="6.35"/>\n    <circle class="cls-1" cx="76.63" cy="19.98" r="6.35"/>\n    <circle class="cls-1" cx="78.74" cy="26.05" r="6.35"/>\n    <circle class="cls-1" cx="76.82" cy="33.26" r="6.35"/>\n    <circle class="cls-1" cx="84.13" cy="35.56" r="5.31"/>\n    <circle class="cls-1" cx="83.98" cy="43.32" r="4.02"/>\n    <circle class="cls-1" cx="84.74" cy="49.63" r="4.02"/>\n    <circle class="cls-1" cx="6.86" cy="53.06" r="2.76"/>\n    <circle class="cls-1" cx="6.86" cy="58.22" r="2.76"/>\n    <circle class="cls-1" cx="6.86" cy="62.75" r="2.76"/>\n    <circle class="cls-1" cx="85" cy="57.12" r="2.76"/>\n    <circle class="cls-1" cx="85" cy="62" r="2.76"/>\n    <ellipse class="cls-1" cx="85.05" cy="72.03" rx="2.81" ry="7.99"/>\n    <circle class="cls-1" cx="7.12" cy="44.59" r="4.69"/>\n    <polygon class="cls-2" points="8.7 50.92 1.84 53.41 1.84 46.55 8.7 49.03 8.7 50.92"/>\n    <polygon class="cls-2" points="5.11 49.03 11.98 46.55 11.98 53.41 5.11 50.92 5.11 49.03"/>\n    <polygon class="cls-2" points="86.58 54.24 79.72 56.73 79.72 49.87 86.58 52.36 86.58 54.24"/>\n    <polygon class="cls-2" points="83 52.36 89.86 49.87 89.86 56.73 83 54.24 83 52.36"/>\n    <path class="cls-1" d="M6.87,67.13c-5.58,0-3.4,9.45,0,12.84C10.27,76.58,12.71,67.13,6.87,67.13Z"/>\n    <polygon class="cls-2" points="8.7 67.82 1.84 70.31 1.84 63.44 8.7 65.93 8.7 67.82"/>\n    <polygon class="cls-2" points="5.11 65.93 11.98 63.44 11.98 70.31 5.11 67.82 5.11 65.93"/>\n    <path class="cls-1" d="M85,77.34c-5.58,0-3.4,9.45,0,12.84C88.41,86.79,90.84,77.34,85,77.34Z"/>\n    <polygon class="cls-2" points="86.84 78.03 79.97 80.51 79.97 73.65 86.84 76.14 86.84 78.03"/>\n    <polygon class="cls-2" points="83.25 76.14 90.11 73.65 90.11 80.51 83.25 78.03 83.25 76.14"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/wig/wig.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], WigComponent);
+    return WigComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=wig.js.map
+
+/***/ }),
+/* 174 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LipsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LipsComponent = /** @class */ (function (_super) {
+    __extends(LipsComponent, _super);
+    function LipsComponent(element) {
+        return _super.call(this, 'lips', element.nativeElement) || this;
+    }
+    LipsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'lips',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lips/lips.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="100" class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.16 54.06">\n   <path class="cls-1" d="M42.35,43.24a6.69,6.69,0,0,1,5.41-2.75H60.5A6.7,6.7,0,0,1,55.3,34v0A6.7,6.7,0,0,0,43.19,30,6.7,6.7,0,0,0,31.08,34a6.7,6.7,0,0,1-5.2,6.52H38A6.54,6.54,0,0,1,42.35,43.24Z"/>\n   <path class="cls-2" d="M62,40.66a6.7,6.7,0,0,1-1.49-.17H47.76a6.69,6.69,0,0,0-5.41,2.75A6.54,6.54,0,0,0,38,40.49H25.88a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,55.3,47.36,6.7,6.7,0,0,1,62,40.66h0Z"/>\n   <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n   <circle class="cls-3" cx="72.24" cy="13.91" r="13.91"/>\n  </svg>\n\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.21 67.13">\n   <circle class="cls-1" cx="11.9" cy="11.9" r="11.9"/>\n   <circle class="cls-1" cx="71.31" cy="11.9" r="11.9"/>\n   <path class="cls-2" d="M40.86,56.31a6.69,6.69,0,0,1,5.41-2.75H59a6.7,6.7,0,0,1-5.2-6.51v0A6.7,6.7,0,0,0,41.7,43.08,6.7,6.7,0,0,0,29.59,47a6.7,6.7,0,0,1-5.2,6.52H36.48A6.54,6.54,0,0,1,40.86,56.31Z"/>\n   <path class="cls-3" d="M60.49,53.73A6.7,6.7,0,0,1,59,53.56H46.27a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H24.38a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,53.8,60.43a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.54 76.51">\n    <path class="cls-1" d="M18,65.69a6.69,6.69,0,0,1,5.41-2.75H36.12a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95A6.7,6.7,0,0,0,6.7,56.41a6.7,6.7,0,0,1-5.2,6.52H13.59A6.54,6.54,0,0,1,18,65.69Z"/>\n    <path class="cls-2" d="M37.6,63.11a6.7,6.7,0,0,1-1.49-.17H23.38A6.69,6.69,0,0,0,18,65.69a6.54,6.54,0,0,0-4.38-2.75H1.5A6.7,6.7,0,0,1,0,63.11H0A6.7,6.7,0,0,1,6.7,69.79v0a6.7,6.7,0,0,0,12.11,3.95,6.7,6.7,0,0,0,12.11-3.95,6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n    <circle class="cls-3" cx="75.63" cy="13.91" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.33 94.6">\n    <circle class="cls-1" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-1" cx="108.41" cy="29.91" r="13.91"/>\n    <path class="cls-2" d="M59.47,83.77A6.69,6.69,0,0,1,64.88,81H77.62a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95A6.7,6.7,0,0,0,48.2,74.5,6.7,6.7,0,0,1,43,81H55.09A6.54,6.54,0,0,1,59.47,83.77Z"/>\n    <path class="cls-3" d="M79.1,81.2A6.7,6.7,0,0,1,77.62,81H64.88a6.69,6.69,0,0,0-5.41,2.75A6.54,6.54,0,0,0,55.09,81H43a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,72.42,87.9a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.13 43.11">\n    <path class="cls-1" d="M28.13,34.9a5.08,5.08,0,0,1,4.11-2.09h9.67A5.09,5.09,0,0,1,38,27.87h0a5.09,5.09,0,0,0-9.2-3,5.09,5.09,0,0,0-9.2,3,5.09,5.09,0,0,1-3.95,5H24.8A5,5,0,0,1,28.13,34.9Z"/>\n    <path class="cls-2" d="M43,32.94a5.09,5.09,0,0,1-1.13-.13H32.24a5.08,5.08,0,0,0-4.11,2.09,5,5,0,0,0-3.33-2.09H15.62a5.09,5.09,0,0,1-1.13.13h0A5.09,5.09,0,0,1,19.57,38h0a5.09,5.09,0,0,0,9.2,3A5.09,5.09,0,0,0,38,38,5.09,5.09,0,0,1,43,32.94h0Z"/>\n    <circle class="cls-3" cx="10.48" cy="10.48" r="10.48"/>\n    <circle class="cls-3" cx="46.65" cy="10.48" r="10.48"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.83 85.62">\n    <path class="cls-1" d="M36.85,74.8A6.69,6.69,0,0,1,42.26,72H55a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95,6.7,6.7,0,0,0-12.11,3.95A6.7,6.7,0,0,1,20.38,72H32.47A6.54,6.54,0,0,1,36.85,74.8Z"/>\n    <path class="cls-2" d="M56.49,72.22A6.7,6.7,0,0,1,55,72H42.26a6.69,6.69,0,0,0-5.41,2.75A6.54,6.54,0,0,0,32.47,72H20.38a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,49.8,78.92a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n    <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-3" cx="60.91" cy="13.91" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.16 108.73">\n    <path class="cls-1" d="M52.25,19.25a6.69,6.69,0,0,1,5.41-2.75H70.39A6.7,6.7,0,0,1,65.19,10v0A6.7,6.7,0,0,0,53.08,6,6.7,6.7,0,0,0,41,10a6.7,6.7,0,0,1-5.2,6.52H47.87A6.54,6.54,0,0,1,52.25,19.25Z"/>\n    <path class="cls-2" d="M71.88,16.67a6.7,6.7,0,0,1-1.49-.17H57.66a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H35.77a6.7,6.7,0,0,1-1.49.17h0A6.7,6.7,0,0,1,41,23.35v0a6.7,6.7,0,0,0,12.11,3.95,6.7,6.7,0,0,0,12.11-3.95,6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n    <path class="cls-1" d="M51.91,97.91a6.69,6.69,0,0,1,5.41-2.75H70.06a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95,6.7,6.7,0,0,0-12.11,3.95,6.7,6.7,0,0,1-5.2,6.52H47.53A6.54,6.54,0,0,1,51.91,97.91Z"/>\n    <path class="cls-2" d="M71.54,95.34a6.7,6.7,0,0,1-1.49-.17H57.32a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H35.44a6.7,6.7,0,0,1-1.49.17h0A6.7,6.7,0,0,1,40.64,102v0A6.7,6.7,0,0,0,52.75,106,6.7,6.7,0,0,0,64.86,102a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n    <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-3" cx="93.25" cy="13.91" r="13.91"/>\n    <circle class="cls-3" cx="13.91" cy="91" r="13.91"/>\n    <circle class="cls-3" cx="93.25" cy="93.66" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.16 108.73">\n    <path class="cls-1" d="M42.35,43.24a6.69,6.69,0,0,1,5.41-2.75H60.5A6.7,6.7,0,0,1,55.3,34v0A6.7,6.7,0,0,0,43.19,30,6.7,6.7,0,0,0,31.08,34a6.7,6.7,0,0,1-5.2,6.52H38A6.54,6.54,0,0,1,42.35,43.24Z"/>\n    <path class="cls-2" d="M62,40.66a6.7,6.7,0,0,1-1.49-.17H47.76a6.69,6.69,0,0,0-5.41,2.75A6.54,6.54,0,0,0,38,40.49H25.88a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,55.3,47.36,6.7,6.7,0,0,1,62,40.66h0Z"/>\n    <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-3" cx="72.24" cy="13.91" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.33 41.11">\n    <circle class="cls-1" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-1" cx="79.41" cy="13.91" r="13.91"/>\n    <path class="cls-2" d="M46,30.29a6.69,6.69,0,0,1,5.41-2.75H64.11A6.7,6.7,0,0,1,58.91,21v0A6.7,6.7,0,0,0,46.8,17.06,6.7,6.7,0,0,0,34.69,21a6.7,6.7,0,0,1-5.2,6.52H41.59A6.54,6.54,0,0,1,46,30.29Z"/>\n    <path class="cls-3" d="M65.6,27.71a6.7,6.7,0,0,1-1.49-.17H51.38A6.69,6.69,0,0,0,46,30.29a6.54,6.54,0,0,0-4.38-2.75H29.49a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0A6.7,6.7,0,0,0,46.8,38.36a6.7,6.7,0,0,0,12.11-3.95,6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.74 90.24">\n    <circle class="cls-1" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-1" cx="123.83" cy="13.91" r="13.91"/>\n    <path class="cls-2" d="M67.91,79.42a6.69,6.69,0,0,1,5.41-2.75H86.06a6.7,6.7,0,0,1-5.2-6.51v0A6.7,6.7,0,0,0,68.75,66.2a6.7,6.7,0,0,0-12.11,3.95,6.7,6.7,0,0,1-5.2,6.52H63.53A6.54,6.54,0,0,1,67.91,79.42Z"/>\n    <path class="cls-3" d="M87.54,76.84a6.7,6.7,0,0,1-1.49-.17H73.32a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H51.44a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95,6.7,6.7,0,0,0,12.11-3.95,6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.76 31.79">\n    <path class="cls-1" d="M61.87,19.75a6.69,6.69,0,0,1,4.3-4.29l12.11-3.93a6.7,6.7,0,0,1-7-4.58v0a6.7,6.7,0,0,0-12.74,0,6.7,6.7,0,0,0-10.3,7.49,6.7,6.7,0,0,1-2.93,7.81l11.5-3.73A6.54,6.54,0,0,1,61.87,19.75Z"/>\n    <path class="cls-2" d="M79.75,11.24a6.7,6.7,0,0,1-1.47.29L66.16,15.46a6.69,6.69,0,0,0-4.3,4.29,6.54,6.54,0,0,0-5-1.26l-11.5,3.73a6.7,6.7,0,0,1-1.36.62h0a6.7,6.7,0,0,1,8.42,4.29v0a6.7,6.7,0,0,0,12.74,0,6.7,6.7,0,0,0,10.3-7.49,6.7,6.7,0,0,1,4.29-8.44h0Z"/>\n    <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="lips--vampire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.56 94.39">\n     <circle class="cls-1" cx="11.67" cy="11.67" r="11.67"/>\n     <circle class="cls-1" cx="44.89" cy="11.67" r="11.67"/>\n     <path class="cls-2" d="M27.3,58.88a6.69,6.69,0,0,1,5.41-2.75H45.44a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95A6.7,6.7,0,0,0,16,49.6a6.7,6.7,0,0,1-5.2,6.52H22.92A6.54,6.54,0,0,1,27.3,58.88Z"/>\n     <path class="cls-3" d="M46.93,56.3a6.7,6.7,0,0,1-1.49-.17H32.71a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H10.82a6.7,6.7,0,0,1-1.49.17h0A6.7,6.7,0,0,1,16,63v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,40.24,63a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n     <polygon class="cls-4" points="18.2 94.39 13.6 56.29 22.79 56.29 18.2 94.39"/>\n     <polygon class="cls-4" points="38.01 94.39 33.42 56.29 42.6 56.29 38.01 94.39"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="lips--vampire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.57 27.56">\n    <circle class="cls-1" cx="5.71" cy="5.71" r="5.71"/>\n    <circle class="cls-1" cx="35.86" cy="5.71" r="5.71"/>\n    <path class="cls-2" d="M20.67,21.66a3.64,3.64,0,0,1,2.95-1.5h6.94a3.65,3.65,0,0,1-2.83-3.54h0a3.65,3.65,0,0,0-6.6-2.15,3.65,3.65,0,0,0-6.6,2.15,3.65,3.65,0,0,1-2.83,3.55h6.59A3.56,3.56,0,0,1,20.67,21.66Z"/>\n    <path class="cls-3" d="M31.36,20.26a3.65,3.65,0,0,1-.81-.09H23.61a3.64,3.64,0,0,0-2.95,1.5,3.56,3.56,0,0,0-2.39-1.5H11.69a3.65,3.65,0,0,1-.81.09h0a3.65,3.65,0,0,1,3.64,3.64h0a3.65,3.65,0,0,0,6.6,2.15,3.65,3.65,0,0,0,6.6-2.15,3.65,3.65,0,0,1,3.64-3.65h0Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lips/lips.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], LipsComponent);
+    return LipsComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=lips.js.map
+
+/***/ }),
+/* 175 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LollipopComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LollipopComponent = /** @class */ (function (_super) {
+    __extends(LollipopComponent, _super);
+    function LollipopComponent(element) {
+        return _super.call(this, 'lollipop', element.nativeElement) || this;
+    }
+    LollipopComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'lollipop',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lollipop/lollipop.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="lollipop" width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 177.13">\n    <rect class="cls-1" y="24.6" width="67" height="13"/>\n    <rect class="cls-2" x="30.72" y="53.32" width="6.96" height="123.81"/>\n    <circle class="cls-1" cx="33.5" cy="30.6" r="30.6"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.97 104.67">\n    <path class="cls-1" d="M32.78,10.06a11.53,11.53,0,0,0-16.34-9A11.53,11.53,0,0,0,0,10.79c0,.25,0,.49,0,.74s0,.5,0,.74V31.94a16.38,16.38,0,0,0,32.76,0V13a11.24,11.24,0,0,0,0-2.94Z"/>\n    <line class="cls-2" x1="16.44" y1="7.48" x2="16.44" y2="39.96"/>\n    <circle cx="10.12" cy="6.72" r="0.23"/>\n    <circle cx="12.88" cy="17.42" r="0.23"/>\n    <circle cx="4.41" cy="11.36" r="0.23"/>\n    <circle cx="9.64" cy="12.08" r="0.23"/>\n    <circle cx="3.01" cy="21.02" r="0.23"/>\n    <circle cx="25.91" cy="13.38" r="0.23"/>\n    <circle cx="28.67" cy="24.09" r="0.23"/>\n    <circle cx="20.2" cy="18.03" r="0.23"/>\n    <circle cx="25.43" cy="18.74" r="0.23"/>\n    <circle cx="18.79" cy="27.68" r="0.23"/>\n    <circle cx="5.75" cy="35.26" r="0.23" transform="translate(-29.79 38.86) rotate(-86.53)"/>\n    <circle cx="3.65" cy="24.4" r="0.23" transform="translate(-20.93 26.57) rotate(-86.53)"/>\n    <circle cx="11.74" cy="30.97" r="0.23" transform="translate(-19.88 40.81) rotate(-86.53)"/>\n    <circle cx="6.56" cy="29.93" r="0.23" transform="translate(-23.71 34.67) rotate(-86.53)"/>\n    <circle cx="13.72" cy="21.41" r="0.23" transform="translate(-8.48 33.81) rotate(-86.53)"/>\n    <circle cx="4.28" cy="20.8" r="0.23" transform="translate(-8.19 3.61) rotate(-24.33)"/>\n    <circle cx="12.9" cy="13.87" r="0.23" transform="translate(-4.57 6.55) rotate(-24.33)"/>\n    <circle cx="10.87" cy="24.09" r="0.23" transform="translate(-8.96 6.62) rotate(-24.33)"/>\n    <circle cx="9.37" cy="19.03" r="0.23" transform="translate(-7.01 5.55) rotate(-24.33)"/>\n    <circle cx="20.24" cy="21.39" r="0.23" transform="translate(-7.01 10.24) rotate(-24.33)"/>\n    <circle cx="26.4" cy="6.32" r="0.23" transform="translate(17.21 31.87) rotate(-83.69)"/>\n    <circle cx="27.96" cy="17.27" r="0.23" transform="translate(7.72 43.17) rotate(-83.69)"/>\n    <circle cx="20.21" cy="10.31" r="0.23" transform="translate(7.74 29.27) rotate(-83.69)"/>\n    <circle cx="25.33" cy="11.6" r="0.23" transform="translate(11.01 35.5) rotate(-83.69)"/>\n    <circle cx="17.75" cy="19.76" r="0.23" transform="translate(-3.83 35.23) rotate(-83.69)"/>\n    <circle cx="20.9" cy="35.39" r="0.23" transform="translate(-15.7 54.11) rotate(-86.53)"/>\n    <circle cx="18.8" cy="24.54" r="0.23" transform="translate(-6.84 41.82) rotate(-86.53)"/>\n    <circle cx="26.88" cy="31.1" r="0.23" transform="translate(-5.79 56.06) rotate(-86.53)"/>\n    <circle cx="21.71" cy="30.07" r="0.23" transform="translate(-9.62 49.92) rotate(-86.53)"/>\n    <circle cx="28.87" cy="21.55" r="0.23" transform="translate(5.61 49.06) rotate(-86.53)"/>\n    <circle cx="13.48" cy="45.25" r="0.23" transform="translate(-32.51 55.97) rotate(-86.53)"/>\n    <circle cx="11.37" cy="34.4" r="0.23" transform="translate(-23.65 43.67) rotate(-86.53)"/>\n    <circle cx="19.46" cy="40.96" r="0.23" transform="translate(-22.61 57.91) rotate(-86.53)"/>\n    <circle cx="14.28" cy="39.93" r="0.23" transform="translate(-26.44 51.77) rotate(-86.53)"/>\n    <circle cx="21.45" cy="31.41" r="0.23" transform="translate(-11.21 50.92) rotate(-86.53)"/>\n    <rect class="cls-3" x="5.73" y="35.63" width="36" height="6.99" transform="translate(-17.97 20.29) rotate(-34.45)"/>\n    <rect class="cls-4" x="47.74" y="42.92" width="3.74" height="66.52" transform="translate(-34.4 41.43) rotate(-34.45)"/>\n    <circle class="cls-3" cx="23.57" cy="38.9" r="16.44" transform="translate(-17.87 20.16) rotate(-34.45)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.11 72.6">\n    <path class="cls-1" d="M29.85,9.16A10.5,10.5,0,0,0,15,1,10.5,10.5,0,0,0,0,9.82c0,.22,0,.45,0,.67s0,.45,0,.67V29.09a14.91,14.91,0,1,0,29.83,0V11.84a10.24,10.24,0,0,0,0-2.68Z"/>\n    <line class="cls-2" x1="14.97" y1="6.82" x2="14.97" y2="36.39"/>\n    <circle cx="9.22" cy="6.12" r="0.21"/>\n    <circle cx="11.73" cy="15.87" r="0.21"/>\n    <circle cx="4.02" cy="10.35" r="0.21"/>\n    <circle cx="8.78" cy="11" r="0.21"/>\n    <circle cx="2.74" cy="19.14" r="0.21"/>\n    <circle cx="23.6" cy="12.19" r="0.21"/>\n    <circle cx="26.11" cy="21.94" r="0.21"/>\n    <circle cx="18.39" cy="16.42" r="0.21"/>\n    <circle cx="23.16" cy="17.07" r="0.21"/>\n    <circle cx="17.12" cy="25.21" r="0.21"/>\n    <circle cx="5.24" cy="32.11" r="0.21" transform="translate(-27.13 35.39) rotate(-86.53)"/>\n    <circle cx="3.32" cy="22.22" r="0.21" transform="translate(-19.06 24.19) rotate(-86.53)"/>\n    <circle cx="10.69" cy="28.2" r="0.21" transform="translate(-18.11 37.16) rotate(-86.53)"/>\n    <circle cx="5.97" cy="27.26" r="0.21" transform="translate(-21.6 31.57) rotate(-86.53)"/>\n    <circle cx="12.5" cy="19.5" r="0.21" transform="translate(-7.72 30.79) rotate(-86.53)"/>\n    <circle cx="3.9" cy="18.94" r="0.21" transform="translate(-7.46 3.29) rotate(-24.33)"/>\n    <circle cx="11.75" cy="12.63" r="0.21" transform="translate(-4.16 5.96) rotate(-24.33)"/>\n    <circle cx="9.9" cy="21.94" r="0.21" transform="translate(-8.16 6.03) rotate(-24.33)"/>\n    <circle cx="8.53" cy="17.33" r="0.21" transform="translate(-6.38 5.05) rotate(-24.33)"/>\n    <circle cx="18.44" cy="19.48" r="0.21" transform="translate(-6.39 9.33) rotate(-24.33)"/>\n    <circle cx="24.04" cy="5.76" r="0.21" transform="translate(15.67 29.02) rotate(-83.69)"/>\n    <circle cx="25.46" cy="15.73" r="0.21" transform="translate(7.03 39.31) rotate(-83.69)"/>\n    <circle cx="18.4" cy="9.39" r="0.21" transform="translate(7.05 26.65) rotate(-83.69)"/>\n    <circle cx="23.07" cy="10.57" r="0.21" transform="translate(10.03 32.33) rotate(-83.69)"/>\n    <circle cx="16.17" cy="17.99" r="0.21" transform="translate(-3.49 32.08) rotate(-83.69)"/>\n    <circle cx="19.03" cy="32.23" r="0.21" transform="translate(-14.29 49.28) rotate(-86.53)"/>\n    <circle cx="17.12" cy="22.35" r="0.21" transform="translate(-6.23 38.08) rotate(-86.53)"/>\n    <circle cx="24.48" cy="28.33" r="0.21" transform="translate(-5.27 51.05) rotate(-86.53)"/>\n    <circle cx="19.77" cy="27.39" r="0.21" transform="translate(-8.76 45.46) rotate(-86.53)"/>\n    <circle cx="26.29" cy="19.63" r="0.21" transform="translate(5.11 44.68) rotate(-86.53)"/>\n    <circle cx="12.27" cy="41.21" r="0.21" transform="translate(-29.61 50.97) rotate(-86.53)"/>\n    <circle cx="10.36" cy="31.33" r="0.21" transform="translate(-21.54 39.77) rotate(-86.53)"/>\n    <circle cx="17.72" cy="37.31" r="0.21" transform="translate(-20.59 52.74) rotate(-86.53)"/>\n    <circle cx="13.01" cy="36.36" r="0.21" transform="translate(-24.08 47.15) rotate(-86.53)"/>\n    <circle cx="19.53" cy="28.61" r="0.21" transform="translate(-10.2 46.37) rotate(-86.53)"/>\n    <rect class="cls-3" x="7.95" y="26.8" width="36" height="6.99" transform="translate(-13.44 36.57) rotate(-58.47)"/>\n    <polygon class="cls-4" points="99.11 72.51 92.05 72.6 35.35 37.81 37.3 34.62 99.11 72.51"/>\n    <circle class="cls-3" cx="25.72" cy="30.15" r="16.44" transform="translate(-13.43 36.31) rotate(-58.47)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="lollipop--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.16 89.37">\n    <path class="cls-1" d="M93.32,5.63A10.5,10.5,0,0,0,76.53,3.15a10.5,10.5,0,0,0-11,13.47c.06.21.13.43.21.64s.17.42.26.62l6.22,16.8a14.91,14.91,0,1,0,28-10.36l-6-16.17a10.24,10.24,0,0,0-.93-2.51Z"/>\n    <line class="cls-2" x1="78.55" y1="8.6" x2="88.82" y2="36.34"/>\n    <circle cx="72.91" cy="9.94" r="0.21" transform="translate(1.09 25.94) rotate(-20.32)"/>\n    <circle cx="78.65" cy="18.22" r="0.21" transform="translate(-1.43 28.45) rotate(-20.32)"/>\n    <circle cx="69.5" cy="15.72" r="0.21" transform="translate(-1.13 25.12) rotate(-20.32)"/>\n    <circle cx="74.19" cy="14.68" r="0.21" transform="translate(-0.48 26.68) rotate(-20.32)"/>\n    <circle cx="71.36" cy="24.41" r="0.21" transform="translate(-4.03 26.3) rotate(-20.32)"/>\n    <circle cx="88.5" cy="10.64" r="0.21" transform="translate(1.81 31.4) rotate(-20.32)"/>\n    <circle cx="94.24" cy="18.92" r="0.21" transform="translate(-0.7 33.91) rotate(-20.32)"/>\n    <circle cx="85.09" cy="16.42" r="0.21" transform="translate(-0.4 30.57) rotate(-20.32)"/>\n    <circle cx="89.79" cy="15.37" r="0.21" transform="translate(0.25 32.14) rotate(-20.32)"/>\n    <circle cx="86.95" cy="25.11" r="0.21" transform="translate(-3.31 31.76) rotate(-20.32)"/>\n    <circle cx="78.21" cy="35.7" r="0.21" transform="translate(-6.99 24.21) rotate(-16.85)"/>\n    <circle cx="72.98" cy="27.09" r="0.21" transform="translate(-4.72 22.32) rotate(-16.85)"/>\n    <circle cx="81.96" cy="30.14" r="0.21" transform="translate(-5.22 25.06) rotate(-16.85)"/>\n    <circle cx="77.21" cy="30.9" r="0.21" transform="translate(-5.64 23.71) rotate(-16.85)"/>\n    <circle cx="80.63" cy="21.35" r="0.21" transform="translate(-2.73 24.29) rotate(-16.85)"/>\n    <circle cx="72.38" cy="23.81" r="0.21" transform="translate(4.15 57.74) rotate(-44.65)"/>\n    <circle cx="77.55" cy="15.17" r="0.21" transform="translate(11.72 58.88) rotate(-44.65)"/>\n    <circle cx="79.04" cy="24.54" r="0.21" transform="translate(5.56 62.64) rotate(-44.65)"/>\n    <circle cx="76.16" cy="20.7" r="0.21" transform="translate(7.44 59.5) rotate(-44.65)"/>\n    <circle cx="86.2" cy="19.27" r="0.21" transform="translate(11.33 66.14) rotate(-44.65)"/>\n    <circle cx="86.69" cy="4.46" r="0.21" transform="translate(1.5 21.12) rotate(-14.01)"/>\n    <circle cx="91.48" cy="13.32" r="0.21" transform="translate(-0.5 22.54) rotate(-14.01)"/>\n    <circle cx="82.66" cy="9.82" r="0.21" transform="translate(0.08 20.3) rotate(-14.01)"/>\n    <circle cx="87.44" cy="9.31" r="0.21" transform="translate(0.35 21.45) rotate(-14.01)"/>\n    <circle cx="83.55" cy="18.67" r="0.21" transform="translate(-2.03 20.78) rotate(-14.01)"/>\n    <circle cx="91.19" cy="31.03" r="0.21" transform="translate(-5.08 27.77) rotate(-16.85)"/>\n    <circle cx="85.96" cy="22.42" r="0.21" transform="translate(-2.81 25.88) rotate(-16.85)"/>\n    <circle cx="94.94" cy="25.47" r="0.21" transform="translate(-3.31 28.62) rotate(-16.85)"/>\n    <circle cx="90.19" cy="26.22" r="0.21" transform="translate(-3.73 27.27) rotate(-16.85)"/>\n    <circle cx="93.61" cy="16.68" r="0.21" transform="translate(-0.82 27.86) rotate(-16.85)"/>\n    <circle cx="87.96" cy="41.79" r="0.21" transform="translate(-8.34 27.3) rotate(-16.85)"/>\n    <circle cx="82.73" cy="33.19" r="0.21" transform="translate(-6.07 25.41) rotate(-16.85)"/>\n    <circle cx="91.72" cy="36.24" r="0.21" transform="translate(-6.57 28.15) rotate(-16.85)"/>\n    <circle cx="86.97" cy="36.99" r="0.21" transform="translate(-6.99 26.8) rotate(-16.85)"/>\n    <circle cx="90.39" cy="27.45" r="0.21" transform="translate(-4.08 27.38) rotate(-16.85)"/>\n    <rect class="cls-3" x="55.16" y="43.57" width="36" height="6.99" transform="matrix(-0.52, -0.85, 0.85, -0.52, 71.3, 134.03)"/>\n    <polygon class="cls-4" points="0 89.28 7.06 89.37 63.76 54.58 61.81 51.39 0 89.28"/>\n    <circle class="cls-3" cx="73.39" cy="46.92" r="16.44" transform="matrix(0.85, -0.52, 0.52, 0.85, -13.7, 45.31)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.07 124.89">\n    <path class="cls-1" d="M25.15,3.86a7.2,7.2,0,0,0-11.52-1.7A7.2,7.2,0,0,0,6.12,11.4c0,.15.09.29.15.44s.11.29.18.43l4.27,11.52A10.23,10.23,0,1,0,29.9,16.68L25.79,5.59a7,7,0,0,0-.64-1.72Z"/>\n    <line class="cls-2" x1="15.02" y1="5.9" x2="22.06" y2="24.93"/>\n    <circle cx="11.15" cy="6.82" r="0.15" transform="translate(-1.67 4.3) rotate(-20.32)"/>\n    <circle cx="15.09" cy="12.5" r="0.15" transform="translate(-3.4 6.02) rotate(-20.32)"/>\n    <circle cx="8.81" cy="10.78" r="0.15" transform="translate(-3.2 3.73) rotate(-20.32)"/>\n    <circle cx="12.03" cy="10.07" r="0.15" transform="translate(-2.75 4.8) rotate(-20.32)"/>\n    <circle cx="10.08" cy="16.74" r="0.15" transform="translate(-5.19 4.54) rotate(-20.32)"/>\n    <circle cx="21.85" cy="7.3" r="0.15" transform="translate(-1.18 8.04) rotate(-20.32)"/>\n    <circle cx="25.79" cy="12.98" r="0.15" transform="translate(-2.9 9.76) rotate(-20.32)"/>\n    <circle cx="19.51" cy="11.26" r="0.15" transform="translate(-2.7 7.48) rotate(-20.32)"/>\n    <circle cx="22.73" cy="10.55" r="0.15" transform="translate(-2.25 8.55) rotate(-20.32)"/>\n    <circle cx="20.78" cy="17.22" r="0.15" transform="translate(-4.69 8.29) rotate(-20.32)"/>\n    <circle cx="14.78" cy="24.49" r="0.15" transform="translate(-6.47 5.34) rotate(-16.85)"/>\n    <circle cx="11.19" cy="18.59" r="0.15" transform="translate(-4.91 4.04) rotate(-16.85)"/>\n    <circle cx="17.36" cy="20.68" r="0.15" transform="translate(-5.25 5.92) rotate(-16.85)"/>\n    <circle cx="14.1" cy="21.2" r="0.15" transform="translate(-5.54 5) rotate(-16.85)"/>\n    <circle cx="16.45" cy="14.65" r="0.15" transform="translate(-3.54 5.4) rotate(-16.85)"/>\n    <circle cx="10.78" cy="16.34" r="0.15" transform="translate(-8.37 12.29) rotate(-44.65)"/>\n    <circle cx="14.33" cy="10.41" r="0.15" transform="translate(-3.18 13.08) rotate(-44.65)"/>\n    <circle cx="15.36" cy="16.84" r="0.15" transform="translate(-7.4 15.65) rotate(-44.65)"/>\n    <circle cx="13.38" cy="14.2" r="0.15" transform="translate(-6.12 13.5) rotate(-44.65)"/>\n    <circle cx="20.26" cy="13.22" r="0.15" transform="translate(-3.44 18.06) rotate(-44.65)"/>\n    <circle cx="20.6" cy="3.06" r="0.15" transform="translate(-0.13 5.08) rotate(-14.01)"/>\n    <circle cx="23.89" cy="9.14" r="0.15" transform="translate(-1.5 6.06) rotate(-14.01)"/>\n    <circle cx="17.84" cy="6.74" r="0.15" transform="translate(-1.1 4.52) rotate(-14.01)"/>\n    <circle cx="21.12" cy="6.38" r="0.15" transform="translate(-0.92 5.3) rotate(-14.01)"/>\n    <circle cx="18.45" cy="12.81" r="0.15" transform="translate(-2.55 4.85) rotate(-14.01)"/>\n    <circle cx="23.69" cy="21.29" r="0.15" transform="translate(-5.15 7.78) rotate(-16.85)"/>\n    <circle cx="20.1" cy="15.38" r="0.15" transform="translate(-3.6 6.49) rotate(-16.85)"/>\n    <circle cx="26.26" cy="17.47" r="0.15" transform="translate(-3.94 8.36) rotate(-16.85)"/>\n    <circle cx="23.01" cy="17.99" r="0.15" transform="translate(-4.23 7.44) rotate(-16.85)"/>\n    <circle cx="25.35" cy="11.45" r="0.15" transform="translate(-2.23 7.84) rotate(-16.85)"/>\n    <circle cx="21.48" cy="28.67" r="0.15" transform="translate(-7.39 7.46) rotate(-16.85)"/>\n    <circle cx="17.89" cy="22.77" r="0.15" transform="translate(-5.83 6.16) rotate(-16.85)"/>\n    <circle cx="24.05" cy="24.86" r="0.15" transform="translate(-6.17 8.04) rotate(-16.85)"/>\n    <circle cx="20.8" cy="25.38" r="0.15" transform="translate(-6.46 7.12) rotate(-16.85)"/>\n    <circle cx="23.14" cy="18.83" r="0.15" transform="translate(-4.47 7.52) rotate(-16.85)"/>\n    <rect class="cls-3" x="0.04" y="33.12" width="36" height="6.99" transform="translate(35.69 73.41) rotate(-179.4)"/>\n    <polygon class="cls-4" points="14.87 124.64 18.71 124.89 19.41 48.56 15.67 48.53 14.87 124.64"/>\n    <circle class="cls-3" cx="18.04" cy="36.34" r="16.44" transform="translate(-18.49 54) rotate(-89.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.07 66.44">\n    <rect class="cls-3" x="0.04" y="13.22" width="36" height="6.99" transform="translate(35.89 33.61) rotate(-179.4)"/>\n    <polygon class="cls-4" points="14.87 66.19 18.71 66.44 19.41 28.67 15.67 28.63 14.87 66.19"/>\n    <circle class="cls-3" cx="18.04" cy="16.44" r="16.44" transform="translate(1.41 34.31) rotate(-89.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="lollipop--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 140.91">\n    <rect class="cls-1" x="48.76" y="13.17" width="36" height="6.99" transform="translate(2.28 40.69) rotate(-34.45)"/>\n    <rect class="cls-2" x="90.77" y="20.47" width="3.74" height="66.52" transform="translate(-14.15 61.83) rotate(-34.45)"/>\n    <circle class="cls-1" cx="66.61" cy="16.45" r="16.44" transform="translate(2.38 40.57) rotate(-34.45)"/>\n    <rect class="cls-3" x="48.38" y="92.44" width="36" height="6.99" transform="translate(110.07 -12.24) rotate(56.68)"/>\n    <rect class="cls-2" x="26.95" y="87.82" width="3.74" height="66.52" transform="translate(114.16 30.48) rotate(56.68)"/>\n    <circle class="cls-3" cx="66.61" cy="95.79" r="16.44" transform="translate(-41.67 52.34) rotate(-33.32)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.84 70.92">\n    <rect class="cls-3" x="-1.36" y="13.13" width="36" height="6.99" transform="translate(-6.86 17.59) rotate(-47.31)"/>\n    <rect class="cls-4" x="48.25" y="13.74" width="3.74" height="66.52" transform="translate(-18.41 51.98) rotate(-47.31)"/>\n    <circle class="cls-3" cx="16.44" cy="16.44" r="16.44" transform="translate(-6.79 17.38) rotate(-47.31)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.68 72.17">\n    <rect class="cls-3" x="40.04" y="13.14" width="36" height="6.99" transform="translate(30.24 -36.97) rotate(46.6)"/>\n    <rect class="cls-4" x="23.58" y="14.69" width="3.74" height="66.52" transform="translate(42.81 -3.49) rotate(46.6)"/>\n    <circle class="cls-3" cx="58.23" cy="16.44" r="16.44" transform="translate(4.62 44.51) rotate(-43.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="lollipop--color--darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.88 44.3">\n    <rect class="cls-3" x="-1.3" y="14.69" width="36" height="6.99" transform="translate(-5.81 28.31) rotate(-71.65)"/>\n    <rect class="cls-4" x="57.86" y="-1.2" width="3.74" height="66.52" transform="translate(10.49 78.66) rotate(-71.65)"/>\n    <circle class="cls-3" cx="16.45" cy="18.1" r="16.44" transform="translate(-5.91 28.01) rotate(-71.65)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.34 64.22">\n    <path class="cls-1" d="M49.78,22.4A14.53,14.53,0,0,0,34.61,4.48a14.53,14.53,0,0,0-23.68,4c-.13.28-.25.57-.37.86s-.21.59-.3.88L1.37,33.34A20.64,20.64,0,0,0,39.9,48.14l8.56-22.28a14.16,14.16,0,0,0,1.33-3.46Z"/>\n    <line class="cls-2" x1="31.72" y1="11.99" x2="17.05" y2="50.2"/>\n    <circle cx="24.64" cy="8.24" r="0.29" transform="translate(8.12 28.28) rotate(-68.98)"/>\n    <circle cx="23.04" cy="22.08" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, -5.83, 35.67)"/>\n    <circle cx="15.82" cy="11.12" r="0.29" transform="translate(-0.23 21.9) rotate(-68.98)"/>\n    <circle cx="21.65" cy="14.32" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, 0.51, 29.4)"/>\n    <circle cx="9.81" cy="21.84" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, -14.1, 23.16)"/>\n    <circle cx="40.2" cy="23.21" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, 4.12, 52.41)"/>\n    <circle cx="38.6" cy="37.05" r="0.29" transform="translate(-9.83 59.8) rotate(-68.98)"/>\n    <circle cx="31.38" cy="26.09" r="0.29" transform="translate(-4.23 46.03) rotate(-68.98)"/>\n    <circle cx="37.21" cy="29.3" r="0.29" transform="translate(-3.49 53.52) rotate(-68.98)"/>\n    <circle cx="25.37" cy="36.82" r="0.29" transform="translate(-18.1 47.29) rotate(-68.98)"/>\n    <circle cx="6.6" cy="39.83" r="0.29" transform="translate(-32.38 29.33) rotate(-65.52)"/>\n    <circle cx="9.03" cy="26.11" r="0.29" transform="translate(-18.47 23.51) rotate(-65.52)"/>\n    <circle cx="15.58" cy="37.49" r="0.29" transform="translate(-24.99 36.13) rotate(-65.52)"/>\n    <circle cx="9.96" cy="33.93" r="0.29" transform="translate(-25.05 28.93) rotate(-65.52)"/>\n    <circle cx="22.23" cy="27.15" r="0.29" transform="translate(-11.69 36.13) rotate(-65.52)"/>\n    <circle cx="11.41" cy="22.16" r="0.29" transform="translate(-1.26 0.7) rotate(-3.32)"/>\n    <circle cx="24.68" cy="17.91" r="0.29" transform="translate(-1 1.46) rotate(-3.32)"/>\n    <circle cx="17.66" cy="29.01" r="0.29" transform="translate(-1.65 1.07) rotate(-3.32)"/>\n    <circle cx="18.19" cy="22.38" r="0.29" transform="translate(-1.26 1.09) rotate(-3.32)"/>\n    <circle cx="29.91" cy="30.07" r="0.29" transform="translate(-1.69 1.78) rotate(-3.32)"/>\n    <circle cx="43.96" cy="15.13" r="0.29" transform="translate(10.34 47.24) rotate(-62.67)"/>\n    <circle cx="40.85" cy="28.71" r="0.29" transform="translate(-3.41 51.83) rotate(-62.67)"/>\n    <circle cx="34.88" cy="17.02" r="0.29" transform="translate(3.74 40.2) rotate(-62.67)"/>\n    <circle cx="40.32" cy="20.85" r="0.29" transform="translate(3.28 47.1) rotate(-62.67)"/>\n    <circle cx="27.72" cy="27.02" r="0.29" transform="translate(-9.01 39.25) rotate(-62.67)"/>\n    <circle cx="24.36" cy="46.84" r="0.29" transform="translate(-28.37 49.59) rotate(-65.52)"/>\n    <circle cx="26.79" cy="33.12" r="0.29" transform="translate(-14.46 43.77) rotate(-65.52)"/>\n    <circle cx="33.33" cy="44.5" r="0.29" transform="translate(-20.98 56.39) rotate(-65.52)"/>\n    <circle cx="27.71" cy="40.94" r="0.29" transform="translate(-21.03 49.2) rotate(-65.52)"/>\n    <circle cx="39.99" cy="34.16" r="0.29" transform="translate(-7.67 56.39) rotate(-65.52)"/>\n    <circle cx="11.17" cy="55.08" r="0.29" transform="translate(-43.59 42.42) rotate(-65.52)"/>\n    <circle cx="13.6" cy="41.36" r="0.29" transform="translate(-29.68 36.6) rotate(-65.52)"/>\n    <circle cx="20.15" cy="52.74" r="0.29" transform="translate(-36.2 49.22) rotate(-65.52)"/>\n    <circle cx="14.53" cy="49.19" r="0.29" transform="translate(-36.26 42.02) rotate(-65.52)"/>\n    <circle cx="26.8" cy="42.4" r="0.29" transform="translate(-22.89 49.22) rotate(-65.52)"/>\n    <rect class="cls-3" x="5.16" y="34.61" width="36" height="6.99" transform="matrix(0.31, -0.95, 0.95, 0.31, -20.3, 48.08)"/>\n    <rect class="cls-4" x="64.31" y="18.71" width="3.74" height="66.52" transform="translate(-3.99 98.42) rotate(-71.65)"/>\n    <circle class="cls-3" cx="22.9" cy="38.01" r="16.44" transform="translate(-20.39 47.78) rotate(-71.65)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.06 95.19">\n    <rect class="cls-3" x="0.03" y="13.22" width="36" height="6.99" transform="translate(0.16 -0.17) rotate(0.54)"/>\n    <rect class="cls-4" x="16.11" y="28.65" width="3.74" height="66.52" transform="translate(0.58 -0.17) rotate(0.54)"/>\n    <circle class="cls-3" cx="18.03" cy="16.44" r="16.44" transform="translate(1.42 34.32) rotate(-89.46)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.77 34.39">\n    <path class="cls-1" d="M19,5.83A6.68,6.68,0,0,0,9.52.64,6.68,6.68,0,0,0,0,6.25c0,.14,0,.28,0,.43S0,7,0,7.11V18.5a9.49,9.49,0,0,0,19,0v-11a6.51,6.51,0,0,0,0-1.7Z"/>\n    <line class="cls-2" x1="9.52" y1="4.34" x2="9.52" y2="23.15"/>\n    <circle cx="5.87" cy="3.89" r="0.14"/>\n    <circle cx="7.46" cy="10.09" r="0.14"/>\n    <circle cx="2.56" cy="6.58" r="0.14"/>\n    <circle cx="5.58" cy="7" r="0.14"/>\n    <circle cx="1.74" cy="12.18" r="0.14"/>\n    <circle cx="15.01" cy="7.75" r="0.14"/>\n    <circle cx="16.61" cy="13.96" r="0.14"/>\n    <circle cx="11.7" cy="10.44" r="0.14"/>\n    <circle cx="14.73" cy="10.86" r="0.14"/>\n    <circle cx="10.89" cy="16.04" r="0.14"/>\n    <circle cx="3.33" cy="20.43" r="0.14" transform="translate(-17.26 22.52) rotate(-86.53)"/>\n    <circle cx="2.11" cy="14.14" r="0.14" transform="translate(-12.12 15.39) rotate(-86.53)"/>\n    <circle cx="6.8" cy="17.94" r="0.14" transform="translate(-11.52 23.64) rotate(-86.53)"/>\n    <circle cx="3.8" cy="17.34" r="0.14" transform="translate(-13.74 20.09) rotate(-86.53)"/>\n    <circle cx="7.95" cy="12.4" r="0.14" transform="translate(-4.91 19.59) rotate(-86.53)"/>\n    <circle cx="2.48" cy="12.05" r="0.14" transform="translate(-4.74 2.09) rotate(-24.33)"/>\n    <circle cx="7.47" cy="8.04" r="0.14" transform="translate(-2.65 3.79) rotate(-24.33)"/>\n    <circle cx="6.3" cy="13.96" r="0.14" transform="translate(-5.19 3.83) rotate(-24.33)"/>\n    <circle cx="5.43" cy="11.02" r="0.14" transform="translate(-4.06 3.22) rotate(-24.33)"/>\n    <circle cx="11.73" cy="12.39" r="0.14" transform="translate(-4.06 5.93) rotate(-24.33)"/>\n    <circle cx="15.29" cy="3.66" r="0.14" transform="translate(9.97 18.46) rotate(-83.69)"/>\n    <circle cx="16.2" cy="10.01" r="0.14" transform="translate(4.47 25.01) rotate(-83.69)"/>\n    <circle cx="11.71" cy="5.97" r="0.14" transform="translate(4.48 16.96) rotate(-83.69)"/>\n    <circle cx="14.67" cy="6.72" r="0.14" transform="translate(6.38 20.57) rotate(-83.69)"/>\n    <circle cx="10.29" cy="11.45" r="0.14" transform="translate(-2.22 20.41) rotate(-83.69)"/>\n    <circle cx="12.11" cy="20.51" r="0.14" transform="translate(-9.09 31.35) rotate(-86.53)"/>\n    <circle cx="10.89" cy="14.22" r="0.14" transform="translate(-3.96 24.23) rotate(-86.53)"/>\n    <circle cx="15.57" cy="18.02" r="0.14" transform="translate(-3.35 32.48) rotate(-86.53)"/>\n    <circle cx="12.58" cy="17.42" r="0.14" transform="translate(-5.57 28.92) rotate(-86.53)"/>\n    <circle cx="16.72" cy="12.49" r="0.14" transform="matrix(0.06, -1, 1, 0.06, 3.25, 28.42)"/>\n    <circle cx="7.81" cy="26.22" r="0.14" transform="translate(-18.83 32.42) rotate(-86.53)"/>\n    <circle cx="6.59" cy="19.93" r="0.14" transform="translate(-13.7 25.3) rotate(-86.53)"/>\n    <circle cx="11.27" cy="23.73" r="0.14" transform="translate(-13.1 33.55) rotate(-86.53)"/>\n    <circle cx="8.28" cy="23.13" r="0.14" transform="translate(-15.32 29.99) rotate(-86.53)"/>\n    <circle cx="12.42" cy="18.2" r="0.14" transform="translate(-6.49 29.5) rotate(-86.53)"/>\n    <rect class="cls-3" x="10.08" y="22.15" width="20.17" height="3.91" transform="translate(-7.48 39.08) rotate(-78.52)"/>\n    <polygon class="cls-4" points="63.77 31.54 63.77 33.85 26.56 26.26 26.97 24.21 63.77 31.54"/>\n    <circle class="cls-3" cx="20.02" cy="24.08" r="9.21" transform="translate(-7.56 38.91) rotate(-78.52)"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lollipop/lollipop.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], LollipopComponent);
+    return LollipopComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=lollipop.js.map
+
+/***/ }),
+/* 176 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EggComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EggComponent = /** @class */ (function (_super) {
+    __extends(EggComponent, _super);
+    function EggComponent(element) {
+        return _super.call(this, 'egg', element.nativeElement) || this;
+    }
+    EggComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'egg',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/egg/egg.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="egg" width="75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.42 67.09">\n    <path class="cls-1" d="M29.91,28.28C23.78,37.27,22.08,61,40,60.89s16-23.78,9.78-32.7c-2.77-4-6.72-5.87-10-5.86S32.65,24.28,29.91,28.28Z"/>\n    <circle class="cls-2" cx="38.96" cy="50.4" r="11.9" transform="translate(-0.24 0.18) rotate(-0.27)"/>\n    <path class="cls-3" d="M46.7,38.35l-5.08-11.4-5.44,9.62L32.95,27.9l-8.18,6.64q0-.79,0-1.58C24.66,14.8,31.24,0,39.44,0c7.95,0,14.5,13.77,15,31.16l-5-5.16Z"/>\n    <path class="cls-3" d="M21.35,44,16.82,48.2l6.68,4.64-5.8,6.41,7.79,1.52-2.13,5.72-1,.2C11.66,68.62,1.73,63.33.2,54.86c-1.48-8.22,5.5-16.41,15.72-18.65Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.91 266.42">\n    <path class="cls-1" d="M27,20.5c9.84,4.62,23.35,24.18,7.87,33.21S9,41.36,9.79,30.51c.37-4.84,2.81-8.47,5.61-10.11S22.57,18.44,27,20.5Z"/>\n    <circle class="cls-2" cx="30.4" cy="44.14" r="11.9" transform="matrix(0.86, -0.5, 0.5, 0.86, -18.1, 21.33)"/>\n    <path class="cls-3" d="M17.61,37.7,16.19,25.3l9.57,5.52-1.61-9.11,10.42,1.57q-.38-.69-.78-1.37C24.63,6.22,11.47-3.16,4.38,1-2.48,5-1.12,20.2,7.31,35.42l1.71-7Z"/>\n    <path class="cls-3" d="M42.31,29.66l6,1.34L45,38.4,53.21,41l-5.94,5.26L52,50.08l.94-.33C63.17,46,69,36.36,66.05,28.29,63.15,20.46,53,17,43,20.21Z"/>\n    <path class="cls-1" d="M209.19,177.46c.94,11.56-10,34.43-26.57,24.89s-2.27-30.48,8.2-35.47c4.67-2.23,9.33-1.89,12.33-.17S208.77,172.3,209.19,177.46Z"/>\n    <circle class="cls-2" cx="189.14" cy="193.18" r="12.69" transform="translate(-72.66 260.67) rotate(-60.06)"/>\n    <path class="cls-3" d="M188.32,177.92,199,170l0,11.79,7.58-6.32L210.65,186q.43-.72.86-1.45c9.67-16.79,11.37-33.95,3.79-38.31-7.35-4.23-20.71,5.1-30.33,21l7.39-2.13Z"/>\n    <path class="cls-3" d="M208.85,196.53l2,6.31-8.64.77,2,9-8-2.71-1,6.43.8.7c8.92,7.45,20.92,7.79,26.8.74,5.72-6.84,3.57-18.11-4.72-25.58Z"/>\n    <polygon class="cls-2" points="175.94 45.14 182.09 50.26 190.58 52.19 186.66 62.47 194.19 68.03 185.75 72.24 183 84.45 175.94 73.23 167.81 80.73 163.16 69.49 157.68 68.03 162.24 60.94 161.3 52.19 171.88 55.43 175.94 45.14"/>\n    <path class="cls-2" d="M183,94a9.53,9.53,0,0,1-8.07-4.46L174,88a9.53,9.53,0,0,1-15-3.62l-2.85-6.89-.92-.25a9.53,9.53,0,0,1-5.56-14.37l2.74-4.26-.58-5.41a9.53,9.53,0,0,1,12.27-10.14l2.15.66.83-2.1a9.53,9.53,0,0,1,15-3.83l4.39,3.66,6.27,1.43a9.53,9.53,0,0,1,6.79,12.69l-1.34,3.52,1.71,1.26a9.53,9.53,0,0,1-1.42,16.2l-4.39,2.19-1.75,7.79A9.54,9.54,0,0,1,183,94Zm-6.41-30.27.6.06h0c0-.14,0-.28,0-.43Z"/>\n    <circle class="cls-2" cx="166.82" cy="69.18" r="7.33"/>\n    <circle class="cls-2" cx="181.78" cy="58.19" r="7.33"/>\n    <polygon class="cls-2" points="63.64 225.07 72.09 222.18 78.87 215.2 86.39 224.9 96.07 220.95 95.18 231.45 105.23 241.16 90.43 241.38 92.87 253.49 79.44 251.4 74.87 255.77 70.76 247.31 61.86 243.13 71.09 234.92 63.64 225.07"/>\n    <path class="cls-2" d="M114.32,246.7a10.64,10.64,0,0,1-8.93,5.1l-2,0A10.64,10.64,0,0,1,91.23,264L83,262.72l-.77.74a10.64,10.64,0,0,1-16.93-3l-2.47-5.09-5.49-2.58a10.64,10.64,0,0,1-2.54-17.59l1.88-1.67-1.52-2a10.64,10.64,0,0,1,5-16.49l6-2.07,5-5.15a10.64,10.64,0,0,1,16,.89L89.85,212l2.2-.9a10.64,10.64,0,0,1,14.63,10.76l-.46,5.46,6.41,6.2a10.65,10.65,0,0,1,1.69,13.19ZM81.73,235.24q.19-.27.41-.54l0,0-.44-.2C81.74,234.73,81.74,235,81.73,235.24Z"/>\n    <circle class="cls-2" cx="81.28" cy="247.73" r="8.18" transform="translate(-172.58 188.3) rotate(-58.66)"/>\n    <circle class="cls-2" cx="79.48" cy="227.08" r="8.18" transform="translate(-155.81 176.86) rotate(-58.66)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.82 220.19">\n    <path class="cls-1" d="M41.77,23.38c15.39,3.4,40.74,26.75,21.73,44.46S23,58.61,20.69,43c-1-7,1.27-12.88,4.71-16.08S34.91,21.86,41.77,23.38Z"/>\n    <circle class="cls-2" cx="54.19" cy="55.71" r="17.24" transform="translate(-23.44 51.88) rotate(-42.97)"/>\n    <path class="cls-3" d="M34,50.68l-6-17.08,15.3,4.76L38.19,26l15.23-1.1q-.76-.85-1.54-1.69C33.93,3.92,12.32-5.13,3.62,3-4.81,10.82,2,31.91,18.75,50.75l.19-10.45Z"/>\n    <path class="cls-3" d="M66.41,31.44l9,0L72.93,42.95l12.49,1-6.72,9.34,7.93,3.93q.62-.37,1.23-.77c13.24-8.61,18.47-24.06,11.67-34.52-6.6-10.16-22.1-11.87-35.12-4.09Z"/>\n    <path class="cls-1" d="M211.52,77c3.05,15.29-8,47.54-31.61,37.37S172.13,74,185.34,65.74c5.89-3.7,12.17-4,16.44-2.14S210.16,70.19,211.52,77Z"/>\n    <circle class="cls-2" cx="187.17" cy="101.13" r="17.06" transform="translate(20.25 233.04) rotate(-66.7)"/>\n    <path class="cls-3" d="M183.71,80.88l13.1-12.19,1.78,15.75,9.14-9.62,7.06,13.36q.47-1,.92-2.07c10.31-23.93,9.91-47.1-.9-51.75-10.47-4.51-26.87,10-37.25,32.72l9.54-4Z"/>\n    <path class="cls-3" d="M214,102.54l3.6,8.12L206.2,113l4.07,11.71-11.13-2.37-.4,8.75q.58.41,1.18.81c13.07,8.57,29.14,7.15,35.91-3.17,6.57-10,1.95-24.74-10.28-33.43Z"/>\n    <polygon class="cls-1" points="176.62 177.38 185.37 174.38 192.39 167.16 200.18 177.2 210.21 173.12 209.28 183.98 219.69 194.04 204.36 194.27 206.89 206.81 192.98 204.64 188.25 209.17 183.99 200.41 174.78 196.07 184.34 187.58 176.62 177.38"/>\n    <path class="cls-1" d="M229.1,199.78a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6l-8.53-1.33-.8.76A11,11,0,0,1,178.34,214l-2.56-5.27L170.09,206a11,11,0,0,1-2.63-18.21l1.95-1.73L167.83,184a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93A11,11,0,0,1,221.19,174l-.48,5.65,6.64,6.42a11,11,0,0,1,1.75,13.66Zm-33.75-11.87q.2-.28.42-.56l0,0-.45-.21C195.36,187.38,195.36,187.64,195.36,187.91Z"/>\n    <circle class="cls-2" cx="194.88" cy="200.84" r="8.47" transform="translate(-78.02 262.83) rotate(-58.66)"/>\n    <circle class="cls-2" cx="193.02" cy="179.46" r="8.47" transform="translate(-60.64 250.98) rotate(-58.66)"/>\n    <polygon class="cls-1" points="17.4 128.4 22.46 126.66 26.52 122.49 31.03 128.3 36.83 125.93 36.29 132.22 42.31 138.03 33.45 138.16 34.91 145.42 26.87 144.16 24.13 146.78 21.66 141.71 16.34 139.21 21.87 134.29 17.4 128.4"/>\n    <path class="cls-1" d="M47.76,141.35a6.37,6.37,0,0,1-5.35,3.06l-1.2,0a6.37,6.37,0,0,1-7.28,7.29L29,150.95l-.46.44a6.37,6.37,0,0,1-10.14-1.82l-1.48-3L13.63,145a6.37,6.37,0,0,1-1.52-10.53l1.13-1-.91-1.2a6.37,6.37,0,0,1,3-9.88L19,121.13l3-3.08a6.37,6.37,0,0,1,9.61.53l1.54,2,1.32-.54a6.37,6.37,0,0,1,8.76,6.44l-.28,3.27,3.84,3.71a6.38,6.38,0,0,1,1,7.9Zm-19.52-6.86.24-.32v0l-.26-.12C28.24,134.18,28.24,134.33,28.24,134.49Z"/>\n    <circle class="cls-1" cx="27.97" cy="141.97" r="4.9" transform="matrix(0.52, -0.85, 0.85, 0.52, -107.83, 92.01)"/>\n    <circle class="cls-1" cx="26.89" cy="129.6" r="4.9" transform="matrix(0.52, -0.85, 0.85, 0.52, -97.79, 85.16)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.98 246.6">\n    <path class="cls-1" d="M28.81,16.13c10.62,2.34,28.1,18.45,15,30.67S15.86,40.43,14.27,29.67c-.71-4.8.88-8.88,3.25-11.09S24.08,15.08,28.81,16.13Z"/>\n    <circle class="cls-2" cx="37.38" cy="38.43" r="11.9" transform="translate(-16.17 35.79) rotate(-42.97)"/>\n    <path class="cls-3" d="M23.48,35,19.37,23.17l10.55,3.28-3.58-8.53,10.51-.76L35.79,16C23.4,2.7,8.5-3.54,2.5,2-3.32,7.47,1.37,22,12.93,35l.13-7.21Z"/>\n    <path class="cls-3" d="M45.81,21.69l6.19,0-1.69,8,8.62.69-4.64,6.44,5.47,2.71.85-.53c9.14-5.94,12.74-16.6,8.05-23.81-4.55-7-15.25-8.19-24.23-2.82Z"/>\n    <polygon class="cls-1" points="167.94 135.34 177.11 136.51 186.59 133.13 189.16 145.58 199.96 146.33 194.33 155.68 199.23 169.3 185.38 162.74 182.11 175.1 170.59 167.02 164.34 169 164.39 159.25 158.03 151.3 170.36 147.9 167.94 135.34"/>\n    <path class="cls-1" d="M205.15,178.6a11,11,0,0,1-10.63.66l-1.88-.89a11,11,0,0,1-16.85,5.76l-7.06-5-1.05.33a11,11,0,0,1-14.35-10.56l0-5.86-3.92-4.91a11,11,0,0,1,5.68-17.5l2.51-.69-.49-2.56a11,11,0,0,1,12.22-13l6.55.84,7-2.5a11,11,0,0,1,14.5,8.16l.88,4.26,2.46.17A11,11,0,0,1,209.4,152l-2.92,4.86,3.13,8.69a11,11,0,0,1-4.45,13Zm-25-25.54.62-.31,0,0-.31-.39C180.34,152.58,180.23,152.82,180.1,153.06Z"/>\n    <circle class="cls-2" cx="173.97" cy="164.45" r="8.47" transform="translate(-61.09 119.13) rotate(-32.48)"/>\n    <circle class="cls-2" cx="181.74" cy="144.44" r="8.47" transform="translate(-49.14 120.17) rotate(-32.48)"/>\n    <polygon class="cls-1" points="62.28 125.59 67.34 123.86 71.4 119.68 75.91 125.49 81.71 123.12 81.17 129.41 87.19 135.22 78.32 135.35 79.79 142.61 71.74 141.35 69.01 143.97 66.54 138.91 61.22 136.4 66.75 131.49 62.28 125.59"/>\n    <path class="cls-1" d="M92.63,138.54a6.37,6.37,0,0,1-5.35,3.06l-1.2,0a6.37,6.37,0,0,1-7.28,7.29l-4.93-.77-.46.44a6.37,6.37,0,0,1-10.14-1.82l-1.48-3-3.29-1.55A6.37,6.37,0,0,1,57,131.64l1.13-1-.91-1.2a6.37,6.37,0,0,1,3-9.88l3.62-1.24,3-3.08a6.37,6.37,0,0,1,9.61.53l1.54,2,1.32-.54a6.37,6.37,0,0,1,8.76,6.44l-.28,3.27,3.84,3.71a6.38,6.38,0,0,1,1,7.9Zm-19.52-6.86.24-.32v0l-.26-.12C73.12,131.37,73.12,131.52,73.12,131.68Z"/>\n    <circle class="cls-1" cx="72.84" cy="139.16" r="4.9" transform="matrix(0.52, -0.85, 0.85, 0.52, -83.9, 129)"/>\n    <circle class="cls-1" cx="71.77" cy="126.79" r="4.9" transform="matrix(0.52, -0.85, 0.85, 0.52, -73.85, 122.14)"/>\n    <polygon class="cls-1" points="13.19 213.49 19.73 208.9 23.81 201.21 32.7 207.67 40.03 201.86 41.88 211.1 52.94 216.94 40.28 220.82 45.4 230.62 33.34 232.17 30.5 237.07 24.85 230.83 16.16 229.45 22.05 220.09 13.19 213.49"/>\n    <path class="cls-1" d="M62.14,219.43a9.52,9.52,0,0,1-6.4,6.62l-1.72.53a9.52,9.52,0,0,1-7.4,13.49l-7.39,1-.48.83a9.52,9.52,0,0,1-15.31,1.62L20,239.71l-5.37-.85A9.52,9.52,0,0,1,8.1,224.38l1.2-1.91L7.5,221.13a9.52,9.52,0,0,1,.22-15.43l4.67-3.28,3-5.67a9.52,9.52,0,0,1,14-3.24l3,2.21,1.67-1.32A9.52,9.52,0,0,1,49.37,200l1,4.8,7.06,3.73a9.53,9.53,0,0,1,4.75,10.91Zm-30.86-1.72q.1-.28.22-.56v0l-.43-.06C31.15,217.27,31.22,217.49,31.27,217.71Z"/>\n    <circle class="cls-1" cx="34" cy="228.56" r="7.32" transform="translate(-195.51 201.65) rotate(-74.85)"/>\n    <circle class="cls-1" cx="27.3" cy="211.26" r="7.32" transform="translate(-183.76 182.41) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.23 212.07">\n    <path class="cls-1" d="M32.74,18.32c12.06,2.66,31.92,21,17,34.84S18,45.93,16.22,33.71c-.8-5.45,1-10.09,3.69-12.6S27.36,17.13,32.74,18.32Z"/>\n    <circle class="cls-2" cx="42.47" cy="43.66" r="13.51" transform="translate(-18.37 40.66) rotate(-42.97)"/>\n    <path class="cls-3" d="M26.67,39.72,22,26.33l12,3.73-4.06-9.69,11.94-.86-1.21-1.33C26.59,3.07,9.66-4,2.84,2.33-3.77,8.48,1.55,25,14.69,39.77l.15-8.19Z"/>\n    <path class="cls-3" d="M52,24.64l7,0-1.92,9,9.79.78-5.27,7.32,6.21,3.08,1-.6C79.24,37.5,83.34,25.38,78,17.19c-5.17-8-17.32-9.3-27.52-3.2Z"/>\n    <path class="cls-1" d="M207.39,58.71c-1.07,11.88-16.17,33.15-31.29,20.58s3-31.3,14.52-34.52c5.12-1.44,9.79-.28,12.52,2S207.87,53.41,207.39,58.71Z"/>\n    <circle class="cls-2" cx="184.3" cy="71.13" r="13.05" transform="translate(11.78 167.38) rotate(-50.26)"/>\n    <path class="cls-3" d="M186.15,55.52l12.25-6.11-2.1,11.94,8.79-5.08,2.29,11.33,1.12-1.32C221.24,50.95,226,33.86,219,28.11c-6.71-5.58-21.89,1.55-34.42,15.94l7.86-.86Z"/>\n    <path class="cls-3" d="M203.7,78l.89,6.74-8.9-.73.45,9.47-7.66-4.15-2.19,6.33q.34.43.69.85c7.73,9.12,19.84,11.56,27,5.45,7-5.93,6.79-17.73-.31-26.76Z"/>\n    <polygon class="cls-1" points="35.45 169.25 44.2 166.25 51.21 159.03 59.01 169.08 69.03 164.99 68.11 175.86 78.51 185.91 63.18 186.14 65.71 198.68 51.81 196.51 47.08 201.04 42.81 192.28 33.6 187.95 43.16 179.45 35.45 169.25"/>\n    <path class="cls-1" d="M87.93,191.65a11,11,0,0,1-9.25,5.29l-2.08,0A11,11,0,0,1,64,209.57l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14L34.6,200.6l-5.69-2.68a11,11,0,0,1-2.63-18.21L28.23,178l-1.57-2.08a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93A11,11,0,0,1,80,165.92l-.48,5.65L86.17,178a11,11,0,0,1,1.75,13.66ZM54.18,179.78q.2-.28.42-.56l0,0-.45-.21C54.19,179.25,54.19,179.51,54.18,179.78Z"/>\n    <circle class="cls-2" cx="53.71" cy="192.71" r="8.47" transform="translate(-138.82 138.36) rotate(-58.66)"/>\n    <circle class="cls-2" cx="51.85" cy="171.33" r="8.47" transform="translate(-121.45 126.51) rotate(-58.66)"/>\n    <polygon class="cls-1" points="183.09 184.14 183.1 179.12 180.64 174.25 187.17 172.03 186.84 166.17 192.25 168.56 199.25 165.01 196.65 172.91 203.53 173.83 199.96 180.57 201.44 183.8 196.19 184.43 192.34 188.39 189.68 181.99 183.09 184.14"/>\n    <path class="cls-1" d="M203.85,161.2a6,6,0,0,1,1.07,5.68l-.35,1.07a6,6,0,0,1,4.24,8.68l-2.19,4.14.25.54a6,6,0,0,1-4.71,8.43l-3.15.38-2.38,2.44a6,6,0,0,1-9.8-1.87l-.54-1.3-1.34.44a6,6,0,0,1-7.83-5.7v-3.58l-1.82-3.6a6,6,0,0,1,3.41-8.35l2.23-.76-.07-1.33a6,6,0,0,1,8.39-5.79l2.81,1.25,4.46-2.27a6,6,0,0,1,7.31,1.52ZM191.8,176.4l-.21-.31v0l-.19.19Z"/>\n    <circle class="cls-1" cx="198.34" cy="178.93" r="4.59" transform="translate(-68.54 167.59) rotate(-39.62)"/>\n    <circle class="cls-1" cx="187.06" cy="176.1" r="4.59" transform="translate(-69.33 159.74) rotate(-39.62)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.37 208.78">\n    <path class="cls-1" d="M28.81,27.78c10.62,2.34,28.1,18.45,15,30.67S15.86,52.09,14.27,41.33c-.71-4.8.88-8.88,3.25-11.09S24.08,26.74,28.81,27.78Z"/>\n    <circle class="cls-2" cx="37.38" cy="50.09" r="11.9" transform="translate(-24.11 38.92) rotate(-42.97)"/>\n    <path class="cls-3" d="M23.48,46.62,19.37,34.83l10.55,3.28-3.58-8.53,10.51-.76-1.06-1.17C23.4,14.36,8.5,8.12,2.5,13.71c-5.82,5.42-1.13,20,10.43,33l.13-7.21Z"/>\n    <path class="cls-3" d="M45.81,33.35l6.19,0-1.69,8,8.62.69-4.64,6.44,5.47,2.71.85-.53c9.14-5.94,12.74-16.6,8.05-23.81-4.55-7-15.25-8.19-24.23-2.82Z"/>\n    <path class="cls-1" d="M209.11,122.66c-1.39,15.42-21,43-40.6,26.71s3.94-40.61,18.84-44.79c6.65-1.87,12.7-.37,16.25,2.58S209.73,115.79,209.11,122.66Z"/>\n    <circle class="cls-2" cx="179.15" cy="138.79" r="16.94" transform="translate(-42.1 187.82) rotate(-50.26)"/>\n    <path class="cls-3" d="M181.55,118.53l15.9-7.93-2.73,15.49,11.4-6.59,3,14.7q.73-.84,1.46-1.71C227.09,112.6,233.21,90.42,224.23,83c-8.7-7.23-28.4,2-44.66,20.69l10.2-1.12Z"/>\n    <path class="cls-3" d="M204.32,147.66l1.15,8.74-11.55-.95.58,12.29-9.94-5.38-2.84,8.21q.44.56.9,1.1c10,11.83,25.74,15,35.08,7.07,9.07-7.69,8.81-23-.4-34.72Z"/>\n    <polygon class="cls-2" points="50.57 175.07 57.23 170.4 61.38 162.57 70.43 169.15 77.9 163.23 79.78 172.64 91.05 178.59 78.15 182.54 83.36 192.51 71.08 194.09 68.19 199.08 62.44 192.72 53.6 191.32 59.59 181.8 50.57 175.07"/>\n    <path class="cls-2" d="M100.41,181.12a9.7,9.7,0,0,1-6.52,6.74l-1.75.54a9.7,9.7,0,0,1-7.54,13.74l-7.53,1-.49.84A9.7,9.7,0,0,1,61,205.59l-3.45-3.82-5.46-.87a9.7,9.7,0,0,1-6.69-14.74l1.22-1.94-1.84-1.37A9.7,9.7,0,0,1,45,167.14l4.76-3.34L52.82,158a9.7,9.7,0,0,1,14.26-3.3l3.1,2.25,1.7-1.34a9.7,9.7,0,0,1,15.53,5.7l1,4.89L95.57,170a9.7,9.7,0,0,1,4.83,11.11ZM69,179.37q.1-.29.22-.58v0l-.43-.06C68.86,178.92,68.92,179.15,69,179.37Z"/>\n    <circle class="cls-2" cx="71.75" cy="190.42" r="7.45" transform="translate(-130.8 209.92) rotate(-74.85)"/>\n    <circle class="cls-2" cx="64.94" cy="172.81" r="7.45" transform="translate(-118.83 190.33) rotate(-74.85)"/>\n    <polygon class="cls-2" points="140.75 16.43 145.68 12.97 148.76 7.18 155.46 12.05 160.99 7.67 162.38 14.63 170.72 19.04 161.17 21.96 165.03 29.35 155.94 30.52 153.8 34.21 149.55 29.5 143 28.46 147.44 21.41 140.75 16.43"/>\n    <path class="cls-2" d="M177.65,20.91a7.18,7.18,0,0,1-4.83,5l-1.29.4A7.18,7.18,0,0,1,166,36.47l-5.57.72-.36.62A7.18,7.18,0,0,1,148.48,39l-2.56-2.83-4-.64a7.18,7.18,0,0,1-5-10.91l.9-1.44-1.36-1a7.18,7.18,0,0,1,.16-11.63l3.52-2.47,2.27-4.27A7.18,7.18,0,0,1,153,1.37L155.27,3l1.26-1A7.18,7.18,0,0,1,168,6.26l.73,3.62,5.32,2.81a7.18,7.18,0,0,1,3.58,8.23Zm-23.26-1.29q.07-.21.16-.43v0l-.32,0C154.29,19.29,154.34,19.45,154.39,19.62Z"/>\n    <circle class="cls-2" cx="156.44" cy="27.79" r="5.52" transform="translate(88.73 171.54) rotate(-74.85)"/>\n    <circle class="cls-2" cx="151.39" cy="14.76" r="5.52" transform="translate(97.59 157.03) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.74 237.56">\n    <path class="cls-1" d="M16.13,110.48c2.34,10.62,18.45,28.1,30.67,15S40.43,97.52,29.67,95.94c-4.8-.71-8.88.88-11.09,3.25S15.08,105.74,16.13,110.48Z"/>\n    <circle class="cls-2" cx="38.43" cy="119.04" r="11.9" transform="translate(-74.87 66.03) rotate(-47.03)"/>\n    <path class="cls-3" d="M35,105.14,23.17,101l3.28,10.55L17.93,108l-.76,10.51L16,117.45C2.7,105.07-3.54,90.16,2,84.16,7.47,78.35,22,83,35,94.6l-7.21.13Z"/>\n    <path class="cls-3" d="M21.69,127.47l0,6.19,8-1.69.69,8.62L36.76,136l2.71,5.47q-.25.43-.53.85C33,151.41,22.34,155,15.13,150.33c-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <path class="cls-1" d="M116.5,18c-10.35,3.33-26.24,21-12,31.94s27.22-9,27.79-19.82c.25-4.84-1.71-8.76-4.27-10.74S121.11,16.54,116.5,18Z"/>\n    <circle class="cls-2" cx="110.07" cy="41.04" r="11.9" transform="translate(10.42 103.24) rotate(-52.42)"/>\n    <path class="cls-3" d="M123.58,36.27l3-12.12-10.2,4.26,2.76-8.83-10.53.23.95-1.26c11.08-14.4,25.33-22,31.83-17,6.3,4.85,3,19.77-7.29,33.79l-.81-7.16Z"/>\n    <path class="cls-3" d="M100.1,25.16l-6.17.56,2.43,7.77L87.85,35l5.22,6-5.19,3.21-.9-.45c-9.65-5.05-14.24-15.33-10.25-23,3.87-7.4,14.41-9.58,23.86-5.08Z"/>\n    <polygon class="cls-1" points="105.65 194.74 114.4 191.74 121.41 184.52 129.21 194.57 139.23 190.48 138.31 201.34 148.72 211.4 133.39 211.63 135.91 224.17 122.01 222 117.28 226.53 113.02 217.77 103.81 213.44 113.37 204.94 105.65 194.74"/>\n    <path class="cls-1" d="M158.13,217.14a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14l-2.56-5.27-5.69-2.68a11,11,0,0,1-2.63-18.21l1.95-1.73-1.57-2.08a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93a11,11,0,0,1,15.15,11.14l-.48,5.65,6.64,6.42a11,11,0,0,1,1.75,13.66Zm-33.75-11.87q.2-.28.42-.56l0,0-.45-.21C124.39,204.74,124.39,205,124.38,205.27Z"/>\n    <circle class="cls-2" cx="123.91" cy="218.2" r="8.47" transform="translate(-126.9 210.55) rotate(-58.66)"/>\n    <circle class="cls-2" cx="122.05" cy="196.82" r="8.47" transform="translate(-109.53 198.7) rotate(-58.66)"/>\n    <polygon class="cls-1" points="17.93 218.03 21.73 215.36 24.11 210.88 29.28 214.64 33.55 211.26 34.63 216.64 41.06 220.04 33.69 222.3 36.67 228 29.65 228.9 28 231.75 24.71 228.12 19.66 227.32 23.08 221.87 17.93 218.03"/>\n    <path class="cls-1" d="M46.41,221.49a5.54,5.54,0,0,1-3.73,3.85l-1,.31a5.54,5.54,0,0,1-4.31,7.85l-4.3.55-.28.48a5.54,5.54,0,0,1-8.91.94l-2-2.18-3.12-.49A5.54,5.54,0,0,1,15,224.37l.7-1.11-1.05-.78a5.54,5.54,0,0,1,.13-9l2.72-1.91,1.75-3.3a5.54,5.54,0,0,1,8.15-1.88l1.77,1.29,1-.77A5.54,5.54,0,0,1,39,210.17l.56,2.8,4.11,2.17a5.54,5.54,0,0,1,2.76,6.35Zm-18-1q.06-.17.13-.33v0l-.25,0C28.38,220.23,28.42,220.36,28.45,220.49Z"/>\n    <circle class="cls-1" cx="30.04" cy="226.8" r="4.26" transform="translate(-196.73 196.53) rotate(-74.85)"/>\n    <circle class="cls-1" cx="26.14" cy="216.73" r="4.26" transform="translate(-189.89 185.33) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.88 246.75">\n    <path class="cls-1" d="M171.06,180.8c-10.62,2.34-28.1,18.45-15,30.67s27.94-6.36,29.53-17.12c.71-4.8-.88-8.88-3.25-11.09S175.8,179.75,171.06,180.8Z"/>\n    <circle class="cls-2" cx="162.5" cy="203.11" r="11.9" transform="translate(-96.88 183.58) rotate(-47.03)"/>\n    <path class="cls-3" d="M176.4,199.63l4.11-11.78L170,191.13l3.58-8.53L163,181.84l1.06-1.17c12.38-13.29,27.29-19.54,33.29-14,5.82,5.42,1.13,20-10.43,33l-.13-7.21Z"/>\n    <path class="cls-3" d="M185.07,142.36l-6.19,0,1.69,8-8.62.69,4.64,6.44-5.47,2.71-.85-.53c-9.14-5.94-12.74-16.6-8.05-23.81,4.55-7,15.25-8.19,24.23-2.82Z"/>\n    <path class="cls-1" d="M16.13,28.81c2.34,10.62,18.45,28.1,30.67,15S40.43,15.86,29.67,14.27c-4.8-.71-8.88.88-11.09,3.25S15.08,24.08,16.13,28.81Z"/>\n    <circle class="cls-2" cx="38.43" cy="37.38" r="11.9" transform="translate(-15.11 40.03) rotate(-47.03)"/>\n    <path class="cls-3" d="M35,23.48,23.17,19.37l3.28,10.55-8.53-3.58-.76,10.51L16,35.79C2.7,23.4-3.54,8.5,2,2.5,7.47-3.32,22,1.37,35,12.93l-7.21.13Z"/>\n    <path class="cls-3" d="M21.69,45.81l0,6.19,8-1.69.69,8.62,6.44-4.64,2.71,5.47q-.25.43-.53.85C33,69.75,22.34,73.36,15.13,68.67c-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <polygon class="cls-1" points="44.31 219.99 48.78 211.9 49.12 201.83 61.65 204.03 66.32 194.27 72.94 202.94 87.41 203.39 76.21 213.86 86.5 221.45 74.75 229.19 74.29 235.72 65.25 232.1 55.51 235.08 56.88 222.36 44.31 219.99"/>\n    <path class="cls-1" d="M98.23,201.31a11,11,0,0,1-3.3,10.13l-1.52,1.42a11,11,0,0,1-.85,17.79l-7.2,4.75-.08,1.1A11,11,0,0,1,70.19,246l-5.43-2.18-6,1.84A11,11,0,0,1,44.56,233.9l.28-2.59-2.56-.48a11,11,0,0,1-7.61-16.16l3.19-5.79.25-7.43A11,11,0,0,1,51,191l4.29.75,1.06-2.22a11,11,0,0,1,18.7-1.93l3.44,4.51,9.23.29a11,11,0,0,1,10.48,8.94Zm-33,13.89q0-.35-.06-.7v0l-.47.15C64.91,214.8,65.09,215,65.27,215.2Z"/>\n    <circle class="cls-2" cx="73.61" cy="225.1" r="8.47" transform="matrix(0.98, -0.19, 0.19, 0.98, -41.17, 17.94)"/>\n    <circle class="cls-2" cx="57.86" cy="210.51" r="8.47" transform="translate(-38.7 14.71) rotate(-10.88)"/>\n    <polygon class="cls-1" points="123.22 130.82 125.97 128.89 127.68 125.66 131.41 128.38 134.49 125.94 135.27 129.82 139.92 132.27 134.6 133.9 136.75 138.02 131.68 138.67 130.49 140.73 128.12 138.1 124.47 137.53 126.94 133.6 123.22 130.82"/>\n    <path class="cls-1" d="M143.78,133.32a4,4,0,0,1-2.69,2.78l-.72.22a4,4,0,0,1-3.11,5.67l-3.11.4-.2.35a4,4,0,0,1-6.43.68l-1.43-1.58-2.25-.36a4,4,0,0,1-2.76-6.08l.5-.8-.76-.57a4,4,0,0,1,.09-6.48l2-1.38,1.27-2.38a4,4,0,0,1,5.88-1.36l1.28.93.7-.55a4,4,0,0,1,6.41,2.35l.4,2,3,1.56a4,4,0,0,1,2,4.58Zm-13-.72.09-.24h0l-.18,0C130.76,132.41,130.79,132.5,130.82,132.6Z"/>\n    <circle class="cls-1" cx="131.96" cy="137.15" r="3.08" transform="translate(-34.91 228.69) rotate(-74.85)"/>\n    <circle class="cls-1" cx="129.15" cy="129.89" r="3.08" transform="matrix(0.26, -0.97, 0.97, 0.26, -29.97, 220.61)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.3 235.65">\n    <path class="cls-1" d="M205.48,82.32c-10.62,2.34-28.1,18.45-15,30.67s27.94-6.36,29.53-17.12c.71-4.8-.88-8.88-3.25-11.09S210.22,81.28,205.48,82.32Z"/>\n    <circle class="cls-2" cx="196.92" cy="104.63" r="11.9" transform="translate(-13.86 177.4) rotate(-47.03)"/>\n    <path class="cls-3" d="M210.82,101.15l4.11-11.78-10.55,3.28L208,84.12l-10.51-.76,1.06-1.17c12.38-13.29,27.29-19.54,33.29-14,5.82,5.42,1.13,20-10.43,33L221.23,94Z"/>\n    <path class="cls-3" d="M219.49,43.88l-6.19,0,1.69,8-8.62.69L211,59l-5.47,2.71-.85-.53c-9.14-5.94-12.74-16.6-8.05-23.81,4.55-7,15.25-8.19,24.23-2.82Z"/>\n    <path class="cls-1" d="M24.88,28.81c2.34,10.62,18.45,28.1,30.67,15S49.18,15.86,38.42,14.27c-4.8-.71-8.88.88-11.09,3.25S23.83,24.08,24.88,28.81Z"/>\n    <circle class="cls-2" cx="47.19" cy="37.38" r="11.9" transform="translate(-12.33 46.43) rotate(-47.03)"/>\n    <path class="cls-3" d="M43.71,23.48,31.93,19.37l3.28,10.55-8.53-3.58-.76,10.51-1.17-1.06C11.46,23.4,5.21,8.5,10.8,2.5c5.42-5.82,20-1.13,33,10.43l-7.21.13Z"/>\n    <path class="cls-3" d="M30.44,45.81l0,6.19,8-1.69.69,8.62,6.44-4.64,2.71,5.47q-.25.43-.53.85c-5.94,9.14-16.6,12.74-23.81,8.05-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <path class="cls-1" d="M16.13,152.84c2.34,10.62,18.45,28.1,30.67,15s-6.36-27.94-17.12-29.53c-4.8-.71-8.88.88-11.09,3.25S15.08,148.1,16.13,152.84Z"/>\n    <circle class="cls-2" cx="38.43" cy="161.4" r="11.9" transform="translate(-105.87 79.52) rotate(-47.03)"/>\n    <path class="cls-3" d="M35,147.5l-11.78-4.11,3.28,10.55-8.53-3.58-.76,10.51L16,159.81C2.7,147.43-3.54,132.53,2,126.52c5.42-5.82,20-1.13,33,10.43l-7.21.13Z"/>\n    <path class="cls-3" d="M21.69,169.83l0,6.19,8-1.69.69,8.62,6.44-4.64,2.71,5.47q-.25.43-.53.85c-5.94,9.14-16.6,12.74-23.81,8.05-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <polygon class="cls-1" points="169.77 183.65 178.52 180.66 185.54 173.44 193.34 183.48 203.36 179.39 202.43 190.26 212.84 200.32 197.51 200.54 200.04 213.08 186.13 210.92 181.4 215.45 177.14 206.68 167.93 202.35 177.49 193.85 169.77 183.65"/>\n    <path class="cls-1" d="M222.25,206.05a11,11,0,0,1-9.25,5.29l-2.08,0A11,11,0,0,1,198.34,224l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14L168.93,215l-5.69-2.68a11,11,0,0,1-2.63-18.21l1.95-1.73L161,190.3a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93a11,11,0,0,1,15.15,11.14l-.48,5.65,6.64,6.42a11,11,0,0,1,1.75,13.66Zm-33.75-11.87q.2-.28.42-.56l0,0-.45-.21C188.51,193.65,188.52,193.92,188.51,194.19Z"/>\n    <circle class="cls-2" cx="188.03" cy="207.12" r="8.47" transform="translate(-86.66 260) rotate(-58.66)"/>\n    <circle class="cls-2" cx="186.18" cy="185.73" r="8.47" transform="translate(-69.29 248.15) rotate(-58.66)"/>\n    <polygon class="cls-2" points="57.61 219.52 60.8 217.28 62.78 213.54 67.11 216.69 70.69 213.86 71.59 218.36 76.97 221.2 70.8 223.09 73.3 227.87 67.42 228.62 66.04 231.01 63.29 227.97 59.06 227.29 61.93 222.74 57.61 219.52"/>\n    <path class="cls-2" d="M81.45,222.42a4.64,4.64,0,0,1-3.12,3.22l-.84.26a4.64,4.64,0,0,1-3.61,6.57l-3.6.46-.23.4a4.64,4.64,0,0,1-7.46.79l-1.65-1.83-2.61-.41a4.64,4.64,0,0,1-3.2-7.05l.58-.93-.88-.66a4.64,4.64,0,0,1,.11-7.52l2.28-1.6,1.47-2.76a4.64,4.64,0,0,1,6.82-1.58L67,210.86l.81-.64a4.64,4.64,0,0,1,7.43,2.72l.47,2.34,3.44,1.81a4.64,4.64,0,0,1,2.31,5.32Zm-15-.84.1-.28v0l-.21,0C66.36,221.36,66.39,221.47,66.42,221.58Z"/>\n    <circle class="cls-2" cx="67.75" cy="226.86" r="3.57" transform="translate(-168.94 232.97) rotate(-74.85)"/>\n    <circle class="cls-2" cx="64.48" cy="218.44" r="3.57" transform="translate(-163.21 223.6) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.66 257.49">\n    <path class="cls-1" d="M219.38,12.47c-8.21,1.81-21.72,14.26-11.59,23.71s21.6-4.92,22.83-13.24a9.79,9.79,0,0,0-2.51-8.58A9.79,9.79,0,0,0,219.38,12.47Z"/>\n    <circle class="cls-2" cx="212.76" cy="29.71" r="9.2" transform="translate(46 165.15) rotate(-47.03)"/>\n    <path class="cls-3" d="M223.51,27l3.18-9.11-8.16,2.54,2.77-6.6-8.12-.59.82-.9c9.57-10.28,21.09-15.11,25.73-10.78s.88,15.43-8.07,25.48l-.1-5.57Z"/>\n    <path class="cls-3" d="M206.25,16.77l-4.79,0,1.31,6.15-6.66.53,3.58,5-4.23,2.1-.66-.41c-7.06-4.59-9.85-12.83-6.23-18.41,3.52-5.42,11.79-6.33,18.73-2.18Z"/>\n    <path class="cls-1" d="M64.27,54.21c15,1.36,41.94,20.45,26,39.58S50.71,90,46.64,75.42c-1.82-6.48-.36-12.39,2.52-15.84S57.56,53.61,64.27,54.21Z"/>\n    <circle class="cls-2" cx="79.99" cy="83.41" r="16.51" transform="translate(-35.29 91.6) rotate(-50.26)"/>\n    <path class="cls-3" d="M60.24,81.08l-7.73-15.5,15.11,2.66L61.18,57.13l14.33-2.9q-.82-.71-1.67-1.42c-19.39-16.12-41-22.09-48.29-13.34-7.05,8.48,2,27.69,20.17,43.54l-1.09-9.95Z"/>\n    <path class="cls-3" d="M88.64,58.88l8.52-1.12L96.24,69l12-.57L103,78.13l8,2.77q.54-.43,1.08-.88c11.53-9.78,14.62-25.1,6.89-34.2-7.5-8.84-22.43-8.59-33.85.39Z"/>\n    <polygon class="cls-1" points="12.86 214.67 21.61 211.68 28.63 204.45 36.43 214.5 46.45 210.41 45.52 221.28 55.93 231.34 40.6 231.56 43.13 244.1 29.23 241.94 24.49 246.47 20.23 237.7 11.02 233.37 20.58 224.87 12.86 214.67"/>\n    <path class="cls-1" d="M65.34,237.07a11,11,0,0,1-9.25,5.29l-2.08,0A11,11,0,0,1,41.44,255l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14L12,246l-5.69-2.68A11,11,0,0,1,3.7,225.13l1.95-1.73-1.57-2.08A11,11,0,0,1,9.3,204.24l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92L40,201.13l2.28-.93a11,11,0,0,1,15.15,11.14L57,217l6.64,6.42a11,11,0,0,1,1.75,13.66ZM31.6,225.2q.2-.28.42-.56l0,0-.45-.21C31.61,224.67,31.61,224.94,31.6,225.2Z"/>\n    <circle class="cls-2" cx="31.13" cy="238.13" r="8.47" transform="translate(-188.45 140.87) rotate(-58.66)"/>\n    <circle class="cls-2" cx="29.27" cy="216.75" r="8.47" transform="translate(-171.08 129.02) rotate(-58.66)"/>\n    <polygon class="cls-2" points="200.33 192.09 205.26 188.63 208.33 182.84 215.04 187.71 220.56 183.33 221.96 190.29 230.29 194.7 220.75 197.62 224.61 205 215.51 206.18 213.38 209.87 209.12 205.16 202.57 204.12 207.01 197.07 200.33 192.09"/>\n    <path class="cls-2" d="M237.22,196.57a7.18,7.18,0,0,1-4.83,5l-1.29.4a7.18,7.18,0,0,1-5.58,10.17l-5.57.72-.36.62a7.18,7.18,0,0,1-11.54,1.22l-2.56-2.83-4-.64a7.18,7.18,0,0,1-5-10.91l.9-1.44-1.36-1a7.18,7.18,0,0,1,.16-11.63l3.52-2.47,2.27-4.27A7.18,7.18,0,0,1,212.55,177l2.29,1.67,1.26-1a7.18,7.18,0,0,1,11.5,4.22l.73,3.62,5.32,2.81a7.18,7.18,0,0,1,3.58,8.23ZM214,195.28q.07-.21.16-.43v0l-.32,0C213.87,194.94,213.92,195.11,214,195.28Z"/>\n    <circle class="cls-2" cx="216.01" cy="203.45" r="5.52" transform="translate(-36.82 358.8) rotate(-74.85)"/>\n    <circle class="cls-2" cx="210.97" cy="190.42" r="5.52" transform="translate(-27.96 344.3) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.64 259.42">\n    <path class="cls-1" d="M35.72,20C48.89,22.9,70.56,42.87,54.3,58S19.66,50.12,17.7,36.78c-.88-5.95,1.09-11,4-13.75S29.85,18.7,35.72,20Z"/>\n    <circle class="cls-2" cx="46.34" cy="47.65" r="14.75" transform="translate(-20.04 44.37) rotate(-42.97)"/>\n    <path class="cls-3" d="M29.1,43.34,24,28.73,37.09,32.8,32.66,22.22l13-.94q-.65-.73-1.32-1.45C29,3.35,10.54-4.39,3.1,2.54-4.11,9.26,1.69,27.29,16,43.4l.16-8.94Z"/>\n    <path class="cls-3" d="M56.79,26.89l7.68,0-2.1,9.87,10.68.86-5.75,8,6.78,3.36,1.05-.65c11.33-7.36,15.8-20.58,10-29.52-5.64-8.69-18.9-10.15-30-3.49Z"/>\n    <path class="cls-1" d="M192.11,133.36c-1,10.83-14.74,30.22-28.52,18.76s2.77-28.52,13.24-31.46c4.67-1.31,8.92-.26,11.41,1.81S192.55,128.53,192.11,133.36Z"/>\n    <circle class="cls-2" cx="171.07" cy="144.69" r="11.9" transform="translate(-49.56 183.74) rotate(-50.26)"/>\n    <path class="cls-3" d="M172.75,130.46l11.17-5.57L182,135.77l8-4.63,2.09,10.33,1-1.2c11.62-14,15.92-29.55,9.61-34.79-6.11-5.08-19.95,1.41-31.37,14.53l7.17-.79Z"/>\n    <path class="cls-3" d="M188.75,150.93l.81,6.14-8.11-.67.41,8.64-7-3.78-2,5.77q.31.39.63.78c7,8.31,18.08,10.53,24.64,5,6.37-5.4,6.19-16.16-.28-24.39Z"/>\n    <polygon class="cls-1" points="58.9 216.6 67.65 213.61 74.67 206.38 82.46 216.43 92.48 212.34 91.56 223.21 101.97 233.26 86.64 233.49 89.17 246.03 75.26 243.87 70.53 248.4 66.27 239.63 57.06 235.3 66.62 226.8 58.9 216.6"/>\n    <path class="cls-1" d="M111.38,239a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14l-2.56-5.27-5.69-2.68a11,11,0,0,1-2.63-18.21l1.95-1.73-1.57-2.08a11,11,0,0,1,5.22-17.08L61.58,204l5.18-5.33a11,11,0,0,1,16.61.92L86,203.06l2.28-.93a11,11,0,0,1,15.15,11.14l-.48,5.65,6.64,6.42A11,11,0,0,1,111.38,239ZM77.64,227.13q.2-.28.42-.56l0,0-.45-.21C77.64,226.6,77.64,226.87,77.64,227.13Z"/>\n    <circle class="cls-2" cx="77.16" cy="240.06" r="8.47" transform="translate(-168.01 181.11) rotate(-58.66)"/>\n    <circle class="cls-2" cx="75.3" cy="218.68" r="8.47" transform="translate(-150.64 169.26) rotate(-58.66)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.77 233.32">\n    <path class="cls-1" d="M193.91,22.38C181.06,26.51,161.33,48.46,179,62s33.79-11.12,34.5-24.61c.31-6-2.12-10.88-5.31-13.33S199.64,20.53,193.91,22.38Z"/>\n    <circle class="cls-2" cx="185.93" cy="50.95" r="14.77" transform="translate(32.16 167.23) rotate(-52.42)"/>\n    <path class="cls-3" d="M202.71,45l3.7-15-12.66,5.29,3.43-11-13.08.29q.58-.79,1.18-1.57C199,5.15,216.73-4.3,224.8,1.91c7.82,6,3.73,24.54-9.05,42l-1-8.89Z"/>\n    <path class="cls-3" d="M173.56,31.23l-7.66.69,3,9.64-10.57,1.86,6.48,7.42-6.45,4-1.11-.55c-12-6.27-17.68-19-12.73-28.5,4.81-9.19,17.89-11.9,29.62-6.31Z"/>\n    <path class="cls-1" d="M83.8,182.34c2.34,10.62,18.45,28.1,30.67,15s-6.36-27.94-17.12-29.53c-4.8-.71-8.88.88-11.09,3.25S82.75,177.6,83.8,182.34Z"/>\n    <circle class="cls-2" cx="106.1" cy="190.9" r="11.9" transform="translate(-105.91 138.42) rotate(-47.03)"/>\n    <path class="cls-3" d="M102.63,177l-11.78-4.11,3.28,10.55-8.53-3.58-.76,10.51-1.17-1.06C70.37,176.93,64.13,162,69.72,156c5.42-5.82,20-1.13,33,10.43l-7.21.13Z"/>\n    <path class="cls-3" d="M89.36,199.33l0,6.19,8-1.69.69,8.62,6.44-4.64,2.71,5.47q-.25.43-.53.85c-5.94,9.14-16.6,12.74-23.81,8.05-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <polygon class="cls-1" points="35.56 84.75 44.31 81.76 51.33 74.53 59.13 84.58 69.15 80.49 68.23 91.36 78.63 101.42 63.3 101.64 65.83 114.18 51.93 112.02 47.19 116.55 42.93 107.78 33.72 103.45 43.28 94.95 35.56 84.75"/>\n    <path class="cls-1" d="M88,107.15a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14l-2.56-5.27L29,113.42A11,11,0,0,1,26.4,95.21l1.95-1.73L26.78,91.4A11,11,0,0,1,32,74.32l6.25-2.14,5.18-5.33A11,11,0,0,1,60,67.78l2.67,3.44L65,70.28A11,11,0,0,1,80.13,81.42l-.48,5.65,6.64,6.42A11,11,0,0,1,88,107.15ZM54.3,95.28q.2-.28.42-.56l0,0-.45-.21C54.31,94.75,54.31,95,54.3,95.28Z"/>\n    <circle class="cls-2" cx="53.83" cy="108.22" r="8.47" transform="translate(-66.6 97.91) rotate(-58.66)"/>\n    <circle class="cls-2" cx="51.97" cy="86.83" r="8.47" transform="translate(-49.22 86.06) rotate(-58.66)"/>\n    <polygon class="cls-2" points="8.84 202.6 14.9 198.34 18.69 191.2 26.94 197.2 33.74 191.81 35.46 200.38 45.73 205.8 33.97 209.4 38.72 218.49 27.53 219.93 24.9 224.48 19.66 218.68 11.6 217.41 17.06 208.72 8.84 202.6"/>\n    <path class="cls-2" d="M54.26,208.11a8.84,8.84,0,0,1-5.94,6.14l-1.59.49a8.84,8.84,0,0,1-6.87,12.52l-6.86.88-.44.77a8.84,8.84,0,0,1-14.2,1.5l-3.15-3.48-5-.79a8.84,8.84,0,0,1-6.1-13.43l1.11-1.77-1.68-1.25a8.84,8.84,0,0,1,.2-14.32l4.34-3,2.79-5.26a8.84,8.84,0,0,1,13-3l2.82,2.05,1.55-1.23a8.84,8.84,0,0,1,14.15,5.19l.89,4.46L49.85,198a8.84,8.84,0,0,1,4.4,10.13Zm-28.64-1.59q.09-.26.2-.52v0l-.39-.06C25.5,206.11,25.57,206.31,25.62,206.52Z"/>\n    <circle class="cls-2" cx="28.15" cy="216.58" r="6.79" transform="translate(-188.27 187.16) rotate(-74.85)"/>\n    <circle class="cls-2" cx="21.93" cy="200.53" r="6.79" transform="translate(-177.36 169.3) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242.04 231.67">\n    <path class="cls-1" d="M23.89,143.74C30.33,152.51,52.12,162,58,145.06s-17.11-23-27.59-20.1c-4.67,1.29-7.77,4.39-8.84,7.45S21,139.83,23.89,143.74Z"/>\n    <circle class="cls-2" cx="47.76" cy="142.56" r="11.9" transform="translate(-102.58 140.93) rotate(-70.86)"/>\n    <path class="cls-3" d="M39,131.25l-12.44,1,7.27,8.33-9.25.17,3.55,9.92-1.5-.5c-17.16-6-28.9-17.07-26.21-24.82,2.61-7.51,17.81-9.1,34.37-3.77l-6.54,3Z"/>\n    <path class="cls-3" d="M35.85,157l2.48,5.68,6.6-4.76,4.11,7.6,4-6.84,4.69,3.91q-.06.49-.14,1c-1.74,10.76-10,18.36-18.53,17-8.25-1.33-13.65-10.64-12.37-21Z"/>\n    <path class="cls-1" d="M209,18C198.65,21.35,182.76,39,197,50s27.22-9,27.79-19.82c.25-4.84-1.71-8.76-4.27-10.74S213.62,16.54,209,18Z"/>\n    <circle class="cls-2" cx="202.57" cy="41.04" r="11.9" transform="translate(46.51 176.55) rotate(-52.42)"/>\n    <path class="cls-3" d="M216.08,36.27l3-12.12-10.2,4.26,2.76-8.83-10.53.23.95-1.26c11.08-14.4,25.33-22,31.83-17,6.3,4.85,3,19.77-7.29,33.79l-.81-7.16Z"/>\n    <path class="cls-3" d="M192.61,25.16l-6.17.56,2.43,7.77L180.35,35l5.22,6-5.19,3.21-.9-.45c-9.65-5.05-14.24-15.33-10.25-23,3.87-7.4,14.41-9.58,23.86-5.08Z"/>\n    <polygon class="cls-1" points="187.95 188.86 196.7 185.86 203.72 178.64 211.51 188.68 221.54 184.59 220.61 195.46 231.02 205.52 215.69 205.75 218.22 218.29 204.31 216.12 199.58 220.65 195.32 211.89 186.11 207.55 195.67 199.06 187.95 188.86"/>\n    <path class="cls-1" d="M240.43,211.26a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6L208,227.85l-.8.76a11,11,0,0,1-17.53-3.14l-2.56-5.27-5.69-2.68a11,11,0,0,1-2.63-18.21l1.95-1.73-1.57-2.08a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93a11,11,0,0,1,15.15,11.14l-.48,5.65,6.64,6.42a11,11,0,0,1,1.75,13.66Zm-33.75-11.87q.2-.28.42-.56l0,0-.45-.21C206.69,198.86,206.69,199.12,206.69,199.39Z"/>\n    <circle class="cls-2" cx="206.21" cy="212.32" r="8.47" transform="translate(-82.38 278.02) rotate(-58.66)"/>\n    <circle class="cls-2" cx="204.36" cy="190.94" r="8.47" transform="translate(-65.01 266.17) rotate(-58.66)"/>\n    <polygon class="cls-2" points="78.59 196.84 83.05 193.71 85.84 188.46 91.91 192.87 96.91 188.9 98.17 195.21 105.72 199.2 97.08 201.85 100.57 208.53 92.34 209.59 90.4 212.94 86.55 208.67 80.62 207.74 84.64 201.35 78.59 196.84"/>\n    <path class="cls-2" d="M112,200.9a6.5,6.5,0,0,1-4.37,4.52l-1.17.36A6.5,6.5,0,0,1,101.4,215l-5,.65-.33.56a6.5,6.5,0,0,1-10.45,1.1l-2.32-2.56-3.66-.58a6.5,6.5,0,0,1-4.49-9.88l.82-1.3-1.23-.92a6.5,6.5,0,0,1,.15-10.53L78,189.28l2.06-3.87a6.5,6.5,0,0,1,9.56-2.21l2.08,1.51,1.14-.9a6.5,6.5,0,0,1,10.41,3.82l.66,3.28,4.82,2.54A6.5,6.5,0,0,1,112,200.9Zm-21.07-1.17q.07-.19.15-.39v0l-.29,0C90.85,199.42,90.89,199.57,90.93,199.73Z"/>\n    <circle class="cls-2" cx="92.79" cy="207.13" r="5" transform="translate(-131.39 242.57) rotate(-74.85)"/>\n    <circle class="cls-2" cx="88.22" cy="195.32" r="5" transform="translate(-123.37 229.44) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/egg/egg.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], EggComponent);
+    return EggComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=egg.js.map
+
+/***/ }),
+/* 177 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EarringsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EarringsComponent = /** @class */ (function (_super) {
+    __extends(EarringsComponent, _super);
+    function EarringsComponent(element) {
+        return _super.call(this, 'earrings', element.nativeElement) || this;
+    }
+    EarringsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'earrings',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/earrings/earrings.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="earrings--default" width="75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.12 127.91">\n    <path class="cls-1" d="M49.78,21.17C49.78,10.36,45,1.59,39,1.59S28.32,10.36,28.32,21.17V51.73"/>\n    <ellipse class="cls-2" cx="28.42" cy="51.32" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="28.76" cy="120.84" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="38.79" cy="116.35" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="45.43" cy="107.61" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="48.75" cy="97.39" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="49.78" cy="86.16" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="48.5" cy="75.43" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="45.18" cy="64.95" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="38.54" cy="55.72" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="18.19" cy="116.51" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="11.55" cy="107.78" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="8.23" cy="97.55" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="7.21" cy="86.33" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="8.48" cy="75.6" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="11.8" cy="65.12" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="18.45" cy="55.89" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-3" cx="28.76" cy="85.91" rx="15.07" ry="29.19"/>\n    <path class="cls-1" d="M90.34,21.17c0-10.82,4.8-19.58,10.73-19.58s10.73,8.77,10.73,19.58V51.73"/>\n    <ellipse class="cls-2" cx="111.7" cy="51.32" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="111.36" cy="120.84" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="101.32" cy="116.35" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="94.68" cy="107.61" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="91.36" cy="97.39" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="90.34" cy="86.16" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="91.62" cy="75.43" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="94.94" cy="64.95" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="101.58" cy="55.72" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="121.92" cy="116.51" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="128.57" cy="107.78" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="131.89" cy="97.55" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="132.91" cy="86.33" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="131.63" cy="75.6" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="128.31" cy="65.12" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="121.67" cy="55.89" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-3" cx="111.36" cy="85.91" rx="15.07" ry="29.19"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="earrings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.03 27.95">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="142.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="142.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="145.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="148.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="148.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="145.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="139.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="139.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="142.6" cy="13.92" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="earrings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.03 27.95">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="142.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="142.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="145.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="148.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="148.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="145.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="139.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="139.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="142.6" cy="13.92" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="earrings earrings--zombie" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.72 48.05">\n    <ellipse class="cls-1" cx="16.32" cy="4.06" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="16.51" cy="43.98" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="22.28" cy="41.4" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="26.09" cy="36.39" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="28" cy="30.52" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="28.58" cy="24.07" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="27.85" cy="17.91" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="25.94" cy="11.89" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="22.13" cy="6.59" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="10.44" cy="41.5" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="6.63" cy="36.49" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.73" cy="30.61" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.14" cy="24.17" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.87" cy="18.01" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="6.78" cy="11.99" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="10.59" cy="6.69" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-2" cx="16.51" cy="23.93" rx="8.65" ry="16.76"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="earrings earrings--zombie" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.05 48.05">\n    <ellipse class="cls-1" cx="16.32" cy="4.06" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="16.51" cy="43.98" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="22.28" cy="41.4" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="26.09" cy="36.39" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="28" cy="30.52" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="28.58" cy="24.07" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="27.85" cy="17.91" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="25.94" cy="11.89" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="22.13" cy="6.59" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="10.44" cy="41.5" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="6.63" cy="36.49" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.73" cy="30.61" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.14" cy="24.17" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.87" cy="18.01" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="6.78" cy="11.99" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="10.59" cy="6.69" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-2" cx="16.51" cy="23.93" rx="8.65" ry="16.76"/>\n    <ellipse class="cls-1" cx="167.65" cy="4.06" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="167.85" cy="43.98" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="173.61" cy="41.4" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="177.42" cy="36.39" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="179.33" cy="30.52" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="179.92" cy="24.07" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="179.18" cy="17.91" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="177.28" cy="11.89" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="173.46" cy="6.59" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="161.78" cy="41.5" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="157.97" cy="36.49" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="156.06" cy="30.61" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="155.47" cy="24.17" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="156.21" cy="18.01" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="158.11" cy="11.99" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="161.92" cy="6.69" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-2" cx="167.85" cy="23.93" rx="8.65" ry="16.76"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="earrings earrings--yaga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.88 20.66">\n    <ellipse class="cls-1" cx="64.32" cy="1.83" rx="1.45" ry="1.42" transform="translate(2.65 20.19) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="70" cy="18.83" rx="1.45" ry="1.42" transform="translate(-2.38 22.82) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="72.1" cy="16.92" rx="1.45" ry="1.42" transform="translate(-1.68 23.38) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="73.02" cy="14.25" rx="1.45" ry="1.42" transform="translate(-0.8 23.53) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="73.01" cy="11.48" rx="1.45" ry="1.42" transform="translate(0.07 23.39) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="72.36" cy="8.64" rx="1.45" ry="1.42" transform="translate(0.92 23.04) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="71.18" cy="6.12" rx="1.45" ry="1.42" transform="translate(1.65 22.55) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="69.52" cy="3.82" rx="1.45" ry="1.42" transform="translate(2.29 21.92) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="67.15" cy="2.09" rx="1.45" ry="1.42" transform="translate(2.71 21.09) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="67.07" cy="18.63" rx="1.45" ry="1.42" transform="translate(-2.46 21.89) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="64.74" cy="17.02" rx="1.45" ry="1.42" transform="translate(-2.08 21.08) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="63.1" cy="14.78" rx="1.45" ry="1.42" transform="translate(-1.46 20.46) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="61.94" cy="12.12" rx="1.45" ry="1.42" transform="translate(-0.68 19.96) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="61.39" cy="9.38" rx="1.45" ry="1.42" transform="translate(0.14 19.65) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="61.36" cy="6.55" rx="1.45" ry="1.42" transform="translate(1.03 19.5) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="62.24" cy="3.75" rx="1.45" ry="1.42" transform="matrix(0.95, -0.31, 0.31, 0.95, 1.94, 19.64)"/>\n    <ellipse class="cls-2" cx="67.19" cy="10.28" rx="3.89" ry="7.53" transform="translate(0.15 21.51) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="4.81" cy="18.83" rx="1.42" ry="1.45" transform="translate(-14.58 17.52) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="10.5" cy="1.83" rx="1.42" ry="1.45" transform="translate(5.48 11.23) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="12.6" cy="3.74" rx="1.42" ry="1.45" transform="translate(5.11 14.54) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="13.52" cy="6.41" rx="1.42" ry="1.45" transform="translate(3.2 17.25) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="13.51" cy="9.19" rx="1.42" ry="1.45" transform="translate(0.56 19.15) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="12.85" cy="12.02" rx="1.42" ry="1.45" transform="translate(-2.58 20.47) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="11.68" cy="14.54" rx="1.42" ry="1.45" transform="translate(-5.79 21.09) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="10.02" cy="16.84" rx="1.42" ry="1.45" transform="matrix(0.31, -0.95, 0.95, 0.31, -9.11, 21.1)"/>\n    <ellipse class="cls-1" cx="7.65" cy="18.57" rx="1.42" ry="1.45" transform="translate(-12.38 20.03) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="7.56" cy="2.04" rx="1.42" ry="1.45" transform="translate(3.26 8.58) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="5.23" cy="3.64" rx="1.42" ry="1.45" transform="translate(0.14 7.47) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="3.59" cy="5.88" rx="1.42" ry="1.45" transform="translate(-3.11 7.46) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="2.44" cy="8.55" rx="1.42" ry="1.45" transform="translate(-6.44 8.19) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="1.89" cy="11.28" rx="1.42" ry="1.45" transform="translate(-9.42 9.55) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="1.86" cy="14.11" rx="1.42" ry="1.45" transform="translate(-12.13 11.47) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="2.74" cy="16.91" rx="1.42" ry="1.45" transform="matrix(0.31, -0.95, 0.95, 0.31, -14.18, 14.23)"/>\n    <ellipse class="cls-2" cx="7.69" cy="10.39" rx="7.53" ry="3.89" transform="translate(-4.58 14.44) rotate(-71.79)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="earrings earrings--yaga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.14 38.61">\n    <ellipse class="cls-1" cx="13.11" cy="3.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="13.27" cy="35.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="17.9" cy="33.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="20.96" cy="29.24" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.49" cy="24.52" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.97" cy="19.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.38" cy="14.39" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="20.84" cy="9.56" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="17.78" cy="5.3" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="8.39" cy="33.35" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="5.33" cy="29.32" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.8" cy="24.6" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.33" cy="19.42" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.91" cy="14.47" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="5.45" cy="9.63" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="8.51" cy="5.38" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-2" cx="13.27" cy="19.23" rx="6.95" ry="13.47"/>\n    <ellipse class="cls-1" cx="109.96" cy="3.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="110.12" cy="35.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="114.75" cy="33.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="117.81" cy="29.24" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="119.35" cy="24.52" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="119.82" cy="19.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="119.23" cy="14.39" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="117.7" cy="9.56" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="114.63" cy="5.3" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="105.24" cy="33.35" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="102.18" cy="29.32" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="100.65" cy="24.6" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="100.18" cy="19.42" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="100.77" cy="14.47" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="102.3" cy="9.63" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="105.36" cy="5.38" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-2" cx="110.12" cy="19.23" rx="6.95" ry="13.47"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="earrings earrings--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.37 101.52">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="130.82" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="130.94" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="134.29" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.51" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.62" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.96" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.53" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.42" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="134.21" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="127.41" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="125.19" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="124.08" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="123.74" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="124.17" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="125.28" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="127.49" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="130.94" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="9.49" cy="75.93" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="99.15" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="97.65" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="94.74" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="91.32" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="87.57" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="83.99" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="80.49" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="77.4" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="97.71" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="94.79" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="91.37" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="87.63" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="84.04" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="80.54" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="77.46" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="87.49" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="130.82" cy="75.93" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="130.94" cy="99.15" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="134.29" cy="97.65" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.51" cy="94.74" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.62" cy="91.32" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.96" cy="87.57" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.53" cy="83.99" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.42" cy="80.49" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="134.21" cy="77.4" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="127.41" cy="97.71" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="125.19" cy="94.79" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="124.08" cy="91.37" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="123.74" cy="87.63" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="124.17" cy="84.04" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="125.28" cy="80.54" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="127.49" cy="77.46" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="130.94" cy="87.49" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="earrings earrings--alien" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.01 27.95">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="171.47" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="171.58" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="174.93" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="177.15" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="178.26" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="178.6" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="178.17" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="177.07" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="174.85" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="168.05" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="165.83" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="164.72" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="164.38" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="164.81" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="165.92" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="168.14" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="171.58" cy="13.92" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="earrings earrings--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.03 27.95">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="76.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="76.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="79.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="82.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="83.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="83.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="83.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="82.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="79.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="73.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="70.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="69.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="69.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="69.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="70.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="73.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="76.6" cy="13.92" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="earrings earrings--doctor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.29 38.61">\n    <ellipse class="cls-1" cx="13.11" cy="3.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="13.27" cy="35.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="17.9" cy="33.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="20.96" cy="29.24" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.49" cy="24.52" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.97" cy="19.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.38" cy="14.39" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="20.84" cy="9.56" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="17.78" cy="5.3" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="8.39" cy="33.35" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="5.33" cy="29.32" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.8" cy="24.6" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.33" cy="19.42" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.91" cy="14.47" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="5.45" cy="9.63" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="8.51" cy="5.38" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-2" cx="13.27" cy="19.23" rx="6.95" ry="13.47"/>\n    <ellipse class="cls-1" cx="168.11" cy="3.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="168.27" cy="35.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="172.9" cy="33.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="175.96" cy="29.24" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="177.49" cy="24.52" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="177.97" cy="19.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="177.38" cy="14.39" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="175.84" cy="9.56" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="172.78" cy="5.3" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="163.39" cy="33.35" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="160.33" cy="29.32" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="158.8" cy="24.6" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="158.33" cy="19.42" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="158.91" cy="14.47" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="160.45" cy="9.63" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="163.51" cy="5.38" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-2" cx="168.27" cy="19.23" rx="6.95" ry="13.47"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="earrings earrings--ghost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.42 45.78">\n    <ellipse class="cls-1" cx="15.55" cy="3.87" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="15.73" cy="41.91" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="21.23" cy="39.45" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="24.86" cy="34.67" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="26.68" cy="29.08" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="27.23" cy="22.94" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="26.54" cy="17.07" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="24.72" cy="11.33" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="21.09" cy="6.28" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="9.95" cy="39.54" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="6.32" cy="34.77" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="4.5" cy="29.17" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="3.94" cy="23.03" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="4.64" cy="17.16" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="6.46" cy="11.42" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="10.09" cy="6.37" rx="3.07" ry="3"/>\n    <ellipse class="cls-2" cx="15.73" cy="22.8" rx="8.25" ry="15.97"/>\n    <ellipse class="cls-1" cx="199.79" cy="3.87" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="199.98" cy="41.91" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="205.47" cy="39.45" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="209.11" cy="34.67" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="210.92" cy="29.08" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="211.48" cy="22.94" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="210.78" cy="17.07" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="208.97" cy="11.33" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="205.33" cy="6.28" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="194.2" cy="39.54" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="190.57" cy="34.77" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="188.75" cy="29.17" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="188.19" cy="23.03" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="188.89" cy="17.16" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="190.71" cy="11.42" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="194.34" cy="6.37" rx="3.07" ry="3"/>\n    <ellipse class="cls-2" cx="199.98" cy="22.8" rx="8.25" ry="15.97"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="earrings--wolf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.47 41.59">\n    <path class="cls-1" d="M26,10.22c1.42-3.44,1-6.86-.84-7.64S20.62,4,19.2,7.4l-4,9.72"/>\n    <ellipse class="cls-2" cx="15.26" cy="17" rx="1.89" ry="1.93" transform="translate(-6.27 24.61) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="6.23" cy="39.15" rx="1.89" ry="1.93" transform="translate(-32.33 29.95) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="10.01" cy="39.04" rx="1.89" ry="1.93" transform="matrix(0.38, -0.92, 0.92, 0.38, -29.89, 33.38)"/>\n    <ellipse class="cls-2" cx="13.27" cy="37.14" rx="1.89" ry="1.93" transform="translate(-26.12 35.22) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="15.67" cy="34.32" rx="1.89" ry="1.93" transform="translate(-22.03 35.69) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="17.48" cy="30.89" rx="1.89" ry="1.93" transform="translate(-17.74 35.24) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="18.48" cy="27.31" rx="1.89" ry="1.93" transform="translate(-13.82 33.95) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="18.8" cy="23.54" rx="1.89" ry="1.93" transform="translate(-10.13 31.92) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="17.9" cy="19.73" rx="1.89" ry="1.93" transform="translate(-7.17 28.74) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="3.44" cy="36.39" rx="1.89" ry="1.93" transform="translate(-31.5 25.66) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="2.47" cy="32.74" rx="1.89" ry="1.93" transform="translate(-28.72 22.52) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="2.76" cy="29.05" rx="1.89" ry="1.93" transform="translate(-25.14 20.5) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="3.91" cy="25.34" rx="1.89" ry="1.93" transform="translate(-21 19.28) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="5.73" cy="22.1" rx="1.89" ry="1.93" transform="translate(-16.88 18.95) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="8.16" cy="19.2" rx="1.89" ry="1.93" transform="translate(-12.7 19.41) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="11.49" cy="17.14" rx="1.89" ry="1.93" transform="translate(-8.74 21.21) rotate(-67.54)"/>\n    <ellipse class="cls-3" cx="10.82" cy="28.04" rx="10.05" ry="5.19" transform="translate(-19.23 27.33) rotate(-67.54)"/>\n    <path class="cls-1" d="M79.45,8.34c-1.42-3.44-1-6.86.84-7.64s4.56,1.38,6,4.82l4,9.72"/>\n    <ellipse class="cls-2" cx="90.21" cy="15.12" rx="1.93" ry="1.89" transform="translate(1.07 35.61) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="99.24" cy="37.28" rx="1.93" ry="1.89" transform="translate(-6.71 40.74) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="95.46" cy="37.17" rx="1.93" ry="1.89" transform="translate(-6.96 39.29) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="92.2" cy="35.27" rx="1.93" ry="1.89" transform="translate(-6.48 37.9) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="89.8" cy="32.45" rx="1.93" ry="1.89" transform="translate(-5.59 36.77) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="88" cy="29.01" rx="1.93" ry="1.89" transform="translate(-4.41 35.82) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="86.99" cy="25.43" rx="1.93" ry="1.89" transform="translate(-3.12 35.16) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="86.67" cy="21.66" rx="1.93" ry="1.89" transform="translate(-1.7 34.76) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="87.57" cy="17.86" rx="1.93" ry="1.89" transform="translate(-0.18 34.81) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="102.04" cy="34.51" rx="1.93" ry="1.89" transform="translate(-5.45 41.6) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="103" cy="30.86" rx="1.93" ry="1.89" transform="translate(-3.98 41.69) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="102.71" cy="27.17" rx="1.93" ry="1.89" transform="translate(-2.59 41.3) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="101.56" cy="23.47" rx="1.93" ry="1.89" transform="translate(-1.26 40.58) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="99.74" cy="20.23" rx="1.93" ry="1.89" transform="translate(-0.16 39.64) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="97.31" cy="17.33" rx="1.93" ry="1.89" transform="translate(0.76 38.49) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="93.98" cy="15.27" rx="1.93" ry="1.89" transform="translate(1.3 37.06) rotate(-22.46)"/>\n    <ellipse class="cls-3" cx="94.65" cy="26.17" rx="5.19" ry="10.05" transform="translate(-2.82 38.15) rotate(-22.46)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="earrings earrings--bed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.58 24.1">\n    <ellipse class="cls-1" cx="8.19" cy="2.04" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="8.28" cy="22.06" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="11.17" cy="20.77" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="13.09" cy="18.25" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="14.04" cy="15.31" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="14.34" cy="12.07" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="13.97" cy="8.98" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="13.01" cy="5.97" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="11.1" cy="3.31" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="5.24" cy="20.82" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="3.33" cy="18.3" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="2.37" cy="15.36" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="2.08" cy="12.12" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="2.44" cy="9.03" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="3.4" cy="6.01" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="5.31" cy="3.36" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-2" cx="8.28" cy="12" rx="4.34" ry="8.41"/>\n    <ellipse class="cls-1" cx="72.35" cy="2.04" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="72.45" cy="22.06" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="75.34" cy="20.77" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="77.26" cy="18.25" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="78.21" cy="15.31" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="78.51" cy="12.07" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="78.14" cy="8.98" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="77.18" cy="5.97" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="75.27" cy="3.31" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="69.41" cy="20.82" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="67.49" cy="18.3" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="66.54" cy="15.36" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="66.24" cy="12.12" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="66.61" cy="9.03" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="67.57" cy="6.01" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="69.48" cy="3.36" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-2" cx="72.45" cy="12" rx="4.34" ry="8.41"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/earrings/earrings.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], EarringsComponent);
+    return EarringsComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=earrings.js.map
+
+/***/ }),
+/* 178 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NecklaceComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var NecklaceComponent = /** @class */ (function (_super) {
+    __extends(NecklaceComponent, _super);
+    function NecklaceComponent(element) {
+        return _super.call(this, 'necklace', element.nativeElement) || this;
+    }
+    NecklaceComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'necklace',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/necklace/necklace.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 275.48 141.7" class="necklace">\n    <circle class="cls-1" cx="14.54" cy="14.91" r="14.54"/>\n    <circle class="cls-1" cx="21.73" cy="48.53" r="14.54"/>\n    <circle class="cls-1" cx="38.83" cy="79.1" r="14.54"/>\n    <circle class="cls-1" cx="67.38" cy="102.66" r="14.54"/>\n    <circle class="cls-1" cx="100.23" cy="118.55" r="14.54"/>\n    <circle class="cls-1" cx="136.85" cy="127.16" r="14.54"/>\n    <circle class="cls-1" cx="174.95" cy="118.95" r="14.54"/>\n    <circle class="cls-1" cx="209.82" cy="102.26" r="14.54"/>\n    <circle class="cls-1" cx="235.81" cy="77.89" r="14.54"/>\n    <circle class="cls-1" cx="253.58" cy="48.94" r="14.54"/>\n    <circle class="cls-1" cx="260.94" cy="14.54" r="14.54"/>\n    <path class="cls-1" d="M136.93,127.2A126.57,126.57,0,0,1,10.5.78h3.23a123.2,123.2,0,1,0,246.39,0h3.23A126.57,126.57,0,0,1,136.93,127.2Z"/>\n    <circle class="cls-2" cx="56.19" cy="10.88" r="9.63"/>\n    <circle class="cls-2" cx="60.95" cy="33.15" r="9.63"/>\n    <circle class="cls-2" cx="72.28" cy="53.39" r="9.63"/>\n    <circle class="cls-2" cx="91.18" cy="68.99" r="9.63"/>\n    <circle class="cls-2" cx="112.94" cy="79.52" r="9.63"/>\n    <circle class="cls-2" cx="137.19" cy="85.22" r="9.63"/>\n    <circle class="cls-2" cx="162.43" cy="79.78" r="9.63"/>\n    <circle class="cls-2" cx="185.53" cy="68.73" r="9.63"/>\n    <circle class="cls-2" cx="202.74" cy="52.59" r="9.63"/>\n    <circle class="cls-2" cx="214.51" cy="33.41" r="9.63"/>\n    <circle class="cls-2" cx="219.38" cy="10.63" r="9.63"/>\n    <path class="cls-2" d="M137.25,85.25A83.83,83.83,0,0,1,53.51,1.51h2.14a81.59,81.59,0,1,0,163.19,0H221A83.83,83.83,0,0,1,137.25,85.25Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.39 43.31" class="necklace">\n    <circle class="cls-1" cx="8.87" cy="3.5" r="3.42"/>\n    <circle class="cls-1" cx="10.56" cy="11.41" r="3.42"/>\n    <circle class="cls-1" cx="14.58" cy="18.59" r="3.42"/>\n    <circle class="cls-1" cx="21.29" cy="24.13" r="3.42"/>\n    <circle class="cls-1" cx="29.01" cy="27.86" r="3.42"/>\n    <circle class="cls-1" cx="37.62" cy="29.89" r="3.42"/>\n    <circle class="cls-1" cx="46.57" cy="27.96" r="3.42"/>\n    <circle class="cls-1" cx="54.77" cy="24.03" r="3.42"/>\n    <circle class="cls-1" cx="60.88" cy="18.3" r="3.42"/>\n    <circle class="cls-1" cx="65.05" cy="11.5" r="3.42"/>\n    <circle class="cls-1" cx="66.78" cy="3.42" r="3.42"/>\n    <path class="cls-1" d="M37.64,29.89A29.75,29.75,0,0,1,7.92.18h.76a29,29,0,1,0,57.91,0h.76A29.75,29.75,0,0,1,37.64,29.89Z"/>\n    <circle class="cls-2" cx="3.77" cy="10.45" r="3.77"/>\n    <circle class="cls-2" cx="5.63" cy="19.17" r="3.77"/>\n    <circle class="cls-2" cx="10.06" cy="27.09" r="3.77"/>\n    <circle class="cls-2" cx="17.46" cy="33.19" r="3.77"/>\n    <circle class="cls-2" cx="25.97" cy="37.31" r="3.77"/>\n    <circle class="cls-2" cx="35.46" cy="39.54" r="3.77"/>\n    <circle class="cls-2" cx="45.34" cy="37.42" r="3.77"/>\n    <circle class="cls-2" cx="54.38" cy="33.09" r="3.77"/>\n    <circle class="cls-2" cx="61.11" cy="26.77" r="3.77"/>\n    <circle class="cls-2" cx="65.71" cy="19.27" r="3.77"/>\n    <circle class="cls-2" cx="67.62" cy="10.36" r="3.77"/>\n    <path class="cls-2" d="M35.48,39.55A32.8,32.8,0,0,1,2.72,6.79h.84a31.93,31.93,0,1,0,63.85,0h.84A32.8,32.8,0,0,1,35.48,39.55Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.66 146.57" class="necklace">\n    <circle class="cls-1" cx="8.2" cy="8.41" r="8.2"/>\n    <circle class="cls-1" cx="12.26" cy="27.37" r="8.2"/>\n    <circle class="cls-1" cx="21.9" cy="44.6" r="8.2"/>\n    <circle class="cls-1" cx="37.99" cy="57.89" r="8.2"/>\n    <circle class="cls-1" cx="56.52" cy="66.85" r="8.2"/>\n    <circle class="cls-1" cx="77.17" cy="71.71" r="8.2"/>\n    <circle class="cls-1" cx="98.66" cy="67.08" r="8.2"/>\n    <circle class="cls-1" cx="118.32" cy="57.66" r="8.2"/>\n    <circle class="cls-1" cx="132.98" cy="43.92" r="8.2"/>\n    <circle class="cls-1" cx="143" cy="27.6" r="8.2"/>\n    <circle class="cls-1" cx="147.14" cy="8.2" r="8.2"/>\n    <path class="cls-1" d="M77.21,71.73A71.37,71.37,0,0,1,5.92.44H7.74a69.47,69.47,0,1,0,138.94,0h1.82A71.37,71.37,0,0,1,77.21,71.73Z"/>\n    <circle class="cls-2" cx="31.68" cy="6.13" r="5.43"/>\n    <circle class="cls-2" cx="34.37" cy="18.69" r="5.43"/>\n    <circle class="cls-2" cx="40.76" cy="30.11" r="5.43"/>\n    <circle class="cls-2" cx="51.42" cy="38.91" r="5.43"/>\n    <circle class="cls-2" cx="63.69" cy="44.84" r="5.43"/>\n    <circle class="cls-2" cx="77.36" cy="48.06" r="5.43"/>\n    <circle class="cls-2" cx="91.6" cy="44.99" r="5.43"/>\n    <circle class="cls-2" cx="104.62" cy="38.75" r="5.43"/>\n    <circle class="cls-2" cx="114.32" cy="29.65" r="5.43"/>\n    <circle class="cls-2" cx="120.96" cy="18.84" r="5.43"/>\n    <circle class="cls-2" cx="123.71" cy="6" r="5.43"/>\n    <path class="cls-2" d="M77.39,48.07A47.27,47.27,0,0,1,30.18.85h1.21a46,46,0,1,0,92,0h1.21A47.27,47.27,0,0,1,77.39,48.07Z"/>\n    <circle class="cls-1" cx="27.48" cy="81.37" r="7.48"/>\n    <circle class="cls-1" cx="31.18" cy="98.66" r="7.48"/>\n    <circle class="cls-1" cx="39.97" cy="114.38" r="7.48"/>\n    <circle class="cls-1" cx="54.65" cy="126.5" r="7.48"/>\n    <circle class="cls-1" cx="71.54" cy="134.67" r="7.48"/>\n    <circle class="cls-1" cx="90.37" cy="139.1" r="7.48"/>\n    <circle class="cls-1" cx="109.97" cy="134.87" r="7.48"/>\n    <circle class="cls-1" cx="127.9" cy="126.29" r="7.48"/>\n    <circle class="cls-1" cx="141.26" cy="113.76" r="7.48"/>\n    <circle class="cls-1" cx="150.4" cy="98.87" r="7.48"/>\n    <circle class="cls-1" cx="154.19" cy="81.18" r="7.48"/>\n    <path class="cls-1" d="M90.41,139.12a65.09,65.09,0,0,1-65-65h1.66a63.35,63.35,0,0,0,126.71,0h1.66A65.09,65.09,0,0,1,90.41,139.12Z"/>\n    <circle class="cls-2" cx="48.89" cy="79.3" r="4.95"/>\n    <circle class="cls-2" cx="51.34" cy="90.75" r="4.95"/>\n    <circle class="cls-2" cx="57.17" cy="101.16" r="4.95"/>\n    <circle class="cls-2" cx="66.89" cy="109.18" r="4.95"/>\n    <circle class="cls-2" cx="78.08" cy="114.59" r="4.95"/>\n    <circle class="cls-2" cx="90.55" cy="117.53" r="4.95"/>\n    <circle class="cls-2" cx="103.53" cy="114.73" r="4.95"/>\n    <circle class="cls-2" cx="115.41" cy="109.05" r="4.95"/>\n    <circle class="cls-2" cx="124.26" cy="100.75" r="4.95"/>\n    <circle class="cls-2" cx="130.31" cy="90.89" r="4.95"/>\n    <circle class="cls-2" cx="132.81" cy="79.17" r="4.95"/>\n    <path class="cls-2" d="M90.58,117.54A43.11,43.11,0,0,1,47.52,74.48h1.1a42,42,0,1,0,83.92,0h1.1A43.11,43.11,0,0,1,90.58,117.54Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.43 67.6" class="necklace">\n    <circle class="cls-1" cx="5.04" cy="23.68" r="5.04"/>\n    <circle class="cls-1" cx="7.53" cy="35.33" r="5.04"/>\n    <circle class="cls-1" cx="13.45" cy="45.91" r="5.04"/>\n    <circle class="cls-1" cx="23.34" cy="54.07" r="5.04"/>\n    <circle class="cls-1" cx="34.72" cy="59.58" r="5.04"/>\n    <circle class="cls-1" cx="47.4" cy="62.56" r="5.04"/>\n    <circle class="cls-1" cx="60.6" cy="59.72" r="5.04"/>\n    <circle class="cls-1" cx="72.68" cy="53.93" r="5.04"/>\n    <circle class="cls-1" cx="81.68" cy="45.49" r="5.04"/>\n    <circle class="cls-1" cx="87.84" cy="35.47" r="5.04"/>\n    <circle class="cls-1" cx="90.39" cy="23.55" r="5.04"/>\n    <path class="cls-1" d="M47.43,62.58A43.84,43.84,0,0,1,3.64,18.78H4.76a42.67,42.67,0,1,0,85.35,0h1.12A43.84,43.84,0,0,1,47.43,62.58Z"/>\n    <circle class="cls-1" cx="10.67" cy="19.77" r="3.92"/>\n    <circle class="cls-1" cx="12.61" cy="28.83" r="3.92"/>\n    <circle class="cls-1" cx="17.22" cy="37.07" r="3.92"/>\n    <circle class="cls-1" cx="24.92" cy="43.43" r="3.92"/>\n    <circle class="cls-1" cx="33.78" cy="47.71" r="3.92"/>\n    <circle class="cls-1" cx="43.65" cy="50.03" r="3.92"/>\n    <circle class="cls-1" cx="53.93" cy="47.82" r="3.92"/>\n    <circle class="cls-1" cx="63.33" cy="43.32" r="3.92"/>\n    <circle class="cls-1" cx="70.33" cy="36.75" r="3.92"/>\n    <circle class="cls-1" cx="75.13" cy="28.94" r="3.92"/>\n    <circle class="cls-1" cx="77.11" cy="19.67" r="3.92"/>\n    <path class="cls-1" d="M43.67,50A34.13,34.13,0,0,1,9.58,16h.87a33.22,33.22,0,0,0,66.44,0h.87A34.13,34.13,0,0,1,43.67,50Z"/>\n    <circle class="cls-2" cx="12.23" cy="4.05" r="3.95"/>\n    <circle class="cls-2" cx="14.18" cy="13.17" r="3.95"/>\n    <circle class="cls-2" cx="18.82" cy="21.46" r="3.95"/>\n    <circle class="cls-2" cx="26.57" cy="27.85" r="3.95"/>\n    <circle class="cls-2" cx="35.48" cy="32.16" r="3.95"/>\n    <circle class="cls-2" cx="45.41" cy="34.5" r="3.95"/>\n    <circle class="cls-2" cx="55.75" cy="32.27" r="3.95"/>\n    <circle class="cls-2" cx="65.21" cy="27.74" r="3.95"/>\n    <circle class="cls-2" cx="72.26" cy="21.13" r="3.95"/>\n    <circle class="cls-2" cx="77.09" cy="13.28" r="3.95"/>\n    <circle class="cls-2" cx="79.08" cy="3.95" r="3.95"/>\n    <path class="cls-2" d="M45.44,34.51A34.34,34.34,0,0,1,11.13.21H12a33.42,33.42,0,1,0,66.85,0h.88A34.34,34.34,0,0,1,45.44,34.51Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.32 112.98" class="necklace">\n    <circle class="cls-1" cx="11.31" cy="14.34" r="11.31"/>\n    <circle class="cls-1" cx="16.91" cy="40.5" r="11.31"/>\n    <circle class="cls-1" cx="30.21" cy="64.28" r="11.31"/>\n    <circle class="cls-1" cx="52.42" cy="82.61" r="11.31"/>\n    <circle class="cls-1" cx="77.98" cy="94.97" r="11.31"/>\n    <circle class="cls-1" cx="106.47" cy="101.67" r="11.31"/>\n    <circle class="cls-1" cx="136.11" cy="95.28" r="11.31"/>\n    <circle class="cls-1" cx="163.24" cy="82.29" r="11.31"/>\n    <circle class="cls-1" cx="183.46" cy="63.33" r="11.31"/>\n    <circle class="cls-1" cx="197.29" cy="40.81" r="11.31"/>\n    <circle class="cls-1" cx="203.01" cy="14.05" r="11.31"/>\n    <path class="cls-1" d="M106.53,101.7A98.47,98.47,0,0,1,8.17,3.34h2.51a95.85,95.85,0,0,0,191.69,0h2.51A98.47,98.47,0,0,1,106.53,101.7Z"/>\n    <circle class="cls-2" cx="13.06" cy="10.54" r="10.28"/>\n    <circle class="cls-2" cx="18.15" cy="34.31" r="10.28"/>\n    <circle class="cls-2" cx="30.23" cy="55.91" r="10.28"/>\n    <circle class="cls-2" cx="50.41" cy="72.57" r="10.28"/>\n    <circle class="cls-2" cx="73.63" cy="83.8" r="10.28"/>\n    <circle class="cls-2" cx="99.52" cy="89.89" r="10.28"/>\n    <circle class="cls-2" cx="126.45" cy="84.08" r="10.28"/>\n    <circle class="cls-2" cx="151.1" cy="72.28" r="10.28"/>\n    <circle class="cls-2" cx="169.47" cy="55.06" r="10.28"/>\n    <circle class="cls-2" cx="182.04" cy="34.59" r="10.28"/>\n    <circle class="cls-2" cx="187.23" cy="10.28" r="10.28"/>\n    <path class="cls-2" d="M99.58,89.92A89.47,89.47,0,0,1,10.21.55h2.28a87.08,87.08,0,1,0,174.17,0h2.28A89.47,89.47,0,0,1,99.58,89.92Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.67 107.84" class="necklace">\n    <circle class="cls-2" cx="10.08" cy="13.6" r="8.36" transform="translate(-5.88 19.24) rotate(-72.95)"/>\n    <circle class="cls-2" cx="8.36" cy="33.29" r="8.36" transform="translate(-25.92 31.53) rotate(-72.95)"/>\n    <circle class="cls-2" cx="12.61" cy="52.98" r="8.36" transform="translate(-41.73 49.5) rotate(-72.95)"/>\n    <circle class="cls-2" cx="24.33" cy="70.74" r="8.36" transform="translate(-50.44 73.26) rotate(-72.95)"/>\n    <circle class="cls-2" cx="39.71" cy="85.01" r="8.36" transform="translate(-53.21 98.05) rotate(-72.95)"/>\n    <circle class="cls-2" cx="58.39" cy="95.92" r="8.36" transform="translate(-50.44 123.62) rotate(-72.95)"/>\n    <circle class="cls-2" cx="80.72" cy="97.83" r="8.36" transform="translate(-36.48 146.32) rotate(-72.95)"/>\n    <circle class="cls-2" cx="102.7" cy="94.53" r="8.36" transform="translate(-17.79 165) rotate(-72.95)"/>\n    <circle class="cls-2" cx="121.09" cy="85.52" r="8.36" transform="translate(3.83 176.22) rotate(-72.95)"/>\n    <circle class="cls-2" cx="135.74" cy="72.6" r="8.36" transform="translate(26.53 181.09) rotate(-72.95)"/>\n    <circle class="cls-2" cx="145.59" cy="54.93" r="8.36" transform="translate(50.38 178.01) rotate(-72.95)"/>\n    <path class="cls-2" d="M58.42,96A72.78,72.78,0,0,1,10.24,5.14L12,5.69A70.83,70.83,0,1,0,147.46,47.23l1.78.54A72.78,72.78,0,0,1,58.42,96Z"/>\n    <circle class="cls-1" cx="18.13" cy="9.02" r="8.92" transform="translate(4.19 23.71) rotate(-72.95)"/>\n    <circle class="cls-1" cx="16.3" cy="30.04" r="8.92" transform="translate(-17.19 36.82) rotate(-72.95)"/>\n    <circle class="cls-1" cx="20.84" cy="51.04" r="8.92" transform="translate(-34.07 56) rotate(-72.95)"/>\n    <circle class="cls-1" cx="33.34" cy="70" r="8.92" transform="translate(-43.36 81.35) rotate(-72.95)"/>\n    <circle class="cls-1" cx="49.75" cy="85.23" r="8.92" transform="translate(-46.32 107.81) rotate(-72.95)"/>\n    <circle class="cls-1" cx="69.69" cy="96.87" r="8.92" transform="translate(-43.36 135.09) rotate(-72.95)"/>\n    <circle class="cls-1" cx="93.52" cy="98.91" r="8.92" transform="matrix(0.29, -0.96, 0.96, 0.29, -28.47, 159.32)"/>\n    <circle class="cls-1" cx="116.98" cy="95.39" r="8.92" transform="matrix(0.29, -0.96, 0.96, 0.29, -8.52, 179.26)"/>\n    <circle class="cls-1" cx="136.61" cy="85.77" r="8.92" transform="translate(14.55 191.22) rotate(-72.95)"/>\n    <circle class="cls-1" cx="152.24" cy="71.99" r="8.92" transform="translate(38.78 196.43) rotate(-72.95)"/>\n    <circle class="cls-1" cx="162.74" cy="53.13" r="8.92" transform="translate(64.23 193.14) rotate(-72.95)"/>\n    <path class="cls-1" d="M69.73,96.91A77.66,77.66,0,0,1,18.31,0l1.9.58A75.59,75.59,0,1,0,164.74,44.91l1.9.58A77.66,77.66,0,0,1,69.73,96.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.92 25.98" class="necklace">\n    <circle class="cls-1" cx="2.17" cy="12.63" r="2.17" transform="translate(-3.49 1.13) rotate(-16.48)"/>\n    <circle class="cls-1" cx="4.61" cy="17.13" r="2.17" transform="translate(-4.67 2.01) rotate(-16.48)"/>\n    <circle class="cls-1" cx="8.35" cy="20.77" r="2.17" transform="translate(-5.55 3.22) rotate(-16.48)"/>\n    <circle class="cls-1" cx="13.42" cy="22.93" r="2.17" transform="translate(-5.95 4.75) rotate(-16.48)"/>\n    <circle class="cls-1" cx="18.79" cy="23.81" r="2.17" transform="matrix(0.96, -0.28, 0.28, 0.96, -5.98, 6.31)"/>\n    <circle class="cls-1" cx="24.38" cy="23.5" r="2.17" transform="matrix(0.96, -0.28, 0.28, 0.96, -5.66, 7.88)"/>\n    <circle class="cls-1" cx="29.48" cy="20.71" r="2.17" transform="translate(-4.66 9.21) rotate(-16.48)"/>\n    <circle class="cls-1" cx="33.75" cy="16.86" r="2.17" transform="translate(-3.39 10.27) rotate(-16.48)"/>\n    <circle class="cls-1" cx="36.43" cy="12.28" r="2.17" transform="translate(-1.99 10.84) rotate(-16.48)"/>\n    <circle class="cls-1" cx="37.75" cy="7.39" r="2.17" transform="matrix(0.96, -0.28, 0.28, 0.96, -0.55, 11.01)"/>\n    <circle class="cls-1" cx="37.35" cy="2.17" r="2.17" transform="translate(0.92 10.68) rotate(-16.48)"/>\n    <path class="cls-1" d="M24.39,23.5A18.85,18.85,0,0,1,1,10.78l.46-.14A18.35,18.35,0,0,0,36.65.23L37.11.1A18.85,18.85,0,0,1,24.39,23.5Z"/>\n    <circle class="cls-2" cx="7.94" cy="10.29" r="1.43" transform="translate(-2.59 2.68) rotate(-16.48)"/>\n    <circle class="cls-2" cx="9.57" cy="13.27" r="1.43" transform="translate(-3.37 3.26) rotate(-16.48)"/>\n    <circle class="cls-2" cx="12.04" cy="15.69" r="1.43" transform="translate(-3.96 4.06) rotate(-16.48)"/>\n    <circle class="cls-2" cx="15.4" cy="17.12" r="1.43" transform="translate(-4.22 5.07) rotate(-16.48)"/>\n    <circle class="cls-2" cx="18.95" cy="17.7" r="1.43" transform="translate(-4.24 6.1) rotate(-16.48)"/>\n    <circle class="cls-2" cx="22.66" cy="17.49" r="1.43" transform="translate(-4.03 7.15) rotate(-16.48)"/>\n    <circle class="cls-2" cx="26.03" cy="15.65" r="1.43" transform="translate(-3.37 8.03) rotate(-16.48)"/>\n    <circle class="cls-2" cx="28.86" cy="13.09" r="1.43" transform="translate(-2.53 8.72) rotate(-16.48)"/>\n    <circle class="cls-2" cx="30.64" cy="10.06" r="1.43" transform="translate(-1.6 9.1) rotate(-16.48)"/>\n    <circle class="cls-2" cx="31.51" cy="6.82" r="1.43" transform="translate(-0.64 9.22) rotate(-16.48)"/>\n    <circle class="cls-2" cx="31.25" cy="3.36" r="1.43" transform="translate(0.33 9) rotate(-16.48)"/>\n    <path class="cls-2" d="M22.67,17.49A12.49,12.49,0,0,1,7.17,9.07L7.47,9A12.15,12.15,0,1,0,30.78,2.08L31.09,2A12.49,12.49,0,0,1,22.67,17.49Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/necklace/necklace.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], NecklaceComponent);
+    return NecklaceComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=necklace.js.map
+
+/***/ }),
+/* 179 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlatulenceComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var FlatulenceComponent = /** @class */ (function (_super) {
+    __extends(FlatulenceComponent, _super);
+    function FlatulenceComponent(element) {
+        return _super.call(this, 'flatulence', element.nativeElement) || this;
+    }
+    FlatulenceComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'flatulence',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/flatulence/flatulence.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="flatulence--default" width="125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.41 110.12">\n    <circle class="cls-1" cx="80.53" cy="39.36" r="18.78"/>\n    <circle class="cls-1" cx="103.68" cy="18.78" r="18.78"/>\n    <circle class="cls-1" cx="134.04" cy="23.41" r="18.78"/>\n    <circle class="cls-1" cx="154.62" cy="49.14" r="18.78"/>\n    <circle class="cls-1" cx="146.39" cy="80.53" r="18.78"/>\n    <circle class="cls-1" cx="110.89" cy="91.33" r="18.78"/>\n    <circle class="cls-1" cx="87.73" cy="73.32" r="18.78"/>\n    <ellipse class="cls-1" cx="113.33" cy="57.63" rx="35.12" ry="31.64"/>\n    <polygon class="cls-1" points="77.18 44.25 0 59.69 79.76 73.07 77.18 44.25"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="flatulence--skeleton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236.76 159.2">\n    <g class="cls-1">\n       <circle class="cls-2" cx="183.95" cy="114.86" r="10.58" transform="translate(-22.58 181) rotate(-49.74)"/>\n       <circle class="cls-2" cx="183.53" cy="97.41" r="10.58" transform="translate(-9.41 174.51) rotate(-49.74)"/>\n       <circle class="cls-2" cx="196.58" cy="86.04" r="10.58" transform="translate(3.88 180.44) rotate(-49.74)"/>\n       <circle class="cls-2" cx="215.13" cy="86.56" r="10.58" transform="translate(10.05 194.79) rotate(-49.74)"/>\n       <circle class="cls-2" cx="225.63" cy="101.53" r="10.58" transform="translate(2.34 208.09) rotate(-49.74)"/>\n       <circle class="cls-2" cx="217.35" cy="120.73" r="10.58" transform="translate(-15.25 208.56) rotate(-49.74)"/>\n       <circle class="cls-2" cx="201.17" cy="124.13" r="10.58" transform="translate(-23.56 197.42) rotate(-49.74)"/>\n       <ellipse class="cls-2" cx="203.75" cy="107.4" rx="19.79" ry="17.83" transform="translate(-9.89 193.47) rotate(-49.74)"/>\n       <polygon class="cls-2" points="184.83 118.08 163.36 156.88 198.16 127.46 184.83 118.08"/>\n    </g>\n    <g class="cls-1">\n       <circle class="cls-2" cx="30.83" cy="54.25" r="10.58" transform="translate(-18.19 15.64) rotate(-22.17)"/>\n       <circle class="cls-2" cx="15.17" cy="46.54" r="10.58" transform="translate(-16.44 9.16) rotate(-22.17)"/>\n       <circle class="cls-2" cx="11.13" cy="29.71" r="10.58" transform="translate(-10.39 6.39) rotate(-22.17)"/>\n       <circle class="cls-2" cx="20.18" cy="13.5" r="10.58" transform="translate(-3.6 8.61) rotate(-22.17)"/>\n       <circle class="cls-2" cx="38.31" cy="11.13" r="10.58" transform="translate(-1.37 15.28) rotate(-22.17)"/>\n       <circle class="cls-2" cx="51.49" cy="27.36" r="10.58" transform="translate(-6.52 21.45) rotate(-22.17)"/>\n       <circle class="cls-2" cx="47.02" cy="43.27" r="10.58" transform="translate(-12.85 20.94) rotate(-22.17)"/>\n       <ellipse class="cls-2" cx="33.39" cy="33.25" rx="17.83" ry="19.79" transform="translate(-10.08 15.05) rotate(-22.17)"/>\n       <polygon class="cls-2" points="34.09 54.95 58.55 91.95 48.58 47.49 34.09 54.95"/>\n    </g>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="flatulence--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.45 253.37">\n    <circle class="cls-1" cx="199.23" cy="52.51" r="10.58" transform="translate(-1.8 7.39) rotate(-2.12)"/>\n    <circle class="cls-1" cx="187.16" cy="39.9" r="10.58" transform="translate(-1.35 6.93) rotate(-2.12)"/>\n    <circle class="cls-1" cx="189.14" cy="22.71" r="10.58" transform="translate(-0.71 7) rotate(-2.12)"/>\n    <circle class="cls-1" cx="203.19" cy="10.58" r="10.58" transform="translate(-0.25 7.51) rotate(-2.12)"/>\n    <circle class="cls-1" cx="221.04" cy="14.57" r="10.58" transform="translate(-0.39 8.17) rotate(-2.12)"/>\n    <circle class="cls-1" cx="227.86" cy="34.33" r="10.58" transform="translate(-1.11 8.43) rotate(-2.12)"/>\n    <circle class="cls-1" cx="218.2" cy="47.75" r="10.58" transform="translate(-1.61 8.09) rotate(-2.12)"/>\n    <ellipse class="cls-1" cx="208.83" cy="33.66" rx="17.83" ry="19.79" transform="translate(-1.1 7.73) rotate(-2.12)"/>\n    <polygon class="cls-1" points="202.05 54.29 212.35 97.43 218.22 52.24 202.05 54.29"/>\n    <circle class="cls-1" cx="13.22" cy="227.16" r="6.18" transform="translate(-8.37 0.64) rotate(-2.12)"/>\n    <circle class="cls-1" cx="6.18" cy="219.8" r="6.18" transform="translate(-8.11 0.38) rotate(-2.12)"/>\n    <circle class="cls-1" cx="7.33" cy="209.77" r="6.18" transform="translate(-7.74 0.41) rotate(-2.12)"/>\n    <circle class="cls-1" cx="15.53" cy="202.69" r="6.18" transform="translate(-7.47 0.71) rotate(-2.12)"/>\n    <circle class="cls-1" cx="25.95" cy="205.02" r="6.18" transform="translate(-7.55 1.1) rotate(-2.12)"/>\n    <circle class="cls-1" cx="29.93" cy="216.55" r="6.18" transform="translate(-7.97 1.25) rotate(-2.12)"/>\n    <circle class="cls-1" cx="24.29" cy="224.38" r="6.18" transform="translate(-8.26 1.05) rotate(-2.12)"/>\n    <ellipse class="cls-1" cx="18.82" cy="216.16" rx="10.4" ry="11.55" transform="translate(-7.97 0.84) rotate(-2.12)"/>\n    <polygon class="cls-1" points="14.87 228.2 20.87 253.37 24.3 227 14.87 228.2"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="flatulence--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.88 72.69">\n    <circle class="cls-1" cx="24.68" cy="43.08" r="8.46" transform="translate(-15.14 13.43) rotate(-23.52)"/>\n    <circle class="cls-1" cx="12.01" cy="37.21" r="8.46" transform="translate(-13.85 7.89) rotate(-23.52)"/>\n    <circle class="cls-1" cx="8.46" cy="23.84" r="8.46" transform="translate(-8.81 5.36) rotate(-23.52)"/>\n    <circle class="cls-1" cx="15.39" cy="10.71" r="8.46" transform="translate(-2.99 7.03) rotate(-23.52)"/>\n    <circle class="cls-1" cx="29.84" cy="8.46" r="8.46" transform="translate(-0.9 12.61) rotate(-23.52)"/>\n    <circle class="cls-1" cx="40.69" cy="21.19" r="8.46" transform="translate(-5.08 18) rotate(-23.52)"/>\n    <circle class="cls-1" cx="37.41" cy="33.99" r="8.46" transform="translate(-10.46 17.76) rotate(-23.52)"/>\n    <ellipse class="cls-1" cx="26.32" cy="26.24" rx="14.26" ry="15.82" transform="translate(-8.29 12.69) rotate(-23.52)"/>\n    <polygon class="cls-1" points="27.3 43.58 47.55 72.69 38.74 37.33 27.3 43.58"/>\n    <circle class="cls-1" cx="199.71" cy="38.04" r="8.46" transform="translate(36.95 159.86) rotate(-47.6)"/>\n    <circle class="cls-1" cx="199.9" cy="24.08" r="8.46" transform="translate(47.32 155.45) rotate(-47.6)"/>\n    <circle class="cls-1" cx="210.67" cy="15.39" r="8.46" transform="translate(57.24 160.57) rotate(-47.6)"/>\n    <circle class="cls-1" cx="225.48" cy="16.36" r="8.46" transform="translate(61.35 171.82) rotate(-47.6)"/>\n    <circle class="cls-1" cx="233.42" cy="28.63" r="8.46" transform="translate(54.87 181.68) rotate(-47.6)"/>\n    <circle class="cls-1" cx="226.23" cy="43.73" r="8.46" transform="translate(41.38 181.29) rotate(-47.6)"/>\n    <circle class="cls-1" cx="213.2" cy="45.96" r="8.46" transform="translate(35.49 172.39) rotate(-47.6)"/>\n    <ellipse class="cls-1" cx="215.76" cy="32.67" rx="15.82" ry="14.26" transform="translate(46.13 169.96) rotate(-47.6)"/>\n    <polygon class="cls-1" points="200.32 40.63 182.01 71 210.69 48.53 200.32 40.63"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="flatulence--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.65 129.43">\n    <circle class="cls-1" cx="29.13" cy="63.37" r="12.73" transform="translate(-9.63 5.39) rotate(-9.07)"/>\n    <circle class="cls-1" cx="12.88" cy="50.07" r="12.73" transform="translate(-7.73 2.66) rotate(-9.07)"/>\n    <circle class="cls-1" cx="12.73" cy="29.26" r="12.73" transform="translate(-4.45 2.37) rotate(-9.07)"/>\n    <circle class="cls-1" cx="27.75" cy="12.73" r="12.73" transform="translate(-1.66 4.54) rotate(-9.07)"/>\n    <circle class="cls-1" cx="49.64" cy="14.89" r="12.73" transform="translate(-1.73 8.01) rotate(-9.07)"/>\n    <circle class="cls-1" cx="60.67" cy="37.5" r="12.73" transform="translate(-5.15 10.04) rotate(-9.07)"/>\n    <circle class="cls-1" cx="51.09" cy="54.92" r="12.73" transform="translate(-8.02 8.74) rotate(-9.07)"/>\n    <ellipse class="cls-1" cx="37.85" cy="39.46" rx="21.45" ry="23.8" transform="translate(-5.75 6.46) rotate(-9.07)"/>\n    <polygon class="cls-1" points="32.76 65.09 51.34 115.1 51.77 60.28 32.76 65.09"/>\n    <circle class="cls-1" cx="189.44" cy="84.84" r="10.72" transform="matrix(0.56, -0.83, 0.83, 0.56, 13.19, 194.48)"/>\n    <circle class="cls-1" cx="187.09" cy="67.32" r="10.72" transform="translate(26.68 184.8) rotate(-56.01)"/>\n    <circle class="cls-1" cx="198.97" cy="54.43" r="10.72" transform="translate(42.6 188.97) rotate(-56.01)"/>\n    <circle class="cls-1" cx="217.71" cy="52.9" r="10.72" transform="translate(52.13 203.83) rotate(-56.01)"/>\n    <circle class="cls-1" cx="229.93" cy="66.81" r="10.72" transform="translate(45.99 220.1) rotate(-56.01)"/>\n    <circle class="cls-1" cx="223.72" cy="87.06" r="10.72" transform="matrix(0.56, -0.83, 0.83, 0.56, 26.46, 223.88)"/>\n    <circle class="cls-1" cx="207.81" cy="92.27" r="10.72" transform="translate(15.13 212.99) rotate(-56.01)"/>\n    <ellipse class="cls-1" cx="208.55" cy="75.15" rx="20.04" ry="18.06" transform="translate(29.65 206.05) rotate(-56.01)"/>\n    <polygon class="cls-1" points="190.69 87.98 173.37 129.43 205.14 95.96 190.69 87.98"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="flatulence--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.85 119.31">\n    <circle class="cls-1" cx="32.86" cy="54.9" r="10.72" transform="translate(-21.58 21.28) rotate(-27.4)"/>\n    <circle class="cls-1" cx="16.35" cy="48.58" r="10.72" transform="translate(-20.52 12.97) rotate(-27.4)"/>\n    <circle class="cls-1" cx="10.72" cy="31.98" r="10.72" transform="translate(-13.51 8.52) rotate(-27.4)"/>\n    <circle class="cls-1" cx="18.35" cy="14.79" r="10.72" transform="translate(-4.75 10.1) rotate(-27.4)"/>\n    <circle class="cls-1" cx="36.42" cy="10.72" r="10.72" transform="translate(-0.85 17.96) rotate(-27.4)"/>\n    <circle class="cls-1" cx="51.21" cy="25.87" r="10.72" transform="translate(-6.16 26.47) rotate(-27.4)"/>\n    <circle class="cls-1" cx="48.17" cy="42.33" r="10.72" transform="translate(-14.08 26.92) rotate(-27.4)"/>\n    <ellipse class="cls-1" cx="33.5" cy="33.48" rx="18.06" ry="20.04" transform="translate(-11.65 19.17) rotate(-27.4)"/>\n    <polygon class="cls-1" points="36.21 55.31 64.31 90.36 50.14 46.44 36.21 55.31"/>\n    <circle class="cls-1" cx="198.14" cy="79.7" r="8.96" transform="translate(68.72 249.58) rotate(-74.61)"/>\n    <circle class="cls-1" cx="191.6" cy="66.44" r="8.96" transform="translate(76.7 233.54) rotate(-74.61)"/>\n    <circle class="cls-1" cx="197.57" cy="53.06" r="8.96" transform="translate(93.98 229.47) rotate(-74.61)"/>\n    <circle class="cls-1" cx="212.01" cy="46.85" r="8.96" transform="translate(110.58 238.83) rotate(-74.61)"/>\n    <circle class="cls-1" cx="225.41" cy="54.61" r="8.96" transform="translate(112.94 257.45) rotate(-74.61)"/>\n    <circle class="cls-1" cx="225.89" cy="72.31" r="8.96" transform="translate(96.22 270.91) rotate(-74.61)"/>\n    <circle class="cls-1" cx="214.67" cy="80.68" r="8.96" transform="translate(79.91 266.24) rotate(-74.61)"/>\n    <ellipse class="cls-1" cx="210.69" cy="66.92" rx="16.76" ry="15.1" transform="translate(90.26 252.3) rotate(-74.61)"/>\n    <polygon class="cls-1" points="199.96 81.85 197.29 119.31 213.54 84.32 199.96 81.85"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="flatulence--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.15 40.39">\n    <circle class="cls-1" cx="201.83" cy="13.34" r="6.42" transform="translate(124.01 200.03) rotate(-71.15)"/>\n    <circle class="cls-1" cx="211.6" cy="9.23" r="6.42" transform="translate(134.5 206.5) rotate(-71.15)"/>\n    <circle class="cls-1" cx="220.91" cy="14.09" r="6.42" transform="translate(136.21 218.6) rotate(-71.15)"/>\n    <circle class="cls-1" cx="224.73" cy="24.68" r="6.42" transform="translate(128.77 229.39) rotate(-71.15)"/>\n    <circle class="cls-1" cx="218.6" cy="33.93" r="6.42" transform="translate(115.86 229.84) rotate(-71.15)"/>\n    <circle class="cls-1" cx="205.91" cy="33.51" r="6.42" transform="translate(107.68 217.55) rotate(-71.15)"/>\n    <circle class="cls-1" cx="200.41" cy="25.12" r="6.42" transform="translate(111.89 206.67) rotate(-71.15)"/>\n    <ellipse class="cls-1" cx="210.43" cy="22.87" rx="10.82" ry="12.01" transform="translate(120.8 214.63) rotate(-71.15)"/>\n    <polygon class="cls-1" points="200.21 14.55 173.53 11.02 197.86 24.16 200.21 14.55"/>\n    <circle class="cls-1" cx="34.79" cy="21.73" r="6.94" transform="translate(-5.02 11.84) rotate(-18.04)"/>\n    <circle class="cls-1" cx="29.01" cy="31.6" r="6.94" transform="translate(-8.36 10.53) rotate(-18.04)"/>\n    <circle class="cls-1" cx="17.81" cy="33.45" r="6.94" transform="translate(-9.48 7.16) rotate(-18.04)"/>\n    <circle class="cls-1" cx="7.64" cy="26.77" r="6.94" transform="translate(-7.91 3.68) rotate(-18.04)"/>\n    <circle class="cls-1" cx="6.94" cy="14.8" r="6.94" transform="translate(-4.24 2.88) rotate(-18.04)"/>\n    <circle class="cls-1" cx="18.18" cy="6.94" r="6.94" transform="translate(-1.26 5.97) rotate(-18.04)"/>\n    <circle class="cls-1" cx="28.37" cy="10.62" r="6.94" transform="translate(-1.89 9.31) rotate(-18.04)"/>\n    <ellipse class="cls-1" cx="21.17" cy="19.06" rx="12.97" ry="11.69" transform="translate(-4.86 7.49) rotate(-18.04)"/>\n    <polygon class="cls-1" points="35.4 19.63 60.75 5.37 31.2 9.8 35.4 19.63"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="flatulence--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.63 135.7">\n    <circle class="cls-1" cx="29.13" cy="83.97" r="12.73" transform="translate(-12.88 5.64) rotate(-9.07)"/>\n    <circle class="cls-1" cx="12.88" cy="70.67" r="12.73" transform="translate(-10.98 2.91) rotate(-9.07)"/>\n    <circle class="cls-1" cx="12.73" cy="49.86" r="12.73" transform="matrix(0.99, -0.16, 0.16, 0.99, -7.7, 2.63)"/>\n    <circle class="cls-1" cx="27.75" cy="33.33" r="12.73" transform="translate(-4.91 4.79) rotate(-9.07)"/>\n    <circle class="cls-1" cx="49.64" cy="35.49" r="12.73" transform="translate(-4.97 8.27) rotate(-9.07)"/>\n    <circle class="cls-1" cx="60.67" cy="58.1" r="12.73" transform="translate(-8.4 10.29) rotate(-9.07)"/>\n    <circle class="cls-1" cx="51.09" cy="75.52" r="12.73" transform="translate(-11.27 9) rotate(-9.07)"/>\n    <ellipse class="cls-1" cx="37.85" cy="60.06" rx="21.45" ry="23.8" transform="translate(-9 6.72) rotate(-9.07)"/>\n    <polygon class="cls-1" points="32.76 85.69 51.34 135.7 51.77 80.89 32.76 85.69"/>\n    <circle class="cls-1" cx="183.42" cy="42.66" r="10.72" transform="translate(45.51 170.89) rotate(-56.01)"/>\n    <circle class="cls-1" cx="181.07" cy="25.14" r="10.72" transform="translate(59 161.21) rotate(-56.01)"/>\n    <circle class="cls-1" cx="192.95" cy="12.25" r="10.72" transform="matrix(0.56, -0.83, 0.83, 0.56, 74.92, 165.38)"/>\n    <circle class="cls-1" cx="211.69" cy="10.72" r="10.72" transform="translate(84.45 180.24) rotate(-56.01)"/>\n    <circle class="cls-1" cx="223.91" cy="24.63" r="10.72" transform="matrix(0.56, -0.83, 0.83, 0.56, 78.31, 196.51)"/>\n    <circle class="cls-1" cx="217.7" cy="44.88" r="10.72" transform="matrix(0.56, -0.83, 0.83, 0.56, 58.78, 200.29)"/>\n    <circle class="cls-1" cx="201.79" cy="50.09" r="10.72" transform="translate(47.45 189.39) rotate(-56.01)"/>\n    <ellipse class="cls-1" cx="202.53" cy="32.97" rx="20.04" ry="18.06" transform="translate(61.97 182.46) rotate(-56.01)"/>\n    <polygon class="cls-1" points="184.67 45.8 167.35 87.25 199.12 53.78 184.67 45.8"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="flatulence--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.89 212.82">\n    <circle class="cls-1" cx="24.68" cy="183.21" r="8.46" transform="translate(-71.07 25.07) rotate(-23.52)"/>\n    <circle class="cls-1" cx="12.01" cy="177.34" r="8.46" transform="translate(-69.78 19.53) rotate(-23.52)"/>\n    <circle class="cls-1" cx="8.46" cy="163.97" r="8.46" transform="translate(-64.74 17) rotate(-23.52)"/>\n    <circle class="cls-1" cx="15.39" cy="150.84" r="8.46" transform="translate(-58.92 18.68) rotate(-23.52)"/>\n    <circle class="cls-1" cx="29.84" cy="148.6" r="8.46" transform="translate(-56.83 24.26) rotate(-23.52)"/>\n    <circle class="cls-1" cx="40.69" cy="161.32" r="8.46" transform="translate(-61 29.64) rotate(-23.52)"/>\n    <circle class="cls-1" cx="37.41" cy="174.12" r="8.46" transform="translate(-66.39 29.4) rotate(-23.52)"/>\n    <ellipse class="cls-1" cx="26.32" cy="166.37" rx="14.26" ry="15.82" transform="translate(-64.21 24.33) rotate(-23.52)"/>\n    <polygon class="cls-1" points="27.3 183.71 47.55 212.82 38.74 177.47 27.3 183.71"/>\n    <circle class="cls-1" cx="202.73" cy="176.54" r="8.46" transform="translate(-64.34 207.18) rotate(-47.6)"/>\n    <circle class="cls-1" cx="202.91" cy="162.58" r="8.46" transform="translate(-53.97 202.77) rotate(-47.6)"/>\n    <circle class="cls-1" cx="213.68" cy="153.89" r="8.46" transform="translate(-44.05 207.89) rotate(-47.6)"/>\n    <circle class="cls-1" cx="228.49" cy="154.86" r="8.46" transform="translate(-39.94 219.15) rotate(-47.6)"/>\n    <circle class="cls-1" cx="236.43" cy="167.13" r="8.46" transform="translate(-46.42 229.01) rotate(-47.6)"/>\n    <circle class="cls-1" cx="229.24" cy="182.23" r="8.46" transform="translate(-59.91 228.61) rotate(-47.6)"/>\n    <circle class="cls-1" cx="216.21" cy="184.46" r="8.46" transform="translate(-65.8 219.72) rotate(-47.6)"/>\n    <ellipse class="cls-1" cx="218.77" cy="171.18" rx="15.82" ry="14.26" transform="translate(-55.16 217.28) rotate(-47.6)"/>\n    <polygon class="cls-1" points="203.34 179.14 185.02 209.51 213.7 187.04 203.34 179.14"/>\n    <circle class="cls-1" cx="191.62" cy="46.91" r="10.05" transform="translate(95.54 219.21) rotate(-74.61)"/>\n    <circle class="cls-1" cx="184.28" cy="32.04" r="10.05" transform="translate(104.49 201.21) rotate(-74.61)"/>\n    <circle class="cls-1" cx="190.99" cy="17.03" r="10.05" transform="translate(123.89 196.65) rotate(-74.61)"/>\n    <circle class="cls-1" cx="207.19" cy="10.06" r="10.05" transform="translate(142.51 207.15) rotate(-74.61)"/>\n    <circle class="cls-1" cx="222.22" cy="18.77" r="10.05" transform="translate(145.16 228.04) rotate(-74.61)"/>\n    <circle class="cls-1" cx="222.76" cy="38.63" r="10.05" transform="translate(126.4 243.15) rotate(-74.61)"/>\n    <circle class="cls-1" cx="210.17" cy="48.02" r="10.05" transform="matrix(0.27, -0.96, 0.96, 0.27, 108.1, 237.91)"/>\n    <ellipse class="cls-1" cx="205.71" cy="32.58" rx="18.8" ry="16.94" transform="translate(119.71 222.26) rotate(-74.61)"/>\n    <polygon class="cls-1" points="193.67 49.34 190.67 91.37 208.91 52.1 193.67 49.34"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="flatulence--yeti" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.75 127.06">\n    <circle class="cls-1" cx="25.97" cy="32.92" r="6.34" transform="translate(-11.4 13.91) rotate(-24.77)"/>\n    <circle class="cls-1" cx="16.38" cy="28.73" r="6.34" transform="translate(-10.53 9.51) rotate(-24.77)"/>\n    <circle class="cls-1" cx="13.51" cy="18.76" r="6.34" transform="translate(-6.62 7.39) rotate(-24.77)"/>\n    <circle class="cls-1" cx="18.48" cy="8.81" r="6.34" transform="translate(-1.99 8.56) rotate(-24.77)"/>\n    <circle class="cls-1" cx="29.28" cy="6.89" r="6.34" transform="translate(-0.19 12.9) rotate(-24.77)"/>\n    <circle class="cls-1" cx="37.62" cy="16.25" r="6.34" transform="translate(-3.35 17.26) rotate(-24.77)"/>\n    <circle class="cls-1" cx="35.37" cy="25.9" r="6.34" transform="translate(-7.6 17.2) rotate(-24.77)"/>\n    <ellipse class="cls-1" cx="26.93" cy="20.27" rx="10.69" ry="11.86" transform="translate(-6.02 13.15) rotate(-24.77)"/>\n    <polygon class="cls-1" points="27.95 33.25 43.61 54.74 36.42 28.38 27.95 33.25"/>\n    <circle class="cls-1" cx="222.71" cy="32.9" r="6.34" transform="translate(50.44 177.82) rotate(-48.48)"/>\n    <circle class="cls-1" cx="222.69" cy="22.43" r="6.34" transform="translate(58.27 174.28) rotate(-48.48)"/>\n    <circle class="cls-1" cx="230.66" cy="15.79" r="6.34" transform="translate(65.92 178.01) rotate(-48.48)"/>\n    <circle class="cls-1" cx="241.77" cy="16.35" r="6.34" transform="translate(69.25 186.52) rotate(-48.48)"/>\n    <circle class="cls-1" cx="247.87" cy="25.46" r="6.34" transform="translate(64.49 194.15) rotate(-48.48)"/>\n    <circle class="cls-1" cx="242.65" cy="36.86" r="6.34" transform="translate(54.19 194.09) rotate(-48.48)"/>\n    <circle class="cls-1" cx="232.91" cy="38.68" r="6.34" transform="translate(49.55 187.41) rotate(-48.48)"/>\n    <ellipse class="cls-1" cx="234.67" cy="28.69" rx="11.86" ry="10.69" transform="translate(57.62 185.36) rotate(-48.48)"/>\n    <polygon class="cls-1" points="223.19 34.84 209.81 57.82 231.06 40.64 223.19 34.84"/>\n    <circle class="cls-2" cx="12.12" cy="85.48" r="3.4" transform="translate(-52.17 27.85) rotate(-40.05)"/>\n    <circle class="cls-2" cx="6.58" cy="84.67" r="3.4" transform="translate(-52.94 24.09) rotate(-40.05)"/>\n    <circle class="cls-2" cx="3.69" cy="79.93" r="3.4" transform="matrix(0.77, -0.64, 0.64, 0.77, -50.57, 21.12)"/>\n    <circle class="cls-2" cx="4.85" cy="74.09" r="3.4" transform="translate(-46.54 20.5) rotate(-40.05)"/>\n    <circle class="cls-2" cx="10.16" cy="71.58" r="3.4" transform="translate(-43.68 23.32) rotate(-40.05)"/>\n    <circle class="cls-2" cx="15.79" cy="75.23" r="3.4" transform="translate(-44.71 27.8) rotate(-40.05)"/>\n    <circle class="cls-2" cx="15.99" cy="80.53" r="3.4" transform="matrix(0.77, -0.64, 0.64, 0.77, -48.07, 29.18)"/>\n    <ellipse class="cls-2" cx="10.83" cy="78.82" rx="5.72" ry="6.35" transform="translate(-48.18 25.46) rotate(-40.05)"/>\n    <polygon class="cls-2" points="13.19 85.38 24.31 94.27 16.88 81.67 13.19 85.38"/>\n    <circle class="cls-3" cx="13.51" cy="121.53" r="2.64" transform="translate(-108.66 126.99) rotate(-86.22)"/>\n    <circle class="cls-3" cx="10.07" cy="124.2" r="2.64" transform="translate(-114.52 126.06) rotate(-86.22)"/>\n    <circle class="cls-3" cx="5.86" cy="123.27" r="2.64" transform="translate(-117.53 120.99) rotate(-86.22)"/>\n    <circle class="cls-3" cx="3.22" cy="119.48" r="2.64" transform="translate(-116.21 114.81) rotate(-86.22)"/>\n    <circle class="cls-3" cx="4.66" cy="115.16" r="2.64" transform="translate(-110.55 112.22) rotate(-86.22)"/>\n    <circle class="cls-3" cx="9.74" cy="113.98" r="2.64" transform="translate(-104.63 116.17) rotate(-86.22)"/>\n    <circle class="cls-3" cx="12.81" cy="116.71" r="2.64" transform="translate(-104.49 121.8) rotate(-86.22)"/>\n    <ellipse class="cls-3" cx="9.08" cy="118.67" rx="4.44" ry="4.93" transform="translate(-109.93 119.91) rotate(-86.22)"/>\n    <polygon class="cls-3" points="14.02 120.88 24.97 119.43 13.93 116.82 14.02 120.88"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="flatulence--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.76 109.17">\n    <circle class="cls-1" cx="194.05" cy="41.81" r="8.96" transform="translate(102.24 217.8) rotate(-74.61)"/>\n    <circle class="cls-1" cx="187.51" cy="28.55" r="8.96" transform="translate(110.22 201.76) rotate(-74.61)"/>\n    <circle class="cls-1" cx="193.48" cy="15.17" r="8.96" transform="translate(127.51 197.69) rotate(-74.61)"/>\n    <circle class="cls-1" cx="207.93" cy="8.96" r="8.96" transform="translate(144.1 207.05) rotate(-74.61)"/>\n    <circle class="cls-1" cx="221.32" cy="16.72" r="8.96" transform="translate(146.46 225.67) rotate(-74.61)"/>\n    <circle class="cls-1" cx="221.8" cy="34.43" r="8.96" transform="translate(129.75 239.13) rotate(-74.61)"/>\n    <circle class="cls-1" cx="210.58" cy="42.8" r="8.96" transform="translate(113.43 234.47) rotate(-74.61)"/>\n    <ellipse class="cls-1" cx="206.6" cy="29.03" rx="16.76" ry="15.1" transform="translate(123.78 220.52) rotate(-74.61)"/>\n    <polygon class="cls-1" points="195.87 43.97 193.2 81.43 209.45 46.43 195.87 43.97"/>\n    <circle class="cls-1" cx="12.48" cy="84.31" r="5.85" transform="translate(-2.7 0.44) rotate(-1.84)"/>\n    <circle class="cls-1" cx="5.85" cy="77.31" r="5.85" transform="translate(-2.48 0.23) rotate(-1.84)"/>\n    <circle class="cls-1" cx="6.99" cy="67.82" r="5.85" transform="translate(-2.17 0.26) rotate(-1.84)"/>\n    <circle class="cls-1" cx="14.79" cy="61.15" r="5.85" transform="matrix(1, -0.03, 0.03, 1, -1.95, 0.51)"/>\n    <circle class="cls-1" cx="24.64" cy="63.4" r="5.85" transform="translate(-2.02 0.82) rotate(-1.84)"/>\n    <circle class="cls-1" cx="28.35" cy="74.34" r="5.85" transform="translate(-2.37 0.95) rotate(-1.84)"/>\n    <circle class="cls-1" cx="22.98" cy="81.73" r="5.85" transform="translate(-2.61 0.78) rotate(-1.84)"/>\n    <ellipse class="cls-1" cx="17.84" cy="73.92" rx="9.85" ry="10.93" transform="translate(-2.36 0.61) rotate(-1.84)"/>\n    <polygon class="cls-1" points="14.04 85.3 19.61 109.17 22.98 84.22 14.04 85.3"/>\n    <circle class="cls-1" cx="34.41" cy="30.47" r="5.85" transform="translate(-8.5 13.99) rotate(-20.52)"/>\n    <circle class="cls-1" cx="25.88" cy="25.96" r="5.85" transform="translate(-7.46 10.72) rotate(-20.52)"/>\n    <circle class="cls-1" cx="23.92" cy="16.61" r="5.85" transform="translate(-4.3 9.44) rotate(-20.52)"/>\n    <circle class="cls-1" cx="29.17" cy="7.8" r="5.85" transform="translate(-0.88 10.72) rotate(-20.52)"/>\n    <circle class="cls-1" cx="39.23" cy="6.77" r="5.85" transform="matrix(0.94, -0.35, 0.35, 0.94, 0.12, 14.18)"/>\n    <circle class="cls-1" cx="46.25" cy="15.95" r="5.85" transform="translate(-2.65 17.22) rotate(-20.52)"/>\n    <circle class="cls-1" cx="43.53" cy="24.66" r="5.85" transform="translate(-5.88 16.82) rotate(-20.52)"/>\n    <ellipse class="cls-1" cx="36.16" cy="18.91" rx="9.85" ry="10.93" transform="translate(-4.33 13.87) rotate(-20.52)"/>\n    <polygon class="cls-1" points="36.2 30.91 49.13 51.73 44.32 27.02 36.2 30.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="flatulence--wolf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.41 225.73">\n    <g class="cls-1">\n      <circle class="cls-2" cx="43.12" cy="135.72" r="10.14" transform="translate(-48.39 26.61) rotate(-22.36)"/>\n      <circle class="cls-2" cx="50.45" cy="120.7" r="10.14" transform="translate(-42.13 28.27) rotate(-22.36)"/>\n      <circle class="cls-2" cx="66.55" cy="116.77" r="10.14" transform="translate(-39.42 34.1) rotate(-22.36)"/>\n      <circle class="cls-2" cx="82.11" cy="125.39" r="10.14" transform="translate(-41.53 40.67) rotate(-22.36)"/>\n      <circle class="cls-2" cx="84.44" cy="142.74" r="10.14" transform="translate(-47.96 42.86) rotate(-22.36)"/>\n      <circle class="cls-2" cx="68.94" cy="155.43" r="10.14" transform="translate(-53.95 37.92) rotate(-22.36)"/>\n      <circle class="cls-2" cx="53.69" cy="151.19" r="10.14" transform="translate(-53.49 31.8) rotate(-22.36)"/>\n      <ellipse class="cls-2" cx="63.24" cy="138.1" rx="18.95" ry="17.08" transform="translate(-47.79 34.45) rotate(-22.36)"/>\n      <polygon class="cls-2" points="42.45 138.85 7.11 162.4 49.66 152.7 42.45 138.85"/>\n    </g>\n    <path class="cls-3" d="M129.82,23.59a7.39,7.39,0,0,0-4-4,7.4,7.4,0,0,0-8.51-12.1A7.41,7.41,0,0,0,103,4.71a7.4,7.4,0,0,0-11.32,9.23,7.41,7.41,0,1,0,2.61,14.57,7.4,7.4,0,0,0,10.54,10.07A7.41,7.41,0,1,0,118,31.89a7.41,7.41,0,0,0,11.83-8.3Z"/>\n    <path class="cls-3" d="M44.49,95.59a7.39,7.39,0,0,0-4-4A7.4,7.4,0,0,0,32,79.46a7.41,7.41,0,0,0-14.31-2.75A7.4,7.4,0,0,0,6.34,85.94a7.41,7.41,0,1,0,2.61,14.57,7.4,7.4,0,0,0,10.54,10.07,7.41,7.41,0,1,0,13.17-6.69,7.41,7.41,0,0,0,11.83-8.3Z"/>\n    <path class="cls-3" d="M96.92,115.34a11.38,11.38,0,0,0-6.19-6.2A11.41,11.41,0,0,0,77.62,90.49a11.41,11.41,0,0,0-22-4.23,11.4,11.4,0,0,0-17.44,14.22,11.41,11.41,0,1,0,4,22.45,11.41,11.41,0,0,0,16.23,15.51,11.42,11.42,0,1,0,20.3-10.32,11.41,11.41,0,0,0,18.23-12.79Z"/>\n    <path class="cls-3" d="M244.29,85.37a14.78,14.78,0,0,0-8-8.05,14.81,14.81,0,0,0-17-24.21,14.82,14.82,0,0,0-28.62-5.49A14.8,14.8,0,0,0,168,66.09a14.82,14.82,0,1,0,5.22,29.15,14.81,14.81,0,0,0,21.08,20.14A14.82,14.82,0,1,0,220.62,102a14.82,14.82,0,0,0,23.67-16.61Z"/>\n    <path class="cls-3" d="M184.92,64.78a14.78,14.78,0,0,0-8-8.05,14.81,14.81,0,0,0-17-24.21A14.82,14.82,0,0,0,131.24,27,14.8,14.8,0,0,0,108.6,45.5a14.82,14.82,0,1,0,5.22,29.15A14.81,14.81,0,0,0,134.9,94.78a14.82,14.82,0,1,0,26.35-13.39,14.82,14.82,0,0,0,23.67-16.61Z"/>\n    <path class="cls-3" d="M189,180a14.78,14.78,0,0,0-8-8.05,14.81,14.81,0,0,0-17-24.21,14.82,14.82,0,0,0-28.62-5.49,14.8,14.8,0,0,0-22.64,18.47,14.82,14.82,0,1,0,5.22,29.15A14.81,14.81,0,0,0,138.93,210a14.82,14.82,0,1,0,26.35-13.39A14.82,14.82,0,0,0,189,180Z"/>\n    <path class="cls-3" d="M209.64,200.44a9.58,9.58,0,0,0-5.21-5.22,9.6,9.6,0,0,0-11-15.69A9.6,9.6,0,0,0,174.85,176a9.59,9.59,0,0,0-14.67,12,9.6,9.6,0,1,0,3.38,18.89,9.6,9.6,0,0,0,13.66,13.05,9.61,9.61,0,1,0,17.08-8.68,9.6,9.6,0,0,0,15.34-10.77Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="flatulence--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.37 81.43">\n    <circle class="cls-1" cx="57.65" cy="41.81" r="8.96" transform="translate(2.04 86.3) rotate(-74.61)"/>\n    <circle class="cls-1" cx="51.11" cy="28.55" r="8.96" transform="translate(10.02 70.26) rotate(-74.61)"/>\n    <circle class="cls-1" cx="57.09" cy="15.17" r="8.96" transform="translate(27.31 66.19) rotate(-74.61)"/>\n    <circle class="cls-1" cx="71.53" cy="8.96" r="8.96" transform="translate(43.91 75.55) rotate(-74.61)"/>\n    <circle class="cls-1" cx="84.93" cy="16.72" r="8.96" transform="translate(46.26 94.17) rotate(-74.61)"/>\n    <circle class="cls-1" cx="85.4" cy="34.43" r="8.96" transform="translate(29.55 107.63) rotate(-74.61)"/>\n    <circle class="cls-1" cx="74.19" cy="42.8" r="8.96" transform="translate(13.24 102.97) rotate(-74.61)"/>\n    <ellipse class="cls-1" cx="70.21" cy="29.03" rx="16.76" ry="15.1" transform="translate(23.58 89.02) rotate(-74.61)"/>\n    <polygon class="cls-1" points="59.48 43.97 56.8 81.43 73.06 46.43 59.48 43.97"/>\n    <circle class="cls-1" cx="19.34" cy="60.52" r="6.16" transform="translate(-27.2 17.27) rotate(-29.37)"/>\n    <circle class="cls-1" cx="9.73" cy="57.21" r="6.16" transform="translate(-26.81 12.13) rotate(-29.37)"/>\n    <circle class="cls-1" cx="6.17" cy="47.78" r="6.16" transform="translate(-22.64 9.17) rotate(-29.37)"/>\n    <circle class="cls-1" cx="10.21" cy="37.75" r="6.16" transform="translate(-17.2 9.86) rotate(-29.37)"/>\n    <circle class="cls-1" cx="20.52" cy="35.05" r="6.16" transform="translate(-14.56 14.57) rotate(-29.37)"/>\n    <circle class="cls-1" cx="29.32" cy="43.47" r="6.16" transform="translate(-17.55 19.97) rotate(-29.37)"/>\n    <circle class="cls-1" cx="27.9" cy="52.99" r="6.16" transform="translate(-22.41 20.5) rotate(-29.37)"/>\n    <ellipse class="cls-1" cx="19.29" cy="48.2" rx="10.39" ry="11.53" transform="translate(-21.16 15.66) rotate(-29.37)"/>\n    <polygon class="cls-1" points="21.28 60.69 38.12 80.28 29.11 55.31 21.28 60.69"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/flatulence/flatulence.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], FlatulenceComponent);
+    return FlatulenceComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=flatulence.js.map
+
+/***/ }),
+/* 180 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(183);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -792,77 +1796,174 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
-var SelectPage = /** @class */ (function () {
-    function SelectPage(navCtrl, repo, r, platform) {
-        this.navCtrl = navCtrl;
-        this.repo = repo;
-        this.r = r;
-        this.platform = platform;
-        this.monsters = this.repo.getMonsters().map(function (m) { return ({ name: m.name, id: m.id }); });
+var MonstersComponent = /** @class */ (function () {
+    function MonstersComponent(componentFactoryResolver, monstersService, viewContainerRef, renderer) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.monstersService = monstersService;
+        this.viewContainerRef = viewContainerRef;
+        this.renderer = renderer;
+        this.onScreen = [];
     }
-    SelectPage.prototype.ngAfterViewInit = function () {
-        var _this = this;
-        this.monsters = this.repo.getMonsters().map(function (m) {
-            var _a = _this.isIphone() ? _this.bgMobile.find(m.name) : _this.bg.find(m.name), top = _a.top, left = _a.left;
-            return { name: m.name, top: Math.floor(top), left: Math.floor(left), id: m.id };
-        });
-        this.monsters.forEach(function (m) {
-            var el = document.getElementById(m.name);
-            // el.setAttribute('width', '100px');
-            // console.log(el);
-        });
+    MonstersComponent.prototype.ngOnInit = function () {
+        this.monsters = this.monstersService.getMonsters();
+        this.loadMonster(this.monsterId);
     };
-    SelectPage.prototype.isIphone = function () {
-        return this.platform.is('iphone');
+    MonstersComponent.prototype.ngAfterViewInit = function () {
     };
-    SelectPage.prototype.beginGame = function (monster) {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__game_game__["a" /* GamePage */], { monster: monster });
+    MonstersComponent.prototype.loadMonster = function (id) {
+        var monster = this.monsters.find(function (e) { return e.id == id; });
+        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(monster.component);
+        var viewContainerRef = this.monsterHost.viewContainerRef;
+        viewContainerRef.clear();
+        var instance = viewContainerRef.createComponent(componentFactory).instance;
+        this.monster = instance;
+    };
+    MonstersComponent.prototype.render = function (component, cb) {
+        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(component);
+        var viewContainerRef = this.screen.viewContainerRef;
+        var _a = viewContainerRef.createComponent(componentFactory), hostView = _a.hostView, instance = _a.instance;
+        this.addOnScreen(instance.node, hostView);
+        return cb(instance);
+    };
+    MonstersComponent.prototype.addOnScreen = function (instance, host) {
+        this.onScreen = this.onScreen.concat([{ instance: instance, host: host }]);
+        return this;
+    };
+    MonstersComponent.prototype.remove = function (instance) {
+        var host = this.onScreen.find(function (_a) {
+            var i = _a.instance;
+            return i === instance;
+        }).host;
+        var index = this.screen.viewContainerRef.indexOf(host);
+        this.screen.viewContainerRef.remove(index);
+        this.onScreen = this.onScreen.filter(function (_a) {
+            var i = _a.instance;
+            return i !== instance;
+        });
+        return this;
+    };
+    MonstersComponent.prototype.clearAll = function () {
+        this.screen.viewContainerRef.clear();
+        return this;
+    };
+    MonstersComponent.prototype.getCurrentMonster = function () {
+        return this.monster;
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__["a" /* BackgroundTabletComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__["a" /* BackgroundTabletComponent */])
-    ], SelectPage.prototype, "bg", void 0);
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
+        __metadata("design:type", Object)
+    ], MonstersComponent.prototype, "monsterId", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__["a" /* BackgroundMobileComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__["a" /* BackgroundMobileComponent */])
-    ], SelectPage.prototype, "bgMobile", void 0);
-    SelectPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */])
+    ], MonstersComponent.prototype, "monsterHost", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */])
+    ], MonstersComponent.prototype, "screen", void 0);
+    MonstersComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'select-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/select/select.html"*/'<ion-content class="container" fixed no-bounce>\n  <div class="bg">\n    <div class="list" [class.mobile]="isIphone()">\n        <img *ngFor="let monster of monsters" (click)="beginGame(monster.id)" src="assets/imgs/monsters/{{monster.name}}.svg" alt="placholder" class="monsters monsters__{{monster.name}}" [style.left.px]="monster.left" [style.top.px]="monster.top">\n    </div>\n\n    <background-mobile *ngIf="isIphone(); else tablet"></background-mobile>\n    <ng-template #tablet>\n      <background-tablet></background-tablet>\n    </ng-template>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/select/select.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__["a" /* MonstersService */]],
+            selector: 'monster',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/'<ng-template monster-host></ng-template>\n<ng-template monster-screen></ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/,
+            // styleUrls: ['monsters.component.scss'],
+            providers: [__WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */]],
+            host: {
+                '[class]': 'monster.name + "__screen"',
+                '[class.monster]': 'true',
+            }
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__["a" /* MonstersService */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
-    ], SelectPage);
-    return SelectPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]])
+    ], MonstersComponent);
+    return MonstersComponent;
 }());
 
-//# sourceMappingURL=select.js.map
+//# sourceMappingURL=monsters.component.js.map
 
 /***/ }),
-/* 156 */
+/* 181 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersHostDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MonstersHostDirective = /** @class */ (function () {
+    function MonstersHostDirective(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+    MonstersHostDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[monster-host]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], MonstersHostDirective);
+    return MonstersHostDirective;
+}());
+
+//# sourceMappingURL=monsters-host.directive.js.map
+
+/***/ }),
+/* 182 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersScreenDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MonstersScreenDirective = /** @class */ (function () {
+    function MonstersScreenDirective(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+    MonstersScreenDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[monster-screen]',
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
+    ], MonstersScreenDirective);
+    return MonstersScreenDirective;
+}());
+
+//# sourceMappingURL=monsters-screen.directive.js.map
+
+/***/ }),
+/* 183 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -968,16 +2069,16 @@ var MonstersService = /** @class */ (function () {
 //# sourceMappingURL=monsters.service.js.map
 
 /***/ }),
-/* 157 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZombieComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_sequence_controller__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_sequence_controller__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -1203,13 +2304,13 @@ var ZombieComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=zombie.js.map
 
 /***/ }),
-/* 158 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterPartDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(301);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1270,10 +2371,7 @@ var MonsterPartDirective = /** @class */ (function () {
 //# sourceMappingURL=monster-part.directive.js.map
 
 /***/ }),
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1322,7 +2420,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=skeleton.js.map
 
 /***/ }),
-/* 163 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1371,7 +2469,7 @@ var AlienComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=alien.js.map
 
 /***/ }),
-/* 164 */
+/* 188 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1420,7 +2518,7 @@ var BedComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=bed.js.map
 
 /***/ }),
-/* 165 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1469,7 +2567,7 @@ var SpiderComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=spider.js.map
 
 /***/ }),
-/* 166 */
+/* 190 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1518,7 +2616,7 @@ var VampireComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=vampire.js.map
 
 /***/ }),
-/* 167 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1567,7 +2665,7 @@ var WolfComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=wolf.js.map
 
 /***/ }),
-/* 168 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1616,7 +2714,7 @@ var MummyComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=mummy.js.map
 
 /***/ }),
-/* 169 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1665,7 +2763,7 @@ var YagaComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yaga.js.map
 
 /***/ }),
-/* 170 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1714,7 +2812,7 @@ var DoctorComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=doctor.js.map
 
 /***/ }),
-/* 171 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1763,7 +2861,7 @@ var YetiComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yeti.js.map
 
 /***/ }),
-/* 172 */
+/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1812,1093 +2910,12 @@ var GhostComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=ghost.js.map
 
 /***/ }),
-/* 173 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(303);
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
-};
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var TrinketsComponent = /** @class */ (function () {
-    function TrinketsComponent(componentFactoryResolver, trinketsService) {
-        this.componentFactoryResolver = componentFactoryResolver;
-        this.trinketsService = trinketsService;
-    }
-    ;
-    TrinketsComponent.prototype.ngOnInit = function () {
-        this.trinkets = this.trinketsService.getTrinkets();
-    };
-    TrinketsComponent.prototype.ngAfterViewInit = function () {
-        this.loadTrinkets();
-    };
-    TrinketsComponent.prototype.loadTrinkets = function () {
-        var _this = this;
-        this.instances = this.hosts.map(function (_a) {
-            var id = _a.id, viewContainerRef = _a.viewContainerRef;
-            var trinket = _this.trinkets.find(function (e) { return e.id == id; });
-            var componentFactory = _this.componentFactoryResolver.resolveComponentFactory(trinket.component);
-            viewContainerRef.clear();
-            var instance = viewContainerRef.createComponent(componentFactory).instance;
-            return __assign({}, instance, { component: trinket.component, meta: trinket.meta });
-        });
-        return;
-    };
-    TrinketsComponent.prototype.getInstances = function () {
-        return this.instances;
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__["a" /* TrinketHostDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
-    ], TrinketsComponent.prototype, "hosts", void 0);
-    TrinketsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'trinkets',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/'<ul class="panel">\n  <li *ngFor="let trinket of trinkets" class="panel__item">\n    <ng-template trinket-host trinket-id="{{ trinket.id }}"></ng-template>\n  </li>\n  <li class="panel__item panel__item--fraud"></li>\n</ul>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/trinkets.component.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]],
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
-            __WEBPACK_IMPORTED_MODULE_2__trinkets_service__["a" /* TrinketsService */]])
-    ], TrinketsComponent);
-    return TrinketsComponent;
-}());
-
-//# sourceMappingURL=trinkets.component.js.map
-
-/***/ }),
-/* 174 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketHostDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TrinketHostDirective = /** @class */ (function () {
-    function TrinketHostDirective(viewContainerRef) {
-        this.viewContainerRef = viewContainerRef;
-    }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('trinket-id'),
-        __metadata("design:type", String)
-    ], TrinketHostDirective.prototype, "id", void 0);
-    TrinketHostDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
-            selector: '[trinket-host]',
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
-    ], TrinketHostDirective);
-    return TrinketHostDirective;
-}());
-
-//# sourceMappingURL=trinket-host.directive.js.map
-
-/***/ }),
-/* 175 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlassComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(25);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var GlassComponent = /** @class */ (function (_super) {
-    __extends(GlassComponent, _super);
-    function GlassComponent(element) {
-        return _super.call(this, 'glass', element.nativeElement) || this;
-    }
-    GlassComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'glass',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/'<svg width="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 301.28 112.68" class="glass">\n  <path class="cls-1" d="M96.84,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.17,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z"/>\n  <path class="cls-1" d="M204.44,106.39l-39.23,-50.49a20.3,20.3,0,1,1,35.16,-20.3l4.07,7l4.07,-7a20.3,20.3,0,1,1,35.16,20.3z"/>\n  <path class="cls-2" d="M137.65,49.83a18.36,18.36,0,0,1,26,0"/>\n  <path class="cls-3" d="M6.16,22.4a11.53,11.53,0,0,1,-0.66,-16.24h0a11.53,11.53,0,0,1,16.24,-0.66l34.09,31.41"/>\n  <path class="cls-3" d="M295.12,22.4a11.53,11.53,0,0,0,0.66,-16.24h0a11.53,11.53,0,0,0,-16.24,-0.66l-34.09,31.41"/>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/glass/glass.svg"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], GlassComponent);
-    return GlassComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
-
-//# sourceMappingURL=glass.js.map
-
-/***/ }),
-/* 176 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementRepository; });
-// import { Injectable } from "@angular/core";
-// @Injectable()
-var ElementRepository = /** @class */ (function () {
-    function ElementRepository() {
-        this.elements = [];
-    }
-    ;
-    ElementRepository.prototype.add = function (element) {
-        var arr = this.elements.slice();
-        this.elements = arr.concat([element]);
-        return this;
-    };
-    ElementRepository.prototype.removeById = function (id) {
-        var arr = this.elements.slice().filter(function (e) { return e.getId() == id; });
-        this.elements = arr;
-        return this;
-    };
-    return ElementRepository;
-}());
-
-/* harmony default export */ __webpack_exports__["b"] = (new ElementRepository());
-//# sourceMappingURL=element.repository.js.map
-
-/***/ }),
-/* 177 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EyesComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(25);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var EyesComponent = /** @class */ (function (_super) {
-    __extends(EyesComponent, _super);
-    function EyesComponent(element) {
-        return _super.call(this, 'eyes', element.nativeElement) || this;
-    }
-    EyesComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'eyes',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/eyes/eyes.html"*/'<svg width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.99 42.03" class="eyes-trinket">\n         <path class="cls-1" d="M0.76,21c16.86,28,44.16,28,61,0c-16.85,-28,-44.14,-28,-61,0z"></path>\n         <path d="M0.18,7a14.15,14.15,0,0,0,1.16,3.1a10.71,10.71,0,0,0,1.86,2.52a10.75,10.75,0,0,0,2.52,1.86a14.25,14.25,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.03,-6.65z"></path>\n         <path d="M4.09,5.05a14.15,14.15,0,0,0,1.16,3.1a10.71,10.71,0,0,0,1.86,2.52a10.76,10.76,0,0,0,2.52,1.86a14.25,14.25,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.03,-6.65z"></path>\n         <path d="M8,3.59a14.15,14.15,0,0,0,1.16,3.1a10.69,10.69,0,0,0,1.84,2.52a10.77,10.77,0,0,0,2.52,1.86a14.27,14.27,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.01,-6.65z"></path>\n         <path d="M11.91,1.6a14.15,14.15,0,0,0,1.16,3.1a10.69,10.69,0,0,0,1.86,2.52a10.77,10.77,0,0,0,2.52,1.86a14.27,14.27,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.03,-6.65z"></path>\n         <path d="M15.82,0.67a14.15,14.15,0,0,0,1.18,3.09a10.7,10.7,0,0,0,1.86,2.52a10.74,10.74,0,0,0,2.52,1.86a14.25,14.25,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.05,-6.64z"></path>\n         <path d="M19.72,0a14.15,14.15,0,0,0,1.16,3.1a10.7,10.7,0,0,0,1.86,2.52a10.77,10.77,0,0,0,2.52,1.86a14.27,14.27,0,0,0,3.1,1.17a7.15,7.15,0,0,1,-6.61,-2a7.17,7.17,0,0,1,-2.03,-6.65z"></path>\n         <path class="cls-2" d="M0.76,21a43.13,43.13,0,0,0,61,0a43.13,43.13,0,0,0,-61,0z"></path>\n         <path class="cls-3" d="M41.26,32.5a15.21,15.21,0,0,0,0,-23a43.31,43.31,0,0,0,-20,0a15.21,15.21,0,0,0,0,23a43.31,43.31,0,0,0,20,0z"></path>\n         <circle cx="31.27" cy="21.02" r="5.12"></circle>\n         <path class="cls-1" d="M131.24,21c-16.86,28,-44.16,28,-61,0c16.84,-28,44.13,-28,61,0z"></path>\n         <path d="M131.82,7a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.25,14.25,0,0,0,3.1,-1.17a10.75,10.75,0,0,0,2.52,-1.86a10.71,10.71,0,0,0,1.86,-2.52a14.15,14.15,0,0,0,1.13,-3.06z"></path>\n         <path d="M127.91,5.05a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.25,14.25,0,0,0,3.1,-1.17a10.76,10.76,0,0,0,2.52,-1.86a10.72,10.72,0,0,0,1.86,-2.52a14.15,14.15,0,0,0,1.13,-3.06z"></path>\n         <path d="M124,3.59a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.27,14.27,0,0,0,3.1,-1.17a10.77,10.77,0,0,0,2.51,-1.82a10.69,10.69,0,0,0,1.86,-2.52a14.16,14.16,0,0,0,1.14,-3.1z"></path>\n         <path d="M120.09,1.6a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.27,14.27,0,0,0,3.1,-1.17a10.77,10.77,0,0,0,2.52,-1.86a10.69,10.69,0,0,0,1.86,-2.52a14.15,14.15,0,0,0,1.13,-3.06z"></path>\n         <path d="M116.18,0.67a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.25,14.25,0,0,0,3.1,-1.17a10.74,10.74,0,0,0,2.52,-1.86a10.7,10.7,0,0,0,1.81,-2.49a14.15,14.15,0,0,0,1.18,-3.09z"></path>\n         <path d="M112.27,0a7.17,7.17,0,0,1,-2,6.61a7.15,7.15,0,0,1,-6.61,2a14.27,14.27,0,0,0,3.1,-1.17a10.77,10.77,0,0,0,2.52,-1.86a10.7,10.7,0,0,0,1.82,-2.48a14.15,14.15,0,0,0,1.17,-3.1z"></path>\n         <path class="cls-2" d="M131.24,21a43.13,43.13,0,0,1,-61,0a43.13,43.13,0,0,1,61,0z"></path>\n         <path class="cls-3" d="M90.73,32.5a15.21,15.21,0,0,1,0,-23a43.31,43.31,0,0,1,20,0a15.21,15.21,0,0,1,0,23a43.31,43.31,0,0,1,-20,0z"></path>\n         <circle cx="100.73" cy="21.02" r="5.12"></circle>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/eyes/eyes.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], EyesComponent);
-    return EyesComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
-
-//# sourceMappingURL=eyes.js.map
-
-/***/ }),
-/* 178 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HoodComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var HoodComponent = /** @class */ (function (_super) {
-    __extends(HoodComponent, _super);
-    function HoodComponent(element) {
-        return _super.call(this, 'hood', element.nativeElement) || this;
-    }
-    HoodComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'hood',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/hood/hood.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="75" class="hood--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.1 289.03">\n    <polygon class="cls-1" points="84.05 72.85 126.08 180.94 168.1 289.03 84.05 289.03 0 289.03 42.02 180.94 84.05 72.85"/>\n    <path class="cls-1" d="M85.93,78.09l-3.82-1.37C83.81,72,86.89,70.4,89.62,69c2.46-1.27,4.4-2.28,5.56-5.5s.3-5.23-.78-7.78c-1.2-2.82-2.56-6-.86-10.74s4.78-6.32,7.51-7.73c2.46-1.27,4.4-2.28,5.56-5.5s.3-5.23-.78-7.78c-1.2-2.82-2.56-6-.86-10.74s4.78-6.32,7.51-7.73c2.46-1.27,4.4-2.28,5.56-5.5l3.82,1.37c-1.7,4.72-4.78,6.32-7.51,7.73-2.46,1.27-4.4,2.28-5.56,5.5s-.3,5.23.78,7.78c1.2,2.82,2.56,6,.86,10.74s-4.78,6.32-7.51,7.73c-2.46,1.27-4.4,2.28-5.56,5.5s-.3,5.23.78,7.78c1.2,2.82,2.56,6,.86,10.74s-4.78,6.32-7.51,7.73C89,73.86,87.09,74.87,85.93,78.09Z"/>\n    <path class="cls-1" d="M84.81,81l-3-2.69c3.33-3.75,6.79-4.09,9.84-4.39,2.75-.27,4.93-.48,7.2-3S101,66.14,101,63.37c-.07-3.07-.14-6.54,3.18-10.29S110.95,49,114,48.69c2.75-.27,4.93-.48,7.2-3s2.22-4.75,2.16-7.51c-.07-3.07-.14-6.54,3.18-10.29s6.79-4.09,9.84-4.39c2.75-.27,4.93-.48,7.2-3l3,2.69c-3.33,3.75-6.79,4.09-9.84,4.39-2.75.27-4.93.48-7.2,3s-2.22,4.75-2.16,7.51c.07,3.07.14,6.54-3.18,10.29s-6.79,4.09-9.84,4.39c-2.75.27-4.93.48-7.2,3S105,60.52,105,63.29c.07,3.07.14,6.54-3.18,10.29S95.06,77.67,92,78C89.26,78.24,87.08,78.45,84.81,81Z"/>\n    <path class="cls-1" d="M85.35,79.79l-3.49-2.08c2.56-4.31,5.9-5.29,8.84-6.16,2.65-.78,4.75-1.4,6.5-4.34s1.29-5.08.71-7.78c-.64-3-1.37-6.4,1.2-10.71s5.9-5.29,8.84-6.16c2.65-.78,4.75-1.4,6.5-4.34s1.29-5.08.71-7.79c-.64-3-1.37-6.4,1.2-10.71s5.9-5.29,8.84-6.16c2.65-.78,4.75-1.4,6.5-4.34l3.49,2.08c-2.56,4.31-5.9,5.29-8.84,6.16-2.65.78-4.75,1.4-6.5,4.34s-1.29,5.08-.71,7.79c.64,3,1.37,6.4-1.2,10.71s-5.9,5.29-8.84,6.16c-2.65.78-4.75,1.4-6.5,4.34s-1.29,5.08-.71,7.78c.64,3,1.37,6.4-1.2,10.71s-5.9,5.29-8.84,6.16C89.19,76.23,87.1,76.85,85.35,79.79Z"/>\n    <circle class="cls-2" cx="83.89" cy="163.19" r="15.22"/>\n    <circle class="cls-3" cx="61.58" cy="220.03" r="22"/>\n    <circle class="cls-4" cx="115.7" cy="253.17" r="22"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="hood--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.8 98.59">\n    <polygon class="cls-1" points="6.8 26.09 39.3 45.48 71.8 64.86 50.17 81.72 28.54 98.58 17.67 62.34 6.8 26.09"/>\n    <path class="cls-1" d="M8.34,27.07l-1.26.41A4.29,4.29,0,0,1,7.46,24,3,3,0,0,0,6,19.61a4.26,4.26,0,0,1-2-6.09A3,3,0,0,0,4.36,11,3,3,0,0,0,2.6,9.15a4.26,4.26,0,0,1-2-6.09A3,3,0,0,0,.93.53L2.19.12a4.29,4.29,0,0,1-.38,3.49,3,3,0,0,0-.33,2.53A3,3,0,0,0,3.24,8a4.26,4.26,0,0,1,2,6.09,3,3,0,0,0,1.43,4.37,4.26,4.26,0,0,1,2,6.09A3,3,0,0,0,8.34,27.07Z"/>\n    <path class="cls-1" d="M8.64,28,7.31,28A4.29,4.29,0,0,1,9,24.86a3,3,0,0,0,.29-4.59,4.26,4.26,0,0,1,.41-6.39A3,3,0,0,0,10,9.28a4.26,4.26,0,0,1,.41-6.39A3,3,0,0,0,11.6.66l1.32.08a4.29,4.29,0,0,1-1.65,3.1A3,3,0,0,0,10,6.07a3,3,0,0,0,1,2.37,4.26,4.26,0,0,1-.41,6.39,3,3,0,0,0-.29,4.59,4.26,4.26,0,0,1-.41,6.39A3,3,0,0,0,8.64,28Z"/>\n    <path class="cls-1" d="M8.53,27.62l-1.31.17a4.29,4.29,0,0,1,1-3.36,3,3,0,0,0-.58-4.57,4.26,4.26,0,0,1-.8-6.35A3,3,0,0,0,6.3,8.94a4.26,4.26,0,0,1-.8-6.35A3,3,0,0,0,6.3.17L7.62,0a4.29,4.29,0,0,1-1,3.36,3,3,0,0,0-.8,2.42A3,3,0,0,0,7.15,7.93,4.26,4.26,0,0,1,8,14.28a3,3,0,0,0,.58,4.57,4.26,4.26,0,0,1,.8,6.35A3,3,0,0,0,8.53,27.62Z"/>\n    <circle class="cls-2" cx="24.88" cy="49.38" r="4.97" transform="translate(-25.1 25.73) rotate(-37.94)"/>\n    <circle class="cls-3" cx="30.55" cy="68.48" r="7.18" transform="translate(-35.65 33.25) rotate(-37.94)"/>\n    <circle class="cls-4" cx="51.12" cy="66.15" r="7.18" transform="translate(-29.87 45.41) rotate(-37.94)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="hood--color--pink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.45 61.23">\n    <polygon class="cls-1" points="46.63 8.77 39.04 35 31.45 61.23 15.72 49.22 0 37.2 23.32 22.98 46.63 8.77"/>\n    <path class="cls-1" d="M46.24,10l-.52-.8a3.09,3.09,0,0,1,2.51-.37A2.14,2.14,0,0,0,51,7a3.07,3.07,0,0,1,3.88-2.5,2.19,2.19,0,0,0,1.83-.23,2.19,2.19,0,0,0,1-1.57A3.07,3.07,0,0,1,61.58.23,2.19,2.19,0,0,0,63.41,0l.52.8a3.1,3.1,0,0,1-2.51.37A2.14,2.14,0,0,0,58.62,3a3.07,3.07,0,0,1-3.88,2.5,2.14,2.14,0,0,0-2.79,1.8,3.07,3.07,0,0,1-3.88,2.5A2.19,2.19,0,0,0,46.24,10Z"/>\n    <path class="cls-1" d="M45.61,10.41l-.18-.94a3.1,3.1,0,0,1,2.47.59,2.14,2.14,0,0,0,3.26-.64,3.07,3.07,0,0,1,4.54-.88A2.14,2.14,0,0,0,59,7.9,3.07,3.07,0,0,1,63.49,7a2.19,2.19,0,0,0,1.78.46l.18.94A3.1,3.1,0,0,1,63,7.83a2.14,2.14,0,0,0-3.26.64,3.07,3.07,0,0,1-4.54.88,2.14,2.14,0,0,0-3.26.64,3.07,3.07,0,0,1-4.54.88A2.19,2.19,0,0,0,45.61,10.41Z"/>\n    <path class="cls-1" d="M45.88,10.26l-.36-.89a3.1,3.1,0,0,1,2.53.11,2.14,2.14,0,0,0,3.08-1.24,3.07,3.07,0,0,1,4.29-1.72,2.14,2.14,0,0,0,3.08-1.24,3.07,3.07,0,0,1,4.29-1.72,2.19,2.19,0,0,0,1.84.12l.36.89a3.1,3.1,0,0,1-2.53-.11A2.14,2.14,0,0,0,59.38,5.7a3.07,3.07,0,0,1-4.29,1.72A2.14,2.14,0,0,0,52,8.65a3.07,3.07,0,0,1-4.29,1.72A2.19,2.19,0,0,0,45.88,10.26Z"/>\n    <circle class="cls-2" cx="33.69" cy="25.65" r="3.58" transform="translate(-7.15 36.84) rotate(-52.61)"/>\n    <circle class="cls-3" cx="21.39" cy="33.09" r="5.18" transform="translate(-17.89 29.99) rotate(-52.61)"/>\n    <circle class="cls-4" cx="26.77" cy="47.03" r="5.18" transform="translate(-26.85 39.74) rotate(-52.61)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="hood--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.88 57.3">\n    <polygon class="cls-1" points="20.29 5.8 35.07 31.55 49.86 57.3 63.37 40.55 76.89 23.8 48.59 14.8 20.29 5.8"/>\n    <path class="cls-1" d="M20.28,6.52l.32-.94A3.21,3.21,0,0,0,18,5.82a2.22,2.22,0,0,1-3.26-1.13,3.19,3.19,0,0,0-4.54-1.57,2.27,2.27,0,0,1-1.9.21A2.27,2.27,0,0,1,6.92,2,3.19,3.19,0,0,0,2.38.43,2.27,2.27,0,0,1,.48.64l-.32.94a3.22,3.22,0,0,0,2.62-.24,2.27,2.27,0,0,1,1.9-.21A2.27,2.27,0,0,1,6,2.46,3.19,3.19,0,0,0,10.58,4a2.22,2.22,0,0,1,3.26,1.13,3.19,3.19,0,0,0,4.54,1.57A2.27,2.27,0,0,1,20.28,6.52Z"/>\n    <path class="cls-1" d="M21,6.75l0-1A3.22,3.22,0,0,0,18.61,7a2.22,2.22,0,0,1-3.45.16,3.19,3.19,0,0,0-4.79.22,2.22,2.22,0,0,1-3.45.16,3.19,3.19,0,0,0-4.8.22,2.27,2.27,0,0,1-1.69.9l0,1a3.22,3.22,0,0,0,2.35-1.2,2.27,2.27,0,0,1,1.69-.9,2.27,2.27,0,0,1,1.76.74A3.19,3.19,0,0,0,11.08,8a2.22,2.22,0,0,1,3.45-.16,3.19,3.19,0,0,0,4.79-.22A2.27,2.27,0,0,1,21,6.75Z"/>\n    <path class="cls-1" d="M20.69,6.67l.14-1a3.22,3.22,0,0,0-2.53.74,2.22,2.22,0,0,1-3.42-.49,3.19,3.19,0,0,0-4.75-.68,2.22,2.22,0,0,1-3.42-.49A3.19,3.19,0,0,0,2,4.09a2.27,2.27,0,0,1-1.82.57L0,5.64a3.22,3.22,0,0,0,2.53-.74,2.27,2.27,0,0,1,1.82-.57A2.27,2.27,0,0,1,5.95,5.39a3.19,3.19,0,0,0,4.75.68,2.22,2.22,0,0,1,3.42.49,3.19,3.19,0,0,0,4.75.68A2.27,2.27,0,0,1,20.69,6.67Z"/>\n    <circle class="cls-2" cx="36.79" cy="19.2" r="3.72" transform="translate(-1.25 35.79) rotate(-51.12)"/>\n    <circle class="cls-3" cx="51.04" cy="23.68" r="5.38" transform="translate(0.57 48.54) rotate(-51.12)"/>\n    <circle class="cls-4" cx="51.14" cy="41.1" r="5.63" transform="translate(-12.95 55.11) rotate(-51.12)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="hood--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.88 57.3">\n    <polygon class="cls-1" points="20.29 5.8 35.07 31.55 49.86 57.3 63.37 40.55 76.89 23.8 48.59 14.8 20.29 5.8"/>\n    <path class="cls-1" d="M20.28,6.52l.32-.94A3.21,3.21,0,0,0,18,5.82a2.22,2.22,0,0,1-3.26-1.13,3.19,3.19,0,0,0-4.54-1.57,2.27,2.27,0,0,1-1.9.21A2.27,2.27,0,0,1,6.92,2,3.19,3.19,0,0,0,2.38.43,2.27,2.27,0,0,1,.48.64l-.32.94a3.22,3.22,0,0,0,2.62-.24,2.27,2.27,0,0,1,1.9-.21A2.27,2.27,0,0,1,6,2.46,3.19,3.19,0,0,0,10.58,4a2.22,2.22,0,0,1,3.26,1.13,3.19,3.19,0,0,0,4.54,1.57A2.27,2.27,0,0,1,20.28,6.52Z"/>\n    <path class="cls-1" d="M21,6.75l0-1A3.22,3.22,0,0,0,18.61,7a2.22,2.22,0,0,1-3.45.16,3.19,3.19,0,0,0-4.79.22,2.22,2.22,0,0,1-3.45.16,3.19,3.19,0,0,0-4.8.22,2.27,2.27,0,0,1-1.69.9l0,1a3.22,3.22,0,0,0,2.35-1.2,2.27,2.27,0,0,1,1.69-.9,2.27,2.27,0,0,1,1.76.74A3.19,3.19,0,0,0,11.08,8a2.22,2.22,0,0,1,3.45-.16,3.19,3.19,0,0,0,4.79-.22A2.27,2.27,0,0,1,21,6.75Z"/>\n    <path class="cls-1" d="M20.69,6.67l.14-1a3.22,3.22,0,0,0-2.53.74,2.22,2.22,0,0,1-3.42-.49,3.19,3.19,0,0,0-4.75-.68,2.22,2.22,0,0,1-3.42-.49A3.19,3.19,0,0,0,2,4.09a2.27,2.27,0,0,1-1.82.57L0,5.64a3.22,3.22,0,0,0,2.53-.74,2.27,2.27,0,0,1,1.82-.57A2.27,2.27,0,0,1,5.95,5.39a3.19,3.19,0,0,0,4.75.68,2.22,2.22,0,0,1,3.42.49,3.19,3.19,0,0,0,4.75.68A2.27,2.27,0,0,1,20.69,6.67Z"/>\n    <circle class="cls-2" cx="36.79" cy="19.2" r="3.72" transform="translate(-1.25 35.79) rotate(-51.12)"/>\n    <circle class="cls-3" cx="51.04" cy="23.68" r="5.38" transform="translate(0.57 48.54) rotate(-51.12)"/>\n    <circle class="cls-4" cx="51.14" cy="41.1" r="5.63" transform="translate(-12.95 55.11) rotate(-51.12)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="hood--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.15 64.75">\n    <polygon class="cls-1" points="4.47 17.14 25.81 29.87 47.15 42.6 32.95 53.67 18.75 64.75 11.61 40.94 4.47 17.14"/>\n    <path class="cls-1" d="M5.48,17.78,4.65,18a2.82,2.82,0,0,1,.25-2.3A1.94,1.94,0,0,0,4,12.88a2.8,2.8,0,0,1-1.31-4,2,2,0,0,0,.21-1.66A2,2,0,0,0,1.71,6,2.8,2.8,0,0,1,.4,2,2,2,0,0,0,.61.35L1.44.08a2.82,2.82,0,0,1-.25,2.3A2,2,0,0,0,1,4,2,2,0,0,0,2.13,5.25a2.8,2.8,0,0,1,1.31,4,1.94,1.94,0,0,0,.94,2.87,2.8,2.8,0,0,1,1.31,4A2,2,0,0,0,5.48,17.78Z"/>\n    <path class="cls-1" d="M5.67,18.42l-.87-.06a2.82,2.82,0,0,1,1.08-2,1.94,1.94,0,0,0,.19-3,2.8,2.8,0,0,1,.27-4.2,1.94,1.94,0,0,0,.19-3,2.8,2.8,0,0,1,.27-4.2A2,2,0,0,0,7.62.43l.87.06a2.82,2.82,0,0,1-1.08,2A2,2,0,0,0,6.59,4a2,2,0,0,0,.62,1.55,2.8,2.8,0,0,1-.27,4.2,1.94,1.94,0,0,0-.19,3A2.8,2.8,0,0,1,6.49,17,2,2,0,0,0,5.67,18.42Z"/>\n    <path class="cls-1" d="M5.6,18.14l-.86.11A2.82,2.82,0,0,1,5.42,16,1.94,1.94,0,0,0,5,13a2.8,2.8,0,0,1-.53-4.17,1.94,1.94,0,0,0-.38-3A2.8,2.8,0,0,1,3.61,1.7,2,2,0,0,0,4.14.11L5,0a2.82,2.82,0,0,1-.68,2.21A2,2,0,0,0,3.79,3.8a2,2,0,0,0,.9,1.41,2.8,2.8,0,0,1,.53,4.17,1.94,1.94,0,0,0,.38,3,2.8,2.8,0,0,1,.53,4.17A2,2,0,0,0,5.6,18.14Z"/>\n    <circle class="cls-2" cx="16.34" cy="32.43" r="3.26" transform="translate(-16.48 16.9) rotate(-37.94)"/>\n    <circle class="cls-3" cx="20.06" cy="44.97" r="4.71" transform="translate(-23.41 21.84) rotate(-37.94)"/>\n    <circle class="cls-4" cx="33.57" cy="43.44" r="4.71" transform="translate(-19.62 29.82) rotate(-37.94)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="hood--color--darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.41 85.19">\n    <polygon class="cls-1" points="57.63 13.88 51.22 49.53 44.8 85.19 22.4 71.49 0 57.79 28.82 35.83 57.63 13.88"/>\n    <path class="cls-1" d="M57.28,15.58l-.79-1a4.11,4.11,0,0,1,3.26-.84A2.83,2.83,0,0,0,63.18,11,4.08,4.08,0,0,1,68,7.16,2.84,2.84,0,0,0,71.4,4.4,4.08,4.08,0,0,1,76.18.56,2.9,2.9,0,0,0,78.56,0l.79,1a4.11,4.11,0,0,1-3.26.84,2.84,2.84,0,0,0-3.44,2.76,4.08,4.08,0,0,1-4.78,3.84,2.83,2.83,0,0,0-3.44,2.76A4.08,4.08,0,0,1,59.65,15,2.9,2.9,0,0,0,57.28,15.58Z"/>\n    <path class="cls-1" d="M56.5,16.18,56.13,15a4.11,4.11,0,0,1,3.34.43,2.83,2.83,0,0,0,4.22-1.29,4.08,4.08,0,0,1,5.86-1.79A2.84,2.84,0,0,0,73.76,11a4.08,4.08,0,0,1,5.86-1.79A2.9,2.9,0,0,0,82,9.61l.37,1.21a4.11,4.11,0,0,1-3.34-.43,2.84,2.84,0,0,0-4.22,1.29A4.08,4.08,0,0,1,69,13.46a2.83,2.83,0,0,0-4.22,1.29,4.08,4.08,0,0,1-5.86,1.79A2.9,2.9,0,0,0,56.5,16.18Z"/>\n    <path class="cls-1" d="M56.85,15.94l-.59-1.12a4.11,4.11,0,0,1,3.36-.2,2.84,2.84,0,0,0,3.9-2.06A4.08,4.08,0,0,1,68.94,9.7a2.83,2.83,0,0,0,3.9-2.06,4.08,4.08,0,0,1,5.42-2.86,2.9,2.9,0,0,0,2.44-.1l.59,1.12a4.11,4.11,0,0,1-3.36.2A2.84,2.84,0,0,0,74,8.07a4.08,4.08,0,0,1-5.42,2.86A2.83,2.83,0,0,0,64.71,13a4.08,4.08,0,0,1-5.42,2.86A2.9,2.9,0,0,0,56.85,15.94Z"/>\n    <circle class="cls-2" cx="42.86" cy="37.93" r="4.75" transform="translate(-11.86 54.71) rotate(-58.55)"/>\n    <circle class="cls-3" cx="27.66" cy="49.44" r="6.87" transform="translate(-28.95 47.24) rotate(-58.55)"/>\n    <circle class="cls-4" cx="36.68" cy="67.09" r="6.87" transform="translate(-39.69 63.37) rotate(-58.55)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="hood--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.67 58.78">\n    <polygon class="cls-1" points="92.04 14.78 90.77 36.59 89.49 58.41 75.09 51.82 60.69 45.23 76.37 30 92.04 14.78"/>\n    <path class="cls-1" d="M92,15.82l-.55-.53a2.48,2.48,0,0,1,1.89-.74,1.71,1.71,0,0,0,1.86-1.9A2.46,2.46,0,0,1,97.75,10a1.71,1.71,0,0,0,1.86-1.9,2.46,2.46,0,0,1,2.59-2.64A1.75,1.75,0,0,0,103.58,5l.55.53a2.48,2.48,0,0,1-1.89.74,1.71,1.71,0,0,0-1.86,1.9,2.46,2.46,0,0,1-2.59,2.64,1.71,1.71,0,0,0-1.86,1.9,2.46,2.46,0,0,1-2.59,2.64A1.75,1.75,0,0,0,92,15.82Z"/>\n    <path class="cls-1" d="M91.53,16.23l-.31-.7a2.48,2.48,0,0,1,2,0,1.71,1.71,0,0,0,2.43-1.07A2.46,2.46,0,0,1,99.07,13a1.71,1.71,0,0,0,2.43-1.07,2.46,2.46,0,0,1,3.38-1.49,1.75,1.75,0,0,0,1.47,0l.31.7a2.48,2.48,0,0,1-2,0,1.71,1.71,0,0,0-2.43,1.07,2.46,2.46,0,0,1-3.38,1.49,1.71,1.71,0,0,0-2.43,1.07A2.46,2.46,0,0,1,93,16.28,1.75,1.75,0,0,0,91.53,16.23Z"/>\n    <path class="cls-1" d="M91.72,16.07l-.43-.63a2.48,2.48,0,0,1,2-.36,1.71,1.71,0,0,0,2.19-1.51,2.46,2.46,0,0,1,3-2.1,1.71,1.71,0,0,0,2.19-1.51,2.46,2.46,0,0,1,3-2.1,1.75,1.75,0,0,0,1.45-.23l.43.63a2.48,2.48,0,0,1-2,.36,1.71,1.71,0,0,0-2.19,1.51,2.46,2.46,0,0,1-3,2.1,1.71,1.71,0,0,0-2.19,1.51,2.46,2.46,0,0,1-3,2.1A1.75,1.75,0,0,0,91.72,16.07Z"/>\n    <circle class="cls-2" cx="84.93" cy="30.24" r="2.87" transform="translate(22.08 94.88) rotate(-65.41)"/>\n    <circle class="cls-3" cx="76.65" cy="38.23" r="4.15" transform="translate(9.99 92.02) rotate(-65.41)"/>\n    <circle class="cls-4" cx="83.06" cy="47.29" r="4.15" transform="translate(5.49 103.13) rotate(-65.41)"/>\n    <polygon class="cls-5" points="1.41 15.23 17.46 30.05 33.52 44.88 19.29 51.83 5.05 58.78 3.23 37.01 1.41 15.23"/>\n    <path class="cls-5" d="M2.16,16,1.4,16A2.48,2.48,0,0,1,2,14.11a1.71,1.71,0,0,0-.29-2.64,2.46,2.46,0,0,1-.4-3.68A1.75,1.75,0,0,0,1.83,6.4a1.75,1.75,0,0,0-.78-1.25,2.46,2.46,0,0,1-.4-3.68A1.75,1.75,0,0,0,1.13.08L1.9,0a2.48,2.48,0,0,1-.63,1.93A1.75,1.75,0,0,0,.78,3.32a1.75,1.75,0,0,0,.78,1.25,2.48,2.48,0,0,1,1,1.75A2.48,2.48,0,0,1,2,8.25a1.71,1.71,0,0,0,.29,2.64,2.46,2.46,0,0,1,.4,3.68A1.75,1.75,0,0,0,2.16,16Z"/>\n    <path class="cls-5" d="M2.21,16.55l-.74-.21a2.48,2.48,0,0,1,1.3-1.56,1.71,1.71,0,0,0,.71-2.56,2.46,2.46,0,0,1,1-3.56A1.71,1.71,0,0,0,5.19,6.1a2.46,2.46,0,0,1,1-3.56,1.75,1.75,0,0,0,1-1.11l.74.2a2.48,2.48,0,0,1-1.3,1.56,1.71,1.71,0,0,0-.71,2.56,2.46,2.46,0,0,1-1,3.56,1.71,1.71,0,0,0-.71,2.56,2.46,2.46,0,0,1-1,3.56A1.75,1.75,0,0,0,2.21,16.55Z"/>\n    <path class="cls-5" d="M2.2,16.3l-.76-.06a2.48,2.48,0,0,1,1-1.77,1.71,1.71,0,0,0,.22-2.65A2.46,2.46,0,0,1,3,8.12a1.71,1.71,0,0,0,.22-2.65,2.46,2.46,0,0,1,.3-3.69A1.75,1.75,0,0,0,4.22.51L5,.58A2.48,2.48,0,0,1,4,2.35,1.71,1.71,0,0,0,3.77,5a2.46,2.46,0,0,1-.3,3.69,1.71,1.71,0,0,0-.22,2.65A2.46,2.46,0,0,1,2.94,15,1.75,1.75,0,0,0,2.2,16.3Z"/>\n    <circle class="cls-6" cx="8.85" cy="30.54" r="2.87" transform="translate(-12.5 6.98) rotate(-26.03)"/>\n    <circle class="cls-3" cx="9.78" cy="42.01" r="4.15" transform="translate(-17.44 8.55) rotate(-26.03)"/>\n    <circle class="cls-4" cx="20.84" cy="42.8" r="4.15" transform="translate(-16.67 13.49) rotate(-26.03)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="hood--alien hood--color--darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.86 56.43">\n    <polygon class="cls-1" points="34.51 10.11 32.32 33.27 30.14 56.43 15.07 48.87 0 41.31 17.25 25.71 34.51 10.11"/>\n    <path class="cls-1" d="M34.75,10.62l-.54-.56a2.52,2.52,0,0,1,1.95-.68,1.74,1.74,0,0,0,2-1.86,2.5,2.5,0,0,1,2.72-2.59,1.74,1.74,0,0,0,2-1.86A2.5,2.5,0,0,1,45.52.46,1.78,1.78,0,0,0,46.95,0l.54.56a2.52,2.52,0,0,1-1.95.68,1.74,1.74,0,0,0-2,1.86A2.5,2.5,0,0,1,40.85,5.7a1.74,1.74,0,0,0-2,1.86,2.5,2.5,0,0,1-2.72,2.59A1.78,1.78,0,0,0,34.75,10.62Z"/>\n    <path class="cls-1" d="M34.3,11,34,10.3a2.52,2.52,0,0,1,2.06.09,1.74,1.74,0,0,0,2.51-1A2.5,2.5,0,0,1,42.08,8a1.74,1.74,0,0,0,2.51-1,2.5,2.5,0,0,1,3.49-1.4,1.78,1.78,0,0,0,1.49.1l.29.72a2.52,2.52,0,0,1-2.06-.09,1.74,1.74,0,0,0-2.51,1,2.5,2.5,0,0,1-3.49,1.4,1.74,1.74,0,0,0-2.51,1,2.5,2.5,0,0,1-3.49,1.4A1.78,1.78,0,0,0,34.3,11Z"/>\n    <path class="cls-1" d="M34.5,10.86l-.42-.65a2.52,2.52,0,0,1,2-.3A1.74,1.74,0,0,0,38.4,8.45a2.5,2.5,0,0,1,3.17-2A1.74,1.74,0,0,0,43.84,5a2.5,2.5,0,0,1,3.17-2,1.78,1.78,0,0,0,1.49-.19l.42.65a2.52,2.52,0,0,1-2,.3A1.74,1.74,0,0,0,44.6,5.16a2.5,2.5,0,0,1-3.17,2,1.74,1.74,0,0,0-2.28,1.46,2.5,2.5,0,0,1-3.17,2A1.78,1.78,0,0,0,34.5,10.86Z"/>\n    <circle class="cls-2" cx="27.09" cy="25.02" r="2.92" transform="translate(-7.42 38.02) rotate(-63.37)"/>\n    <circle class="cls-3" cx="18.39" cy="32.83" r="4.21" transform="translate(-19.21 34.55) rotate(-63.37)"/>\n    <circle class="cls-4" cx="23.97" cy="45.29" r="4.41" transform="translate(-27.26 46.41) rotate(-63.37)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="hood--color--violet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.41 87.61">\n    <polygon class="cls-1" points="53.95 15.5 50.39 51.55 46.84 87.61 23.42 75.74 0 63.87 26.97 39.68 53.95 15.5"/>\n    <path class="cls-1" d="M53.73,17.23l-.87-.92A4.11,4.11,0,0,1,56,15.21a2.83,2.83,0,0,0,3.21-3A4.08,4.08,0,0,1,63.71,8a2.84,2.84,0,0,0,3.21-3A4.08,4.08,0,0,1,71.38.75,2.9,2.9,0,0,0,73.7,0l.87.92A4.11,4.11,0,0,1,71.39,2a2.84,2.84,0,0,0-3.21,3,4.08,4.08,0,0,1-4.46,4.21,2.83,2.83,0,0,0-3.21,3,4.08,4.08,0,0,1-4.46,4.21A2.9,2.9,0,0,0,53.73,17.23Z"/>\n    <path class="cls-1" d="M53,17.88l-.47-1.18a4.11,4.11,0,0,1,3.36.17A2.83,2.83,0,0,0,60,15.25,4.08,4.08,0,0,1,65.7,13a2.84,2.84,0,0,0,4.1-1.62,4.08,4.08,0,0,1,5.7-2.25,2.9,2.9,0,0,0,2.44.17l.47,1.18A4.11,4.11,0,0,1,75,10.31a2.84,2.84,0,0,0-4.1,1.62,4.08,4.08,0,0,1-5.7,2.25,2.83,2.83,0,0,0-4.1,1.62,4.08,4.08,0,0,1-5.7,2.25A2.9,2.9,0,0,0,53,17.88Z"/>\n    <path class="cls-1" d="M53.33,17.62l-.68-1.07A4.11,4.11,0,0,1,56,16.08a2.84,2.84,0,0,0,3.72-2.36,4.08,4.08,0,0,1,5.18-3.28,2.83,2.83,0,0,0,3.72-2.36A4.08,4.08,0,0,1,73.78,4.8a2.9,2.9,0,0,0,2.42-.29l.68,1.07A4.11,4.11,0,0,1,73.55,6,2.84,2.84,0,0,0,69.83,8.4a4.08,4.08,0,0,1-5.18,3.28A2.83,2.83,0,0,0,60.93,14a4.08,4.08,0,0,1-5.18,3.28A2.9,2.9,0,0,0,53.33,17.62Z"/>\n    <circle class="cls-2" cx="41.14" cy="40.65" r="4.75" transform="translate(-13.72 58.97) rotate(-63.12)"/>\n    <circle class="cls-3" cx="26.9" cy="53.34" r="6.87" transform="translate(-32.83 53.22) rotate(-63.12)"/>\n    <circle class="cls-4" cx="36.91" cy="68.76" r="6.87" transform="translate(-41.1 70.6) rotate(-63.12)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="hood--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.35 76.6">\n    <polygon class="cls-1" points="65.47 9.49 51.81 43.05 38.16 76.6 19.08 58.57 0 40.53 32.73 25.01 65.47 9.49"/>\n    <path class="cls-1" d="M64.77,11.08,64.2,10a4.11,4.11,0,0,1,3.36-.14,2.83,2.83,0,0,0,3.93-2A4.08,4.08,0,0,1,77,5.05,2.9,2.9,0,0,0,79.4,5a2.9,2.9,0,0,0,1.49-1.93A4.08,4.08,0,0,1,86.37.29,2.9,2.9,0,0,0,88.81.24l.57,1.13A4.11,4.11,0,0,1,86,1.51a2.84,2.84,0,0,0-3.93,2,4.08,4.08,0,0,1-5.47,2.77,2.83,2.83,0,0,0-3.93,2A4.08,4.08,0,0,1,67.21,11,2.9,2.9,0,0,0,64.77,11.08Z"/>\n    <path class="cls-1" d="M63.89,11.51l-.11-1.26A4.11,4.11,0,0,1,67,11.36,2.83,2.83,0,0,0,71.34,11a4.08,4.08,0,0,1,6.11-.54A2.84,2.84,0,0,0,81.84,10a4.08,4.08,0,0,1,6.11-.54,2.9,2.9,0,0,0,2.29.85l.11,1.26a4.11,4.11,0,0,1-3.18-1.11,2.84,2.84,0,0,0-4.39.39,4.08,4.08,0,0,1-6.11.54,2.83,2.83,0,0,0-4.39.39,4.08,4.08,0,0,1-6.11.54A2.9,2.9,0,0,0,63.89,11.51Z"/>\n    <path class="cls-1" d="M64.27,11.34l-.35-1.22a4.11,4.11,0,0,1,3.33.5,2.84,2.84,0,0,0,4.24-1.2,4.08,4.08,0,0,1,5.9-1.68,2.83,2.83,0,0,0,4.24-1.2,4.08,4.08,0,0,1,5.9-1.68,2.9,2.9,0,0,0,2.41.41l.35,1.22A4.11,4.11,0,0,1,87,6,2.84,2.84,0,0,0,82.71,7.2a4.08,4.08,0,0,1-5.9,1.68,2.83,2.83,0,0,0-4.24,1.2,4.08,4.08,0,0,1-5.9,1.68A2.9,2.9,0,0,0,64.27,11.34Z"/>\n    <circle class="cls-2" cx="46.04" cy="29.96" r="4.75" transform="translate(-7.36 42.85) rotate(-46.62)"/>\n    <circle class="cls-3" cx="28.79" cy="38.08" r="6.87" transform="translate(-18.66 32.85) rotate(-46.62)"/>\n    <circle class="cls-4" cx="34" cy="55.71" r="6.87" transform="translate(-29.84 42.16) rotate(-46.62)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="hood--color--pink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.74 80.66">\n    <polygon class="cls-1" points="4.57 20.65 23.15 44.31 41.73 67.98 20.87 74.32 0 80.66 2.28 50.65 4.57 20.65"/>\n    <path class="cls-1" d="M5.43,21.81l-1.05-.05a3.41,3.41,0,0,1,1.28-2.48,2.35,2.35,0,0,0,.18-3.66,3.39,3.39,0,0,1,.26-5.09,2.36,2.36,0,0,0,.19-3.66,3.39,3.39,0,0,1,.26-5.09A2.41,2.41,0,0,0,7.51,0L8.56.05A3.41,3.41,0,0,1,7.28,2.54a2.41,2.41,0,0,0-1,1.78,2.41,2.41,0,0,0,.78,1.87,3.39,3.39,0,0,1-.26,5.09,2.35,2.35,0,0,0-.19,3.66A3.39,3.39,0,0,1,6.39,20,2.41,2.41,0,0,0,5.43,21.81Z"/>\n    <path class="cls-1" d="M5.37,22.62l-1-.44a3.41,3.41,0,0,1,2.11-1.83A2.35,2.35,0,0,0,8.06,17a3.39,3.39,0,0,1,2.13-4.63,2.35,2.35,0,0,0,1.53-3.33,3.39,3.39,0,0,1,2.13-4.63,2.41,2.41,0,0,0,1.56-1.3l1,.44a3.41,3.41,0,0,1-2.11,1.83,2.36,2.36,0,0,0-1.53,3.33,3.39,3.39,0,0,1-2.13,4.63,2.35,2.35,0,0,0-1.53,3.33,3.39,3.39,0,0,1-2.13,4.63A2.41,2.41,0,0,0,5.37,22.62Z"/>\n    <path class="cls-1" d="M5.41,22.27l-1-.25a3.41,3.41,0,0,1,1.73-2.2A2.35,2.35,0,0,0,7,16.27a3.39,3.39,0,0,1,1.22-4.94A2.35,2.35,0,0,0,9.1,7.77a3.39,3.39,0,0,1,1.22-4.94A2.41,2.41,0,0,0,11.6,1.26l1,.25a3.41,3.41,0,0,1-1.73,2.2A2.36,2.36,0,0,0,10,7.26,3.39,3.39,0,0,1,8.8,12.21a2.35,2.35,0,0,0-.88,3.55A3.39,3.39,0,0,1,6.7,20.71,2.41,2.41,0,0,0,5.41,22.27Z"/>\n    <circle cx="11.34" cy="43.09" r="3.95" transform="translate(-12.03 5.15) rotate(-16.89)"/>\n    <circle class="cls-2" cx="10.09" cy="58.88" r="5.71" transform="translate(-16.68 5.47) rotate(-16.89)"/>\n    <circle class="cls-3" cx="24.95" cy="62.38" r="5.71" transform="translate(-17.05 9.94) rotate(-16.89)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="hood--color--red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.59 54.77">\n    <polygon class="cls-1" points="46.8 6.78 37.05 30.77 27.29 54.77 13.64 41.87 0 28.98 23.4 17.88 46.8 6.78"/>\n    <path class="cls-1" d="M46.31,7.92l-.41-.81A2.94,2.94,0,0,1,48.3,7a2,2,0,0,0,2.81-1.42,2.91,2.91,0,0,1,3.91-2,2.07,2.07,0,0,0,1.75,0,2.07,2.07,0,0,0,1.07-1.38,2.91,2.91,0,0,1,3.91-2,2.07,2.07,0,0,0,1.75,0L63.9,1a2.94,2.94,0,0,1-2.4.1A2,2,0,0,0,58.68,2.5a2.91,2.91,0,0,1-3.91,2A2,2,0,0,0,52,5.9a2.91,2.91,0,0,1-3.91,2A2.07,2.07,0,0,0,46.31,7.92Z"/>\n    <path class="cls-1" d="M45.67,8.23l-.08-.9a2.94,2.94,0,0,1,2.27.8A2,2,0,0,0,51,7.84a2.91,2.91,0,0,1,4.37-.39,2,2,0,0,0,3.14-.28,2.91,2.91,0,0,1,4.37-.39,2.07,2.07,0,0,0,1.64.61l.08.9a2.94,2.94,0,0,1-2.27-.8,2,2,0,0,0-3.14.28,2.91,2.91,0,0,1-4.37.39,2,2,0,0,0-3.14.28,2.91,2.91,0,0,1-4.37.39A2.07,2.07,0,0,0,45.67,8.23Z"/>\n    <path class="cls-1" d="M45.95,8.11l-.25-.87a2.94,2.94,0,0,1,2.38.36,2,2,0,0,0,3-.86,2.91,2.91,0,0,1,4.22-1.2,2,2,0,0,0,3-.86,2.91,2.91,0,0,1,4.22-1.2,2.07,2.07,0,0,0,1.72.29l.25.87a2.94,2.94,0,0,1-2.38-.36,2,2,0,0,0-3,.86,2.91,2.91,0,0,1-4.22,1.2,2,2,0,0,0-3,.86,2.91,2.91,0,0,1-4.22,1.2A2.07,2.07,0,0,0,45.95,8.11Z"/>\n    <circle class="cls-2" cx="32.92" cy="21.42" r="3.4" transform="translate(-5.26 30.63) rotate(-46.62)"/>\n    <circle class="cls-3" cx="20.58" cy="27.23" r="4.91" transform="translate(-13.34 23.48) rotate(-46.62)"/>\n    <circle class="cls-4" cx="24.31" cy="39.83" r="4.91" transform="translate(-21.34 30.14) rotate(-46.62)"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/hood/hood.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], HoodComponent);
-    return HoodComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=hood.js.map
-
-/***/ }),
-/* 179 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketUniqPartDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TrinketUniqPartDirective = /** @class */ (function () {
-    function TrinketUniqPartDirective(el, templateRef, viewContainerRef) {
-        this.templateRef = templateRef;
-        this.viewContainerRef = viewContainerRef;
-        this.element = el.nativeElement;
-    }
-    TrinketUniqPartDirective.prototype.show = function () {
-        this.viewContainerRef.createEmbeddedView(this.templateRef);
-        return this;
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('part-name'),
-        __metadata("design:type", String)
-    ], TrinketUniqPartDirective.prototype, "name", void 0);
-    TrinketUniqPartDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
-            selector: '[trinket-uniq-part]',
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* TemplateRef */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
-    ], TrinketUniqPartDirective);
-    return TrinketUniqPartDirective;
-}());
-
-//# sourceMappingURL=trinket-uniq-part.directive.js.map
-
-/***/ }),
-/* 180 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoleComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(305);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var MoleComponent = /** @class */ (function (_super) {
-    __extends(MoleComponent, _super);
-    function MoleComponent(element) {
-        return _super.call(this, 'mole', element.nativeElement) || this;
-    }
-    MoleComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'mole',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/mole/mole.html"*/'<svg class="mole" width="75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.86 63.82">\n  <ng-template trinket-random-part>\n    <g>\n      <circle class="cls-1" cx="15.45" cy="19.12" r="11.25"></circle>\n      <line class="cls-2" x1="19.58" y1="18.74" x2="41.4" y2="12.04"></line>\n      <line class="cls-2" x1="14.79" y1="0.03" x2="15.45" y2="19.12"></line>\n      <line class="cls-2" x1="0.47" y1="28.23" x2="10.58" y2="20.99"></line>\n    </g>\n  </ng-template>\n\n  <ng-template trinket-random-part>\n    <g>\n       <circle class="cls-1" cx="44.61" cy="34.95" r="11.25" transform="translate(-11.8 40.41) rotate(-43.6)"></circle>\n       <line class="cls-2" x1="47.73" y1="37.68" x2="45" y2="55.89"></line>\n       <line class="cls-2" x1="27.68" y1="30.39" x2="39.89" y2="32.72"></line>\n     </g>\n  </ng-template>\n\n  <ng-template trinket-random-part>\n    <g>\n     <circle class="cls-1" cx="11.25" cy="52.57" r="11.25" transform="translate(-33.15 22.26) rotate(-43.6)"></circle>\n    </g>\n  </ng-template>\n\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/mole/mole.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], MoleComponent);
-    return MoleComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_random_model__["a" /* TrinketRandomModel */]));
-
-//# sourceMappingURL=mole.js.map
-
-/***/ }),
-/* 181 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketRandomPartDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TrinketRandomPartDirective = /** @class */ (function () {
-    function TrinketRandomPartDirective(el, templateRef, viewContainerRef) {
-        this.templateRef = templateRef;
-        this.viewContainerRef = viewContainerRef;
-        this.shown = false;
-        this.element = el.nativeElement;
-        this.show();
-    }
-    TrinketRandomPartDirective.prototype.show = function () {
-        if (!this.shown) {
-            this.viewContainerRef.createEmbeddedView(this.templateRef);
-            this.shown = true;
-        }
-        return this;
-    };
-    TrinketRandomPartDirective.prototype.hide = function () {
-        if (this.shown) {
-            this.viewContainerRef.clear();
-            this.shown = false;
-        }
-        return this;
-    };
-    TrinketRandomPartDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
-            selector: '[trinket-random-part]',
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* TemplateRef */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
-    ], TrinketRandomPartDirective);
-    return TrinketRandomPartDirective;
-}());
-
-//# sourceMappingURL=trinket-random-part.directive.js.map
-
-/***/ }),
-/* 182 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeartComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(25);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var HeartComponent = /** @class */ (function (_super) {
-    __extends(HeartComponent, _super);
-    function HeartComponent(element) {
-        return _super.call(this, 'heart', element.nativeElement) || this;
-    }
-    HeartComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'heart',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/heart/heart.svg"*/'<svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.6 138.47" class="heart">\n   <path class="cls-1" d="M51.65,133.57l-48.3,-62.16a25,25,0,1,1,43.29,-25l5,8.68l5,-8.68a25,25,0,1,1,43.29,25z"></path>\n   <line class="cls-2" x1="77.76" y1="63.18" x2="125.64" y2="15.3"></line>\n   <line class="cls-2" x1="8.59" y1="132.01" x2="32.54" y2="108.07"></line>\n   <line class="cls-2" x1="104.69" y1="13.3" x2="104.69" y2="36.58"></line>\n   <line class="cls-2" x1="111.34" y1="5.32" x2="111.34" y2="28.6"></line>\n   <line class="cls-2" x1="117.99" x2="117.99" y2="23.28"></line>\n   <line class="cls-2" x1="128.3" y1="35.58" x2="105.02" y2="35.58"></line>\n   <line class="cls-2" x1="136.28" y1="28.93" x2="113" y2="28.93"></line>\n   <line class="cls-2" x1="141.6" y1="22.28" x2="118.32" y2="22.28"></line>\n   <polygon points="2.11 138.47 7.99 127.95 13.87 117.43 18.51 122.07 23.16 126.72 12.64 132.6 2.11 138.47"></polygon>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/heart/heart.svg"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], HeartComponent);
-    return HeartComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
-
-//# sourceMappingURL=heart.js.map
-
-/***/ }),
-/* 183 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BeardComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(25);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var BeardComponent = /** @class */ (function (_super) {
-    __extends(BeardComponent, _super);
-    function BeardComponent(element) {
-        return _super.call(this, 'beard', element.nativeElement) || this;
-    }
-    BeardComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'beard',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/beard/beard.html"*/'<svg width="150" class="beard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.33 127.73">\n   <path class="cls-1" d="M144.35,33.21c0,-4.87,-20.48,-8.42,-21,-13.07a2.17,2.17,0,0,1,0.09,-0.87h-99.51a2.17,2.17,0,0,1,0.09,0.87c-0.57,4.65,-21,8.19,-21,13.06s20.48,8.42,21,13.07c0.6,4.85,-18.38,13.29,-17.22,17.82c1.2,4.74,21.9,2.91,23.67,7.22c1.87,4.54,-14,18,-11.54,21.92c2.57,4.2,21.57,-4,24.68,-0.61c3.31,3.65,-6.36,22,-2.54,24.6c4,2.77,17.23,-13,21.7,-11.52s6,22,10.89,22s6.37,-20.53,10.89,-22s17.68,14.3,21.69,11.52c3.82,-2.63,-5.85,-21,-2.54,-24.6c3.11,-3.43,22.11,4.81,24.68,0.61c2.42,-4,-13.41,-17.38,-11.54,-21.92c1.77,-4.31,22.46,-2.48,23.67,-7.22c1.16,-4.53,-17.81,-13,-17.22,-17.82c0.58,-4.64,21.06,-8.19,21.06,-13.06z"></path>\n   <path class="cls-2" d="M99.63,19.1c0,26.9,-51.93,26.9,-51.93,0z"></path>\n   <path class="cls-3" d="M80.78,20.68a62.4,62.4,0,0,1,-22.3,10.59a58.33,58.33,0,0,1,-23.26,1a54.7,54.7,0,0,1,-20.46,-7.73a51.16,51.16,0,0,1,-14.76,-14.2a47.44,47.44,0,0,0,17.56,7.42a43.61,43.61,0,0,0,17.66,-0.13a39.78,39.78,0,0,0,14.86,-6.63a36.51,36.51,0,0,0,10,-11z"></path>\n   <path class="cls-3" d="M87.23,0a36.51,36.51,0,0,0,10,11a39.78,39.78,0,0,0,14.86,6.62a43.61,43.61,0,0,0,17.66,0.13a47.44,47.44,0,0,0,17.56,-7.42a51.16,51.16,0,0,1,-14.76,14.18a54.7,54.7,0,0,1,-20.46,7.73a58.33,58.33,0,0,1,-23.26,-1a62.4,62.4,0,0,1,-22.3,-10.59z"></path>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/beard/beard.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], BeardComponent);
-    return BeardComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
-
-//# sourceMappingURL=beard.js.map
-
-/***/ }),
-/* 184 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoustacheComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(25);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var MoustacheComponent = /** @class */ (function (_super) {
-    __extends(MoustacheComponent, _super);
-    function MoustacheComponent(element) {
-        return _super.call(this, 'moustache', element.nativeElement) || this;
-    }
-    MoustacheComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'moustache',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/moustache/moustache.html"*/'<svg width="150" class="moustache" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.42 44.04">\n   <path class="cls-1" d="M27.26,34.7a27.27,27.27,0,0,1,-26.86,-22.59a27.27,27.27,0,1,0,54.13,4.67a27.44,27.44,0,0,0,-0.4,-4.67a27.27,27.27,0,0,1,-26.87,22.59z"></path>\n   <path class="cls-1" d="M23.7,28a25.89,25.89,0,0,1,-18.06,-28a25.89,25.89,0,1,0,47.81,19.36a26,26,0,0,0,0.94,-4.36a25.89,25.89,0,0,1,-30.69,13z"></path>\n   <path class="cls-1" d="M81.15,34.7a27.27,27.27,0,0,0,26.85,-22.59a27.26,27.26,0,1,1,-53.73,0a27.27,27.27,0,0,0,26.88,22.59z"></path>\n   <path class="cls-1" d="M84.71,28a25.89,25.89,0,0,0,18.07,-28a25.88,25.88,0,1,1,-48.78,15a25.89,25.89,0,0,0,30.71,13z"></path>\n   <path class="cls-1" d="M27.9,24.18a22.33,22.33,0,0,1,-15.59,-24.18a22.33,22.33,0,1,0,42.05,13a22.33,22.33,0,0,1,-26.46,11.18z"></path>\n   <path class="cls-1" d="M80.52,24.18a22.33,22.33,0,0,0,15.58,-24.18a22.33,22.33,0,1,1,-42.05,13a22.33,22.33,0,0,0,26.47,11.18z"></path>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/moustache/moustache.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], MoustacheComponent);
-    return MoustacheComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
-
-//# sourceMappingURL=moustache.js.map
-
-/***/ }),
-/* 185 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SnivelComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_element_component_model__ = __webpack_require__(25);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var SnivelComponent = /** @class */ (function (_super) {
-    __extends(SnivelComponent, _super);
-    function SnivelComponent(element) {
-        return _super.call(this, 'snivel', element.nativeElement) || this;
-    }
-    SnivelComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'snivel',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/snivel/snivel.html"*/'<svg width="25" class="snivel" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 32.49 121.17">\n         <path class="cls-1" d="M8.12,85.65c0,6.74,-0.82,8,-1.82,8s-1.82,-1.26,-1.82,-8a42.85,42.85,0,0,1,1.82,-12.2a42.85,42.85,0,0,1,1.82,12.2z"></path>\n         <path class="cls-1" d="M17.74,57.14c0,6.74,-0.82,8,-1.82,8s-1.82,-1.26,-1.82,-8a42.85,42.85,0,0,1,1.82,-12.2a42.85,42.85,0,0,1,1.82,12.2z"></path>\n         <path class="cls-1" d="M27.68,88.3c0,6.74,-0.82,8,-1.82,8s-1.86,-1.3,-1.86,-8a42.85,42.85,0,0,1,1.82,-12.2a42.85,42.85,0,0,1,1.86,12.2z"></path>\n         <path class="cls-1" d="M27.68,113.17c0,6.74,-0.82,8,-1.82,8s-1.82,-1.26,-1.82,-8a42.85,42.85,0,0,1,1.82,-12.17a42.85,42.85,0,0,1,1.82,12.17z"></path>\n         <path class="cls-1" d="M1.46,0a233.82,233.82,0,0,0,-1.46,27.35c0,23.9,2.89,43.27,6.47,43.27c3.09,0,5.67,-14.51,6.31,-33.91c-1.88,-7.47,-3.14,-21.1,-3.16,-36.71z"></path>\n         <path class="cls-1" d="M21.28,0h-9.8a233.79,233.79,0,0,1,1.46,27.35c0,3.21,-0.05,6.34,-0.15,9.35c1,3.85,2.1,6.06,3.3,6.06s2.53,-2.62,3.55,-7.1q-0.07,-3.1,-0.07,-6.32a224.61,224.61,0,0,1,1.71,-29.34z"></path>\n         <path class="cls-1" d="M11.47,0h-1.85c0,15.61,1.29,29.24,3.16,36.71c0.1,-3,0.15,-6.14,0.15,-9.35a233.79,233.79,0,0,0,-1.46,-27.36z"></path>\n         <path class="cls-1" d="M22.54,0c0,14.91,-1.18,28,-2.91,35.66c0.46,20.9,3.15,36.94,6.4,36.94c3.57,0,6.47,-19.37,6.47,-43.27a224.61,224.61,0,0,0,-1.72,-29.33z"></path>\n         <path class="cls-1" d="M21.28,0a224.61,224.61,0,0,0,-1.71,29.34q0,3.22,0.07,6.32c1.73,-7.66,2.88,-20.75,2.9,-35.66z"></path>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/snivel/snivel.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], SnivelComponent);
-    return SnivelComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__model_element_component_model__["a" /* ElementComponentModel */]));
-
-//# sourceMappingURL=snivel.js.map
-
-/***/ }),
-/* 186 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DressComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var DressComponent = /** @class */ (function (_super) {
-    __extends(DressComponent, _super);
-    function DressComponent(element) {
-        return _super.call(this, 'dress', element.nativeElement) || this;
-    }
-    DressComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'dress',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/dress/dress.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.5 86.5" class="dress">\n     <path class="cls-1" d="M172.5,46.51a46.64,46.64,0,0,0,-46.5,-46.51h-79.5a46.64,46.64,0,0,0,-46.5,46.51v40h172.5z"></path>\n     <polygon class="cls-2" points="13.5 7.8 72.04 39 89.19 0 27.16 0 13.5 7.8"></polygon>\n     <polygon class="cls-2" points="159 7.8 100.46 39 83.31 0 145.34 0 159 7.8"></polygon>\n     <circle class="cls-3" cx="27.81" cy="7.53" r="2.05"></circle>\n     <circle class="cls-3" cx="37.31" cy="6.35" r="2.05"></circle>\n     <circle class="cls-3" cx="40.79" cy="13.8" r="2.05"></circle>\n     <circle class="cls-3" cx="52.57" cy="8.35" r="2.05"></circle>\n     <circle class="cls-3" cx="69.46" cy="9.33" r="2.05"></circle>\n     <circle class="cls-3" cx="109.21" cy="27.3" r="2.05"></circle>\n     <circle class="cls-3" cx="101.21" cy="13" r="2.05"></circle>\n     <circle class="cls-3" cx="86.21" cy="10.55" r="7.13" transform="translate(17.79 64.05) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.11" cy="8.44" r="1.24" transform="translate(18.66 61.95) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.16" cy="12.49" r="1.24" transform="translate(16.99 66) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.16" cy="8.44" r="1.24" transform="translate(19.85 64.81) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.11" cy="12.49" r="1.24" transform="translate(15.8 63.13) rotate(-45)"></circle>\n     <circle class="cls-3" cx="86.21" cy="37.05" r="7.13" transform="translate(-0.95 71.81) rotate(-45)"></circle>\n     <circle class="cls-3" cx="86.21" cy="63.55" r="7.13" transform="translate(-19.69 79.58) rotate(-45)"></circle>\n     <circle class="cls-3" cx="108.96" cy="6.25" r="2.05"></circle>\n     <circle class="cls-3" cx="119.21" cy="10.25" r="2.05"></circle>\n     <circle class="cls-3" cx="132.46" cy="5.25" r="2.05"></circle>\n     <circle class="cls-3" cx="143.66" cy="9" r="2.05"></circle>\n     <circle class="cls-3" cx="121.71" cy="22.5" r="2.05"></circle>\n     <circle class="cls-3" cx="57.46" cy="18.17" r="2.05"></circle>\n     <circle class="cls-3" cx="66.3" cy="27.83" r="2.05"></circle>\n     <circle class="cls-1" cx="84.11" cy="34.95" r="1.24" transform="translate(-0.08 69.71) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.16" cy="39" r="1.24" transform="translate(-1.75 73.76) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.16" cy="34.95" r="1.24" transform="translate(1.11 72.57) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.11" cy="39" r="1.24" transform="translate(-2.94 70.89) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.17" cy="61.39" r="1.24" transform="translate(-18.76 77.49) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.22" cy="65.44" r="1.24" transform="translate(-20.43 81.54) rotate(-45)"></circle>\n     <circle class="cls-1" cx="88.22" cy="61.39" r="1.24" transform="translate(-17.57 80.36) rotate(-45)"></circle>\n     <circle class="cls-1" cx="84.17" cy="65.44" r="1.24" transform="translate(-21.62 78.68) rotate(-45)"></circle>\n     <line class="cls-4" x1="84.11" y1="8.44" x2="88.16" y2="12.49"></line>\n     <line class="cls-4" x1="88.16" y1="8.44" x2="84.11" y2="12.49"></line>\n     <line class="cls-4" x1="84.11" y1="34.94" x2="88.16" y2="38.99"></line>\n     <line class="cls-4" x1="88.16" y1="34.94" x2="84.11" y2="38.99"></line>\n     <line class="cls-4" x1="84.06" y1="61.5" x2="88.11" y2="65.55"></line>\n     <line class="cls-4" x1="88.11" y1="61.5" x2="84.06" y2="65.55"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 192.892 96" class="dress--mummy">\n    <path class="cls-3" d="M202.89,70a52.15,52.15,0,0,0,-52,-52h-88.89a52.15,52.15,0,0,0,-52,52v44.72h192.89z" transform="translate(-10 -18.02)"></path>\n    <polygon class="cls-4" points="15.1 8.72 80.56 43.61 99.73 0 30.37 0 15.1 8.72"></polygon>\n    <polygon class="cls-4" points="177.79 8.72 112.33 43.61 93.16 0 162.52 0 177.79 8.72"></polygon>\n    <circle class="cls-5" cx="31.1" cy="8.42" r="2.29"></circle>\n    <circle class="cls-5" cx="41.73" cy="7.1" r="2.29"></circle>\n    <circle class="cls-5" cx="45.61" cy="15.43" r="2.29"></circle>\n    <circle class="cls-5" cx="58.79" cy="9.33" r="2.29"></circle>\n    <circle class="cls-5" cx="77.68" cy="10.44" r="2.29"></circle>\n    <circle class="cls-5" cx="122.12" cy="30.53" r="2.29"></circle>\n    <circle class="cls-5" cx="113.18" cy="14.54" r="2.29"></circle>\n    <circle class="cls-5" cx="106.4" cy="29.82" r="7.97" transform="translate(0.08 65.95) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.05" cy="27.46" r="1.39" transform="translate(1.06 63.6) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.58" cy="31.99" r="1.39" transform="translate(-0.82 68.12) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.58" cy="27.46" r="1.39" transform="translate(2.38 66.8) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.05" cy="31.99" r="1.39" transform="translate(-2.15 64.92) rotate(-45)"></circle>\n    <circle class="cls-5" cx="106.4" cy="59.45" r="7.97" transform="translate(-20.87 74.63) rotate(-45)"></circle>\n    <circle class="cls-5" cx="106.4" cy="89.09" r="7.97" transform="translate(-41.83 83.31) rotate(-45)"></circle>\n    <circle class="cls-5" cx="121.84" cy="6.99" r="2.29"></circle>\n    <circle class="cls-5" cx="133.31" cy="11.46" r="2.29"></circle>\n    <circle class="cls-5" cx="148.12" cy="5.87" r="2.29"></circle>\n    <circle class="cls-5" cx="160.65" cy="10.06" r="2.29"></circle>\n    <circle class="cls-5" cx="136.1" cy="25.16" r="2.29"></circle>\n    <circle class="cls-5" cx="64.26" cy="20.31" r="2.29"></circle>\n    <circle class="cls-5" cx="74.13" cy="31.12" r="2.29"></circle>\n    <circle class="cls-3" cx="104.05" cy="57.1" r="1.39" transform="translate(-19.9 72.28) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.58" cy="61.63" r="1.39" transform="translate(-21.78 76.8) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.58" cy="57.1" r="1.39" transform="translate(-18.58 75.48) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.05" cy="61.63" r="1.39" transform="translate(-23.1 73.6) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.12" cy="86.67" r="1.39" transform="translate(-40.79 80.98) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.64" cy="91.2" r="1.39" transform="translate(-42.66 85.51) rotate(-45)"></circle>\n    <circle class="cls-3" cx="108.64" cy="86.67" r="1.39" transform="translate(-39.46 84.18) rotate(-45)"></circle>\n    <circle class="cls-3" cx="104.12" cy="91.2" r="1.39" transform="translate(-43.99 82.31) rotate(-45)"></circle>\n    <line class="cls-6" x1="94.05" y1="9.44" x2="98.58" y2="13.97"></line>\n    <line class="cls-6" x1="98.58" y1="9.44" x2="94.05" y2="13.97"></line>\n    <line class="cls-6" x1="94.05" y1="39.08" x2="98.58" y2="43.6"></line>\n    <line class="cls-6" x1="98.58" y1="39.08" x2="94.05" y2="43.6"></line>\n    <line class="cls-6" x1="93.99" y1="68.77" x2="98.52" y2="73.29"></line>\n    <line class="cls-6" x1="98.52" y1="68.77" x2="93.99" y2="73.29"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="dress--zombie" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 261 191.33">\n    <path class="cls-3" d="M251,215.33l-243.67,-0.66l0.51,-81.75s-3.84,-61.92,44.16,-74.73l101.56,-26.19c9.86,-1.28,27.73,-2.05,46.46,6.65c44.68,20.75,50.66,75.13,51,78.58zm17.33,-32" transform="translate(-7.33 -24)"></path>\n    <polygon class="cls-4" points="5.03 55.01 90.1 75.61 99.17 20.13 22.17 36 5.03 55.01"></polygon>\n    <polygon class="cls-4" points="190.95 7.12 126.42 66.26 91.67 22.06 159.17 0 190.95 7.12"></polygon>\n    <circle class="cls-5" cx="30.56" cy="73.95" r="2.7" transform="translate(-24.81 -14.04) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="41.31" cy="72.32" r="2.7" transform="translate(-24.06 -11.41) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="52.12" cy="82.33" r="2.7" transform="translate(-26.22 -8.4) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="61.88" cy="79.67" r="2.7" transform="translate(-25.25 -6.05) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="170" cy="44" r="2.7" transform="translate(-12.94 19.79) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="135.67" cy="78.67" r="2.7" transform="translate(-22.67 12.32) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="126.16" cy="56.79" r="2.7" transform="translate(-17.51 9.26) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="106.18" cy="58.59" r="9.41" transform="matrix(0.51, -0.86, 0.86, 0.51, -5.59, 96.24)"></circle>\n    <circle class="cls-3" cx="102.8" cy="56.59" r="1.64" transform="translate(-5.53 92.34) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="109.3" cy="60.43" r="1.64" transform="matrix(0.51, -0.86, 0.86, 0.51, -5.64, 99.83)"></circle>\n    <circle class="cls-3" cx="107.97" cy="55.26" r="1.64" transform="translate(-1.84 96.14) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="104.13" cy="61.77" r="1.64" transform="translate(-9.33 96.03) rotate(-59.44)"></circle>\n    <circle class="cls-5" cx="114.9" cy="92.46" r="9.41" transform="translate(-30.47 120.4) rotate(-59.44)"></circle>\n    <circle class="cls-5" cx="123.63" cy="126.32" r="9.41" transform="translate(-55.34 144.55) rotate(-59.44)"></circle>\n    <circle class="cls-5" cx="133.84" cy="45.61" r="2.7" transform="translate(-14.48 10.82) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="148.25" cy="47.35" r="2.7" transform="translate(-14.46 14.47) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="159.95" cy="38.66" r="2.7" transform="translate(-11.92 17.11) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="180.73" cy="37.91" r="2.7" transform="translate(-11.08 22.27) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="144.62" cy="68.33" r="2.7" transform="translate(-19.8 14.23) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="156" cy="61.67" r="2.7" transform="translate(-17.78 16.85) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="80" cy="75" r="2.7" transform="translate(-23.51 -1.68) rotate(-14.44)"></circle>\n    <circle class="cls-5" cx="86.42" cy="87.23" r="2.7" transform="translate(-26.36 0.31) rotate(-14.44)"></circle>\n    <circle class="cls-3" cx="111.52" cy="90.46" r="1.64" transform="translate(-30.41 116.5) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="118.02" cy="94.3" r="1.64" transform="translate(-30.52 123.99) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="116.69" cy="89.13" r="1.64" transform="matrix(0.51, -0.86, 0.86, 0.51, -26.72, 120.3)"></circle>\n    <circle class="cls-3" cx="112.85" cy="95.64" r="1.64" transform="translate(-34.21 120.19) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="120.3" cy="124.23" r="1.64" transform="translate(-55.18 140.66) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="126.8" cy="128.07" r="1.64" transform="translate(-55.28 148.15) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="125.47" cy="122.9" r="1.64" transform="translate(-51.48 144.46) rotate(-59.44)"></circle>\n    <circle class="cls-3" cx="121.63" cy="129.41" r="1.64" transform="translate(-58.98 144.35) rotate(-59.44)"></circle>\n    <line class="cls-6" x1="95.46" y1="32.59" x2="101.97" y2="36.43"></line>\n    <line class="cls-6" x1="100.64" y1="31.26" x2="96.8" y2="37.77"></line>\n    <line class="cls-6" x1="104.19" y1="66.46" x2="110.69" y2="70.3"></line>\n    <line class="cls-6" x1="109.36" y1="65.13" x2="105.52" y2="71.63"></line>\n    <line class="cls-6" x1="112.86" y1="100.41" x2="119.37" y2="104.25"></line>\n    <line class="cls-6" x1="118.04" y1="99.07" x2="114.19" y2="105.58"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="dress--skeleton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.5 86.5">\n   <path class="cls-1" d="M172.5,46.51a46.64,46.64,0,0,0,-46.5,-46.51h-79.5a46.64,46.64,0,0,0,-46.5,46.51v40h172.5z"></path>\n   <polygon class="cls-2" points="13.5 7.8 72.04 39 89.19 0 27.16 0 13.5 7.8"></polygon>\n   <polygon class="cls-2" points="159 7.8 100.46 39 83.31 0 145.34 0 159 7.8"></polygon>\n   <circle class="cls-3" cx="27.81" cy="7.53" r="2.05"></circle>\n   <circle class="cls-3" cx="37.31" cy="6.35" r="2.05"></circle>\n   <circle class="cls-3" cx="40.79" cy="13.8" r="2.05"></circle>\n   <circle class="cls-3" cx="52.57" cy="8.35" r="2.05"></circle>\n   <circle class="cls-3" cx="69.46" cy="9.33" r="2.05"></circle>\n   <circle class="cls-3" cx="109.21" cy="27.3" r="2.05"></circle>\n   <circle class="cls-3" cx="101.21" cy="13" r="2.05"></circle>\n   <circle class="cls-3" cx="86.21" cy="10.55" r="7.13" transform="translate(17.79 64.05) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.11" cy="8.44" r="1.24" transform="translate(18.66 61.95) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.16" cy="12.49" r="1.24" transform="translate(16.99 66) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.16" cy="8.44" r="1.24" transform="translate(19.85 64.81) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.11" cy="12.49" r="1.24" transform="translate(15.8 63.13) rotate(-45)"></circle>\n   <circle class="cls-3" cx="86.21" cy="37.05" r="7.13" transform="translate(-0.95 71.81) rotate(-45)"></circle>\n   <circle class="cls-3" cx="86.21" cy="63.55" r="7.13" transform="translate(-19.69 79.58) rotate(-45)"></circle>\n   <circle class="cls-3" cx="108.96" cy="6.25" r="2.05"></circle>\n   <circle class="cls-3" cx="119.21" cy="10.25" r="2.05"></circle>\n   <circle class="cls-3" cx="132.46" cy="5.25" r="2.05"></circle>\n   <circle class="cls-3" cx="143.66" cy="9" r="2.05"></circle>\n   <circle class="cls-3" cx="121.71" cy="22.5" r="2.05"></circle>\n   <circle class="cls-3" cx="57.46" cy="18.17" r="2.05"></circle>\n   <circle class="cls-3" cx="66.3" cy="27.83" r="2.05"></circle>\n   <circle class="cls-1" cx="84.11" cy="34.95" r="1.24" transform="translate(-0.08 69.71) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.16" cy="39" r="1.24" transform="translate(-1.75 73.76) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.16" cy="34.95" r="1.24" transform="translate(1.11 72.57) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.11" cy="39" r="1.24" transform="translate(-2.94 70.89) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.17" cy="61.39" r="1.24" transform="translate(-18.76 77.49) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.22" cy="65.44" r="1.24" transform="translate(-20.43 81.54) rotate(-45)"></circle>\n   <circle class="cls-1" cx="88.22" cy="61.39" r="1.24" transform="translate(-17.57 80.36) rotate(-45)"></circle>\n   <circle class="cls-1" cx="84.17" cy="65.44" r="1.24" transform="translate(-21.62 78.68) rotate(-45)"></circle>\n   <line class="cls-4" x1="84.11" y1="8.44" x2="88.16" y2="12.49"></line>\n   <line class="cls-4" x1="88.16" y1="8.44" x2="84.11" y2="12.49"></line>\n   <line class="cls-4" x1="84.11" y1="34.94" x2="88.16" y2="38.99"></line>\n   <line class="cls-4" x1="88.16" y1="34.94" x2="84.11" y2="38.99"></line>\n   <line class="cls-4" x1="84.06" y1="61.5" x2="88.11" y2="65.55"></line>\n   <line class="cls-4" x1="88.11" y1="61.5" x2="84.06" y2="65.55"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="dress--ghost" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 254.63 127.69">\n    <path class="cls-3" d="M267.83,92.44a68.84,68.84,0,0,0,-68.64,-68.64h-117.35a68.84,68.84,0,0,0,-68.64,68.64v59h254.63z" transform="translate(-13.2 -23.79)"></path>\n    <polygon class="cls-4" points="19.93 11.51 106.34 57.57 131.65 0 40.09 0 19.93 11.51"></polygon>\n    <polygon class="cls-4" points="234.7 11.51 148.29 57.57 122.98 0 214.54 0 234.7 11.51"></polygon>\n    <circle class="cls-5" cx="41.06" cy="11.11" r="3.03"></circle>\n    <circle class="cls-5" cx="55.08" cy="9.37" r="3.03"></circle>\n    <circle class="cls-5" cx="60.21" cy="20.37" r="3.03"></circle>\n    <circle class="cls-5" cx="77.61" cy="12.32" r="3.03"></circle>\n    <circle class="cls-5" cx="102.54" cy="13.78" r="3.03"></circle>\n    <circle class="cls-5" cx="161.21" cy="40.3" r="3.03"></circle>\n    <circle class="cls-5" cx="149.41" cy="19.19" r="3.03"></circle>\n    <circle class="cls-5" cx="140.46" cy="39.36" r="10.53" transform="translate(0.11 87.06) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.36" cy="36.26" r="1.83" transform="translate(1.39 83.95) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.33" cy="42.23" r="1.83" transform="translate(-1.08 89.93) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.33" cy="36.26" r="1.83" transform="translate(3.14 88.18) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.36" cy="42.23" r="1.83" transform="translate(-2.83 85.7) rotate(-45)"></circle>\n    <circle class="cls-5" cx="140.46" cy="78.48" r="10.53" transform="translate(-27.56 98.52) rotate(-45)"></circle>\n    <circle class="cls-5" cx="140.46" cy="117.6" r="10.53" transform="translate(-55.22 109.98) rotate(-45)"></circle>\n    <circle class="cls-5" cx="160.85" cy="9.23" r="3.03"></circle>\n    <circle class="cls-5" cx="175.98" cy="15.13" r="3.03"></circle>\n    <circle class="cls-5" cx="195.53" cy="7.75" r="3.03"></circle>\n    <circle class="cls-5" cx="212.07" cy="13.29" r="3.03"></circle>\n    <circle class="cls-5" cx="179.67" cy="33.21" r="3.03"></circle>\n    <circle class="cls-5" cx="84.82" cy="26.82" r="3.03"></circle>\n    <circle class="cls-5" cx="97.86" cy="41.09" r="3.03"></circle>\n    <circle class="cls-3" cx="137.35" cy="75.38" r="1.83" transform="translate(-26.27 95.41) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.33" cy="81.35" r="1.83" transform="translate(-28.75 101.39) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.33" cy="75.38" r="1.83" transform="translate(-24.52 99.64) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.35" cy="81.35" r="1.83" transform="translate(-30.5 97.16) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.44" cy="114.41" r="1.83" transform="translate(-53.84 106.9) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.42" cy="120.39" r="1.83" transform="translate(-56.32 112.88) rotate(-45)"></circle>\n    <circle class="cls-3" cx="143.42" cy="114.41" r="1.83" transform="translate(-52.09 111.13) rotate(-45)"></circle>\n    <circle class="cls-3" cx="137.44" cy="120.39" r="1.83" transform="translate(-58.07 108.66) rotate(-45)"></circle>\n    <line class="cls-6" x1="124.15" y1="12.46" x2="130.13" y2="18.44"></line>\n    <line class="cls-6" x1="130.13" y1="12.46" x2="124.15" y2="18.44"></line>\n    <line class="cls-6" x1="124.16" y1="51.58" x2="130.13" y2="57.56"></line>\n    <line class="cls-6" x1="130.13" y1="51.58" x2="124.16" y2="57.56"></line>\n    <line class="cls-6" x1="124.08" y1="90.78" x2="130.06" y2="96.75"></line>\n    <line class="cls-6" x1="130.06" y1="90.78" x2="124.08" y2="96.75"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="dress--wolf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218.5 274">\n    <path class="cls-1" d="M217.27,58.48A58.64,58.64,0,0,0,158.79,0h-100A58.64,58.64,0,0,0,.35,58.48Q.18,165,0,271.5L218.5,274Z"/>\n    <polygon class="cls-2" points="17.33 9.81 90.94 49.04 112.5 0 34.5 0 17.33 9.81"/>\n    <polygon class="cls-2" points="200.29 9.81 126.68 49.04 105.12 0 183.11 0 200.29 9.81"/>\n    <circle class="cls-3" cx="35.33" cy="9.47" r="2.58"/>\n    <circle class="cls-3" cx="47.27" cy="7.99" r="2.58"/>\n    <circle class="cls-3" cx="51.65" cy="17.36" r="2.58"/>\n    <circle class="cls-3" cx="66.46" cy="10.5" r="2.58"/>\n    <circle class="cls-3" cx="87.7" cy="11.74" r="2.58"/>\n    <circle class="cls-3" cx="137.69" cy="34.33" r="2.58"/>\n    <circle class="cls-3" cx="127.63" cy="16.35" r="2.58"/>\n    <circle class="cls-3" cx="108.76" cy="13.27" r="8.97" transform="translate(22.48 80.79) rotate(-45)"/>\n    <circle class="cls-1" cx="106.11" cy="10.62" r="1.56" transform="translate(23.57 78.14) rotate(-45)"/>\n    <circle class="cls-1" cx="111.21" cy="15.71" r="1.56" transform="translate(21.46 83.24) rotate(-45)"/>\n    <circle class="cls-1" cx="111.21" cy="10.62" r="1.56" transform="translate(25.06 81.74) rotate(-45)"/>\n    <circle class="cls-1" cx="106.11" cy="15.71" r="1.56" transform="translate(19.97 79.64) rotate(-45)"/>\n    <circle class="cls-3" cx="108.76" cy="46.59" r="8.97" transform="translate(-1.09 90.55) rotate(-45)"/>\n    <circle class="cls-3" cx="108.76" cy="79.92" r="8.97" transform="translate(-24.65 100.31) rotate(-45)"/>\n    <circle class="cls-3" cx="137.37" cy="7.86" r="2.58"/>\n    <circle class="cls-3" cx="150.26" cy="12.89" r="2.58"/>\n    <circle class="cls-3" cx="166.92" cy="6.6" r="2.58"/>\n    <circle class="cls-3" cx="181.01" cy="11.32" r="2.58"/>\n    <circle class="cls-3" cx="153.4" cy="28.29" r="2.58"/>\n    <circle class="cls-3" cx="72.61" cy="22.84" r="2.58"/>\n    <circle class="cls-3" cx="83.72" cy="35" r="2.58"/>\n    <circle class="cls-1" cx="106.11" cy="43.95" r="1.56" transform="translate(0.01 87.9) rotate(-45)"/>\n    <circle class="cls-1" cx="111.2" cy="49.04" r="1.56" transform="translate(-2.1 93) rotate(-45)"/>\n    <circle class="cls-1" cx="111.2" cy="43.95" r="1.56" transform="translate(1.5 91.5) rotate(-45)"/>\n    <circle class="cls-1" cx="106.11" cy="49.04" r="1.56" transform="translate(-3.59 89.4) rotate(-45)"/>\n    <circle class="cls-1" cx="106.19" cy="77.19" r="1.56" transform="translate(-23.48 97.7) rotate(-45)"/>\n    <circle class="cls-1" cx="111.28" cy="82.29" r="1.56" transform="translate(-25.59 102.79) rotate(-45)"/>\n    <circle class="cls-1" cx="111.28" cy="77.19" r="1.56" transform="translate(-21.99 101.3) rotate(-45)"/>\n    <circle class="cls-1" cx="106.19" cy="82.29" r="1.56" transform="translate(-27.08 99.19) rotate(-45)"/>\n    <line class="cls-4" x1="106.11" y1="10.62" x2="111.21" y2="15.71"/>\n    <line class="cls-4" x1="111.21" y1="10.62" x2="106.11" y2="15.71"/>\n    <line class="cls-4" x1="106.12" y1="43.94" x2="111.21" y2="49.03"/>\n    <line class="cls-4" x1="111.21" y1="43.94" x2="106.12" y2="49.03"/>\n    <line class="cls-4" x1="106.05" y1="77.33" x2="111.14" y2="82.42"/>\n    <line class="cls-4" x1="111.14" y1="77.33" x2="106.05" y2="82.42"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="dress--yaga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.71 232.13">\n    <path class="cls-1" d="M0,232.13v-176.74a54.08,54.08,0,0,1,53.92,-53.92h34.79v230.08z"></path>\n    <circle class="cls-2" cx="77.43" cy="55.01" r="3.92" transform="translate(-16.11 71.47) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.26" cy="53.86" r="0.68" transform="translate(-15.64 70.3) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.5" cy="56.07" r="0.68" transform="translate(-16.55 72.55) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.49" cy="53.84" r="0.68" transform="translate(-14.97 71.88) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.28" cy="56.08" r="0.68" transform="translate(-17.22 70.97) rotate(-45.37)"></circle>\n    <line class="cls-3" x1="76.26" y1="53.86" x2="78.5" y2="56.07"></line>\n    <line class="cls-3" x1="78.49" y1="53.84" x2="76.28" y2="56.08"></line>\n    <circle class="cls-2" cx="77.52" cy="69.58" r="3.92" transform="translate(-26.45 75.87) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.36" cy="68.43" r="0.68" transform="translate(-25.98 74.7) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.6" cy="70.64" r="0.68" transform="translate(-26.89 76.96) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.58" cy="68.41" r="0.68" transform="translate(-25.31 76.28) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.37" cy="70.65" r="0.68" transform="translate(-27.56 75.38) rotate(-45.37)"></circle>\n    <line class="cls-3" x1="76.36" y1="68.43" x2="78.6" y2="70.64"></line>\n    <line class="cls-3" x1="78.58" y1="68.41" x2="76.37" y2="70.65"></line>\n    <circle class="cls-2" cx="77.62" cy="84.14" r="3.92" transform="translate(-36.79 80.28) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.48" cy="82.96" r="0.68" transform="translate(-36.29 79.12) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.72" cy="85.17" r="0.68" transform="translate(-37.2 81.37) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="78.71" cy="82.95" r="0.68" transform="translate(-35.62 80.7) rotate(-45.37)"></circle>\n    <circle class="cls-1" cx="76.5" cy="85.19" r="0.68" transform="translate(-37.87 79.79) rotate(-45.37)"></circle>\n    <line class="cls-3" x1="76.42" y1="83.02" x2="78.66" y2="85.23"></line>\n    <line class="cls-3" x1="78.65" y1="83.01" x2="76.44" y2="85.25"></line>\n    <polygon class="cls-4" points="22.11 7.34 40.1 46.09 69.32 28.83 49.61 0 22.11 7.34"></polygon>\n    <circle class="cls-2" cx="43.91" cy="7.91" r="1.63" transform="translate(11.86 38.95) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="29.16" cy="10.16" r="1.63" transform="translate(3.89 27.91) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="35.86" cy="21.09" r="1.63" transform="translate(-2.19 37.9) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="47.11" cy="16.84" r="1.63" transform="translate(5.94 45.27) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="52.23" cy="25.7" r="1.63" transform="translate(0.87 53.11) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="43.16" cy="25.66" r="1.63" transform="translate(-2.87 45.73) rotate(-54.29)"></circle>\n    <circle class="cls-2" cx="41.58" cy="36.2" r="1.63" transform="translate(-12.08 48.83) rotate(-54.29)"></circle>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="dress--doctor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.76 116.13">\n    <path class="cls-1" d="M93.13,33.41a25.18,25.18,0,0,0,-25.13,-25.11h-42.89a25.18,25.18,0,0,0,-25.11,25.11l1.09,82.72h92.67z"></path>\n    <polygon class="cls-2" points="7.29 12.51 38.89 29.36 48.15 8.3 22.96 0 7.29 12.51"></polygon>\n    <polygon class="cls-2" points="85.84 12.51 54.24 29.36 44.98 8.3 70.86 0.69 85.84 12.51"></polygon>\n    <circle class="cls-3" cx="15.02" cy="12.37" r="1.11"></circle>\n    <circle class="cls-3" cx="20.76" cy="6.9" r="1.11"></circle>\n    <circle class="cls-3" cx="22.02" cy="15.75" r="1.11"></circle>\n    <circle class="cls-3" cx="24.26" cy="11.8" r="1.11"></circle>\n    <circle class="cls-3" cx="37.5" cy="13.34" r="1.11"></circle>\n    <circle class="cls-3" cx="55.51" cy="22.8" r="1.11"></circle>\n    <circle class="cls-3" cx="54.65" cy="15.32" r="1.11"></circle>\n    <circle class="cls-3" cx="46.55" cy="14" r="3.85" transform="translate(3.74 37.01) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.41" cy="12.86" r="0.67" transform="translate(4.21 35.88) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.6" cy="15.05" r="0.67" transform="translate(3.3 38.06) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.6" cy="12.86" r="0.67" transform="translate(4.85 37.42) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.41" cy="15.05" r="0.67" transform="translate(2.66 36.52) rotate(-45)"></circle>\n    <circle class="cls-3" cx="46.55" cy="28.31" r="3.85" transform="translate(-6.38 41.2) rotate(-45)"></circle>\n    <circle class="cls-3" cx="46.55" cy="38.61" r="3.85" transform="translate(-13.67 44.22) rotate(-45)"></circle>\n    <circle class="cls-3" cx="58.83" cy="11.68" r="1.11"></circle>\n    <circle class="cls-3" cx="66.4" cy="14.3" r="1.11"></circle>\n    <circle class="cls-3" cx="71.65" cy="7.8" r="1.11"></circle>\n    <circle class="cls-3" cx="77.56" cy="13.16" r="1.11"></circle>\n    <circle class="cls-3" cx="62.01" cy="19.94" r="1.11"></circle>\n    <circle class="cls-3" cx="31.02" cy="18.11" r="1.11"></circle>\n    <circle class="cls-3" cx="35.79" cy="23.33" r="1.11"></circle>\n    <circle class="cls-1" cx="45.41" cy="27.17" r="0.67" transform="translate(-5.91 40.07) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.59" cy="29.36" r="0.67" transform="translate(-6.82 42.25) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.59" cy="27.17" r="0.67" transform="translate(-5.27 41.61) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.41" cy="29.36" r="0.67" transform="translate(-7.46 40.71) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.44" cy="37.44" r="0.67" transform="translate(-13.17 43.1) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.63" cy="39.63" r="0.67" transform="translate(-14.07 45.28) rotate(-45)"></circle>\n    <circle class="cls-1" cx="47.63" cy="37.44" r="0.67" transform="translate(-12.53 44.64) rotate(-45)"></circle>\n    <circle class="cls-1" cx="45.44" cy="39.63" r="0.67" transform="translate(-14.71 43.74) rotate(-45)"></circle>\n    <line class="cls-4" x1="45.41" y1="12.86" x2="47.6" y2="15.05"></line>\n    <line class="cls-4" x1="47.6" y1="12.86" x2="45.41" y2="15.05"></line>\n    <line class="cls-4" x1="45.41" y1="27.17" x2="47.6" y2="29.35"></line>\n    <line class="cls-4" x1="47.6" y1="27.17" x2="45.41" y2="29.35"></line>\n    <line class="cls-4" x1="45.38" y1="37.5" x2="47.57" y2="39.69"></line>\n    <line class="cls-4" x1="47.57" y1="37.5" x2="45.38" y2="39.69"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="dress--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.33 243.73">\n    <path class="cls-1" d="M178.16,151.9a48,48,0,0,0,-47.86,-47.9h-81.83a48,48,0,0,0,-47.86,47.9l-0.61,91.83l178.33,-0.33q-0.08,-45.75,-0.17,-91.5z"></path>\n    <polygon class="cls-2" points="14.51 112.06 74.76 144.18 90.67 102.07 33.67 79.73 14.51 112.06"></polygon>\n    <polygon class="cls-2" points="164.27 112.06 104.01 144.18 86.67 101.73 145.33 79.07 164.27 112.06"></polygon>\n    <circle class="cls-3" cx="29.24" cy="111.78" r="2.11"></circle>\n    <circle class="cls-3" cx="38.67" cy="90.4" r="2.11"></circle>\n    <circle class="cls-3" cx="38.33" cy="102.07" r="2.11"></circle>\n    <circle class="cls-3" cx="55.67" cy="99.07" r="2.11"></circle>\n    <circle class="cls-3" cx="139.33" cy="90.07" r="2.11"></circle>\n    <circle class="cls-3" cx="129.33" cy="100.73" r="2.11"></circle>\n    <circle class="cls-3" cx="103.67" cy="102.4" r="2.11"></circle>\n    <circle class="cls-3" cx="42.6" cy="118.24" r="2.11"></circle>\n    <circle class="cls-3" cx="54.72" cy="112.62" r="2.11"></circle>\n    <circle class="cls-3" cx="72.11" cy="113.64" r="2.11"></circle>\n    <circle class="cls-3" cx="113.02" cy="132.13" r="2.11"></circle>\n    <circle class="cls-3" cx="104.79" cy="117.41" r="2.11"></circle>\n    <circle class="cls-3" cx="89.35" cy="114.89" r="7.34" transform="translate(-55.07 96.83) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.18" cy="112.72" r="1.28" transform="translate(-54.17 94.66) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.35" cy="116.89" r="1.28" transform="translate(-55.9 98.83) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.35" cy="112.72" r="1.28" transform="translate(-52.95 97.61) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.18" cy="116.89" r="1.28" transform="translate(-57.12 95.88) rotate(-45)"></circle>\n    <circle class="cls-3" cx="89.35" cy="142.17" r="7.34" transform="translate(-74.36 104.82) rotate(-45)"></circle>\n    <circle class="cls-3" cx="112.77" cy="110.47" r="2.11"></circle>\n    <circle class="cls-3" cx="123.32" cy="114.58" r="2.11"></circle>\n    <circle class="cls-3" cx="136.96" cy="109.44" r="2.11"></circle>\n    <circle class="cls-3" cx="148.48" cy="113.3" r="2.11"></circle>\n    <circle class="cls-3" cx="125.89" cy="127.19" r="2.11"></circle>\n    <circle class="cls-3" cx="59.76" cy="122.73" r="2.11"></circle>\n    <circle class="cls-3" cx="68.85" cy="132.68" r="2.11"></circle>\n    <circle class="cls-1" cx="87.18" cy="140" r="1.28" transform="translate(-73.46 102.65) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.35" cy="144.17" r="1.28" transform="translate(-75.19 106.82) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.35" cy="140" r="1.28" transform="translate(-72.24 105.6) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.18" cy="144.17" r="1.28" transform="translate(-76.41 103.87) rotate(-45)"></circle>\n    <line class="cls-4" x1="87.18" y1="112.72" x2="91.35" y2="116.89"></line>\n    <line class="cls-4" x1="91.35" y1="112.72" x2="87.18" y2="116.89"></line>\n    <line class="cls-4" x1="87.18" y1="140" x2="91.35" y2="144.17"></line>\n    <line class="cls-4" x1="91.35" y1="140" x2="87.18" y2="144.17"></line>\n    <polygon class="cls-2" points="14.88 32.99 75.13 65.11 91.03 23 34.03 0.67 14.88 32.99"></polygon>\n    <polygon class="cls-2" points="164.63 32.99 104.38 65.11 87.03 22.67 145.7 0 164.63 32.99"></polygon>\n    <circle class="cls-3" cx="29.6" cy="32.72" r="2.11"></circle>\n    <circle class="cls-3" cx="39.03" cy="11.33" r="2.11"></circle>\n    <circle class="cls-3" cx="38.7" cy="23" r="2.11"></circle>\n    <circle class="cls-3" cx="56.03" cy="20" r="2.11"></circle>\n    <circle class="cls-3" cx="139.7" cy="11" r="2.11"></circle>\n    <circle class="cls-3" cx="129.7" cy="21.67" r="2.11"></circle>\n    <circle class="cls-3" cx="104.03" cy="23.33" r="2.11"></circle>\n    <circle class="cls-3" cx="42.96" cy="39.17" r="2.11"></circle>\n    <circle class="cls-3" cx="55.09" cy="33.56" r="2.11"></circle>\n    <circle class="cls-3" cx="72.48" cy="34.57" r="2.11"></circle>\n    <circle class="cls-3" cx="113.39" cy="53.07" r="2.11"></circle>\n    <circle class="cls-3" cx="105.16" cy="38.35" r="2.11"></circle>\n    <circle class="cls-3" cx="89.72" cy="35.82" r="7.34" transform="translate(0.95 73.93) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.55" cy="33.66" r="1.28" transform="translate(1.84 71.76) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.72" cy="37.83" r="1.28" transform="translate(0.12 75.93) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.72" cy="33.66" r="1.28" transform="translate(3.06 74.71) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.55" cy="37.83" r="1.28" transform="translate(-1.1 72.98) rotate(-45)"></circle>\n    <circle class="cls-3" cx="89.72" cy="63.1" r="7.34" transform="translate(-18.34 81.92) rotate(-45)"></circle>\n    <circle class="cls-3" cx="113.13" cy="31.4" r="2.11"></circle>\n    <circle class="cls-3" cx="123.68" cy="35.52" r="2.11"></circle>\n    <circle class="cls-3" cx="137.32" cy="30.37" r="2.11"></circle>\n    <circle class="cls-3" cx="148.85" cy="34.23" r="2.11"></circle>\n    <circle class="cls-3" cx="126.26" cy="48.13" r="2.11"></circle>\n    <circle class="cls-3" cx="60.12" cy="43.67" r="2.11"></circle>\n    <circle class="cls-3" cx="69.22" cy="53.62" r="2.11"></circle>\n    <circle class="cls-1" cx="87.55" cy="60.94" r="1.28" transform="translate(-17.45 79.75) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.71" cy="65.11" r="1.28" transform="translate(-19.17 83.92) rotate(-45)"></circle>\n    <circle class="cls-1" cx="91.71" cy="60.94" r="1.28" transform="translate(-16.23 82.7) rotate(-45)"></circle>\n    <circle class="cls-1" cx="87.55" cy="65.11" r="1.28" transform="translate(-20.39 80.97) rotate(-45)"></circle>\n    <line class="cls-4" x1="87.55" y1="33.66" x2="91.72" y2="37.83"></line>\n    <line class="cls-4" x1="91.72" y1="33.66" x2="87.55" y2="37.83"></line>\n    <line class="cls-4" x1="87.55" y1="60.93" x2="91.72" y2="65.1"></line>\n    <line class="cls-4" x1="91.72" y1="60.93" x2="87.55" y2="65.1"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="dress--alien" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.91 156.21">\n    <path class="cls-1" d="M129.91,35a35.12,35.12,0,0,0,-35,-35h-59.91a35.12,35.12,0,0,0,-35,35l0.57,120.88l130.33,0.33z"></path>\n    <polygon class="cls-2" points="10.17 5.87 54.25 29.37 67.16 0 20.45 0 10.17 5.87"></polygon>\n    <polygon class="cls-2" points="119.74 5.87 75.65 29.37 62.74 0 109.45 0 119.74 5.87"></polygon>\n    <circle class="cls-3" cx="20.95" cy="5.67" r="1.54"></circle>\n    <circle class="cls-3" cx="28.1" cy="4.78" r="1.54"></circle>\n    <circle class="cls-3" cx="30.72" cy="10.39" r="1.54"></circle>\n    <circle class="cls-3" cx="39.59" cy="6.29" r="1.54"></circle>\n    <circle class="cls-3" cx="52.31" cy="7.03" r="1.54"></circle>\n    <circle class="cls-3" cx="82.25" cy="20.56" r="1.54"></circle>\n    <circle class="cls-3" cx="76.22" cy="9.79" r="1.54"></circle>\n    <circle class="cls-3" cx="64.93" cy="7.94" r="5.37" transform="translate(13.4 48.24) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.34" cy="6.36" r="0.93" transform="translate(14.06 46.65) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.39" cy="9.41" r="0.93" transform="translate(12.79 49.7) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.39" cy="6.36" r="0.93" transform="translate(14.95 48.81) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.34" cy="9.41" r="0.93" transform="translate(11.9 47.54) rotate(-45)"></circle>\n    <circle class="cls-3" cx="64.93" cy="27.9" r="5.37" transform="translate(-0.71 54.08) rotate(-45)"></circle>\n    <circle class="cls-3" cx="64.93" cy="47.86" r="5.37" transform="translate(-14.83 59.93) rotate(-45)"></circle>\n    <circle class="cls-3" cx="82.06" cy="4.71" r="1.54"></circle>\n    <circle class="cls-3" cx="89.78" cy="7.72" r="1.54"></circle>\n    <circle class="cls-3" cx="99.76" cy="3.95" r="1.54"></circle>\n    <circle class="cls-3" cx="108.19" cy="6.78" r="1.54"></circle>\n    <circle class="cls-3" cx="91.66" cy="16.94" r="1.54"></circle>\n    <circle class="cls-3" cx="43.27" cy="13.68" r="1.54"></circle>\n    <circle class="cls-3" cx="49.93" cy="20.96" r="1.54"></circle>\n    <circle class="cls-1" cx="63.34" cy="26.32" r="0.93" transform="translate(-0.06 52.5) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.39" cy="29.37" r="0.93" transform="translate(-1.32 55.54) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.39" cy="26.32" r="0.93" transform="translate(0.83 54.65) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.34" cy="29.37" r="0.93" transform="translate(-2.21 53.39) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.38" cy="46.23" r="0.93" transform="translate(-14.13 58.36) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.43" cy="49.28" r="0.93" transform="translate(-15.39 61.41) rotate(-45)"></circle>\n    <circle class="cls-1" cx="66.43" cy="46.23" r="0.93" transform="translate(-13.23 60.52) rotate(-45)"></circle>\n    <circle class="cls-1" cx="63.38" cy="49.28" r="0.93" transform="translate(-16.28 59.25) rotate(-45)"></circle>\n    <line class="cls-4" x1="63.34" y1="6.36" x2="66.39" y2="9.41"></line>\n    <line class="cls-4" x1="66.39" y1="6.36" x2="63.34" y2="9.41"></line>\n    <line class="cls-4" x1="63.34" y1="26.32" x2="66.39" y2="29.37"></line>\n    <line class="cls-4" x1="66.39" y1="26.32" x2="63.34" y2="29.37"></line>\n    <line class="cls-4" x1="63.3" y1="46.31" x2="66.35" y2="49.36"></line>\n    <line class="cls-4" x1="66.35" y1="46.31" x2="63.3" y2="49.36"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="dress--vampire" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 137.5 139.59">\n    <path class="cls-3" d="M137.5,37.22a37.07,37.07,0,0,0-37-37H37.35a37.07,37.07,0,0,0-37,37Q.2,88.54,0,139.85H137.25Q137.38,88.53,137.5,37.22Z" transform="translate(0 -0.26)"/>\n    <polygon class="cls-4" points="11.12 6.2 57.65 31 71.28 0 21.98 0 11.12 6.2"/>\n    <polygon class="cls-4" points="126.77 6.2 80.24 31 66.61 0 115.91 0 126.77 6.2"/>\n    <circle class="cls-5" cx="22.5" cy="5.98" r="1.63"/>\n    <circle class="cls-5" cx="30.05" cy="5.05" r="1.63"/>\n    <circle class="cls-5" cx="32.81" cy="10.97" r="1.63"/>\n    <circle class="cls-5" cx="42.18" cy="6.63" r="1.63"/>\n    <circle class="cls-5" cx="49.62" cy="8.73" r="1.63"/>\n    <circle class="cls-5" cx="87.2" cy="21.7" r="1.63"/>\n    <circle class="cls-5" cx="91.5" cy="3.86" r="1.63"/>\n    <circle class="cls-5" cx="68.92" cy="29.71" r="5.67" transform="translate(-0.82 57.18) rotate(-45)"/>\n    <circle class="cls-5" cx="68.92" cy="50.77" r="5.67" transform="translate(-15.71 63.35) rotate(-45)"/>\n    <circle class="cls-5" cx="88.13" cy="10.86" r="1.63"/>\n    <circle class="cls-5" cx="98" cy="9.23" r="1.63"/>\n    <circle class="cls-5" cx="105.68" cy="4.17" r="1.63"/>\n    <circle class="cls-5" cx="114.58" cy="7.15" r="1.63"/>\n    <circle class="cls-5" cx="97.13" cy="17.88" r="1.63"/>\n    <circle class="cls-5" cx="46.07" cy="14.44" r="1.63"/>\n    <circle class="cls-5" cx="53.09" cy="22.12" r="1.63"/>\n    <circle class="cls-3" cx="67.24" cy="28.03" r="0.99" transform="translate(-0.13 55.5) rotate(-45)"/>\n    <circle class="cls-3" cx="70.46" cy="31.25" r="0.99" transform="translate(-1.46 58.72) rotate(-45)"/>\n    <circle class="cls-3" cx="70.46" cy="28.03" r="0.99" transform="translate(0.81 57.78) rotate(-45)"/>\n    <circle class="cls-3" cx="67.24" cy="31.25" r="0.99" transform="translate(-2.4 56.44) rotate(-45)"/>\n    <circle class="cls-3" cx="67.29" cy="49.05" r="0.99" transform="translate(-14.97 61.69) rotate(-45)"/>\n    <circle class="cls-3" cx="70.51" cy="52.27" r="0.99" transform="translate(-16.31 64.91) rotate(-45)"/>\n    <circle class="cls-3" cx="70.51" cy="49.05" r="0.99" transform="translate(-14.03 63.97) rotate(-45)"/>\n    <circle class="cls-3" cx="67.29" cy="52.27" r="0.99" transform="translate(-17.25 62.63) rotate(-45)"/>\n    <line class="cls-6" x1="67.24" y1="27.77" x2="70.46" y2="30.99"/>\n    <line class="cls-6" x1="70.46" y1="27.77" x2="67.24" y2="30.99"/>\n    <line class="cls-6" x1="67.2" y1="48.88" x2="70.42" y2="52.1"/>\n    <line class="cls-6" x1="70.42" y1="48.88" x2="67.2" y2="52.1"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="dress--yeti" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 296.14 215.33">\n    <path class="cls-3" d="M296.14,107.39a80,80,0,0,0,-79.74,-79.74h-136.34a80,80,0,0,0,-79.74,79.74q-0.16,62.72,-0.32,125.43l295.33,2z" transform="translate(0 -19.49)"></path>\n    <polygon class="cls-4" points="20 16.67 62 132 153.26 59.48 54 0 20 16.67"></polygon>\n    <polygon class="cls-4" points="269.33 14 230 130.67 143.19 59.48 239.33 1.33 269.33 14"></polygon>\n    <circle class="cls-5" cx="47.33" cy="66.33" r="3.51"></circle>\n    <circle class="cls-5" cx="35.33" cy="37.83" r="3.51"></circle>\n    <circle class="cls-5" cx="57.33" cy="76.83" r="3.51"></circle>\n    <circle class="cls-5" cx="63.82" cy="95.83" r="3.51"></circle>\n    <circle class="cls-5" cx="65.33" cy="114.33" r="3.51"></circle>\n    <circle class="cls-5" cx="225.33" cy="114.82" r="3.51"></circle>\n    <circle class="cls-5" cx="148.17" cy="140.51" r="10.42" transform="translate(-55.96 126.43) rotate(-45)"></circle>\n    <circle class="cls-5" cx="148.17" cy="187.96" r="12.23" transform="translate(-89.51 140.33) rotate(-45)"></circle>\n    <circle class="cls-5" cx="247.32" cy="51.33" r="3.51"></circle>\n    <circle class="cls-5" cx="232.33" cy="76.32" r="3.51"></circle>\n    <circle class="cls-5" cx="228.33" cy="97.83" r="3.51"></circle>\n    <circle class="cls-5" cx="211.82" cy="98.83" r="3.51"></circle>\n    <circle class="cls-5" cx="78.33" cy="106.83" r="3.51"></circle>\n    <circle class="cls-3" cx="145.09" cy="137.43" r="1.81" transform="translate(-54.69 123.35) rotate(-45)"></circle>\n    <circle class="cls-3" cx="151" cy="143.35" r="1.81" transform="translate(-57.14 129.27) rotate(-45)"></circle>\n    <circle class="cls-3" cx="151" cy="137.43" r="1.81" transform="translate(-52.95 127.54) rotate(-45)"></circle>\n    <circle class="cls-3" cx="145.09" cy="143.35" r="1.81" transform="translate(-58.87 125.09) rotate(-45)"></circle>\n    <circle class="cls-3" cx="144.66" cy="184.25" r="2.13" transform="translate(-87.91 136.76) rotate(-45)"></circle>\n    <circle class="cls-3" cx="151.6" cy="191.19" r="2.13" transform="translate(-90.79 143.7) rotate(-45)"></circle>\n    <circle class="cls-3" cx="151.6" cy="184.25" r="2.13" transform="translate(-85.88 141.67) rotate(-45)"></circle>\n    <circle class="cls-3" cx="144.66" cy="191.19" r="2.13" transform="translate(-92.82 138.79) rotate(-45)"></circle>\n    <line class="cls-6" x1="145.09" y1="117.94" x2="151.01" y2="123.85"></line>\n    <line class="cls-6" x1="151.01" y1="117.94" x2="145.09" y2="123.85"></line>\n    <line class="cls-6" x1="144.47" y1="164.94" x2="151.41" y2="171.88"></line>\n    <line class="cls-6" x1="151.41" y1="164.94" x2="144.47" y2="171.88"></line>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="dress--bed" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 159.49 27.64">\n    <path class="cls-1" d="M2.39,26.77,26.51,1.33l132.94.29,0,25.83Z"/>\n    <polygon class="cls-2" points="0 27.64 18.54 23.24 14.82 11.58 1.46 23.36 0 27.64"/>\n    <polygon class="cls-2" points="31.34 0 24.66 17.84 13.56 12.7 26.92 0.91 31.34 0"/>\n    <circle class="cls-3" cx="3.03" cy="24.86" r="0.59" transform="translate(-15.68 8.22) rotate(-41.41)"/>\n    <circle class="cls-3" cx="4.85" cy="22.8" r="0.59" transform="translate(-13.87 8.91) rotate(-41.41)"/>\n    <circle class="cls-3" cx="7.02" cy="23.75" r="0.59" transform="translate(-13.95 10.58) rotate(-41.41)"/>\n    <circle class="cls-3" cx="8.52" cy="20.33" r="0.59" transform="translate(-11.32 10.72) rotate(-41.41)"/>\n    <circle class="cls-3" cx="12.35" cy="17.34" r="0.59" transform="translate(-8.38 12.5) rotate(-41.41)"/>\n    <circle class="cls-3" cx="24.32" cy="13.66" r="0.59" transform="translate(-2.95 19.5) rotate(-41.41)"/>\n    <circle class="cls-3" cx="19.88" cy="12.1" r="0.59" transform="translate(-3.03 16.17) rotate(-41.41)"/>\n    <circle class="cls-3" cx="16.18" cy="14.42" r="2.05" transform="translate(0.78 29.67) rotate(-86.41)"/>\n    <circle class="cls-1" cx="15.33" cy="14.36" r="0.36" transform="matrix(0.06, -1, 1, 0.06, 0.03, 28.76)"/>\n    <circle class="cls-1" cx="16.97" cy="14.47" r="0.36" transform="translate(1.47 30.5) rotate(-86.41)"/>\n    <circle class="cls-1" cx="16.2" cy="13.59" r="0.36" transform="translate(1.62 28.91) rotate(-86.41)"/>\n    <circle class="cls-1" cx="16.1" cy="15.24" r="0.36" transform="translate(-0.12 30.35) rotate(-86.41)"/>\n    <circle class="cls-3" cx="20.27" cy="9.17" r="0.59" transform="translate(-1 15.7) rotate(-41.41)"/>\n    <circle class="cls-3" cx="23.24" cy="8.08" r="0.59" transform="translate(0.46 17.39) rotate(-41.41)"/>\n    <circle class="cls-3" cx="25.14" cy="4.49" r="0.59" transform="translate(3.31 17.75) rotate(-41.41)"/>\n    <circle class="cls-3" cx="28.27" cy="3.17" r="0.59" transform="translate(4.97 19.49) rotate(-41.41)"/>\n    <circle class="cls-3" cx="26.1" cy="10.25" r="0.59" transform="translate(-0.25 19.83) rotate(-41.41)"/>\n    <circle class="cls-3" cx="11.44" cy="21.52" r="0.59" transform="translate(-11.37 12.94) rotate(-41.41)"/>\n    <circle class="cls-3" cx="15.18" cy="21.92" r="0.59" transform="translate(-10.71 15.52) rotate(-41.41)"/>\n    <line class="cls-4" x1="15.33" y1="14.36" x2="16.97" y2="14.47"/>\n    <line class="cls-4" x1="16.2" y1="13.59" x2="16.1" y2="15.24"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/dress/dress.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], DressComponent);
-    return DressComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=dress.js.map
-
-/***/ }),
-/* 187 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BraComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var BraComponent = /** @class */ (function (_super) {
-    __extends(BraComponent, _super);
-    function BraComponent(element) {
-        return _super.call(this, 'bra', element.nativeElement) || this;
-    }
-    BraComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'bra',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="bra" width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.76 152.07">\n      <rect class="cls-1" y="91.44" width="276.76" height="16.33"></rect>\n      <rect class="cls-1" x="60.01" width="18.78" height="100.42"></rect>\n      <rect class="cls-1" x="197.98" width="18.78" height="100.42"></rect>\n      <path class="cls-1" d="M136.34,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-1" d="M237.2,103.68a48.39,48.39,0,0,1,-96.77,0"></path>\n      <path class="cls-2" d="M57.43,118.43l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.56,4.96z"></path>\n      <path class="cls-2" d="M78.67,143.75l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M103.57,120.07l-9.57,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M157.47,116.39l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M173.81,142.93l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M189.73,116l-9.56,-12.31a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n      <path class="cls-2" d="M210.56,135.58l-9.56,-12.3a4.95,4.95,0,1,1,8.57,-4.95l1,1.72l1,-1.72a4.95,4.95,0,1,1,8.57,4.95z"></path>\n</svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.64 71.08">\n      <polygon class="cls-1" points="160.64 50.37 0 50.37 4 42.74 160.64 42.74 160.64 50.37"/>\n      <rect class="cls-1" x="24.84" width="8.78" height="46.94"/>\n      <rect class="cls-1" x="89.33" width="8.78" height="46.94"/>\n      <path class="cls-1" d="M60.52,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-1" d="M107.66,48.46a22.62,22.62,0,0,1-45.24,0"/>\n      <path class="cls-2" d="M23.64,55.36l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M33.56,67.19l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M45.2,56.12l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M70.4,54.41l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M78,66.81l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M85.48,54.22,81,48.46a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n      <path class="cls-2" d="M95.21,63.38l-4.47-5.75a2.31,2.31,0,1,1,4-2.31l.46.8.46-.8a2.31,2.31,0,1,1,4,2.31Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.67 29.48">\n      <polygon class="cls-1" points="102.67 16.91 0 16.91 9.67 12.28 92.67 12.28 102.67 16.91"/>\n      <polygon class="cls-1" points="34.69 14.83 29.36 14.83 29.36 1 34.69 0.33 34.69 14.83"/>\n      <polygon class="cls-1" points="73.81 14.83 68.49 14.83 68.49 0 73.81 1 73.81 14.83"/>\n      <path class="cls-1" d="M51,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-1" d="M79.61,15.75a13.72,13.72,0,1,1-27.44,0"/>\n      <path class="cls-2" d="M28.63,19.94l-2.71-3.49A1.4,1.4,0,1,1,28.35,15l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M34.65,27.12l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M41.72,20.4,39,16.91a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M57,19.36l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4L57,15l.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M61.63,26.89,58.92,23.4A1.4,1.4,0,1,1,61.35,22l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M66.15,19.24l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n      <path class="cls-2" d="M72.06,24.8l-2.71-3.49a1.4,1.4,0,1,1,2.43-1.4l.28.49.28-.49a1.4,1.4,0,1,1,2.43,1.4Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.55 79.39">\n    <rect class="cls-1" y="62.4" width="109.55" height="4.57"/>\n    <polygon class="cls-1" points="54.08 64.92 48.82 64.92 48.82 0 54.08 9.5 54.08 64.92"/>\n    <rect class="cls-1" x="87.48" y="36.78" width="5.26" height="28.13"/>\n    <path class="cls-1" d="M70.21,65.83a13.56,13.56,0,1,1-27.11,0"/>\n    <path class="cls-1" d="M98.46,65.83a13.56,13.56,0,0,1-27.11,0"/>\n    <path class="cls-2" d="M48.1,70l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M54,77.06l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M61,70.42,58.35,67a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48A1.39,1.39,0,1,1,63.71,67Z"/>\n    <path class="cls-2" d="M76.13,69.39l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M80.7,76.83,78,73.38A1.39,1.39,0,1,1,80.43,72l.28.48L81,72a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M85.17,69.28l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n    <path class="cls-2" d="M91,74.77l-2.68-3.45a1.39,1.39,0,1,1,2.4-1.39l.28.48.28-.48a1.39,1.39,0,1,1,2.4,1.39Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.3 36.88">\n    <rect class="cls-1" y="21.04" width="72.3" height="4.27"/>\n    <polygon class="cls-1" points="20.58 23.39 15.68 23.39 15.68 0 20.58 6.33 20.58 23.39"/>\n    <polygon class="cls-1" points="56.62 23.39 51.72 23.39 51.72 6.83 56.62 0.67 56.62 23.39"/>\n    <path class="cls-1" d="M35.62,24.24a12.64,12.64,0,1,1-25.28,0"/>\n    <path class="cls-1" d="M62,24.24a12.64,12.64,0,1,1-25.28,0"/>\n    <path class="cls-2" d="M15,28.09l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29L15,24l.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M20.55,34.71l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45A1.29,1.29,0,1,1,23,31.49Z"/>\n    <path class="cls-2" d="M27.06,28.52l-2.5-3.22A1.29,1.29,0,1,1,26.8,24l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M41.14,27.56l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M45.4,34.49l-2.5-3.22A1.29,1.29,0,1,1,45.14,30l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M49.56,27.45l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n    <path class="cls-2" d="M55,32.57l-2.5-3.22a1.29,1.29,0,1,1,2.24-1.29l.26.45.26-.45a1.29,1.29,0,1,1,2.24,1.29Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.67 144.21">\n    <polygon class="cls-1" points="121.67 42.83 0 42.83 5.67 33.24 116 33.24 121.67 42.83"/>\n    <polygon class="cls-1" points="26.13 38.52 15.11 38.52 15.11 0.33 26.13 6 26.13 38.52"/>\n    <polygon class="cls-1" points="107.15 38.52 96.12 38.52 96.12 6.33 107.15 0 107.15 38.52"/>\n    <path class="cls-1" d="M59.93,40.43a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-1" d="M119.15,40.43a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-2" d="M13.59,49.1,8,41.87A2.91,2.91,0,1,1,13,39l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M26.06,64l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M40.69,50.06l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M72.34,47.9l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M81.93,63.48l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M91.28,47.66l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M103.51,59.17l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <rect class="cls-1" x="2.88" y="108.61" width="116.88" height="9.59"/>\n    <polygon class="cls-1" points="26.13 113.88 15.11 113.88 15.11 79.35 26.13 85.98 26.13 113.88"/>\n    <polygon class="cls-1" points="107.15 113.88 96.12 113.88 96.12 85.59 107.15 79.74 107.15 113.88"/>\n    <path class="cls-1" d="M59.93,115.79a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-1" d="M119.15,115.79a28.41,28.41,0,0,1-56.82,0"/>\n    <path class="cls-2" d="M13.59,124.46,8,117.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M26.06,139.32l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M40.69,125.42l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M72.34,123.26,66.72,116a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1A2.91,2.91,0,1,1,78,116Z"/>\n    <path class="cls-2" d="M81.93,138.84l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M91.28,123l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M103.51,134.53l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.13 58.25">\n    <polygon class="cls-1" points="79.13 44.12 0 44.12 1.5 38.91 77.38 38.91 79.13 44.12"/>\n    <polygon class="cls-1" points="20.45 41.77 14.46 41.77 14.46 8.38 20.63 0 20.45 41.77"/>\n    <polygon class="cls-1" points="64.48 41.77 58.49 41.77 58.49 0 64.48 7.75 64.48 41.77"/>\n    <path class="cls-1" d="M38.82,42.81a15.44,15.44,0,1,1-30.88,0"/>\n    <path class="cls-1" d="M71,42.81a15.44,15.44,0,1,1-30.88,0"/>\n    <path class="cls-2" d="M13.64,47.52l-3.05-3.93A1.58,1.58,0,1,1,13.32,42l.32.55L14,42a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M20.42,55.6l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M28.36,48l-3.05-3.93A1.58,1.58,0,1,1,28,42.53l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M45.56,46.87l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M50.77,55.34l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M55.85,46.74,52.8,42.81a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n    <path class="cls-2" d="M62.5,53l-3.05-3.93a1.58,1.58,0,1,1,2.73-1.58l.32.55.32-.55a1.58,1.58,0,1,1,2.73,1.58Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.87 45.46">\n    <rect class="cls-1" y="23.72" width="70.87" height="5.85"/>\n    <polygon class="cls-1" points="14.07 26.94 7.34 26.94 7.34 7 14.07 0 14.07 26.94"/>\n    <polygon class="cls-1" points="63.54 26.94 56.81 26.94 56.81 0.67 63.54 6.67 63.54 26.94"/>\n    <path class="cls-1" d="M34.71,28.11A17.35,17.35,0,1,1,0,28.11"/>\n    <path class="cls-1" d="M70.87,28.11a17.35,17.35,0,1,1-34.69,0"/>\n    <path class="cls-2" d="M6.42,33.4,3,29a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62A1.77,1.77,0,1,1,9.85,29Z"/>\n    <path class="cls-2" d="M14,42.48,10.6,38.06a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M23,34l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M42.28,32.67l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M48.14,42.18l-3.43-4.41A1.77,1.77,0,1,1,47.78,36l.36.62L48.5,36a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M53.85,32.52l-3.43-4.41a1.77,1.77,0,1,1,3.07-1.77l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n    <path class="cls-2" d="M61.32,39.55l-3.43-4.41A1.77,1.77,0,1,1,61,33.36l.36.62.36-.62a1.77,1.77,0,1,1,3.07,1.77Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332.83 137.75">\n    <path class="cls-1" d="M332.83,111.74,0,112l1.77-9.69,329.33-.08Z"/>\n    <polygon class="cls-1" points="158.35 107.43 147.33 107.43 67.84 4.67 75.53 0 158.35 107.43"/>\n    <polygon class="cls-1" points="239.37 107.43 228.34 107.43 292.5 28.33 298.2 35 239.37 107.43"/>\n    <path class="cls-1" d="M192.15,109.34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-1" d="M251.37,109.34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-2" d="M145.81,118l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M158.28,132.87l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M172.91,119l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M204.56,116.81l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M214.15,132.39l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M223.5,116.57l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M235.73,128.08l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 144.43">\n    <polygon class="cls-1" points="220 122.09 0 122.09 2 113.85 218.83 113.67 220 122.09"/>\n    <polygon class="cls-1" points="200.24 118.38 190.76 118.38 190.76 0 200.24 30 200.24 118.38"/>\n    <polygon class="cls-1" points="27.96 118.38 18.49 118.38 18.49 36.5 27.96 5.17 27.96 118.38"/>\n    <path class="cls-1" d="M110,120a24.4,24.4,0,0,1-48.8,0"/>\n    <path class="cls-1" d="M160.85,120a24.4,24.4,0,0,1-48.8,0"/>\n    <path class="cls-2" d="M70.19,127.47l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M80.9,140.23,76.08,134a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M93.46,128.29l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M120.64,126.44l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M128.88,139.82l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M136.91,126.23,132.09,120a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n    <path class="cls-2" d="M147.41,136.12l-4.82-6.21a2.5,2.5,0,1,1,4.32-2.5l.5.87.5-.87a2.5,2.5,0,1,1,4.32,2.5Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 62.44">\n    <rect class="cls-1" y="26.84" width="174" height="9.59"/>\n    <polygon class="cls-1" points="70.85 32.11 59.83 32.11 12.97 0 24 0 70.85 32.11"/>\n    <polygon class="cls-1" points="151.87 32.11 140.84 32.11 173.97 3.5 173.5 13.5 151.87 32.11"/>\n    <path class="cls-1" d="M104.65,34a28.41,28.41,0,1,1-56.82,0"/>\n    <path class="cls-1" d="M163.87,34A28.41,28.41,0,1,1,107,34"/>\n    <path class="cls-2" d="M58.32,42.69,52.7,35.46a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M70.78,57.55l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M85.41,43.65l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M117.06,41.49l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M126.65,57.07,121,49.85a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M136,41.25,130.38,34a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n    <path class="cls-2" d="M148.23,52.76l-5.62-7.23a2.91,2.91,0,1,1,5-2.91l.58,1,.58-1a2.91,2.91,0,1,1,5,2.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="bra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.47 35.97">\n    <rect class="cls-1" y="21.63" width="65.47" height="3.86"/>\n    <rect class="cls-1" x="14.2" width="4.44" height="23.76"/>\n    <rect class="cls-1" x="46.84" width="4.44" height="23.76"/>\n    <path class="cls-1" d="M32.25,24.53a11.45,11.45,0,1,1-22.89,0"/>\n    <path class="cls-1" d="M56.11,24.53a11.45,11.45,0,0,1-22.89,0"/>\n    <path class="cls-2" d="M13.59,28l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M18.61,34l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M24.5,28.4l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M37.25,27.53,35,24.62a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M41.12,33.81,38.85,30.9a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M44.88,27.44l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41.23-.41a1.17,1.17,0,1,1,2,1.17Z"/>\n    <path class="cls-2" d="M49.81,32.07l-2.26-2.91a1.17,1.17,0,1,1,2-1.17l.23.41L50,28a1.17,1.17,0,1,1,2,1.17Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/bra/bra.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], BraComponent);
-    return BraComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=bra.js.map
-
-/***/ }),
-/* 188 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WigComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var WigComponent = /** @class */ (function (_super) {
-    __extends(WigComponent, _super);
-    function WigComponent(element) {
-        return _super.call(this, 'wig', element.nativeElement) || this;
-    }
-    WigComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'wig',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/wig/wig.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="wig" width="120" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.69 170.82">\n         <circle class="cls-1" cx="16.76" cy="65.74" r="13.24"/>\n         <circle class="cls-1" cx="91.76" cy="13.24" r="13.24"/>\n         <circle class="cls-1" cx="91.26" cy="31.74" r="13.24"/>\n         <circle class="cls-1" cx="108.76" cy="43.74" r="13.24"/>\n         <circle class="cls-1" cx="40.59" cy="20.57" r="15.26"/>\n         <circle class="cls-1" cx="20" cy="42.5" r="20"/>\n         <circle class="cls-1" cx="64.5" cy="21" r="20"/>\n         <circle class="cls-1" cx="116.5" cy="21.5" r="20"/>\n         <circle class="cls-1" cx="150.5" cy="45" r="20"/>\n         <circle class="cls-1" cx="129" cy="46" r="20"/>\n         <circle class="cls-1" cx="45.64" cy="39.34" r="12.03"/>\n         <circle class="cls-1" cx="143.64" cy="25.34" r="12.03"/>\n         <circle class="cls-1" cx="145.14" cy="37.84" r="12.03"/>\n         <circle class="cls-1" cx="149.14" cy="49.34" r="12.03"/>\n         <circle class="cls-1" cx="145.5" cy="63" r="12.03"/>\n         <circle class="cls-1" cx="159.36" cy="67.36" r="10.06"/>\n         <circle class="cls-1" cx="159.06" cy="82.06" r="7.61"/>\n         <circle class="cls-1" cx="160.5" cy="94" r="7.61"/>\n         <circle class="cls-1" cx="13" cy="100.5" r="5.22"/>\n         <circle class="cls-1" cx="13" cy="110.28" r="5.22"/>\n         <circle class="cls-1" cx="13" cy="118.86" r="5.22"/>\n         <circle class="cls-1" cx="161" cy="108.19" r="5.22"/>\n         <circle class="cls-1" cx="161" cy="117.43" r="5.22"/>\n         <ellipse class="cls-1" cx="161.1" cy="136.43" rx="5.32" ry="15.13"/>\n         <circle class="cls-1" cx="13.48" cy="84.45" r="8.89"/>\n         <polygon class="cls-2" points="16.48 96.46 3.48 101.17 3.48 88.17 16.48 92.88 16.48 96.46"/>\n         <polygon class="cls-2" points="9.69 92.88 22.69 88.17 22.69 101.17 9.69 96.46 9.69 92.88"/>\n         <polygon class="cls-2" points="164 102.74 151 107.46 151 94.46 164 99.17 164 102.74"/>\n         <polygon class="cls-2" points="157.21 99.17 170.21 94.46 170.21 107.46 157.21 102.74 157.21 99.17"/>\n         <path class="cls-1" d="M13,127.16c-10.58,0-6.43,17.89,0,24.32C19.45,145.05,24.07,127.16,13,127.16Z"/>\n         <polygon class="cls-2" points="16.48 128.46 3.48 133.17 3.48 120.17 16.48 124.88 16.48 128.46"/>\n         <polygon class="cls-2" points="9.69 124.88 22.69 120.17 22.69 133.17 9.69 128.46 9.69 124.88"/>\n         <path class="cls-1" d="M161,146.49c-10.58,0-6.43,17.89,0,24.32C167.45,164.38,172.07,146.49,161,146.49Z"/>\n         <polygon class="cls-2" points="164.48 147.79 151.48 152.5 151.48 139.5 164.48 144.21 164.48 147.79"/>\n         <polygon class="cls-2" points="157.69 144.21 170.69 139.5 170.69 152.5 157.69 147.79 157.69 144.21"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="wig--color--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.71 203.3">\n   <circle class="cls-1" cx="15.83" cy="78.62" r="15.83"/>\n   <circle class="cls-1" cx="112.54" cy="15.83" r="15.83"/>\n   <circle class="cls-1" cx="111.94" cy="37.96" r="15.83"/>\n   <circle class="cls-1" cx="132.87" cy="52.31" r="15.83"/>\n   <circle class="cls-1" cx="51.34" cy="24.61" r="18.25"/>\n   <circle class="cls-1" cx="26.71" cy="50.83" r="23.92"/>\n   <circle class="cls-1" cx="79.94" cy="25.12" r="23.92"/>\n   <circle class="cls-1" cx="142.13" cy="25.71" r="23.92"/>\n   <circle class="cls-1" cx="182.79" cy="53.82" r="23.92"/>\n   <circle class="cls-1" cx="155.07" cy="60.02" r="23.92"/>\n   <circle class="cls-1" cx="57.38" cy="47.06" r="14.38"/>\n   <circle class="cls-1" cx="174.59" cy="30.31" r="14.38"/>\n   <circle class="cls-1" cx="176.38" cy="45.26" r="14.38"/>\n   <circle class="cls-1" cx="181.17" cy="59.02" r="14.38"/>\n   <circle class="cls-1" cx="176.81" cy="75.35" r="14.38"/>\n   <circle class="cls-1" cx="193.38" cy="80.56" r="12.03"/>\n   <circle class="cls-1" cx="183.02" cy="97.14" r="9.11"/>\n   <circle class="cls-1" cx="184.75" cy="111.42" r="9.11"/>\n   <circle class="cls-1" cx="185.34" cy="128.39" r="6.24"/>\n   <circle class="cls-1" cx="185.34" cy="139.44" r="6.24"/>\n   <ellipse class="cls-1" cx="185.46" cy="162.17" rx="6.36" ry="18.09"/>\n   <circle class="cls-1" cx="16.92" cy="101" r="10.64"/>\n   <polygon class="cls-2" points="188.93 121.88 173.38 127.52 173.38 111.97 188.93 117.6 188.93 121.88"/>\n   <polygon class="cls-2" points="180.8 117.6 196.35 111.97 196.35 127.52 180.8 121.88 180.8 117.6"/>\n   <path class="cls-1" d="M185.37,174.2c-12.65,0-7.69,21.4,0,29.09C193.06,195.6,198.58,174.2,185.37,174.2Z"/>\n   <polygon class="cls-2" points="189.51 175.76 173.96 181.39 173.96 165.84 189.51 171.48 189.51 175.76"/>\n   <polygon class="cls-2" points="181.38 171.48 196.93 165.84 196.93 181.39 181.38 175.76 181.38 171.48"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="wig--color--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.31 256.13">\n   <circle class="cls-1" cx="16.76" cy="65.74" r="13.24"/>\n   <circle class="cls-1" cx="91.76" cy="13.24" r="13.24"/>\n   <circle class="cls-1" cx="91.26" cy="31.74" r="13.24"/>\n   <circle class="cls-1" cx="108.76" cy="43.74" r="13.24"/>\n   <circle class="cls-1" cx="40.59" cy="20.57" r="15.26"/>\n   <circle class="cls-1" cx="20" cy="42.5" r="20"/>\n   <circle class="cls-1" cx="64.5" cy="21" r="20"/>\n   <circle class="cls-1" cx="116.5" cy="21.5" r="20"/>\n   <circle class="cls-1" cx="150.5" cy="45" r="20"/>\n   <circle class="cls-1" cx="129" cy="46" r="20"/>\n   <circle class="cls-1" cx="45.64" cy="39.34" r="12.03"/>\n   <circle class="cls-1" cx="143.64" cy="25.34" r="12.03"/>\n   <circle class="cls-1" cx="145.14" cy="37.84" r="12.03"/>\n   <circle class="cls-1" cx="149.14" cy="49.34" r="12.03"/>\n   <circle class="cls-1" cx="145.5" cy="63" r="12.03"/>\n   <circle class="cls-1" cx="159.36" cy="67.36" r="10.06"/>\n   <circle class="cls-1" cx="155.98" cy="85.64" r="14.63"/>\n   <circle class="cls-1" cx="158.75" cy="108.57" r="14.63"/>\n   <circle class="cls-1" cx="13" cy="100.5" r="5.22"/>\n   <circle class="cls-1" cx="13" cy="110.28" r="5.22"/>\n   <circle class="cls-1" cx="13" cy="118.86" r="5.22"/>\n   <circle class="cls-1" cx="159.71" cy="135.83" r="10.03"/>\n   <circle class="cls-1" cx="159.71" cy="153.58" r="10.03"/>\n   <ellipse class="cls-1" cx="159.9" cy="190.08" rx="10.22" ry="29.06"/>\n   <circle class="cls-1" cx="13.48" cy="84.45" r="8.89"/>\n   <polygon class="cls-2" points="16.48 96.46 3.48 101.17 3.48 88.17 16.48 92.88 16.48 96.46"/>\n   <polygon class="cls-2" points="9.69 92.88 22.69 88.17 22.69 101.17 9.69 96.46 9.69 92.88"/>\n   <polygon class="cls-2" points="165.47 125.37 140.5 134.42 140.5 109.45 165.47 118.5 165.47 125.37"/>\n   <polygon class="cls-2" points="152.42 118.5 177.39 109.45 177.39 134.42 152.42 125.37 152.42 118.5"/>\n   <path class="cls-1" d="M13,127.16c-10.58,0-6.43,17.89,0,24.32C19.45,145.05,24.07,127.16,13,127.16Z"/>\n   <polygon class="cls-2" points="16.48 128.46 3.48 133.17 3.48 120.17 16.48 124.88 16.48 128.46"/>\n   <polygon class="cls-2" points="9.69 124.88 22.69 120.17 22.69 133.17 9.69 128.46 9.69 124.88"/>\n   <path class="cls-1" d="M159.74,209.4c-20.32,0-12.35,34.37,0,46.72C172.1,243.77,181,209.4,159.74,209.4Z"/>\n   <polygon class="cls-2" points="166.4 211.9 141.42 220.95 141.42 195.97 166.4 205.02 166.4 211.9"/>\n   <polygon class="cls-2" points="153.34 205.02 178.31 195.97 178.31 220.95 153.34 211.9 153.34 205.02"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="wig--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.65 119.74">\n   <circle class="cls-1" cx="11.75" cy="46.08" r="9.28"/>\n   <circle class="cls-1" cx="64.32" cy="9.28" r="9.28"/>\n   <circle class="cls-1" cx="63.97" cy="22.25" r="9.28"/>\n   <circle class="cls-1" cx="76.24" cy="30.66" r="9.28"/>\n   <circle class="cls-1" cx="28.45" cy="14.42" r="10.69"/>\n   <circle class="cls-1" cx="14.02" cy="29.79" r="14.02"/>\n   <circle class="cls-1" cx="45.21" cy="14.72" r="14.02"/>\n   <circle class="cls-1" cx="81.66" cy="15.07" r="14.02"/>\n   <circle class="cls-1" cx="105.5" cy="31.54" r="14.02"/>\n   <circle class="cls-1" cx="90.42" cy="32.25" r="14.02"/>\n   <circle class="cls-1" cx="31.99" cy="27.58" r="8.43"/>\n   <circle class="cls-1" cx="100.69" cy="17.77" r="8.43"/>\n   <circle class="cls-1" cx="101.74" cy="26.53" r="8.43"/>\n   <circle class="cls-1" cx="104.55" cy="34.59" r="8.43"/>\n   <circle class="cls-1" cx="101.99" cy="44.16" r="8.43"/>\n   <circle class="cls-1" cx="108.7" cy="48.22" r="7.05"/>\n   <circle class="cls-1" cx="111.5" cy="57.52" r="5.34"/>\n   <circle class="cls-1" cx="112.51" cy="65.89" r="5.34"/>\n   <circle class="cls-1" cx="9.11" cy="70.45" r="3.66"/>\n   <circle class="cls-1" cx="9.11" cy="77.3" r="3.66"/>\n   <circle class="cls-1" cx="9.11" cy="83.32" r="3.66"/>\n   <circle class="cls-1" cx="112.86" cy="75.84" r="3.66"/>\n   <circle class="cls-1" cx="112.86" cy="82.32" r="3.66"/>\n   <ellipse class="cls-1" cx="112.93" cy="95.64" rx="3.73" ry="10.6"/>\n   <circle class="cls-1" cx="9.45" cy="59.2" r="6.23"/>\n   <polygon class="cls-2" points="11.55 67.61 2.44 70.92 2.44 61.8 11.55 65.11 11.55 67.61"/>\n   <polygon class="cls-2" points="6.79 65.11 15.9 61.8 15.9 70.92 6.79 67.61 6.79 65.11"/>\n   <polygon class="cls-2" points="114.96 72.02 105.85 75.33 105.85 66.21 114.96 69.51 114.96 72.02"/>\n   <polygon class="cls-2" points="110.2 69.51 119.31 66.21 119.31 75.33 110.2 72.02 110.2 69.51"/>\n   <path class="cls-1" d="M9.13,89.14c-7.41,0-4.51,12.54,0,17.05C13.63,101.68,16.87,89.14,9.13,89.14Z"/>\n   <polygon class="cls-2" points="11.55 90.05 2.44 93.35 2.44 84.23 11.55 87.54 11.55 90.05"/>\n   <polygon class="cls-2" points="6.79 87.54 15.9 84.23 15.9 93.35 6.79 90.05 6.79 87.54"/>\n   <path class="cls-1" d="M112.87,102.69c-7.41,0-4.51,12.54,0,17.05C117.38,115.23,120.62,102.69,112.87,102.69Z"/>\n   <polygon class="cls-2" points="115.3 103.6 106.19 106.9 106.19 97.79 115.3 101.09 115.3 103.6"/>\n   <polygon class="cls-2" points="110.53 101.09 119.65 97.79 119.65 106.9 110.53 103.6 110.53 101.09"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="wig--color--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.64 186.86">\n   <circle class="cls-1" cx="14.53" cy="71.31" r="8.09"/>\n   <circle class="cls-1" cx="60.38" cy="39.21" r="8.09"/>\n   <circle class="cls-1" cx="60.08" cy="50.52" r="8.09"/>\n   <circle class="cls-1" cx="70.78" cy="57.86" r="8.09"/>\n   <circle class="cls-1" cx="29.1" cy="43.69" r="9.33"/>\n   <circle class="cls-1" cx="18.74" cy="60.23" r="12.23"/>\n   <circle class="cls-1" cx="41.74" cy="28.73" r="12.23"/>\n   <circle class="cls-1" cx="53.24" cy="12.23" r="12.23"/>\n   <circle class="cls-1" cx="53.97" cy="28.73" r="12.23"/>\n   <circle class="cls-1" cx="69.24" cy="24.73" r="12.23"/>\n   <circle class="cls-1" cx="86.24" cy="33.23" r="12.23"/>\n   <circle class="cls-1" cx="37.74" cy="15.23" r="12.23"/>\n   <circle class="cls-1" cx="25.74" cy="27.73" r="12.23"/>\n   <circle class="cls-1" cx="43.72" cy="43.95" r="12.23"/>\n   <circle class="cls-1" cx="75.51" cy="44.26" r="12.23"/>\n   <circle class="cls-1" cx="96.3" cy="58.63" r="12.23"/>\n   <circle class="cls-1" cx="83.15" cy="59.24" r="12.23"/>\n   <circle class="cls-1" cx="32.19" cy="55.17" r="7.35"/>\n   <circle class="cls-1" cx="92.1" cy="46.61" r="7.35"/>\n   <circle class="cls-1" cx="93.02" cy="54.25" r="7.35"/>\n   <circle class="cls-1" cx="95.47" cy="61.28" r="7.35"/>\n   <circle class="cls-1" cx="93.24" cy="69.63" r="7.35"/>\n   <circle class="cls-1" cx="99.24" cy="75.73" r="6.15"/>\n   <circle class="cls-1" cx="101.53" cy="81.29" r="4.66"/>\n   <circle class="cls-1" cx="102.41" cy="88.59" r="4.66"/>\n   <circle class="cls-1" cx="14.24" cy="110.58" r="7.81"/>\n   <circle class="cls-1" cx="14.24" cy="125.21" r="7.81"/>\n   <circle class="cls-1" cx="14.24" cy="138.05" r="7.81"/>\n   <circle class="cls-1" cx="102.72" cy="97.26" r="3.19"/>\n   <circle class="cls-1" cx="102.72" cy="102.91" r="3.19"/>\n   <ellipse class="cls-1" cx="102.78" cy="114.53" rx="3.25" ry="9.25"/>\n   <circle class="cls-1" cx="14.96" cy="86.57" r="13.3"/>\n   <polygon class="cls-2" points="19.45 104.53 0 111.58 0 92.13 19.45 99.18 19.45 104.53"/>\n   <polygon class="cls-2" points="9.28 99.18 28.73 92.13 28.73 111.58 9.28 104.53 9.28 99.18"/>\n   <polygon class="cls-2" points="104.55 93.93 96.6 96.81 96.6 88.86 104.55 91.75 104.55 93.93"/>\n   <polygon class="cls-2" points="100.4 91.75 108.34 88.86 108.34 96.81 100.4 93.93 100.4 91.75"/>\n   <path class="cls-1" d="M14.27,150.47c-15.83,0-9.62,26.77,0,36.39C23.89,177.24,30.8,150.47,14.27,150.47Z"/>\n   <polygon class="cls-2" points="19.45 152.41 0 159.46 0 140.01 19.45 147.06 19.45 152.41"/>\n   <polygon class="cls-2" points="9.28 147.06 28.73 140.01 28.73 159.46 9.28 152.41 9.28 147.06"/>\n   <path class="cls-1" d="M102.73,120.68c-6.47,0-3.93,10.94,0,14.87C106.66,131.62,109.48,120.68,102.73,120.68Z"/>\n   <polygon class="cls-2" points="104.85 121.47 96.9 124.35 96.9 116.41 104.85 119.29 104.85 121.47"/>\n   <polygon class="cls-2" points="100.69 119.29 108.64 116.41 108.64 124.35 100.69 121.47 100.69 119.29"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="wig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.17 188.32">\n   <circle class="cls-1" cx="18.48" cy="72.47" r="14.6"/>\n   <circle class="cls-1" cx="101.16" cy="14.6" r="14.6"/>\n   <circle class="cls-1" cx="100.61" cy="34.99" r="14.6"/>\n   <circle class="cls-1" cx="119.9" cy="48.22" r="14.6"/>\n   <circle class="cls-1" cx="44.75" cy="22.68" r="16.82"/>\n   <circle class="cls-1" cx="22.05" cy="46.85" r="22.05"/>\n   <circle class="cls-1" cx="71.11" cy="23.15" r="22.05"/>\n   <circle class="cls-1" cx="78.89" cy="44.33" r="22.05"/>\n   <circle class="cls-1" cx="105.39" cy="47.33" r="22.05"/>\n   <circle class="cls-1" cx="159.39" cy="78.83" r="22.05"/>\n   <circle class="cls-1" cx="128.44" cy="23.7" r="22.05"/>\n   <circle class="cls-1" cx="165.92" cy="49.61" r="22.05"/>\n   <circle class="cls-1" cx="142.21" cy="50.72" r="22.05"/>\n   <circle class="cls-1" cx="50.32" cy="43.37" r="13.26"/>\n   <circle class="cls-1" cx="38.73" cy="66.94" r="13.26"/>\n   <circle class="cls-1" cx="58.73" cy="56.94" r="13.26"/>\n   <circle class="cls-1" cx="158.36" cy="27.94" r="13.26"/>\n   <circle class="cls-1" cx="160.01" cy="41.72" r="13.26"/>\n   <circle class="cls-1" cx="164.42" cy="54.4" r="13.26"/>\n   <circle class="cls-1" cx="160.41" cy="69.45" r="13.26"/>\n   <circle class="cls-1" cx="27.89" cy="85.33" r="13.26"/>\n   <circle class="cls-1" cx="175.68" cy="74.26" r="11.09"/>\n   <circle class="cls-1" cx="175.35" cy="90.47" r="8.4"/>\n   <circle class="cls-1" cx="176.94" cy="103.63" r="8.4"/>\n   <circle class="cls-1" cx="177.49" cy="119.27" r="5.76"/>\n   <circle class="cls-1" cx="177.49" cy="129.46" r="5.76"/>\n   <ellipse class="cls-1" cx="177.6" cy="150.41" rx="5.86" ry="16.68"/>\n   <circle class="cls-1" cx="14.86" cy="93.1" r="9.8"/>\n   <polygon class="cls-2" points="180.8 113.27 166.47 118.46 166.47 104.13 180.8 109.33 180.8 113.27"/>\n   <polygon class="cls-2" points="173.31 109.33 187.64 104.13 187.64 118.46 173.31 113.27 173.31 109.33"/>\n   <path class="cls-1" d="M177.51,161.5c-11.66,0-7.09,19.73,0,26.82C184.6,181.23,189.69,161.5,177.51,161.5Z"/>\n   <polygon class="cls-2" points="181.33 162.93 167 168.12 167 153.79 181.33 158.99 181.33 162.93"/>\n   <polygon class="cls-2" points="173.84 158.99 188.17 153.79 188.17 168.12 173.84 162.93 173.84 158.99"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="wig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.24 243.77">\n   <circle class="cls-1" cx="15.24" cy="59.78" r="12.04"/>\n   <circle class="cls-1" cx="83.44" cy="12.04" r="12.04"/>\n   <circle class="cls-1" cx="82.99" cy="28.86" r="12.04"/>\n   <circle class="cls-1" cx="98.9" cy="39.77" r="12.04"/>\n   <circle class="cls-1" cx="36.91" cy="18.71" r="13.87"/>\n   <circle class="cls-1" cx="18.19" cy="38.65" r="18.19"/>\n   <circle class="cls-1" cx="58.65" cy="19.1" r="18.19"/>\n   <circle class="cls-1" cx="105.94" cy="19.55" r="18.19"/>\n   <circle class="cls-1" cx="136.85" cy="40.92" r="18.19"/>\n   <circle class="cls-1" cx="117.3" cy="41.83" r="18.19"/>\n   <circle class="cls-1" cx="41.5" cy="35.78" r="10.94"/>\n   <circle class="cls-1" cx="130.62" cy="23.05" r="10.94"/>\n   <circle class="cls-1" cx="131.98" cy="34.41" r="10.94"/>\n   <circle class="cls-1" cx="135.62" cy="44.87" r="10.94"/>\n   <circle class="cls-1" cx="132.31" cy="57.29" r="10.94"/>\n   <circle class="cls-1" cx="144.91" cy="61.25" r="9.14"/>\n   <circle class="cls-1" cx="143" cy="81.61" r="13.91"/>\n   <circle class="cls-1" cx="145.63" cy="103.42" r="13.91"/>\n   <circle class="cls-1" cx="11.82" cy="91.39" r="4.75"/>\n   <circle class="cls-1" cx="11.82" cy="100.28" r="4.75"/>\n   <circle class="cls-1" cx="11.82" cy="108.08" r="4.75"/>\n   <circle class="cls-1" cx="146.55" cy="129.35" r="9.54"/>\n   <circle class="cls-1" cx="146.55" cy="146.23" r="9.54"/>\n   <ellipse class="cls-1" cx="146.72" cy="180.94" rx="9.72" ry="27.64"/>\n   <circle class="cls-1" cx="12.26" cy="76.79" r="8.09"/>\n   <polygon class="cls-2" points="14.99 87.71 3.17 91.99 3.17 80.17 14.99 84.46 14.99 87.71"/>\n   <polygon class="cls-2" points="8.81 84.46 20.63 80.17 20.63 91.99 8.81 87.71 8.81 84.46"/>\n   <polygon class="cls-2" points="152.03 119.4 128.28 128.01 128.28 104.26 152.03 112.86 152.03 119.4"/>\n   <polygon class="cls-2" points="139.61 112.86 163.36 104.26 163.36 128.01 139.61 119.4 139.61 112.86"/>\n   <path class="cls-1" d="M11.84,115.63c-9.62,0-5.85,16.27,0,22.12C17.69,131.9,21.88,115.63,11.84,115.63Z"/>\n   <polygon class="cls-2" points="14.99 116.81 3.17 121.09 3.17 109.27 14.99 113.56 14.99 116.81"/>\n   <polygon class="cls-2" points="8.81 113.56 20.63 109.27 20.63 121.09 8.81 116.81 8.81 113.56"/>\n   <path class="cls-1" d="M146.58,199.33c-19.33,0-11.75,32.69,0,44.44C158.33,232,166.77,199.33,146.58,199.33Z"/>\n   <polygon class="cls-2" points="152.91 201.7 129.16 210.3 129.16 186.55 152.91 195.16 152.91 201.7"/>\n   <polygon class="cls-2" points="140.49 195.16 164.24 186.55 164.24 210.3 140.49 201.7 140.49 195.16"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="wig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.5 151.48">\n     <circle class="cls-1" cx="16.76" cy="65.74" r="13.24"/>\n     <circle class="cls-1" cx="91.76" cy="13.24" r="13.24"/>\n     <circle class="cls-1" cx="91.26" cy="31.74" r="13.24"/>\n     <circle class="cls-1" cx="108.76" cy="43.74" r="13.24"/>\n     <circle class="cls-1" cx="40.59" cy="20.57" r="15.26"/>\n     <circle class="cls-1" cx="20" cy="42.5" r="20"/>\n     <circle class="cls-1" cx="64.5" cy="21" r="20"/>\n     <circle class="cls-1" cx="116.5" cy="21.5" r="20"/>\n     <circle class="cls-1" cx="150.5" cy="45" r="20"/>\n     <circle class="cls-1" cx="140.5" cy="47" r="20"/>\n     <circle class="cls-1" cx="45.64" cy="39.34" r="12.03"/>\n     <circle class="cls-1" cx="143.64" cy="25.34" r="12.03"/>\n     <circle class="cls-1" cx="145.14" cy="37.84" r="12.03"/>\n     <circle class="cls-1" cx="149.14" cy="49.34" r="12.03"/>\n     <circle class="cls-1" cx="13" cy="100.5" r="5.22"/>\n     <circle class="cls-1" cx="13" cy="110.28" r="5.22"/>\n     <circle class="cls-1" cx="13" cy="118.86" r="5.22"/>\n     <circle class="cls-1" cx="13.48" cy="84.45" r="8.89"/>\n     <polygon class="cls-2" points="16.48 96.46 3.48 101.17 3.48 88.17 16.48 92.88 16.48 96.46"/>\n     <polygon class="cls-2" points="9.69 92.88 22.69 88.17 22.69 101.17 9.69 96.46 9.69 92.88"/>\n     <path class="cls-1" d="M13,127.16c-10.58,0-6.43,17.89,0,24.32C19.45,145.05,24.07,127.16,13,127.16Z"/>\n     <polygon class="cls-2" points="16.48 128.46 3.48 133.17 3.48 120.17 16.48 124.88 16.48 128.46"/>\n     <polygon class="cls-2" points="9.69 124.88 22.69 120.17 22.69 133.17 9.69 128.46 9.69 124.88"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="wig--bed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.11 90.18">\n    <circle class="cls-1" cx="8.85" cy="34.71" r="6.99"/>\n    <circle class="cls-1" cx="48.45" cy="6.99" r="6.99"/>\n    <circle class="cls-1" cx="48.18" cy="16.76" r="6.99"/>\n    <circle class="cls-1" cx="57.42" cy="23.09" r="6.99"/>\n    <circle class="cls-1" cx="21.43" cy="10.86" r="8.05"/>\n    <circle class="cls-1" cx="10.56" cy="22.44" r="10.56"/>\n    <circle class="cls-1" cx="34.05" cy="11.09" r="10.56"/>\n    <circle class="cls-1" cx="61.51" cy="11.35" r="10.56"/>\n    <circle class="cls-1" cx="79.46" cy="23.76" r="10.56"/>\n    <circle class="cls-1" cx="68.1" cy="24.29" r="10.56"/>\n    <circle class="cls-1" cx="24.1" cy="20.77" r="6.35"/>\n    <circle class="cls-1" cx="75.84" cy="13.38" r="6.35"/>\n    <circle class="cls-1" cx="76.63" cy="19.98" r="6.35"/>\n    <circle class="cls-1" cx="78.74" cy="26.05" r="6.35"/>\n    <circle class="cls-1" cx="76.82" cy="33.26" r="6.35"/>\n    <circle class="cls-1" cx="84.13" cy="35.56" r="5.31"/>\n    <circle class="cls-1" cx="83.98" cy="43.32" r="4.02"/>\n    <circle class="cls-1" cx="84.74" cy="49.63" r="4.02"/>\n    <circle class="cls-1" cx="6.86" cy="53.06" r="2.76"/>\n    <circle class="cls-1" cx="6.86" cy="58.22" r="2.76"/>\n    <circle class="cls-1" cx="6.86" cy="62.75" r="2.76"/>\n    <circle class="cls-1" cx="85" cy="57.12" r="2.76"/>\n    <circle class="cls-1" cx="85" cy="62" r="2.76"/>\n    <ellipse class="cls-1" cx="85.05" cy="72.03" rx="2.81" ry="7.99"/>\n    <circle class="cls-1" cx="7.12" cy="44.59" r="4.69"/>\n    <polygon class="cls-2" points="8.7 50.92 1.84 53.41 1.84 46.55 8.7 49.03 8.7 50.92"/>\n    <polygon class="cls-2" points="5.11 49.03 11.98 46.55 11.98 53.41 5.11 50.92 5.11 49.03"/>\n    <polygon class="cls-2" points="86.58 54.24 79.72 56.73 79.72 49.87 86.58 52.36 86.58 54.24"/>\n    <polygon class="cls-2" points="83 52.36 89.86 49.87 89.86 56.73 83 54.24 83 52.36"/>\n    <path class="cls-1" d="M6.87,67.13c-5.58,0-3.4,9.45,0,12.84C10.27,76.58,12.71,67.13,6.87,67.13Z"/>\n    <polygon class="cls-2" points="8.7 67.82 1.84 70.31 1.84 63.44 8.7 65.93 8.7 67.82"/>\n    <polygon class="cls-2" points="5.11 65.93 11.98 63.44 11.98 70.31 5.11 67.82 5.11 65.93"/>\n    <path class="cls-1" d="M85,77.34c-5.58,0-3.4,9.45,0,12.84C88.41,86.79,90.84,77.34,85,77.34Z"/>\n    <polygon class="cls-2" points="86.84 78.03 79.97 80.51 79.97 73.65 86.84 76.14 86.84 78.03"/>\n    <polygon class="cls-2" points="83.25 76.14 90.11 73.65 90.11 80.51 83.25 78.03 83.25 76.14"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/wig/wig.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], WigComponent);
-    return WigComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=wig.js.map
-
-/***/ }),
-/* 189 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LipsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var LipsComponent = /** @class */ (function (_super) {
-    __extends(LipsComponent, _super);
-    function LipsComponent(element) {
-        return _super.call(this, 'lips', element.nativeElement) || this;
-    }
-    LipsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'lips',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lips/lips.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="100" class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.16 54.06">\n   <path class="cls-1" d="M42.35,43.24a6.69,6.69,0,0,1,5.41-2.75H60.5A6.7,6.7,0,0,1,55.3,34v0A6.7,6.7,0,0,0,43.19,30,6.7,6.7,0,0,0,31.08,34a6.7,6.7,0,0,1-5.2,6.52H38A6.54,6.54,0,0,1,42.35,43.24Z"/>\n   <path class="cls-2" d="M62,40.66a6.7,6.7,0,0,1-1.49-.17H47.76a6.69,6.69,0,0,0-5.41,2.75A6.54,6.54,0,0,0,38,40.49H25.88a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,55.3,47.36,6.7,6.7,0,0,1,62,40.66h0Z"/>\n   <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n   <circle class="cls-3" cx="72.24" cy="13.91" r="13.91"/>\n  </svg>\n\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.21 67.13">\n   <circle class="cls-1" cx="11.9" cy="11.9" r="11.9"/>\n   <circle class="cls-1" cx="71.31" cy="11.9" r="11.9"/>\n   <path class="cls-2" d="M40.86,56.31a6.69,6.69,0,0,1,5.41-2.75H59a6.7,6.7,0,0,1-5.2-6.51v0A6.7,6.7,0,0,0,41.7,43.08,6.7,6.7,0,0,0,29.59,47a6.7,6.7,0,0,1-5.2,6.52H36.48A6.54,6.54,0,0,1,40.86,56.31Z"/>\n   <path class="cls-3" d="M60.49,53.73A6.7,6.7,0,0,1,59,53.56H46.27a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H24.38a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,53.8,60.43a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.54 76.51">\n    <path class="cls-1" d="M18,65.69a6.69,6.69,0,0,1,5.41-2.75H36.12a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95A6.7,6.7,0,0,0,6.7,56.41a6.7,6.7,0,0,1-5.2,6.52H13.59A6.54,6.54,0,0,1,18,65.69Z"/>\n    <path class="cls-2" d="M37.6,63.11a6.7,6.7,0,0,1-1.49-.17H23.38A6.69,6.69,0,0,0,18,65.69a6.54,6.54,0,0,0-4.38-2.75H1.5A6.7,6.7,0,0,1,0,63.11H0A6.7,6.7,0,0,1,6.7,69.79v0a6.7,6.7,0,0,0,12.11,3.95,6.7,6.7,0,0,0,12.11-3.95,6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n    <circle class="cls-3" cx="75.63" cy="13.91" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.33 94.6">\n    <circle class="cls-1" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-1" cx="108.41" cy="29.91" r="13.91"/>\n    <path class="cls-2" d="M59.47,83.77A6.69,6.69,0,0,1,64.88,81H77.62a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95A6.7,6.7,0,0,0,48.2,74.5,6.7,6.7,0,0,1,43,81H55.09A6.54,6.54,0,0,1,59.47,83.77Z"/>\n    <path class="cls-3" d="M79.1,81.2A6.7,6.7,0,0,1,77.62,81H64.88a6.69,6.69,0,0,0-5.41,2.75A6.54,6.54,0,0,0,55.09,81H43a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,72.42,87.9a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.13 43.11">\n    <path class="cls-1" d="M28.13,34.9a5.08,5.08,0,0,1,4.11-2.09h9.67A5.09,5.09,0,0,1,38,27.87h0a5.09,5.09,0,0,0-9.2-3,5.09,5.09,0,0,0-9.2,3,5.09,5.09,0,0,1-3.95,5H24.8A5,5,0,0,1,28.13,34.9Z"/>\n    <path class="cls-2" d="M43,32.94a5.09,5.09,0,0,1-1.13-.13H32.24a5.08,5.08,0,0,0-4.11,2.09,5,5,0,0,0-3.33-2.09H15.62a5.09,5.09,0,0,1-1.13.13h0A5.09,5.09,0,0,1,19.57,38h0a5.09,5.09,0,0,0,9.2,3A5.09,5.09,0,0,0,38,38,5.09,5.09,0,0,1,43,32.94h0Z"/>\n    <circle class="cls-3" cx="10.48" cy="10.48" r="10.48"/>\n    <circle class="cls-3" cx="46.65" cy="10.48" r="10.48"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.83 85.62">\n    <path class="cls-1" d="M36.85,74.8A6.69,6.69,0,0,1,42.26,72H55a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95,6.7,6.7,0,0,0-12.11,3.95A6.7,6.7,0,0,1,20.38,72H32.47A6.54,6.54,0,0,1,36.85,74.8Z"/>\n    <path class="cls-2" d="M56.49,72.22A6.7,6.7,0,0,1,55,72H42.26a6.69,6.69,0,0,0-5.41,2.75A6.54,6.54,0,0,0,32.47,72H20.38a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,49.8,78.92a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n    <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-3" cx="60.91" cy="13.91" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.16 108.73">\n    <path class="cls-1" d="M52.25,19.25a6.69,6.69,0,0,1,5.41-2.75H70.39A6.7,6.7,0,0,1,65.19,10v0A6.7,6.7,0,0,0,53.08,6,6.7,6.7,0,0,0,41,10a6.7,6.7,0,0,1-5.2,6.52H47.87A6.54,6.54,0,0,1,52.25,19.25Z"/>\n    <path class="cls-2" d="M71.88,16.67a6.7,6.7,0,0,1-1.49-.17H57.66a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H35.77a6.7,6.7,0,0,1-1.49.17h0A6.7,6.7,0,0,1,41,23.35v0a6.7,6.7,0,0,0,12.11,3.95,6.7,6.7,0,0,0,12.11-3.95,6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n    <path class="cls-1" d="M51.91,97.91a6.69,6.69,0,0,1,5.41-2.75H70.06a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95,6.7,6.7,0,0,0-12.11,3.95,6.7,6.7,0,0,1-5.2,6.52H47.53A6.54,6.54,0,0,1,51.91,97.91Z"/>\n    <path class="cls-2" d="M71.54,95.34a6.7,6.7,0,0,1-1.49-.17H57.32a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H35.44a6.7,6.7,0,0,1-1.49.17h0A6.7,6.7,0,0,1,40.64,102v0A6.7,6.7,0,0,0,52.75,106,6.7,6.7,0,0,0,64.86,102a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n    <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-3" cx="93.25" cy="13.91" r="13.91"/>\n    <circle class="cls-3" cx="13.91" cy="91" r="13.91"/>\n    <circle class="cls-3" cx="93.25" cy="93.66" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.16 108.73">\n    <path class="cls-1" d="M42.35,43.24a6.69,6.69,0,0,1,5.41-2.75H60.5A6.7,6.7,0,0,1,55.3,34v0A6.7,6.7,0,0,0,43.19,30,6.7,6.7,0,0,0,31.08,34a6.7,6.7,0,0,1-5.2,6.52H38A6.54,6.54,0,0,1,42.35,43.24Z"/>\n    <path class="cls-2" d="M62,40.66a6.7,6.7,0,0,1-1.49-.17H47.76a6.69,6.69,0,0,0-5.41,2.75A6.54,6.54,0,0,0,38,40.49H25.88a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,55.3,47.36,6.7,6.7,0,0,1,62,40.66h0Z"/>\n    <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-3" cx="72.24" cy="13.91" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.33 41.11">\n    <circle class="cls-1" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-1" cx="79.41" cy="13.91" r="13.91"/>\n    <path class="cls-2" d="M46,30.29a6.69,6.69,0,0,1,5.41-2.75H64.11A6.7,6.7,0,0,1,58.91,21v0A6.7,6.7,0,0,0,46.8,17.06,6.7,6.7,0,0,0,34.69,21a6.7,6.7,0,0,1-5.2,6.52H41.59A6.54,6.54,0,0,1,46,30.29Z"/>\n    <path class="cls-3" d="M65.6,27.71a6.7,6.7,0,0,1-1.49-.17H51.38A6.69,6.69,0,0,0,46,30.29a6.54,6.54,0,0,0-4.38-2.75H29.49a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0A6.7,6.7,0,0,0,46.8,38.36a6.7,6.7,0,0,0,12.11-3.95,6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.74 90.24">\n    <circle class="cls-1" cx="13.91" cy="13.91" r="13.91"/>\n    <circle class="cls-1" cx="123.83" cy="13.91" r="13.91"/>\n    <path class="cls-2" d="M67.91,79.42a6.69,6.69,0,0,1,5.41-2.75H86.06a6.7,6.7,0,0,1-5.2-6.51v0A6.7,6.7,0,0,0,68.75,66.2a6.7,6.7,0,0,0-12.11,3.95,6.7,6.7,0,0,1-5.2,6.52H63.53A6.54,6.54,0,0,1,67.91,79.42Z"/>\n    <path class="cls-3" d="M87.54,76.84a6.7,6.7,0,0,1-1.49-.17H73.32a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H51.44a6.7,6.7,0,0,1-1.49.17h0a6.7,6.7,0,0,1,6.69,6.68v0a6.7,6.7,0,0,0,12.11,3.95,6.7,6.7,0,0,0,12.11-3.95,6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="lips" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.76 31.79">\n    <path class="cls-1" d="M61.87,19.75a6.69,6.69,0,0,1,4.3-4.29l12.11-3.93a6.7,6.7,0,0,1-7-4.58v0a6.7,6.7,0,0,0-12.74,0,6.7,6.7,0,0,0-10.3,7.49,6.7,6.7,0,0,1-2.93,7.81l11.5-3.73A6.54,6.54,0,0,1,61.87,19.75Z"/>\n    <path class="cls-2" d="M79.75,11.24a6.7,6.7,0,0,1-1.47.29L66.16,15.46a6.69,6.69,0,0,0-4.3,4.29,6.54,6.54,0,0,0-5-1.26l-11.5,3.73a6.7,6.7,0,0,1-1.36.62h0a6.7,6.7,0,0,1,8.42,4.29v0a6.7,6.7,0,0,0,12.74,0,6.7,6.7,0,0,0,10.3-7.49,6.7,6.7,0,0,1,4.29-8.44h0Z"/>\n    <circle class="cls-3" cx="13.91" cy="13.91" r="13.91"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="lips--vampire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.56 94.39">\n     <circle class="cls-1" cx="11.67" cy="11.67" r="11.67"/>\n     <circle class="cls-1" cx="44.89" cy="11.67" r="11.67"/>\n     <path class="cls-2" d="M27.3,58.88a6.69,6.69,0,0,1,5.41-2.75H45.44a6.7,6.7,0,0,1-5.2-6.51v0a6.7,6.7,0,0,0-12.11-3.95A6.7,6.7,0,0,0,16,49.6a6.7,6.7,0,0,1-5.2,6.52H22.92A6.54,6.54,0,0,1,27.3,58.88Z"/>\n     <path class="cls-3" d="M46.93,56.3a6.7,6.7,0,0,1-1.49-.17H32.71a6.69,6.69,0,0,0-5.41,2.75,6.54,6.54,0,0,0-4.38-2.75H10.82a6.7,6.7,0,0,1-1.49.17h0A6.7,6.7,0,0,1,16,63v0a6.7,6.7,0,0,0,12.11,3.95A6.7,6.7,0,0,0,40.24,63a6.7,6.7,0,0,1,6.69-6.7h0Z"/>\n     <polygon class="cls-4" points="18.2 94.39 13.6 56.29 22.79 56.29 18.2 94.39"/>\n     <polygon class="cls-4" points="38.01 94.39 33.42 56.29 42.6 56.29 38.01 94.39"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="lips--vampire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.57 27.56">\n    <circle class="cls-1" cx="5.71" cy="5.71" r="5.71"/>\n    <circle class="cls-1" cx="35.86" cy="5.71" r="5.71"/>\n    <path class="cls-2" d="M20.67,21.66a3.64,3.64,0,0,1,2.95-1.5h6.94a3.65,3.65,0,0,1-2.83-3.54h0a3.65,3.65,0,0,0-6.6-2.15,3.65,3.65,0,0,0-6.6,2.15,3.65,3.65,0,0,1-2.83,3.55h6.59A3.56,3.56,0,0,1,20.67,21.66Z"/>\n    <path class="cls-3" d="M31.36,20.26a3.65,3.65,0,0,1-.81-.09H23.61a3.64,3.64,0,0,0-2.95,1.5,3.56,3.56,0,0,0-2.39-1.5H11.69a3.65,3.65,0,0,1-.81.09h0a3.65,3.65,0,0,1,3.64,3.64h0a3.65,3.65,0,0,0,6.6,2.15,3.65,3.65,0,0,0,6.6-2.15,3.65,3.65,0,0,1,3.64-3.65h0Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lips/lips.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], LipsComponent);
-    return LipsComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=lips.js.map
-
-/***/ }),
-/* 190 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LollipopComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var LollipopComponent = /** @class */ (function (_super) {
-    __extends(LollipopComponent, _super);
-    function LollipopComponent(element) {
-        return _super.call(this, 'lollipop', element.nativeElement) || this;
-    }
-    LollipopComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'lollipop',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lollipop/lollipop.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="lollipop" width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 177.13">\n    <rect class="cls-1" y="24.6" width="67" height="13"/>\n    <rect class="cls-2" x="30.72" y="53.32" width="6.96" height="123.81"/>\n    <circle class="cls-1" cx="33.5" cy="30.6" r="30.6"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.97 104.67">\n    <path class="cls-1" d="M32.78,10.06a11.53,11.53,0,0,0-16.34-9A11.53,11.53,0,0,0,0,10.79c0,.25,0,.49,0,.74s0,.5,0,.74V31.94a16.38,16.38,0,0,0,32.76,0V13a11.24,11.24,0,0,0,0-2.94Z"/>\n    <line class="cls-2" x1="16.44" y1="7.48" x2="16.44" y2="39.96"/>\n    <circle cx="10.12" cy="6.72" r="0.23"/>\n    <circle cx="12.88" cy="17.42" r="0.23"/>\n    <circle cx="4.41" cy="11.36" r="0.23"/>\n    <circle cx="9.64" cy="12.08" r="0.23"/>\n    <circle cx="3.01" cy="21.02" r="0.23"/>\n    <circle cx="25.91" cy="13.38" r="0.23"/>\n    <circle cx="28.67" cy="24.09" r="0.23"/>\n    <circle cx="20.2" cy="18.03" r="0.23"/>\n    <circle cx="25.43" cy="18.74" r="0.23"/>\n    <circle cx="18.79" cy="27.68" r="0.23"/>\n    <circle cx="5.75" cy="35.26" r="0.23" transform="translate(-29.79 38.86) rotate(-86.53)"/>\n    <circle cx="3.65" cy="24.4" r="0.23" transform="translate(-20.93 26.57) rotate(-86.53)"/>\n    <circle cx="11.74" cy="30.97" r="0.23" transform="translate(-19.88 40.81) rotate(-86.53)"/>\n    <circle cx="6.56" cy="29.93" r="0.23" transform="translate(-23.71 34.67) rotate(-86.53)"/>\n    <circle cx="13.72" cy="21.41" r="0.23" transform="translate(-8.48 33.81) rotate(-86.53)"/>\n    <circle cx="4.28" cy="20.8" r="0.23" transform="translate(-8.19 3.61) rotate(-24.33)"/>\n    <circle cx="12.9" cy="13.87" r="0.23" transform="translate(-4.57 6.55) rotate(-24.33)"/>\n    <circle cx="10.87" cy="24.09" r="0.23" transform="translate(-8.96 6.62) rotate(-24.33)"/>\n    <circle cx="9.37" cy="19.03" r="0.23" transform="translate(-7.01 5.55) rotate(-24.33)"/>\n    <circle cx="20.24" cy="21.39" r="0.23" transform="translate(-7.01 10.24) rotate(-24.33)"/>\n    <circle cx="26.4" cy="6.32" r="0.23" transform="translate(17.21 31.87) rotate(-83.69)"/>\n    <circle cx="27.96" cy="17.27" r="0.23" transform="translate(7.72 43.17) rotate(-83.69)"/>\n    <circle cx="20.21" cy="10.31" r="0.23" transform="translate(7.74 29.27) rotate(-83.69)"/>\n    <circle cx="25.33" cy="11.6" r="0.23" transform="translate(11.01 35.5) rotate(-83.69)"/>\n    <circle cx="17.75" cy="19.76" r="0.23" transform="translate(-3.83 35.23) rotate(-83.69)"/>\n    <circle cx="20.9" cy="35.39" r="0.23" transform="translate(-15.7 54.11) rotate(-86.53)"/>\n    <circle cx="18.8" cy="24.54" r="0.23" transform="translate(-6.84 41.82) rotate(-86.53)"/>\n    <circle cx="26.88" cy="31.1" r="0.23" transform="translate(-5.79 56.06) rotate(-86.53)"/>\n    <circle cx="21.71" cy="30.07" r="0.23" transform="translate(-9.62 49.92) rotate(-86.53)"/>\n    <circle cx="28.87" cy="21.55" r="0.23" transform="translate(5.61 49.06) rotate(-86.53)"/>\n    <circle cx="13.48" cy="45.25" r="0.23" transform="translate(-32.51 55.97) rotate(-86.53)"/>\n    <circle cx="11.37" cy="34.4" r="0.23" transform="translate(-23.65 43.67) rotate(-86.53)"/>\n    <circle cx="19.46" cy="40.96" r="0.23" transform="translate(-22.61 57.91) rotate(-86.53)"/>\n    <circle cx="14.28" cy="39.93" r="0.23" transform="translate(-26.44 51.77) rotate(-86.53)"/>\n    <circle cx="21.45" cy="31.41" r="0.23" transform="translate(-11.21 50.92) rotate(-86.53)"/>\n    <rect class="cls-3" x="5.73" y="35.63" width="36" height="6.99" transform="translate(-17.97 20.29) rotate(-34.45)"/>\n    <rect class="cls-4" x="47.74" y="42.92" width="3.74" height="66.52" transform="translate(-34.4 41.43) rotate(-34.45)"/>\n    <circle class="cls-3" cx="23.57" cy="38.9" r="16.44" transform="translate(-17.87 20.16) rotate(-34.45)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.11 72.6">\n    <path class="cls-1" d="M29.85,9.16A10.5,10.5,0,0,0,15,1,10.5,10.5,0,0,0,0,9.82c0,.22,0,.45,0,.67s0,.45,0,.67V29.09a14.91,14.91,0,1,0,29.83,0V11.84a10.24,10.24,0,0,0,0-2.68Z"/>\n    <line class="cls-2" x1="14.97" y1="6.82" x2="14.97" y2="36.39"/>\n    <circle cx="9.22" cy="6.12" r="0.21"/>\n    <circle cx="11.73" cy="15.87" r="0.21"/>\n    <circle cx="4.02" cy="10.35" r="0.21"/>\n    <circle cx="8.78" cy="11" r="0.21"/>\n    <circle cx="2.74" cy="19.14" r="0.21"/>\n    <circle cx="23.6" cy="12.19" r="0.21"/>\n    <circle cx="26.11" cy="21.94" r="0.21"/>\n    <circle cx="18.39" cy="16.42" r="0.21"/>\n    <circle cx="23.16" cy="17.07" r="0.21"/>\n    <circle cx="17.12" cy="25.21" r="0.21"/>\n    <circle cx="5.24" cy="32.11" r="0.21" transform="translate(-27.13 35.39) rotate(-86.53)"/>\n    <circle cx="3.32" cy="22.22" r="0.21" transform="translate(-19.06 24.19) rotate(-86.53)"/>\n    <circle cx="10.69" cy="28.2" r="0.21" transform="translate(-18.11 37.16) rotate(-86.53)"/>\n    <circle cx="5.97" cy="27.26" r="0.21" transform="translate(-21.6 31.57) rotate(-86.53)"/>\n    <circle cx="12.5" cy="19.5" r="0.21" transform="translate(-7.72 30.79) rotate(-86.53)"/>\n    <circle cx="3.9" cy="18.94" r="0.21" transform="translate(-7.46 3.29) rotate(-24.33)"/>\n    <circle cx="11.75" cy="12.63" r="0.21" transform="translate(-4.16 5.96) rotate(-24.33)"/>\n    <circle cx="9.9" cy="21.94" r="0.21" transform="translate(-8.16 6.03) rotate(-24.33)"/>\n    <circle cx="8.53" cy="17.33" r="0.21" transform="translate(-6.38 5.05) rotate(-24.33)"/>\n    <circle cx="18.44" cy="19.48" r="0.21" transform="translate(-6.39 9.33) rotate(-24.33)"/>\n    <circle cx="24.04" cy="5.76" r="0.21" transform="translate(15.67 29.02) rotate(-83.69)"/>\n    <circle cx="25.46" cy="15.73" r="0.21" transform="translate(7.03 39.31) rotate(-83.69)"/>\n    <circle cx="18.4" cy="9.39" r="0.21" transform="translate(7.05 26.65) rotate(-83.69)"/>\n    <circle cx="23.07" cy="10.57" r="0.21" transform="translate(10.03 32.33) rotate(-83.69)"/>\n    <circle cx="16.17" cy="17.99" r="0.21" transform="translate(-3.49 32.08) rotate(-83.69)"/>\n    <circle cx="19.03" cy="32.23" r="0.21" transform="translate(-14.29 49.28) rotate(-86.53)"/>\n    <circle cx="17.12" cy="22.35" r="0.21" transform="translate(-6.23 38.08) rotate(-86.53)"/>\n    <circle cx="24.48" cy="28.33" r="0.21" transform="translate(-5.27 51.05) rotate(-86.53)"/>\n    <circle cx="19.77" cy="27.39" r="0.21" transform="translate(-8.76 45.46) rotate(-86.53)"/>\n    <circle cx="26.29" cy="19.63" r="0.21" transform="translate(5.11 44.68) rotate(-86.53)"/>\n    <circle cx="12.27" cy="41.21" r="0.21" transform="translate(-29.61 50.97) rotate(-86.53)"/>\n    <circle cx="10.36" cy="31.33" r="0.21" transform="translate(-21.54 39.77) rotate(-86.53)"/>\n    <circle cx="17.72" cy="37.31" r="0.21" transform="translate(-20.59 52.74) rotate(-86.53)"/>\n    <circle cx="13.01" cy="36.36" r="0.21" transform="translate(-24.08 47.15) rotate(-86.53)"/>\n    <circle cx="19.53" cy="28.61" r="0.21" transform="translate(-10.2 46.37) rotate(-86.53)"/>\n    <rect class="cls-3" x="7.95" y="26.8" width="36" height="6.99" transform="translate(-13.44 36.57) rotate(-58.47)"/>\n    <polygon class="cls-4" points="99.11 72.51 92.05 72.6 35.35 37.81 37.3 34.62 99.11 72.51"/>\n    <circle class="cls-3" cx="25.72" cy="30.15" r="16.44" transform="translate(-13.43 36.31) rotate(-58.47)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="lollipop--color--blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.16 89.37">\n    <path class="cls-1" d="M93.32,5.63A10.5,10.5,0,0,0,76.53,3.15a10.5,10.5,0,0,0-11,13.47c.06.21.13.43.21.64s.17.42.26.62l6.22,16.8a14.91,14.91,0,1,0,28-10.36l-6-16.17a10.24,10.24,0,0,0-.93-2.51Z"/>\n    <line class="cls-2" x1="78.55" y1="8.6" x2="88.82" y2="36.34"/>\n    <circle cx="72.91" cy="9.94" r="0.21" transform="translate(1.09 25.94) rotate(-20.32)"/>\n    <circle cx="78.65" cy="18.22" r="0.21" transform="translate(-1.43 28.45) rotate(-20.32)"/>\n    <circle cx="69.5" cy="15.72" r="0.21" transform="translate(-1.13 25.12) rotate(-20.32)"/>\n    <circle cx="74.19" cy="14.68" r="0.21" transform="translate(-0.48 26.68) rotate(-20.32)"/>\n    <circle cx="71.36" cy="24.41" r="0.21" transform="translate(-4.03 26.3) rotate(-20.32)"/>\n    <circle cx="88.5" cy="10.64" r="0.21" transform="translate(1.81 31.4) rotate(-20.32)"/>\n    <circle cx="94.24" cy="18.92" r="0.21" transform="translate(-0.7 33.91) rotate(-20.32)"/>\n    <circle cx="85.09" cy="16.42" r="0.21" transform="translate(-0.4 30.57) rotate(-20.32)"/>\n    <circle cx="89.79" cy="15.37" r="0.21" transform="translate(0.25 32.14) rotate(-20.32)"/>\n    <circle cx="86.95" cy="25.11" r="0.21" transform="translate(-3.31 31.76) rotate(-20.32)"/>\n    <circle cx="78.21" cy="35.7" r="0.21" transform="translate(-6.99 24.21) rotate(-16.85)"/>\n    <circle cx="72.98" cy="27.09" r="0.21" transform="translate(-4.72 22.32) rotate(-16.85)"/>\n    <circle cx="81.96" cy="30.14" r="0.21" transform="translate(-5.22 25.06) rotate(-16.85)"/>\n    <circle cx="77.21" cy="30.9" r="0.21" transform="translate(-5.64 23.71) rotate(-16.85)"/>\n    <circle cx="80.63" cy="21.35" r="0.21" transform="translate(-2.73 24.29) rotate(-16.85)"/>\n    <circle cx="72.38" cy="23.81" r="0.21" transform="translate(4.15 57.74) rotate(-44.65)"/>\n    <circle cx="77.55" cy="15.17" r="0.21" transform="translate(11.72 58.88) rotate(-44.65)"/>\n    <circle cx="79.04" cy="24.54" r="0.21" transform="translate(5.56 62.64) rotate(-44.65)"/>\n    <circle cx="76.16" cy="20.7" r="0.21" transform="translate(7.44 59.5) rotate(-44.65)"/>\n    <circle cx="86.2" cy="19.27" r="0.21" transform="translate(11.33 66.14) rotate(-44.65)"/>\n    <circle cx="86.69" cy="4.46" r="0.21" transform="translate(1.5 21.12) rotate(-14.01)"/>\n    <circle cx="91.48" cy="13.32" r="0.21" transform="translate(-0.5 22.54) rotate(-14.01)"/>\n    <circle cx="82.66" cy="9.82" r="0.21" transform="translate(0.08 20.3) rotate(-14.01)"/>\n    <circle cx="87.44" cy="9.31" r="0.21" transform="translate(0.35 21.45) rotate(-14.01)"/>\n    <circle cx="83.55" cy="18.67" r="0.21" transform="translate(-2.03 20.78) rotate(-14.01)"/>\n    <circle cx="91.19" cy="31.03" r="0.21" transform="translate(-5.08 27.77) rotate(-16.85)"/>\n    <circle cx="85.96" cy="22.42" r="0.21" transform="translate(-2.81 25.88) rotate(-16.85)"/>\n    <circle cx="94.94" cy="25.47" r="0.21" transform="translate(-3.31 28.62) rotate(-16.85)"/>\n    <circle cx="90.19" cy="26.22" r="0.21" transform="translate(-3.73 27.27) rotate(-16.85)"/>\n    <circle cx="93.61" cy="16.68" r="0.21" transform="translate(-0.82 27.86) rotate(-16.85)"/>\n    <circle cx="87.96" cy="41.79" r="0.21" transform="translate(-8.34 27.3) rotate(-16.85)"/>\n    <circle cx="82.73" cy="33.19" r="0.21" transform="translate(-6.07 25.41) rotate(-16.85)"/>\n    <circle cx="91.72" cy="36.24" r="0.21" transform="translate(-6.57 28.15) rotate(-16.85)"/>\n    <circle cx="86.97" cy="36.99" r="0.21" transform="translate(-6.99 26.8) rotate(-16.85)"/>\n    <circle cx="90.39" cy="27.45" r="0.21" transform="translate(-4.08 27.38) rotate(-16.85)"/>\n    <rect class="cls-3" x="55.16" y="43.57" width="36" height="6.99" transform="matrix(-0.52, -0.85, 0.85, -0.52, 71.3, 134.03)"/>\n    <polygon class="cls-4" points="0 89.28 7.06 89.37 63.76 54.58 61.81 51.39 0 89.28"/>\n    <circle class="cls-3" cx="73.39" cy="46.92" r="16.44" transform="matrix(0.85, -0.52, 0.52, 0.85, -13.7, 45.31)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.07 124.89">\n    <path class="cls-1" d="M25.15,3.86a7.2,7.2,0,0,0-11.52-1.7A7.2,7.2,0,0,0,6.12,11.4c0,.15.09.29.15.44s.11.29.18.43l4.27,11.52A10.23,10.23,0,1,0,29.9,16.68L25.79,5.59a7,7,0,0,0-.64-1.72Z"/>\n    <line class="cls-2" x1="15.02" y1="5.9" x2="22.06" y2="24.93"/>\n    <circle cx="11.15" cy="6.82" r="0.15" transform="translate(-1.67 4.3) rotate(-20.32)"/>\n    <circle cx="15.09" cy="12.5" r="0.15" transform="translate(-3.4 6.02) rotate(-20.32)"/>\n    <circle cx="8.81" cy="10.78" r="0.15" transform="translate(-3.2 3.73) rotate(-20.32)"/>\n    <circle cx="12.03" cy="10.07" r="0.15" transform="translate(-2.75 4.8) rotate(-20.32)"/>\n    <circle cx="10.08" cy="16.74" r="0.15" transform="translate(-5.19 4.54) rotate(-20.32)"/>\n    <circle cx="21.85" cy="7.3" r="0.15" transform="translate(-1.18 8.04) rotate(-20.32)"/>\n    <circle cx="25.79" cy="12.98" r="0.15" transform="translate(-2.9 9.76) rotate(-20.32)"/>\n    <circle cx="19.51" cy="11.26" r="0.15" transform="translate(-2.7 7.48) rotate(-20.32)"/>\n    <circle cx="22.73" cy="10.55" r="0.15" transform="translate(-2.25 8.55) rotate(-20.32)"/>\n    <circle cx="20.78" cy="17.22" r="0.15" transform="translate(-4.69 8.29) rotate(-20.32)"/>\n    <circle cx="14.78" cy="24.49" r="0.15" transform="translate(-6.47 5.34) rotate(-16.85)"/>\n    <circle cx="11.19" cy="18.59" r="0.15" transform="translate(-4.91 4.04) rotate(-16.85)"/>\n    <circle cx="17.36" cy="20.68" r="0.15" transform="translate(-5.25 5.92) rotate(-16.85)"/>\n    <circle cx="14.1" cy="21.2" r="0.15" transform="translate(-5.54 5) rotate(-16.85)"/>\n    <circle cx="16.45" cy="14.65" r="0.15" transform="translate(-3.54 5.4) rotate(-16.85)"/>\n    <circle cx="10.78" cy="16.34" r="0.15" transform="translate(-8.37 12.29) rotate(-44.65)"/>\n    <circle cx="14.33" cy="10.41" r="0.15" transform="translate(-3.18 13.08) rotate(-44.65)"/>\n    <circle cx="15.36" cy="16.84" r="0.15" transform="translate(-7.4 15.65) rotate(-44.65)"/>\n    <circle cx="13.38" cy="14.2" r="0.15" transform="translate(-6.12 13.5) rotate(-44.65)"/>\n    <circle cx="20.26" cy="13.22" r="0.15" transform="translate(-3.44 18.06) rotate(-44.65)"/>\n    <circle cx="20.6" cy="3.06" r="0.15" transform="translate(-0.13 5.08) rotate(-14.01)"/>\n    <circle cx="23.89" cy="9.14" r="0.15" transform="translate(-1.5 6.06) rotate(-14.01)"/>\n    <circle cx="17.84" cy="6.74" r="0.15" transform="translate(-1.1 4.52) rotate(-14.01)"/>\n    <circle cx="21.12" cy="6.38" r="0.15" transform="translate(-0.92 5.3) rotate(-14.01)"/>\n    <circle cx="18.45" cy="12.81" r="0.15" transform="translate(-2.55 4.85) rotate(-14.01)"/>\n    <circle cx="23.69" cy="21.29" r="0.15" transform="translate(-5.15 7.78) rotate(-16.85)"/>\n    <circle cx="20.1" cy="15.38" r="0.15" transform="translate(-3.6 6.49) rotate(-16.85)"/>\n    <circle cx="26.26" cy="17.47" r="0.15" transform="translate(-3.94 8.36) rotate(-16.85)"/>\n    <circle cx="23.01" cy="17.99" r="0.15" transform="translate(-4.23 7.44) rotate(-16.85)"/>\n    <circle cx="25.35" cy="11.45" r="0.15" transform="translate(-2.23 7.84) rotate(-16.85)"/>\n    <circle cx="21.48" cy="28.67" r="0.15" transform="translate(-7.39 7.46) rotate(-16.85)"/>\n    <circle cx="17.89" cy="22.77" r="0.15" transform="translate(-5.83 6.16) rotate(-16.85)"/>\n    <circle cx="24.05" cy="24.86" r="0.15" transform="translate(-6.17 8.04) rotate(-16.85)"/>\n    <circle cx="20.8" cy="25.38" r="0.15" transform="translate(-6.46 7.12) rotate(-16.85)"/>\n    <circle cx="23.14" cy="18.83" r="0.15" transform="translate(-4.47 7.52) rotate(-16.85)"/>\n    <rect class="cls-3" x="0.04" y="33.12" width="36" height="6.99" transform="translate(35.69 73.41) rotate(-179.4)"/>\n    <polygon class="cls-4" points="14.87 124.64 18.71 124.89 19.41 48.56 15.67 48.53 14.87 124.64"/>\n    <circle class="cls-3" cx="18.04" cy="36.34" r="16.44" transform="translate(-18.49 54) rotate(-89.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.07 66.44">\n    <rect class="cls-3" x="0.04" y="13.22" width="36" height="6.99" transform="translate(35.89 33.61) rotate(-179.4)"/>\n    <polygon class="cls-4" points="14.87 66.19 18.71 66.44 19.41 28.67 15.67 28.63 14.87 66.19"/>\n    <circle class="cls-3" cx="18.04" cy="16.44" r="16.44" transform="translate(1.41 34.31) rotate(-89.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="lollipop--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 140.91">\n    <rect class="cls-1" x="48.76" y="13.17" width="36" height="6.99" transform="translate(2.28 40.69) rotate(-34.45)"/>\n    <rect class="cls-2" x="90.77" y="20.47" width="3.74" height="66.52" transform="translate(-14.15 61.83) rotate(-34.45)"/>\n    <circle class="cls-1" cx="66.61" cy="16.45" r="16.44" transform="translate(2.38 40.57) rotate(-34.45)"/>\n    <rect class="cls-3" x="48.38" y="92.44" width="36" height="6.99" transform="translate(110.07 -12.24) rotate(56.68)"/>\n    <rect class="cls-2" x="26.95" y="87.82" width="3.74" height="66.52" transform="translate(114.16 30.48) rotate(56.68)"/>\n    <circle class="cls-3" cx="66.61" cy="95.79" r="16.44" transform="translate(-41.67 52.34) rotate(-33.32)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.84 70.92">\n    <rect class="cls-3" x="-1.36" y="13.13" width="36" height="6.99" transform="translate(-6.86 17.59) rotate(-47.31)"/>\n    <rect class="cls-4" x="48.25" y="13.74" width="3.74" height="66.52" transform="translate(-18.41 51.98) rotate(-47.31)"/>\n    <circle class="cls-3" cx="16.44" cy="16.44" r="16.44" transform="translate(-6.79 17.38) rotate(-47.31)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.68 72.17">\n    <rect class="cls-3" x="40.04" y="13.14" width="36" height="6.99" transform="translate(30.24 -36.97) rotate(46.6)"/>\n    <rect class="cls-4" x="23.58" y="14.69" width="3.74" height="66.52" transform="translate(42.81 -3.49) rotate(46.6)"/>\n    <circle class="cls-3" cx="58.23" cy="16.44" r="16.44" transform="translate(4.62 44.51) rotate(-43.4)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="lollipop--color--darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.88 44.3">\n    <rect class="cls-3" x="-1.3" y="14.69" width="36" height="6.99" transform="translate(-5.81 28.31) rotate(-71.65)"/>\n    <rect class="cls-4" x="57.86" y="-1.2" width="3.74" height="66.52" transform="translate(10.49 78.66) rotate(-71.65)"/>\n    <circle class="cls-3" cx="16.45" cy="18.1" r="16.44" transform="translate(-5.91 28.01) rotate(-71.65)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="lollipop--color--green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.34 64.22">\n    <path class="cls-1" d="M49.78,22.4A14.53,14.53,0,0,0,34.61,4.48a14.53,14.53,0,0,0-23.68,4c-.13.28-.25.57-.37.86s-.21.59-.3.88L1.37,33.34A20.64,20.64,0,0,0,39.9,48.14l8.56-22.28a14.16,14.16,0,0,0,1.33-3.46Z"/>\n    <line class="cls-2" x1="31.72" y1="11.99" x2="17.05" y2="50.2"/>\n    <circle cx="24.64" cy="8.24" r="0.29" transform="translate(8.12 28.28) rotate(-68.98)"/>\n    <circle cx="23.04" cy="22.08" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, -5.83, 35.67)"/>\n    <circle cx="15.82" cy="11.12" r="0.29" transform="translate(-0.23 21.9) rotate(-68.98)"/>\n    <circle cx="21.65" cy="14.32" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, 0.51, 29.4)"/>\n    <circle cx="9.81" cy="21.84" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, -14.1, 23.16)"/>\n    <circle cx="40.2" cy="23.21" r="0.29" transform="matrix(0.36, -0.93, 0.93, 0.36, 4.12, 52.41)"/>\n    <circle cx="38.6" cy="37.05" r="0.29" transform="translate(-9.83 59.8) rotate(-68.98)"/>\n    <circle cx="31.38" cy="26.09" r="0.29" transform="translate(-4.23 46.03) rotate(-68.98)"/>\n    <circle cx="37.21" cy="29.3" r="0.29" transform="translate(-3.49 53.52) rotate(-68.98)"/>\n    <circle cx="25.37" cy="36.82" r="0.29" transform="translate(-18.1 47.29) rotate(-68.98)"/>\n    <circle cx="6.6" cy="39.83" r="0.29" transform="translate(-32.38 29.33) rotate(-65.52)"/>\n    <circle cx="9.03" cy="26.11" r="0.29" transform="translate(-18.47 23.51) rotate(-65.52)"/>\n    <circle cx="15.58" cy="37.49" r="0.29" transform="translate(-24.99 36.13) rotate(-65.52)"/>\n    <circle cx="9.96" cy="33.93" r="0.29" transform="translate(-25.05 28.93) rotate(-65.52)"/>\n    <circle cx="22.23" cy="27.15" r="0.29" transform="translate(-11.69 36.13) rotate(-65.52)"/>\n    <circle cx="11.41" cy="22.16" r="0.29" transform="translate(-1.26 0.7) rotate(-3.32)"/>\n    <circle cx="24.68" cy="17.91" r="0.29" transform="translate(-1 1.46) rotate(-3.32)"/>\n    <circle cx="17.66" cy="29.01" r="0.29" transform="translate(-1.65 1.07) rotate(-3.32)"/>\n    <circle cx="18.19" cy="22.38" r="0.29" transform="translate(-1.26 1.09) rotate(-3.32)"/>\n    <circle cx="29.91" cy="30.07" r="0.29" transform="translate(-1.69 1.78) rotate(-3.32)"/>\n    <circle cx="43.96" cy="15.13" r="0.29" transform="translate(10.34 47.24) rotate(-62.67)"/>\n    <circle cx="40.85" cy="28.71" r="0.29" transform="translate(-3.41 51.83) rotate(-62.67)"/>\n    <circle cx="34.88" cy="17.02" r="0.29" transform="translate(3.74 40.2) rotate(-62.67)"/>\n    <circle cx="40.32" cy="20.85" r="0.29" transform="translate(3.28 47.1) rotate(-62.67)"/>\n    <circle cx="27.72" cy="27.02" r="0.29" transform="translate(-9.01 39.25) rotate(-62.67)"/>\n    <circle cx="24.36" cy="46.84" r="0.29" transform="translate(-28.37 49.59) rotate(-65.52)"/>\n    <circle cx="26.79" cy="33.12" r="0.29" transform="translate(-14.46 43.77) rotate(-65.52)"/>\n    <circle cx="33.33" cy="44.5" r="0.29" transform="translate(-20.98 56.39) rotate(-65.52)"/>\n    <circle cx="27.71" cy="40.94" r="0.29" transform="translate(-21.03 49.2) rotate(-65.52)"/>\n    <circle cx="39.99" cy="34.16" r="0.29" transform="translate(-7.67 56.39) rotate(-65.52)"/>\n    <circle cx="11.17" cy="55.08" r="0.29" transform="translate(-43.59 42.42) rotate(-65.52)"/>\n    <circle cx="13.6" cy="41.36" r="0.29" transform="translate(-29.68 36.6) rotate(-65.52)"/>\n    <circle cx="20.15" cy="52.74" r="0.29" transform="translate(-36.2 49.22) rotate(-65.52)"/>\n    <circle cx="14.53" cy="49.19" r="0.29" transform="translate(-36.26 42.02) rotate(-65.52)"/>\n    <circle cx="26.8" cy="42.4" r="0.29" transform="translate(-22.89 49.22) rotate(-65.52)"/>\n    <rect class="cls-3" x="5.16" y="34.61" width="36" height="6.99" transform="matrix(0.31, -0.95, 0.95, 0.31, -20.3, 48.08)"/>\n    <rect class="cls-4" x="64.31" y="18.71" width="3.74" height="66.52" transform="translate(-3.99 98.42) rotate(-71.65)"/>\n    <circle class="cls-3" cx="22.9" cy="38.01" r="16.44" transform="translate(-20.39 47.78) rotate(-71.65)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.06 95.19">\n    <rect class="cls-3" x="0.03" y="13.22" width="36" height="6.99" transform="translate(0.16 -0.17) rotate(0.54)"/>\n    <rect class="cls-4" x="16.11" y="28.65" width="3.74" height="66.52" transform="translate(0.58 -0.17) rotate(0.54)"/>\n    <circle class="cls-3" cx="18.03" cy="16.44" r="16.44" transform="translate(1.42 34.32) rotate(-89.46)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="lollipop--color--yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.77 34.39">\n    <path class="cls-1" d="M19,5.83A6.68,6.68,0,0,0,9.52.64,6.68,6.68,0,0,0,0,6.25c0,.14,0,.28,0,.43S0,7,0,7.11V18.5a9.49,9.49,0,0,0,19,0v-11a6.51,6.51,0,0,0,0-1.7Z"/>\n    <line class="cls-2" x1="9.52" y1="4.34" x2="9.52" y2="23.15"/>\n    <circle cx="5.87" cy="3.89" r="0.14"/>\n    <circle cx="7.46" cy="10.09" r="0.14"/>\n    <circle cx="2.56" cy="6.58" r="0.14"/>\n    <circle cx="5.58" cy="7" r="0.14"/>\n    <circle cx="1.74" cy="12.18" r="0.14"/>\n    <circle cx="15.01" cy="7.75" r="0.14"/>\n    <circle cx="16.61" cy="13.96" r="0.14"/>\n    <circle cx="11.7" cy="10.44" r="0.14"/>\n    <circle cx="14.73" cy="10.86" r="0.14"/>\n    <circle cx="10.89" cy="16.04" r="0.14"/>\n    <circle cx="3.33" cy="20.43" r="0.14" transform="translate(-17.26 22.52) rotate(-86.53)"/>\n    <circle cx="2.11" cy="14.14" r="0.14" transform="translate(-12.12 15.39) rotate(-86.53)"/>\n    <circle cx="6.8" cy="17.94" r="0.14" transform="translate(-11.52 23.64) rotate(-86.53)"/>\n    <circle cx="3.8" cy="17.34" r="0.14" transform="translate(-13.74 20.09) rotate(-86.53)"/>\n    <circle cx="7.95" cy="12.4" r="0.14" transform="translate(-4.91 19.59) rotate(-86.53)"/>\n    <circle cx="2.48" cy="12.05" r="0.14" transform="translate(-4.74 2.09) rotate(-24.33)"/>\n    <circle cx="7.47" cy="8.04" r="0.14" transform="translate(-2.65 3.79) rotate(-24.33)"/>\n    <circle cx="6.3" cy="13.96" r="0.14" transform="translate(-5.19 3.83) rotate(-24.33)"/>\n    <circle cx="5.43" cy="11.02" r="0.14" transform="translate(-4.06 3.22) rotate(-24.33)"/>\n    <circle cx="11.73" cy="12.39" r="0.14" transform="translate(-4.06 5.93) rotate(-24.33)"/>\n    <circle cx="15.29" cy="3.66" r="0.14" transform="translate(9.97 18.46) rotate(-83.69)"/>\n    <circle cx="16.2" cy="10.01" r="0.14" transform="translate(4.47 25.01) rotate(-83.69)"/>\n    <circle cx="11.71" cy="5.97" r="0.14" transform="translate(4.48 16.96) rotate(-83.69)"/>\n    <circle cx="14.67" cy="6.72" r="0.14" transform="translate(6.38 20.57) rotate(-83.69)"/>\n    <circle cx="10.29" cy="11.45" r="0.14" transform="translate(-2.22 20.41) rotate(-83.69)"/>\n    <circle cx="12.11" cy="20.51" r="0.14" transform="translate(-9.09 31.35) rotate(-86.53)"/>\n    <circle cx="10.89" cy="14.22" r="0.14" transform="translate(-3.96 24.23) rotate(-86.53)"/>\n    <circle cx="15.57" cy="18.02" r="0.14" transform="translate(-3.35 32.48) rotate(-86.53)"/>\n    <circle cx="12.58" cy="17.42" r="0.14" transform="translate(-5.57 28.92) rotate(-86.53)"/>\n    <circle cx="16.72" cy="12.49" r="0.14" transform="matrix(0.06, -1, 1, 0.06, 3.25, 28.42)"/>\n    <circle cx="7.81" cy="26.22" r="0.14" transform="translate(-18.83 32.42) rotate(-86.53)"/>\n    <circle cx="6.59" cy="19.93" r="0.14" transform="translate(-13.7 25.3) rotate(-86.53)"/>\n    <circle cx="11.27" cy="23.73" r="0.14" transform="translate(-13.1 33.55) rotate(-86.53)"/>\n    <circle cx="8.28" cy="23.13" r="0.14" transform="translate(-15.32 29.99) rotate(-86.53)"/>\n    <circle cx="12.42" cy="18.2" r="0.14" transform="translate(-6.49 29.5) rotate(-86.53)"/>\n    <rect class="cls-3" x="10.08" y="22.15" width="20.17" height="3.91" transform="translate(-7.48 39.08) rotate(-78.52)"/>\n    <polygon class="cls-4" points="63.77 31.54 63.77 33.85 26.56 26.26 26.97 24.21 63.77 31.54"/>\n    <circle class="cls-3" cx="20.02" cy="24.08" r="9.21" transform="translate(-7.56 38.91) rotate(-78.52)"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/lollipop/lollipop.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], LollipopComponent);
-    return LollipopComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=lollipop.js.map
-
-/***/ }),
-/* 191 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EggComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var EggComponent = /** @class */ (function (_super) {
-    __extends(EggComponent, _super);
-    function EggComponent(element) {
-        return _super.call(this, 'egg', element.nativeElement) || this;
-    }
-    EggComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'egg',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/egg/egg.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="egg" width="75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.42 67.09">\n    <path class="cls-1" d="M29.91,28.28C23.78,37.27,22.08,61,40,60.89s16-23.78,9.78-32.7c-2.77-4-6.72-5.87-10-5.86S32.65,24.28,29.91,28.28Z"/>\n    <circle class="cls-2" cx="38.96" cy="50.4" r="11.9" transform="translate(-0.24 0.18) rotate(-0.27)"/>\n    <path class="cls-3" d="M46.7,38.35l-5.08-11.4-5.44,9.62L32.95,27.9l-8.18,6.64q0-.79,0-1.58C24.66,14.8,31.24,0,39.44,0c7.95,0,14.5,13.77,15,31.16l-5-5.16Z"/>\n    <path class="cls-3" d="M21.35,44,16.82,48.2l6.68,4.64-5.8,6.41,7.79,1.52-2.13,5.72-1,.2C11.66,68.62,1.73,63.33.2,54.86c-1.48-8.22,5.5-16.41,15.72-18.65Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.91 266.42">\n    <path class="cls-1" d="M27,20.5c9.84,4.62,23.35,24.18,7.87,33.21S9,41.36,9.79,30.51c.37-4.84,2.81-8.47,5.61-10.11S22.57,18.44,27,20.5Z"/>\n    <circle class="cls-2" cx="30.4" cy="44.14" r="11.9" transform="matrix(0.86, -0.5, 0.5, 0.86, -18.1, 21.33)"/>\n    <path class="cls-3" d="M17.61,37.7,16.19,25.3l9.57,5.52-1.61-9.11,10.42,1.57q-.38-.69-.78-1.37C24.63,6.22,11.47-3.16,4.38,1-2.48,5-1.12,20.2,7.31,35.42l1.71-7Z"/>\n    <path class="cls-3" d="M42.31,29.66l6,1.34L45,38.4,53.21,41l-5.94,5.26L52,50.08l.94-.33C63.17,46,69,36.36,66.05,28.29,63.15,20.46,53,17,43,20.21Z"/>\n    <path class="cls-1" d="M209.19,177.46c.94,11.56-10,34.43-26.57,24.89s-2.27-30.48,8.2-35.47c4.67-2.23,9.33-1.89,12.33-.17S208.77,172.3,209.19,177.46Z"/>\n    <circle class="cls-2" cx="189.14" cy="193.18" r="12.69" transform="translate(-72.66 260.67) rotate(-60.06)"/>\n    <path class="cls-3" d="M188.32,177.92,199,170l0,11.79,7.58-6.32L210.65,186q.43-.72.86-1.45c9.67-16.79,11.37-33.95,3.79-38.31-7.35-4.23-20.71,5.1-30.33,21l7.39-2.13Z"/>\n    <path class="cls-3" d="M208.85,196.53l2,6.31-8.64.77,2,9-8-2.71-1,6.43.8.7c8.92,7.45,20.92,7.79,26.8.74,5.72-6.84,3.57-18.11-4.72-25.58Z"/>\n    <polygon class="cls-2" points="175.94 45.14 182.09 50.26 190.58 52.19 186.66 62.47 194.19 68.03 185.75 72.24 183 84.45 175.94 73.23 167.81 80.73 163.16 69.49 157.68 68.03 162.24 60.94 161.3 52.19 171.88 55.43 175.94 45.14"/>\n    <path class="cls-2" d="M183,94a9.53,9.53,0,0,1-8.07-4.46L174,88a9.53,9.53,0,0,1-15-3.62l-2.85-6.89-.92-.25a9.53,9.53,0,0,1-5.56-14.37l2.74-4.26-.58-5.41a9.53,9.53,0,0,1,12.27-10.14l2.15.66.83-2.1a9.53,9.53,0,0,1,15-3.83l4.39,3.66,6.27,1.43a9.53,9.53,0,0,1,6.79,12.69l-1.34,3.52,1.71,1.26a9.53,9.53,0,0,1-1.42,16.2l-4.39,2.19-1.75,7.79A9.54,9.54,0,0,1,183,94Zm-6.41-30.27.6.06h0c0-.14,0-.28,0-.43Z"/>\n    <circle class="cls-2" cx="166.82" cy="69.18" r="7.33"/>\n    <circle class="cls-2" cx="181.78" cy="58.19" r="7.33"/>\n    <polygon class="cls-2" points="63.64 225.07 72.09 222.18 78.87 215.2 86.39 224.9 96.07 220.95 95.18 231.45 105.23 241.16 90.43 241.38 92.87 253.49 79.44 251.4 74.87 255.77 70.76 247.31 61.86 243.13 71.09 234.92 63.64 225.07"/>\n    <path class="cls-2" d="M114.32,246.7a10.64,10.64,0,0,1-8.93,5.1l-2,0A10.64,10.64,0,0,1,91.23,264L83,262.72l-.77.74a10.64,10.64,0,0,1-16.93-3l-2.47-5.09-5.49-2.58a10.64,10.64,0,0,1-2.54-17.59l1.88-1.67-1.52-2a10.64,10.64,0,0,1,5-16.49l6-2.07,5-5.15a10.64,10.64,0,0,1,16,.89L89.85,212l2.2-.9a10.64,10.64,0,0,1,14.63,10.76l-.46,5.46,6.41,6.2a10.65,10.65,0,0,1,1.69,13.19ZM81.73,235.24q.19-.27.41-.54l0,0-.44-.2C81.74,234.73,81.74,235,81.73,235.24Z"/>\n    <circle class="cls-2" cx="81.28" cy="247.73" r="8.18" transform="translate(-172.58 188.3) rotate(-58.66)"/>\n    <circle class="cls-2" cx="79.48" cy="227.08" r="8.18" transform="translate(-155.81 176.86) rotate(-58.66)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.82 220.19">\n    <path class="cls-1" d="M41.77,23.38c15.39,3.4,40.74,26.75,21.73,44.46S23,58.61,20.69,43c-1-7,1.27-12.88,4.71-16.08S34.91,21.86,41.77,23.38Z"/>\n    <circle class="cls-2" cx="54.19" cy="55.71" r="17.24" transform="translate(-23.44 51.88) rotate(-42.97)"/>\n    <path class="cls-3" d="M34,50.68l-6-17.08,15.3,4.76L38.19,26l15.23-1.1q-.76-.85-1.54-1.69C33.93,3.92,12.32-5.13,3.62,3-4.81,10.82,2,31.91,18.75,50.75l.19-10.45Z"/>\n    <path class="cls-3" d="M66.41,31.44l9,0L72.93,42.95l12.49,1-6.72,9.34,7.93,3.93q.62-.37,1.23-.77c13.24-8.61,18.47-24.06,11.67-34.52-6.6-10.16-22.1-11.87-35.12-4.09Z"/>\n    <path class="cls-1" d="M211.52,77c3.05,15.29-8,47.54-31.61,37.37S172.13,74,185.34,65.74c5.89-3.7,12.17-4,16.44-2.14S210.16,70.19,211.52,77Z"/>\n    <circle class="cls-2" cx="187.17" cy="101.13" r="17.06" transform="translate(20.25 233.04) rotate(-66.7)"/>\n    <path class="cls-3" d="M183.71,80.88l13.1-12.19,1.78,15.75,9.14-9.62,7.06,13.36q.47-1,.92-2.07c10.31-23.93,9.91-47.1-.9-51.75-10.47-4.51-26.87,10-37.25,32.72l9.54-4Z"/>\n    <path class="cls-3" d="M214,102.54l3.6,8.12L206.2,113l4.07,11.71-11.13-2.37-.4,8.75q.58.41,1.18.81c13.07,8.57,29.14,7.15,35.91-3.17,6.57-10,1.95-24.74-10.28-33.43Z"/>\n    <polygon class="cls-1" points="176.62 177.38 185.37 174.38 192.39 167.16 200.18 177.2 210.21 173.12 209.28 183.98 219.69 194.04 204.36 194.27 206.89 206.81 192.98 204.64 188.25 209.17 183.99 200.41 174.78 196.07 184.34 187.58 176.62 177.38"/>\n    <path class="cls-1" d="M229.1,199.78a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6l-8.53-1.33-.8.76A11,11,0,0,1,178.34,214l-2.56-5.27L170.09,206a11,11,0,0,1-2.63-18.21l1.95-1.73L167.83,184a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93A11,11,0,0,1,221.19,174l-.48,5.65,6.64,6.42a11,11,0,0,1,1.75,13.66Zm-33.75-11.87q.2-.28.42-.56l0,0-.45-.21C195.36,187.38,195.36,187.64,195.36,187.91Z"/>\n    <circle class="cls-2" cx="194.88" cy="200.84" r="8.47" transform="translate(-78.02 262.83) rotate(-58.66)"/>\n    <circle class="cls-2" cx="193.02" cy="179.46" r="8.47" transform="translate(-60.64 250.98) rotate(-58.66)"/>\n    <polygon class="cls-1" points="17.4 128.4 22.46 126.66 26.52 122.49 31.03 128.3 36.83 125.93 36.29 132.22 42.31 138.03 33.45 138.16 34.91 145.42 26.87 144.16 24.13 146.78 21.66 141.71 16.34 139.21 21.87 134.29 17.4 128.4"/>\n    <path class="cls-1" d="M47.76,141.35a6.37,6.37,0,0,1-5.35,3.06l-1.2,0a6.37,6.37,0,0,1-7.28,7.29L29,150.95l-.46.44a6.37,6.37,0,0,1-10.14-1.82l-1.48-3L13.63,145a6.37,6.37,0,0,1-1.52-10.53l1.13-1-.91-1.2a6.37,6.37,0,0,1,3-9.88L19,121.13l3-3.08a6.37,6.37,0,0,1,9.61.53l1.54,2,1.32-.54a6.37,6.37,0,0,1,8.76,6.44l-.28,3.27,3.84,3.71a6.38,6.38,0,0,1,1,7.9Zm-19.52-6.86.24-.32v0l-.26-.12C28.24,134.18,28.24,134.33,28.24,134.49Z"/>\n    <circle class="cls-1" cx="27.97" cy="141.97" r="4.9" transform="matrix(0.52, -0.85, 0.85, 0.52, -107.83, 92.01)"/>\n    <circle class="cls-1" cx="26.89" cy="129.6" r="4.9" transform="matrix(0.52, -0.85, 0.85, 0.52, -97.79, 85.16)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.98 246.6">\n    <path class="cls-1" d="M28.81,16.13c10.62,2.34,28.1,18.45,15,30.67S15.86,40.43,14.27,29.67c-.71-4.8.88-8.88,3.25-11.09S24.08,15.08,28.81,16.13Z"/>\n    <circle class="cls-2" cx="37.38" cy="38.43" r="11.9" transform="translate(-16.17 35.79) rotate(-42.97)"/>\n    <path class="cls-3" d="M23.48,35,19.37,23.17l10.55,3.28-3.58-8.53,10.51-.76L35.79,16C23.4,2.7,8.5-3.54,2.5,2-3.32,7.47,1.37,22,12.93,35l.13-7.21Z"/>\n    <path class="cls-3" d="M45.81,21.69l6.19,0-1.69,8,8.62.69-4.64,6.44,5.47,2.71.85-.53c9.14-5.94,12.74-16.6,8.05-23.81-4.55-7-15.25-8.19-24.23-2.82Z"/>\n    <polygon class="cls-1" points="167.94 135.34 177.11 136.51 186.59 133.13 189.16 145.58 199.96 146.33 194.33 155.68 199.23 169.3 185.38 162.74 182.11 175.1 170.59 167.02 164.34 169 164.39 159.25 158.03 151.3 170.36 147.9 167.94 135.34"/>\n    <path class="cls-1" d="M205.15,178.6a11,11,0,0,1-10.63.66l-1.88-.89a11,11,0,0,1-16.85,5.76l-7.06-5-1.05.33a11,11,0,0,1-14.35-10.56l0-5.86-3.92-4.91a11,11,0,0,1,5.68-17.5l2.51-.69-.49-2.56a11,11,0,0,1,12.22-13l6.55.84,7-2.5a11,11,0,0,1,14.5,8.16l.88,4.26,2.46.17A11,11,0,0,1,209.4,152l-2.92,4.86,3.13,8.69a11,11,0,0,1-4.45,13Zm-25-25.54.62-.31,0,0-.31-.39C180.34,152.58,180.23,152.82,180.1,153.06Z"/>\n    <circle class="cls-2" cx="173.97" cy="164.45" r="8.47" transform="translate(-61.09 119.13) rotate(-32.48)"/>\n    <circle class="cls-2" cx="181.74" cy="144.44" r="8.47" transform="translate(-49.14 120.17) rotate(-32.48)"/>\n    <polygon class="cls-1" points="62.28 125.59 67.34 123.86 71.4 119.68 75.91 125.49 81.71 123.12 81.17 129.41 87.19 135.22 78.32 135.35 79.79 142.61 71.74 141.35 69.01 143.97 66.54 138.91 61.22 136.4 66.75 131.49 62.28 125.59"/>\n    <path class="cls-1" d="M92.63,138.54a6.37,6.37,0,0,1-5.35,3.06l-1.2,0a6.37,6.37,0,0,1-7.28,7.29l-4.93-.77-.46.44a6.37,6.37,0,0,1-10.14-1.82l-1.48-3-3.29-1.55A6.37,6.37,0,0,1,57,131.64l1.13-1-.91-1.2a6.37,6.37,0,0,1,3-9.88l3.62-1.24,3-3.08a6.37,6.37,0,0,1,9.61.53l1.54,2,1.32-.54a6.37,6.37,0,0,1,8.76,6.44l-.28,3.27,3.84,3.71a6.38,6.38,0,0,1,1,7.9Zm-19.52-6.86.24-.32v0l-.26-.12C73.12,131.37,73.12,131.52,73.12,131.68Z"/>\n    <circle class="cls-1" cx="72.84" cy="139.16" r="4.9" transform="matrix(0.52, -0.85, 0.85, 0.52, -83.9, 129)"/>\n    <circle class="cls-1" cx="71.77" cy="126.79" r="4.9" transform="matrix(0.52, -0.85, 0.85, 0.52, -73.85, 122.14)"/>\n    <polygon class="cls-1" points="13.19 213.49 19.73 208.9 23.81 201.21 32.7 207.67 40.03 201.86 41.88 211.1 52.94 216.94 40.28 220.82 45.4 230.62 33.34 232.17 30.5 237.07 24.85 230.83 16.16 229.45 22.05 220.09 13.19 213.49"/>\n    <path class="cls-1" d="M62.14,219.43a9.52,9.52,0,0,1-6.4,6.62l-1.72.53a9.52,9.52,0,0,1-7.4,13.49l-7.39,1-.48.83a9.52,9.52,0,0,1-15.31,1.62L20,239.71l-5.37-.85A9.52,9.52,0,0,1,8.1,224.38l1.2-1.91L7.5,221.13a9.52,9.52,0,0,1,.22-15.43l4.67-3.28,3-5.67a9.52,9.52,0,0,1,14-3.24l3,2.21,1.67-1.32A9.52,9.52,0,0,1,49.37,200l1,4.8,7.06,3.73a9.53,9.53,0,0,1,4.75,10.91Zm-30.86-1.72q.1-.28.22-.56v0l-.43-.06C31.15,217.27,31.22,217.49,31.27,217.71Z"/>\n    <circle class="cls-1" cx="34" cy="228.56" r="7.32" transform="translate(-195.51 201.65) rotate(-74.85)"/>\n    <circle class="cls-1" cx="27.3" cy="211.26" r="7.32" transform="translate(-183.76 182.41) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.23 212.07">\n    <path class="cls-1" d="M32.74,18.32c12.06,2.66,31.92,21,17,34.84S18,45.93,16.22,33.71c-.8-5.45,1-10.09,3.69-12.6S27.36,17.13,32.74,18.32Z"/>\n    <circle class="cls-2" cx="42.47" cy="43.66" r="13.51" transform="translate(-18.37 40.66) rotate(-42.97)"/>\n    <path class="cls-3" d="M26.67,39.72,22,26.33l12,3.73-4.06-9.69,11.94-.86-1.21-1.33C26.59,3.07,9.66-4,2.84,2.33-3.77,8.48,1.55,25,14.69,39.77l.15-8.19Z"/>\n    <path class="cls-3" d="M52,24.64l7,0-1.92,9,9.79.78-5.27,7.32,6.21,3.08,1-.6C79.24,37.5,83.34,25.38,78,17.19c-5.17-8-17.32-9.3-27.52-3.2Z"/>\n    <path class="cls-1" d="M207.39,58.71c-1.07,11.88-16.17,33.15-31.29,20.58s3-31.3,14.52-34.52c5.12-1.44,9.79-.28,12.52,2S207.87,53.41,207.39,58.71Z"/>\n    <circle class="cls-2" cx="184.3" cy="71.13" r="13.05" transform="translate(11.78 167.38) rotate(-50.26)"/>\n    <path class="cls-3" d="M186.15,55.52l12.25-6.11-2.1,11.94,8.79-5.08,2.29,11.33,1.12-1.32C221.24,50.95,226,33.86,219,28.11c-6.71-5.58-21.89,1.55-34.42,15.94l7.86-.86Z"/>\n    <path class="cls-3" d="M203.7,78l.89,6.74-8.9-.73.45,9.47-7.66-4.15-2.19,6.33q.34.43.69.85c7.73,9.12,19.84,11.56,27,5.45,7-5.93,6.79-17.73-.31-26.76Z"/>\n    <polygon class="cls-1" points="35.45 169.25 44.2 166.25 51.21 159.03 59.01 169.08 69.03 164.99 68.11 175.86 78.51 185.91 63.18 186.14 65.71 198.68 51.81 196.51 47.08 201.04 42.81 192.28 33.6 187.95 43.16 179.45 35.45 169.25"/>\n    <path class="cls-1" d="M87.93,191.65a11,11,0,0,1-9.25,5.29l-2.08,0A11,11,0,0,1,64,209.57l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14L34.6,200.6l-5.69-2.68a11,11,0,0,1-2.63-18.21L28.23,178l-1.57-2.08a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93A11,11,0,0,1,80,165.92l-.48,5.65L86.17,178a11,11,0,0,1,1.75,13.66ZM54.18,179.78q.2-.28.42-.56l0,0-.45-.21C54.19,179.25,54.19,179.51,54.18,179.78Z"/>\n    <circle class="cls-2" cx="53.71" cy="192.71" r="8.47" transform="translate(-138.82 138.36) rotate(-58.66)"/>\n    <circle class="cls-2" cx="51.85" cy="171.33" r="8.47" transform="translate(-121.45 126.51) rotate(-58.66)"/>\n    <polygon class="cls-1" points="183.09 184.14 183.1 179.12 180.64 174.25 187.17 172.03 186.84 166.17 192.25 168.56 199.25 165.01 196.65 172.91 203.53 173.83 199.96 180.57 201.44 183.8 196.19 184.43 192.34 188.39 189.68 181.99 183.09 184.14"/>\n    <path class="cls-1" d="M203.85,161.2a6,6,0,0,1,1.07,5.68l-.35,1.07a6,6,0,0,1,4.24,8.68l-2.19,4.14.25.54a6,6,0,0,1-4.71,8.43l-3.15.38-2.38,2.44a6,6,0,0,1-9.8-1.87l-.54-1.3-1.34.44a6,6,0,0,1-7.83-5.7v-3.58l-1.82-3.6a6,6,0,0,1,3.41-8.35l2.23-.76-.07-1.33a6,6,0,0,1,8.39-5.79l2.81,1.25,4.46-2.27a6,6,0,0,1,7.31,1.52ZM191.8,176.4l-.21-.31v0l-.19.19Z"/>\n    <circle class="cls-1" cx="198.34" cy="178.93" r="4.59" transform="translate(-68.54 167.59) rotate(-39.62)"/>\n    <circle class="cls-1" cx="187.06" cy="176.1" r="4.59" transform="translate(-69.33 159.74) rotate(-39.62)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.37 208.78">\n    <path class="cls-1" d="M28.81,27.78c10.62,2.34,28.1,18.45,15,30.67S15.86,52.09,14.27,41.33c-.71-4.8.88-8.88,3.25-11.09S24.08,26.74,28.81,27.78Z"/>\n    <circle class="cls-2" cx="37.38" cy="50.09" r="11.9" transform="translate(-24.11 38.92) rotate(-42.97)"/>\n    <path class="cls-3" d="M23.48,46.62,19.37,34.83l10.55,3.28-3.58-8.53,10.51-.76-1.06-1.17C23.4,14.36,8.5,8.12,2.5,13.71c-5.82,5.42-1.13,20,10.43,33l.13-7.21Z"/>\n    <path class="cls-3" d="M45.81,33.35l6.19,0-1.69,8,8.62.69-4.64,6.44,5.47,2.71.85-.53c9.14-5.94,12.74-16.6,8.05-23.81-4.55-7-15.25-8.19-24.23-2.82Z"/>\n    <path class="cls-1" d="M209.11,122.66c-1.39,15.42-21,43-40.6,26.71s3.94-40.61,18.84-44.79c6.65-1.87,12.7-.37,16.25,2.58S209.73,115.79,209.11,122.66Z"/>\n    <circle class="cls-2" cx="179.15" cy="138.79" r="16.94" transform="translate(-42.1 187.82) rotate(-50.26)"/>\n    <path class="cls-3" d="M181.55,118.53l15.9-7.93-2.73,15.49,11.4-6.59,3,14.7q.73-.84,1.46-1.71C227.09,112.6,233.21,90.42,224.23,83c-8.7-7.23-28.4,2-44.66,20.69l10.2-1.12Z"/>\n    <path class="cls-3" d="M204.32,147.66l1.15,8.74-11.55-.95.58,12.29-9.94-5.38-2.84,8.21q.44.56.9,1.1c10,11.83,25.74,15,35.08,7.07,9.07-7.69,8.81-23-.4-34.72Z"/>\n    <polygon class="cls-2" points="50.57 175.07 57.23 170.4 61.38 162.57 70.43 169.15 77.9 163.23 79.78 172.64 91.05 178.59 78.15 182.54 83.36 192.51 71.08 194.09 68.19 199.08 62.44 192.72 53.6 191.32 59.59 181.8 50.57 175.07"/>\n    <path class="cls-2" d="M100.41,181.12a9.7,9.7,0,0,1-6.52,6.74l-1.75.54a9.7,9.7,0,0,1-7.54,13.74l-7.53,1-.49.84A9.7,9.7,0,0,1,61,205.59l-3.45-3.82-5.46-.87a9.7,9.7,0,0,1-6.69-14.74l1.22-1.94-1.84-1.37A9.7,9.7,0,0,1,45,167.14l4.76-3.34L52.82,158a9.7,9.7,0,0,1,14.26-3.3l3.1,2.25,1.7-1.34a9.7,9.7,0,0,1,15.53,5.7l1,4.89L95.57,170a9.7,9.7,0,0,1,4.83,11.11ZM69,179.37q.1-.29.22-.58v0l-.43-.06C68.86,178.92,68.92,179.15,69,179.37Z"/>\n    <circle class="cls-2" cx="71.75" cy="190.42" r="7.45" transform="translate(-130.8 209.92) rotate(-74.85)"/>\n    <circle class="cls-2" cx="64.94" cy="172.81" r="7.45" transform="translate(-118.83 190.33) rotate(-74.85)"/>\n    <polygon class="cls-2" points="140.75 16.43 145.68 12.97 148.76 7.18 155.46 12.05 160.99 7.67 162.38 14.63 170.72 19.04 161.17 21.96 165.03 29.35 155.94 30.52 153.8 34.21 149.55 29.5 143 28.46 147.44 21.41 140.75 16.43"/>\n    <path class="cls-2" d="M177.65,20.91a7.18,7.18,0,0,1-4.83,5l-1.29.4A7.18,7.18,0,0,1,166,36.47l-5.57.72-.36.62A7.18,7.18,0,0,1,148.48,39l-2.56-2.83-4-.64a7.18,7.18,0,0,1-5-10.91l.9-1.44-1.36-1a7.18,7.18,0,0,1,.16-11.63l3.52-2.47,2.27-4.27A7.18,7.18,0,0,1,153,1.37L155.27,3l1.26-1A7.18,7.18,0,0,1,168,6.26l.73,3.62,5.32,2.81a7.18,7.18,0,0,1,3.58,8.23Zm-23.26-1.29q.07-.21.16-.43v0l-.32,0C154.29,19.29,154.34,19.45,154.39,19.62Z"/>\n    <circle class="cls-2" cx="156.44" cy="27.79" r="5.52" transform="translate(88.73 171.54) rotate(-74.85)"/>\n    <circle class="cls-2" cx="151.39" cy="14.76" r="5.52" transform="translate(97.59 157.03) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.74 237.56">\n    <path class="cls-1" d="M16.13,110.48c2.34,10.62,18.45,28.1,30.67,15S40.43,97.52,29.67,95.94c-4.8-.71-8.88.88-11.09,3.25S15.08,105.74,16.13,110.48Z"/>\n    <circle class="cls-2" cx="38.43" cy="119.04" r="11.9" transform="translate(-74.87 66.03) rotate(-47.03)"/>\n    <path class="cls-3" d="M35,105.14,23.17,101l3.28,10.55L17.93,108l-.76,10.51L16,117.45C2.7,105.07-3.54,90.16,2,84.16,7.47,78.35,22,83,35,94.6l-7.21.13Z"/>\n    <path class="cls-3" d="M21.69,127.47l0,6.19,8-1.69.69,8.62L36.76,136l2.71,5.47q-.25.43-.53.85C33,151.41,22.34,155,15.13,150.33c-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <path class="cls-1" d="M116.5,18c-10.35,3.33-26.24,21-12,31.94s27.22-9,27.79-19.82c.25-4.84-1.71-8.76-4.27-10.74S121.11,16.54,116.5,18Z"/>\n    <circle class="cls-2" cx="110.07" cy="41.04" r="11.9" transform="translate(10.42 103.24) rotate(-52.42)"/>\n    <path class="cls-3" d="M123.58,36.27l3-12.12-10.2,4.26,2.76-8.83-10.53.23.95-1.26c11.08-14.4,25.33-22,31.83-17,6.3,4.85,3,19.77-7.29,33.79l-.81-7.16Z"/>\n    <path class="cls-3" d="M100.1,25.16l-6.17.56,2.43,7.77L87.85,35l5.22,6-5.19,3.21-.9-.45c-9.65-5.05-14.24-15.33-10.25-23,3.87-7.4,14.41-9.58,23.86-5.08Z"/>\n    <polygon class="cls-1" points="105.65 194.74 114.4 191.74 121.41 184.52 129.21 194.57 139.23 190.48 138.31 201.34 148.72 211.4 133.39 211.63 135.91 224.17 122.01 222 117.28 226.53 113.02 217.77 103.81 213.44 113.37 204.94 105.65 194.74"/>\n    <path class="cls-1" d="M158.13,217.14a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14l-2.56-5.27-5.69-2.68a11,11,0,0,1-2.63-18.21l1.95-1.73-1.57-2.08a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93a11,11,0,0,1,15.15,11.14l-.48,5.65,6.64,6.42a11,11,0,0,1,1.75,13.66Zm-33.75-11.87q.2-.28.42-.56l0,0-.45-.21C124.39,204.74,124.39,205,124.38,205.27Z"/>\n    <circle class="cls-2" cx="123.91" cy="218.2" r="8.47" transform="translate(-126.9 210.55) rotate(-58.66)"/>\n    <circle class="cls-2" cx="122.05" cy="196.82" r="8.47" transform="translate(-109.53 198.7) rotate(-58.66)"/>\n    <polygon class="cls-1" points="17.93 218.03 21.73 215.36 24.11 210.88 29.28 214.64 33.55 211.26 34.63 216.64 41.06 220.04 33.69 222.3 36.67 228 29.65 228.9 28 231.75 24.71 228.12 19.66 227.32 23.08 221.87 17.93 218.03"/>\n    <path class="cls-1" d="M46.41,221.49a5.54,5.54,0,0,1-3.73,3.85l-1,.31a5.54,5.54,0,0,1-4.31,7.85l-4.3.55-.28.48a5.54,5.54,0,0,1-8.91.94l-2-2.18-3.12-.49A5.54,5.54,0,0,1,15,224.37l.7-1.11-1.05-.78a5.54,5.54,0,0,1,.13-9l2.72-1.91,1.75-3.3a5.54,5.54,0,0,1,8.15-1.88l1.77,1.29,1-.77A5.54,5.54,0,0,1,39,210.17l.56,2.8,4.11,2.17a5.54,5.54,0,0,1,2.76,6.35Zm-18-1q.06-.17.13-.33v0l-.25,0C28.38,220.23,28.42,220.36,28.45,220.49Z"/>\n    <circle class="cls-1" cx="30.04" cy="226.8" r="4.26" transform="translate(-196.73 196.53) rotate(-74.85)"/>\n    <circle class="cls-1" cx="26.14" cy="216.73" r="4.26" transform="translate(-189.89 185.33) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.88 246.75">\n    <path class="cls-1" d="M171.06,180.8c-10.62,2.34-28.1,18.45-15,30.67s27.94-6.36,29.53-17.12c.71-4.8-.88-8.88-3.25-11.09S175.8,179.75,171.06,180.8Z"/>\n    <circle class="cls-2" cx="162.5" cy="203.11" r="11.9" transform="translate(-96.88 183.58) rotate(-47.03)"/>\n    <path class="cls-3" d="M176.4,199.63l4.11-11.78L170,191.13l3.58-8.53L163,181.84l1.06-1.17c12.38-13.29,27.29-19.54,33.29-14,5.82,5.42,1.13,20-10.43,33l-.13-7.21Z"/>\n    <path class="cls-3" d="M185.07,142.36l-6.19,0,1.69,8-8.62.69,4.64,6.44-5.47,2.71-.85-.53c-9.14-5.94-12.74-16.6-8.05-23.81,4.55-7,15.25-8.19,24.23-2.82Z"/>\n    <path class="cls-1" d="M16.13,28.81c2.34,10.62,18.45,28.1,30.67,15S40.43,15.86,29.67,14.27c-4.8-.71-8.88.88-11.09,3.25S15.08,24.08,16.13,28.81Z"/>\n    <circle class="cls-2" cx="38.43" cy="37.38" r="11.9" transform="translate(-15.11 40.03) rotate(-47.03)"/>\n    <path class="cls-3" d="M35,23.48,23.17,19.37l3.28,10.55-8.53-3.58-.76,10.51L16,35.79C2.7,23.4-3.54,8.5,2,2.5,7.47-3.32,22,1.37,35,12.93l-7.21.13Z"/>\n    <path class="cls-3" d="M21.69,45.81l0,6.19,8-1.69.69,8.62,6.44-4.64,2.71,5.47q-.25.43-.53.85C33,69.75,22.34,73.36,15.13,68.67c-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <polygon class="cls-1" points="44.31 219.99 48.78 211.9 49.12 201.83 61.65 204.03 66.32 194.27 72.94 202.94 87.41 203.39 76.21 213.86 86.5 221.45 74.75 229.19 74.29 235.72 65.25 232.1 55.51 235.08 56.88 222.36 44.31 219.99"/>\n    <path class="cls-1" d="M98.23,201.31a11,11,0,0,1-3.3,10.13l-1.52,1.42a11,11,0,0,1-.85,17.79l-7.2,4.75-.08,1.1A11,11,0,0,1,70.19,246l-5.43-2.18-6,1.84A11,11,0,0,1,44.56,233.9l.28-2.59-2.56-.48a11,11,0,0,1-7.61-16.16l3.19-5.79.25-7.43A11,11,0,0,1,51,191l4.29.75,1.06-2.22a11,11,0,0,1,18.7-1.93l3.44,4.51,9.23.29a11,11,0,0,1,10.48,8.94Zm-33,13.89q0-.35-.06-.7v0l-.47.15C64.91,214.8,65.09,215,65.27,215.2Z"/>\n    <circle class="cls-2" cx="73.61" cy="225.1" r="8.47" transform="matrix(0.98, -0.19, 0.19, 0.98, -41.17, 17.94)"/>\n    <circle class="cls-2" cx="57.86" cy="210.51" r="8.47" transform="translate(-38.7 14.71) rotate(-10.88)"/>\n    <polygon class="cls-1" points="123.22 130.82 125.97 128.89 127.68 125.66 131.41 128.38 134.49 125.94 135.27 129.82 139.92 132.27 134.6 133.9 136.75 138.02 131.68 138.67 130.49 140.73 128.12 138.1 124.47 137.53 126.94 133.6 123.22 130.82"/>\n    <path class="cls-1" d="M143.78,133.32a4,4,0,0,1-2.69,2.78l-.72.22a4,4,0,0,1-3.11,5.67l-3.11.4-.2.35a4,4,0,0,1-6.43.68l-1.43-1.58-2.25-.36a4,4,0,0,1-2.76-6.08l.5-.8-.76-.57a4,4,0,0,1,.09-6.48l2-1.38,1.27-2.38a4,4,0,0,1,5.88-1.36l1.28.93.7-.55a4,4,0,0,1,6.41,2.35l.4,2,3,1.56a4,4,0,0,1,2,4.58Zm-13-.72.09-.24h0l-.18,0C130.76,132.41,130.79,132.5,130.82,132.6Z"/>\n    <circle class="cls-1" cx="131.96" cy="137.15" r="3.08" transform="translate(-34.91 228.69) rotate(-74.85)"/>\n    <circle class="cls-1" cx="129.15" cy="129.89" r="3.08" transform="matrix(0.26, -0.97, 0.97, 0.26, -29.97, 220.61)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.3 235.65">\n    <path class="cls-1" d="M205.48,82.32c-10.62,2.34-28.1,18.45-15,30.67s27.94-6.36,29.53-17.12c.71-4.8-.88-8.88-3.25-11.09S210.22,81.28,205.48,82.32Z"/>\n    <circle class="cls-2" cx="196.92" cy="104.63" r="11.9" transform="translate(-13.86 177.4) rotate(-47.03)"/>\n    <path class="cls-3" d="M210.82,101.15l4.11-11.78-10.55,3.28L208,84.12l-10.51-.76,1.06-1.17c12.38-13.29,27.29-19.54,33.29-14,5.82,5.42,1.13,20-10.43,33L221.23,94Z"/>\n    <path class="cls-3" d="M219.49,43.88l-6.19,0,1.69,8-8.62.69L211,59l-5.47,2.71-.85-.53c-9.14-5.94-12.74-16.6-8.05-23.81,4.55-7,15.25-8.19,24.23-2.82Z"/>\n    <path class="cls-1" d="M24.88,28.81c2.34,10.62,18.45,28.1,30.67,15S49.18,15.86,38.42,14.27c-4.8-.71-8.88.88-11.09,3.25S23.83,24.08,24.88,28.81Z"/>\n    <circle class="cls-2" cx="47.19" cy="37.38" r="11.9" transform="translate(-12.33 46.43) rotate(-47.03)"/>\n    <path class="cls-3" d="M43.71,23.48,31.93,19.37l3.28,10.55-8.53-3.58-.76,10.51-1.17-1.06C11.46,23.4,5.21,8.5,10.8,2.5c5.42-5.82,20-1.13,33,10.43l-7.21.13Z"/>\n    <path class="cls-3" d="M30.44,45.81l0,6.19,8-1.69.69,8.62,6.44-4.64,2.71,5.47q-.25.43-.53.85c-5.94,9.14-16.6,12.74-23.81,8.05-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <path class="cls-1" d="M16.13,152.84c2.34,10.62,18.45,28.1,30.67,15s-6.36-27.94-17.12-29.53c-4.8-.71-8.88.88-11.09,3.25S15.08,148.1,16.13,152.84Z"/>\n    <circle class="cls-2" cx="38.43" cy="161.4" r="11.9" transform="translate(-105.87 79.52) rotate(-47.03)"/>\n    <path class="cls-3" d="M35,147.5l-11.78-4.11,3.28,10.55-8.53-3.58-.76,10.51L16,159.81C2.7,147.43-3.54,132.53,2,126.52c5.42-5.82,20-1.13,33,10.43l-7.21.13Z"/>\n    <path class="cls-3" d="M21.69,169.83l0,6.19,8-1.69.69,8.62,6.44-4.64,2.71,5.47q-.25.43-.53.85c-5.94,9.14-16.6,12.74-23.81,8.05-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <polygon class="cls-1" points="169.77 183.65 178.52 180.66 185.54 173.44 193.34 183.48 203.36 179.39 202.43 190.26 212.84 200.32 197.51 200.54 200.04 213.08 186.13 210.92 181.4 215.45 177.14 206.68 167.93 202.35 177.49 193.85 169.77 183.65"/>\n    <path class="cls-1" d="M222.25,206.05a11,11,0,0,1-9.25,5.29l-2.08,0A11,11,0,0,1,198.34,224l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14L168.93,215l-5.69-2.68a11,11,0,0,1-2.63-18.21l1.95-1.73L161,190.3a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93a11,11,0,0,1,15.15,11.14l-.48,5.65,6.64,6.42a11,11,0,0,1,1.75,13.66Zm-33.75-11.87q.2-.28.42-.56l0,0-.45-.21C188.51,193.65,188.52,193.92,188.51,194.19Z"/>\n    <circle class="cls-2" cx="188.03" cy="207.12" r="8.47" transform="translate(-86.66 260) rotate(-58.66)"/>\n    <circle class="cls-2" cx="186.18" cy="185.73" r="8.47" transform="translate(-69.29 248.15) rotate(-58.66)"/>\n    <polygon class="cls-2" points="57.61 219.52 60.8 217.28 62.78 213.54 67.11 216.69 70.69 213.86 71.59 218.36 76.97 221.2 70.8 223.09 73.3 227.87 67.42 228.62 66.04 231.01 63.29 227.97 59.06 227.29 61.93 222.74 57.61 219.52"/>\n    <path class="cls-2" d="M81.45,222.42a4.64,4.64,0,0,1-3.12,3.22l-.84.26a4.64,4.64,0,0,1-3.61,6.57l-3.6.46-.23.4a4.64,4.64,0,0,1-7.46.79l-1.65-1.83-2.61-.41a4.64,4.64,0,0,1-3.2-7.05l.58-.93-.88-.66a4.64,4.64,0,0,1,.11-7.52l2.28-1.6,1.47-2.76a4.64,4.64,0,0,1,6.82-1.58L67,210.86l.81-.64a4.64,4.64,0,0,1,7.43,2.72l.47,2.34,3.44,1.81a4.64,4.64,0,0,1,2.31,5.32Zm-15-.84.1-.28v0l-.21,0C66.36,221.36,66.39,221.47,66.42,221.58Z"/>\n    <circle class="cls-2" cx="67.75" cy="226.86" r="3.57" transform="translate(-168.94 232.97) rotate(-74.85)"/>\n    <circle class="cls-2" cx="64.48" cy="218.44" r="3.57" transform="translate(-163.21 223.6) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.66 257.49">\n    <path class="cls-1" d="M219.38,12.47c-8.21,1.81-21.72,14.26-11.59,23.71s21.6-4.92,22.83-13.24a9.79,9.79,0,0,0-2.51-8.58A9.79,9.79,0,0,0,219.38,12.47Z"/>\n    <circle class="cls-2" cx="212.76" cy="29.71" r="9.2" transform="translate(46 165.15) rotate(-47.03)"/>\n    <path class="cls-3" d="M223.51,27l3.18-9.11-8.16,2.54,2.77-6.6-8.12-.59.82-.9c9.57-10.28,21.09-15.11,25.73-10.78s.88,15.43-8.07,25.48l-.1-5.57Z"/>\n    <path class="cls-3" d="M206.25,16.77l-4.79,0,1.31,6.15-6.66.53,3.58,5-4.23,2.1-.66-.41c-7.06-4.59-9.85-12.83-6.23-18.41,3.52-5.42,11.79-6.33,18.73-2.18Z"/>\n    <path class="cls-1" d="M64.27,54.21c15,1.36,41.94,20.45,26,39.58S50.71,90,46.64,75.42c-1.82-6.48-.36-12.39,2.52-15.84S57.56,53.61,64.27,54.21Z"/>\n    <circle class="cls-2" cx="79.99" cy="83.41" r="16.51" transform="translate(-35.29 91.6) rotate(-50.26)"/>\n    <path class="cls-3" d="M60.24,81.08l-7.73-15.5,15.11,2.66L61.18,57.13l14.33-2.9q-.82-.71-1.67-1.42c-19.39-16.12-41-22.09-48.29-13.34-7.05,8.48,2,27.69,20.17,43.54l-1.09-9.95Z"/>\n    <path class="cls-3" d="M88.64,58.88l8.52-1.12L96.24,69l12-.57L103,78.13l8,2.77q.54-.43,1.08-.88c11.53-9.78,14.62-25.1,6.89-34.2-7.5-8.84-22.43-8.59-33.85.39Z"/>\n    <polygon class="cls-1" points="12.86 214.67 21.61 211.68 28.63 204.45 36.43 214.5 46.45 210.41 45.52 221.28 55.93 231.34 40.6 231.56 43.13 244.1 29.23 241.94 24.49 246.47 20.23 237.7 11.02 233.37 20.58 224.87 12.86 214.67"/>\n    <path class="cls-1" d="M65.34,237.07a11,11,0,0,1-9.25,5.29l-2.08,0A11,11,0,0,1,41.44,255l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14L12,246l-5.69-2.68A11,11,0,0,1,3.7,225.13l1.95-1.73-1.57-2.08A11,11,0,0,1,9.3,204.24l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92L40,201.13l2.28-.93a11,11,0,0,1,15.15,11.14L57,217l6.64,6.42a11,11,0,0,1,1.75,13.66ZM31.6,225.2q.2-.28.42-.56l0,0-.45-.21C31.61,224.67,31.61,224.94,31.6,225.2Z"/>\n    <circle class="cls-2" cx="31.13" cy="238.13" r="8.47" transform="translate(-188.45 140.87) rotate(-58.66)"/>\n    <circle class="cls-2" cx="29.27" cy="216.75" r="8.47" transform="translate(-171.08 129.02) rotate(-58.66)"/>\n    <polygon class="cls-2" points="200.33 192.09 205.26 188.63 208.33 182.84 215.04 187.71 220.56 183.33 221.96 190.29 230.29 194.7 220.75 197.62 224.61 205 215.51 206.18 213.38 209.87 209.12 205.16 202.57 204.12 207.01 197.07 200.33 192.09"/>\n    <path class="cls-2" d="M237.22,196.57a7.18,7.18,0,0,1-4.83,5l-1.29.4a7.18,7.18,0,0,1-5.58,10.17l-5.57.72-.36.62a7.18,7.18,0,0,1-11.54,1.22l-2.56-2.83-4-.64a7.18,7.18,0,0,1-5-10.91l.9-1.44-1.36-1a7.18,7.18,0,0,1,.16-11.63l3.52-2.47,2.27-4.27A7.18,7.18,0,0,1,212.55,177l2.29,1.67,1.26-1a7.18,7.18,0,0,1,11.5,4.22l.73,3.62,5.32,2.81a7.18,7.18,0,0,1,3.58,8.23ZM214,195.28q.07-.21.16-.43v0l-.32,0C213.87,194.94,213.92,195.11,214,195.28Z"/>\n    <circle class="cls-2" cx="216.01" cy="203.45" r="5.52" transform="translate(-36.82 358.8) rotate(-74.85)"/>\n    <circle class="cls-2" cx="210.97" cy="190.42" r="5.52" transform="translate(-27.96 344.3) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.64 259.42">\n    <path class="cls-1" d="M35.72,20C48.89,22.9,70.56,42.87,54.3,58S19.66,50.12,17.7,36.78c-.88-5.95,1.09-11,4-13.75S29.85,18.7,35.72,20Z"/>\n    <circle class="cls-2" cx="46.34" cy="47.65" r="14.75" transform="translate(-20.04 44.37) rotate(-42.97)"/>\n    <path class="cls-3" d="M29.1,43.34,24,28.73,37.09,32.8,32.66,22.22l13-.94q-.65-.73-1.32-1.45C29,3.35,10.54-4.39,3.1,2.54-4.11,9.26,1.69,27.29,16,43.4l.16-8.94Z"/>\n    <path class="cls-3" d="M56.79,26.89l7.68,0-2.1,9.87,10.68.86-5.75,8,6.78,3.36,1.05-.65c11.33-7.36,15.8-20.58,10-29.52-5.64-8.69-18.9-10.15-30-3.49Z"/>\n    <path class="cls-1" d="M192.11,133.36c-1,10.83-14.74,30.22-28.52,18.76s2.77-28.52,13.24-31.46c4.67-1.31,8.92-.26,11.41,1.81S192.55,128.53,192.11,133.36Z"/>\n    <circle class="cls-2" cx="171.07" cy="144.69" r="11.9" transform="translate(-49.56 183.74) rotate(-50.26)"/>\n    <path class="cls-3" d="M172.75,130.46l11.17-5.57L182,135.77l8-4.63,2.09,10.33,1-1.2c11.62-14,15.92-29.55,9.61-34.79-6.11-5.08-19.95,1.41-31.37,14.53l7.17-.79Z"/>\n    <path class="cls-3" d="M188.75,150.93l.81,6.14-8.11-.67.41,8.64-7-3.78-2,5.77q.31.39.63.78c7,8.31,18.08,10.53,24.64,5,6.37-5.4,6.19-16.16-.28-24.39Z"/>\n    <polygon class="cls-1" points="58.9 216.6 67.65 213.61 74.67 206.38 82.46 216.43 92.48 212.34 91.56 223.21 101.97 233.26 86.64 233.49 89.17 246.03 75.26 243.87 70.53 248.4 66.27 239.63 57.06 235.3 66.62 226.8 58.9 216.6"/>\n    <path class="cls-1" d="M111.38,239a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14l-2.56-5.27-5.69-2.68a11,11,0,0,1-2.63-18.21l1.95-1.73-1.57-2.08a11,11,0,0,1,5.22-17.08L61.58,204l5.18-5.33a11,11,0,0,1,16.61.92L86,203.06l2.28-.93a11,11,0,0,1,15.15,11.14l-.48,5.65,6.64,6.42A11,11,0,0,1,111.38,239ZM77.64,227.13q.2-.28.42-.56l0,0-.45-.21C77.64,226.6,77.64,226.87,77.64,227.13Z"/>\n    <circle class="cls-2" cx="77.16" cy="240.06" r="8.47" transform="translate(-168.01 181.11) rotate(-58.66)"/>\n    <circle class="cls-2" cx="75.3" cy="218.68" r="8.47" transform="translate(-150.64 169.26) rotate(-58.66)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.77 233.32">\n    <path class="cls-1" d="M193.91,22.38C181.06,26.51,161.33,48.46,179,62s33.79-11.12,34.5-24.61c.31-6-2.12-10.88-5.31-13.33S199.64,20.53,193.91,22.38Z"/>\n    <circle class="cls-2" cx="185.93" cy="50.95" r="14.77" transform="translate(32.16 167.23) rotate(-52.42)"/>\n    <path class="cls-3" d="M202.71,45l3.7-15-12.66,5.29,3.43-11-13.08.29q.58-.79,1.18-1.57C199,5.15,216.73-4.3,224.8,1.91c7.82,6,3.73,24.54-9.05,42l-1-8.89Z"/>\n    <path class="cls-3" d="M173.56,31.23l-7.66.69,3,9.64-10.57,1.86,6.48,7.42-6.45,4-1.11-.55c-12-6.27-17.68-19-12.73-28.5,4.81-9.19,17.89-11.9,29.62-6.31Z"/>\n    <path class="cls-1" d="M83.8,182.34c2.34,10.62,18.45,28.1,30.67,15s-6.36-27.94-17.12-29.53c-4.8-.71-8.88.88-11.09,3.25S82.75,177.6,83.8,182.34Z"/>\n    <circle class="cls-2" cx="106.1" cy="190.9" r="11.9" transform="translate(-105.91 138.42) rotate(-47.03)"/>\n    <path class="cls-3" d="M102.63,177l-11.78-4.11,3.28,10.55-8.53-3.58-.76,10.51-1.17-1.06C70.37,176.93,64.13,162,69.72,156c5.42-5.82,20-1.13,33,10.43l-7.21.13Z"/>\n    <path class="cls-3" d="M89.36,199.33l0,6.19,8-1.69.69,8.62,6.44-4.64,2.71,5.47q-.25.43-.53.85c-5.94,9.14-16.6,12.74-23.81,8.05-7-4.55-8.19-15.25-2.82-24.23Z"/>\n    <polygon class="cls-1" points="35.56 84.75 44.31 81.76 51.33 74.53 59.13 84.58 69.15 80.49 68.23 91.36 78.63 101.42 63.3 101.64 65.83 114.18 51.93 112.02 47.19 116.55 42.93 107.78 33.72 103.45 43.28 94.95 35.56 84.75"/>\n    <path class="cls-1" d="M88,107.15a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6l-8.53-1.33-.8.76a11,11,0,0,1-17.53-3.14l-2.56-5.27L29,113.42A11,11,0,0,1,26.4,95.21l1.95-1.73L26.78,91.4A11,11,0,0,1,32,74.32l6.25-2.14,5.18-5.33A11,11,0,0,1,60,67.78l2.67,3.44L65,70.28A11,11,0,0,1,80.13,81.42l-.48,5.65,6.64,6.42A11,11,0,0,1,88,107.15ZM54.3,95.28q.2-.28.42-.56l0,0-.45-.21C54.31,94.75,54.31,95,54.3,95.28Z"/>\n    <circle class="cls-2" cx="53.83" cy="108.22" r="8.47" transform="translate(-66.6 97.91) rotate(-58.66)"/>\n    <circle class="cls-2" cx="51.97" cy="86.83" r="8.47" transform="translate(-49.22 86.06) rotate(-58.66)"/>\n    <polygon class="cls-2" points="8.84 202.6 14.9 198.34 18.69 191.2 26.94 197.2 33.74 191.81 35.46 200.38 45.73 205.8 33.97 209.4 38.72 218.49 27.53 219.93 24.9 224.48 19.66 218.68 11.6 217.41 17.06 208.72 8.84 202.6"/>\n    <path class="cls-2" d="M54.26,208.11a8.84,8.84,0,0,1-5.94,6.14l-1.59.49a8.84,8.84,0,0,1-6.87,12.52l-6.86.88-.44.77a8.84,8.84,0,0,1-14.2,1.5l-3.15-3.48-5-.79a8.84,8.84,0,0,1-6.1-13.43l1.11-1.77-1.68-1.25a8.84,8.84,0,0,1,.2-14.32l4.34-3,2.79-5.26a8.84,8.84,0,0,1,13-3l2.82,2.05,1.55-1.23a8.84,8.84,0,0,1,14.15,5.19l.89,4.46L49.85,198a8.84,8.84,0,0,1,4.4,10.13Zm-28.64-1.59q.09-.26.2-.52v0l-.39-.06C25.5,206.11,25.57,206.31,25.62,206.52Z"/>\n    <circle class="cls-2" cx="28.15" cy="216.58" r="6.79" transform="translate(-188.27 187.16) rotate(-74.85)"/>\n    <circle class="cls-2" cx="21.93" cy="200.53" r="6.79" transform="translate(-177.36 169.3) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="egg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242.04 231.67">\n    <path class="cls-1" d="M23.89,143.74C30.33,152.51,52.12,162,58,145.06s-17.11-23-27.59-20.1c-4.67,1.29-7.77,4.39-8.84,7.45S21,139.83,23.89,143.74Z"/>\n    <circle class="cls-2" cx="47.76" cy="142.56" r="11.9" transform="translate(-102.58 140.93) rotate(-70.86)"/>\n    <path class="cls-3" d="M39,131.25l-12.44,1,7.27,8.33-9.25.17,3.55,9.92-1.5-.5c-17.16-6-28.9-17.07-26.21-24.82,2.61-7.51,17.81-9.1,34.37-3.77l-6.54,3Z"/>\n    <path class="cls-3" d="M35.85,157l2.48,5.68,6.6-4.76,4.11,7.6,4-6.84,4.69,3.91q-.06.49-.14,1c-1.74,10.76-10,18.36-18.53,17-8.25-1.33-13.65-10.64-12.37-21Z"/>\n    <path class="cls-1" d="M209,18C198.65,21.35,182.76,39,197,50s27.22-9,27.79-19.82c.25-4.84-1.71-8.76-4.27-10.74S213.62,16.54,209,18Z"/>\n    <circle class="cls-2" cx="202.57" cy="41.04" r="11.9" transform="translate(46.51 176.55) rotate(-52.42)"/>\n    <path class="cls-3" d="M216.08,36.27l3-12.12-10.2,4.26,2.76-8.83-10.53.23.95-1.26c11.08-14.4,25.33-22,31.83-17,6.3,4.85,3,19.77-7.29,33.79l-.81-7.16Z"/>\n    <path class="cls-3" d="M192.61,25.16l-6.17.56,2.43,7.77L180.35,35l5.22,6-5.19,3.21-.9-.45c-9.65-5.05-14.24-15.33-10.25-23,3.87-7.4,14.41-9.58,23.86-5.08Z"/>\n    <polygon class="cls-1" points="187.95 188.86 196.7 185.86 203.72 178.64 211.51 188.68 221.54 184.59 220.61 195.46 231.02 205.52 215.69 205.75 218.22 218.29 204.31 216.12 199.58 220.65 195.32 211.89 186.11 207.55 195.67 199.06 187.95 188.86"/>\n    <path class="cls-1" d="M240.43,211.26a11,11,0,0,1-9.25,5.29l-2.08,0a11,11,0,0,1-12.58,12.6L208,227.85l-.8.76a11,11,0,0,1-17.53-3.14l-2.56-5.27-5.69-2.68a11,11,0,0,1-2.63-18.21l1.95-1.73-1.57-2.08a11,11,0,0,1,5.22-17.08l6.25-2.14,5.18-5.33a11,11,0,0,1,16.61.92l2.67,3.44,2.28-.93a11,11,0,0,1,15.15,11.14l-.48,5.65,6.64,6.42a11,11,0,0,1,1.75,13.66Zm-33.75-11.87q.2-.28.42-.56l0,0-.45-.21C206.69,198.86,206.69,199.12,206.69,199.39Z"/>\n    <circle class="cls-2" cx="206.21" cy="212.32" r="8.47" transform="translate(-82.38 278.02) rotate(-58.66)"/>\n    <circle class="cls-2" cx="204.36" cy="190.94" r="8.47" transform="translate(-65.01 266.17) rotate(-58.66)"/>\n    <polygon class="cls-2" points="78.59 196.84 83.05 193.71 85.84 188.46 91.91 192.87 96.91 188.9 98.17 195.21 105.72 199.2 97.08 201.85 100.57 208.53 92.34 209.59 90.4 212.94 86.55 208.67 80.62 207.74 84.64 201.35 78.59 196.84"/>\n    <path class="cls-2" d="M112,200.9a6.5,6.5,0,0,1-4.37,4.52l-1.17.36A6.5,6.5,0,0,1,101.4,215l-5,.65-.33.56a6.5,6.5,0,0,1-10.45,1.1l-2.32-2.56-3.66-.58a6.5,6.5,0,0,1-4.49-9.88l.82-1.3-1.23-.92a6.5,6.5,0,0,1,.15-10.53L78,189.28l2.06-3.87a6.5,6.5,0,0,1,9.56-2.21l2.08,1.51,1.14-.9a6.5,6.5,0,0,1,10.41,3.82l.66,3.28,4.82,2.54A6.5,6.5,0,0,1,112,200.9Zm-21.07-1.17q.07-.19.15-.39v0l-.29,0C90.85,199.42,90.89,199.57,90.93,199.73Z"/>\n    <circle class="cls-2" cx="92.79" cy="207.13" r="5" transform="translate(-131.39 242.57) rotate(-74.85)"/>\n    <circle class="cls-2" cx="88.22" cy="195.32" r="5" transform="translate(-123.37 229.44) rotate(-74.85)"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/egg/egg.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], EggComponent);
-    return EggComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=egg.js.map
-
-/***/ }),
-/* 192 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EarringsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var EarringsComponent = /** @class */ (function (_super) {
-    __extends(EarringsComponent, _super);
-    function EarringsComponent(element) {
-        return _super.call(this, 'earrings', element.nativeElement) || this;
-    }
-    EarringsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'earrings',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/earrings/earrings.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg class="earrings--default" width="75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.12 127.91">\n    <path class="cls-1" d="M49.78,21.17C49.78,10.36,45,1.59,39,1.59S28.32,10.36,28.32,21.17V51.73"/>\n    <ellipse class="cls-2" cx="28.42" cy="51.32" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="28.76" cy="120.84" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="38.79" cy="116.35" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="45.43" cy="107.61" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="48.75" cy="97.39" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="49.78" cy="86.16" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="48.5" cy="75.43" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="45.18" cy="64.95" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="38.54" cy="55.72" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="18.19" cy="116.51" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="11.55" cy="107.78" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="8.23" cy="97.55" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="7.21" cy="86.33" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="8.48" cy="75.6" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="11.8" cy="65.12" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="18.45" cy="55.89" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-3" cx="28.76" cy="85.91" rx="15.07" ry="29.19"/>\n    <path class="cls-1" d="M90.34,21.17c0-10.82,4.8-19.58,10.73-19.58s10.73,8.77,10.73,19.58V51.73"/>\n    <ellipse class="cls-2" cx="111.7" cy="51.32" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="111.36" cy="120.84" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="101.32" cy="116.35" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="94.68" cy="107.61" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="91.36" cy="97.39" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="90.34" cy="86.16" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="91.62" cy="75.43" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="94.94" cy="64.95" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="101.58" cy="55.72" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="121.92" cy="116.51" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="128.57" cy="107.78" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="131.89" cy="97.55" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="132.91" cy="86.33" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="131.63" cy="75.6" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="128.31" cy="65.12" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-2" cx="121.67" cy="55.89" rx="5.62" ry="5.49"/>\n    <ellipse class="cls-3" cx="111.36" cy="85.91" rx="15.07" ry="29.19"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="earrings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.03 27.95">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="142.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="142.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="145.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="148.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="148.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="145.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="139.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="139.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="142.6" cy="13.92" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="earrings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.03 27.95">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="142.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="142.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="145.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="148.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="149.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="148.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="145.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="139.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="135.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="139.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="142.6" cy="13.92" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="earrings earrings--zombie" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.72 48.05">\n    <ellipse class="cls-1" cx="16.32" cy="4.06" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="16.51" cy="43.98" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="22.28" cy="41.4" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="26.09" cy="36.39" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="28" cy="30.52" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="28.58" cy="24.07" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="27.85" cy="17.91" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="25.94" cy="11.89" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="22.13" cy="6.59" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="10.44" cy="41.5" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="6.63" cy="36.49" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.73" cy="30.61" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.14" cy="24.17" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.87" cy="18.01" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="6.78" cy="11.99" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="10.59" cy="6.69" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-2" cx="16.51" cy="23.93" rx="8.65" ry="16.76"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="earrings earrings--zombie" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.05 48.05">\n    <ellipse class="cls-1" cx="16.32" cy="4.06" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="16.51" cy="43.98" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="22.28" cy="41.4" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="26.09" cy="36.39" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="28" cy="30.52" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="28.58" cy="24.07" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="27.85" cy="17.91" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="25.94" cy="11.89" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="22.13" cy="6.59" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="10.44" cy="41.5" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="6.63" cy="36.49" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.73" cy="30.61" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.14" cy="24.17" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="4.87" cy="18.01" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="6.78" cy="11.99" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="10.59" cy="6.69" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-2" cx="16.51" cy="23.93" rx="8.65" ry="16.76"/>\n    <ellipse class="cls-1" cx="167.65" cy="4.06" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="167.85" cy="43.98" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="173.61" cy="41.4" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="177.42" cy="36.39" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="179.33" cy="30.52" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="179.92" cy="24.07" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="179.18" cy="17.91" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="177.28" cy="11.89" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="173.46" cy="6.59" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="161.78" cy="41.5" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="157.97" cy="36.49" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="156.06" cy="30.61" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="155.47" cy="24.17" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="156.21" cy="18.01" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="158.11" cy="11.99" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-1" cx="161.92" cy="6.69" rx="3.23" ry="3.15"/>\n    <ellipse class="cls-2" cx="167.85" cy="23.93" rx="8.65" ry="16.76"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="earrings earrings--yaga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.88 20.66">\n    <ellipse class="cls-1" cx="64.32" cy="1.83" rx="1.45" ry="1.42" transform="translate(2.65 20.19) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="70" cy="18.83" rx="1.45" ry="1.42" transform="translate(-2.38 22.82) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="72.1" cy="16.92" rx="1.45" ry="1.42" transform="translate(-1.68 23.38) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="73.02" cy="14.25" rx="1.45" ry="1.42" transform="translate(-0.8 23.53) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="73.01" cy="11.48" rx="1.45" ry="1.42" transform="translate(0.07 23.39) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="72.36" cy="8.64" rx="1.45" ry="1.42" transform="translate(0.92 23.04) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="71.18" cy="6.12" rx="1.45" ry="1.42" transform="translate(1.65 22.55) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="69.52" cy="3.82" rx="1.45" ry="1.42" transform="translate(2.29 21.92) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="67.15" cy="2.09" rx="1.45" ry="1.42" transform="translate(2.71 21.09) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="67.07" cy="18.63" rx="1.45" ry="1.42" transform="translate(-2.46 21.89) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="64.74" cy="17.02" rx="1.45" ry="1.42" transform="translate(-2.08 21.08) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="63.1" cy="14.78" rx="1.45" ry="1.42" transform="translate(-1.46 20.46) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="61.94" cy="12.12" rx="1.45" ry="1.42" transform="translate(-0.68 19.96) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="61.39" cy="9.38" rx="1.45" ry="1.42" transform="translate(0.14 19.65) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="61.36" cy="6.55" rx="1.45" ry="1.42" transform="translate(1.03 19.5) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="62.24" cy="3.75" rx="1.45" ry="1.42" transform="matrix(0.95, -0.31, 0.31, 0.95, 1.94, 19.64)"/>\n    <ellipse class="cls-2" cx="67.19" cy="10.28" rx="3.89" ry="7.53" transform="translate(0.15 21.51) rotate(-18.21)"/>\n    <ellipse class="cls-1" cx="4.81" cy="18.83" rx="1.42" ry="1.45" transform="translate(-14.58 17.52) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="10.5" cy="1.83" rx="1.42" ry="1.45" transform="translate(5.48 11.23) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="12.6" cy="3.74" rx="1.42" ry="1.45" transform="translate(5.11 14.54) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="13.52" cy="6.41" rx="1.42" ry="1.45" transform="translate(3.2 17.25) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="13.51" cy="9.19" rx="1.42" ry="1.45" transform="translate(0.56 19.15) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="12.85" cy="12.02" rx="1.42" ry="1.45" transform="translate(-2.58 20.47) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="11.68" cy="14.54" rx="1.42" ry="1.45" transform="translate(-5.79 21.09) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="10.02" cy="16.84" rx="1.42" ry="1.45" transform="matrix(0.31, -0.95, 0.95, 0.31, -9.11, 21.1)"/>\n    <ellipse class="cls-1" cx="7.65" cy="18.57" rx="1.42" ry="1.45" transform="translate(-12.38 20.03) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="7.56" cy="2.04" rx="1.42" ry="1.45" transform="translate(3.26 8.58) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="5.23" cy="3.64" rx="1.42" ry="1.45" transform="translate(0.14 7.47) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="3.59" cy="5.88" rx="1.42" ry="1.45" transform="translate(-3.11 7.46) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="2.44" cy="8.55" rx="1.42" ry="1.45" transform="translate(-6.44 8.19) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="1.89" cy="11.28" rx="1.42" ry="1.45" transform="translate(-9.42 9.55) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="1.86" cy="14.11" rx="1.42" ry="1.45" transform="translate(-12.13 11.47) rotate(-71.79)"/>\n    <ellipse class="cls-1" cx="2.74" cy="16.91" rx="1.42" ry="1.45" transform="matrix(0.31, -0.95, 0.95, 0.31, -14.18, 14.23)"/>\n    <ellipse class="cls-2" cx="7.69" cy="10.39" rx="7.53" ry="3.89" transform="translate(-4.58 14.44) rotate(-71.79)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="earrings earrings--yaga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.14 38.61">\n    <ellipse class="cls-1" cx="13.11" cy="3.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="13.27" cy="35.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="17.9" cy="33.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="20.96" cy="29.24" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.49" cy="24.52" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.97" cy="19.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.38" cy="14.39" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="20.84" cy="9.56" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="17.78" cy="5.3" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="8.39" cy="33.35" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="5.33" cy="29.32" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.8" cy="24.6" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.33" cy="19.42" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.91" cy="14.47" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="5.45" cy="9.63" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="8.51" cy="5.38" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-2" cx="13.27" cy="19.23" rx="6.95" ry="13.47"/>\n    <ellipse class="cls-1" cx="109.96" cy="3.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="110.12" cy="35.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="114.75" cy="33.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="117.81" cy="29.24" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="119.35" cy="24.52" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="119.82" cy="19.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="119.23" cy="14.39" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="117.7" cy="9.56" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="114.63" cy="5.3" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="105.24" cy="33.35" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="102.18" cy="29.32" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="100.65" cy="24.6" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="100.18" cy="19.42" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="100.77" cy="14.47" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="102.3" cy="9.63" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="105.36" cy="5.38" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-2" cx="110.12" cy="19.23" rx="6.95" ry="13.47"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="earrings earrings--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.37 101.52">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="130.82" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="130.94" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="134.29" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.51" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.62" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.96" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.53" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.42" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="134.21" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="127.41" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="125.19" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="124.08" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="123.74" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="124.17" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="125.28" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="127.49" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="130.94" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="9.49" cy="75.93" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="99.15" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="97.65" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="94.74" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="91.32" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="87.57" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="83.99" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="80.49" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="77.4" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="97.71" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="94.79" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="91.37" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="87.63" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="84.04" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="80.54" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="77.46" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="87.49" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="130.82" cy="75.93" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="130.94" cy="99.15" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="134.29" cy="97.65" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.51" cy="94.74" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.62" cy="91.32" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.96" cy="87.57" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="137.53" cy="83.99" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="136.42" cy="80.49" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="134.21" cy="77.4" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="127.41" cy="97.71" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="125.19" cy="94.79" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="124.08" cy="91.37" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="123.74" cy="87.63" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="124.17" cy="84.04" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="125.28" cy="80.54" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="127.49" cy="77.46" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="130.94" cy="87.49" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="earrings earrings--alien" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.01 27.95">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="171.47" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="171.58" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="174.93" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="177.15" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="178.26" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="178.6" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="178.17" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="177.07" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="174.85" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="168.05" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="165.83" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="164.72" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="164.38" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="164.81" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="165.92" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="168.14" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="171.58" cy="13.92" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="earrings earrings--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.03 27.95">\n    <ellipse class="cls-1" cx="9.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="9.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="16.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="15.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="12.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="2.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="3.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="6.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="9.6" cy="13.92" rx="5.03" ry="9.75"/>\n    <ellipse class="cls-1" cx="76.49" cy="2.36" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="76.61" cy="25.58" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="79.96" cy="24.08" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="82.18" cy="21.17" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="83.28" cy="17.75" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="83.63" cy="14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="83.2" cy="10.42" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="82.09" cy="6.92" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="79.87" cy="3.84" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="73.08" cy="24.14" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="70.86" cy="21.22" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="69.75" cy="17.81" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="69.41" cy="14.06" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="69.83" cy="10.47" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="70.94" cy="6.97" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-1" cx="73.16" cy="3.89" rx="1.88" ry="1.83"/>\n    <ellipse class="cls-2" cx="76.6" cy="13.92" rx="5.03" ry="9.75"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="earrings earrings--doctor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.29 38.61">\n    <ellipse class="cls-1" cx="13.11" cy="3.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="13.27" cy="35.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="17.9" cy="33.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="20.96" cy="29.24" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.49" cy="24.52" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.97" cy="19.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="22.38" cy="14.39" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="20.84" cy="9.56" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="17.78" cy="5.3" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="8.39" cy="33.35" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="5.33" cy="29.32" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.8" cy="24.6" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.33" cy="19.42" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="3.91" cy="14.47" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="5.45" cy="9.63" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="8.51" cy="5.38" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-2" cx="13.27" cy="19.23" rx="6.95" ry="13.47"/>\n    <ellipse class="cls-1" cx="168.11" cy="3.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="168.27" cy="35.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="172.9" cy="33.27" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="175.96" cy="29.24" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="177.49" cy="24.52" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="177.97" cy="19.34" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="177.38" cy="14.39" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="175.84" cy="9.56" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="172.78" cy="5.3" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="163.39" cy="33.35" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="160.33" cy="29.32" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="158.8" cy="24.6" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="158.33" cy="19.42" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="158.91" cy="14.47" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="160.45" cy="9.63" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-1" cx="163.51" cy="5.38" rx="2.59" ry="2.53"/>\n    <ellipse class="cls-2" cx="168.27" cy="19.23" rx="6.95" ry="13.47"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="earrings earrings--ghost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.42 45.78">\n    <ellipse class="cls-1" cx="15.55" cy="3.87" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="15.73" cy="41.91" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="21.23" cy="39.45" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="24.86" cy="34.67" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="26.68" cy="29.08" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="27.23" cy="22.94" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="26.54" cy="17.07" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="24.72" cy="11.33" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="21.09" cy="6.28" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="9.95" cy="39.54" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="6.32" cy="34.77" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="4.5" cy="29.17" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="3.94" cy="23.03" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="4.64" cy="17.16" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="6.46" cy="11.42" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="10.09" cy="6.37" rx="3.07" ry="3"/>\n    <ellipse class="cls-2" cx="15.73" cy="22.8" rx="8.25" ry="15.97"/>\n    <ellipse class="cls-1" cx="199.79" cy="3.87" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="199.98" cy="41.91" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="205.47" cy="39.45" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="209.11" cy="34.67" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="210.92" cy="29.08" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="211.48" cy="22.94" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="210.78" cy="17.07" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="208.97" cy="11.33" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="205.33" cy="6.28" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="194.2" cy="39.54" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="190.57" cy="34.77" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="188.75" cy="29.17" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="188.19" cy="23.03" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="188.89" cy="17.16" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="190.71" cy="11.42" rx="3.07" ry="3"/>\n    <ellipse class="cls-1" cx="194.34" cy="6.37" rx="3.07" ry="3"/>\n    <ellipse class="cls-2" cx="199.98" cy="22.8" rx="8.25" ry="15.97"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="earrings--wolf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.47 41.59">\n    <path class="cls-1" d="M26,10.22c1.42-3.44,1-6.86-.84-7.64S20.62,4,19.2,7.4l-4,9.72"/>\n    <ellipse class="cls-2" cx="15.26" cy="17" rx="1.89" ry="1.93" transform="translate(-6.27 24.61) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="6.23" cy="39.15" rx="1.89" ry="1.93" transform="translate(-32.33 29.95) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="10.01" cy="39.04" rx="1.89" ry="1.93" transform="matrix(0.38, -0.92, 0.92, 0.38, -29.89, 33.38)"/>\n    <ellipse class="cls-2" cx="13.27" cy="37.14" rx="1.89" ry="1.93" transform="translate(-26.12 35.22) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="15.67" cy="34.32" rx="1.89" ry="1.93" transform="translate(-22.03 35.69) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="17.48" cy="30.89" rx="1.89" ry="1.93" transform="translate(-17.74 35.24) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="18.48" cy="27.31" rx="1.89" ry="1.93" transform="translate(-13.82 33.95) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="18.8" cy="23.54" rx="1.89" ry="1.93" transform="translate(-10.13 31.92) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="17.9" cy="19.73" rx="1.89" ry="1.93" transform="translate(-7.17 28.74) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="3.44" cy="36.39" rx="1.89" ry="1.93" transform="translate(-31.5 25.66) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="2.47" cy="32.74" rx="1.89" ry="1.93" transform="translate(-28.72 22.52) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="2.76" cy="29.05" rx="1.89" ry="1.93" transform="translate(-25.14 20.5) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="3.91" cy="25.34" rx="1.89" ry="1.93" transform="translate(-21 19.28) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="5.73" cy="22.1" rx="1.89" ry="1.93" transform="translate(-16.88 18.95) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="8.16" cy="19.2" rx="1.89" ry="1.93" transform="translate(-12.7 19.41) rotate(-67.54)"/>\n    <ellipse class="cls-2" cx="11.49" cy="17.14" rx="1.89" ry="1.93" transform="translate(-8.74 21.21) rotate(-67.54)"/>\n    <ellipse class="cls-3" cx="10.82" cy="28.04" rx="10.05" ry="5.19" transform="translate(-19.23 27.33) rotate(-67.54)"/>\n    <path class="cls-1" d="M79.45,8.34c-1.42-3.44-1-6.86.84-7.64s4.56,1.38,6,4.82l4,9.72"/>\n    <ellipse class="cls-2" cx="90.21" cy="15.12" rx="1.93" ry="1.89" transform="translate(1.07 35.61) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="99.24" cy="37.28" rx="1.93" ry="1.89" transform="translate(-6.71 40.74) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="95.46" cy="37.17" rx="1.93" ry="1.89" transform="translate(-6.96 39.29) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="92.2" cy="35.27" rx="1.93" ry="1.89" transform="translate(-6.48 37.9) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="89.8" cy="32.45" rx="1.93" ry="1.89" transform="translate(-5.59 36.77) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="88" cy="29.01" rx="1.93" ry="1.89" transform="translate(-4.41 35.82) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="86.99" cy="25.43" rx="1.93" ry="1.89" transform="translate(-3.12 35.16) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="86.67" cy="21.66" rx="1.93" ry="1.89" transform="translate(-1.7 34.76) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="87.57" cy="17.86" rx="1.93" ry="1.89" transform="translate(-0.18 34.81) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="102.04" cy="34.51" rx="1.93" ry="1.89" transform="translate(-5.45 41.6) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="103" cy="30.86" rx="1.93" ry="1.89" transform="translate(-3.98 41.69) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="102.71" cy="27.17" rx="1.93" ry="1.89" transform="translate(-2.59 41.3) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="101.56" cy="23.47" rx="1.93" ry="1.89" transform="translate(-1.26 40.58) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="99.74" cy="20.23" rx="1.93" ry="1.89" transform="translate(-0.16 39.64) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="97.31" cy="17.33" rx="1.93" ry="1.89" transform="translate(0.76 38.49) rotate(-22.46)"/>\n    <ellipse class="cls-2" cx="93.98" cy="15.27" rx="1.93" ry="1.89" transform="translate(1.3 37.06) rotate(-22.46)"/>\n    <ellipse class="cls-3" cx="94.65" cy="26.17" rx="5.19" ry="10.05" transform="translate(-2.82 38.15) rotate(-22.46)"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="earrings earrings--bed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.58 24.1">\n    <ellipse class="cls-1" cx="8.19" cy="2.04" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="8.28" cy="22.06" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="11.17" cy="20.77" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="13.09" cy="18.25" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="14.04" cy="15.31" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="14.34" cy="12.07" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="13.97" cy="8.98" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="13.01" cy="5.97" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="11.1" cy="3.31" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="5.24" cy="20.82" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="3.33" cy="18.3" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="2.37" cy="15.36" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="2.08" cy="12.12" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="2.44" cy="9.03" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="3.4" cy="6.01" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="5.31" cy="3.36" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-2" cx="8.28" cy="12" rx="4.34" ry="8.41"/>\n    <ellipse class="cls-1" cx="72.35" cy="2.04" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="72.45" cy="22.06" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="75.34" cy="20.77" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="77.26" cy="18.25" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="78.21" cy="15.31" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="78.51" cy="12.07" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="78.14" cy="8.98" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="77.18" cy="5.97" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="75.27" cy="3.31" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="69.41" cy="20.82" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="67.49" cy="18.3" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="66.54" cy="15.36" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="66.24" cy="12.12" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="66.61" cy="9.03" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="67.57" cy="6.01" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-1" cx="69.48" cy="3.36" rx="1.62" ry="1.58"/>\n    <ellipse class="cls-2" cx="72.45" cy="12" rx="4.34" ry="8.41"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/earrings/earrings.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
-    ], EarringsComponent);
-    return EarringsComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=earrings.js.map
-
-/***/ }),
-/* 193 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(156);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var MonstersComponent = /** @class */ (function () {
-    function MonstersComponent(componentFactoryResolver, monstersService, viewContainerRef, renderer) {
-        this.componentFactoryResolver = componentFactoryResolver;
-        this.monstersService = monstersService;
-        this.viewContainerRef = viewContainerRef;
-        this.renderer = renderer;
-        this.onScreen = [];
-    }
-    MonstersComponent.prototype.ngOnInit = function () {
-        this.monsters = this.monstersService.getMonsters();
-        this.loadMonster(this.monsterId);
-    };
-    MonstersComponent.prototype.ngAfterViewInit = function () {
-    };
-    MonstersComponent.prototype.loadMonster = function (id) {
-        var monster = this.monsters.find(function (e) { return e.id == id; });
-        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(monster.component);
-        var viewContainerRef = this.monsterHost.viewContainerRef;
-        viewContainerRef.clear();
-        var instance = viewContainerRef.createComponent(componentFactory).instance;
-        this.monster = instance;
-    };
-    MonstersComponent.prototype.render = function (component, cb) {
-        var componentFactory = this.componentFactoryResolver.resolveComponentFactory(component);
-        var viewContainerRef = this.screen.viewContainerRef;
-        var _a = viewContainerRef.createComponent(componentFactory), hostView = _a.hostView, instance = _a.instance;
-        this.addOnScreen(instance.node, hostView);
-        return cb(instance);
-    };
-    MonstersComponent.prototype.addOnScreen = function (instance, host) {
-        this.onScreen = this.onScreen.concat([{ instance: instance, host: host }]);
-        return this;
-    };
-    MonstersComponent.prototype.remove = function (instance) {
-        var host = this.onScreen.find(function (_a) {
-            var i = _a.instance;
-            return i === instance;
-        }).host;
-        var index = this.screen.viewContainerRef.indexOf(host);
-        this.screen.viewContainerRef.remove(index);
-        this.onScreen = this.onScreen.filter(function (_a) {
-            var i = _a.instance;
-            return i !== instance;
-        });
-        return this;
-    };
-    MonstersComponent.prototype.clearAll = function () {
-        this.screen.viewContainerRef.clear();
-        return this;
-    };
-    MonstersComponent.prototype.getCurrentMonster = function () {
-        return this.monster;
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
-        __metadata("design:type", Object)
-    ], MonstersComponent.prototype, "monsterId", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */])
-    ], MonstersComponent.prototype, "monsterHost", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */])
-    ], MonstersComponent.prototype, "screen", void 0);
-    MonstersComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'monster',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/'<ng-template monster-host></ng-template>\n<ng-template monster-screen></ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/monsters.component.html"*/,
-            // styleUrls: ['monsters.component.scss'],
-            providers: [__WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */]],
-            host: {
-                '[class]': 'monster.name + "__screen"',
-                '[class.monster]': 'true',
-            }
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
-            __WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]])
-    ], MonstersComponent);
-    return MonstersComponent;
-}());
-
-//# sourceMappingURL=monsters.component.js.map
-
-/***/ }),
-/* 194 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersHostDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var MonstersHostDirective = /** @class */ (function () {
-    function MonstersHostDirective(viewContainerRef) {
-        this.viewContainerRef = viewContainerRef;
-    }
-    MonstersHostDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
-            selector: '[monster-host]',
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
-    ], MonstersHostDirective);
-    return MonstersHostDirective;
-}());
-
-//# sourceMappingURL=monsters-host.directive.js.map
-
-/***/ }),
-/* 195 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersScreenDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var MonstersScreenDirective = /** @class */ (function () {
-    function MonstersScreenDirective(viewContainerRef) {
-        this.viewContainerRef = viewContainerRef;
-    }
-    MonstersScreenDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
-            selector: '[monster-screen]',
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]])
-    ], MonstersScreenDirective);
-    return MonstersScreenDirective;
-}());
-
-//# sourceMappingURL=monsters-screen.directive.js.map
-
-/***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameFinistStateMachine; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(310);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
 
 var GameFinistStateMachine = /** @class */ (function () {
@@ -2989,12 +3006,12 @@ var GameFinistStateMachine = /** @class */ (function () {
 //# sourceMappingURL=game-fsm.js.map
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnersHandler; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(311);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -3049,13 +3066,13 @@ var ListnersHandler = /** @class */ (function () {
 //# sourceMappingURL=listners-handler.js.map
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(200);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3114,7 +3131,7 @@ var ItemHolderComponent = /** @class */ (function () {
 //# sourceMappingURL=item-holder.component.js.map
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3146,13 +3163,90 @@ var TemplateHostDriective = /** @class */ (function () {
 //# sourceMappingURL=template-host.directive.js.map
 
 /***/ }),
-/* 200 */
+/* 201 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(205);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var SelectPage = /** @class */ (function () {
+    function SelectPage(navCtrl, repo, r, platform) {
+        this.navCtrl = navCtrl;
+        this.repo = repo;
+        this.r = r;
+        this.platform = platform;
+        this.monsters = this.repo.getMonsters().map(function (m) { return ({ name: m.name, id: m.id }); });
+    }
+    SelectPage.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.monsters = this.repo.getMonsters().map(function (m) {
+            var _a = _this.isIphone() ? _this.bgMobile.find(m.name) : _this.bg.find(m.name), top = _a.top, left = _a.left;
+            return { name: m.name, top: Math.floor(top), left: Math.floor(left), id: m.id };
+        });
+        this.monsters.forEach(function (m) {
+            var el = document.getElementById(m.name);
+            // el.setAttribute('width', '100px');
+            // console.log(el);
+        });
+    };
+    SelectPage.prototype.isIphone = function () {
+        return this.platform.is('iphone');
+    };
+    SelectPage.prototype.beginGame = function (monster) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__game_game__["a" /* GamePage */], { monster: monster });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__["a" /* BackgroundTabletComponent */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__["a" /* BackgroundTabletComponent */])
+    ], SelectPage.prototype, "bg", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__["a" /* BackgroundMobileComponent */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__["a" /* BackgroundMobileComponent */])
+    ], SelectPage.prototype, "bgMobile", void 0);
+    SelectPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'select-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/select/select.html"*/'<ion-content class="container" fixed no-bounce>\n  <div class="bg">\n    <div class="list" [class.mobile]="isIphone()">\n        <img *ngFor="let monster of monsters" (click)="beginGame(monster.id)" src="assets/imgs/monsters/{{monster.name}}.svg" alt="placholder" class="monsters monsters__{{monster.name}}" [style.left.px]="monster.left" [style.top.px]="monster.top">\n    </div>\n\n    <background-mobile *ngIf="isIphone(); else tablet"></background-mobile>\n    <ng-template #tablet>\n      <background-tablet></background-tablet>\n    </ng-template>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/select/select.html"*/,
+            providers: [__WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__["a" /* MonstersService */]],
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__["a" /* MonstersService */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
+    ], SelectPage);
+    return SelectPage;
+}());
+
+//# sourceMappingURL=select.js.map
+
+/***/ }),
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundTabletComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(203);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3193,13 +3287,13 @@ var BackgroundTabletComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-tablet.component.js.map
 
 /***/ }),
-/* 201 */
+/* 203 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(204);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3232,7 +3326,7 @@ var BackgroundComponent = /** @class */ (function () {
 //# sourceMappingURL=bg.component.js.map
 
 /***/ }),
-/* 202 */
+/* 204 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3291,13 +3385,13 @@ var BackgroundAnchorDirective = /** @class */ (function () {
 //# sourceMappingURL=bg.directive.js.map
 
 /***/ }),
-/* 203 */
+/* 205 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundMobileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(203);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3338,8 +3432,6 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-mobile.component.js.map
 
 /***/ }),
-/* 204 */,
-/* 205 */,
 /* 206 */,
 /* 207 */,
 /* 208 */,
@@ -3381,21 +3473,21 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */
+/* 247 */,
+/* 248 */,
+/* 249 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(272);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
-/* 248 */,
-/* 249 */,
 /* 250 */,
 /* 251 */,
 /* 252 */,
@@ -3416,7 +3508,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* 267 */,
 /* 268 */,
 /* 269 */,
-/* 270 */
+/* 270 */,
+/* 271 */,
+/* 272 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3424,15 +3518,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_game_game__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_game_game__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3470,8 +3564,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/game/game.module#GamePageModule', name: 'GamePage', segment: 'game', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/game/game.module#GamePageModule', name: 'GamePage', segment: 'game', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_5__components_components_module__["a" /* ComponentsModule */],
@@ -3499,8 +3593,6 @@ var AppModule = /** @class */ (function () {
 //# sourceMappingURL=app.module.js.map
 
 /***/ }),
-/* 271 */,
-/* 272 */,
 /* 273 */,
 /* 274 */,
 /* 275 */,
@@ -3530,291 +3622,25 @@ var AppModule = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSetController; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_model__ = __webpack_require__(299);
-
-
-var once = function (fn) {
-    var called = false;
-    return function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
-        if (called)
-            throw Error('AnimationSet has been configured already');
-        called = true;
-        return fn.apply(void 0, args);
-    };
-};
-var AnimationSetController = /** @class */ (function () {
-    function AnimationSetController(instance, animations, recoveryPoint, recoveryFn) {
-        var _this = this;
-        this.instance = instance;
-        this.recoveryPoint = recoveryPoint;
-        this.recoveryFn = recoveryFn;
-        this.state = false;
-        this.current = null;
-        this.queue = [];
-        this.queueCleared = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
-        this.end = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
-        this.config = once(function (animations) {
-            _this.animations = Object.keys(animations).reduce(function (acc, k) {
-                var animation = new __WEBPACK_IMPORTED_MODULE_1__animation_model__["a" /* AnimationModel */](_this.instance, animations[k]);
-                animation.onStart(function (animation) {
-                    _this.setState(true);
-                    _this.setCurrent(animation);
-                    return;
-                });
-                animation.onEnd(function (animation) {
-                    _this.setState(false);
-                    _this.setCurrent(null);
-                    return;
-                });
-                return acc.set(k, animation);
-            }, new Map());
-            return;
-        });
-        this.recoveryPoint = this.instance.attr();
-        this.recoveryFn = function (instance, recoveryPoint) { return instance.attr(recoveryPoint); };
-        this.end.subscribe(function () {
-            if (!_this.queue.length)
-                return _this.queueCleared.emit(null);
-            var _a = _this.queue, first = _a[0], rest = _a.slice(1);
-            _this.queue = rest;
-            first.run();
-            return;
-        });
-        this.config(animations);
-    }
-    AnimationSetController.prototype.get = function (name) {
-        return this.animations.get(name);
-    };
-    AnimationSetController.prototype.setState = function (arg) {
-        this.state = arg;
-        if (this.state === false)
-            this.end.emit(null);
-        return this;
-    };
-    AnimationSetController.prototype.setCurrent = function (animation) {
-        this.current = animation;
-        return this;
-    };
-    AnimationSetController.prototype.isAnimating = function () {
-        return this.state;
-    };
-    AnimationSetController.prototype.getInQueue = function (animation) {
-        this.queue.push(animation);
-        return;
-    };
-    AnimationSetController.prototype.onDisengage = function (cb) {
-        this.queueCleared.subscribe(cb);
-        return this;
-    };
-    AnimationSetController.prototype.recovery = function () {
-        var _this = this;
-        var recovery = function () { return _this.recoveryFn(_this.instance, _this.recoveryPoint); };
-        this.isAnimating() ? this.onDisengage(recovery) : recovery();
-        return this;
-    };
-    AnimationSetController.prototype.getRecoveryPoint = function () {
-        return this.recoveryPoint;
-    };
-    AnimationSetController.prototype.run = function (name) {
-        var animation = this.animations.get(name);
-        if (!animation)
-            throw Error('AnimationSet: No animation was found');
-        if (this.isAnimating()) {
-            this.getInQueue(animation);
-            return this;
-        }
-        animation.run();
-        return this;
-    };
-    AnimationSetController.prototype.specify = function (name) {
-        return new AnimationSetControllerSpecified(this, name);
-    };
-    return AnimationSetController;
-}());
-
-var AnimationSetControllerSpecified = /** @class */ (function () {
-    function AnimationSetControllerSpecified(parent, name) {
-        this.parent = parent;
-        this.name = name;
-    }
-    ;
-    AnimationSetControllerSpecified.prototype.run = function () {
-        this.parent.run(this.name);
-        return this;
-    };
-    AnimationSetControllerSpecified.prototype.specify = function (name) {
-        return false;
-    };
-    return AnimationSetControllerSpecified;
-}());
-//# sourceMappingURL=animation-set.controller.js.map
-
-/***/ }),
-/* 299 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-
-var AnimationModel = /** @class */ (function () {
-    function AnimationModel(instance, fn) {
-        this.instance = instance;
-        this.fn = fn;
-        this.start = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
-        this.end = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
-    }
-    ;
-    AnimationModel.prototype.run = function () {
-        var _this = this;
-        this.start.emit(this);
-        this.fn(this.instance, function () { return _this.end.emit(_this); });
-        return this;
-    };
-    AnimationModel.prototype.onEnd = function (fn) {
-        this.end.subscribe(fn);
-        return this;
-    };
-    AnimationModel.prototype.onStart = function (fn) {
-        this.start.subscribe(fn);
-        return this;
-    };
-    return AnimationModel;
-}());
-
-//# sourceMappingURL=animation.model.js.map
-
-/***/ }),
-/* 300 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSequenceController; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__ = __webpack_require__(301);
-
-
-var AnimationSequenceController = /** @class */ (function () {
-    function AnimationSequenceController(scheme, animations) {
-        var _this = this;
-        this.start = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
-        this.end = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
-        this.interval = false;
-        this.state = false;
-        this.model = new __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__["a" /* AnimationSequenceModel */](scheme, animations);
-        this.start.subscribe(function () { return _this.setState(true); });
-        this.end.subscribe(function () { return _this.setState(false); });
-    }
-    AnimationSequenceController.prototype.setState = function (arg) {
-        this.state = arg;
-        return;
-    };
-    AnimationSequenceController.prototype.setInterval = function (fn, interval) {
-        var _this = this;
-        this.interval = true;
-        var func = function () {
-            if (!_this.interval)
-                return;
-            setTimeout(fn, interval);
-        };
-        this.end.subscribe(func);
-        return fn();
-    };
-    AnimationSequenceController.prototype.isAnimating = function () {
-        return this.state;
-    };
-    AnimationSequenceController.prototype.run = function (interval) {
-        var _this = this;
-        if (this.isAnimating())
-            return false;
-        this.start.emit(null);
-        var rec = function (acc) {
-            var first = acc[0], rest = acc.slice(1);
-            if (!first)
-                return _this.end.emit(null);
-            var arr = first instanceof Array ? first : [first];
-            return arr.forEach(function (name) {
-                var set = _this.model.getFunction(name)(function (set) { return set; });
-                return;
-            });
-        };
-        var scheme = this.model.getScheme();
-        var run = function () { return rec(scheme); };
-        interval ? this.setInterval(run, interval) : setTimeout(run, 0);
-        return this;
-    };
-    AnimationSequenceController.prototype.clear = function () {
-        this.interval = false;
-    };
-    return AnimationSequenceController;
-}());
-
-//# sourceMappingURL=animation-sequence.controller.js.map
-
-/***/ }),
-/* 301 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSequenceModel; });
-var AnimationSequenceModel = /** @class */ (function () {
-    function AnimationSequenceModel(scheme, animations) {
-        var _this = this;
-        this.scheme = scheme;
-        this.animations = animations;
-        var keys = Object.keys(this.animations);
-        var rec = function (acc) {
-            if (!acc.length)
-                return true;
-            var current = acc[0], rest = acc.slice(1);
-            var child = current instanceof Array ? rec(current) : null;
-            return keys.includes(current) ? rec(rest) : false;
-        };
-        var isCorrect = function () { return rec(_this.scheme); };
-        if (!isCorrect())
-            throw new Error('AnimationSequenceModel: Wrong Scheme Values');
-    }
-    AnimationSequenceModel.prototype.getScheme = function () {
-        return this.scheme;
-    };
-    AnimationSequenceModel.prototype.getFunction = function (name) {
-        return this.animations[name];
-    };
-    return AnimationSequenceModel;
-}());
-
-//# sourceMappingURL=animation-sequence.model.js.map
-
-/***/ }),
-/* 302 */,
-/* 303 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__glass_glass__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eyes_eyes__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hood_hood__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mole_mole__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__heart_heart__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__beard_beard__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__moustache_moustache__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__snivel_snivel__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dress_dress__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bra_bra__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wig_wig__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lips_lips__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lollipop_lollipop__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__egg_egg__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__earrings_earrings__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__necklace_necklace__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__glass_glass__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eyes_eyes__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hood_hood__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mole_mole__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__heart_heart__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__beard_beard__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__moustache_moustache__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__snivel_snivel__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dress_dress__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bra_bra__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wig_wig__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lips_lips__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lollipop_lollipop__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__egg_egg__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__earrings_earrings__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__necklace_necklace__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__flatulence_flatulence__ = __webpack_require__(179);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3824,6 +3650,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3875,6 +3702,239 @@ var TrinketsService = /** @class */ (function () {
     }
     TrinketsService.prototype.getTrinkets = function () {
         return [
+            {
+                id: 17,
+                component: __WEBPACK_IMPORTED_MODULE_17__flatulence_flatulence__["a" /* FlatulenceComponent */],
+                meta: {
+                    container: { name: 'outer', mod: 'forward' },
+                    getContainer: function (name) {
+                        return this.container;
+                    },
+                    uniq: true,
+                    before: function (monster, repo, instance) {
+                    },
+                    after: function (monster, repo, instance) {
+                    },
+                    attr: {
+                        width: {
+                            default: function (_a) {
+                                var width = _a.width;
+                                return width * 1.5;
+                            },
+                            skeleton: function (_a) {
+                                var width = _a.width;
+                                return 235.672 * 1.2;
+                            },
+                            zombie: function (_a) {
+                                var width = _a.width;
+                                return 238.446;
+                            },
+                            mummy: function (_a) {
+                                var width = _a.width;
+                                return 241.883;
+                            },
+                            yaga: function (_a) {
+                                var width = _a.width;
+                                return 240.651 * 1.1;
+                            },
+                            doctor: function (_a) {
+                                var width = _a.width;
+                                return 234.85;
+                            },
+                            spider: function (_a) {
+                                var width = _a.width;
+                                return 231.152;
+                            },
+                            alien: function (_a) {
+                                var width = _a.width;
+                                return 234.631;
+                            },
+                            vampire: function (_a) {
+                                var width = _a.width;
+                                return 244.895;
+                            },
+                            yeti: function (_a) {
+                                var width = _a.width;
+                                return 253.92;
+                            },
+                            ghost: function (_a) {
+                                var width = _a.width;
+                                return 230.76;
+                            },
+                            wolf: function (_a) {
+                                var width = _a.width;
+                                return 245.405;
+                            },
+                            bed: function (_a) {
+                                var width = _a.width;
+                                return 94.365;
+                            },
+                        },
+                        height: {
+                            default: function (_a) {
+                                var height = _a.height;
+                                return height * 1.5;
+                            },
+                            skeleton: function (_a) {
+                                var height = _a.height;
+                                return 156.342 * 1.2;
+                            },
+                            zombie: function (_a) {
+                                var height = _a.height;
+                                return 253.37;
+                            },
+                            mummy: function (_a) {
+                                var height = _a.height;
+                                return 72.688;
+                            },
+                            yaga: function (_a) {
+                                var height = _a.height;
+                                return 129.431 * 1.1;
+                            },
+                            doctor: function (_a) {
+                                var height = _a.height;
+                                return 119.315;
+                            },
+                            spider: function (_a) {
+                                var height = _a.height;
+                                return 40.39;
+                            },
+                            alien: function (_a) {
+                                var height = _a.height;
+                                return 135.696;
+                            },
+                            vampire: function (_a) {
+                                var height = _a.height;
+                                return 212.819;
+                            },
+                            yeti: function (_a) {
+                                var height = _a.height;
+                                return 126.296;
+                            },
+                            ghost: function (_a) {
+                                var height = _a.height;
+                                return 109.169;
+                            },
+                            wolf: function (_a) {
+                                var height = _a.height;
+                                return 225.729;
+                            },
+                            bed: function (_a) {
+                                var height = _a.height;
+                                return 81.429;
+                            },
+                        },
+                        x: {
+                            default: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (width * 1.5) / 2) + width / 2;
+                            },
+                            skeleton: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (235.672 * 1.2) / 2) + width / 2;
+                            },
+                            zombie: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 0;
+                            },
+                            mummy: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 10;
+                            },
+                            yaga: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return -45;
+                            },
+                            doctor: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return -50;
+                            },
+                            spider: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 20;
+                            },
+                            alien: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return -30;
+                            },
+                            vampire: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return -20;
+                            },
+                            yeti: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 0;
+                            },
+                            ghost: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 10;
+                            },
+                            wolf: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 0;
+                            },
+                            bed: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 130;
+                            },
+                        },
+                        y: {
+                            default: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return (y - (height * 1.5) / 2) + height / 2;
+                            },
+                            skeleton: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 50;
+                            },
+                            zombie: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 0;
+                            },
+                            mummy: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 160;
+                            },
+                            yaga: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 120;
+                            },
+                            doctor: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 150;
+                            },
+                            spider: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 300;
+                            },
+                            alien: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 110;
+                            },
+                            vampire: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 70;
+                            },
+                            yeti: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return -30;
+                            },
+                            ghost: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return -10;
+                            },
+                            wolf: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 20;
+                            },
+                            bed: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 0;
+                            },
+                        }
+                    }
+                }
+            },
             {
                 id: 16,
                 component: __WEBPACK_IMPORTED_MODULE_16__necklace_necklace__["a" /* NecklaceComponent */],
@@ -6957,12 +7017,12 @@ var TrinketsService = /** @class */ (function () {
 //# sourceMappingURL=trinkets.service.js.map
 
 /***/ }),
-/* 304 */
+/* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_uuid_v4___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_uuid_v4__);
 
 var ElementModel = /** @class */ (function () {
@@ -6994,14 +7054,14 @@ var ElementModel = /** @class */ (function () {
 //# sourceMappingURL=element.model.js.map
 
 /***/ }),
-/* 305 */
+/* 300 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketRandomModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_part_directive__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_element_component_model__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_part_directive__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_element_component_model__ = __webpack_require__(26);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -7080,14 +7140,283 @@ var TrinketRandomModel = /** @class */ (function (_super) {
 //# sourceMappingURL=trinket-random.model.js.map
 
 /***/ }),
+/* 301 */,
+/* 302 */,
+/* 303 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSetController; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_model__ = __webpack_require__(304);
+
+
+var once = function (fn) {
+    var called = false;
+    return function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+        if (called)
+            throw Error('AnimationSet has been configured already');
+        called = true;
+        return fn.apply(void 0, args);
+    };
+};
+var AnimationSetController = /** @class */ (function () {
+    function AnimationSetController(instance, animations, recoveryPoint, recoveryFn) {
+        var _this = this;
+        this.instance = instance;
+        this.recoveryPoint = recoveryPoint;
+        this.recoveryFn = recoveryFn;
+        this.state = false;
+        this.current = null;
+        this.queue = [];
+        this.queueCleared = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
+        this.end = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
+        this.config = once(function (animations) {
+            _this.animations = Object.keys(animations).reduce(function (acc, k) {
+                var animation = new __WEBPACK_IMPORTED_MODULE_1__animation_model__["a" /* AnimationModel */](_this.instance, animations[k]);
+                animation.onStart(function (animation) {
+                    _this.setState(true);
+                    _this.setCurrent(animation);
+                    return;
+                });
+                animation.onEnd(function (animation) {
+                    _this.setState(false);
+                    _this.setCurrent(null);
+                    return;
+                });
+                return acc.set(k, animation);
+            }, new Map());
+            return;
+        });
+        this.recoveryPoint = this.instance.attr();
+        this.recoveryFn = function (instance, recoveryPoint) { return instance.attr(recoveryPoint); };
+        this.end.subscribe(function () {
+            if (!_this.queue.length)
+                return _this.queueCleared.emit(null);
+            var _a = _this.queue, first = _a[0], rest = _a.slice(1);
+            _this.queue = rest;
+            first.run();
+            return;
+        });
+        this.config(animations);
+    }
+    AnimationSetController.prototype.get = function (name) {
+        return this.animations.get(name);
+    };
+    AnimationSetController.prototype.setState = function (arg) {
+        this.state = arg;
+        if (this.state === false)
+            this.end.emit(null);
+        return this;
+    };
+    AnimationSetController.prototype.setCurrent = function (animation) {
+        this.current = animation;
+        return this;
+    };
+    AnimationSetController.prototype.isAnimating = function () {
+        return this.state;
+    };
+    AnimationSetController.prototype.getInQueue = function (animation) {
+        this.queue.push(animation);
+        return;
+    };
+    AnimationSetController.prototype.onDisengage = function (cb) {
+        this.queueCleared.subscribe(cb);
+        return this;
+    };
+    AnimationSetController.prototype.recovery = function () {
+        var _this = this;
+        var recovery = function () { return _this.recoveryFn(_this.instance, _this.recoveryPoint); };
+        this.isAnimating() ? this.onDisengage(recovery) : recovery();
+        return this;
+    };
+    AnimationSetController.prototype.getRecoveryPoint = function () {
+        return this.recoveryPoint;
+    };
+    AnimationSetController.prototype.run = function (name) {
+        var animation = this.animations.get(name);
+        if (!animation)
+            throw Error('AnimationSet: No animation was found');
+        if (this.isAnimating()) {
+            this.getInQueue(animation);
+            return this;
+        }
+        animation.run();
+        return this;
+    };
+    AnimationSetController.prototype.specify = function (name) {
+        return new AnimationSetControllerSpecified(this, name);
+    };
+    return AnimationSetController;
+}());
+
+var AnimationSetControllerSpecified = /** @class */ (function () {
+    function AnimationSetControllerSpecified(parent, name) {
+        this.parent = parent;
+        this.name = name;
+    }
+    ;
+    AnimationSetControllerSpecified.prototype.run = function () {
+        this.parent.run(this.name);
+        return this;
+    };
+    AnimationSetControllerSpecified.prototype.specify = function (name) {
+        return false;
+    };
+    return AnimationSetControllerSpecified;
+}());
+//# sourceMappingURL=animation-set.controller.js.map
+
+/***/ }),
+/* 304 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+
+var AnimationModel = /** @class */ (function () {
+    function AnimationModel(instance, fn) {
+        this.instance = instance;
+        this.fn = fn;
+        this.start = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
+        this.end = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
+    }
+    ;
+    AnimationModel.prototype.run = function () {
+        var _this = this;
+        this.start.emit(this);
+        this.fn(this.instance, function () { return _this.end.emit(_this); });
+        return this;
+    };
+    AnimationModel.prototype.onEnd = function (fn) {
+        this.end.subscribe(fn);
+        return this;
+    };
+    AnimationModel.prototype.onStart = function (fn) {
+        this.start.subscribe(fn);
+        return this;
+    };
+    return AnimationModel;
+}());
+
+//# sourceMappingURL=animation.model.js.map
+
+/***/ }),
+/* 305 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSequenceController; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__ = __webpack_require__(306);
+
+
+var AnimationSequenceController = /** @class */ (function () {
+    function AnimationSequenceController(scheme, animations) {
+        var _this = this;
+        this.start = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
+        this.end = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
+        this.interval = false;
+        this.state = false;
+        this.model = new __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__["a" /* AnimationSequenceModel */](scheme, animations);
+        this.start.subscribe(function () { return _this.setState(true); });
+        this.end.subscribe(function () { return _this.setState(false); });
+    }
+    AnimationSequenceController.prototype.setState = function (arg) {
+        this.state = arg;
+        return;
+    };
+    AnimationSequenceController.prototype.setInterval = function (fn, interval) {
+        var _this = this;
+        this.interval = true;
+        var func = function () {
+            if (!_this.interval)
+                return;
+            setTimeout(fn, interval);
+        };
+        this.end.subscribe(func);
+        return fn();
+    };
+    AnimationSequenceController.prototype.isAnimating = function () {
+        return this.state;
+    };
+    AnimationSequenceController.prototype.run = function (interval) {
+        var _this = this;
+        if (this.isAnimating())
+            return false;
+        this.start.emit(null);
+        var rec = function (acc) {
+            var first = acc[0], rest = acc.slice(1);
+            if (!first)
+                return _this.end.emit(null);
+            var arr = first instanceof Array ? first : [first];
+            return arr.forEach(function (name) {
+                var set = _this.model.getFunction(name)(function (set) { return set; });
+                return;
+            });
+        };
+        var scheme = this.model.getScheme();
+        var run = function () { return rec(scheme); };
+        interval ? this.setInterval(run, interval) : setTimeout(run, 0);
+        return this;
+    };
+    AnimationSequenceController.prototype.clear = function () {
+        this.interval = false;
+    };
+    return AnimationSequenceController;
+}());
+
+//# sourceMappingURL=animation-sequence.controller.js.map
+
+/***/ }),
 /* 306 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSequenceModel; });
+var AnimationSequenceModel = /** @class */ (function () {
+    function AnimationSequenceModel(scheme, animations) {
+        var _this = this;
+        this.scheme = scheme;
+        this.animations = animations;
+        var keys = Object.keys(this.animations);
+        var rec = function (acc) {
+            if (!acc.length)
+                return true;
+            var current = acc[0], rest = acc.slice(1);
+            var child = current instanceof Array ? rec(current) : null;
+            return keys.includes(current) ? rec(rest) : false;
+        };
+        var isCorrect = function () { return rec(_this.scheme); };
+        if (!isCorrect())
+            throw new Error('AnimationSequenceModel: Wrong Scheme Values');
+    }
+    AnimationSequenceModel.prototype.getScheme = function () {
+        return this.scheme;
+    };
+    AnimationSequenceModel.prototype.getFunction = function (name) {
+        return this.animations[name];
+    };
+    return AnimationSequenceModel;
+}());
+
+//# sourceMappingURL=animation-sequence.model.js.map
+
+/***/ }),
+/* 307 */,
+/* 308 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(198);
 
 
 
@@ -7132,7 +7461,7 @@ var Game = /** @class */ (function () {
 //# sourceMappingURL=game.service.js.map
 
 /***/ }),
-/* 307 */
+/* 309 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7177,8 +7506,8 @@ var CursorPosition = /** @class */ (function () {
 //# sourceMappingURL=cursor-position.js.map
 
 /***/ }),
-/* 308 */,
-/* 309 */
+/* 310 */,
+/* 311 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7254,14 +7583,14 @@ var ListnerRegister = /** @class */ (function () {
 //# sourceMappingURL=listner-register.class.js.map
 
 /***/ }),
-/* 310 */
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameLogic; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(311);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(198);
 
 
 
@@ -7334,12 +7663,12 @@ var GameLogic = /** @class */ (function () {
 //# sourceMappingURL=game-logic.js.map
 
 /***/ }),
-/* 311 */
+/* 313 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveElementRepository; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(314);
 
 var lib = {
     mouseEnterOnItem: function (item, ev) {
@@ -7468,7 +7797,7 @@ var ActiveElementRepository = /** @class */ (function () {
 //# sourceMappingURL=active-element.repository.js.map
 
 /***/ }),
-/* 312 */
+/* 314 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7576,8 +7905,6 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 //# sourceMappingURL=active-element.model.js.map
 
 /***/ }),
-/* 313 */,
-/* 314 */,
 /* 315 */,
 /* 316 */,
 /* 317 */,
@@ -7601,16 +7928,18 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 /* 335 */,
 /* 336 */,
 /* 337 */,
-/* 338 */
+/* 338 */,
+/* 339 */,
+/* 340 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(344);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7639,28 +7968,28 @@ var ComponentsModule = /** @class */ (function () {
 //# sourceMappingURL=components.module.js.map
 
 /***/ }),
-/* 339 */
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(185);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7702,33 +8031,34 @@ var MonstersModule = /** @class */ (function () {
 //# sourceMappingURL=monsters.module.js.map
 
 /***/ }),
-/* 340 */
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hood_hood__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mole_mole__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__heart_heart__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__beard_beard__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dress_dress__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bra_bra__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__wig_wig__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lips_lips__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__egg_egg__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__trinkets_component__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__trinket_host_directive__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__trinket_random_part_directive__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__trinket_uniq_part_directive__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hood_hood__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mole_mole__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__heart_heart__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__beard_beard__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dress_dress__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bra_bra__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__wig_wig__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lips_lips__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__egg_egg__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__trinkets_component__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__trinket_host_directive__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__trinket_random_part_directive__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__trinket_uniq_part_directive__ = __webpack_require__(164);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7757,16 +8087,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var TrinketsModule = /** @class */ (function () {
     function TrinketsModule() {
     }
     TrinketsModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */], __WEBPACK_IMPORTED_MODULE_15__egg_egg__["a" /* EggComponent */], __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__["a" /* EarringsComponent */], __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__["a" /* NecklaceComponent */], __WEBPACK_IMPORTED_MODULE_18__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_19__trinket_host_directive__["a" /* TrinketHostDirective */], __WEBPACK_IMPORTED_MODULE_20__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */], __WEBPACK_IMPORTED_MODULE_21__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */], __WEBPACK_IMPORTED_MODULE_15__egg_egg__["a" /* EggComponent */], __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__["a" /* EarringsComponent */], __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__["a" /* NecklaceComponent */], __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__["a" /* FlatulenceComponent */], __WEBPACK_IMPORTED_MODULE_19__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_20__trinket_host_directive__["a" /* TrinketHostDirective */], __WEBPACK_IMPORTED_MODULE_21__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */], __WEBPACK_IMPORTED_MODULE_22__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]],
             providers: [],
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_15__egg_egg__["a" /* EggComponent */], __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__["a" /* EarringsComponent */], __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__["a" /* NecklaceComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */],],
-            exports: [__WEBPACK_IMPORTED_MODULE_18__trinkets_component__["a" /* TrinketsComponent */]]
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_15__egg_egg__["a" /* EggComponent */], __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__["a" /* EarringsComponent */], __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__["a" /* NecklaceComponent */], __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__["a" /* FlatulenceComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */],],
+            exports: [__WEBPACK_IMPORTED_MODULE_19__trinkets_component__["a" /* TrinketsComponent */]]
         })
     ], TrinketsModule);
     return TrinketsModule;
@@ -7775,7 +8106,7 @@ var TrinketsModule = /** @class */ (function () {
 //# sourceMappingURL=trinkets.module.js.map
 
 /***/ }),
-/* 341 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7807,14 +8138,14 @@ var GameModule = /** @class */ (function () {
 //# sourceMappingURL=game.module.js.map
 
 /***/ }),
-/* 342 */
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(200);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7842,15 +8173,15 @@ var ItemHolderModule = /** @class */ (function () {
 //# sourceMappingURL=item-holder.module.js.map
 
 /***/ }),
-/* 343 */
+/* 345 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(205);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7878,13 +8209,13 @@ var BackgroundModule = /** @class */ (function () {
 //# sourceMappingURL=bg.module.js.map
 
 /***/ }),
-/* 344 */
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModelModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(158);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7909,16 +8240,16 @@ var ModelModule = /** @class */ (function () {
 //# sourceMappingURL=model.module.js.map
 
 /***/ }),
-/* 345 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7953,54 +8284,6 @@ var MyApp = /** @class */ (function () {
 
 //# sourceMappingURL=app.component.js.map
 
-/***/ }),
-/* 346 */,
-/* 347 */,
-/* 348 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NecklaceComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(26);
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var NecklaceComponent = /** @class */ (function (_super) {
-    __extends(NecklaceComponent, _super);
-    function NecklaceComponent(element) {
-        return _super.call(this, 'necklace', element.nativeElement) || this;
-    }
-    NecklaceComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'necklace',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/necklace/necklace.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 275.48 141.7" class="necklace">\n    <circle class="cls-1" cx="14.54" cy="14.91" r="14.54"/>\n    <circle class="cls-1" cx="21.73" cy="48.53" r="14.54"/>\n    <circle class="cls-1" cx="38.83" cy="79.1" r="14.54"/>\n    <circle class="cls-1" cx="67.38" cy="102.66" r="14.54"/>\n    <circle class="cls-1" cx="100.23" cy="118.55" r="14.54"/>\n    <circle class="cls-1" cx="136.85" cy="127.16" r="14.54"/>\n    <circle class="cls-1" cx="174.95" cy="118.95" r="14.54"/>\n    <circle class="cls-1" cx="209.82" cy="102.26" r="14.54"/>\n    <circle class="cls-1" cx="235.81" cy="77.89" r="14.54"/>\n    <circle class="cls-1" cx="253.58" cy="48.94" r="14.54"/>\n    <circle class="cls-1" cx="260.94" cy="14.54" r="14.54"/>\n    <path class="cls-1" d="M136.93,127.2A126.57,126.57,0,0,1,10.5.78h3.23a123.2,123.2,0,1,0,246.39,0h3.23A126.57,126.57,0,0,1,136.93,127.2Z"/>\n    <circle class="cls-2" cx="56.19" cy="10.88" r="9.63"/>\n    <circle class="cls-2" cx="60.95" cy="33.15" r="9.63"/>\n    <circle class="cls-2" cx="72.28" cy="53.39" r="9.63"/>\n    <circle class="cls-2" cx="91.18" cy="68.99" r="9.63"/>\n    <circle class="cls-2" cx="112.94" cy="79.52" r="9.63"/>\n    <circle class="cls-2" cx="137.19" cy="85.22" r="9.63"/>\n    <circle class="cls-2" cx="162.43" cy="79.78" r="9.63"/>\n    <circle class="cls-2" cx="185.53" cy="68.73" r="9.63"/>\n    <circle class="cls-2" cx="202.74" cy="52.59" r="9.63"/>\n    <circle class="cls-2" cx="214.51" cy="33.41" r="9.63"/>\n    <circle class="cls-2" cx="219.38" cy="10.63" r="9.63"/>\n    <path class="cls-2" d="M137.25,85.25A83.83,83.83,0,0,1,53.51,1.51h2.14a81.59,81.59,0,1,0,163.19,0H221A83.83,83.83,0,0,1,137.25,85.25Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.39 43.31" class="necklace">\n    <circle class="cls-1" cx="8.87" cy="3.5" r="3.42"/>\n    <circle class="cls-1" cx="10.56" cy="11.41" r="3.42"/>\n    <circle class="cls-1" cx="14.58" cy="18.59" r="3.42"/>\n    <circle class="cls-1" cx="21.29" cy="24.13" r="3.42"/>\n    <circle class="cls-1" cx="29.01" cy="27.86" r="3.42"/>\n    <circle class="cls-1" cx="37.62" cy="29.89" r="3.42"/>\n    <circle class="cls-1" cx="46.57" cy="27.96" r="3.42"/>\n    <circle class="cls-1" cx="54.77" cy="24.03" r="3.42"/>\n    <circle class="cls-1" cx="60.88" cy="18.3" r="3.42"/>\n    <circle class="cls-1" cx="65.05" cy="11.5" r="3.42"/>\n    <circle class="cls-1" cx="66.78" cy="3.42" r="3.42"/>\n    <path class="cls-1" d="M37.64,29.89A29.75,29.75,0,0,1,7.92.18h.76a29,29,0,1,0,57.91,0h.76A29.75,29.75,0,0,1,37.64,29.89Z"/>\n    <circle class="cls-2" cx="3.77" cy="10.45" r="3.77"/>\n    <circle class="cls-2" cx="5.63" cy="19.17" r="3.77"/>\n    <circle class="cls-2" cx="10.06" cy="27.09" r="3.77"/>\n    <circle class="cls-2" cx="17.46" cy="33.19" r="3.77"/>\n    <circle class="cls-2" cx="25.97" cy="37.31" r="3.77"/>\n    <circle class="cls-2" cx="35.46" cy="39.54" r="3.77"/>\n    <circle class="cls-2" cx="45.34" cy="37.42" r="3.77"/>\n    <circle class="cls-2" cx="54.38" cy="33.09" r="3.77"/>\n    <circle class="cls-2" cx="61.11" cy="26.77" r="3.77"/>\n    <circle class="cls-2" cx="65.71" cy="19.27" r="3.77"/>\n    <circle class="cls-2" cx="67.62" cy="10.36" r="3.77"/>\n    <path class="cls-2" d="M35.48,39.55A32.8,32.8,0,0,1,2.72,6.79h.84a31.93,31.93,0,1,0,63.85,0h.84A32.8,32.8,0,0,1,35.48,39.55Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.66 146.57" class="necklace">\n    <circle class="cls-1" cx="8.2" cy="8.41" r="8.2"/>\n    <circle class="cls-1" cx="12.26" cy="27.37" r="8.2"/>\n    <circle class="cls-1" cx="21.9" cy="44.6" r="8.2"/>\n    <circle class="cls-1" cx="37.99" cy="57.89" r="8.2"/>\n    <circle class="cls-1" cx="56.52" cy="66.85" r="8.2"/>\n    <circle class="cls-1" cx="77.17" cy="71.71" r="8.2"/>\n    <circle class="cls-1" cx="98.66" cy="67.08" r="8.2"/>\n    <circle class="cls-1" cx="118.32" cy="57.66" r="8.2"/>\n    <circle class="cls-1" cx="132.98" cy="43.92" r="8.2"/>\n    <circle class="cls-1" cx="143" cy="27.6" r="8.2"/>\n    <circle class="cls-1" cx="147.14" cy="8.2" r="8.2"/>\n    <path class="cls-1" d="M77.21,71.73A71.37,71.37,0,0,1,5.92.44H7.74a69.47,69.47,0,1,0,138.94,0h1.82A71.37,71.37,0,0,1,77.21,71.73Z"/>\n    <circle class="cls-2" cx="31.68" cy="6.13" r="5.43"/>\n    <circle class="cls-2" cx="34.37" cy="18.69" r="5.43"/>\n    <circle class="cls-2" cx="40.76" cy="30.11" r="5.43"/>\n    <circle class="cls-2" cx="51.42" cy="38.91" r="5.43"/>\n    <circle class="cls-2" cx="63.69" cy="44.84" r="5.43"/>\n    <circle class="cls-2" cx="77.36" cy="48.06" r="5.43"/>\n    <circle class="cls-2" cx="91.6" cy="44.99" r="5.43"/>\n    <circle class="cls-2" cx="104.62" cy="38.75" r="5.43"/>\n    <circle class="cls-2" cx="114.32" cy="29.65" r="5.43"/>\n    <circle class="cls-2" cx="120.96" cy="18.84" r="5.43"/>\n    <circle class="cls-2" cx="123.71" cy="6" r="5.43"/>\n    <path class="cls-2" d="M77.39,48.07A47.27,47.27,0,0,1,30.18.85h1.21a46,46,0,1,0,92,0h1.21A47.27,47.27,0,0,1,77.39,48.07Z"/>\n    <circle class="cls-1" cx="27.48" cy="81.37" r="7.48"/>\n    <circle class="cls-1" cx="31.18" cy="98.66" r="7.48"/>\n    <circle class="cls-1" cx="39.97" cy="114.38" r="7.48"/>\n    <circle class="cls-1" cx="54.65" cy="126.5" r="7.48"/>\n    <circle class="cls-1" cx="71.54" cy="134.67" r="7.48"/>\n    <circle class="cls-1" cx="90.37" cy="139.1" r="7.48"/>\n    <circle class="cls-1" cx="109.97" cy="134.87" r="7.48"/>\n    <circle class="cls-1" cx="127.9" cy="126.29" r="7.48"/>\n    <circle class="cls-1" cx="141.26" cy="113.76" r="7.48"/>\n    <circle class="cls-1" cx="150.4" cy="98.87" r="7.48"/>\n    <circle class="cls-1" cx="154.19" cy="81.18" r="7.48"/>\n    <path class="cls-1" d="M90.41,139.12a65.09,65.09,0,0,1-65-65h1.66a63.35,63.35,0,0,0,126.71,0h1.66A65.09,65.09,0,0,1,90.41,139.12Z"/>\n    <circle class="cls-2" cx="48.89" cy="79.3" r="4.95"/>\n    <circle class="cls-2" cx="51.34" cy="90.75" r="4.95"/>\n    <circle class="cls-2" cx="57.17" cy="101.16" r="4.95"/>\n    <circle class="cls-2" cx="66.89" cy="109.18" r="4.95"/>\n    <circle class="cls-2" cx="78.08" cy="114.59" r="4.95"/>\n    <circle class="cls-2" cx="90.55" cy="117.53" r="4.95"/>\n    <circle class="cls-2" cx="103.53" cy="114.73" r="4.95"/>\n    <circle class="cls-2" cx="115.41" cy="109.05" r="4.95"/>\n    <circle class="cls-2" cx="124.26" cy="100.75" r="4.95"/>\n    <circle class="cls-2" cx="130.31" cy="90.89" r="4.95"/>\n    <circle class="cls-2" cx="132.81" cy="79.17" r="4.95"/>\n    <path class="cls-2" d="M90.58,117.54A43.11,43.11,0,0,1,47.52,74.48h1.1a42,42,0,1,0,83.92,0h1.1A43.11,43.11,0,0,1,90.58,117.54Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.43 67.6" class="necklace">\n    <circle class="cls-1" cx="5.04" cy="23.68" r="5.04"/>\n    <circle class="cls-1" cx="7.53" cy="35.33" r="5.04"/>\n    <circle class="cls-1" cx="13.45" cy="45.91" r="5.04"/>\n    <circle class="cls-1" cx="23.34" cy="54.07" r="5.04"/>\n    <circle class="cls-1" cx="34.72" cy="59.58" r="5.04"/>\n    <circle class="cls-1" cx="47.4" cy="62.56" r="5.04"/>\n    <circle class="cls-1" cx="60.6" cy="59.72" r="5.04"/>\n    <circle class="cls-1" cx="72.68" cy="53.93" r="5.04"/>\n    <circle class="cls-1" cx="81.68" cy="45.49" r="5.04"/>\n    <circle class="cls-1" cx="87.84" cy="35.47" r="5.04"/>\n    <circle class="cls-1" cx="90.39" cy="23.55" r="5.04"/>\n    <path class="cls-1" d="M47.43,62.58A43.84,43.84,0,0,1,3.64,18.78H4.76a42.67,42.67,0,1,0,85.35,0h1.12A43.84,43.84,0,0,1,47.43,62.58Z"/>\n    <circle class="cls-1" cx="10.67" cy="19.77" r="3.92"/>\n    <circle class="cls-1" cx="12.61" cy="28.83" r="3.92"/>\n    <circle class="cls-1" cx="17.22" cy="37.07" r="3.92"/>\n    <circle class="cls-1" cx="24.92" cy="43.43" r="3.92"/>\n    <circle class="cls-1" cx="33.78" cy="47.71" r="3.92"/>\n    <circle class="cls-1" cx="43.65" cy="50.03" r="3.92"/>\n    <circle class="cls-1" cx="53.93" cy="47.82" r="3.92"/>\n    <circle class="cls-1" cx="63.33" cy="43.32" r="3.92"/>\n    <circle class="cls-1" cx="70.33" cy="36.75" r="3.92"/>\n    <circle class="cls-1" cx="75.13" cy="28.94" r="3.92"/>\n    <circle class="cls-1" cx="77.11" cy="19.67" r="3.92"/>\n    <path class="cls-1" d="M43.67,50A34.13,34.13,0,0,1,9.58,16h.87a33.22,33.22,0,0,0,66.44,0h.87A34.13,34.13,0,0,1,43.67,50Z"/>\n    <circle class="cls-2" cx="12.23" cy="4.05" r="3.95"/>\n    <circle class="cls-2" cx="14.18" cy="13.17" r="3.95"/>\n    <circle class="cls-2" cx="18.82" cy="21.46" r="3.95"/>\n    <circle class="cls-2" cx="26.57" cy="27.85" r="3.95"/>\n    <circle class="cls-2" cx="35.48" cy="32.16" r="3.95"/>\n    <circle class="cls-2" cx="45.41" cy="34.5" r="3.95"/>\n    <circle class="cls-2" cx="55.75" cy="32.27" r="3.95"/>\n    <circle class="cls-2" cx="65.21" cy="27.74" r="3.95"/>\n    <circle class="cls-2" cx="72.26" cy="21.13" r="3.95"/>\n    <circle class="cls-2" cx="77.09" cy="13.28" r="3.95"/>\n    <circle class="cls-2" cx="79.08" cy="3.95" r="3.95"/>\n    <path class="cls-2" d="M45.44,34.51A34.34,34.34,0,0,1,11.13.21H12a33.42,33.42,0,1,0,66.85,0h.88A34.34,34.34,0,0,1,45.44,34.51Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.32 112.98" class="necklace">\n    <circle class="cls-1" cx="11.31" cy="14.34" r="11.31"/>\n    <circle class="cls-1" cx="16.91" cy="40.5" r="11.31"/>\n    <circle class="cls-1" cx="30.21" cy="64.28" r="11.31"/>\n    <circle class="cls-1" cx="52.42" cy="82.61" r="11.31"/>\n    <circle class="cls-1" cx="77.98" cy="94.97" r="11.31"/>\n    <circle class="cls-1" cx="106.47" cy="101.67" r="11.31"/>\n    <circle class="cls-1" cx="136.11" cy="95.28" r="11.31"/>\n    <circle class="cls-1" cx="163.24" cy="82.29" r="11.31"/>\n    <circle class="cls-1" cx="183.46" cy="63.33" r="11.31"/>\n    <circle class="cls-1" cx="197.29" cy="40.81" r="11.31"/>\n    <circle class="cls-1" cx="203.01" cy="14.05" r="11.31"/>\n    <path class="cls-1" d="M106.53,101.7A98.47,98.47,0,0,1,8.17,3.34h2.51a95.85,95.85,0,0,0,191.69,0h2.51A98.47,98.47,0,0,1,106.53,101.7Z"/>\n    <circle class="cls-2" cx="13.06" cy="10.54" r="10.28"/>\n    <circle class="cls-2" cx="18.15" cy="34.31" r="10.28"/>\n    <circle class="cls-2" cx="30.23" cy="55.91" r="10.28"/>\n    <circle class="cls-2" cx="50.41" cy="72.57" r="10.28"/>\n    <circle class="cls-2" cx="73.63" cy="83.8" r="10.28"/>\n    <circle class="cls-2" cx="99.52" cy="89.89" r="10.28"/>\n    <circle class="cls-2" cx="126.45" cy="84.08" r="10.28"/>\n    <circle class="cls-2" cx="151.1" cy="72.28" r="10.28"/>\n    <circle class="cls-2" cx="169.47" cy="55.06" r="10.28"/>\n    <circle class="cls-2" cx="182.04" cy="34.59" r="10.28"/>\n    <circle class="cls-2" cx="187.23" cy="10.28" r="10.28"/>\n    <path class="cls-2" d="M99.58,89.92A89.47,89.47,0,0,1,10.21.55h2.28a87.08,87.08,0,1,0,174.17,0h2.28A89.47,89.47,0,0,1,99.58,89.92Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.67 107.84" class="necklace">\n    <circle class="cls-2" cx="10.08" cy="13.6" r="8.36" transform="translate(-5.88 19.24) rotate(-72.95)"/>\n    <circle class="cls-2" cx="8.36" cy="33.29" r="8.36" transform="translate(-25.92 31.53) rotate(-72.95)"/>\n    <circle class="cls-2" cx="12.61" cy="52.98" r="8.36" transform="translate(-41.73 49.5) rotate(-72.95)"/>\n    <circle class="cls-2" cx="24.33" cy="70.74" r="8.36" transform="translate(-50.44 73.26) rotate(-72.95)"/>\n    <circle class="cls-2" cx="39.71" cy="85.01" r="8.36" transform="translate(-53.21 98.05) rotate(-72.95)"/>\n    <circle class="cls-2" cx="58.39" cy="95.92" r="8.36" transform="translate(-50.44 123.62) rotate(-72.95)"/>\n    <circle class="cls-2" cx="80.72" cy="97.83" r="8.36" transform="translate(-36.48 146.32) rotate(-72.95)"/>\n    <circle class="cls-2" cx="102.7" cy="94.53" r="8.36" transform="translate(-17.79 165) rotate(-72.95)"/>\n    <circle class="cls-2" cx="121.09" cy="85.52" r="8.36" transform="translate(3.83 176.22) rotate(-72.95)"/>\n    <circle class="cls-2" cx="135.74" cy="72.6" r="8.36" transform="translate(26.53 181.09) rotate(-72.95)"/>\n    <circle class="cls-2" cx="145.59" cy="54.93" r="8.36" transform="translate(50.38 178.01) rotate(-72.95)"/>\n    <path class="cls-2" d="M58.42,96A72.78,72.78,0,0,1,10.24,5.14L12,5.69A70.83,70.83,0,1,0,147.46,47.23l1.78.54A72.78,72.78,0,0,1,58.42,96Z"/>\n    <circle class="cls-1" cx="18.13" cy="9.02" r="8.92" transform="translate(4.19 23.71) rotate(-72.95)"/>\n    <circle class="cls-1" cx="16.3" cy="30.04" r="8.92" transform="translate(-17.19 36.82) rotate(-72.95)"/>\n    <circle class="cls-1" cx="20.84" cy="51.04" r="8.92" transform="translate(-34.07 56) rotate(-72.95)"/>\n    <circle class="cls-1" cx="33.34" cy="70" r="8.92" transform="translate(-43.36 81.35) rotate(-72.95)"/>\n    <circle class="cls-1" cx="49.75" cy="85.23" r="8.92" transform="translate(-46.32 107.81) rotate(-72.95)"/>\n    <circle class="cls-1" cx="69.69" cy="96.87" r="8.92" transform="translate(-43.36 135.09) rotate(-72.95)"/>\n    <circle class="cls-1" cx="93.52" cy="98.91" r="8.92" transform="matrix(0.29, -0.96, 0.96, 0.29, -28.47, 159.32)"/>\n    <circle class="cls-1" cx="116.98" cy="95.39" r="8.92" transform="matrix(0.29, -0.96, 0.96, 0.29, -8.52, 179.26)"/>\n    <circle class="cls-1" cx="136.61" cy="85.77" r="8.92" transform="translate(14.55 191.22) rotate(-72.95)"/>\n    <circle class="cls-1" cx="152.24" cy="71.99" r="8.92" transform="translate(38.78 196.43) rotate(-72.95)"/>\n    <circle class="cls-1" cx="162.74" cy="53.13" r="8.92" transform="translate(64.23 193.14) rotate(-72.95)"/>\n    <path class="cls-1" d="M69.73,96.91A77.66,77.66,0,0,1,18.31,0l1.9.58A75.59,75.59,0,1,0,164.74,44.91l1.9.58A77.66,77.66,0,0,1,69.73,96.91Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.92 25.98" class="necklace">\n    <circle class="cls-1" cx="2.17" cy="12.63" r="2.17" transform="translate(-3.49 1.13) rotate(-16.48)"/>\n    <circle class="cls-1" cx="4.61" cy="17.13" r="2.17" transform="translate(-4.67 2.01) rotate(-16.48)"/>\n    <circle class="cls-1" cx="8.35" cy="20.77" r="2.17" transform="translate(-5.55 3.22) rotate(-16.48)"/>\n    <circle class="cls-1" cx="13.42" cy="22.93" r="2.17" transform="translate(-5.95 4.75) rotate(-16.48)"/>\n    <circle class="cls-1" cx="18.79" cy="23.81" r="2.17" transform="matrix(0.96, -0.28, 0.28, 0.96, -5.98, 6.31)"/>\n    <circle class="cls-1" cx="24.38" cy="23.5" r="2.17" transform="matrix(0.96, -0.28, 0.28, 0.96, -5.66, 7.88)"/>\n    <circle class="cls-1" cx="29.48" cy="20.71" r="2.17" transform="translate(-4.66 9.21) rotate(-16.48)"/>\n    <circle class="cls-1" cx="33.75" cy="16.86" r="2.17" transform="translate(-3.39 10.27) rotate(-16.48)"/>\n    <circle class="cls-1" cx="36.43" cy="12.28" r="2.17" transform="translate(-1.99 10.84) rotate(-16.48)"/>\n    <circle class="cls-1" cx="37.75" cy="7.39" r="2.17" transform="matrix(0.96, -0.28, 0.28, 0.96, -0.55, 11.01)"/>\n    <circle class="cls-1" cx="37.35" cy="2.17" r="2.17" transform="translate(0.92 10.68) rotate(-16.48)"/>\n    <path class="cls-1" d="M24.39,23.5A18.85,18.85,0,0,1,1,10.78l.46-.14A18.35,18.35,0,0,0,36.65.23L37.11.1A18.85,18.85,0,0,1,24.39,23.5Z"/>\n    <circle class="cls-2" cx="7.94" cy="10.29" r="1.43" transform="translate(-2.59 2.68) rotate(-16.48)"/>\n    <circle class="cls-2" cx="9.57" cy="13.27" r="1.43" transform="translate(-3.37 3.26) rotate(-16.48)"/>\n    <circle class="cls-2" cx="12.04" cy="15.69" r="1.43" transform="translate(-3.96 4.06) rotate(-16.48)"/>\n    <circle class="cls-2" cx="15.4" cy="17.12" r="1.43" transform="translate(-4.22 5.07) rotate(-16.48)"/>\n    <circle class="cls-2" cx="18.95" cy="17.7" r="1.43" transform="translate(-4.24 6.1) rotate(-16.48)"/>\n    <circle class="cls-2" cx="22.66" cy="17.49" r="1.43" transform="translate(-4.03 7.15) rotate(-16.48)"/>\n    <circle class="cls-2" cx="26.03" cy="15.65" r="1.43" transform="translate(-3.37 8.03) rotate(-16.48)"/>\n    <circle class="cls-2" cx="28.86" cy="13.09" r="1.43" transform="translate(-2.53 8.72) rotate(-16.48)"/>\n    <circle class="cls-2" cx="30.64" cy="10.06" r="1.43" transform="translate(-1.6 9.1) rotate(-16.48)"/>\n    <circle class="cls-2" cx="31.51" cy="6.82" r="1.43" transform="translate(-0.64 9.22) rotate(-16.48)"/>\n    <circle class="cls-2" cx="31.25" cy="3.36" r="1.43" transform="translate(0.33 9) rotate(-16.48)"/>\n    <path class="cls-2" d="M22.67,17.49A12.49,12.49,0,0,1,7.17,9.07L7.47,9A12.15,12.15,0,1,0,30.78,2.08L31.09,2A12.49,12.49,0,0,1,22.67,17.49Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/necklace/necklace.html"*/,
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object])
-    ], NecklaceComponent);
-    return NecklaceComponent;
-    var _a;
-}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
-
-//# sourceMappingURL=necklace.js.map
-
 /***/ })
-],[247]);
+],[249]);
 //# sourceMappingURL=main.js.map
