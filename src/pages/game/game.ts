@@ -86,7 +86,7 @@ export class GamePage extends Game implements AfterViewInit {
           const parent = item.isCopy();
 
           if(!onScreen) {
-            this.monster.clear(item.meta.container);
+            this.monster.clear(item.meta.getContainer(this.monster.name));
           } else {
             this.monsterComponent.remove(item.instance);
           }
@@ -160,9 +160,9 @@ export class GamePage extends Game implements AfterViewInit {
 
           return;
         }
-
-        const { content } = this.monster.getContainer(item.meta.container);
-        const { element } = this.monster.getGroup(item.meta.container);
+        item.meta.getContainer()
+        const { content } = this.monster.getContainer(item.meta.getContainer(this.monster.name));
+        const { element } = this.monster.getGroup(item.meta.getContainer(this.monster.name));
 
         if( content ) {
           const contentElement = content.node.children.item(0);
@@ -179,7 +179,7 @@ export class GamePage extends Game implements AfterViewInit {
         }
 
 
-        this.monster.render(item.component, item.meta.container, (instance, ref) => {
+        this.monster.render(item.component, item.meta.getContainer(this.monster.name), (instance, ref) => {
 
           const func = (instance, async?: boolean) => {
             before ? before(this.monster, items, instance) : null;

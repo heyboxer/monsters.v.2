@@ -15,6 +15,7 @@ import { LipsComponent } from './lips/lips';
 import { LollipopComponent } from './lollipop/lollipop';
 import { EggComponent } from './egg/egg';
 import { EarringsComponent } from './earrings/earrings';
+import { NecklaceComponent } from './necklace/necklace';
 
 const zombieJoyAnimBefore = (monster, repo, instance) => {
   const filtered = repo.getCopies().filter(i => {
@@ -61,10 +62,93 @@ export class TrinketsService {
   getTrinkets() {
     return [
       {
+        id: 16,
+        component: NecklaceComponent,
+        meta: {
+          container: 'body',
+          getContainer: function(name) {
+            if(['yaga'].includes(name)) {
+              return 'necklace';
+            }
+            return this.container;
+          },
+          uniq: true,
+          before: (monster, repo, instance) => {
+          },
+          after: (monster, repo, instance) => {
+          },
+          attr: {
+            width: {
+              default: ({width}) => width * 1.5,
+              skeleton: ({width}) => 201.947 * 1.2,
+              zombie: ({width}) => 107.787,
+              mummy: ({width}) => 47.372,
+              yaga: ({width}) => 71.389,
+              doctor: ({width}) => 96.519,
+              spider: ({width}) => 161.664,
+              alien: ({width}) => 95.425,
+              vampire: ({width}) => 112.848,
+              yeti: ({width}) => 133.37,
+              ghost: ({width}) => 214.32,
+              wolf: ({width}) => 171.669,
+              bed: ({width}) => 39.916,
+            },
+            height: {
+              default: ({height}) => height * 1.5,
+              skeleton: ({height}) => 103.88 * 1.2,
+              zombie: ({height}) => 55.445,
+              mummy: ({height}) => 24.368,
+              yaga: ({height}) => 43.312,
+              doctor: ({height}) => 49.649,
+              spider: ({height}) => 146.575,
+              alien: ({height}) => 67.599,
+              vampire: ({height}) => 58.048,
+              yeti: ({height}) => 68.605,
+              ghost: ({height}) => 112.984,
+              wolf: ({height}) => 107.837,
+              bed: ({height}) => 25.98,
+            },
+            x: {
+              default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
+              skeleton: ({x, width}) => (x - (201.947 * 1.2) / 2) + width / 2,
+              zombie: ({x, width}) => x + 30,
+              mummy: ({x, width}) => ((x - (47.372) / 2) + width / 2) + 6,
+              yaga: ({x, width}) => x + 32,
+              doctor: ({x, width}) => (x - (96.519) / 2) + width / 2,
+              spider: ({x, width}) => ((x - (161.664) / 2) + width / 2) - 20,
+              alien: ({x, width}) => (x - (95.425) / 2) + width / 2,
+              vampire: ({x, width}) => (x - (112.848) / 2) + width / 2,
+              yeti: ({x, width}) => ((x - (133.37) / 2) + width / 2) + 10,
+              ghost: ({x, width}) => (x - (214.32) / 2) + width / 2,
+              wolf: ({x, width}) => x + width - 171.669 + 10,
+              bed: ({x, width}) => x - 50,
+            },
+            y: {
+              default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
+              skeleton: ({y, height}) => y - 40,
+              zombie: ({y, height}) => y + 35,
+              mummy: ({y, height}) => y,
+              yaga: ({y, height}) => y + height - 43.312 - 60,
+              doctor: ({y, height}) => y + 8,
+              spider: ({y, height}) => y + 75,
+              alien: ({y, height}) => y + 2,
+              vampire: ({y, height}) => y + 60,
+              yeti: ({y, height}) => y + 95,
+              ghost: ({y, height}) => y + 140,
+              wolf: ({y, height}) => y - 30,
+              bed: ({y, height}) => y + 12,
+            }
+          }
+        }
+      },
+      {
         id: 15,
         component: EarringsComponent,
         meta: {
           container: 'ears',
+          getContainer: function() {
+            return this.container;
+          },
           uniq: true,
           before: (monster, repo, instance) => {
             monster.open('ears');
@@ -143,6 +227,9 @@ export class TrinketsService {
         component: EggComponent,
         meta: {
           container: { name: 'outer', mod: 'forward' },
+          getContainer: function() {
+            return this.container;
+          },
           uniq: true,
           before: (monster, repo, instance) => {
 
@@ -219,6 +306,9 @@ export class TrinketsService {
         component: LollipopComponent,
         meta: {
           container: 'mouth',
+          getContainer: function() {
+            return this.container;
+          },
           uniq: true,
           before: (monster, repo, instance) => {
 
@@ -295,6 +385,9 @@ export class TrinketsService {
         component: LipsComponent,
         meta: {
           container: 'mouth',
+          getContainer: function() {
+            return this.container;
+          },
           uniq: true,
           before: (monster, repo, instance) => {
             monster.open('eyelashes');
@@ -439,6 +532,9 @@ export class TrinketsService {
         component: WigComponent,
         meta: {
           container: 'head-figure',
+          getContainer: function() {
+            return this.container;
+          },
           uniq: true,
           emotion: 'joyful',
           before: (monster, repo, instance) => {
@@ -522,6 +618,9 @@ export class TrinketsService {
         component: BraComponent,
         meta: {
           container: 'body',
+          getContainer: function() {
+            return this.container;
+          },
           uniq: true,
           before: (monster) => {
             if(monster.name === 'bed') {
@@ -606,6 +705,9 @@ export class TrinketsService {
         component: DressComponent,
         meta: {
           container: 'body',
+          getContainer: function() {
+            return this.container;
+          },
           uniq: true,
           before: (monster) => {
             if(
@@ -695,6 +797,9 @@ export class TrinketsService {
         component: SnivelComponent,
         meta: {
           container: 'nose',
+          getContainer: function() {
+            return this.container;
+          },
           emotion: 'sad',
           attr: {
             width: {
@@ -765,6 +870,9 @@ export class TrinketsService {
         component: MoustacheComponent,
         meta: {
           container: 'mouth',
+          getContainer: function() {
+            return this.container;
+          },
           attr: {
             width: {
               default: ({width}) => width * 1.5,
@@ -834,6 +942,9 @@ export class TrinketsService {
         component: BeardComponent,
         meta: {
           container: 'mouth',
+          getContainer: function() {
+            return this.container;
+          },
           before: (monster) => {
             if(monster.name === 'wolf') {
               monster.close('tongue');
@@ -925,6 +1036,9 @@ export class TrinketsService {
           onScreen: true,
           multiple: true,
           random: true,
+          getContainer: function() {
+            return null;
+          },
           before: (monster, items, instance) => {
             if(monster.animate() && monster.isOnMonster( instance.getBoundingClientRect() )) {
               const smile = monster.animate('smile')(true)();
@@ -943,6 +1057,9 @@ export class TrinketsService {
         id: 5,
         component: HeartComponent,
         meta: {
+          getContainer: function() {
+            return null;
+          },
           before: zombieJoyAnimBefore,
           after: zombieJoyAnimAfter,
           emotion: 'joyful',
@@ -955,6 +1072,9 @@ export class TrinketsService {
         component: EyesComponent,
         meta: {
           container: 'eyes',
+          getContainer: function() {
+            return this.container;
+          },
           before: (monster) => {
             monster.close('eyes');
             return;
@@ -996,6 +1116,9 @@ export class TrinketsService {
         component: GlassComponent,
         meta: {
           container: 'eyes',
+          getContainer: function() {
+            return this.container;
+          },
           attr: {
             width: {
               default: ({width}) => width * 2,
@@ -1031,6 +1154,9 @@ export class TrinketsService {
         component: HoodComponent,
         meta: {
           container: 'head-figure',
+          getContainer: function() {
+            return this.container;
+          },
           emotion: 'joyful',
           uniq: true,
           before: zombieJoyAnimBefore,
