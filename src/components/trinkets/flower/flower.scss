@@ -1,0 +1,48 @@
+.flower {
+  & .cls-1{fill:none;stroke:#6fc055;stroke-miterlimit:10;stroke-width:6.52px;}
+  & .cls-2{fill:#f1ea35;}
+  & .cls-3{fill:#ab4e8a;}
+  & .cls-4{fill:#6fc055;}
+
+  &--skeleton {
+    & .cls-1{fill:#f1ea35;}
+    & .cls-2{fill:#ab4e8a;}
+    & .cls-3{fill:#6fc055;}
+    & .cls-4{fill:none;stroke:#6fc055;stroke-miterlimit:10;stroke-width:2.48px;}
+  }
+  &--yaga {
+    & .cls-1{fill:#f1ea35;}
+    & .cls-2{fill:#ab4e8a;}
+    & .cls-3{fill:#6fc055;}
+  }
+  &--doctor {
+    & .cls-1{fill:none;stroke:#6fc055;stroke-miterlimit:10;stroke-width:1.64px;}
+    & .cls-2{fill:#f1ea35;}
+    & .cls-3{fill:#ab4e8a;}
+    & .cls-4{fill:#6fc055;}
+  }
+
+  &--zombie {
+    & .cls-1{fill:none;stroke:#6fc055;stroke-miterlimit:10;stroke-width:2.48px;}
+  }
+  &--mummy {
+    & .cls-1{fill:none;stroke:#6fc055;stroke-miterlimit:10;stroke-width:2.31px;}
+  }
+  &--spider {
+    & .cls-1{fill:#f1ea35;}
+    & .cls-2{fill:#ab4e8a;}
+    & .cls-3{fill:#6fc055;}
+  }
+  &--ghost {
+    & .cls-1{fill:none;stroke:#6fc055;stroke-miterlimit:10;stroke-width:2.66px;}
+    & .cls-2{fill:#f1ea35;}
+    & .cls-3{fill:#ab4e8a;}
+    & .cls-4{fill:#6fc055;}
+  }
+  &--bed {
+    & .cls-1{fill:none;stroke:#6fc055;stroke-miterlimit:10;stroke-width:1.62px;}
+    & .cls-2{fill:#f1ea35;}
+    & .cls-3{fill:#ab4e8a;}
+    & .cls-4{fill:#6fc055;}
+  }
+}

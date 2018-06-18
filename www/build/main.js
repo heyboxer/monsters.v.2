@@ -17,7 +17,7 @@ webpackJsonp([2],[
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(186);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -194,10 +194,7 @@ var MonsterModel = /** @class */ (function () {
 /* 13 */,
 /* 14 */,
 /* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -274,6 +271,9 @@ var TrinketUniqModel = /** @class */ (function (_super) {
 //# sourceMappingURL=trinket-uniq.model.js.map
 
 /***/ }),
+/* 17 */,
+/* 18 */,
+/* 19 */,
 /* 20 */,
 /* 21 */,
 /* 22 */,
@@ -287,7 +287,7 @@ var TrinketUniqModel = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ElementComponentModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_repository__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_model__ = __webpack_require__(300);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -411,11 +411,11 @@ var ElementComponentModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(200);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -647,7 +647,7 @@ var GamePage = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_select__ = __webpack_require__(202);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -749,11 +749,11 @@ webpackEmptyAsyncContext.id = 113;
 
 var map = {
 	"../pages/game/game.module": [
-		348,
+		349,
 		1
 	],
 	"../pages/home/home.module": [
-		349,
+		350,
 		0
 	]
 };
@@ -779,7 +779,7 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_host_directive__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_service__ = __webpack_require__(299);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -1009,7 +1009,7 @@ var EyesComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HoodComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1098,7 +1098,7 @@ var TrinketUniqPartDirective = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoleComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_random_model__ = __webpack_require__(301);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1375,7 +1375,7 @@ var SnivelComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DressComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1420,7 +1420,7 @@ var DressComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BraComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1465,7 +1465,7 @@ var BraComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WigComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1510,7 +1510,7 @@ var WigComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LipsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1555,7 +1555,7 @@ var LipsComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LollipopComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1600,7 +1600,7 @@ var LollipopComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EggComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1645,7 +1645,7 @@ var EggComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EarringsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1690,7 +1690,7 @@ var EarringsComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NecklaceComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1735,7 +1735,7 @@ var NecklaceComponent = /** @class */ (function (_super) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlatulenceComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1778,11 +1778,56 @@ var FlatulenceComponent = /** @class */ (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlowerComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__ = __webpack_require__(16);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var FlowerComponent = /** @class */ (function (_super) {
+    __extends(FlowerComponent, _super);
+    function FlowerComponent(element) {
+        return _super.call(this, 'flower', element.nativeElement) || this;
+    }
+    FlowerComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'flower',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/flower/flower.html"*/'<ng-template trinket-uniq-part part-name="default">\n  <svg width="125" class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154.26 167.26">\n    <path class="cls-1" d="M47.07,56.81A107.12,107.12,0,0,0,154.26,164"/>\n    <polygon class="cls-2" points="46.35 16.61 55.54 35.23 76.09 38.22 61.22 52.71 64.73 73.17 46.35 63.51 27.97 73.17 31.48 52.71 16.61 38.22 37.16 35.23 46.35 16.61"/>\n    <path class="cls-2" d="M64.73,89.79A16.59,16.59,0,0,1,57,87.88l-10.65-5.6L35.7,87.88A16.61,16.61,0,0,1,11.6,70.37l2-11.86L5,50.11a16.61,16.61,0,0,1,9.21-28.34L26.13,20,31.45,9.26a16.61,16.61,0,0,1,29.8,0L66.57,20l11.9,1.73a16.61,16.61,0,0,1,9.21,28.34l-8.61,8.4,2,11.86A16.61,16.61,0,0,1,64.73,89.79Z"/>\n    <circle class="cls-3" cx="45.63" cy="48.12" r="17.38"/>\n    <path class="cls-4" d="M124,88a44,44,0,0,0-44,44A44,44,0,0,0,124,88Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="skeleton">\n  <svg class="flower--skeleton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.4 218.38">\n    <polygon class="cls-1" points="4.88 65.74 9.73 62.03 9.42 55.94 14.45 59.4 20.15 57.23 18.4 63.08 22.23 67.83 16.13 67.98 12.8 73.09 10.77 67.33 4.88 65.74"/>\n    <path class="cls-1" d="M24.94,56.29a4.87,4.87,0,0,1-.11,2.34l-1,3.39L26,64.76a4.88,4.88,0,0,1-3.68,7.94l-3.53.09-1.93,3a4.88,4.88,0,0,1-8.69-1L7,71.37l-3.41-.92a4.88,4.88,0,0,1-1.69-8.59l2.81-2.15-.18-3.53a4.88,4.88,0,0,1,7.65-4.26l2.91,2,3.3-1.26a4.88,4.88,0,0,1,6.53,3.62Z"/>\n    <circle class="cls-2" cx="14.01" cy="64.16" r="5.11" transform="translate(-12.13 3.91) rotate(-11.14)"/>\n    <path class="cls-3" d="M12.38,32.46A12.92,12.92,0,0,0,27.56,42.65,12.92,12.92,0,0,0,12.38,32.46Z"/>\n    <polygon class="cls-1" points="99.29 24.69 105.36 19.63 104.62 11.76 111.31 15.96 118.57 12.83 116.64 20.5 121.86 26.43 113.97 26.96 109.94 33.76 107 26.43 99.29 24.69"/>\n    <path class="cls-1" d="M124.72,11.35a6.31,6.31,0,0,1,0,3l-1.12,4.44,3,3.44a6.32,6.32,0,0,1-4.32,10.49l-4.57.31L115.38,37a6.32,6.32,0,0,1-11.31-.87l-1.71-4.25-4.47-1a6.32,6.32,0,0,1-2.67-11l3.51-2.93-.43-4.56A6.32,6.32,0,0,1,108,6.4l3.88,2.44L116.07,7a6.32,6.32,0,0,1,8.65,4.32Z"/>\n    <circle class="cls-2" cx="111.01" cy="22.14" r="6.62" transform="translate(-2.09 26.71) rotate(-13.59)"/>\n    <path class="cls-3" d="M82.42,6.24a16.74,16.74,0,0,0,20.22,12.34A16.74,16.74,0,0,0,82.42,6.24Z"/>\n    <polygon class="cls-1" points="133.38 38.07 139.45 33 138.72 25.13 145.41 29.34 152.67 26.2 150.74 33.87 155.96 39.8 148.07 40.34 144.04 47.13 141.09 39.8 133.38 38.07"/>\n    <path class="cls-1" d="M158.81,24.72a6.31,6.31,0,0,1,0,3l-1.12,4.44,3,3.44a6.32,6.32,0,0,1-4.32,10.49l-4.57.31-2.34,3.94a6.32,6.32,0,0,1-11.31-.87l-1.71-4.25-4.47-1a6.32,6.32,0,0,1-2.67-11l3.51-2.93-.43-4.56a6.32,6.32,0,0,1,9.66-5.94L146,22.21l4.2-1.81a6.32,6.32,0,0,1,8.65,4.32Z"/>\n    <circle class="cls-2" cx="145.11" cy="35.51" r="6.62" transform="translate(-4.28 35.1) rotate(-13.59)"/>\n    <path class="cls-3" d="M129.8,23.57A16.74,16.74,0,0,0,132.12,0,16.74,16.74,0,0,0,129.8,23.57Z"/>\n    <polygon class="cls-1" points="158.51 63.03 164.57 57.96 163.84 50.09 170.53 54.3 177.79 51.17 175.86 58.83 181.08 64.77 173.19 65.3 169.16 72.1 166.22 64.76 158.51 63.03"/>\n    <path class="cls-1" d="M183.94,49.68a6.31,6.31,0,0,1,0,3l-1.12,4.44,3,3.44a6.32,6.32,0,0,1-4.32,10.49l-4.57.31-2.34,3.94a6.32,6.32,0,0,1-11.31-.87l-1.71-4.25-4.47-1a6.32,6.32,0,0,1-2.67-11L158,55.24l-.43-4.56a6.32,6.32,0,0,1,9.66-5.94l3.88,2.44,4.2-1.81a6.32,6.32,0,0,1,8.65,4.32Z"/>\n    <circle class="cls-2" cx="170.23" cy="60.48" r="6.62" transform="translate(-9.45 41.71) rotate(-13.59)"/>\n    <path class="cls-3" d="M160.64,28.25a16.74,16.74,0,0,0,20.22,12.34A16.74,16.74,0,0,0,160.64,28.25Z"/>\n    <path class="cls-4" d="M17.91,161.5a40.78,40.78,0,0,0,14.63,55.82"/>\n    <polygon class="cls-1" points="25.39 148.15 24.84 156.03 31.02 160.96 23.35 162.86 20.57 170.26 16.39 163.56 8.49 163.2 13.57 157.15 11.47 149.53 18.8 152.5 25.39 148.15"/>\n    <path class="cls-1" d="M17.38,175.72a6.31,6.31,0,0,1-2.17-2.11l-2.42-3.88-4.57-.21a6.32,6.32,0,0,1-4.56-10.39l2.95-3.51-1.22-4.41a6.32,6.32,0,0,1,8.47-7.54l4.24,1.72,3.82-2.52a6.32,6.32,0,0,1,9.79,5.72l-.32,4.57L35,156a6.32,6.32,0,0,1-2.42,11.08l-4.44,1.1-1.61,4.29a6.32,6.32,0,0,1-9.11,3.24Z"/>\n    <circle class="cls-2" cx="19.1" cy="158.36" r="6.62" transform="translate(-127.25 94.93) rotate(-59.69)"/>\n    <path class="cls-3" d="M37.2,186.52a16.74,16.74,0,0,0-22.91,6A16.74,16.74,0,0,0,37.2,186.52Z"/>\n    <polygon class="cls-1" points="53.04 39.09 45.14 38.66 40.31 44.91 38.29 37.27 30.84 34.61 37.48 30.32 37.71 22.42 43.84 27.41 51.43 25.19 48.58 32.56 53.04 39.09"/>\n    <path class="cls-1" d="M25.34,31.51a6.31,6.31,0,0,1,2.08-2.21l3.85-2.48.13-4.58a6.32,6.32,0,0,1,10.31-4.72l3.55,2.89,4.39-1.29a6.32,6.32,0,0,1,7.68,8.35l-1.65,4.27,2.58,3.78a6.32,6.32,0,0,1-5.57,9.88l-4.57-.25-2.8,3.62A6.32,6.32,0,0,1,34.2,46.53L33,42.11l-4.31-1.54a6.32,6.32,0,0,1-3.38-9.06Z"/>\n    <circle class="cls-2" cx="42.72" cy="32.96" r="6.62" transform="translate(-6.97 53.99) rotate(-60.59)"/>\n    <path class="cls-3" d="M21.52,51.5a16.74,16.74,0,0,0-6.37-22.82A16.74,16.74,0,0,0,21.52,51.5Z"/>\n    <polygon class="cls-1" points="81.72 28.76 74.87 24.83 67.74 28.25 69.36 20.51 63.91 14.79 71.76 13.94 75.52 6.99 78.75 14.2 86.53 15.62 80.67 20.93 81.72 28.76"/>\n    <path class="cls-1" d="M60.38,9.54a6.31,6.31,0,0,1,2.85-1L67.78,8,70,4a6.32,6.32,0,0,1,11.33.41l1.87,4.18,4.5.82a6.32,6.32,0,0,1,3.11,10.91l-3.39,3.07L88,27.92a6.32,6.32,0,0,1-9.41,6.33l-4-2.28-4.13,2a6.32,6.32,0,0,1-8.93-7l.94-4.48-3.16-3.31a6.32,6.32,0,0,1,1-9.61Z"/>\n    <circle class="cls-2" cx="75.26" cy="18.65" r="6.62" transform="matrix(0.83, -0.56, 0.56, 0.83, 2.39, 45.15)"/>\n    <path class="cls-3" d="M51,24.69A16.74,16.74,0,0,0,55.59,1.45,16.74,16.74,0,0,0,51,24.69Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="zombie">\n  <svg class="flower flower--zombie" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.72 35.21">\n    <path class="cls-1" d="M58.47,15.9A40.78,40.78,0,0,0,.94,20.33"/>\n    <polygon class="cls-2" points="70.27 25.65 62.62 23.69 56.66 28.89 56.16 21 49.37 16.95 56.72 14.03 58.48 6.32 63.52 12.41 71.39 11.7 67.17 18.38 70.27 25.65"/>\n    <path class="cls-2" d="M44.57,12.83A6.31,6.31,0,0,1,47,11.07l4.26-1.69,1-4.46a6.32,6.32,0,0,1,11-2.63l2.92,3.52,4.56-.41a6.32,6.32,0,0,1,5.91,9.68L74.29,19l1.8,4.21a6.32,6.32,0,0,1-7.38,8.61l-4.44-1.13-3.45,3A6.32,6.32,0,0,1,50.35,29.3l-.29-4.57-3.93-2.35a6.32,6.32,0,0,1-1.56-9.54Z"/>\n    <circle class="cls-3" cx="61.34" cy="17.63" r="6.62" transform="translate(8.04 52.74) rotate(-49.41)"/>\n    <path class="cls-4" d="M30.41,30.41A16.74,16.74,0,0,0,28.59,6.79,16.74,16.74,0,0,0,30.41,30.41Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="mummy">\n  <svg class="flower flower--mummy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.93 46.7">\n    <path class="cls-1" d="M45,15.42A38,38,0,0,0,1.14,46.51"/>\n    <polygon class="cls-2" points="59.04 17.56 51.99 19.66 49.73 26.66 45.55 20.61 38.19 20.62 42.66 14.77 40.37 7.78 47.31 10.22 53.26 5.89 53.08 13.24 59.04 17.56"/>\n    <path class="cls-2" d="M32.38,19.63A5.88,5.88,0,0,1,33.51,17l2.59-3.39L34.77,9.61a5.89,5.89,0,0,1,7.55-7.38l4,1.41,3.44-2.51A5.89,5.89,0,0,1,59.14,6L59,10.29l3.45,2.5A5.89,5.89,0,0,1,60.72,23.2l-4.08,1.22-1.31,4.06A5.89,5.89,0,0,1,44.88,30L42.46,26.5H38.2a5.89,5.89,0,0,1-5.81-6.87Z"/>\n    <circle class="cls-3" cx="48.07" cy="15.44" r="6.16" transform="translate(24.8 60.24) rotate(-80.35)"/>\n    <path class="cls-4" d="M29.49,40.45a15.58,15.58,0,0,0-12.76-18A15.58,15.58,0,0,0,29.49,40.45Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yaga">\n  <svg class="flower--yaga" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.01 48.55">\n    <polygon class="cls-1" points="3.92 38.46 7.8 35.49 7.56 30.6 11.58 33.38 16.16 31.63 14.76 36.32 17.83 40.13 12.94 40.25 10.26 44.35 8.64 39.73 3.92 38.46"/>\n    <path class="cls-1" d="M20,30.88a3.91,3.91,0,0,1-.09,1.87l-.81,2.72,1.78,2.21a3.91,3.91,0,0,1-3,6.37l-2.83.07-1.55,2.37a3.91,3.91,0,0,1-7-.84L5.63,43l-2.74-.74a3.91,3.91,0,0,1-1.36-6.89l2.25-1.72L3.65,30.8a3.91,3.91,0,0,1,6.13-3.42L12.11,29l2.65-1A3.91,3.91,0,0,1,20,30.88Z"/>\n    <circle class="cls-2" cx="11.23" cy="37.19" r="4.1" transform="translate(-6.97 2.87) rotate(-11.14)"/>\n    <path class="cls-3" d="M9.93,11.77A10.36,10.36,0,0,0,22.1,19.94,10.36,10.36,0,0,0,9.93,11.77Z"/>\n    <polygon class="cls-1" points="61.46 15.29 65.22 12.15 64.76 7.28 68.91 9.88 73.4 7.94 72.2 12.69 75.43 16.36 70.55 16.69 68.06 20.9 66.23 16.36 61.46 15.29"/>\n    <path class="cls-1" d="M77.2,7a3.91,3.91,0,0,1,0,1.88l-.69,2.75,1.87,2.13a3.91,3.91,0,0,1-2.68,6.49l-2.83.19L71.42,22.9a3.91,3.91,0,0,1-7-.54l-1.06-2.63-2.77-.62A3.91,3.91,0,0,1,59,12.28l2.18-1.82-.26-2.82a3.91,3.91,0,0,1,6-3.68l2.4,1.51,2.6-1.12A3.91,3.91,0,0,1,77.2,7Z"/>\n    <circle class="cls-2" cx="68.72" cy="13.71" r="4.1" transform="translate(-1.3 16.54) rotate(-13.59)"/>\n    <path class="cls-3" d="M51,3.86A10.36,10.36,0,0,0,63.53,11.5,10.36,10.36,0,0,0,51,3.86Z"/>\n    <polygon class="cls-1" points="82.57 23.56 86.32 20.43 85.87 15.56 90.01 18.16 94.5 16.22 93.31 20.97 96.54 24.64 91.66 24.97 89.16 29.18 87.34 24.64 82.57 23.56"/>\n    <path class="cls-1" d="M98.31,15.3a3.91,3.91,0,0,1,0,1.88l-.69,2.75,1.87,2.13a3.91,3.91,0,0,1-2.68,6.49L94,28.74l-1.45,2.44a3.91,3.91,0,0,1-7-.54L84.47,28l-2.77-.62a3.91,3.91,0,0,1-1.65-6.82l2.18-1.82L82,15.92a3.91,3.91,0,0,1,6-3.68l2.4,1.51L93,12.63a3.91,3.91,0,0,1,5.36,2.67Z"/>\n    <circle class="cls-2" cx="89.82" cy="21.98" r="4.1" transform="translate(-2.65 21.73) rotate(-13.59)"/>\n    <path class="cls-3" d="M80.35,14.59A10.36,10.36,0,0,0,81.78,0,10.36,10.36,0,0,0,80.35,14.59Z"/>\n    <polygon class="cls-1" points="98.12 39.02 101.88 35.88 101.42 31.01 105.56 33.61 110.06 31.68 108.86 36.42 112.09 40.09 107.21 40.42 104.72 44.63 102.89 40.09 98.12 39.02"/>\n    <path class="cls-1" d="M113.86,30.76a3.91,3.91,0,0,1,0,1.88l-.69,2.75L115,37.51A3.91,3.91,0,0,1,112.36,44l-2.83.19-1.45,2.44a3.91,3.91,0,0,1-7-.54L100,43.46l-2.77-.62A3.91,3.91,0,0,1,95.61,36l2.18-1.82-.26-2.82a3.91,3.91,0,0,1,6-3.68l2.4,1.51,2.6-1.12a3.91,3.91,0,0,1,5.36,2.67Z"/>\n    <circle class="cls-2" cx="105.38" cy="37.44" r="4.1" transform="translate(-5.85 25.82) rotate(-13.59)"/>\n    <path class="cls-3" d="M99.44,17.48A10.36,10.36,0,0,0,112,25.13,10.36,10.36,0,0,0,99.44,17.48Z"/>\n    <polygon class="cls-1" points="32.83 24.2 27.95 23.93 24.95 27.8 23.7 23.07 19.09 21.43 23.2 18.77 23.35 13.88 27.14 16.97 31.84 15.59 30.07 20.16 32.83 24.2"/>\n    <path class="cls-1" d="M15.68,19.5A3.91,3.91,0,0,1,17,18.14l2.38-1.54.08-2.83a3.91,3.91,0,0,1,6.38-2.92L28,12.63l2.72-.8A3.91,3.91,0,0,1,35.49,17l-1,2.64L36.06,22a3.91,3.91,0,0,1-3.45,6.12L29.79,28l-1.73,2.24a3.91,3.91,0,0,1-6.88-1.39l-.73-2.74-2.67-1a3.91,3.91,0,0,1-2.09-5.61Z"/>\n    <circle class="cls-2" cx="26.45" cy="20.4" r="4.1" transform="translate(-4.31 33.42) rotate(-60.59)"/>\n    <path class="cls-3" d="M13.32,31.88A10.36,10.36,0,0,0,9.38,17.75,10.36,10.36,0,0,0,13.32,31.88Z"/>\n    <polygon class="cls-1" points="50.59 17.8 46.34 15.37 41.93 17.49 42.94 12.7 39.56 9.16 44.42 8.63 46.75 4.33 48.75 8.79 53.56 9.67 49.94 12.95 50.59 17.8"/>\n    <path class="cls-1" d="M37.38,5.91a3.91,3.91,0,0,1,1.76-.64L42,5,43.3,2.47a3.91,3.91,0,0,1,7,.26l1.16,2.59,2.79.51a3.91,3.91,0,0,1,1.92,6.75l-2.1,1.9.38,2.81a3.91,3.91,0,0,1-5.83,3.92l-2.46-1.41L43.63,21a3.91,3.91,0,0,1-5.53-4.33l.58-2.77-2-2.05a3.91,3.91,0,0,1,.65-6Z"/>\n    <circle class="cls-2" cx="46.59" cy="11.54" r="4.1" transform="translate(1.48 27.95) rotate(-33.91)"/>\n    <path class="cls-3" d="M31.59,15.29A10.36,10.36,0,0,0,34.41.9,10.36,10.36,0,0,0,31.59,15.29Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="doctor">\n  <svg class="flower--doctor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132.43 214.87">\n    <path class="cls-1" d="M118.21,11A27,27,0,0,0,87,33.1"/>\n    <polygon class="cls-2" points="128.24 12.5 123.22 14 121.61 18.98 118.64 14.67 113.4 14.68 116.58 10.52 114.95 5.54 119.89 7.28 124.13 4.19 124 9.43 128.24 12.5"/>\n    <path class="cls-2" d="M109.27,14a4.18,4.18,0,0,1,.8-1.84l1.84-2.41L111,6.84a4.19,4.19,0,0,1,5.37-5.25l2.86,1L121.66.8a4.19,4.19,0,0,1,6.66,3.49l-.07,3L130.7,9.1a4.19,4.19,0,0,1-1.26,7.41l-2.91.87-.93,2.89a4.19,4.19,0,0,1-7.44,1.09l-1.72-2.5h-3A4.19,4.19,0,0,1,109.27,14Z"/>\n    <circle class="cls-3" cx="120.43" cy="10.99" r="4.38" transform="translate(89.42 127.88) rotate(-80.35)"/>\n    <path class="cls-4" d="M107.2,28.79A11.09,11.09,0,0,0,98.12,16,11.09,11.09,0,0,0,107.2,28.79Z"/>\n    <polygon class="cls-2" points="112.09 176.41 108.21 179.39 108.45 184.27 104.42 181.5 99.85 183.24 101.25 178.55 98.18 174.74 103.07 174.62 105.74 170.52 107.37 175.14 112.09 176.41"/>\n    <path class="cls-2" d="M96,184a3.91,3.91,0,0,1,.09-1.87l.81-2.72-1.78-2.21a3.91,3.91,0,0,1,3-6.37l2.83-.07,1.55-2.37a3.91,3.91,0,0,1,7,.84l.94,2.67,2.74.74a3.91,3.91,0,0,1,1.36,6.89l-2.25,1.72.14,2.83a3.91,3.91,0,0,1-6.13,3.42l-2.33-1.61-2.65,1A3.91,3.91,0,0,1,96,184Z"/>\n    <circle class="cls-3" cx="104.77" cy="177.68" r="4.1" transform="translate(-32.35 23.59) rotate(-11.14)"/>\n    <path class="cls-4" d="M106.08,203.1a10.36,10.36,0,0,0-12.18-8.17A10.36,10.36,0,0,0,106.08,203.1Z"/>\n    <polygon class="cls-2" points="54.55 199.59 50.79 202.72 51.24 207.59 47.1 204.99 42.61 206.93 43.8 202.18 40.57 198.51 45.45 198.18 47.95 193.97 49.77 198.51 54.55 199.59"/>\n    <path class="cls-2" d="M38.8,207.85a3.91,3.91,0,0,1,0-1.88l.69-2.75-1.87-2.13a3.91,3.91,0,0,1,2.68-6.49l2.83-.19L44.58,192a3.91,3.91,0,0,1,7,.54l1.06,2.63,2.77.62a3.91,3.91,0,0,1,1.65,6.82l-2.18,1.82.26,2.82a3.91,3.91,0,0,1-6,3.68l-2.4-1.51-2.6,1.12a3.91,3.91,0,0,1-5.36-2.67Z"/>\n    <circle class="cls-3" cx="47.29" cy="201.17" r="4.1" transform="translate(-45.96 16.75) rotate(-13.59)"/>\n    <path class="cls-4" d="M65,211a10.36,10.36,0,0,0-12.51-7.64A10.36,10.36,0,0,0,65,211Z"/>\n    <polygon class="cls-2" points="33.44 191.31 29.68 194.44 30.14 199.32 26 196.71 21.5 198.65 22.7 193.91 19.47 190.23 24.35 189.9 26.84 185.69 28.67 190.24 33.44 191.31"/>\n    <path class="cls-2" d="M17.7,199.57a3.91,3.91,0,0,1,0-1.88l.69-2.75-1.87-2.13a3.91,3.91,0,0,1,2.68-6.49l2.83-.19,1.45-2.44a3.91,3.91,0,0,1,7,.54l1.06,2.63,2.77.62a3.91,3.91,0,0,1,1.65,6.82l-2.18,1.82L34,199a3.91,3.91,0,0,1-6,3.68l-2.4-1.51-2.6,1.12a3.91,3.91,0,0,1-5.36-2.67Z"/>\n    <circle class="cls-3" cx="26.18" cy="192.89" r="4.1" transform="translate(-44.61 11.56) rotate(-13.59)"/>\n    <path class="cls-4" d="M35.66,200.28a10.36,10.36,0,0,0-1.43,14.59A10.36,10.36,0,0,0,35.66,200.28Z"/>\n    <polygon class="cls-2" points="17.89 175.86 14.13 178.99 14.59 183.86 10.44 181.26 5.95 183.2 7.15 178.45 3.92 174.78 8.8 174.45 11.29 170.24 13.11 174.78 17.89 175.86"/>\n    <path class="cls-2" d="M2.15,184.12a3.91,3.91,0,0,1,0-1.88l.69-2.75L1,177.36a3.91,3.91,0,0,1,2.68-6.49l2.83-.19,1.45-2.44a3.91,3.91,0,0,1,7,.54L16,171.41l2.77.62a3.91,3.91,0,0,1,1.65,6.82l-2.18,1.82.26,2.82a3.91,3.91,0,0,1-6,3.68l-2.4-1.51-2.6,1.12a3.91,3.91,0,0,1-5.36-2.67Z"/>\n    <circle class="cls-3" cx="10.63" cy="177.44" r="4.1" transform="translate(-41.41 7.47) rotate(-13.59)"/>\n    <path class="cls-4" d="M16.57,197.39a10.36,10.36,0,0,0-12.51-7.64A10.36,10.36,0,0,0,16.57,197.39Z"/>\n    <polygon class="cls-2" points="83.18 190.68 88.06 190.94 91.05 187.07 92.31 191.8 96.91 193.45 92.81 196.1 92.66 200.99 88.87 197.9 84.17 199.28 85.94 194.72 83.18 190.68"/>\n    <path class="cls-2" d="M100.32,195.37A3.91,3.91,0,0,1,99,196.74l-2.38,1.54-.08,2.83A3.91,3.91,0,0,1,90.19,204L88,202.24l-2.72.8a3.91,3.91,0,0,1-4.75-5.17l1-2.64-1.6-2.34a3.91,3.91,0,0,1,3.45-6.12l2.83.16L88,184.68a3.91,3.91,0,0,1,6.88,1.39l.73,2.74,2.67,1a3.91,3.91,0,0,1,2.09,5.61Z"/>\n    <circle class="cls-3" cx="89.56" cy="194.47" r="4.1" transform="translate(-123.83 177) rotate(-60.59)"/>\n    <path class="cls-4" d="M102.69,183a10.36,10.36,0,0,0,3.94,14.12A10.36,10.36,0,0,0,102.69,183Z"/>\n    <polygon class="cls-2" points="65.42 197.07 69.66 199.5 74.07 197.39 73.07 202.18 76.45 205.72 71.58 206.24 69.26 210.55 67.26 206.08 62.44 205.2 66.07 201.92 65.42 197.07"/>\n    <path class="cls-2" d="M78.63,209a3.91,3.91,0,0,1-1.76.64l-2.82.3-1.35,2.49a3.91,3.91,0,0,1-7-.26l-1.16-2.59-2.79-.51a3.91,3.91,0,0,1-1.92-6.75l2.1-1.9-.38-2.81a3.91,3.91,0,0,1,5.83-3.92l2.46,1.41,2.56-1.23a3.91,3.91,0,0,1,5.53,4.33L77.33,201l2,2.05a3.91,3.91,0,0,1-.65,6Z"/>\n    <circle class="cls-3" cx="69.42" cy="203.33" r="4.1" transform="translate(-101.62 73.3) rotate(-33.91)"/>\n    <path class="cls-4" d="M84.42,199.59A10.36,10.36,0,0,0,81.6,214,10.36,10.36,0,0,0,84.42,199.59Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="spider">\n  <svg class="flower--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.77 121.9">\n    <polygon class="cls-1" points="95.43 8.59 92.13 11.12 92.33 15.28 88.9 12.91 85.01 14.4 86.2 10.41 83.59 7.16 87.75 7.06 90.03 3.57 91.41 7.5 95.43 8.59"/>\n    <path class="cls-1" d="M81.74,15a3.33,3.33,0,0,1,.08-1.6l.69-2.31L81,9.26a3.33,3.33,0,0,1,2.51-5.42l2.41-.06,1.32-2a3.33,3.33,0,0,1,5.93.71L94,4.74l2.33.63a3.33,3.33,0,0,1,1.15,5.86L95.54,12.7l.12,2.41A3.33,3.33,0,0,1,90.44,18l-2-1.37-2.25.86A3.33,3.33,0,0,1,81.74,15Z"/>\n    <circle class="cls-2" cx="89.2" cy="9.67" r="3.49" transform="translate(-0.19 17.42) rotate(-11.14)"/>\n    <path class="cls-3" d="M90.31,31.31a8.82,8.82,0,0,0-10.37-7A8.82,8.82,0,0,0,90.31,31.31Z"/>\n    <polygon class="cls-1" points="46.44 28.32 43.24 30.99 43.63 35.13 40.1 32.92 36.28 34.57 37.29 30.53 34.54 27.4 38.7 27.12 40.82 23.54 42.38 27.4 46.44 28.32"/>\n    <path class="cls-1" d="M33,35.35a3.33,3.33,0,0,1,0-1.6l.59-2.34L32,29.6a3.33,3.33,0,0,1,2.28-5.53l2.41-.16L38,21.84a3.33,3.33,0,0,1,6,.46l.9,2.24,2.35.53a3.33,3.33,0,0,1,1.41,5.81l-1.85,1.55.22,2.4A3.33,3.33,0,0,1,41.86,38l-2-1.28-2.22,1A3.33,3.33,0,0,1,33,35.35Z"/>\n    <circle class="cls-2" cx="40.26" cy="29.66" r="3.49" transform="translate(-5.84 10.29) rotate(-13.59)"/>\n    <path class="cls-3" d="M55.33,38a8.82,8.82,0,0,0-10.65-6.51A8.82,8.82,0,0,0,55.33,38Z"/>\n    <polygon class="cls-1" points="28.47 21.27 25.27 23.94 25.66 28.09 22.13 25.87 18.31 27.52 19.32 23.48 16.57 20.35 20.73 20.07 22.86 16.49 24.41 20.36 28.47 21.27"/>\n    <path class="cls-1" d="M15.07,28.3a3.33,3.33,0,0,1,0-1.6l.59-2.34-1.59-1.81A3.33,3.33,0,0,1,16.35,17l2.41-.16L20,14.79a3.33,3.33,0,0,1,6,.46l.9,2.24L29.2,18a3.33,3.33,0,0,1,1.41,5.81l-1.85,1.55.22,2.4a3.33,3.33,0,0,1-5.09,3.13l-2-1.28-2.22,1a3.33,3.33,0,0,1-4.56-2.28Z"/>\n    <circle class="cls-2" cx="22.29" cy="22.61" r="3.49" transform="translate(-4.69 5.87) rotate(-13.59)"/>\n    <path class="cls-3" d="M30.36,28.91a8.82,8.82,0,0,0-1.22,12.42A8.82,8.82,0,0,0,30.36,28.91Z"/>\n    <polygon class="cls-1" points="15.23 8.11 12.03 10.78 12.42 14.93 8.89 12.71 5.07 14.36 6.08 10.32 3.33 7.2 7.49 6.92 9.61 3.33 11.16 7.2 15.23 8.11"/>\n    <path class="cls-1" d="M1.83,15.15a3.33,3.33,0,0,1,0-1.6l.59-2.34L.83,9.4A3.33,3.33,0,0,1,3.11,3.87l2.41-.16L6.75,1.63a3.33,3.33,0,0,1,6,.46l.9,2.24L16,4.86a3.33,3.33,0,0,1,1.41,5.81l-1.85,1.55.22,2.4a3.33,3.33,0,0,1-5.09,3.13l-2-1.28-2.22,1a3.33,3.33,0,0,1-4.56-2.28Z"/>\n    <circle class="cls-2" cx="9.05" cy="9.46" r="3.49" transform="translate(-1.97 2.39) rotate(-13.59)"/>\n    <path class="cls-3" d="M14.11,26.44A8.82,8.82,0,0,0,3.45,19.94,8.82,8.82,0,0,0,14.11,26.44Z"/>\n    <polygon class="cls-1" points="70.82 20.73 74.97 20.96 77.52 17.66 78.59 21.69 82.51 23.09 79.01 25.35 78.89 29.51 75.66 26.88 71.66 28.05 73.16 24.17 70.82 20.73"/>\n    <path class="cls-1" d="M85.41,24.73a3.33,3.33,0,0,1-1.1,1.16l-2,1.31-.07,2.41a3.33,3.33,0,0,1-5.44,2.49l-1.87-1.52-2.32.68a3.33,3.33,0,0,1-4-4.4l.87-2.25-1.36-2A3.33,3.33,0,0,1,71,17.4l2.41.13,1.47-1.91a3.33,3.33,0,0,1,5.86,1.18l.62,2.33,2.27.81a3.33,3.33,0,0,1,1.78,4.78Z"/>\n    <circle class="cls-2" cx="76.25" cy="23.96" r="3.49" transform="translate(17.94 78.62) rotate(-60.59)"/>\n    <path class="cls-3" d="M87.43,14.19a8.82,8.82,0,0,0,3.36,12A8.82,8.82,0,0,0,87.43,14.19Z"/>\n    <polygon class="cls-1" points="55.7 26.17 59.31 28.25 63.06 26.44 62.21 30.52 65.09 33.54 60.95 33.98 58.97 37.65 57.26 33.85 53.16 33.1 56.25 30.3 55.7 26.17"/>\n    <path class="cls-1" d="M66.95,36.3a3.33,3.33,0,0,1-1.5.55l-2.4.26L61.9,39.23a3.33,3.33,0,0,1-6-.22l-1-2.2-2.37-.43a3.33,3.33,0,0,1-1.64-5.75L52.71,29l-.32-2.39a3.33,3.33,0,0,1,5-3.33l2.09,1.2,2.18-1a3.33,3.33,0,0,1,4.7,3.69l-.49,2.36,1.67,1.75a3.33,3.33,0,0,1-.55,5.07Z"/>\n    <circle class="cls-2" cx="59.1" cy="31.5" r="3.49" transform="translate(-7.52 38.32) rotate(-33.91)"/>\n    <path class="cls-3" d="M71.87,28.32a8.82,8.82,0,0,0-2.4,12.25A8.82,8.82,0,0,0,71.87,28.32Z"/>\n    <polygon class="cls-1" points="95.43 89.16 92.13 91.69 92.33 95.85 88.9 93.49 85.01 94.97 86.2 90.98 83.59 87.74 87.75 87.63 90.03 84.14 91.41 88.07 95.43 89.16"/>\n    <path class="cls-1" d="M81.74,95.61a3.33,3.33,0,0,1,.08-1.6l.69-2.31L81,89.83a3.33,3.33,0,0,1,2.51-5.42l2.41-.06,1.32-2a3.33,3.33,0,0,1,5.93.71l.8,2.28,2.33.63a3.33,3.33,0,0,1,1.15,5.86l-1.92,1.47.12,2.41a3.33,3.33,0,0,1-5.22,2.91l-2-1.37-2.25.86a3.33,3.33,0,0,1-4.46-2.47Z"/>\n    <circle class="cls-2" cx="89.2" cy="90.24" r="3.49" transform="translate(-15.75 18.93) rotate(-11.14)"/>\n    <path class="cls-3" d="M90.31,111.88a8.82,8.82,0,0,0-10.37-7A8.82,8.82,0,0,0,90.31,111.88Z"/>\n    <polygon class="cls-1" points="46.44 108.89 43.24 111.56 43.63 115.71 40.1 113.49 36.28 115.14 37.29 111.1 34.54 107.97 38.7 107.69 40.82 104.11 42.38 107.98 46.44 108.89"/>\n    <path class="cls-1" d="M33,115.92a3.33,3.33,0,0,1,0-1.6l.59-2.34L32,110.17a3.33,3.33,0,0,1,2.28-5.53l2.41-.16L38,102.41a3.33,3.33,0,0,1,6,.46l.9,2.24,2.35.53a3.33,3.33,0,0,1,1.41,5.81L46.72,113l.22,2.4a3.33,3.33,0,0,1-5.09,3.13l-2-1.28-2.22,1A3.33,3.33,0,0,1,33,115.92Z"/>\n    <circle class="cls-2" cx="40.26" cy="110.23" r="3.49" transform="translate(-24.78 12.55) rotate(-13.59)"/>\n    <path class="cls-3" d="M55.33,118.61a8.82,8.82,0,0,0-10.65-6.51A8.82,8.82,0,0,0,55.33,118.61Z"/>\n    <polygon class="cls-1" points="28.47 101.84 25.27 104.51 25.66 108.66 22.13 106.44 18.31 108.09 19.32 104.05 16.57 100.92 20.73 100.64 22.86 97.06 24.41 100.93 28.47 101.84"/>\n    <path class="cls-1" d="M15.07,108.88a3.33,3.33,0,0,1,0-1.6l.59-2.34-1.59-1.81a3.33,3.33,0,0,1,2.28-5.53l2.41-.16L20,95.36a3.33,3.33,0,0,1,6,.46l.9,2.24,2.35.53a3.33,3.33,0,0,1,1.41,5.81l-1.85,1.55.22,2.4a3.33,3.33,0,0,1-5.09,3.13l-2-1.28-2.22,1a3.33,3.33,0,0,1-4.56-2.28Z"/>\n    <circle class="cls-2" cx="22.29" cy="103.19" r="3.49" transform="translate(-23.63 8.13) rotate(-13.59)"/>\n    <path class="cls-3" d="M30.36,109.48a8.82,8.82,0,0,0-1.22,12.42A8.82,8.82,0,0,0,30.36,109.48Z"/>\n    <polygon class="cls-1" points="15.23 88.69 12.03 91.36 12.42 95.5 8.89 93.29 5.07 94.94 6.08 90.9 3.33 87.77 7.49 87.49 9.61 83.91 11.16 87.77 15.23 88.69"/>\n    <path class="cls-1" d="M1.83,95.72a3.33,3.33,0,0,1,0-1.6l.59-2.34L.83,90a3.33,3.33,0,0,1,2.28-5.53l2.41-.16,1.23-2.08a3.33,3.33,0,0,1,6,.46l.9,2.24,2.35.53a3.33,3.33,0,0,1,1.41,5.81l-1.85,1.55.22,2.4a3.33,3.33,0,0,1-5.09,3.13L8.6,97,6.39,98a3.33,3.33,0,0,1-4.56-2.28Z"/>\n    <circle class="cls-2" cx="9.05" cy="90.03" r="3.49" transform="translate(-20.91 4.65) rotate(-13.59)"/>\n    <path class="cls-3" d="M14.11,107a8.82,8.82,0,0,0-10.65-6.51A8.82,8.82,0,0,0,14.11,107Z"/>\n    <polygon class="cls-1" points="70.82 101.3 74.97 101.53 77.52 98.23 78.59 102.26 82.51 103.66 79.01 105.92 78.89 110.09 75.66 107.46 71.66 108.63 73.16 104.74 70.82 101.3"/>\n    <path class="cls-1" d="M85.41,105.3a3.33,3.33,0,0,1-1.1,1.16l-2,1.31-.07,2.41a3.33,3.33,0,0,1-5.44,2.49l-1.87-1.52-2.32.68a3.33,3.33,0,0,1-4-4.4l.87-2.25-1.36-2A3.33,3.33,0,0,1,71,98l2.41.13,1.47-1.91a3.33,3.33,0,0,1,5.86,1.18l.62,2.33,2.27.81a3.33,3.33,0,0,1,1.78,4.78Z"/>\n    <circle class="cls-2" cx="76.25" cy="104.53" r="3.49" transform="translate(-52.25 119.63) rotate(-60.59)"/>\n    <path class="cls-3" d="M87.43,94.76a8.82,8.82,0,0,0,3.36,12A8.82,8.82,0,0,0,87.43,94.76Z"/>\n    <polygon class="cls-1" points="55.7 106.75 59.31 108.82 63.06 107.02 62.21 111.09 65.09 114.11 60.95 114.56 58.97 118.22 57.26 114.42 53.16 113.67 56.25 110.88 55.7 106.75"/>\n    <path class="cls-1" d="M66.95,116.87a3.33,3.33,0,0,1-1.5.55l-2.4.26L61.9,119.8a3.33,3.33,0,0,1-6-.22l-1-2.2L52.56,117a3.33,3.33,0,0,1-1.64-5.75l1.79-1.62-.32-2.39a3.33,3.33,0,0,1,5-3.33l2.09,1.2,2.18-1a3.33,3.33,0,0,1,4.7,3.69l-.49,2.36,1.67,1.75a3.33,3.33,0,0,1-.55,5.07Z"/>\n    <circle class="cls-2" cx="59.1" cy="112.07" r="3.49" transform="translate(-52.47 52.03) rotate(-33.91)"/>\n    <path class="cls-3" d="M71.87,108.89a8.82,8.82,0,0,0-2.4,12.25A8.82,8.82,0,0,0,71.87,108.89Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="alien">\n  <svg class="flower--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.53 82.66">\n    <polygon class="cls-1" points="6.67 65.48 13.28 60.42 12.87 52.1 19.72 56.83 27.51 53.87 25.13 61.85 30.36 68.33 22.03 68.54 17.48 75.52 14.71 67.66 6.67 65.48"/>\n    <path class="cls-1" d="M34,52.58a6.66,6.66,0,0,1-.15,3.19l-1.38,4.63,3,3.76a6.67,6.67,0,0,1-5,10.85l-4.82.12-2.64,4a6.67,6.67,0,0,1-11.87-1.43l-1.6-4.55L4.93,71.92A6.67,6.67,0,0,1,2.62,60.19l3.83-2.93-.24-4.82a6.67,6.67,0,0,1,10.44-5.82l4,2.74,4.51-1.72A6.67,6.67,0,0,1,34,52.58Z"/>\n    <circle class="cls-2" cx="19.13" cy="63.33" r="6.97" transform="translate(-11.87 4.89) rotate(-11.14)"/>\n    <path class="cls-3" d="M16.91,20A17.64,17.64,0,0,0,37.64,34,17.64,17.64,0,0,0,16.91,20Z"/>\n    <polygon class="cls-1" points="104.66 26.03 111.05 20.69 110.28 12.39 117.33 16.82 124.98 13.53 122.95 21.61 128.45 27.86 120.14 28.42 115.89 35.59 112.78 27.86 104.66 26.03"/>\n    <path class="cls-1" d="M131.46,12a6.66,6.66,0,0,1,0,3.19l-1.18,4.68,3.19,3.62a6.67,6.67,0,0,1-4.56,11.05l-4.82.33L121.62,39a6.67,6.67,0,0,1-11.92-.92l-1.8-4.48-4.71-1.06a6.67,6.67,0,0,1-2.81-11.62l3.7-3.09L103.64,13a6.67,6.67,0,0,1,10.18-6.26l4.09,2.57,4.43-1.91A6.67,6.67,0,0,1,131.46,12Z"/>\n    <circle class="cls-2" cx="117.01" cy="23.34" r="6.97" transform="translate(-2.21 28.16) rotate(-13.59)"/>\n    <path class="cls-3" d="M86.88,6.58a17.64,17.64,0,0,0,21.31,13A17.64,17.64,0,0,0,86.88,6.58Z"/>\n    <polygon class="cls-1" points="140.59 40.12 146.99 34.78 146.22 26.49 153.27 30.92 160.92 27.62 158.88 35.7 164.38 41.96 156.07 42.52 151.82 49.68 148.72 41.95 140.59 40.12"/>\n    <path class="cls-1" d="M167.4,26.06a6.66,6.66,0,0,1,0,3.19l-1.18,4.68,3.19,3.62a6.67,6.67,0,0,1-4.56,11.05l-4.82.33-2.46,4.15a6.67,6.67,0,0,1-11.92-.92l-1.8-4.48-4.71-1.06A6.67,6.67,0,0,1,136.32,35l3.7-3.09-.45-4.81a6.67,6.67,0,0,1,10.18-6.26l4.09,2.57,4.43-1.91a6.67,6.67,0,0,1,9.12,4.55Z"/>\n    <circle class="cls-2" cx="152.95" cy="37.43" r="6.97" transform="translate(-4.51 37) rotate(-13.59)"/>\n    <path class="cls-3" d="M136.81,24.85A17.64,17.64,0,0,0,139.26,0,17.64,17.64,0,0,0,136.81,24.85Z"/>\n    <polygon class="cls-1" points="167.08 66.44 173.47 61.1 172.7 52.8 179.75 57.23 187.4 53.94 185.37 62.01 190.87 68.27 182.56 68.83 178.31 76 175.21 68.27 167.08 66.44"/>\n    <path class="cls-1" d="M193.88,52.37a6.66,6.66,0,0,1,0,3.19l-1.18,4.68,3.19,3.62a6.67,6.67,0,0,1-4.56,11.05l-4.82.33L184,79.4a6.67,6.67,0,0,1-11.92-.92L170.32,74l-4.71-1.06a6.67,6.67,0,0,1-2.81-11.62l3.7-3.09-.45-4.81a6.67,6.67,0,0,1,10.18-6.26l4.09,2.57,4.43-1.91a6.67,6.67,0,0,1,9.12,4.55Z"/>\n    <circle class="cls-2" cx="179.43" cy="63.75" r="6.97" transform="translate(-9.96 43.96) rotate(-13.59)"/>\n    <path class="cls-3" d="M169.32,29.77a17.64,17.64,0,0,0,21.31,13A17.64,17.64,0,0,0,169.32,29.77Z"/>\n    <polygon class="cls-1" points="55.9 41.2 47.58 40.75 42.49 47.34 40.36 39.29 32.51 36.48 39.51 31.96 39.75 23.64 46.21 28.89 54.21 26.55 51.2 34.32 55.9 41.2"/>\n    <path class="cls-1" d="M26.7,33.21a6.66,6.66,0,0,1,2.19-2.33l4.05-2.62.14-4.82a6.67,6.67,0,0,1,10.87-5l3.74,3,4.63-1.36A6.67,6.67,0,0,1,60.43,29l-1.74,4.5,2.72,4a6.67,6.67,0,0,1-5.87,10.41l-4.82-.26-2.95,3.82A6.67,6.67,0,0,1,36,49l-1.24-4.67-4.54-1.63a6.67,6.67,0,0,1-3.56-9.55Z"/>\n    <circle class="cls-2" cx="45.03" cy="34.74" r="6.97" transform="translate(-7.35 56.91) rotate(-60.59)"/>\n    <path class="cls-3" d="M22.68,54.28a17.64,17.64,0,0,0-6.71-24A17.64,17.64,0,0,0,22.68,54.28Z"/>\n    <polygon class="cls-1" points="86.14 30.31 78.91 26.17 71.4 29.77 73.11 21.62 67.36 15.59 75.64 14.7 79.6 7.36 83.01 14.96 91.21 16.46 85.03 22.06 86.14 30.31"/>\n    <path class="cls-1" d="M63.64,10.06a6.66,6.66,0,0,1,3-1.09l4.8-.52L73.74,4.2a6.67,6.67,0,0,1,11.95.44l2,4.4,4.75.87a6.67,6.67,0,0,1,3.28,11.5l-3.58,3.24.64,4.78a6.67,6.67,0,0,1-9.92,6.67l-4.19-2.4-4.35,2.09a6.67,6.67,0,0,1-9.41-7.38l1-4.72-3.33-3.49a6.67,6.67,0,0,1,1.11-10.13Z"/>\n    <circle class="cls-2" cx="79.33" cy="19.66" r="6.97" transform="translate(2.52 47.59) rotate(-33.91)"/>\n    <path class="cls-3" d="M53.79,26a17.64,17.64,0,0,0,4.8-24.5A17.64,17.64,0,0,0,53.79,26Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="vampire">\n  <svg class="flower--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.9 52.72">\n    <polygon class="cls-1" points="4.36 41.8 8.68 38.5 8.41 33.06 12.89 36.15 17.98 34.21 16.43 39.43 19.84 43.67 14.4 43.8 11.42 48.36 9.61 43.23 4.36 41.8"/>\n    <path class="cls-1" d="M22.26,33.37a4.35,4.35,0,0,1-.1,2.09l-.9,3,2,2.46A4.36,4.36,0,0,1,19.95,48l-3.15.08-1.72,2.64a4.36,4.36,0,0,1-7.76-.93l-1-3-3-.82a4.36,4.36,0,0,1-1.51-7.67l2.51-1.92-.16-3.15a4.36,4.36,0,0,1,6.83-3.8l2.6,1.79,2.95-1.12a4.36,4.36,0,0,1,5.83,3.23Z"/>\n    <circle class="cls-2" cx="12.5" cy="40.39" r="4.56" transform="translate(-7.57 3.18) rotate(-11.14)"/>\n    <path class="cls-3" d="M11,12.1A11.53,11.53,0,0,0,24.6,21.19,11.53,11.53,0,0,0,11,12.1Z"/>\n    <polygon class="cls-1" points="36.54 25.93 31.1 25.63 27.77 29.94 26.38 24.68 21.25 22.85 25.82 19.89 25.98 14.45 30.21 17.89 35.43 16.36 33.47 21.44 36.54 25.93"/>\n    <path class="cls-1" d="M17.45,20.71a4.35,4.35,0,0,1,1.43-1.52l2.65-1.71.09-3.15a4.36,4.36,0,0,1,7.11-3.25l2.45,2,3-.89a4.36,4.36,0,0,1,5.29,5.75l-1.14,2.94,1.78,2.61a4.36,4.36,0,0,1-3.84,6.81l-3.15-.17-1.93,2.5a4.36,4.36,0,0,1-7.66-1.55l-.81-3-3-1.06a4.36,4.36,0,0,1-2.33-6.24Z"/>\n    <circle class="cls-2" cx="29.43" cy="21.71" r="4.56" transform="translate(-3.93 36.69) rotate(-60.59)"/>\n    <path class="cls-3" d="M14.82,34.48a11.53,11.53,0,0,0-4.39-15.72A11.53,11.53,0,0,0,14.82,34.48Z"/>\n    <path class="cls-3" d="M35.16,16A11.53,11.53,0,0,0,38.3,0,11.53,11.53,0,0,0,35.16,16Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="yeti">\n  <svg class="flower--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.52 106.2">\n    <polygon class="cls-1" points="23.56 42.8 27.88 39.49 27.61 34.06 32.09 37.15 37.18 35.21 35.62 40.43 39.04 44.66 33.6 44.8 30.62 49.36 28.81 44.22 23.56 42.8"/>\n    <path class="cls-1" d="M41.45,34.37a4.35,4.35,0,0,1-.1,2.09l-.9,3,2,2.46A4.36,4.36,0,0,1,39.15,49L36,49.1l-1.72,2.64a4.36,4.36,0,0,1-7.76-.93l-1-3-3-.82a4.36,4.36,0,0,1-1.51-7.67l2.51-1.92-.16-3.15a4.36,4.36,0,0,1,6.83-3.8l2.6,1.79,2.95-1.12a4.36,4.36,0,0,1,5.83,3.23Z"/>\n    <circle class="cls-2" cx="31.7" cy="41.39" r="4.56" transform="translate(-7.4 6.9) rotate(-11.14)"/>\n    <path class="cls-3" d="M30.25,13.1A11.53,11.53,0,0,0,43.8,22.19,11.53,11.53,0,0,0,30.25,13.1Z"/>\n    <polygon class="cls-1" points="87.6 17.01 91.78 13.52 91.28 8.1 95.89 11 100.89 8.84 99.56 14.12 103.15 18.21 97.72 18.58 94.94 23.26 92.92 18.21 87.6 17.01"/>\n    <path class="cls-1" d="M105.12,7.82a4.35,4.35,0,0,1,0,2.09L104.34,13l2.08,2.37a4.36,4.36,0,0,1-3,7.22l-3.15.21-1.61,2.71a4.36,4.36,0,0,1-7.79-.6L89.73,22l-3.08-.69a4.36,4.36,0,0,1-1.84-7.6l2.42-2-.29-3.14A4.36,4.36,0,0,1,93.6,4.41l2.67,1.68,2.9-1.25a4.36,4.36,0,0,1,6,3Z"/>\n    <circle class="cls-2" cx="95.68" cy="15.25" r="4.56" transform="translate(-0.9 22.92) rotate(-13.59)"/>\n    <path class="cls-3" d="M76,4.3a11.53,11.53,0,0,0,13.93,8.5A11.53,11.53,0,0,0,76,4.3Z"/>\n    <polygon class="cls-1" points="111.09 26.23 115.27 22.73 114.77 17.31 119.38 20.21 124.38 18.05 123.05 23.33 126.64 27.42 121.21 27.79 118.43 32.47 116.41 27.42 111.09 26.23"/>\n    <path class="cls-1" d="M128.61,17a4.35,4.35,0,0,1,0,2.09l-.77,3.06,2.08,2.37a4.36,4.36,0,0,1-3,7.22l-3.15.21-1.61,2.71a4.36,4.36,0,0,1-7.79-.6l-1.17-2.93-3.08-.69a4.36,4.36,0,0,1-1.84-7.6l2.42-2-.29-3.14a4.36,4.36,0,0,1,6.66-4.09l2.67,1.68,2.9-1.25a4.36,4.36,0,0,1,6,3Z"/>\n    <circle class="cls-2" cx="119.17" cy="24.47" r="4.56" transform="translate(-2.41 28.7) rotate(-13.59)"/>\n    <path class="cls-3" d="M108.62,16.24A11.53,11.53,0,0,0,110.22,0,11.53,11.53,0,0,0,108.62,16.24Z"/>\n    <polygon class="cls-1" points="128.4 43.42 132.58 39.93 132.08 34.51 136.69 37.41 141.69 35.25 140.36 40.53 143.95 44.62 138.52 44.99 135.74 49.67 133.72 44.62 128.4 43.42"/>\n    <path class="cls-1" d="M145.92,34.23a4.35,4.35,0,0,1,0,2.09l-.77,3.06,2.08,2.37a4.36,4.36,0,0,1-3,7.22l-3.15.21-1.61,2.71a4.36,4.36,0,0,1-7.79-.6l-1.17-2.93-3.08-.69a4.36,4.36,0,0,1-1.84-7.6l2.42-2-.29-3.14a4.36,4.36,0,0,1,6.66-4.09l2.67,1.68,2.9-1.25a4.36,4.36,0,0,1,6,3Z"/>\n    <circle class="cls-2" cx="136.48" cy="41.67" r="4.56" transform="translate(-5.97 33.25) rotate(-13.59)"/>\n    <path class="cls-3" d="M129.87,19.46A11.53,11.53,0,0,0,143.8,28,11.53,11.53,0,0,0,129.87,19.46Z"/>\n    <polygon class="cls-1" points="55.74 26.93 50.3 26.63 46.97 30.94 45.58 25.68 40.45 23.85 45.02 20.89 45.18 15.45 49.41 18.89 54.63 17.36 52.67 22.43 55.74 26.93"/>\n    <path class="cls-1" d="M36.65,21.71a4.35,4.35,0,0,1,1.43-1.52l2.65-1.71.09-3.15a4.36,4.36,0,0,1,7.11-3.25l2.45,2,3-.89a4.36,4.36,0,0,1,5.29,5.75l-1.14,2.94,1.78,2.61a4.36,4.36,0,0,1-3.84,6.81l-3.15-.17-1.93,2.5a4.36,4.36,0,0,1-7.66-1.55L42,29l-3-1.06a4.36,4.36,0,0,1-2.33-6.24Z"/>\n    <circle class="cls-2" cx="48.63" cy="22.71" r="4.56" transform="translate(4.97 53.92) rotate(-60.59)"/>\n    <path class="cls-3" d="M34,35.48a11.53,11.53,0,0,0-4.39-15.72A11.53,11.53,0,0,0,34,35.48Z"/>\n    <polygon class="cls-1" points="75.5 19.81 70.78 17.11 65.87 19.46 66.98 14.13 63.23 10.19 68.64 9.61 71.23 4.81 73.46 9.78 78.81 10.76 74.78 14.42 75.5 19.81"/>\n    <path class="cls-1" d="M60.8,6.57a4.35,4.35,0,0,1,2-.72l3.14-.34,1.5-2.78A4.36,4.36,0,0,1,75.2,3l1.29,2.88,3.1.57A4.36,4.36,0,0,1,81.74,14L79.4,16.11l.42,3.13a4.36,4.36,0,0,1-6.49,4.36L70.6,22l-2.84,1.36a4.36,4.36,0,0,1-6.15-4.82l.65-3.09L60.07,13.2a4.36,4.36,0,0,1,.72-6.62Z"/>\n    <circle class="cls-2" cx="71.05" cy="12.85" r="4.56" transform="translate(4.91 41.82) rotate(-33.91)"/>\n    <path class="cls-3" d="M54.36,17A11.53,11.53,0,0,0,57.5,1,11.53,11.53,0,0,0,54.36,17Z"/>\n    <polygon class="cls-1" points="4.36 95.28 8.68 91.97 8.41 86.54 12.89 89.63 17.98 87.69 16.43 92.91 19.84 97.14 14.4 97.28 11.42 101.84 9.61 96.7 4.36 95.28"/>\n    <path class="cls-1" d="M22.26,86.85a4.35,4.35,0,0,1-.1,2.09l-.9,3,2,2.46a4.36,4.36,0,0,1-3.29,7.09l-3.15.08-1.72,2.64a4.36,4.36,0,0,1-7.76-.93l-1-3-3-.82a4.36,4.36,0,0,1-1.51-7.67L4.22,89.9l-.16-3.15a4.36,4.36,0,0,1,6.83-3.8l2.6,1.79,2.95-1.12a4.36,4.36,0,0,1,5.83,3.23Z"/>\n    <circle class="cls-2" cx="12.5" cy="93.87" r="4.56" transform="translate(-17.9 4.18) rotate(-11.14)"/>\n    <path class="cls-3" d="M14.82,88a11.53,11.53,0,0,0-4.39-15.72A11.53,11.53,0,0,0,14.82,88Z"/>\n    <polygon class="cls-1" points="151.33 77.92 154.12 82.6 159.56 82.95 155.97 87.05 157.31 92.32 152.31 90.18 147.7 93.09 148.19 87.67 144.01 84.19 149.32 82.98 151.33 77.92"/>\n    <path class="cls-1" d="M157.66,96.67a4.35,4.35,0,0,1-2.06-.34l-2.9-1.24L150,96.77a4.36,4.36,0,0,1-6.67-4.08l.29-3.14-2.43-2a4.36,4.36,0,0,1,1.82-7.6l3.08-.7,1.17-2.93a4.36,4.36,0,0,1,7.79-.62l1.62,2.71,3.15.2a4.36,4.36,0,0,1,3,7.22l-2.08,2.37.78,3.06a4.36,4.36,0,0,1-3.88,5.42Z"/>\n    <circle class="cls-2" cx="151.8" cy="86.17" r="4.56" transform="translate(-6.35 12.3) rotate(-4.55)"/>\n    <path class="cls-3" d="M157.41,89.16a11.53,11.53,0,0,0,16.12-2.55A11.53,11.53,0,0,0,157.41,89.16Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="ghost">\n  <svg class="flower--ghost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.52 106.2">\n    <path class="cls-1" d="M51.76,80.58A43.72,43.72,0,0,0,1.31,116.37"/>\n    <polygon class="cls-2" points="67.99 83.03 59.87 85.46 57.26 93.52 52.45 86.55 43.98 86.56 49.12 79.83 46.49 71.77 54.48 74.58 61.33 69.59 61.13 78.06 67.99 83.03"/>\n    <path class="cls-2" d="M37.29,85.42a6.77,6.77,0,0,1,1.3-3l3-3.9L40,73.88a6.78,6.78,0,0,1,8.69-8.5L53.37,67l4-2.89a6.78,6.78,0,0,1,10.77,5.64L68,74.66l4,2.88a6.78,6.78,0,0,1-2,12l-4.7,1.4L63.71,95.6a6.78,6.78,0,0,1-12,1.77l-2.79-4H44a6.78,6.78,0,0,1-6.69-7.92Z"/>\n    <circle class="cls-3" cx="55.36" cy="80.59" r="7.09" transform="translate(-33.37 121.66) rotate(-80.35)"/>\n    <path class="cls-4" d="M34,109.39A18,18,0,0,0,19.26,88.68,18,18,0,0,0,34,109.39Z"/>\n    <polygon class="cls-2" points="13.32 42.8 17.65 39.49 17.38 34.06 21.86 37.15 26.95 35.21 25.39 40.43 28.81 44.66 23.36 44.8 20.39 49.36 18.58 44.22 13.32 42.8"/>\n    <path class="cls-2" d="M31.22,34.37a4.35,4.35,0,0,1-.1,2.09l-.9,3,2,2.46A4.36,4.36,0,0,1,28.92,49l-3.15.08L24,51.74a4.36,4.36,0,0,1-7.76-.93l-1-3-3-.82a4.36,4.36,0,0,1-1.51-7.67l2.51-1.92L13,34.27a4.36,4.36,0,0,1,6.83-3.8l2.6,1.79,2.95-1.12a4.36,4.36,0,0,1,5.83,3.23Z"/>\n    <circle class="cls-3" cx="21.47" cy="41.39" r="4.56" transform="translate(-7.59 4.93) rotate(-11.14)"/>\n    <path class="cls-4" d="M20,13.1a11.53,11.53,0,0,0,13.55,9.09A11.53,11.53,0,0,0,20,13.1Z"/>\n    <polygon class="cls-2" points="77.37 17.01 81.55 13.52 81.05 8.1 85.66 11 90.66 8.84 89.33 14.12 92.92 18.21 87.49 18.58 84.71 23.26 82.68 18.21 77.37 17.01"/>\n    <path class="cls-2" d="M94.89,7.82a4.35,4.35,0,0,1,0,2.09L94.11,13l2.08,2.37a4.36,4.36,0,0,1-3,7.22l-3.15.21-1.61,2.71a4.36,4.36,0,0,1-7.79-.6L79.49,22l-3.08-.69a4.36,4.36,0,0,1-1.84-7.6l2.42-2-.29-3.14a4.36,4.36,0,0,1,6.66-4.09L86,6.09l2.9-1.25a4.36,4.36,0,0,1,6,3Z"/>\n    <circle class="cls-3" cx="85.45" cy="15.25" r="4.56" transform="translate(-1.19 20.51) rotate(-13.59)"/>\n    <path class="cls-4" d="M65.75,4.3a11.53,11.53,0,0,0,13.93,8.5A11.53,11.53,0,0,0,65.75,4.3Z"/>\n    <polygon class="cls-2" points="100.86 26.23 105.04 22.73 104.53 17.31 109.14 20.21 114.14 18.05 112.81 23.33 116.41 27.42 110.98 27.79 108.2 32.47 106.17 27.42 100.86 26.23"/>\n    <path class="cls-2" d="M118.38,17a4.35,4.35,0,0,1,0,2.09l-.77,3.06,2.08,2.37a4.36,4.36,0,0,1-3,7.22l-3.15.21-1.61,2.71a4.36,4.36,0,0,1-7.79-.6L103,31.17l-3.08-.69a4.36,4.36,0,0,1-1.84-7.6l2.42-2-.29-3.14a4.36,4.36,0,0,1,6.66-4.09l2.67,1.68,2.9-1.25a4.36,4.36,0,0,1,6,3Z"/>\n    <circle class="cls-3" cx="108.94" cy="24.47" r="4.56" transform="translate(-2.7 26.29) rotate(-13.59)"/>\n    <path class="cls-4" d="M98.39,16.24A11.53,11.53,0,0,0,100,0,11.53,11.53,0,0,0,98.39,16.24Z"/>\n    <polygon class="cls-2" points="118.17 43.42 122.35 39.93 121.84 34.51 126.45 37.41 131.46 35.25 130.13 40.53 133.72 44.62 128.29 44.99 125.51 49.67 123.48 44.62 118.17 43.42"/>\n    <path class="cls-2" d="M135.69,34.23a4.35,4.35,0,0,1,0,2.09l-.77,3.06L137,41.75A4.36,4.36,0,0,1,134,49l-3.15.21-1.61,2.71a4.36,4.36,0,0,1-7.79-.6l-1.17-2.93-3.08-.69a4.36,4.36,0,0,1-1.84-7.6l2.42-2-.29-3.14a4.36,4.36,0,0,1,6.66-4.09l2.67,1.68,2.9-1.25a4.36,4.36,0,0,1,6,3Z"/>\n    <circle class="cls-3" cx="126.25" cy="41.67" r="4.56" transform="translate(-6.26 30.84) rotate(-13.59)"/>\n    <path class="cls-4" d="M119.64,19.46A11.53,11.53,0,0,0,133.57,28,11.53,11.53,0,0,0,119.64,19.46Z"/>\n    <polygon class="cls-2" points="45.51 26.93 40.07 26.63 36.74 30.94 35.34 25.68 30.22 23.85 34.79 20.89 34.95 15.45 39.17 18.89 44.4 17.36 42.43 22.43 45.51 26.93"/>\n    <path class="cls-2" d="M26.42,21.71a4.35,4.35,0,0,1,1.43-1.52l2.65-1.71.09-3.15a4.36,4.36,0,0,1,7.11-3.25l2.45,2,3-.89a4.36,4.36,0,0,1,5.29,5.75l-1.14,2.94,1.78,2.61a4.36,4.36,0,0,1-3.84,6.81l-3.15-.17-1.93,2.5a4.36,4.36,0,0,1-7.66-1.55l-.81-3-3-1.06a4.36,4.36,0,0,1-2.33-6.24Z"/>\n    <circle class="cls-3" cx="38.4" cy="22.71" r="4.56" transform="translate(-0.24 45.01) rotate(-60.59)"/>\n    <path class="cls-4" d="M23.79,35.48A11.53,11.53,0,0,0,19.4,19.76,11.53,11.53,0,0,0,23.79,35.48Z"/>\n    <polygon class="cls-2" points="65.27 19.81 60.55 17.11 55.64 19.46 56.75 14.13 52.99 10.19 58.41 9.61 60.99 4.81 63.22 9.78 68.58 10.76 64.55 14.42 65.27 19.81"/>\n    <path class="cls-2" d="M50.56,6.57a4.35,4.35,0,0,1,2-.72l3.14-.34,1.5-2.78A4.36,4.36,0,0,1,65,3l1.29,2.88,3.1.57A4.36,4.36,0,0,1,71.51,14l-2.34,2.12.42,3.13a4.36,4.36,0,0,1-6.49,4.36L60.37,22l-2.84,1.36a4.36,4.36,0,0,1-6.15-4.82L52,15.48,49.84,13.2a4.36,4.36,0,0,1,.72-6.62Z"/>\n    <circle class="cls-3" cx="60.82" cy="12.85" r="4.56" transform="translate(3.17 36.11) rotate(-33.91)"/>\n    <path class="cls-4" d="M44.12,17A11.53,11.53,0,0,0,47.27,1,11.53,11.53,0,0,0,44.12,17Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="wolf">\n  <svg class="flower--spider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.73 86.28">\n    <polygon class="cls-1" points="154.21 43.37 147.99 46.33 146.9 53.14 142.16 48.14 135.35 49.21 138.64 43.15 135.51 37.01 142.29 38.27 147.17 33.39 148.07 40.23 154.21 43.37"/>\n    <path class="cls-1" d="M129.83,49.14a5.51,5.51,0,0,1,.67-2.56l1.91-3.51-1.81-3.56a5.52,5.52,0,0,1,5.92-7.93l3.93.73,2.83-2.82a5.52,5.52,0,0,1,9.37,3.19l.52,4,3.56,1.82a5.52,5.52,0,0,1-.13,9.89L153,50.06,152.35,54a5.52,5.52,0,0,1-9.45,2.93L140.15,54l-3.95.62a5.52,5.52,0,0,1-6.38-5.53Z"/>\n    <circle class="cls-2" cx="143.75" cy="42.98" r="5.77" transform="translate(98.82 186.14) rotate(-89.22)"/>\n    <path class="cls-3" d="M138.15,78.42a14.6,14.6,0,0,0-14.41-14.81A14.6,14.6,0,0,0,138.15,78.42Z"/>\n    <polygon class="cls-1" points="68.11 58.57 62.02 61.8 61.23 68.65 56.28 63.86 49.52 65.22 52.55 59.03 49.16 53.02 55.99 53.99 60.65 48.91 61.84 55.7 68.11 58.57"/>\n    <path class="cls-1" d="M44,65.38a5.51,5.51,0,0,1,.56-2.58l1.75-3.59-2-3.48a5.52,5.52,0,0,1,5.58-8.17l4,.56,2.7-2.94A5.52,5.52,0,0,1,66.09,48l.69,3.93,3.63,1.66a5.52,5.52,0,0,1,.29,9.89l-3.53,1.87-.46,4a5.52,5.52,0,0,1-9.32,3.33l-2.87-2.78-3.92.79A5.52,5.52,0,0,1,44,65.38Z"/>\n    <circle class="cls-2" cx="57.65" cy="58.64" r="5.77" transform="translate(-1.69 1.71) rotate(-1.68)"/>\n    <path class="cls-3" d="M79.19,77.36a14.6,14.6,0,0,0-15-14.18A14.6,14.6,0,0,0,79.19,77.36Z"/>\n    <polygon class="cls-1" points="41.42 41.01 35.33 44.24 34.54 51.09 29.58 46.3 22.82 47.66 25.85 41.47 22.47 35.46 29.29 36.43 33.96 31.35 35.15 38.14 41.42 41.01"/>\n    <path class="cls-1" d="M17.31,47.82a5.51,5.51,0,0,1,.56-2.58l1.75-3.59-2-3.48A5.52,5.52,0,0,1,23.24,30l4,.56,2.7-2.94a5.52,5.52,0,0,1,9.5,2.78l.69,3.93L43.72,36A5.52,5.52,0,0,1,44,45.89l-3.53,1.87-.46,4a5.52,5.52,0,0,1-9.32,3.33l-2.87-2.78-3.92.79a5.52,5.52,0,0,1-6.61-5.25Z"/>\n    <circle class="cls-2" cx="30.95" cy="41.08" r="5.77" transform="translate(-1.19 0.92) rotate(-1.68)"/>\n    <path class="cls-3" d="M41.87,54a14.6,14.6,0,0,0-6.22,19.7A14.6,14.6,0,0,0,41.87,54Z"/>\n    <polygon class="cls-1" points="24.47 15.18 18.38 18.41 17.59 25.26 12.63 20.46 5.87 21.83 8.9 15.63 5.52 9.63 12.34 10.59 17.01 5.52 18.2 12.31 24.47 15.18"/>\n    <path class="cls-1" d="M.36,22A5.51,5.51,0,0,1,.92,19.4l1.75-3.59-2-3.48A5.52,5.52,0,0,1,6.29,4.16l4,.56,2.7-2.94a5.52,5.52,0,0,1,9.5,2.78l.69,3.93,3.63,1.66a5.52,5.52,0,0,1,.29,9.89l-3.53,1.87-.46,4a5.52,5.52,0,0,1-9.32,3.33l-2.87-2.78L7,27.24A5.52,5.52,0,0,1,.36,22Z"/>\n    <circle class="cls-2" cx="14" cy="15.24" r="5.77" transform="translate(-0.44 0.42) rotate(-1.68)"/>\n    <path class="cls-3" d="M16.39,44.49a14.6,14.6,0,0,0-15-14.18A14.6,14.6,0,0,0,16.39,44.49Z"/>\n    <polygon class="cls-1" points="110.19 54.61 116.85 56.41 122.1 51.94 122.45 58.82 128.32 62.43 121.89 64.9 120.27 71.6 115.93 66.24 109.06 66.77 112.82 60.99 110.19 54.61"/>\n    <path class="cls-1" d="M132.47,66.08a5.51,5.51,0,0,1-2.17,1.51L126.57,69l-.94,3.88A5.52,5.52,0,0,1,116,75.07L113.46,72l-4,.31a5.52,5.52,0,0,1-5-8.51l2.18-3.35-1.52-3.69a5.52,5.52,0,0,1,6.53-7.43l3.86,1,3-2.59a5.52,5.52,0,0,1,9.09,3.92l.21,4,3.4,2.09a5.52,5.52,0,0,1,1.25,8.34Z"/>\n    <circle class="cls-2" cx="117.89" cy="61.7" r="5.77" transform="translate(-6.3 109.49) rotate(-48.67)"/>\n    <path class="cls-3" d="M139.33,49.7a14.6,14.6,0,0,0,1.32,20.62A14.6,14.6,0,0,0,139.33,49.7Z"/>\n    <polygon class="cls-1" points="83.84 58.27 88.98 62.86 95.68 61.22 92.91 67.53 96.53 73.4 89.67 72.71 85.21 77.97 83.75 71.23 77.37 68.61 83.33 65.14 83.84 58.27"/>\n    <path class="cls-1" d="M98.6,78.51a5.51,5.51,0,0,1-2.62.37l-4-.4-2.58,3a5.52,5.52,0,0,1-9.6-2.4L79,75.23l-3.7-1.51a5.52,5.52,0,0,1-.69-9.87l3.45-2,.3-4a5.52,5.52,0,0,1,9.18-3.7l3,2.66,3.88-.95a5.52,5.52,0,0,1,6.36,7.58L99.13,67.1l2.1,3.4a5.52,5.52,0,0,1-2.63,8Z"/>\n    <circle class="cls-2" cx="87.54" cy="68.06" r="5.77" transform="translate(-19.11 37.72) rotate(-21.99)"/>\n    <path class="cls-3" d="M109.31,67.26a14.6,14.6,0,0,0-8.08,19A14.6,14.6,0,0,0,109.31,67.26Z"/>\n  </svg>\n</ng-template>\n\n<ng-template trinket-uniq-part part-name="bed">\n  <svg class="flower--bed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.16 34.81">\n    <path class="cls-1" d="M14.06,23.67A26.58,26.58,0,0,0,43.35.09"/>\n    <polygon class="cls-2" points="4.12 22.78 8.96 21.01 10.24 16.02 13.42 20.08 18.56 19.75 15.69 24.03 17.59 28.82 12.63 27.41 8.66 30.69 8.47 25.55 4.12 22.78"/>\n    <path class="cls-2" d="M22.66,20.2A4.12,4.12,0,0,1,22,22.05l-1.66,2.48,1.1,2.78a4.12,4.12,0,0,1-5,5.48L13.59,32l-2.3,1.9a4.12,4.12,0,0,1-6.75-3l-.11-3-2.52-1.6a4.12,4.12,0,0,1,.79-7.35l2.8-1L6.25,15a4.12,4.12,0,0,1,7.24-1.52l1.84,2.35,3-.19a4.12,4.12,0,0,1,4.36,4.56Z"/>\n    <circle class="cls-3" cx="11.88" cy="23.8" r="4.31" transform="translate(-13.06 33.05) rotate(-83.84)"/>\n    <path class="cls-4" d="M23.8,5.53a10.91,10.91,0,0,0,9.68,12A10.91,10.91,0,0,0,23.8,5.53Z"/>\n  </svg>\n</ng-template>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/trinkets/flower/flower.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]])
+    ], FlowerComponent);
+    return FlowerComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__trinket_uniq_model__["a" /* TrinketUniqModel */]));
+
+//# sourceMappingURL=flower.js.map
+
+/***/ }),
+/* 181 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monsters_service__ = __webpack_require__(184);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1882,7 +1927,7 @@ var MonstersComponent = /** @class */ (function () {
 //# sourceMappingURL=monsters.component.js.map
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1914,7 +1959,7 @@ var MonstersHostDirective = /** @class */ (function () {
 //# sourceMappingURL=monsters-host.directive.js.map
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1946,24 +1991,24 @@ var MonstersScreenDirective = /** @class */ (function () {
 //# sourceMappingURL=monsters-screen.directive.js.map
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zombie_zombie__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__alien_alien__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2069,16 +2114,16 @@ var MonstersService = /** @class */ (function () {
 //# sourceMappingURL=monsters.service.js.map
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZombieComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_sequence_controller__ = __webpack_require__(305);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_sequence_controller__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(308);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -2304,13 +2349,13 @@ var ZombieComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=zombie.js.map
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterPartDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2371,7 +2416,7 @@ var MonsterPartDirective = /** @class */ (function () {
 //# sourceMappingURL=monster-part.directive.js.map
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2420,7 +2465,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=skeleton.js.map
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2469,7 +2514,7 @@ var AlienComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=alien.js.map
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2507,7 +2552,7 @@ var BedComponent = /** @class */ (function (_super) {
     }
     BedComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'bed',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/bed/bed.html"*/'<svg class="bed svg-container" width="85%" height="85%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 235.284 249.38">\n  <g monster-part part-name="outer" part-type="group" class="">\n    <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n    <g class="monster">\n      <g monster-part part-group="body" part-type="container"></g>\n\n      <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n        <rect x="130.76" y="206.74" width="117.63" height="23.46" rx="11.73" ry="11.73"/>\n        <rect x="130.76" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n        <rect x="138.11" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n        <rect x="145.45" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n        <rect x="152.8" y="207.67" width="6.04" height="30.92" rx="3.02" ry="3.02"/>\n      </g>\n      \n      <g monster-part part-name="head-figure" part-type="group">\n        <ellipse class="head-figure" cx="89.06" cy="176.45" rx="38.45" ry="62.44"/>\n      </g>\n\n      <g monster-part part-name="mouth" part-type="group" class="mouth">\n        <polygon class="tooth" points="72.44 221 70.86 211.2 74.03 211.2 72.44 221"/>\n        <polygon class="tooth" points="77.53 221 75.95 211.2 79.12 211.2 77.53 221"/>\n        <polygon class="tooth" points="82.63 221 81.04 211.2 84.21 211.2 82.63 221"/>\n      </g>\n\n      <g monster-part part-name="nose" part-type="group" class="nose">\n        <circle class="nostril" cx="74.79" cy="191.75" r="1.44"/>\n        <circle class="nostril" cx="80.28" cy="191.75" r="1.44"/>\n      </g>\n\n      <g monster-part part-name="eyes" part-type="group" class="eyes">\n        <g class="eye eye--left">\n          <path class="eyeball" d="M56.66,176.28a13.34,13.34,0,0,0,18.88,0A13.34,13.34,0,0,0,56.66,176.28Z" transform="translate(0 -0.4)"/>\n          <circle class="iris" cx="66.1" cy="175.87" r="3.99"/>\n        </g>\n\n         <g class="eye eye--right">\n          <path class="eyeball" d="M79.53,176.28a13.34,13.34,0,0,0,18.88,0A13.34,13.34,0,0,0,79.53,176.28Z" transform="translate(0 -0.4)"/>\n          <circle class="iris" cx="88.97" cy="175.87" r="3.99"/>\n        </g>\n      </g>\n\n      <g monster-part part-group="eyes" part-type="container"></g>\n\n\n    </g>\n\n    <g class="bed">\n      <g class="sheets">\n        <rect class="sheets" x="160.18" y="-29.29" width="15.05" height="311.22" transform="translate(294.02 -41.79) rotate(90)"/>\n        <rect class="sheets" x="159.92" y="-43.93" width="15.05" height="311.22" transform="translate(279.12 -56.17) rotate(90)"/>\n        <path class="sheets" d="M17.72,20.67A84.23,84.23,0,0,0,102,104.95,84.23,84.23,0,0,0,17.72,20.67Z" transform="translate(0 -0.4)"/>\n      </g>\n\n      <g class="frame">\n        <circle class="frame" cx="10.03" cy="10.03" r="10.03"/>\n        <rect class="frame" x="2.81" y="19.26" width="15.05" height="219.75"/>\n        <rect class="frame" x="159.92" y="-14.17" width="15.05" height="311.22" transform="translate(308.88 -26.4) rotate(90)"/>\n        <rect class="frame" x="319.84" y="46.22" width="15.05" height="192.8"/>\n        <rect class="blanket" x="155.67" y="52.54" width="120.11" height="208.48" transform="translate(372.5 -59.35) rotate(90)"/>\n      </g>\n    </g>\n\n    <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" part-outline="true" class="ears">\n      <ellipse cx="48" cy="180" rx="6.2" ry="11.97"/>\n      <ellipse cx="113" cy="180" rx="6.2" ry="11.97"/>\n    </g>\n    <g monster-part part-group="ears" part-type="container"></g>\n\n    <g monster-part part-group="head-figure" part-type="container"></g>\n    <g monster-part part-group="mouth" part-type="container"></g>\n  	<g monster-part part-group="nose" part-type="container"></g>\n\n    <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n  </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/bed/bed.html"*/
+            selector: 'bed',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/bed/bed.html"*/'<svg class="bed svg-container" width="85%" height="85%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 235.284 249.38">\n  <g monster-part part-name="outer" part-type="group" class="">\n    <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n    <g class="monster">\n      <g monster-part part-group="flower" part-type="container"></g>\n\n      <g monster-part part-group="body" part-type="container"></g>\n\n      <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n        <rect x="130.76" y="206.74" width="117.63" height="23.46" rx="11.73" ry="11.73"/>\n        <rect x="130.76" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n        <rect x="138.11" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n        <rect x="145.45" y="215.26" width="6.04" height="34.12" rx="3.02" ry="3.02"/>\n        <rect x="152.8" y="207.67" width="6.04" height="30.92" rx="3.02" ry="3.02"/>\n      </g>\n\n      <g monster-part part-name="flower" part-type="group">\n        <g monster-part part-name="head-figure" part-type="group">\n          <ellipse class="head-figure" cx="89.06" cy="176.45" rx="38.45" ry="62.44"/>\n        </g>\n      </g>\n\n      <g monster-part part-name="mouth" part-type="group" class="mouth">\n        <polygon class="tooth" points="72.44 221 70.86 211.2 74.03 211.2 72.44 221"/>\n        <polygon class="tooth" points="77.53 221 75.95 211.2 79.12 211.2 77.53 221"/>\n        <polygon class="tooth" points="82.63 221 81.04 211.2 84.21 211.2 82.63 221"/>\n      </g>\n\n      <g monster-part part-name="nose" part-type="group" class="nose">\n        <circle class="nostril" cx="74.79" cy="191.75" r="1.44"/>\n        <circle class="nostril" cx="80.28" cy="191.75" r="1.44"/>\n      </g>\n\n      <g monster-part part-name="eyes" part-type="group" class="eyes">\n        <g class="eye eye--left">\n          <path class="eyeball" d="M56.66,176.28a13.34,13.34,0,0,0,18.88,0A13.34,13.34,0,0,0,56.66,176.28Z" transform="translate(0 -0.4)"/>\n          <circle class="iris" cx="66.1" cy="175.87" r="3.99"/>\n        </g>\n\n         <g class="eye eye--right">\n          <path class="eyeball" d="M79.53,176.28a13.34,13.34,0,0,0,18.88,0A13.34,13.34,0,0,0,79.53,176.28Z" transform="translate(0 -0.4)"/>\n          <circle class="iris" cx="88.97" cy="175.87" r="3.99"/>\n        </g>\n      </g>\n\n      <g monster-part part-group="eyes" part-type="container"></g>\n\n\n    </g>\n\n    <g class="bed">\n      <g class="sheets">\n        <rect class="sheets" x="160.18" y="-29.29" width="15.05" height="311.22" transform="translate(294.02 -41.79) rotate(90)"/>\n        <rect class="sheets" x="159.92" y="-43.93" width="15.05" height="311.22" transform="translate(279.12 -56.17) rotate(90)"/>\n        <path class="sheets" d="M17.72,20.67A84.23,84.23,0,0,0,102,104.95,84.23,84.23,0,0,0,17.72,20.67Z" transform="translate(0 -0.4)"/>\n      </g>\n\n      <g class="frame">\n        <circle class="frame" cx="10.03" cy="10.03" r="10.03"/>\n        <rect class="frame" x="2.81" y="19.26" width="15.05" height="219.75"/>\n        <rect class="frame" x="159.92" y="-14.17" width="15.05" height="311.22" transform="translate(308.88 -26.4) rotate(90)"/>\n        <rect class="frame" x="319.84" y="46.22" width="15.05" height="192.8"/>\n        <rect class="blanket" x="155.67" y="52.54" width="120.11" height="208.48" transform="translate(372.5 -59.35) rotate(90)"/>\n      </g>\n    </g>\n\n    <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" part-outline="true" class="ears">\n      <ellipse cx="48" cy="180" rx="6.2" ry="11.97"/>\n      <ellipse cx="113" cy="180" rx="6.2" ry="11.97"/>\n    </g>\n    <g monster-part part-group="ears" part-type="container"></g>\n\n    <g monster-part part-group="head-figure" part-type="container"></g>\n    <g monster-part part-group="mouth" part-type="container"></g>\n  	<g monster-part part-group="nose" part-type="container"></g>\n\n    <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n  </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/bed/bed.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
@@ -2518,7 +2563,7 @@ var BedComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=bed.js.map
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2567,7 +2612,7 @@ var SpiderComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=spider.js.map
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2616,7 +2661,7 @@ var VampireComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=vampire.js.map
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2665,7 +2710,7 @@ var WolfComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=wolf.js.map
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2703,7 +2748,7 @@ var MummyComponent = /** @class */ (function (_super) {
     }
     MummyComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'mummy',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/mummy/mummy.html"*/'<svg monster-part part-type="root" width="90%" height="90%"  class="mummy svg-container" viewBox="0 0 252.32 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n<!-- <svg monster-part part-type="root" width="80%" height="80%"  class="mummy svg-container" viewBox="0 0 266.33 334.62" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> -->\n   <g monster-part part-name="outer" part-type="group" class="">\n      <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n      <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n         <!-- <path class="bandage decor__bandage body__bandage" d="M364.14,242.55c-12.14,0-12.14,13.71-24.29,13.71s-12.14-13.71-24.29-13.71-12.14,13.71-24.27,13.71S279.17,242.55,267,242.55s-12.13,13.71-24.26,13.71-12.13-13.71-24.26-13.71-12.13,13.71-24.26,13.71S182.13,242.55,170,242.55V269.8c12.13,0,12.13,13.71,24.26,13.71s12.13-13.71,24.26-13.71,12.13,13.71,24.26,13.71S254.91,269.8,267,269.8s12.13,13.71,24.25,13.71,12.14-13.71,24.27-13.71,12.14,13.71,24.29,13.71S352,269.8,364.14,269.8Z"></path> -->\n         <path class="body-part" d="M216.21,255.72a163.68,163.68,0,0,0-83.74-23h0A164.49,164.49,0,0,0,17.82,279.36l48,20.83Z"></path>\n         <path class="body-part" d="M-11.92,318.07H5.39l60.45-17.88-48-20.83A166.73,166.73,0,0,0-11.92,318.07Z"></path>\n         <!-- <path class="body-part body-part--dark" d="M-15.12,324.14l20.51-6.07H-11.92C-13,320.07-14.09,322.1-15.12,324.14Z"></path> -->\n         <path class="body-part body-part--dark" d="M216.21,255.72,65.84,300.19,5.39,318.07l-20.51,6.07a163.48,163.48,0,0,0-17.35,67.41c0,.05,0,.11,0,.17l309.16-73.95A167,167,0,0,0,216.21,255.72Z"></path>\n         <!-- <path class="body-part" d="M276.88,318.07l-.19-.31L-32.47,391.72c-.08,2-.16,4.05-.16,6.1v7.94l171.23,15.94L257,391.55l12.28-3.13,27.52-7A163.59,163.59,0,0,0,276.88,318.07Z"></path> -->\n      </g>\n      <g class="head">\n         <path class="bandage bandage--head decor__bandage head__bandage" d="M270.44,14.09c-7.59,0-7.59,8.56-15.17,8.56s-7.59-8.56-15.17-8.56-7.58,8.56-15.16,8.56-7.58-8.56-15.15-8.56-7.58,8.56-15.16,8.56-7.58-8.56-15.15-8.56-7.58,8.56-15.15,8.56-7.58-8.56-15.15-8.56v17c7.58,0,7.58,8.56,15.15,8.56s7.58-8.56,15.15-8.56,7.58,8.56,15.15,8.56,7.58-8.56,15.16-8.56,7.58,8.56,15.15,8.56,7.58-8.56,15.16-8.56,7.59,8.56,15.17,8.56,7.59-8.56,15.17-8.56Z"></path>\n         <g monster-part part-name="ears" part-type="group" part-outline="true" class="ears">\n            <circle class="ear ear--ear-left" cx="61.37" cy="110.92" r="22.96"></circle>\n            <circle class="ear ear--ear-right" cx="203.59" cy="110.92" r="22.96"></circle>\n         </g>\n\n         <g monster-part part-name="head-figure" part-type="group" part-outline="true" class="head-figure">\n            <path class="head-part" d="M132.48,0C115,0,99,10.15,86.48,27L192.57,52.62C179.62,20.89,157.55,0,132.48,0Z"></path>\n            <path class="head-part head-part--dark" d="M192.57,52.62,86.48,27C75.15,42.38,66.74,63.27,62.78,87.16l130.41-33C193,53.67,192.79,53.14,192.57,52.62Z"></path>\n            <path class="head-part head-part--empty" d="M193.19,54.2,80.54,82.67l75.09,17.26,45.85-16.81A160.27,160.27,0,0,0,193.19,54.2Z"></path>\n            <path class="head-part" d="M62.78,87.16a189.68,189.68,0,0,0-2.53,31c0,5.6.26,11.11.72,16.5l94.65-34.71L80.54,82.67Z"></path>\n            <path class="head-part head-part--dark" d="M62.33,146.29,203,143.48a191.36,191.36,0,0,0,1.68-25.34,188.5,188.5,0,0,0-3.23-35L61,134.64Q61.48,140.56,62.33,146.29Z"></path>\n            <path class="head-part" d="M64.24,156.85l128.89,25.39A165.12,165.12,0,0,0,203,143.48L62.33,146.29Q63.14,151.67,64.24,156.85Z"></path>\n            <path class="head-part head-part--dark" d="M64.68,158.76a150.89,150.89,0,0,0,11.06,32.42l110,6.67c1.22-2.19,2.39-4.46,3.5-6.8Z"></path>\n            <path class="head-part" d="M132.48,236.28c21.11,0,40.09-14.82,53.3-38.43l-110-6.67C89,218.64,109.45,236.28,132.48,236.28Z"></path>\n         </g>\n\n         <g monster-part part-name="nose" part-type="group">\n           <rect fill="rgba(0,0,0,0)" x="132.5" y="144" width="1" height="1"></rect>\n         </g>\n\n         <g monster-part part-group="head-figure" part-type="container"></g>\n\n         <g monster-part part-name="mouth" part-type="group" class="mouth">\n            <path monster-part part-name="mouth" part-type="element" part-group="mouth" class="mouth-figure" d="M193.13,182.24,64.24,156.85c.14.64.29,1.27.43,1.91l124.6,32.29Q191.32,186.79,193.13,182.24Z"></path>\n            <polygon class="tooth" points="145.34 186.66 134.48 186.66 134.48 170.68 145.34 172.81 145.34 186.66"></polygon>\n         </g>\n         <g monster-part part-name="mouth-fraud" part-type="group" part-hidden="true" visibility="hidden" class="mouth">\n            <path monster-part part-name="mouth--fraud" part-type="element" part-group="mouth" class="mouth-figure mouth-figure--dark" d="M193.13,182.24,64.24,156.85c.14.64.29,1.27.43,1.91l124.6,32.29Q191.32,186.79,193.13,182.24Z"></path>\n         </g>\n\n         <g monster-part part-group="ears" part-type="container"></g>\n         \n\n         <svg width="18.5" height="25.16" x="85" y="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.91 26.58">\n           <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n             <line class="eyelash" x1="0.71" y1="10.71" x2="15.87" y2="25.87"/>\n             <line class="eyelash" x1="2.37" y1="5.71" x2="17.54" y2="20.87"/>\n             <line class="eyelash" x1="4.04" y1="0.71" x2="19.21" y2="15.87"/>\n           </g>\n         </svg>\n\n         <g monster-part part-name="eyes" part-type="group" class="eyes">\n            <g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">\n               <circle class="eyeball" cx="102.5" cy="82.46" r="8.94"></circle>\n               <circle class="pupil" cx="102.5" cy="82.46" r="4.41"></circle>\n            </g>\n            <g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--right">\n               <circle class="eyeball" cx="161.09" cy="82.46" r="8.94"></circle>\n               <circle class="pupil" cx="161.09" cy="82.46" r="4.41"></circle>\n            </g>\n         </g>\n\n         <g monster-part part-group="eyes" part-type="container"></g>\n      </g>\n      <g monster-part part-group="body" part-type="container"></g>\n      <g monster-part part-group="mouth" part-type="container"></g>\n      <g monster-part part-group="nose" part-type="container"></g>\n\n      <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/mummy/mummy.html"*/
+            selector: 'mummy',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/mummy/mummy.html"*/'<svg monster-part part-type="root" width="90%" height="90%"  class="mummy svg-container" viewBox="0 0 252.32 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n<!-- <svg monster-part part-type="root" width="80%" height="80%"  class="mummy svg-container" viewBox="0 0 266.33 334.62" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> -->\n   <g monster-part part-name="outer" part-type="group" class="">\n      <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n      <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n         <!-- <path class="bandage decor__bandage body__bandage" d="M364.14,242.55c-12.14,0-12.14,13.71-24.29,13.71s-12.14-13.71-24.29-13.71-12.14,13.71-24.27,13.71S279.17,242.55,267,242.55s-12.13,13.71-24.26,13.71-12.13-13.71-24.26-13.71-12.13,13.71-24.26,13.71S182.13,242.55,170,242.55V269.8c12.13,0,12.13,13.71,24.26,13.71s12.13-13.71,24.26-13.71,12.13,13.71,24.26,13.71S254.91,269.8,267,269.8s12.13,13.71,24.25,13.71,12.14-13.71,24.27-13.71,12.14,13.71,24.29,13.71S352,269.8,364.14,269.8Z"></path> -->\n         <path class="body-part" d="M216.21,255.72a163.68,163.68,0,0,0-83.74-23h0A164.49,164.49,0,0,0,17.82,279.36l48,20.83Z"></path>\n         <path class="body-part" d="M-11.92,318.07H5.39l60.45-17.88-48-20.83A166.73,166.73,0,0,0-11.92,318.07Z"></path>\n         <!-- <path class="body-part body-part--dark" d="M-15.12,324.14l20.51-6.07H-11.92C-13,320.07-14.09,322.1-15.12,324.14Z"></path> -->\n         <path class="body-part body-part--dark" d="M216.21,255.72,65.84,300.19,5.39,318.07l-20.51,6.07a163.48,163.48,0,0,0-17.35,67.41c0,.05,0,.11,0,.17l309.16-73.95A167,167,0,0,0,216.21,255.72Z"></path>\n         <!-- <path class="body-part" d="M276.88,318.07l-.19-.31L-32.47,391.72c-.08,2-.16,4.05-.16,6.1v7.94l171.23,15.94L257,391.55l12.28-3.13,27.52-7A163.59,163.59,0,0,0,276.88,318.07Z"></path> -->\n      </g>\n      <g class="head">\n         <path class="bandage bandage--head decor__bandage head__bandage" d="M270.44,14.09c-7.59,0-7.59,8.56-15.17,8.56s-7.59-8.56-15.17-8.56-7.58,8.56-15.16,8.56-7.58-8.56-15.15-8.56-7.58,8.56-15.16,8.56-7.58-8.56-15.15-8.56-7.58,8.56-15.15,8.56-7.58-8.56-15.15-8.56v17c7.58,0,7.58,8.56,15.15,8.56s7.58-8.56,15.15-8.56,7.58,8.56,15.15,8.56,7.58-8.56,15.16-8.56,7.58,8.56,15.15,8.56,7.58-8.56,15.16-8.56,7.59,8.56,15.17,8.56,7.59-8.56,15.17-8.56Z"></path>\n         <g monster-part part-name="ears" part-type="group" part-outline="true" class="ears">\n            <circle class="ear ear--ear-left" cx="61.37" cy="110.92" r="22.96"></circle>\n            <circle class="ear ear--ear-right" cx="203.59" cy="110.92" r="22.96"></circle>\n         </g>\n\n         <g monster-part part-name="head-figure" part-type="group" part-outline="true" class="head-figure">\n            <path class="head-part" d="M132.48,0C115,0,99,10.15,86.48,27L192.57,52.62C179.62,20.89,157.55,0,132.48,0Z"></path>\n            <path class="head-part head-part--dark" d="M192.57,52.62,86.48,27C75.15,42.38,66.74,63.27,62.78,87.16l130.41-33C193,53.67,192.79,53.14,192.57,52.62Z"></path>\n            <path class="head-part head-part--empty" d="M193.19,54.2,80.54,82.67l75.09,17.26,45.85-16.81A160.27,160.27,0,0,0,193.19,54.2Z"></path>\n            <path class="head-part" d="M62.78,87.16a189.68,189.68,0,0,0-2.53,31c0,5.6.26,11.11.72,16.5l94.65-34.71L80.54,82.67Z"></path>\n            <path class="head-part head-part--dark" d="M62.33,146.29,203,143.48a191.36,191.36,0,0,0,1.68-25.34,188.5,188.5,0,0,0-3.23-35L61,134.64Q61.48,140.56,62.33,146.29Z"></path>\n            <path class="head-part" d="M64.24,156.85l128.89,25.39A165.12,165.12,0,0,0,203,143.48L62.33,146.29Q63.14,151.67,64.24,156.85Z"></path>\n            <path class="head-part head-part--dark" d="M64.68,158.76a150.89,150.89,0,0,0,11.06,32.42l110,6.67c1.22-2.19,2.39-4.46,3.5-6.8Z"></path>\n            <path class="head-part" d="M132.48,236.28c21.11,0,40.09-14.82,53.3-38.43l-110-6.67C89,218.64,109.45,236.28,132.48,236.28Z"></path>\n         </g>\n\n         <g monster-part part-name="nose" part-type="group">\n           <rect fill="rgba(0,0,0,0)" x="132.5" y="144" width="1" height="1"></rect>\n         </g>\n\n         <g monster-part part-name="mouth" part-type="group" class="mouth">\n            <path monster-part part-name="mouth" part-type="element" part-group="mouth" class="mouth-figure" d="M193.13,182.24,64.24,156.85c.14.64.29,1.27.43,1.91l124.6,32.29Q191.32,186.79,193.13,182.24Z"></path>\n            <polygon class="tooth" points="145.34 186.66 134.48 186.66 134.48 170.68 145.34 172.81 145.34 186.66"></polygon>\n         </g>\n         <g monster-part part-name="mouth-fraud" part-type="group" part-hidden="true" visibility="hidden" class="mouth">\n            <path monster-part part-name="mouth--fraud" part-type="element" part-group="mouth" class="mouth-figure mouth-figure--dark" d="M193.13,182.24,64.24,156.85c.14.64.29,1.27.43,1.91l124.6,32.29Q191.32,186.79,193.13,182.24Z"></path>\n         </g>\n\n\n         <g monster-part part-group="ears" part-type="container"></g>\n\n\n         <svg width="18.5" height="25.16" x="85" y="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.91 26.58">\n           <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n             <line class="eyelash" x1="0.71" y1="10.71" x2="15.87" y2="25.87"/>\n             <line class="eyelash" x1="2.37" y1="5.71" x2="17.54" y2="20.87"/>\n             <line class="eyelash" x1="4.04" y1="0.71" x2="19.21" y2="15.87"/>\n           </g>\n         </svg>\n\n         <g monster-part part-name="eyes" part-type="group" class="eyes">\n            <g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">\n               <circle class="eyeball" cx="102.5" cy="82.46" r="8.94"></circle>\n               <circle class="pupil" cx="102.5" cy="82.46" r="4.41"></circle>\n            </g>\n            <g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--right">\n               <circle class="eyeball" cx="161.09" cy="82.46" r="8.94"></circle>\n               <circle class="pupil" cx="161.09" cy="82.46" r="4.41"></circle>\n            </g>\n         </g>\n\n         <g monster-part part-group="eyes" part-type="container"></g>\n      </g>\n      <g monster-part part-group="body" part-type="container"></g>\n      <g monster-part part-group="head-figure" part-type="container"></g>\n      \n      <g monster-part part-group="mouth" part-type="container"></g>\n      <g monster-part part-group="nose" part-type="container"></g>\n\n      <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/mummy/mummy.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
@@ -2714,7 +2759,7 @@ var MummyComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=mummy.js.map
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2752,7 +2797,7 @@ var YagaComponent = /** @class */ (function (_super) {
     }
     YagaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'yaga',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/yaga/yaga.html"*/'<svg width="80%" height="80%" class="yaga svg-container" viewBox="0 0 233.58 324.24" width="auto" height="95%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n   <g monster-part part-name="outer" part-type="group" class="">\n    <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n    <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n         <path class="body-figure" d="M0,526.25V299.52a69.37,69.37,0,0,1,69.17-69.17h44.62V525.5Z"></path>\n         <g class="ornament decor__ornament">\n            <circle class="ornament-part" cx="31.56" cy="265.47" r="4.89"></circle>\n            <circle class="ornament-part" cx="54.23" cy="252.58" r="4.89"></circle>\n            <circle class="ornament-part" cx="17.78" cy="291.7" r="4.89"></circle>\n            <circle class="ornament-part" cx="94.23" cy="313.03" r="4.89"></circle>\n         </g>\n    </g>\n    <g monster-part part-group="body" part-type="container"></g>\n    <g class="head">\n        <g monster-part part-name="necklace" part-type="group">\n          <g monster-part part-name="head-figure" part-type="group" class="head-figure">\n             <g class="shawl shawl--decor__shawl">\n                <path class="shawl-part" d="M96.38.07a196.7,196.7,0,0,1,0,278.33A196.7,196.7,0,0,1,96.38.07Z"></path>\n                <path class="shawl-part" d="M26.33,330.41A73.62,73.62,0,0,1,100,256.75,73.62,73.62,0,0,1,26.33,330.41Z"></path>\n                <path class="shawl-part" d="M92.76,256.75a73.62,73.62,0,0,1,73.66,73.66A73.62,73.62,0,0,1,92.76,256.75Z"></path>\n                <circle class="shawl-part" cx="96.38" cy="269.15" r="26.63"></circle>\n             </g>\n             <rect class="face" x="72.11" y="38.2" width="48.53" height="202.49" rx="24.27" ry="24.27"></rect>\n          </g>\n        </g>\n        <g monster-part part-group="necklace" part-type="container"></g>\n\n\n         <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" part-outline="true" class="ears">\n          <ellipse class="ear" cx="122" cy="126" rx="5.12" ry="13.47" transform="translate(-65.15 -2.51) rotate(-5.81)"/>\n          <ellipse class="ear" cx="135" cy="133" rx="13.47" ry="5.12" transform="translate(-22.48 232.22) rotate(-84.19)"/>\n         </g>\n         <g monster-part part-group="ears" part-type="container"></g>\n\n         <svg width="44.52" height="17.22" x="74" y="54" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.13 12.33">\n           <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n             <line class="eyelash" x1="26.14" x2="26.14" y2="9"/>\n             <line class="eyelash" x1="29.31" x2="29.31" y2="9"/>\n             <line class="eyelash" x1="32.48" x2="32.48" y2="9"/>\n             <line class="eyelash" x1="0.65" y1="3.33" x2="0.65" y2="12.33"/>\n             <line class="eyelash" x1="3.82" y1="3.33" x2="3.82" y2="12.33"/>\n             <line class="eyelash" x1="6.98" y1="3.33" x2="6.98" y2="12.33"/>\n           </g>\n         </svg>\n\n         <g monster-part part-name="eyes" part-type="group" class="eyes">\n            <g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">\n               <circle class="eyeball" cx="79.94" cy="81" r="11.98"></circle>\n               <circle class="pupil" cx="79.94" cy="81" r="6.14"></circle>\n            </g>\n            <g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--right">\n               <circle class="eyeball" cx="112.78" cy="81" r="15.2"></circle>\n               <circle class="pupil" cx="112.78" cy="81" r="7.79"></circle>\n            </g>\n         </g>\n				 <g monster-part part-group="eyes" part-type="container"></g>\n         <g monster-part part-name="mouth" part-type="group" class="mouth">\n            <rect class="mouth-figure" x="81.54" y="185.9" width="39.1" height="8.83"></rect>\n            <rect class="tooth" x="94.68" y="185.9" width="4.48" height="4.48"></rect>\n            <rect class="tooth" x="102.67" y="185.9" width="4.48" height="4.48"></rect>\n         </g>\n         <g monster-part part-group="head-figure" part-type="container"></g>\n         <g monster-part part-group="mouth" part-type="container"></g>\n         <g monster-part part-group="nose" part-type="container"></g>\n        <g monster-part part-name="nose" part-type="group">\n          <path class="nose" d="M96.62,109a13.69,13.69,0,0,1,12.54,13.6V157H96.62Z"></path>\n        </g>\n    </g>\n\n    <g monster-part part-group="neclace" part-type="container"></g>\n\n    <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/yaga/yaga.html"*/
+            selector: 'yaga',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/yaga/yaga.html"*/'<svg width="80%" height="80%" class="yaga svg-container" viewBox="0 0 233.58 324.24" width="auto" height="95%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n   <g monster-part part-name="outer" part-type="group" class="">\n    <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n    <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n         <path class="body-figure" d="M0,526.25V299.52a69.37,69.37,0,0,1,69.17-69.17h44.62V525.5Z"></path>\n         <g class="ornament decor__ornament">\n            <circle class="ornament-part" cx="31.56" cy="265.47" r="4.89"></circle>\n            <circle class="ornament-part" cx="54.23" cy="252.58" r="4.89"></circle>\n            <circle class="ornament-part" cx="17.78" cy="291.7" r="4.89"></circle>\n            <circle class="ornament-part" cx="94.23" cy="313.03" r="4.89"></circle>\n         </g>\n    </g>\n    <g monster-part part-group="body" part-type="container"></g>\n    <g class="head">\n        <g monster-part part-name="necklace" part-type="group">\n          <g monster-part part-name="head-figure" part-type="group" class="head-figure">\n             <g class="shawl shawl--decor__shawl">\n                <path class="shawl-part" d="M96.38.07a196.7,196.7,0,0,1,0,278.33A196.7,196.7,0,0,1,96.38.07Z"></path>\n                <path class="shawl-part" d="M26.33,330.41A73.62,73.62,0,0,1,100,256.75,73.62,73.62,0,0,1,26.33,330.41Z"></path>\n                <path class="shawl-part" d="M92.76,256.75a73.62,73.62,0,0,1,73.66,73.66A73.62,73.62,0,0,1,92.76,256.75Z"></path>\n                <circle class="shawl-part" cx="96.38" cy="269.15" r="26.63"></circle>\n             </g>\n             <rect class="face" x="72.11" y="38.2" width="48.53" height="202.49" rx="24.27" ry="24.27"></rect>\n          </g>\n        </g>\n        <g monster-part part-group="necklace" part-type="container"></g>\n\n\n         <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" part-outline="true" class="ears">\n          <ellipse class="ear" cx="122" cy="126" rx="5.12" ry="13.47" transform="translate(-65.15 -2.51) rotate(-5.81)"/>\n          <ellipse class="ear" cx="135" cy="133" rx="13.47" ry="5.12" transform="translate(-22.48 232.22) rotate(-84.19)"/>\n         </g>\n         <g monster-part part-group="ears" part-type="container"></g>\n\n         <svg width="44.52" height="17.22" x="74" y="54" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.13 12.33">\n           <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n             <line class="eyelash" x1="26.14" x2="26.14" y2="9"/>\n             <line class="eyelash" x1="29.31" x2="29.31" y2="9"/>\n             <line class="eyelash" x1="32.48" x2="32.48" y2="9"/>\n             <line class="eyelash" x1="0.65" y1="3.33" x2="0.65" y2="12.33"/>\n             <line class="eyelash" x1="3.82" y1="3.33" x2="3.82" y2="12.33"/>\n             <line class="eyelash" x1="6.98" y1="3.33" x2="6.98" y2="12.33"/>\n           </g>\n         </svg>\n\n         <g monster-part part-name="eyes" part-type="group" class="eyes">\n            <g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">\n               <circle class="eyeball" cx="79.94" cy="81" r="11.98"></circle>\n               <circle class="pupil" cx="79.94" cy="81" r="6.14"></circle>\n            </g>\n            <g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--right">\n               <circle class="eyeball" cx="112.78" cy="81" r="15.2"></circle>\n               <circle class="pupil" cx="112.78" cy="81" r="7.79"></circle>\n            </g>\n         </g>\n				 <g monster-part part-group="eyes" part-type="container"></g>\n         <g monster-part part-name="mouth" part-type="group" class="mouth">\n            <rect class="mouth-figure" x="81.54" y="185.9" width="39.1" height="8.83"></rect>\n            <rect class="tooth" x="94.68" y="185.9" width="4.48" height="4.48"></rect>\n            <rect class="tooth" x="102.67" y="185.9" width="4.48" height="4.48"></rect>\n         </g>\n         <g monster-part part-group="head-figure" part-type="container"></g>\n         <g monster-part part-group="mouth" part-type="container"></g>\n         <g monster-part part-group="nose" part-type="container"></g>\n        <g monster-part part-name="nose" part-type="group">\n          <path class="nose" d="M96.62,109a13.69,13.69,0,0,1,12.54,13.6V157H96.62Z"></path>\n        </g>\n    </g>\n\n    <g monster-part part-group="necklace" part-type="container"></g>\n\n    <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/yaga/yaga.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
@@ -2763,7 +2808,7 @@ var YagaComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yaga.js.map
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2812,7 +2857,7 @@ var DoctorComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=doctor.js.map
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2861,7 +2906,7 @@ var YetiComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=yeti.js.map
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2910,12 +2955,12 @@ var GhostComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=ghost.js.map
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameFinistStateMachine; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(311);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
 
 var GameFinistStateMachine = /** @class */ (function () {
@@ -3006,12 +3051,12 @@ var GameFinistStateMachine = /** @class */ (function () {
 //# sourceMappingURL=game-fsm.js.map
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnersHandler; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(312);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -3066,13 +3111,13 @@ var ListnersHandler = /** @class */ (function () {
 //# sourceMappingURL=listners-handler.js.map
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_host_directive__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3131,7 +3176,7 @@ var ItemHolderComponent = /** @class */ (function () {
 //# sourceMappingURL=item-holder.component.js.map
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3163,17 +3208,17 @@ var TemplateHostDriective = /** @class */ (function () {
 //# sourceMappingURL=template-host.directive.js.map
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3240,13 +3285,13 @@ var SelectPage = /** @class */ (function () {
 //# sourceMappingURL=select.js.map
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundTabletComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(204);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3287,13 +3332,13 @@ var BackgroundTabletComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-tablet.component.js.map
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(205);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3326,7 +3371,7 @@ var BackgroundComponent = /** @class */ (function () {
 //# sourceMappingURL=bg.component.js.map
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3385,13 +3430,13 @@ var BackgroundAnchorDirective = /** @class */ (function () {
 //# sourceMappingURL=bg.directive.js.map
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundMobileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_component__ = __webpack_require__(204);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3432,7 +3477,6 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=background-mobile.component.js.map
 
 /***/ }),
-/* 206 */,
 /* 207 */,
 /* 208 */,
 /* 209 */,
@@ -3475,20 +3519,20 @@ var BackgroundMobileComponent = /** @class */ (function (_super) {
 /* 246 */,
 /* 247 */,
 /* 248 */,
-/* 249 */
+/* 249 */,
+/* 250 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(273);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
-/* 250 */,
 /* 251 */,
 /* 252 */,
 /* 253 */,
@@ -3510,7 +3554,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* 269 */,
 /* 270 */,
 /* 271 */,
-/* 272 */
+/* 272 */,
+/* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3518,14 +3563,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_game_game__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3593,7 +3638,6 @@ var AppModule = /** @class */ (function () {
 //# sourceMappingURL=app.module.js.map
 
 /***/ }),
-/* 273 */,
 /* 274 */,
 /* 275 */,
 /* 276 */,
@@ -3618,7 +3662,8 @@ var AppModule = /** @class */ (function () {
 /* 295 */,
 /* 296 */,
 /* 297 */,
-/* 298 */
+/* 298 */,
+/* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3641,6 +3686,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__earrings_earrings__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__necklace_necklace__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__flatulence_flatulence__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__flower_flower__ = __webpack_require__(180);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3650,6 +3696,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3702,6 +3749,242 @@ var TrinketsService = /** @class */ (function () {
     }
     TrinketsService.prototype.getTrinkets = function () {
         return [
+            {
+                id: 18,
+                component: __WEBPACK_IMPORTED_MODULE_18__flower_flower__["a" /* FlowerComponent */],
+                meta: {
+                    container: 'head-figure',
+                    getContainer: function (name) {
+                        if (['bed'].includes(name)) {
+                            return 'flower';
+                        }
+                        return this.container;
+                    },
+                    uniq: true,
+                    before: function (monster, repo, instance) {
+                    },
+                    after: function (monster, repo, instance) {
+                    },
+                    attr: {
+                        width: {
+                            default: function (_a) {
+                                var width = _a.width;
+                                return width * 1.5;
+                            },
+                            skeleton: function (_a) {
+                                var width = _a.width;
+                                return 188.404 * 1.2;
+                            },
+                            zombie: function (_a) {
+                                var width = _a.width;
+                                return 76.766;
+                            },
+                            mummy: function (_a) {
+                                var width = _a.width;
+                                return 63.789;
+                            },
+                            yaga: function (_a) {
+                                var width = _a.width;
+                                return 116;
+                            },
+                            doctor: function (_a) {
+                                var width = _a.width;
+                                return 132.431 * 1.2;
+                            },
+                            spider: function (_a) {
+                                var width = _a.width;
+                                return 98.766 * 1.2;
+                            },
+                            alien: function (_a) {
+                                var width = _a.width;
+                                return 197.535;
+                            },
+                            vampire: function (_a) {
+                                var width = _a.width;
+                                return 40.896;
+                            },
+                            yeti: function (_a) {
+                                var width = _a.width;
+                                return 173.523;
+                            },
+                            ghost: function (_a) {
+                                var width = _a.width;
+                                return 136.767 * 1.2;
+                            },
+                            wolf: function (_a) {
+                                var width = _a.width;
+                                return 159.729;
+                            },
+                            bed: function (_a) {
+                                var width = _a.width;
+                                return 43.352;
+                            },
+                        },
+                        height: {
+                            default: function (_a) {
+                                var height = _a.height;
+                                return height * 1.5;
+                            },
+                            skeleton: function (_a) {
+                                var height = _a.height;
+                                return 217.311 * 1.2;
+                            },
+                            zombie: function (_a) {
+                                var height = _a.height;
+                                return 35.215;
+                            },
+                            mummy: function (_a) {
+                                var height = _a.height;
+                                return 46.505;
+                            },
+                            yaga: function (_a) {
+                                var height = _a.height;
+                                return 48.546;
+                            },
+                            doctor: function (_a) {
+                                var height = _a.height;
+                                return 214.873 * 1.2;
+                            },
+                            spider: function (_a) {
+                                var height = _a.height;
+                                return 121.903 * 1.2;
+                            },
+                            alien: function (_a) {
+                                var height = _a.height;
+                                return 82.662;
+                            },
+                            vampire: function (_a) {
+                                var height = _a.height;
+                                return 52.717;
+                            },
+                            yeti: function (_a) {
+                                var height = _a.height;
+                                return 106.196;
+                            },
+                            ghost: function (_a) {
+                                var height = _a.height;
+                                return 116.366 * 1.2;
+                            },
+                            wolf: function (_a) {
+                                var height = _a.height;
+                                return 86.284;
+                            },
+                            bed: function (_a) {
+                                var height = _a.height;
+                                return 34.728;
+                            },
+                        },
+                        x: {
+                            default: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (width * 1.5) / 2) + width / 2;
+                            },
+                            skeleton: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return -13;
+                            },
+                            zombie: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 102.2;
+                            },
+                            mummy: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 150;
+                            },
+                            yaga: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 38.375;
+                            },
+                            doctor: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 6;
+                            },
+                            spider: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (98.766 * 1.2) / 2) + width / 2;
+                            },
+                            alien: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return (x - (197.535) / 2) + width / 2;
+                            },
+                            vampire: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return x;
+                            },
+                            yeti: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return ((x - (173.523) / 2) + width / 2) + 2;
+                            },
+                            ghost: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 51;
+                            },
+                            wolf: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 10;
+                            },
+                            bed: function (_a) {
+                                var x = _a.x, width = _a.width;
+                                return 100;
+                            },
+                        },
+                        y: {
+                            default: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return (y - (height * 1.5) / 2) + height / 2;
+                            },
+                            skeleton: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return -30;
+                            },
+                            zombie: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 160;
+                            },
+                            mummy: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 130;
+                            },
+                            yaga: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 30;
+                            },
+                            doctor: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 51;
+                            },
+                            spider: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 150;
+                            },
+                            alien: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y - 30;
+                            },
+                            vampire: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 20;
+                            },
+                            yeti: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return y + 25;
+                            },
+                            ghost: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return -31;
+                            },
+                            wolf: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 160;
+                            },
+                            bed: function (_a) {
+                                var y = _a.y, height = _a.height;
+                                return 225;
+                            },
+                        }
+                    }
+                }
+            },
             {
                 id: 17,
                 component: __WEBPACK_IMPORTED_MODULE_17__flatulence_flatulence__["a" /* FlatulenceComponent */],
@@ -7017,7 +7300,7 @@ var TrinketsService = /** @class */ (function () {
 //# sourceMappingURL=trinkets.service.js.map
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7054,7 +7337,7 @@ var ElementModel = /** @class */ (function () {
 //# sourceMappingURL=element.model.js.map
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7140,15 +7423,15 @@ var TrinketRandomModel = /** @class */ (function (_super) {
 //# sourceMappingURL=trinket-random.model.js.map
 
 /***/ }),
-/* 301 */,
 /* 302 */,
-/* 303 */
+/* 303 */,
+/* 304 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSetController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_model__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_model__ = __webpack_require__(305);
 
 
 var once = function (fn) {
@@ -7272,7 +7555,7 @@ var AnimationSetControllerSpecified = /** @class */ (function () {
 //# sourceMappingURL=animation-set.controller.js.map
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7307,13 +7590,13 @@ var AnimationModel = /** @class */ (function () {
 //# sourceMappingURL=animation.model.js.map
 
 /***/ }),
-/* 305 */
+/* 306 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AnimationSequenceController; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_sequence_model__ = __webpack_require__(307);
 
 
 var AnimationSequenceController = /** @class */ (function () {
@@ -7374,7 +7657,7 @@ var AnimationSequenceController = /** @class */ (function () {
 //# sourceMappingURL=animation-sequence.controller.js.map
 
 /***/ }),
-/* 306 */
+/* 307 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7408,15 +7691,15 @@ var AnimationSequenceModel = /** @class */ (function () {
 //# sourceMappingURL=animation-sequence.model.js.map
 
 /***/ }),
-/* 307 */,
-/* 308 */
+/* 308 */,
+/* 309 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(199);
 
 
 
@@ -7461,7 +7744,7 @@ var Game = /** @class */ (function () {
 //# sourceMappingURL=game.service.js.map
 
 /***/ }),
-/* 309 */
+/* 310 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7506,8 +7789,8 @@ var CursorPosition = /** @class */ (function () {
 //# sourceMappingURL=cursor-position.js.map
 
 /***/ }),
-/* 310 */,
-/* 311 */
+/* 311 */,
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7583,14 +7866,14 @@ var ListnerRegister = /** @class */ (function () {
 //# sourceMappingURL=listner-register.class.js.map
 
 /***/ }),
-/* 312 */
+/* 313 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameLogic; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(199);
 
 
 
@@ -7663,12 +7946,12 @@ var GameLogic = /** @class */ (function () {
 //# sourceMappingURL=game-logic.js.map
 
 /***/ }),
-/* 313 */
+/* 314 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveElementRepository; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(315);
 
 var lib = {
     mouseEnterOnItem: function (item, ev) {
@@ -7797,7 +8080,7 @@ var ActiveElementRepository = /** @class */ (function () {
 //# sourceMappingURL=active-element.repository.js.map
 
 /***/ }),
-/* 314 */
+/* 315 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7905,7 +8188,6 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 //# sourceMappingURL=active-element.model.js.map
 
 /***/ }),
-/* 315 */,
 /* 316 */,
 /* 317 */,
 /* 318 */,
@@ -7930,16 +8212,17 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 /* 337 */,
 /* 338 */,
 /* 339 */,
-/* 340 */
+/* 340 */,
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(345);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7968,28 +8251,28 @@ var ComponentsModule = /** @class */ (function () {
 //# sourceMappingURL=components.module.js.map
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonstersModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alien_alien__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__skeleton_skeleton__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__zombie_zombie__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bed_bed__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spider_spider__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vampire_vampire__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_wolf__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mummy_mummy__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__yaga_yaga__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_doctor__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yeti_yeti__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ghost_ghost__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__monsters_component__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__monsters_host_directive__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__monsters_screen_directive__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__monster_part_directive__ = __webpack_require__(186);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8031,7 +8314,7 @@ var MonstersModule = /** @class */ (function () {
 //# sourceMappingURL=monsters.module.js.map
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8055,10 +8338,11 @@ var MonstersModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__trinkets_component__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__trinket_host_directive__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__trinket_random_part_directive__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__trinket_uniq_part_directive__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__flower_flower__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__trinkets_component__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__trinket_host_directive__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__trinket_random_part_directive__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__trinket_uniq_part_directive__ = __webpack_require__(164);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8088,16 +8372,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var TrinketsModule = /** @class */ (function () {
     function TrinketsModule() {
     }
     TrinketsModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */], __WEBPACK_IMPORTED_MODULE_15__egg_egg__["a" /* EggComponent */], __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__["a" /* EarringsComponent */], __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__["a" /* NecklaceComponent */], __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__["a" /* FlatulenceComponent */], __WEBPACK_IMPORTED_MODULE_19__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_20__trinket_host_directive__["a" /* TrinketHostDirective */], __WEBPACK_IMPORTED_MODULE_21__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */], __WEBPACK_IMPORTED_MODULE_22__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */], __WEBPACK_IMPORTED_MODULE_15__egg_egg__["a" /* EggComponent */], __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__["a" /* EarringsComponent */], __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__["a" /* NecklaceComponent */], __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__["a" /* FlatulenceComponent */], __WEBPACK_IMPORTED_MODULE_19__flower_flower__["a" /* FlowerComponent */], __WEBPACK_IMPORTED_MODULE_20__trinkets_component__["a" /* TrinketsComponent */], __WEBPACK_IMPORTED_MODULE_21__trinket_host_directive__["a" /* TrinketHostDirective */], __WEBPACK_IMPORTED_MODULE_22__trinket_random_part_directive__["a" /* TrinketRandomPartDirective */], __WEBPACK_IMPORTED_MODULE_23__trinket_uniq_part_directive__["a" /* TrinketUniqPartDirective */]],
             providers: [],
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_15__egg_egg__["a" /* EggComponent */], __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__["a" /* EarringsComponent */], __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__["a" /* NecklaceComponent */], __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__["a" /* FlatulenceComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */],],
-            exports: [__WEBPACK_IMPORTED_MODULE_19__trinkets_component__["a" /* TrinketsComponent */]]
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__glass_glass__["a" /* GlassComponent */], __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__["a" /* EyesComponent */], __WEBPACK_IMPORTED_MODULE_4__hood_hood__["a" /* HoodComponent */], __WEBPACK_IMPORTED_MODULE_5__mole_mole__["a" /* MoleComponent */], __WEBPACK_IMPORTED_MODULE_6__heart_heart__["a" /* HeartComponent */], __WEBPACK_IMPORTED_MODULE_7__beard_beard__["a" /* BeardComponent */], __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__["a" /* MoustacheComponent */], __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__["a" /* SnivelComponent */], __WEBPACK_IMPORTED_MODULE_10__dress_dress__["a" /* DressComponent */], __WEBPACK_IMPORTED_MODULE_11__bra_bra__["a" /* BraComponent */], __WEBPACK_IMPORTED_MODULE_12__wig_wig__["a" /* WigComponent */], __WEBPACK_IMPORTED_MODULE_13__lips_lips__["a" /* LipsComponent */], __WEBPACK_IMPORTED_MODULE_15__egg_egg__["a" /* EggComponent */], __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__["a" /* EarringsComponent */], __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__["a" /* NecklaceComponent */], __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__["a" /* FlatulenceComponent */], __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__["a" /* LollipopComponent */], __WEBPACK_IMPORTED_MODULE_19__flower_flower__["a" /* FlowerComponent */],],
+            exports: [__WEBPACK_IMPORTED_MODULE_20__trinkets_component__["a" /* TrinketsComponent */]]
         })
     ], TrinketsModule);
     return TrinketsModule;
@@ -8106,7 +8391,7 @@ var TrinketsModule = /** @class */ (function () {
 //# sourceMappingURL=trinkets.module.js.map
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8138,14 +8423,14 @@ var GameModule = /** @class */ (function () {
 //# sourceMappingURL=game.module.js.map
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemHolderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_holder_component__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_host_directive__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8173,15 +8458,15 @@ var ItemHolderModule = /** @class */ (function () {
 //# sourceMappingURL=item-holder.module.js.map
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackgroundModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bg_directive__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__background_tablet_component__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__background_mobile_component__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8209,7 +8494,7 @@ var BackgroundModule = /** @class */ (function () {
 //# sourceMappingURL=bg.module.js.map
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8240,15 +8525,15 @@ var ModelModule = /** @class */ (function () {
 //# sourceMappingURL=model.module.js.map
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8285,5 +8570,5 @@ var MyApp = /** @class */ (function () {
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
-],[249]);
+],[250]);
 //# sourceMappingURL=main.js.map

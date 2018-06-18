@@ -26696,6 +26696,139 @@ yeti .yeti .tooth {
   fill: #fff;
 }
 
+.flower .cls-1 {
+  fill: none;
+  stroke: #6fc055;
+  stroke-miterlimit: 10;
+  stroke-width: 6.52px;
+}
+
+.flower .cls-2 {
+  fill: #f1ea35;
+}
+
+.flower .cls-3 {
+  fill: #ab4e8a;
+}
+
+.flower .cls-4 {
+  fill: #6fc055;
+}
+
+.flower--skeleton .cls-1 {
+  fill: #f1ea35;
+}
+
+.flower--skeleton .cls-2 {
+  fill: #ab4e8a;
+}
+
+.flower--skeleton .cls-3 {
+  fill: #6fc055;
+}
+
+.flower--skeleton .cls-4 {
+  fill: none;
+  stroke: #6fc055;
+  stroke-miterlimit: 10;
+  stroke-width: 2.48px;
+}
+
+.flower--yaga .cls-1 {
+  fill: #f1ea35;
+}
+
+.flower--yaga .cls-2 {
+  fill: #ab4e8a;
+}
+
+.flower--yaga .cls-3 {
+  fill: #6fc055;
+}
+
+.flower--doctor .cls-1 {
+  fill: none;
+  stroke: #6fc055;
+  stroke-miterlimit: 10;
+  stroke-width: 1.64px;
+}
+
+.flower--doctor .cls-2 {
+  fill: #f1ea35;
+}
+
+.flower--doctor .cls-3 {
+  fill: #ab4e8a;
+}
+
+.flower--doctor .cls-4 {
+  fill: #6fc055;
+}
+
+.flower--zombie .cls-1 {
+  fill: none;
+  stroke: #6fc055;
+  stroke-miterlimit: 10;
+  stroke-width: 2.48px;
+}
+
+.flower--mummy .cls-1 {
+  fill: none;
+  stroke: #6fc055;
+  stroke-miterlimit: 10;
+  stroke-width: 2.31px;
+}
+
+.flower--spider .cls-1 {
+  fill: #f1ea35;
+}
+
+.flower--spider .cls-2 {
+  fill: #ab4e8a;
+}
+
+.flower--spider .cls-3 {
+  fill: #6fc055;
+}
+
+.flower--ghost .cls-1 {
+  fill: none;
+  stroke: #6fc055;
+  stroke-miterlimit: 10;
+  stroke-width: 2.66px;
+}
+
+.flower--ghost .cls-2 {
+  fill: #f1ea35;
+}
+
+.flower--ghost .cls-3 {
+  fill: #ab4e8a;
+}
+
+.flower--ghost .cls-4 {
+  fill: #6fc055;
+}
+
+.flower--bed .cls-1 {
+  fill: none;
+  stroke: #6fc055;
+  stroke-miterlimit: 10;
+  stroke-width: 1.62px;
+}
+
+.flower--bed .cls-2 {
+  fill: #f1ea35;
+}
+
+.flower--bed .cls-3 {
+  fill: #ab4e8a;
+}
+
+.flower--bed .cls-4 {
+  fill: #6fc055;
+}
+
 .glass .cls-1 {
   fill: #c39dc8;
 }
