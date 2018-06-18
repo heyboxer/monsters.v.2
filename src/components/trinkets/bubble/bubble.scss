@@ -1,0 +1,73 @@
+.bubble {
+  & .cls-1{fill:white;stroke:#000;stroke-miterlimit:10;stroke-width:1.83px;}
+
+  &--skeleton {
+    & .cls-1{fill:#586ab1;}
+    & .cls-1,
+    & .cls-2{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#f1ea35;}
+  }
+
+  &--mummy {
+    & .cls-1{fill:#6fc055;}
+    & .cls-1,
+    & .cls-2{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#fff;}
+  }
+
+  &--yaga {
+    & .cls-1{fill:#f9e830;}
+    & .cls-1,
+    & .cls-2{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#00a5d4;}
+  }
+
+  &--doctor {
+    & .cls-1{fill:#00b8ce;}
+    & .cls-1,
+    & .cls-2,
+    & .cls-3{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#d0da3e;}
+    & .cls-3{fill:#fa953c;}
+  }
+
+  &--spider {
+    & .cls-1{fill:#ab4e8a;}
+    & .cls-1,
+    & .cls-2{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#f55283;}
+  }
+
+  &--vampire {
+    & .cls-1{fill:#f24943;}
+    & .cls-1,
+    & .cls-2{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#f46540;}
+  }
+
+  &--yeti {
+    & .cls-1{fill:#00b8ce;stroke:#000;stroke-miterlimit:10;}
+  }
+
+  &--ghost {
+    & .cls-1{fill:#00b15d;}.cls-1,
+    & .cls-2,
+    & .cls-3{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#00a697;}
+    & .cls-3{fill:#586ab1;}
+  }
+
+  &--wolf {
+    & .cls-1{fill:#3075ab;}
+    & .cls-1,
+    & .cls-2{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#72538e;}
+  }
+
+  &--bed {
+    & .cls-1{fill:#00ad5e;}
+    & .cls-1,
+    & .cls-2{stroke:#000;stroke-miterlimit:10;}
+    & .cls-2{fill:#6fc055;}
+  }
+}

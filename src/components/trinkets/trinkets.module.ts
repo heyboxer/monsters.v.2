@@ -19,6 +19,7 @@ import { EarringsComponent } from './earrings/earrings';
 import { NecklaceComponent } from './necklace/necklace';
 import { FlatulenceComponent } from './flatulence/flatulence';
 import { FlowerComponent } from './flower/flower';
+import { BubbleComponent } from './bubble/bubble';
 
 import { TrinketsComponent } from './trinkets.component';
 import { TrinketHostDirective } from './trinket-host.directive';
@@ -26,10 +27,10 @@ import { TrinketRandomPartDirective } from './trinket-random-part.directive';
 import { TrinketUniqPartDirective } from './trinket-uniq-part.directive';
 
 @NgModule({
-	declarations: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, LollipopComponent, EggComponent, EarringsComponent, NecklaceComponent, FlatulenceComponent, FlowerComponent, TrinketsComponent, TrinketHostDirective, TrinketRandomPartDirective, TrinketUniqPartDirective ],
+	declarations: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, LollipopComponent, EggComponent, EarringsComponent, NecklaceComponent, FlatulenceComponent, FlowerComponent, BubbleComponent, TrinketsComponent, TrinketHostDirective, TrinketRandomPartDirective, TrinketUniqPartDirective ],
 	providers: [],
 	imports: [ CommonModule ],
-	entryComponents: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, EggComponent, EarringsComponent, NecklaceComponent, FlatulenceComponent, LollipopComponent, FlowerComponent, ],
+	entryComponents: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, EggComponent, EarringsComponent, NecklaceComponent, FlatulenceComponent, BubbleComponent, LollipopComponent, FlowerComponent, ],
 	exports: [ TrinketsComponent ]
 })
 export class TrinketsModule {}

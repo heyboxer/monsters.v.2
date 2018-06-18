@@ -26264,6 +26264,155 @@ yeti .yeti .tooth {
   fill: #fff;
 }
 
+.bubble .cls-1 {
+  fill: white;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 1.83px;
+}
+
+.bubble--skeleton .cls-1 {
+  fill: #586ab1;
+}
+
+.bubble--skeleton .cls-1,
+.bubble--skeleton .cls-2 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--skeleton .cls-2 {
+  fill: #f1ea35;
+}
+
+.bubble--mummy .cls-1 {
+  fill: #6fc055;
+}
+
+.bubble--mummy .cls-1,
+.bubble--mummy .cls-2 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--mummy .cls-2 {
+  fill: #fff;
+}
+
+.bubble--yaga .cls-1 {
+  fill: #f9e830;
+}
+
+.bubble--yaga .cls-1,
+.bubble--yaga .cls-2 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--yaga .cls-2 {
+  fill: #00a5d4;
+}
+
+.bubble--doctor .cls-1 {
+  fill: #00b8ce;
+}
+
+.bubble--doctor .cls-1,
+.bubble--doctor .cls-2,
+.bubble--doctor .cls-3 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--doctor .cls-2 {
+  fill: #d0da3e;
+}
+
+.bubble--doctor .cls-3 {
+  fill: #fa953c;
+}
+
+.bubble--spider .cls-1 {
+  fill: #ab4e8a;
+}
+
+.bubble--spider .cls-1,
+.bubble--spider .cls-2 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--spider .cls-2 {
+  fill: #f55283;
+}
+
+.bubble--vampire .cls-1 {
+  fill: #f24943;
+}
+
+.bubble--vampire .cls-1,
+.bubble--vampire .cls-2 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--vampire .cls-2 {
+  fill: #f46540;
+}
+
+.bubble--yeti .cls-1 {
+  fill: #00b8ce;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--ghost .cls-1 {
+  fill: #00b15d;
+}
+
+.bubble--ghost .cls-1,
+.bubble--ghost .cls-2,
+.bubble--ghost .cls-3 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--ghost .cls-2 {
+  fill: #00a697;
+}
+
+.bubble--ghost .cls-3 {
+  fill: #586ab1;
+}
+
+.bubble--wolf .cls-1 {
+  fill: #3075ab;
+}
+
+.bubble--wolf .cls-1,
+.bubble--wolf .cls-2 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--wolf .cls-2 {
+  fill: #72538e;
+}
+
+.bubble--bed .cls-1 {
+  fill: #00ad5e;
+}
+
+.bubble--bed .cls-1,
+.bubble--bed .cls-2 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.bubble--bed .cls-2 {
+  fill: #6fc055;
+}
+
 .dress .cls-1 {
   fill: #ab4e8a;
 }
