@@ -1064,7 +1064,6 @@ export class TrinketsService {
               ghost: ({width}) => 318.25,
               yeti: ({width}) => 326,
               bed: ({width}) => 159.49,
-
             },
             height: {
               default: ({height}) => height * 1.5,
