@@ -2,6 +2,38 @@ monster {
   position: relative;
   z-index: 0;
 
+  & .confetti {
+    &--color {
+      &--red {
+        fill:#f24943;
+      }
+      &--blue {
+        fill:#00b8ce;
+      }
+      &--yellow {
+        fill:#f1ea35;
+      }
+      &--pink {
+        fill:#cf6cac;
+      }
+      &--dark-blue {
+        fill:#586ab1;
+      }
+      &--green {
+        fill:#00b15d;
+      }
+      &--dark-yellow {
+        fill:#f9e830;
+      }
+      &--dirty-yellow {
+        fill:#d0da3e;
+      }
+      &--purple {
+        fill:#9a5790;
+      }
+    }
+  }
+
   &.mummy__screen {
     background-color: #3f2721;
   }

@@ -25688,6 +25688,42 @@ monster {
   z-index: 0;
 }
 
+monster .confetti--color--red {
+  fill: #f24943;
+}
+
+monster .confetti--color--blue {
+  fill: #00b8ce;
+}
+
+monster .confetti--color--yellow {
+  fill: #f1ea35;
+}
+
+monster .confetti--color--pink {
+  fill: #cf6cac;
+}
+
+monster .confetti--color--dark-blue {
+  fill: #586ab1;
+}
+
+monster .confetti--color--green {
+  fill: #00b15d;
+}
+
+monster .confetti--color--dark-yellow {
+  fill: #f9e830;
+}
+
+monster .confetti--color--dirty-yellow {
+  fill: #d0da3e;
+}
+
+monster .confetti--color--purple {
+  fill: #9a5790;
+}
+
 monster.mummy__screen {
   background-color: #3f2721;
 }

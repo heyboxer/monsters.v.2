@@ -81,7 +81,7 @@ export class TrinketsService {
           },
           after: (monster, repo, instance) => {
             if(monster.name === 'zombie') {
-              monster.close('open');
+              monster.open('hair');
             }
           },
           attr: {
@@ -1481,8 +1481,14 @@ export class TrinketsService {
           },
           emotion: 'joyful',
           uniq: true,
-          before: zombieJoyAnimBefore,
-          after: zombieJoyAnimAfter,
+          before: (monster, repo, instance) => {
+            zombieJoyAnimBefore(monster, repo, instance);
+            monster.open('confetti');
+          },
+          after: (monster, repo, instance) => {
+            zombieJoyAnimAfter(monster, repo, instance);
+            monster.close('confetti');
+          },
           attr: {
             width: {
               default: ({width}) => width * 1.5,
