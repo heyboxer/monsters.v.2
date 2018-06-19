@@ -94,7 +94,7 @@ export class GamePage extends Game implements AfterViewInit {
           const holderInstance = this.holder.loadComponent(parent.component);
 
           if(random) {
-            (holderInstance as { hide }).hide(item.randomArr);
+            (holderInstance as { load }).load(item.randomArr);
           }
 
           items.removeActiveElement(item);
@@ -152,7 +152,7 @@ export class GamePage extends Game implements AfterViewInit {
 
 
             if(item.meta.random) {
-              instance.hide(item.randomArr);
+              instance.load(item.randomArr);
               copy.randomArr = item.randomArr;
               item.randomArr = null;
             }

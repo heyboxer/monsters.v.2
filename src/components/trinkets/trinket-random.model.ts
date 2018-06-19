@@ -1,24 +1,15 @@
 import { Component, ViewChildren, QueryList, AfterViewInit } from '@angular/core';
 
-import { TrinketRandomPartDirective } from './trinket-random-part.directive';
+import { TrinketUniqPartDirective } from './trinket-uniq-part.directive';
 
-import { ElementComponentModel } from '../../model/element-component.model';
+import { TrinketUniqModel } from './trinket-uniq.model';
 
 
 @Component({
 })
-export class TrinketRandomModel extends ElementComponentModel implements AfterViewInit {
-  private afterInit: Function[] = [];
-  private initiated: boolean = false;
-
-  @ViewChildren(TrinketRandomPartDirective) protected parts: QueryList<TrinketRandomPartDirective>;
+export class TrinketRandomModel extends TrinketUniqModel  {
   constructor(name, element){
     super(name, element);
-  }
-
-  ngAfterViewInit() {
-    this.initiated = true;
-    this.afterInit.forEach(fn => fn(this));
   }
 
   public randomize = (cb?) => {
@@ -44,20 +35,26 @@ export class TrinketRandomModel extends ElementComponentModel implements AfterVi
       return randomParts(filteredArray, [...acc, partIndex], cur - 1);
     }
 
-    const selected = randomParts(parts, [], random);
+    // const selected = randomParts(parts, [], random);
 
-    this.hide(selected);
+    const selected = Math.round((this.parts.length - 2) * Math.random() + 1);
+
+    this.load(selected);
 
     return cb? cb(selected) : selected;
   }
 
-  public hide(selected) {
+  load(value: number | string): void {
     if(!this.initiated) {
-      this.afterInit = [...this.afterInit, () => this.hide(selected) ];
+      this.afterInit = [...this.afterInit, () => this.load(value) ];
       return;
     }
 
-    selected.forEach(i => this.parts.toArray()[i].hide());
-    return this;
+    const part = this.parts.find((p, i) =>
+      (typeof(value) === 'number') ? i === value : p.name === value
+    ) || this.parts.find(p => p.name === 'default');
+
+    part.show();
+    return;
   }
 }

@@ -8,8 +8,8 @@ import { ElementComponentModel } from '../../model/element-component.model';
 @Component({
 })
 export class TrinketUniqModel extends ElementComponentModel implements AfterViewInit {
-  private afterInit: Function[] = [];
-  private initiated: boolean = false;
+  protected afterInit: Function[] = [];
+  protected initiated: boolean = false;
 
   @ViewChildren(TrinketUniqPartDirective) protected parts: QueryList<TrinketUniqPartDirective>;
   constructor(name, element){
@@ -23,7 +23,7 @@ export class TrinketUniqModel extends ElementComponentModel implements AfterView
     this.afterInit.forEach(fn => fn());
   }
 
-  load(name: string): void {
+  load(name: string | number): void {
     if(!this.initiated) {
       this.afterInit = [...this.afterInit, () => this.load(name) ];
       return;
