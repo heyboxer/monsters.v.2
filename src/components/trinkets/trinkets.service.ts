@@ -1123,6 +1123,7 @@ export class TrinketsService {
             return this.container;
           },
           emotion: 'sad',
+          uniq: true,
           attr: {
             width: {
               default: ({width}) => width * 1.5,
@@ -1132,13 +1133,12 @@ export class TrinketsService {
               skeleton: ({width}) => 22,
               yaga: ({width}) => 15,
               doctor: ({width}) => 15,
-              spider: ({width}) => 28,
+              spider: ({width}) => 52.9,
               vampire: ({width}) => 24,
               wolf: ({width}) => 17,
               ghost: ({width}) => 15,
               yeti: ({width}) => 24,
               bed: ({width}) => 11.64,
-
             },
             height: {
               default: ({height}) => height * 1.5,
@@ -1148,7 +1148,7 @@ export class TrinketsService {
               skeleton: ({height}) => 78,
               yaga: ({height}) => 26,
               doctor: ({height}) => 26,
-              spider: ({height}) => 49,
+              spider: ({height}) => 90.58,
               vampire: ({height}) => 42,
               wolf: ({height}) => 30,
               ghost: ({height}) => 26,
@@ -1163,7 +1163,7 @@ export class TrinketsService {
               skeleton: ({x, width}) => x + width - 22,
               yaga: ({x, width}) => (x - 15 / 2) + width / 2,
               doctor: ({x, width}) => (x - (15) / 2) + width / 2,
-              spider: ({x, width}) => (x - (width * 6.6) / 2) + width / 2,
+              spider: ({x, width}) => ((x - (52.9) / 2) + width / 2) - 4.5,
               vampire: ({x, width}) => (x - 24 / 2) + width / 2,
               wolf: ({x, width}) => (x - 17 / 2) + width / 2,
               ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
@@ -1195,6 +1195,7 @@ export class TrinketsService {
           getContainer: function() {
             return this.container;
           },
+          uniq: true,
           attr: {
             width: {
               default: ({width}) => width * 1.5,
@@ -1204,7 +1205,7 @@ export class TrinketsService {
               skeleton: ({width}) => 75,
               yaga: ({width}) => 72,
               doctor: ({width}) => 127,
-              spider: ({width}) => 50,
+              spider: ({width}) => 75.732 * 1.2,
               vampire: ({width}) => 50,
               wolf: ({width}) => 71,
               ghost: ({width}) => 127,
@@ -1220,7 +1221,7 @@ export class TrinketsService {
               skeleton: ({height}) => 30,
               yaga: ({height}) => 29,
               doctor: ({height}) => 51,
-              spider: ({height}) => 20,
+              spider: ({height}) => 108.69 * 1.2,
               vampire: ({height}) => 20,
               wolf: ({height}) => 28,
               ghost: ({height}) => 51,
@@ -1235,7 +1236,7 @@ export class TrinketsService {
               skeleton: ({x, width}) => (x - 75 / 2) + width / 2,
               yaga: ({x, width}) => (x - 72 / 2) + width / 2,
               doctor: ({x, width}) => (x - 127 / 2) + width / 2,
-              spider: ({x, width}) => (x - 50 / 2) + width / 2,
+              spider: ({x, width}) => (x - (75.732 * 1.2) / 2) + width / 2,
               vampire: ({x, width}) => (x - 50 / 2) + width / 2,
               wolf: ({x, width}) => x + width - 67,
               ghost: ({x, width}) => (x - 127 / 2) + width / 2,
@@ -1250,7 +1251,7 @@ export class TrinketsService {
               skeleton: ({y, height}) => y + 22,
               yaga: ({y, height}) => y - 25,
               doctor: ({y, height}) => y - 30,
-              spider: ({y, height}) => y - 15,
+              spider: ({y, height}) => y - 18,
               vampire: ({y, height}) => y - 11,
               wolf: ({y, height}) => y - 10,
               yeti: ({y, height}) => y - 18,
@@ -1272,6 +1273,9 @@ export class TrinketsService {
               monster.close('tongue');
             } else if(monster.name === 'skeleton') {
               return;
+            } else if(monster.name === 'spider') {
+              monster.close('mouth');
+              monster.close('mouth-decor');
             } else {
               monster.close('mouth');
             }
@@ -1282,11 +1286,15 @@ export class TrinketsService {
               monster.open('tongue');
             } else if(monster.name === 'skeleton') {
               return;
+            } else if(monster.name === 'spider') {
+              monster.open('mouth');
+              monster.open('mouth-decor');
             } else {
               monster.open('mouth');
             }
             return;
           },
+          uniq: true,
           attr: {
             width: {
               default: ({width}) => width * 1.5,
@@ -1296,7 +1304,7 @@ export class TrinketsService {
               skeleton: ({width}) => width * 1.6,
               yaga: ({width}) => width * 12.8,
               doctor: ({width}) => width * 5,
-              spider: ({width}) => width * 6.6,
+              spider: ({width}) => 94.648,
               vampire: ({width}) => width * 2.87,
               wolf: ({width}) => width * 1.6,
               ghost: ({width}) => width * 3.5,
@@ -1312,7 +1320,7 @@ export class TrinketsService {
               skeleton: ({height}) => height * 1.6,
               yaga: ({height}) => height * 12.8,
               doctor: ({height}) => height * 5,
-              spider: ({height}) => height * 6.6,
+              spider: ({height}) => 163.921,
               vampire: ({height}) => height * 1.83,
               wolf: ({height}) => height * 1.6,
               ghost: ({height}) => height * 1.76,
@@ -1327,7 +1335,7 @@ export class TrinketsService {
               skeleton: ({x, width}) => (x - (width * 1.6) / 2) + width / 2,
               yaga: ({x, width}) => (x - (width * 12.8) / 2) + width / 2,
               doctor: ({x, width}) => (x - (width * 5) / 2) + width / 2,
-              spider: ({x, width}) => (x - (width * 6.6) / 2) + width / 2,
+              spider: ({x, width}) => (x - (94.648) / 2) + width / 2,
               vampire: ({x, width}) => (x - (width * 2.87) / 2) + width / 2,
               wolf: ({x, width}) => x - 20,
               ghost: ({x, width}) => (x - (width * 3.5) / 2) + width / 2,
@@ -1342,7 +1350,7 @@ export class TrinketsService {
               skeleton: ({y, height}) => y + 22,
               yaga: ({y, height}) => y - 30,
               doctor: ({y, height}) => y - 30,
-              spider: ({y, height}) => y - 10,
+              spider: ({y, height}) => y + 10,
               vampire: ({y, height}) => y - 30,
               wolf: ({y, height}) => y - 10,
               yeti: ({y, height}) => y,
@@ -1416,19 +1424,16 @@ export class TrinketsService {
               default: ({height}) => height * 1.5,
               mummy: ({height}) => height * 2.88,
               bed: ({height}) => 23.414,
-
             },
             x: {
               default: ({x, width}) => (x - (width * 1.5) / 2) + width / 2,
               mummy: ({x, width}) => (x - (width * 2.88) / 2) + width / 2,
               bed: ({x, width}) => ((x - (73.414) / 2) + width / 2),
-
             },
             y: {
               default: ({y, height}) => (y - (height * 1.5) / 2) + height / 2,
               mummy: ({y, height}) => (y - (height * 2.88) / 2) + height / 2,
               bed: ({y, height}) => ((y - (23.414) / 2) + height / 2) - 5,
-
             }
           }
         }
@@ -1441,32 +1446,35 @@ export class TrinketsService {
           getContainer: function() {
             return this.container;
           },
+          uniq: true,
           attr: {
             width: {
               default: ({width}) => width * 2,
               skeleton: ({width}) => width * 2.113,
               mummy: ({width}) => width * 3.82,
               bed: ({width}) => 75.79,
+              spider: ({width}) => 145.293 * 1.2,
             },
             height: {
               default: ({height}) => height * 2,
               skeleton: ({height}) => height * 2.113,
               mummy: ({height}) => height * 3.82,
               bed: ({height}) => 26.578,
+              spider: ({width}) => 123.953 * 1.2,
             },
             x: {
               default: ({x, width}) => x - width / 2,
               skeleton: ({x, width}) => (x - width / 2) - 6,
               mummy: ({x, width}) => (x - (width * 3.82) / 2) + width / 2,
               bed: ({x, width}) => (x - (75.79) / 2) + width / 2,
-
+              spider: ({x, width}) => ((x - (145.293 * 1.2) / 2) + width / 2),
             },
             y: {
               default: ({y, height}) => y - height / 2,
               skeleton: ({y, height}) => (y - height / 2) + 15,
               mummy: ({y, height}) => (y - (height * 3.82) / 2) + height / 2,
               bed: ({y, height}) => ((y - (26.578) / 2) + height / 2) + 9,
-
+              spider: ({y, height}) => y + 10,
             }
           }
         }

@@ -23,4 +23,11 @@
   & .cls-3 {
     stroke-width: 4.94px;
   }
+
+  &--spider {
+    & .cls-1,
+    & .cls-2 {stroke-width:3.78px;}
+
+    & .cls-3{stroke-width:2.42px;}
+  }
 }

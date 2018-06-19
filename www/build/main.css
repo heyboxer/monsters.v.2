@@ -26292,6 +26292,13 @@ yeti .yeti .tooth {
   fill: #b27d51;
 }
 
+.beard--spider .cls-2 {
+  fill: #fff;
+  stroke: #f24942;
+  stroke-miterlimit: 10;
+  stroke-width: 2.59px;
+}
+
 .bra .cls-1 {
   fill: #ab4e8a;
 }
@@ -27039,6 +27046,15 @@ yeti .yeti .tooth {
   stroke-width: 4.94px;
 }
 
+.glass--spider .cls-1,
+.glass--spider .cls-2 {
+  stroke-width: 3.78px;
+}
+
+.glass--spider .cls-3 {
+  stroke-width: 2.42px;
+}
+
 .heart .cls-1 {
   fill: #f24943;
 }
@@ -27459,7 +27475,7 @@ page-game .icon-close {
 page-game .btn-reset {
   position: absolute;
   top: 15px;
-  left: 60px;
+  right: 25px;
   width: 30px;
   height: 30px;
   padding: 10px;

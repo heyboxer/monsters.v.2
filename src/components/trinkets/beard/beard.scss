@@ -13,4 +13,8 @@
   & .cls-3 {
     fill: #b27d51;
   }
+
+  &--spider {
+    & .cls-2{fill:#fff;stroke:#f24942;stroke-miterlimit:10;stroke-width:2.59px;}
+  }
 }
