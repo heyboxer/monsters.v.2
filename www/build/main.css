@@ -25810,6 +25810,13 @@ bed .bed .eyeball {
   fill: #fff;
 }
 
+bed .bed .eyelash {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
 bed .bed .sheets {
   fill: #fff;
 }
@@ -26065,6 +26072,13 @@ vampire .dracula__screen {
 
 vampire .dracula .face {
   fill: #cf6cac;
+}
+
+vampire .dracula .eyelash {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
 }
 
 vampire .dracula .ear {
@@ -27053,6 +27067,14 @@ yeti .yeti .tooth {
 
 .glass--spider .cls-3 {
   stroke-width: 2.42px;
+}
+
+.glass--yeti .cls-1, .glass--yeti .cls-2 {
+  stroke-width: 3.95px;
+}
+
+.glass--yeti .cls-3 {
+  stroke-width: 2.52px;
 }
 
 .heart .cls-1 {
