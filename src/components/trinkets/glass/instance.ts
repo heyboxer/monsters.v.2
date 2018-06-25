@@ -1,5 +1,4 @@
 import { GlassComponent } from './glass';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 2,

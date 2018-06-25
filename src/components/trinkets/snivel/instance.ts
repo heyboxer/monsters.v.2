@@ -1,5 +1,5 @@
 import { SnivelComponent } from './snivel';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
+import { sadAnimBefore, sadAnimAfter } from '../lib'
 
 export default {
   id: 8,
@@ -10,6 +10,8 @@ export default {
       return this.container;
     },
     emotion: 'sad',
+    before: sadAnimBefore,
+    after: sadAnimAfter,
     uniq: true,
     attr: {
       width: {

@@ -1,5 +1,4 @@
 import { NecklaceComponent } from './necklace';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 16,

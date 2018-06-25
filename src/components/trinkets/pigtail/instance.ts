@@ -1,5 +1,4 @@
 import { PigtailComponent } from './pigtail';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 20,

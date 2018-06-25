@@ -1,5 +1,5 @@
 import { HeartComponent } from './heart';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 
 export default {
   id: 5,
@@ -8,8 +8,8 @@ export default {
     getContainer: function() {
       return null;
     },
-    before: zombieJoyAnimBefore,
-    after: zombieJoyAnimAfter,
+    before: joyfulAnimBefore,
+    after: joyfulAnimAfter,
     emotion: 'joyful',
     onScreen: true,
     multiple: true,

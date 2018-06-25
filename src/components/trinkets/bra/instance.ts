@@ -1,5 +1,4 @@
 import { BraComponent } from './bra';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 10,

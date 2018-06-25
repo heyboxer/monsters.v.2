@@ -1,5 +1,4 @@
 import { LollipopComponent } from './lollipop';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 13,

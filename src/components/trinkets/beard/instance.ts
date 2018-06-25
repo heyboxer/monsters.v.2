@@ -1,5 +1,4 @@
 import { BeardComponent } from './beard';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 6,

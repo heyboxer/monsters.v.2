@@ -1,5 +1,4 @@
 import { FlatulenceComponent } from './flatulence';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 17,

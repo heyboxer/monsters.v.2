@@ -1,5 +1,5 @@
 import { HoodComponent } from './hood';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 
 export default {
   id: 3,
@@ -12,11 +12,11 @@ export default {
     emotion: 'joyful',
     uniq: true,
     before: (monster, repo, instance) => {
-      zombieJoyAnimBefore(monster, repo, instance);
+      joyfulAnimBefore(monster, repo, instance);
       monster.open('confetti');
     },
     after: (monster, repo, instance) => {
-      zombieJoyAnimAfter(monster, repo, instance);
+      joyfulAnimAfter(monster, repo, instance);
       monster.close('confetti');
     },
     attr: {

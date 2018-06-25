@@ -95,6 +95,9 @@ var TrinketUniqModel = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterModel; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_part_directive__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -106,6 +109,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+// @ts-ignore: Unreachable code error
+
 var MonsterModel = /** @class */ (function () {
     function MonsterModel(name, element, componentFactoryResolver, injector, app) {
         this.name = name;
@@ -114,6 +120,8 @@ var MonsterModel = /** @class */ (function () {
         this.injector = injector;
         this.app = app;
         this.emotion = 'default';
+        this.isAnimating = false;
+        this.animationsArr = [];
     }
     MonsterModel.prototype.ngAfterViewInit = function () { };
     MonsterModel.prototype.getPartsArray = function () {
@@ -197,15 +205,60 @@ var MonsterModel = /** @class */ (function () {
             return _this;
         });
     };
+    MonsterModel.prototype.checkAnimationStack = function () {
+        if (this.animationsArr.length !== 0) {
+            var _a = this.animationsArr, fn = _a[0].fn, rest = _a.slice(1);
+            this.animationsArr = rest;
+            fn();
+            return true;
+        }
+    };
+    MonsterModel.prototype.loadAnimations = function (animations) {
+        var _this = this;
+        var partNames = Object.keys(animations);
+        partNames.forEach(function (name) {
+            _this.getParts(function (part) { return part.name === name; })
+                .forEach(function (part) {
+                return part.setAnimations(new __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__["a" /* AnimationSetController */](__WEBPACK_IMPORTED_MODULE_3_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(part.element), animations[name]));
+            });
+        });
+    };
+    MonsterModel.prototype.animateJoyful = function (arg, cb) {
+        return;
+    };
+    MonsterModel.prototype.animateSad = function (arg, cb) {
+        return;
+    };
+    MonsterModel.prototype.setAnimationStack = function (emotion, isForward) {
+        var _this = this;
+        if (isForward === void 0) { isForward = true; }
+        var newElement = {
+            emotion: emotion,
+            arg: isForward,
+            fn: (emotion === 'joyful' ?
+                function () { return _this.animateJoyful(isForward); } :
+                function () { return _this.animateSad(isForward); })
+        };
+        this.animationsArr = this.animationsArr.concat([newElement]);
+        return;
+    };
     MonsterModel.prototype.makeSad = function () {
+        this.animateSad(true);
         this.emotion = 'sad';
         return this;
     };
     MonsterModel.prototype.makeJoyful = function () {
+        this.animateJoyful(true);
         this.emotion = 'joyful';
         return this;
     };
-    MonsterModel.prototype.clearEmotion = function () {
+    MonsterModel.prototype.clearEmotion = function (cb) {
+        if (this.emotion === 'joyful') {
+            this.animateJoyful(false, cb);
+        }
+        else if (this.emotion === 'sad') {
+            this.animateSad(false, cb);
+        }
         this.emotion = 'default';
         return this;
     };
@@ -251,19 +304,15 @@ var MonsterModel = /** @class */ (function () {
         });
         return;
     };
-    MonsterModel.prototype.animate = function (name, cb) {
-        return false;
-    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChildren */])(__WEBPACK_IMPORTED_MODULE_1__monster_part_directive__["a" /* MonsterPartDirective */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* QueryList */])
     ], MonsterModel.prototype, "parts", void 0);
     MonsterModel = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({}),
-        __metadata("design:paramtypes", [Object, Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [Object, HTMLElement, __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
     ], MonsterModel);
     return MonsterModel;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=monster.model.js.map
@@ -290,7 +339,92 @@ var MonsterModel = /** @class */ (function () {
 /* 32 */,
 /* 33 */,
 /* 34 */,
-/* 35 */,
+/* 35 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return joyfulAnimBefore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return joyfulAnimAfter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return sadAnimBefore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return sadAnimAfter; });
+var joyfulAnimBefore = function (monster, repo, instance) {
+    var filtered = repo.getCopies().filter(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && (i.meta.emotion);
+        }
+        return i.meta.emotion;
+    });
+    var hasSad = filtered.find(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && (i.meta.emotion === 'sad');
+        }
+        return i.meta.emotion === 'sad';
+    });
+    var onMonster = monster.isOnMonster(instance.getBoundingClientRect());
+    if (monster.getEmotion() === 'default' && onMonster) {
+        monster.makeJoyful();
+    }
+    else if (hasSad) {
+        monster.setAnimationStack('joyful');
+    }
+    ;
+    return;
+};
+var joyfulAnimAfter = function (monster, repo, instance) {
+    var filtered = repo.getCopies().filter(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && i.meta.emotion;
+        }
+        return i.meta.emotion;
+    });
+    if (filtered.length === 0 && monster.getEmotion() === 'joyful') {
+        monster.clearEmotion();
+    }
+};
+var sadAnimBefore = function (monster, repo, instance) {
+    var filtered = repo.getCopies().filter(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && i.meta.emotion === 'sad';
+        }
+        return i.meta.emotion === 'sad';
+    });
+    var onMonster = monster.isOnMonster(instance.getBoundingClientRect());
+    if (filtered.length === 0 && monster.getEmotion() !== 'sad' && onMonster) {
+        monster.makeSad();
+    }
+    ;
+    return;
+};
+var sadAnimAfter = function (monster, repo, instance) {
+    var filtered = repo.getCopies().filter(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && i.meta.emotion;
+        }
+        return i.meta.emotion;
+    });
+    var filteredSad = filtered.filter(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && i.meta.emotion === 'sad';
+        }
+        return i.meta.emotion === 'sad';
+    });
+    var hasJoyful = filtered.find(function (i) {
+        if (i.meta.onScreen) {
+            return i.onMonster && (i.meta.emotion === 'joyful');
+        }
+        return i.meta.emotion === 'joyful';
+    });
+    if (filteredSad.length === 0 && monster.getEmotion() === 'sad') {
+        monster.clearEmotion(function () {
+            if (hasJoyful)
+                monster.makeJoyful();
+        });
+    }
+};
+
+//# sourceMappingURL=lib.js.map
+
+/***/ }),
 /* 36 */,
 /* 37 */,
 /* 38 */,
@@ -303,44 +437,7 @@ var MonsterModel = /** @class */ (function () {
 /* 45 */,
 /* 46 */,
 /* 47 */,
-/* 48 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return zombieJoyAnimBefore; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return zombieJoyAnimAfter; });
-var zombieJoyAnimBefore = function (monster, repo, instance) {
-    var filtered = repo.getCopies().filter(function (i) {
-        if (i.meta.onScreen) {
-            return i.onMonster && i.meta.emotion === 'joyful';
-        }
-        return i.meta.emotion === 'joyful';
-    });
-    var onMonster = monster.isOnMonster(instance.getBoundingClientRect());
-    if (monster.animate() && filtered.length === 0 && monster.getEmotion() !== 'joyful' && onMonster) {
-        monster.makeJoyful();
-        monster.makeHappy();
-    }
-    ;
-    return;
-};
-var zombieJoyAnimAfter = function (monster, repo, instance) {
-    var filtered = repo.getCopies().filter(function (i) {
-        if (i.meta.onScreen) {
-            return i.onMonster && i.meta.emotion === 'joyful';
-        }
-        return i.meta.emotion === 'joyful';
-    });
-    if (monster.animate() && filtered.length === 0 && monster.getEmotion() === 'joyful') {
-        monster.clearEmotion();
-        var smile = monster.animate('smile')(false)();
-        var smileLids = monster.animate('smileLids')(false)();
-    }
-};
-
-//# sourceMappingURL=lib.js.map
-
-/***/ }),
+/* 48 */,
 /* 49 */,
 /* 50 */,
 /* 51 */,
@@ -452,8 +549,8 @@ var ElementComponentModel = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(334);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(202);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -788,11 +885,11 @@ webpackEmptyAsyncContext.id = 114;
 
 var map = {
 	"../pages/game/game.module": [
-		372,
+		371,
 		1
 	],
 	"../pages/home/home.module": [
-		373,
+		372,
 		0
 	]
 };
@@ -2198,10 +2295,7 @@ var MonstersService = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZombieComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animations__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(329);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2212,14 +2306,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
-};
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2232,136 +2318,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-// @ts-ignore: Unreachable code error
-
-var aniamtions = function (instance) {
-    var _this = this;
-    var root = __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(instance);
-    var config = {
-        pupilL: { begin: 74.18, end: 64.18 },
-        pupilR: { begin: 142.93, end: 132.93 },
-        lids: { begin: 64, end: 97.54 }
-    };
-    return {
-        getRoot: function () {
-            return root;
-        },
-        eyes: function (cb) {
-            if (cb === void 0) { cb = function () { }; }
-            var eyesMovement = _this.snap.eyesMovement();
-            var blink = _this.snap.blink();
-            var timeLine = function () {
-                setTimeout(blink, 0);
-                setTimeout(function () {
-                    eyesMovement(cb);
-                }, 0);
-            };
-            timeLine();
-            return timeLine;
-        },
-        blink: function (cb) {
-            if (cb === void 0) { cb = function () { }; }
-            var lids = _this.getParts(function (p) { return p.name === 'lid'; })
-                .map(function (_a) {
-                var element = _a.element;
-                return __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(element);
-            });
-            return function () {
-                lids.forEach(function (l) {
-                    l.animate({ cy: config.lids.end, }, 42, function () {
-                        l.animate({ cy: config.lids.begin, }, 84, cb);
-                    });
-                });
-            };
-        },
-        eyesMovement: function (cb) {
-            if (cb === void 0) { cb = function () { }; }
-            var pupils = _this.getParts(function (p) { return p.name === 'pupil'; })
-                .reduce(function (acc, _a) {
-                var mod = _a.mod, element = _a.element;
-                return __assign({}, acc, (_b = {}, _b[mod] = __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(element), _b));
-                var _b;
-            }, {});
-            var animatePupilRightForward = function () { return pupils.right.animate({ cx: config.pupilR.end, }, 100); };
-            var animatePupilLeftForward = function () { return pupils.left.animate({ cx: config.pupilL.end, }, 100); };
-            var animatePupilRightBackward = function () { return pupils.right.animate({ cx: config.pupilR.begin, }, 250, cb); };
-            var animatePupilLeftBackward = function () { return pupils.left.animate({ cx: config.pupilL.begin, }, 250, cb); };
-            return function () {
-                animatePupilRightForward();
-                animatePupilLeftForward();
-                setTimeout(function () {
-                    animatePupilRightBackward();
-                    animatePupilLeftBackward();
-                }, 588);
-            };
-        },
-        smile: function (arg) {
-            var el = _this.getPart(function (p) { return p.name == 'mouth' && p.type == "element"; }).element;
-            var mouth = __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(el);
-            var value = 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z';
-            var smileForward = function (cb) {
-                mouth.attr({ class: 'fadeIn ' });
-                mouth.animate({
-                    d: 'M134.5,197.76c22.39-6.56,37.32-22.88,33.34-36.45L86.76,185.05C90.74,198.63,112.11,204.31,134.5,197.76Z',
-                }, 200, cb);
-                return smileBackward;
-            };
-            var smileBackward = function (cb) {
-                mouth.attr({ class: 'fadeOut' });
-                mouth.animate({ d: value, }, 200, cb);
-                return smileForward;
-            };
-            return arg ? smileForward : smileBackward;
-        },
-        smileLids: function (arg) {
-            var lids = _this.getParts(function (p) { return p.name === 'lid'; })
-                .map(function (_a) {
-                var element = _a.element;
-                return __WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(element);
-            });
-            var config = { original: 64, end: 118, begin: 132 };
-            var smileForward = function (cb) {
-                if (cb === void 0) { cb = function () { }; }
-                lids.forEach(function (l) {
-                    l.attr({ cy: config.begin });
-                    l.animate({ cy: config.end }, 200, cb);
-                });
-                return smileBackward;
-            };
-            var smileBackward = function (cb) {
-                if (cb === void 0) { cb = function () { }; }
-                lids.forEach(function (l) {
-                    l.animate({ cy: config.begin }, 200, function () {
-                        l.attr({ cy: config.original });
-                        cb();
-                        return;
-                    });
-                });
-            };
-            return arg ? smileForward : smileBackward;
-        }
-    };
-};
 var ZombieComponent = /** @class */ (function (_super) {
     __extends(ZombieComponent, _super);
     function ZombieComponent(el, renderer, componentFactoryResolver, injector, app) {
         var _this = _super.call(this, 'zombie', el.nativeElement, componentFactoryResolver, injector, app) || this;
         _this.renderer = renderer;
-        _this.isAnimating = false;
-        _this.animationsArr = [];
         return _this;
     }
     ZombieComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
-        this.snap = aniamtions.bind(this)(this.getRoot().element);
-        this.loadAnimations(__WEBPACK_IMPORTED_MODULE_3__animations__["a" /* animations */]);
+        this.loadAnimations(__WEBPACK_IMPORTED_MODULE_2__animations__["a" /* animations */]);
         var pupils = this.getParts(function (p) { return p.name === 'pupil'; });
         var lids = this.getParts(function (p) { return p.name === 'lid'; });
         var mouth = this.getPart(function (p) { return p.name == 'mouth' && p.type == 'element'; });
         var defaultSeq = function () {
+            if (_this.checkAnimationStack())
+                return;
             _this.isAnimating = true;
-            __WEBPACK_IMPORTED_MODULE_3__animations__["b" /* sequances */].default(pupils, lids, function () {
+            __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].default(pupils, lids, function () {
                 _this.isAnimating = false;
                 _this.checkAnimationStack();
                 return;
@@ -2375,26 +2349,7 @@ var ZombieComponent = /** @class */ (function (_super) {
             return;
         }, 3000);
     };
-    ZombieComponent.prototype.checkAnimationStack = function () {
-        if (this.animationsArr.length !== 0.) {
-            if (this.isAnimating)
-                return true;
-            var _a = this.animationsArr, fn = _a[0].fn, rest = _a.slice(1);
-            this.animationsArr = rest;
-            return fn();
-        }
-    };
-    ZombieComponent.prototype.loadAnimations = function (animations) {
-        var _this = this;
-        var partNames = Object.keys(animations);
-        partNames.forEach(function (name) {
-            _this.getParts(function (part) { return part.name === name; })
-                .forEach(function (part) {
-                return part.setAnimations(new __WEBPACK_IMPORTED_MODULE_2__animation_animation_set_controller__["a" /* AnimationSetController */](__WEBPACK_IMPORTED_MODULE_4_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(part.element), animations[name]));
-            });
-        });
-    };
-    ZombieComponent.prototype.makeHappy = function (arg) {
+    ZombieComponent.prototype.animateJoyful = function (arg) {
         var _this = this;
         if (arg === void 0) { arg = true; }
         if (this.isAnimating) {
@@ -2405,28 +2360,49 @@ var ZombieComponent = /** @class */ (function (_super) {
                 this.animationsArr.push({
                     emotion: 'joyful',
                     arg: arg,
-                    fn: function () { return _this.makeHappy(arg); },
+                    fn: function () { return _this.animateJoyful(arg); },
                 }) : null;
         }
         this.isAnimating = true;
         var lids = this.getParts(function (p) { return p.name === 'lid'; });
         var mouth = this.getPart(function (p) { return p.name == 'mouth' && p.type == 'element'; });
-        __WEBPACK_IMPORTED_MODULE_3__animations__["b" /* sequances */].joyful(lids, mouth, arg, function () {
+        __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].joyful(lids, mouth, arg, function () {
             _this.isAnimating = false;
         });
         return;
     };
-    ZombieComponent.prototype.animate = function (name) {
-        return name ? this.snap[name] : true;
+    ZombieComponent.prototype.animateSad = function (arg, cb) {
+        var _this = this;
+        if (arg === void 0) { arg = true; }
+        if (this.isAnimating) {
+            return !this.animationsArr.find(function (_a) {
+                var emotion = _a.emotion, a = _a.arg;
+                return emotion === 'sad' && a === arg;
+            }) ?
+                this.animationsArr.push({
+                    emotion: 'sad',
+                    arg: arg,
+                    fn: function () { return _this.animateSad(arg, cb); },
+                }) : null;
+        }
+        this.isAnimating = true;
+        var lids = this.getParts(function (p) { return p.name === 'lid'; });
+        var mouth = this.getPart(function (p) { return p.name == 'mouth' && p.type == 'element'; });
+        __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].sad(lids, mouth, arg, function () {
+            _this.isAnimating = false;
+            if (cb)
+                cb();
+        });
+        return;
     };
     ZombieComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'zombie',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/'<svg monster-part part-type="root" width="100%" height="100%" preserveAspectRatio="xMaxYMax meet" viewBox="-20 -30 273.58 339.24" class="zombie svg-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <svg monster-part part-name="confetti" part-type="group" part-hidden="true" visibility="hidden" width="250" height="250" y="-10" x="-25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.39 251.69">\n    <circle class="confetti--color--pink" cx="104.51" cy="15.18" r="4.97" transform="translate(12.76 67.46) rotate(-37.94)"/>\n    <circle class="confetti--color--pink" cx="9.18" cy="147.18" r="4.97" transform="translate(-88.55 36.75) rotate(-37.94)"/>\n    <circle class="confetti--color--pink" cx="219.18" cy="73.18" r="4.97" transform="translate(1.33 150.22) rotate(-37.94)"/>\n    <circle class="confetti--color--pink" cx="238.51" cy="133.85" r="4.97" transform="translate(-31.89 174.93) rotate(-37.94)"/>\n    <circle class="confetti--color--pink" cx="37.85" cy="246.51" r="4.97" transform="translate(-143.56 75.37) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="66.6" cy="20.9" r="4.97" transform="translate(1.23 45.36) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="15.18" cy="71.18" r="4.97" transform="translate(-40.55 24.38) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="23.76" cy="125.46" r="4.97" transform="translate(-72.11 41.12) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="13.76" cy="187.46" r="4.97" transform="translate(-112.35 48.08) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="244.43" cy="185.46" r="4.97" transform="translate(-62.37 189.48) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="235.76" cy="48.79" r="4.97" transform="translate(19.83 155.26) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="196.43" cy="24.79" r="4.97" transform="translate(26.27 126.01) rotate(-37.94)"/>\n    <circle class="confetti--color--blue" cx="125.85" cy="10.51" r="7.18" transform="translate(20.13 79.59) rotate(-37.94)"/>\n    <circle class="confetti--color--blue" cx="44.51" cy="7.18" r="7.18" transform="translate(4.99 28.88) rotate(-37.94)"/>\n    <circle class="confetti--color--blue" cx="7.18" cy="212.51" r="7.18" transform="translate(-129.14 49.33) rotate(-37.94)"/>\n    <circle class="confetti--color--blue" cx="224.51" cy="121.85" r="7.18" transform="translate(-27.47 163.79) rotate(-37.94)"/>\n    <circle cx="87.85" cy="45.18" r="7.18" transform="translate(-9.21 63.56) rotate(-37.94)"/>\n    <circle cx="21.18" cy="100.51" r="7.18" transform="translate(-57.32 34.26) rotate(-37.94)"/>\n    <circle cx="29.85" cy="215.18" r="7.18" transform="translate(-125.99 63.83) rotate(-37.94)"/>\n    <circle cx="20.51" cy="244.51" r="7.18" transform="translate(-146 64.29) rotate(-37.94)"/>\n    <circle cx="220.51" cy="23.85" r="7.18" transform="translate(31.94 140.62) rotate(-37.94)"/>\n    <circle cx="199.85" cy="53.85" r="7.18" transform="translate(9.13 134.25) rotate(-37.94)"/>\n    <circle cx="233.85" cy="99.18" r="7.18" transform="translate(-11.56 164.74) rotate(-37.94)"/>\n    <circle cx="231.18" cy="168.51" r="7.18" transform="translate(-54.75 177.75) rotate(-37.94)"/>\n  </svg>\n\n      <g monster-part part-name="outer" part-type="group" class="">\n        <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n        <path monster-part part-name="body" part-type="group" part-outline="true" class="body" d="M260.9,280.8c0-64.94-53.13-118.07-118.07-118.07h0c-64.94,0-118.07,53.13-118.07,118.07V539.15H260.9Z"></path>\n        <g monster-part part-group="body" part-type="container"></g>\n        <g class="head" monster-part part-outline="true">\n          <g monster-part part-name="head-figure" part-type="group" class="head-figure">\n            <g monster-part part-name="hair" part-type="group"  class="hair">\n              <polygon points="132.33 -0.05 96.08 48.13 87.64 48.13 79.21 48.13 132.33 -0.05" class="hair-part"></polygon>\n              <polygon points="145.47 -0.05 109.21 48.13 100.78 48.13 92.34 48.13 145.47 -0.05" class="hair-part"></polygon>\n              <polygon points="158.6 -0.05 122.35 48.13 113.91 48.13 105.48 48.13 158.6 -0.05" class="hair-part"></polygon>\n            </g>\n            <rect x="18.13" y="47.84" width="168.14" height="168.14" rx="52.98" ry="52.98" class="face"></rect>\n          </g>\n\n          <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" class="ears">\n            <ellipse xmlns="http://www.w3.org/2000/svg" class="ear" cx="190" cy="127.84" rx="11" ry="13.33"/>\n          </g>\n          <g monster-part part-group="ears" part-type="container"></g>\n\n          <g monster-part part-name="eyes" part-type="group" class="eyes">\n            <g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">\n              <ellipse class="eyeball" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n              <circle monster-part part-name="pupil" part-name-mod="left" part-type="element" part-group="eye" class="pupil pupil--left" cx="74.18" cy="97.32" r="8.32"></circle>\n            </g>\n            <g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--right">\n              <ellipse class="eyeball" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n              <circle monster-part part-name="pupil" part-name-mod="right" part-type="element" part-group="eye" class="pupil pupil--right" cx="142.93" cy="97.32" r="8.32"></circle>\n            </g>\n          </g>\n\n          <svg width="151.25" height="27.66" x="25" y="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.93 26.58">\n            <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n              <line class="eyelash" x1="0.71" y1="10.71" x2="15.87" y2="25.87"/>\n              <line class="eyelash" x1="2.37" y1="5.71" x2="17.54" y2="20.87"/>\n              <line class="eyelash" x1="4.04" y1="0.71" x2="19.21" y2="15.87"/>\n              <line class="eyelash" x1="119.72" y1="15.87" x2="134.89" y2="0.71"/>\n              <line class="eyelash" x1="121.39" y1="20.87" x2="136.55" y2="5.71"/>\n              <line class="eyelash" x1="123.05" y1="25.87" x2="138.22" y2="10.71"/>\n            </g>\n          </svg>\n\n          <g monster-part part-name="eyes-animation">\n            <clipPath id="eyeball--left-mask">\n              <ellipse class="" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n            </clipPath>\n            <ellipse monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="66.08" cy="64" rx="27.81" ry="16.86"></ellipse>\n\n            <clipPath id="eyeball--right-mask">\n              <ellipse class="" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n            </clipPath>\n            <ellipse monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="135.7" cy="64" rx="27.81" ry="16.86"></ellipse>\n          </g>\n          <g monster-part part-group="eyes" part-type="container"></g>\n          <g monster-part part-name="mouth" part-type="group">\n            <path monster-part part-name="mouth" part-type="element" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z" class="mouth"></path>\n          </g>\n          <g class="steams">\n            <g class="steam steam--left">\n             <line class="steam-part" x1="40.51" y1="170.93" x2="74.57" y2="204.99"></line>\n             <line class="steam-part" x1="50.73" y1="173.71" x2="43.3" y2="181.14"></line>\n             <line class="steam-part" x1="55.99" y1="178.98" x2="48.56" y2="186.41"></line>\n             <line class="steam-part" x1="61.26" y1="184.24" x2="53.84" y2="191.67"></line>\n             <line class="steam-part" x1="66.52" y1="189.5" x2="59.09" y2="196.94"></line>\n             <line class="steam-part" x1="71.79" y1="194.77" x2="64.35" y2="202.2"></line>\n            </g>\n\n            <g monster-part part-group="mouth" part-type="container"></g>\n\n            <g class="steam steam--right">\n              <line x1="128.09" y1="159.01" x2="162.15" y2="124.95" class="steam-part"></line>\n              <line x1="130.88" y1="148.79" x2="138.31" y2="156.22" class="steam-part"></line>\n              <line x1="136.14" y1="143.53" x2="143.57" y2="150.96" class="steam-part"></line>\n              <line x1="141.4" y1="138.26" x2="148.84" y2="145.69" class="steam-part"></line>\n              <line x1="146.67" y1="133" x2="154.1" y2="140.43" class="steam-part"></line>\n              <line x1="151.93" y1="127.74" x2="159.36" y2="135.17" class="steam-part"></line>\n            </g>\n          </g>\n          <g monster-part part-group="nose" part-type="container"></g>\n          <g monster-part part-name="nose" part-type="group">\n            <path monster-part part-outline="true" d="M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z" class="nose"></path>\n          </g>\n          <g monster-part part-group="head-figure" part-type="container"></g>\n\n        </g>\n\n        <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n      </g>\n    </svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/
+            selector: 'zombie',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/'<svg monster-part part-type="root" width="100%" height="100%" preserveAspectRatio="xMaxYMax meet" viewBox="-20 -30 273.58 339.24" class="zombie svg-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <svg monster-part part-name="confetti" part-type="group" part-hidden="true" visibility="hidden" width="250" height="250" y="-10" x="-25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.39 251.69">\n    <circle class="confetti--color--pink" cx="104.51" cy="15.18" r="4.97" transform="translate(12.76 67.46) rotate(-37.94)"/>\n    <circle class="confetti--color--pink" cx="9.18" cy="147.18" r="4.97" transform="translate(-88.55 36.75) rotate(-37.94)"/>\n    <circle class="confetti--color--pink" cx="219.18" cy="73.18" r="4.97" transform="translate(1.33 150.22) rotate(-37.94)"/>\n    <circle class="confetti--color--pink" cx="238.51" cy="133.85" r="4.97" transform="translate(-31.89 174.93) rotate(-37.94)"/>\n    <circle class="confetti--color--pink" cx="37.85" cy="246.51" r="4.97" transform="translate(-143.56 75.37) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="66.6" cy="20.9" r="4.97" transform="translate(1.23 45.36) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="15.18" cy="71.18" r="4.97" transform="translate(-40.55 24.38) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="23.76" cy="125.46" r="4.97" transform="translate(-72.11 41.12) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="13.76" cy="187.46" r="4.97" transform="translate(-112.35 48.08) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="244.43" cy="185.46" r="4.97" transform="translate(-62.37 189.48) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="235.76" cy="48.79" r="4.97" transform="translate(19.83 155.26) rotate(-37.94)"/>\n    <circle class="confetti--color--yellow" cx="196.43" cy="24.79" r="4.97" transform="translate(26.27 126.01) rotate(-37.94)"/>\n    <circle class="confetti--color--blue" cx="125.85" cy="10.51" r="7.18" transform="translate(20.13 79.59) rotate(-37.94)"/>\n    <circle class="confetti--color--blue" cx="44.51" cy="7.18" r="7.18" transform="translate(4.99 28.88) rotate(-37.94)"/>\n    <circle class="confetti--color--blue" cx="7.18" cy="212.51" r="7.18" transform="translate(-129.14 49.33) rotate(-37.94)"/>\n    <circle class="confetti--color--blue" cx="224.51" cy="121.85" r="7.18" transform="translate(-27.47 163.79) rotate(-37.94)"/>\n    <circle cx="87.85" cy="45.18" r="7.18" transform="translate(-9.21 63.56) rotate(-37.94)"/>\n    <circle cx="21.18" cy="100.51" r="7.18" transform="translate(-57.32 34.26) rotate(-37.94)"/>\n    <circle cx="29.85" cy="215.18" r="7.18" transform="translate(-125.99 63.83) rotate(-37.94)"/>\n    <circle cx="20.51" cy="244.51" r="7.18" transform="translate(-146 64.29) rotate(-37.94)"/>\n    <circle cx="220.51" cy="23.85" r="7.18" transform="translate(31.94 140.62) rotate(-37.94)"/>\n    <circle cx="199.85" cy="53.85" r="7.18" transform="translate(9.13 134.25) rotate(-37.94)"/>\n    <circle cx="233.85" cy="99.18" r="7.18" transform="translate(-11.56 164.74) rotate(-37.94)"/>\n    <circle cx="231.18" cy="168.51" r="7.18" transform="translate(-54.75 177.75) rotate(-37.94)"/>\n  </svg>\n\n      <g monster-part part-name="outer" part-type="group" class="">\n        <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n        <path monster-part part-name="body" part-type="group" part-outline="true" class="body" d="M260.9,280.8c0-64.94-53.13-118.07-118.07-118.07h0c-64.94,0-118.07,53.13-118.07,118.07V539.15H260.9Z"></path>\n        <g monster-part part-group="body" part-type="container"></g>\n        <g class="head" monster-part part-outline="true">\n          <g monster-part part-name="head-figure" part-type="group" class="head-figure">\n            <g monster-part part-name="hair" part-type="group"  class="hair">\n              <polygon points="132.33 -0.05 96.08 48.13 87.64 48.13 79.21 48.13 132.33 -0.05" class="hair-part"></polygon>\n              <polygon points="145.47 -0.05 109.21 48.13 100.78 48.13 92.34 48.13 145.47 -0.05" class="hair-part"></polygon>\n              <polygon points="158.6 -0.05 122.35 48.13 113.91 48.13 105.48 48.13 158.6 -0.05" class="hair-part"></polygon>\n            </g>\n            <rect x="18.13" y="47.84" width="168.14" height="168.14" rx="52.98" ry="52.98" class="face"></rect>\n          </g>\n\n          <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" class="ears">\n            <ellipse xmlns="http://www.w3.org/2000/svg" class="ear" cx="190" cy="127.84" rx="11" ry="13.33"/>\n          </g>\n          <g monster-part part-group="ears" part-type="container"></g>\n\n          <g monster-part part-name="eyes" part-type="group" class="eyes">\n            <g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">\n              <ellipse class="eyeball" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n              <circle monster-part part-name="pupil" part-name-mod="left" part-type="element" part-group="eye" class="pupil pupil--left" cx="74.18" cy="97.32" r="8.32"></circle>\n            </g>\n            <g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--right">\n              <ellipse class="eyeball" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n              <circle monster-part part-name="pupil" part-name-mod="right" part-type="element" part-group="eye" class="pupil pupil--right" cx="142.93" cy="97.32" r="8.32"></circle>\n            </g>\n          </g>\n\n          <g monster-part part-name="eyes-animation">\n            <clipPath id="eyeball--left-mask">\n              <ellipse class="" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n            </clipPath>\n            <ellipse monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="66.08" cy="64" rx="27.81" ry="16.86"></ellipse>\n\n            <clipPath id="eyeball--right-mask">\n              <ellipse class="" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n            </clipPath>\n            <ellipse monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="135.7" cy="64" rx="27.81" ry="16.86"></ellipse>\n          </g>\n\n          <g monster-part part-name="sad-eyes" part-type="group" part-hidden="true" visibility="hidden" class="eyes">\n            <g class="eye eye--left">\n              <ellipse class="eyeball" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n              <circle class="pupil pupil--left" cx="74.18" cy="97.32" r="8.32"></circle>\n            </g>\n            <g class="eye eye--right">\n              <ellipse class="eyeball" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n              <circle class="pupil pupil--right" cx="142.93" cy="97.32" r="8.32"></circle>\n            </g>\n\n            <clipPath id="eyeball--left-mask">\n              <ellipse class="" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n            </clipPath>\n            <ellipse clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="66.08" cy="118" rx="27.81" ry="16.86"></ellipse>\n\n            <clipPath id="eyeball--right-mask">\n              <ellipse class="" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>\n            </clipPath>\n            <ellipse clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="135.7" cy="118" rx="27.81" ry="16.86"></ellipse>\n          </g>\n\n          <svg width="151.25" height="27.66" x="25" y="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.93 26.58">\n            <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n              <line class="eyelash" x1="0.71" y1="10.71" x2="15.87" y2="25.87"/>\n              <line class="eyelash" x1="2.37" y1="5.71" x2="17.54" y2="20.87"/>\n              <line class="eyelash" x1="4.04" y1="0.71" x2="19.21" y2="15.87"/>\n              <line class="eyelash" x1="119.72" y1="15.87" x2="134.89" y2="0.71"/>\n              <line class="eyelash" x1="121.39" y1="20.87" x2="136.55" y2="5.71"/>\n              <line class="eyelash" x1="123.05" y1="25.87" x2="138.22" y2="10.71"/>\n            </g>\n          </svg>\n\n          <g monster-part part-group="eyes" part-type="container"></g>\n          <g monster-part part-name="mouth" part-type="group">\n            <path monster-part part-name="mouth" part-type="element" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z" class="mouth"></path>\n          </g>\n          <g class="steams">\n            <g class="steam steam--left">\n             <line class="steam-part" x1="40.51" y1="170.93" x2="74.57" y2="204.99"></line>\n             <line class="steam-part" x1="50.73" y1="173.71" x2="43.3" y2="181.14"></line>\n             <line class="steam-part" x1="55.99" y1="178.98" x2="48.56" y2="186.41"></line>\n             <line class="steam-part" x1="61.26" y1="184.24" x2="53.84" y2="191.67"></line>\n             <line class="steam-part" x1="66.52" y1="189.5" x2="59.09" y2="196.94"></line>\n             <line class="steam-part" x1="71.79" y1="194.77" x2="64.35" y2="202.2"></line>\n            </g>\n\n            <g monster-part part-group="mouth" part-type="container"></g>\n\n            <g class="steam steam--right">\n              <line x1="128.09" y1="159.01" x2="162.15" y2="124.95" class="steam-part"></line>\n              <line x1="130.88" y1="148.79" x2="138.31" y2="156.22" class="steam-part"></line>\n              <line x1="136.14" y1="143.53" x2="143.57" y2="150.96" class="steam-part"></line>\n              <line x1="141.4" y1="138.26" x2="148.84" y2="145.69" class="steam-part"></line>\n              <line x1="146.67" y1="133" x2="154.1" y2="140.43" class="steam-part"></line>\n              <line x1="151.93" y1="127.74" x2="159.36" y2="135.17" class="steam-part"></line>\n            </g>\n          </g>\n          <g monster-part part-group="nose" part-type="container"></g>\n          <g monster-part part-name="nose" part-type="group">\n            <path monster-part part-outline="true" d="M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z" class="nose"></path>\n          </g>\n          <g monster-part part-group="head-figure" part-type="container"></g>\n\n        </g>\n\n        <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n      </g>\n    </svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/zombie/zombie.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
     ], ZombieComponent);
     return ZombieComponent;
-    var _a, _b, _c, _d, _e;
 }(__WEBPACK_IMPORTED_MODULE_1__monster_model__["a" /* MonsterModel */]));
 
 //# sourceMappingURL=zombie.js.map
@@ -3043,7 +3019,7 @@ var GhostComponent = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameFinistStateMachine; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
 
 var GameFinistStateMachine = /** @class */ (function () {
@@ -3139,7 +3115,7 @@ var GameFinistStateMachine = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnersHandler; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(333);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -3648,10 +3624,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(363);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(370);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_game_game__ = __webpack_require__(103);
@@ -3844,7 +3820,7 @@ var TrinketsService = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hood__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(35);
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -3858,11 +3834,11 @@ var TrinketsService = /** @class */ (function () {
         emotion: 'joyful',
         uniq: true,
         before: function (monster, repo, instance) {
-            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["b" /* zombieJoyAnimBefore */])(monster, repo, instance);
+            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["b" /* joyfulAnimBefore */])(monster, repo, instance);
             monster.open('confetti');
         },
         after: function (monster, repo, instance) {
-            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["a" /* zombieJoyAnimAfter */])(monster, repo, instance);
+            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["a" /* joyfulAnimAfter */])(monster, repo, instance);
             monster.close('confetti');
         },
         attr: {
@@ -4130,7 +4106,7 @@ var ElementModel = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__heart__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(35);
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -4140,8 +4116,8 @@ var ElementModel = /** @class */ (function () {
         getContainer: function () {
             return null;
         },
-        before: __WEBPACK_IMPORTED_MODULE_1__lib__["b" /* zombieJoyAnimBefore */],
-        after: __WEBPACK_IMPORTED_MODULE_1__lib__["a" /* zombieJoyAnimAfter */],
+        before: __WEBPACK_IMPORTED_MODULE_1__lib__["b" /* joyfulAnimBefore */],
+        after: __WEBPACK_IMPORTED_MODULE_1__lib__["a" /* joyfulAnimAfter */],
         emotion: 'joyful',
         onScreen: true,
         multiple: true,
@@ -4155,6 +4131,8 @@ var ElementModel = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__snivel__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(35);
+
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     id: 8,
@@ -4165,6 +4143,8 @@ var ElementModel = /** @class */ (function () {
             return this.container;
         },
         emotion: 'sad',
+        before: __WEBPACK_IMPORTED_MODULE_1__lib__["d" /* sadAnimBefore */],
+        after: __WEBPACK_IMPORTED_MODULE_1__lib__["c" /* sadAnimAfter */],
         uniq: true,
         attr: {
             width: {
@@ -4918,6 +4898,8 @@ var ElementModel = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mole__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(35);
+
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     id: 4,
@@ -4925,22 +4907,13 @@ var ElementModel = /** @class */ (function () {
     meta: {
         onScreen: true,
         multiple: true,
+        emotion: 'sad',
         random: true,
         getContainer: function () {
             return null;
         },
-        before: function (monster, items, instance) {
-            if (monster.animate() && monster.isOnMonster(instance.getBoundingClientRect())) {
-                var smile = monster.animate('smile')(true)();
-                var smileLids = monster.animate('smileLids')(true)();
-            }
-        },
-        after: function (monster, items) {
-            if (monster.animate()) {
-                var smile = monster.animate('smile')(false)();
-                var smileLids = monster.animate('smileLids')(false)();
-            }
-        },
+        before: __WEBPACK_IMPORTED_MODULE_1__lib__["d" /* sadAnimBefore */],
+        after: __WEBPACK_IMPORTED_MODULE_1__lib__["c" /* sadAnimAfter */],
     }
 });
 //# sourceMappingURL=instance.js.map
@@ -6006,7 +5979,7 @@ var TrinketRandomModel = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wig__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(35);
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -6020,13 +5993,13 @@ var TrinketRandomModel = /** @class */ (function (_super) {
         uniq: true,
         emotion: 'joyful',
         before: function (monster, repo, instance) {
-            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["b" /* zombieJoyAnimBefore */])(monster, repo, instance);
+            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["b" /* joyfulAnimBefore */])(monster, repo, instance);
             if (monster.name === 'zombie') {
                 monster.close('hair');
             }
         },
         after: function (monster, repo, instance) {
-            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["a" /* zombieJoyAnimAfter */])(monster, repo, instance);
+            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["a" /* joyfulAnimAfter */])(monster, repo, instance);
             if (monster.name === 'zombie') {
                 monster.open('hair');
             }
@@ -6259,8 +6232,6 @@ var TrinketRandomModel = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lips__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(48);
-
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     id: 12,
@@ -6278,7 +6249,7 @@ var TrinketRandomModel = /** @class */ (function (_super) {
                 monster.open('hidden-jaw');
             }
             if (monster.name === 'zombie') {
-                Object(__WEBPACK_IMPORTED_MODULE_1__lib__["b" /* zombieJoyAnimBefore */])(monster, repo, instance);
+                monster.open('sad-eyes');
             }
             if (monster.name === 'mummy') {
                 monster.open('mouth-fraud');
@@ -6308,7 +6279,7 @@ var TrinketRandomModel = /** @class */ (function (_super) {
                 monster.close('hidden-jaw');
             }
             if (monster.name === 'zombie') {
-                Object(__WEBPACK_IMPORTED_MODULE_1__lib__["a" /* zombieJoyAnimAfter */])(monster, repo, instance);
+                monster.close('sad-eyes');
             }
             if (monster.name === 'mummy') {
                 monster.close('mouth-fraud');
@@ -6801,6 +6772,8 @@ var TrinketRandomModel = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__egg__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(35);
+
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     id: 14,
@@ -6811,10 +6784,9 @@ var TrinketRandomModel = /** @class */ (function (_super) {
             return this.container;
         },
         uniq: true,
-        before: function (monster, repo, instance) {
-        },
-        after: function (monster, repo, instance) {
-        },
+        emotion: 'sad',
+        before: __WEBPACK_IMPORTED_MODULE_1__lib__["d" /* sadAnimBefore */],
+        after: __WEBPACK_IMPORTED_MODULE_1__lib__["c" /* sadAnimAfter */],
         attr: {
             width: {
                 default: function (_a) {
@@ -8674,14 +8646,178 @@ var AnimationModel = /** @class */ (function () {
 
 /***/ }),
 /* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */
+/* 329 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return animations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sequances; });
+// {original: 64, end: 118, begin: 132};
+// l.attr({cy: config.begin});
+// l.animate({cy: config.end}, 200, cb);
+// l.animate({cy: config.begin}, 200, () => {
+//   l.attr({cy: config.original});
+//   cb();
+//   return;
+// });
+var animations = {
+    lid: {
+        close: function (l, cb) {
+            l.attr({ cy: 64 });
+            l.animate({ cy: 97.54, }, 42, cb);
+        },
+        open: function (l, cb) {
+            l.attr({ cy: 97.54 });
+            l.animate({ cy: 64, }, 84, cb);
+        },
+        smileIn: function (l, cb) {
+            l.attr({ cy: 132 });
+            l.animate({ cy: 118 }, 200, cb);
+        },
+        smileOut: function (l, cb) {
+            l.attr({ cy: 118 }),
+                l.animate({ cy: 132 }, 200, function () {
+                    l.attr({ cy: 64 });
+                    return cb();
+                });
+        },
+        sadIn: function (l, cb) {
+            l.attr({ cy: 64 });
+            l.animate({ cy: 79, }, 200, cb);
+        },
+        sadOut: function (l, cb) {
+            l.attr({ cy: 79 });
+            l.animate({ cy: 64, }, 200, cb);
+        }
+    },
+    pupil: {
+        left: function (instance, cb) {
+            var cx = instance.attr().cx;
+            instance.animate({ cx: Number(cx) - 10 }, 100, cb);
+            return;
+        },
+        right: function (instance, cb) {
+            var cx = instance.attr().cx;
+            instance.animate({ cx: Number(cx) + 10 }, 250, cb);
+            return;
+        }
+    },
+    mouth: {
+        smileIn: function (instance, cb) {
+            instance.attr({ class: 'fadeIn ' });
+            instance.animate({
+                d: 'M134.5,197.76c22.39-6.56,37.32-22.88,33.34-36.45L86.76,185.05C90.74,198.63,112.11,204.31,134.5,197.76Z',
+            }, 200, cb);
+        },
+        smileOut: function (instance, cb) {
+            instance.attr({ class: 'fadeOut' });
+            instance.animate({ d: 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z', }, 200, cb);
+        },
+        sadIn: function (instance, cb) {
+            instance.attr({ class: 'fadeOut' });
+            instance.animate({
+                d: 'M107.57,177.68c-14.42,5.29-23.51,16.66-20.3,25.4l52.21-19.15C136.27,175.19,122,172.39,107.57,177.68Z',
+            }, 200, cb);
+        },
+        sadOut: function (instance, cb) {
+            instance.animate({ d: 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z', }, 200, cb);
+        },
+    }
+};
+var sequances = {
+    joyful: function (lids, mouth, isForward, cb) {
+        var config = {
+            lids: isForward ? 'smileIn' : 'smileOut',
+            mouth: isForward ? 'smileIn' : 'smileOut',
+        };
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 2) {
+                return cb();
+            }
+            return;
+        };
+        lids[0].animations.onDisengage(afterFinish);
+        lids.forEach(function (l) {
+            l.animations.run(config.lids);
+        });
+        mouth.animations.onDisengage(afterFinish);
+        mouth.animations.run(config.mouth);
+        return;
+    },
+    sad: function (lids, mouth, isForward, cb) {
+        var config = {
+            lids: isForward ? 'sadIn' : 'sadOut',
+            mouth: isForward ? 'sadIn' : 'sadOut',
+        };
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 2) {
+                return cb();
+            }
+            return;
+        };
+        lids[0].animations.onDisengage(afterFinish);
+        lids.forEach(function (l) {
+            l.animations.run(config.lids);
+        });
+        mouth.animations.onDisengage(afterFinish);
+        mouth.animations.run(config.mouth);
+        return;
+    },
+    default: function (pupils, lids, cb) {
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 2) {
+                return cb();
+            }
+            return;
+        };
+        pupils.forEach(function (l) {
+            l.animations.run('left');
+            return;
+        });
+        setTimeout(function () {
+            var count = 0;
+            lids.forEach(function (l) {
+                l.animations.onDisengage(function () {
+                    count++;
+                    if (count === lids.length) {
+                        lids.forEach(function (l) {
+                            l.animations.run('open');
+                        });
+                    }
+                    else if (count === lids.length * 2) {
+                        afterFinish();
+                    }
+                    return;
+                });
+                l.animations.run('close');
+                return;
+            });
+        });
+        setTimeout(function () {
+            pupils[0].animations.onDisengage(afterFinish);
+            pupils.forEach(function (l) {
+                l.animations.run('right');
+                return;
+            });
+        }, 500);
+    },
+};
+
+//# sourceMappingURL=animations.js.map
+
+/***/ }),
+/* 330 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(201);
 
@@ -8728,7 +8864,7 @@ var Game = /** @class */ (function () {
 //# sourceMappingURL=game.service.js.map
 
 /***/ }),
-/* 332 */
+/* 331 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8773,8 +8909,8 @@ var CursorPosition = /** @class */ (function () {
 //# sourceMappingURL=cursor-position.js.map
 
 /***/ }),
-/* 333 */,
-/* 334 */
+/* 332 */,
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8850,12 +8986,12 @@ var ListnerRegister = /** @class */ (function () {
 //# sourceMappingURL=listner-register.class.js.map
 
 /***/ }),
-/* 335 */
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameLogic; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(335);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(201);
 
@@ -8930,12 +9066,12 @@ var GameLogic = /** @class */ (function () {
 //# sourceMappingURL=game-logic.js.map
 
 /***/ }),
-/* 336 */
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveElementRepository; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(336);
 
 var lib = {
     mouseEnterOnItem: function (item, ev) {
@@ -9064,7 +9200,7 @@ var ActiveElementRepository = /** @class */ (function () {
 //# sourceMappingURL=active-element.repository.js.map
 
 /***/ }),
-/* 337 */
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9172,6 +9308,7 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 //# sourceMappingURL=active-element.model.js.map
 
 /***/ }),
+/* 337 */,
 /* 338 */,
 /* 339 */,
 /* 340 */,
@@ -9196,17 +9333,16 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 /* 359 */,
 /* 360 */,
 /* 361 */,
-/* 362 */,
-/* 363 */
+/* 362 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(364);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(367);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9235,7 +9371,7 @@ var ComponentsModule = /** @class */ (function () {
 //# sourceMappingURL=components.module.js.map
 
 /***/ }),
-/* 364 */
+/* 363 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9298,13 +9434,13 @@ var MonstersModule = /** @class */ (function () {
 //# sourceMappingURL=monsters.module.js.map
 
 /***/ }),
-/* 365 */
+/* 364 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hood_hood__ = __webpack_require__(158);
@@ -9327,7 +9463,7 @@ var MonstersModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pigtail_pigtail__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__trinkets_component__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__trinket_host_directive__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__trinket_random_part_directive__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__trinket_random_part_directive__ = __webpack_require__(365);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__trinket_uniq_part_directive__ = __webpack_require__(159);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9379,7 +9515,7 @@ var TrinketsModule = /** @class */ (function () {
 //# sourceMappingURL=trinkets.module.js.map
 
 /***/ }),
-/* 366 */
+/* 365 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9431,7 +9567,7 @@ var TrinketRandomPartDirective = /** @class */ (function () {
 //# sourceMappingURL=trinket-random-part.directive.js.map
 
 /***/ }),
-/* 367 */
+/* 366 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9463,7 +9599,7 @@ var GameModule = /** @class */ (function () {
 //# sourceMappingURL=game.module.js.map
 
 /***/ }),
-/* 368 */
+/* 367 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9498,7 +9634,7 @@ var ItemHolderModule = /** @class */ (function () {
 //# sourceMappingURL=item-holder.module.js.map
 
 /***/ }),
-/* 369 */
+/* 368 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9534,7 +9670,7 @@ var BackgroundModule = /** @class */ (function () {
 //# sourceMappingURL=bg.module.js.map
 
 /***/ }),
-/* 370 */
+/* 369 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9565,7 +9701,7 @@ var ModelModule = /** @class */ (function () {
 //# sourceMappingURL=model.module.js.map
 
 /***/ }),
-/* 371 */
+/* 370 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9608,138 +9744,6 @@ var MyApp = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=app.component.js.map
-
-/***/ }),
-/* 372 */,
-/* 373 */,
-/* 374 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return animations; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sequances; });
-// {original: 64, end: 118, begin: 132};
-// l.attr({cy: config.begin});
-// l.animate({cy: config.end}, 200, cb);
-// l.animate({cy: config.begin}, 200, () => {
-//   l.attr({cy: config.original});
-//   cb();
-//   return;
-// });
-var animations = {
-    lid: {
-        close: function (l, cb) {
-            l.attr({ cy: 64 });
-            l.animate({ cy: 97.54, }, 42, cb);
-        },
-        open: function (l, cb) {
-            l.attr({ cy: 97.54 });
-            l.animate({ cy: 64, }, 84, cb);
-        },
-        smileIn: function (l, cb) {
-            l.attr({ cy: 132 });
-            l.animate({ cy: 118 }, 200, cb);
-        },
-        smileOut: function (l, cb) {
-            l.attr({ cy: 118 }),
-                l.animate({ cy: 132 }, 200, function () {
-                    l.attr({ cy: 64 });
-                    return cb();
-                });
-        }
-    },
-    pupil: {
-        left: function (instance, cb) {
-            var cx = instance.attr().cx;
-            instance.animate({ cx: Number(cx) - 10 }, 100, cb);
-            return;
-        },
-        right: function (instance, cb) {
-            var cx = instance.attr().cx;
-            instance.animate({ cx: Number(cx) + 10 }, 250, cb);
-            return;
-        }
-    },
-    mouth: {
-        smileIn: function (instance, cb) {
-            instance.attr({ class: 'fadeIn ' });
-            instance.animate({
-                d: 'M134.5,197.76c22.39-6.56,37.32-22.88,33.34-36.45L86.76,185.05C90.74,198.63,112.11,204.31,134.5,197.76Z',
-            }, 200, cb);
-        },
-        smileOut: function (instance, cb) {
-            instance.attr({ class: 'fadeOut' });
-            instance.animate({ d: 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z', }, 200, cb);
-        }
-    }
-};
-var sequances = {
-    joyful: function (lids, mouth, isForward, cb) {
-        var config = {
-            lids: isForward ? 'smileIn' : 'smileOut',
-            mouth: isForward ? 'smileIn' : 'smileOut',
-        };
-        var finished = 0;
-        var afterFinish = function () {
-            finished++;
-            if (finished === 2) {
-                return cb();
-            }
-            return;
-        };
-        lids[0].animations.onDisengage(afterFinish);
-        lids.forEach(function (l) {
-            l.animations.run(config.lids);
-        });
-        mouth.animations.onDisengage(afterFinish);
-        mouth.animations.run(config.mouth);
-        return;
-    },
-    sad: function () {
-    },
-    default: function (pupils, lids, cb) {
-        var finished = 0;
-        var afterFinish = function () {
-            finished++;
-            if (finished === 2) {
-                return cb();
-            }
-            return;
-        };
-        pupils.forEach(function (l) {
-            l.animations.run('left');
-            return;
-        });
-        setTimeout(function () {
-            var count = 0;
-            lids.forEach(function (l) {
-                l.animations.onDisengage(function () {
-                    count++;
-                    if (count === lids.length) {
-                        lids.forEach(function (l) {
-                            l.animations.run('open');
-                        });
-                    }
-                    else if (count === lids.length * 2) {
-                        afterFinish();
-                    }
-                    return;
-                });
-                l.animations.run('close');
-                return;
-            });
-        });
-        setTimeout(function () {
-            pupils[0].animations.onDisengage(afterFinish);
-            pupils.forEach(function (l) {
-                l.animations.run('right');
-                return;
-            });
-        }, 500);
-    },
-};
-
-//# sourceMappingURL=animations.js.map
 
 /***/ })
 ],[252]);

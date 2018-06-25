@@ -29,6 +29,14 @@ const animations = {
 
         return cb();
       })
+    },
+    sadIn: (l, cb) => {
+      l.attr({cy: 64});
+      l.animate({cy: 79,}, 200, cb);
+    },
+    sadOut: (l, cb) => {
+      l.attr({cy: 79});
+      l.animate({cy: 64,}, 200, cb);
     }
   },
   pupil: {
@@ -54,7 +62,16 @@ const animations = {
     smileOut: (instance, cb) => {
       instance.attr({ class: 'fadeOut'});
       instance.animate({d: 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z',}, 200, cb);
-    }
+    },
+    sadIn: (instance, cb) => {
+      instance.attr({ class: 'fadeOut'});
+      instance.animate({
+        d: 'M107.57,177.68c-14.42,5.29-23.51,16.66-20.3,25.4l52.21-19.15C136.27,175.19,122,172.39,107.57,177.68Z',
+      }, 200, cb);
+    },
+    sadOut: (instance, cb) => {
+      instance.animate({d: 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z',}, 200, cb);
+    },
   }
 };
 
@@ -87,8 +104,33 @@ const sequances = {
 
     return;
   },
-  sad: function() {
+  sad: function(lids, mouth, isForward, cb) {
+    const config = {
+      lids: isForward? 'sadIn' : 'sadOut',
+      mouth: isForward? 'sadIn' : 'sadOut',
+    }
 
+    let finished = 0;
+
+    const afterFinish = () => {
+      finished++;
+
+      if(finished === 2) {
+        return cb();
+      }
+
+      return;
+    };
+
+    lids[0].animations.onDisengage(afterFinish);
+    lids.forEach(l => {
+      l.animations.run(config.lids);
+    })
+
+    mouth.animations.onDisengage(afterFinish);
+    mouth.animations.run(config.mouth);
+
+    return;
   },
   default: function(pupils, lids, cb) {
     let finished = 0;

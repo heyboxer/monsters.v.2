@@ -1,5 +1,4 @@
 import { BubbleComponent } from './bubble';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 19,

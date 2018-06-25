@@ -1,5 +1,4 @@
 import { EyesComponent } from './eyes';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default       {
   id: 1,

@@ -1,5 +1,4 @@
 import { LipsComponent } from './lips';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 12,
@@ -19,7 +18,7 @@ export default {
       }
 
       if(monster.name === 'zombie') {
-        zombieJoyAnimBefore(monster, repo, instance);
+        monster.open('sad-eyes');
       }
 
       if(monster.name === 'mummy') {
@@ -56,7 +55,7 @@ export default {
       }
 
       if(monster.name === 'zombie') {
-        zombieJoyAnimAfter(monster, repo, instance);
+        monster.close('sad-eyes');
       }
 
       if(monster.name === 'mummy') {

@@ -1,5 +1,4 @@
 import { MoustacheComponent } from './moustache';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 7,

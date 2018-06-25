@@ -1,5 +1,5 @@
 import { MoleComponent } from './mole';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
+import { sadAnimBefore, sadAnimAfter } from '../lib'
 
 export default {
   id: 4,
@@ -7,21 +7,12 @@ export default {
   meta: {
     onScreen: true,
     multiple: true,
+    emotion: 'sad',
     random: true,
     getContainer: function() {
       return null;
     },
-    before: (monster, items, instance) => {
-      if(monster.animate() && monster.isOnMonster( instance.getBoundingClientRect() )) {
-        const smile = monster.animate('smile')(true)();
-        const smileLids = monster.animate('smileLids')(true)();
-      }
-    },
-    after: (monster, items) => {
-      if(monster.animate()) {
-        const smile = monster.animate('smile')(false)();
-        const smileLids = monster.animate('smileLids')(false)();
-      }
-    },
+    before: sadAnimBefore,
+    after: sadAnimAfter,
   }
 };

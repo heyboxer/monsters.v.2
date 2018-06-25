@@ -1,5 +1,5 @@
 import { WigComponent } from './wig';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 
 export default {
   id: 11,
@@ -12,13 +12,13 @@ export default {
     uniq: true,
     emotion: 'joyful',
     before: (monster, repo, instance) => {
-      zombieJoyAnimBefore(monster, repo, instance);
+      joyfulAnimBefore(monster, repo, instance);
       if(monster.name === 'zombie') {
         monster.close('hair');
       }
     },
     after: (monster, repo, instance) => {
-      zombieJoyAnimAfter(monster, repo, instance);
+      joyfulAnimAfter(monster, repo, instance);
       if(monster.name === 'zombie') {
         monster.open('hair');
       }

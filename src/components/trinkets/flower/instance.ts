@@ -1,5 +1,4 @@
 import { FlowerComponent } from './flower';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
 
 export default {
   id: 18,

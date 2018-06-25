@@ -1,6 +1,10 @@
 import { Component, ViewChildren, QueryList, Renderer2, ComponentFactoryResolver, Injector, ApplicationRef, AfterViewInit } from '@angular/core';
 import { MonsterPartDirective, MonsterPartTypes } from './monster-part.directive';
-import { Node } from '../../app/model/node.model';
+import { AnimationSetController } from './animation/animation-set.controller';
+
+// @ts-ignore: Unreachable code error
+import Snap from 'imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js';
+
 
 @Component({
 })
@@ -8,6 +12,8 @@ export abstract class MonsterModel implements AfterViewInit {
   @ViewChildren(MonsterPartDirective) parts: QueryList<MonsterPartDirective>;
   protected renderer: Renderer2;
   protected emotion = 'default';
+  protected isAnimating: boolean = false;
+  protected animationsArr: {fn: Function, emotion: string, arg: boolean}[] = [];
 
   constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef) {}
 
@@ -123,17 +129,74 @@ export abstract class MonsterModel implements AfterViewInit {
 
   }
 
+  protected checkAnimationStack() {
+    if(this.animationsArr.length !== 0) {
+      const [{fn}, ...rest] = this.animationsArr;
+      this.animationsArr = rest;
+
+      fn();
+      return true;
+    }
+  }
+
+  protected loadAnimations(animations) {
+    const partNames = Object.keys(animations);
+
+    partNames.forEach(name => {
+      this.getParts(part => part.name === name)
+        .forEach(part => {
+          return part.setAnimations(
+            new AnimationSetController(
+              Snap(part.element),
+              animations[name]
+            )
+          );
+        });
+    });
+  }
+
+  protected animateJoyful(arg: boolean, cb?) {
+    return;
+  }
+  protected animateSad(arg: boolean, cb?) {
+    return;
+  }
+
+  public setAnimationStack(emotion: 'joyful' | 'sad', isForward = true) {
+    const newElement = {
+      emotion,
+      arg: isForward,
+      fn: (
+        emotion === 'joyful' ?
+        () => this.animateJoyful(isForward) :
+        () => this.animateSad(isForward)
+      )
+    };
+
+    this.animationsArr = [...this.animationsArr, newElement];
+
+    return;
+  }
+
   public makeSad() {
+    this.animateSad(true);
     this.emotion = 'sad';
     return this;
   }
 
   public makeJoyful() {
+    this.animateJoyful(true);
     this.emotion = 'joyful';
     return this;
   }
 
-  public clearEmotion() {
+  public clearEmotion(cb?) {
+    if(this.emotion === 'joyful') {
+      this.animateJoyful(false, cb);
+    } else if(this.emotion === 'sad') {
+      this.animateSad(false, cb);
+    }
+
     this.emotion = 'default';
     return this;
   }
@@ -177,9 +240,5 @@ export abstract class MonsterModel implements AfterViewInit {
     });
 
     return;
-  }
-
-  public animate(name?, cb?): any {
-    return false;
   }
 }

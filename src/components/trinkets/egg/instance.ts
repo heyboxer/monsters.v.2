@@ -1,5 +1,5 @@
 import { EggComponent } from './egg';
-import { zombieJoyAnimBefore, zombieJoyAnimAfter } from '../lib'
+import { sadAnimBefore, sadAnimAfter } from '../lib'
 
 export default {
   id: 14,
@@ -10,12 +10,9 @@ export default {
       return this.container;
     },
     uniq: true,
-    before: (monster, repo, instance) => {
-
-    },
-    after: (monster, repo, instance) => {
-
-    },
+    emotion: 'sad',
+    before: sadAnimBefore,
+    after: sadAnimAfter,
     attr: {
       width: {
         default: ({width}) => width * 1.5,

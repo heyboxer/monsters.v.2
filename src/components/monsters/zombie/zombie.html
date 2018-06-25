@@ -57,17 +57,6 @@
             </g>
           </g>
 
-          <svg width="151.25" height="27.66" x="25" y="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.93 26.58">
-            <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">
-              <line class="eyelash" x1="0.71" y1="10.71" x2="15.87" y2="25.87"/>
-              <line class="eyelash" x1="2.37" y1="5.71" x2="17.54" y2="20.87"/>
-              <line class="eyelash" x1="4.04" y1="0.71" x2="19.21" y2="15.87"/>
-              <line class="eyelash" x1="119.72" y1="15.87" x2="134.89" y2="0.71"/>
-              <line class="eyelash" x1="121.39" y1="20.87" x2="136.55" y2="5.71"/>
-              <line class="eyelash" x1="123.05" y1="25.87" x2="138.22" y2="10.71"/>
-            </g>
-          </svg>
-
           <g monster-part part-name="eyes-animation">
             <clipPath id="eyeball--left-mask">
               <ellipse class="" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>
@@ -79,6 +68,39 @@
             </clipPath>
             <ellipse monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="135.7" cy="64" rx="27.81" ry="16.86"></ellipse>
           </g>
+
+          <g monster-part part-name="sad-eyes" part-type="group" part-hidden="true" visibility="hidden" class="eyes">
+            <g class="eye eye--left">
+              <ellipse class="eyeball" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>
+              <circle class="pupil pupil--left" cx="74.18" cy="97.32" r="8.32"></circle>
+            </g>
+            <g class="eye eye--right">
+              <ellipse class="eyeball" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>
+              <circle class="pupil pupil--right" cx="142.93" cy="97.32" r="8.32"></circle>
+            </g>
+
+            <clipPath id="eyeball--left-mask">
+              <ellipse class="" cx="66.08" cy="97.54" rx="27.81" ry="16.86"></ellipse>
+            </clipPath>
+            <ellipse clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="66.08" cy="118" rx="27.81" ry="16.86"></ellipse>
+
+            <clipPath id="eyeball--right-mask">
+              <ellipse class="" cx="135.7" cy="97.54" rx="27.81" ry="16.86"></ellipse>
+            </clipPath>
+            <ellipse clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="135.7" cy="118" rx="27.81" ry="16.86"></ellipse>
+          </g>
+
+          <svg width="151.25" height="27.66" x="25" y="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.93 26.58">
+            <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">
+              <line class="eyelash" x1="0.71" y1="10.71" x2="15.87" y2="25.87"/>
+              <line class="eyelash" x1="2.37" y1="5.71" x2="17.54" y2="20.87"/>
+              <line class="eyelash" x1="4.04" y1="0.71" x2="19.21" y2="15.87"/>
+              <line class="eyelash" x1="119.72" y1="15.87" x2="134.89" y2="0.71"/>
+              <line class="eyelash" x1="121.39" y1="20.87" x2="136.55" y2="5.71"/>
+              <line class="eyelash" x1="123.05" y1="25.87" x2="138.22" y2="10.71"/>
+            </g>
+          </svg>
+
           <g monster-part part-group="eyes" part-type="container"></g>
           <g monster-part part-name="mouth" part-type="group">
             <path monster-part part-name="mouth" part-type="element" d="M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z" class="mouth"></path>
