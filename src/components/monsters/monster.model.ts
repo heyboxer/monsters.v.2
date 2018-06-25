@@ -7,7 +7,7 @@ import { Node } from '../../app/model/node.model';
 export abstract class MonsterModel implements AfterViewInit {
   @ViewChildren(MonsterPartDirective) parts: QueryList<MonsterPartDirective>;
   protected renderer: Renderer2;
-  private emotion = 'default';
+  protected emotion = 'default';
 
   constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef) {}
 
@@ -128,7 +128,7 @@ export abstract class MonsterModel implements AfterViewInit {
     return this;
   }
 
-  public makeJoyjul() {
+  public makeJoyful() {
     this.emotion = 'joyful';
     return this;
   }

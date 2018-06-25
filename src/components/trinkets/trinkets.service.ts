@@ -41,12 +41,12 @@ export class TrinketsService {
       snivel,
       glass,
       lollipop,
+      bra,
       pigtail,
       egg,
       flatulence,
       bubble,
       hood,
-      bra,
     ]
   }
 }

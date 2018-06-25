@@ -10,10 +10,8 @@ const zombieJoyAnimBefore = (monster, repo, instance) => {
   const onMonster = monster.isOnMonster( instance.getBoundingClientRect() );
 
   if(monster.animate() && filtered.length === 0 && monster.getEmotion() !== 'joyful' && onMonster) {
-    monster.makeJoyjul();
-
-    const smile = monster.animate('smile')(true)();
-    const smileLids = monster.animate('smileLids')(true)();
+    monster.makeJoyful();
+    monster.makeHappy();
   };
 
   return;

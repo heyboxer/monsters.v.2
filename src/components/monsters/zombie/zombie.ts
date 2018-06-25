@@ -2,7 +2,7 @@ import { Component, ElementRef, Renderer2, ComponentFactoryResolver, Injector, A
 import { MonsterModel } from '../monster.model';
 
 import { AnimationSetController } from '../animation/animation-set.controller';
-import { AnimationSequenceController } from '../animation/animation-sequence.controller';
+import { animations, sequances } from './animations';
 
 
 // @ts-ignore: Unreachable code error
@@ -131,6 +131,8 @@ const aniamtions = function(instance) {
 })
 export class ZombieComponent extends MonsterModel implements AfterViewInit {
   private snap;
+  private isAnimating: boolean = false;
+  private animationsArr: {fn: Function, emotion: string, arg: boolean}[] = [];
 
   constructor(el: ElementRef, protected renderer: Renderer2,  componentFactoryResolver: ComponentFactoryResolver, injector: Injector,
   app: ApplicationRef) {
@@ -140,63 +142,45 @@ export class ZombieComponent extends MonsterModel implements AfterViewInit {
   ngAfterViewInit() {
     this.snap = aniamtions.bind(this)(this.getRoot().element);
 
-    const anims = {
-      lid: {
-        close: (l, cb) => l.animate({cy: 97.54,}, 42, cb),
-        open: (l, cb) => l.animate({cy: 64,}, 84, cb),
-      },
-      pupil: {
-        left: (instance, cb) => {
-          const { cx } = instance.attr();
-          instance.animate({cx: Number(cx) - 10}, 100, cb);
-          return;
-        },
-        right: (instance, cb) => {
-          const { cx } = instance.attr();
-
-          instance.animate({cx: Number(cx) + 10}, 250, cb);
-          return;
-        }
-      }
-    }
-
-    this.loadAnimations(anims);
+    this.loadAnimations(animations);
 
     const pupils = this.getParts(p => p.name === 'pupil');
+    const lids = this.getParts(p => p.name === 'lid');
+    const mouth = this.getPart(p => p.name == 'mouth' && p.type == 'element');
 
-    const scheme = [
-      'pupilsGoLeft',
-      'pupilsGoRight'
-    ];
+    const defaultSeq = () => {
+      this.isAnimating = true;
 
-    const animations = {
-      pupilsGoLeft: () => pupils.forEach(l => {
-        l.animations.run('left');
-        return l.animations;
-      }),
-      pupilsGoRight: (cb) => pupils.forEach(l => {
-        l.animations.run('right');
-        cb(l.animations);
+      sequances.default(pupils, lids, () => {
+        this.isAnimating = false;
+
+        this.checkAnimationStack();
+
         return;
-      }),
+      });
+
+      return;
     };
 
-    const seq = new AnimationSequenceController(scheme, animations);
+    setInterval(() => {
+      if(this.getEmotion() === 'default' && !this.isAnimating) {
+        defaultSeq();
+      }
 
-    // seq.run(1000);
-    // console.time('clear');
-    //
-    // setTimeout(() => {
-    //   seq.clear();
-    //   console.timeEnd('clear');
-    // }, 3200);
-
+      return;
+    }, 3000);
   }
 
-  // isOnMonster(top, right, bootom, left) {
-  //   console.log(Snap.getElementByPoint(top, left));
-  //   return;
-  // }
+  private checkAnimationStack() {
+    if(this.animationsArr.length !== 0.) {
+      if(this.isAnimating) return true;
+
+      const [{fn}, ...rest] = this.animationsArr;
+      this.animationsArr = rest;
+
+      return fn();
+    }
+  }
 
   protected loadAnimations(animations) {
     const partNames = Object.keys(animations);
@@ -212,8 +196,28 @@ export class ZombieComponent extends MonsterModel implements AfterViewInit {
           );
         });
     });
+  }
 
+  public makeHappy(arg = true) {
+    if(this.isAnimating) {
+      return !this.animationsArr.find(({emotion, arg: a}) => emotion === 'joyful' && a === arg) ?
+      this.animationsArr.push({
+        emotion: 'joyful',
+        arg,
+        fn: () => this.makeHappy(arg),
+      }) : null;
+    }
 
+    this.isAnimating = true;
+
+    const lids = this.getParts(p => p.name === 'lid');
+    const mouth = this.getPart(p => p.name == 'mouth' && p.type == 'element');
+
+    sequances.joyful(lids, mouth, arg, () => {
+      this.isAnimating = false;
+    })
+
+    return;
   }
 
   public animate(name) {
