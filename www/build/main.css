@@ -25992,6 +25992,11 @@ mummy .mummy .eyeball {
   fill: #f24943;
 }
 
+mummy .mummy .eyeball--lid {
+  fill: #e1b285;
+  stroke: none;
+}
+
 mummy .mummy .decor__bandage {
   fill: #e1b285;
 }

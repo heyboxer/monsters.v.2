@@ -50,6 +50,11 @@ mummy {
 
     & .eyeball {
       fill: #f24943;
+
+      &--lid {
+        fill: #e1b285;
+        stroke: none;
+      }
     }
 
     & .decor {
