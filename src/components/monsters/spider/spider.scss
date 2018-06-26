@@ -19,6 +19,10 @@ spider {
     stroke-width:2px;
   }
 
+  & .mouth-figure {
+    fill: #f24943;
+  }
+
   & .web {
     stroke-width: 2.5px;
     stroke: #000;
@@ -28,6 +32,10 @@ spider {
 
   & .eyeball {
     fill: #058d5a;
+
+    &--lid {
+      fill: black;
+    }
   }
 
   & .body-part--colored {

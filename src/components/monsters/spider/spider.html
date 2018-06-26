@@ -51,7 +51,9 @@
             <ellipse class="body-part body-part--colored" cx="132.45" cy="163.61" rx="74.06" ry="47.7"></ellipse>
             <ellipse class="body-part" cx="132.45" cy="115.29" rx="74.06" ry="47.7"></ellipse>
             <g class="decor">
-               <g monster-part part-name="mouth-decor" part-type="element" class="mouth decor__mouth">
+              <path monster-part part-name="mouth-figure" part-name-mod="bottom" class="mouth-figure" d="M93,225c12,0,65,0,80,0z"></path>
+
+               <g monster-part part-name="teeth" part-name-mod="bottom" data-origin-x="132" data-origin-y="235" part-type="element" class="mouth decor__mouth">
                   <polygon class="tooth" points="112.44 244.6 109.19 224.94 115.68 224.94 112.44 244.6"></polygon>
                   <polygon class="tooth" points="126.44 244.6 123.2 224.94 129.69 224.94 126.44 244.6"></polygon>
                   <polygon class="tooth" points="139.93 244.6 136.69 224.94 143.18 224.94 139.93 244.6"></polygon>
@@ -84,9 +86,24 @@
                <circle class="pupil" cx="154.55" cy="104.04" r="9.83"></circle>
             </g>
          </g>
+         <g monster-part part-name="eyes-animation">
+           <clipPath id="eyeball--left-mask">
+             <circle monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes"  class="eyeball eyeball--mask" cx="110.35" cy="104.04" r="17.91"></circle>
+           </clipPath>
+           <circle monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="110.35" cy="68" r="17.91"></circle>
+
+           <clipPath id="eyeball--right-mask">
+             <circle monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eyeball eyeball--mask" class="eyeball" cx="154.55" cy="104.04" r="17.91"></circle>
+           </clipPath>
+           <circle monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="154.55" cy="68" r="17.91"></circle>
+         </g>
+
          <g monster-part part-name="mouth" part-type="group"  class="mouth">
-            <polygon class="tooth" points="124.93 145.45 121.69 125.79 128.18 125.79 124.93 145.45"></polygon>
-            <polygon class="tooth" points="138.93 145.45 135.69 125.79 142.18 125.79 138.93 145.45"></polygon>
+           <path monster-part part-name="mouth-figure" part-name-mod="top" class="mouth-figure" d="M100,126c17.41,0,45.58,0,63,0z"></path>
+           <g monster-part part-name="teeth" part-name-mod="top" data-origin-x="132" data-origin-y="135" class="teeth">
+             <polygon class="tooth" points="124.93 145.45 121.69 125.79 128.18 125.79 124.93 145.45"></polygon>
+             <polygon class="tooth" points="138.93 145.45 135.69 125.79 142.18 125.79 138.93 145.45"></polygon>
+           </g>
          </g>
          <g monster-part part-group="eyes" part-type="container"></g>
       </g>

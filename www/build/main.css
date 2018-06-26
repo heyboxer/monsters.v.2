@@ -26107,6 +26107,10 @@ spider .spider .eyelash {
   stroke-width: 2px;
 }
 
+spider .spider .mouth-figure {
+  fill: #f24943;
+}
+
 spider .spider .web {
   stroke-width: 2.5px;
   stroke: #000;
@@ -26116,6 +26120,10 @@ spider .spider .web {
 
 spider .spider .eyeball {
   fill: #058d5a;
+}
+
+spider .spider .eyeball--lid {
+  fill: black;
 }
 
 spider .spider .body-part--colored {
