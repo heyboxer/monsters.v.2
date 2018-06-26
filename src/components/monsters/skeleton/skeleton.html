@@ -41,7 +41,7 @@
     </g>
     <g monster-part part-group="body" part-type="container"></g>
     <g class="head">
-         <ellipse monster-part part-name="head-figure" part-type="group" class="head head--figure" cx="99.95" cy="67.37" rx="89.2" ry="67.38"></ellipse>
+         <ellipse monster-part part-name="head-figure" part-type="group" part-outline="true" class="head head--figure" cx="99.95" cy="67.37" rx="89.2" ry="67.38"></ellipse>
          <g class="content">
           <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" part-outline="true" class="ears">
             <ellipse class="ear" cx="15" cy="90" rx="11" ry="13.33"/>
@@ -49,14 +49,20 @@
           </g>
           <g monster-part part-group="ears" part-type="container"></g>
 
-            <g monster-part part-name="mouth" part-type="group" class="jaws">
-               <g class="jaw jaw--top">
-                  <rect class="jaw" x="43.33" y="95.52" width="113.24" height="63.9"></rect>
-                  <g monster-part part-name="teeth" part-type="group" class="teeth">
-                    <g monster-part part-name="teeth-top" part-type="group" >
+            <g monster-part part-name="mouth" part-type="group" part-outline="true" class="jaws">
+               <g class="jaw">
+                  <rect class="jaw jaw--top" x="43.33" y="95.52" width="113.24" height="63.9"></rect>
+                  <rect class="jaw jaw--bottom" x="43.33" y="169.54" width="113.24" height="28.52"></rect>
+                  <g monster-part part-name="hidden-jaw" part-type="group" part-hidden="true" visibility="hidden">
+                    <rect class="jaw" x="43.33" y="149.54" width="113.24" height="28.52"></rect>
+                  </g>
+
+                  <path monster-part part-name="mouth-figure" class="mouth" d="M43.33,143h113.24v0h-113.24z"></path>
+                  <g monster-part part-name="teeth" part-type="group">
+                    <g monster-part part-name="teeth-top" part-type="group" class="teeth">
                      <rect class="tooth" x="53.24" y="143.29" width="10.75" height="10.75"></rect>
                      <rect class="tooth" x="69.77" y="143.29" width="10.75" height="10.75"></rect>
-                     <rect class="tooth" x="86.3" y="143.29" width="10.75" height="10.75"></rect>
+                     <rect class="tooth tooth--shown" x="86.3" y="143.29" width="10.75" height="10.75"></rect>
                      <rect class="tooth" x="102.83" y="143.29" width="10.75" height="10.75"></rect>
                      <rect class="tooth" x="119.37" y="143.29" width="10.75" height="10.75"></rect>
                      <rect class="tooth" x="135.9" y="143.29" width="10.75" height="10.75"></rect>
@@ -64,19 +70,18 @@
                   </g>
                </g>
                <g class="jaw jaw--bottom">
-                  <rect class="jaw" x="43.33" y="169.54" width="113.24" height="28.52"></rect>
-                  <g monster-part part-name="hidden-jaw" part-type="group" part-hidden="true" visibility="hidden">
-                    <rect class="jaw" x="43.33" y="149.54" width="113.24" height="28.52"></rect>
-                  </g>
-                  <g monster-part part-name="teeth" part-type="group" class="teeth">
-                     <rect class="tooth" x="53.24" y="178.43" width="10.75" height="10.75"></rect>
-                     <rect class="tooth" x="69.77" y="178.43" width="10.75" height="10.75"></rect>
-                     <rect class="tooth" x="86.3" y="178.43" width="10.75" height="10.75"></rect>
-                     <rect class="tooth" x="102.83" y="178.43" width="10.75" height="10.75"></rect>
-                     <rect class="tooth" x="119.37" y="178.43" width="10.75" height="10.75"></rect>
-                     <rect class="tooth" x="135.9" y="178.43" width="10.75" height="10.75"></rect>
+                  <g monster-part part-name="teeth" part-type="group">
+                    <g monster-part part-name="teeth-bottom" part-type="group" class="teeth">
+                      <rect class="tooth" x="53.24" y="178.43" width="10.75" height="10.75"></rect>
+                      <rect class="tooth" x="69.77" y="178.43" width="10.75" height="10.75"></rect>
+                      <rect class="tooth" x="86.3" y="178.43" width="10.75" height="10.75"></rect>
+                      <rect class="tooth  tooth--shown" x="102.83" y="178.43" width="10.75" height="10.75"></rect>
+                      <rect class="tooth" x="119.37" y="178.43" width="10.75" height="10.75"></rect>
+                      <rect class="tooth" x="135.9" y="178.43" width="10.75" height="10.75"></rect>
+                    </g>
                   </g>
                </g>
+
             </g>
             <svg width="139.9" height="25.56" x="30" y="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.32 20.25">
               <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">
@@ -98,6 +103,18 @@
                   <circle class="pupil" cx="72.84" cy="76.61" r="10.09"></circle>
                </g>
             </g>
+            <g monster-part part-name="eyes-animation">
+              <clipPath id="eyeball--left-mask">
+                <circle monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes" class="eyeball eyeball--mask" cx="129.44" cy="66.37" r="25.31"></circle>
+              </clipPath>
+              <circle monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="129.44" cy="16" r="25.31"></circle>
+
+              <clipPath id="eyeball--right-mask">
+                <circle monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eyeball eyeball--mask" cx="70.45" cy="66.37" r="25.31"></circle>
+              </clipPath>
+              <circle monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="70.45" cy="16" r="25.31"></circle>
+            </g>
+
             <g monster-part part-group="mouth" part-type="container"></g>
             <g monster-part part-group="eyes" part-type="container"></g>
             <g monster-part part-group="nose" part-type="container"></g>

@@ -57,6 +57,8 @@ export class MummyComponent extends MonsterModel {
 
     const mouth = this.getPart(p => p.name === 'mouth' && p.type === 'element');
 
+    arg ? this.open('hidden-jaw') : this.close('hidden-jaw');
+
     sequances.joyful(mouth, arg, () => {
       this.isAnimating = false;
     });
@@ -77,6 +79,8 @@ export class MummyComponent extends MonsterModel {
 
     const mouth = this.getPart(p => p.name === 'mouth' && p.type === 'element');
     const tooth = this.getPart(p => p.name === 'tooth');
+
+    arg ? this.open('hidden-jaw') : this.close('hidden-jaw');
 
     sequances.sad(mouth, tooth, arg, () => {
       this.isAnimating = false;

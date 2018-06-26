@@ -23,12 +23,35 @@ skeleton {
       stroke-width:2px;
     }
 
+    & .eyeball--lid {
+      fill: white;
+    }
+
+    & .mouth {
+      fill: #f24942;
+    }
+
     & .jaw {
       fill: #fff;
     }
 
     & .tooth {
       fill: #000;
+    }
+
+    & .teeth--hidden.fadeIn .tooth:not(.tooth--shown) {
+      transition: fill .2s linear;
+      fill: rgba(0,0,0,0);
+    }
+
+    & .fadeIn .tooth {
+      transition: fill .2s linear;
+      fill: white;
+    }
+
+    & .fadeOut .tooth {
+      transition: fill .2s linear;
+      fill: black;
     }
 
     & .rib {

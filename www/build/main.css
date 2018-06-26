@@ -26027,12 +26027,38 @@ skeleton .skeleton .eyelash {
   stroke-width: 2px;
 }
 
+skeleton .skeleton .eyeball--lid {
+  fill: white;
+}
+
+skeleton .skeleton .mouth {
+  fill: #f24942;
+}
+
 skeleton .skeleton .jaw {
   fill: #fff;
 }
 
 skeleton .skeleton .tooth {
   fill: #000;
+}
+
+skeleton .skeleton .teeth--hidden.fadeIn .tooth:not(.tooth--shown) {
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear;
+  fill: transparent;
+}
+
+skeleton .skeleton .fadeIn .tooth {
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear;
+  fill: white;
+}
+
+skeleton .skeleton .fadeOut .tooth {
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear;
+  fill: black;
 }
 
 skeleton .skeleton .rib {
