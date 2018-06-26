@@ -304,7 +304,9 @@ var MonsterModel = /** @class */ (function () {
             var name = _a.name;
             _this.close(name);
         });
-        this.getParts(function (p) { return p.animations; }).forEach(function (p) { return p.animations.recovery(); });
+        this.clearEmotion(function () {
+            _this.getParts(function (p) { return p.animations; }).forEach(function (p) { return p.animations.recovery(); });
+        });
         return;
     };
     __decorate([
@@ -466,8 +468,8 @@ var ElementComponentModel = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_game_game_service__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_game_game_logic__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__ = __webpack_require__(184);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -802,11 +804,11 @@ webpackEmptyAsyncContext.id = 113;
 
 var map = {
 	"../pages/game/game.module": [
-		357,
+		358,
 		1
 	],
 	"../pages/home/home.module": [
-		358,
+		359,
 		0
 	]
 };
@@ -1783,10 +1785,10 @@ var SkeletonComponent = /** @class */ (function (_super) {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'skeleton',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/skeleton/skeleton.html"*/'<svg class="skeleton svg-container" viewBox="-20 -30 240.62 352.01" preserveAspectRatio="xMidYMax meet" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <svg monster-part part-name="confetti" part-type="group" part-hidden="true" visibility="hidden" width="296.715" height="360" y="-20" x="-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.5 274.1">\n    <circle class="confetti--color--yellow" cx="21.58" cy="35.85" r="3.58" transform="translate(-20 31.23) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="3.58" cy="67.85" r="3.58" transform="translate(-52.5 29.5) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="35.58" cy="88.51" r="3.58" transform="translate(-56.35 63.04) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="14.25" cy="135.18" r="3.58" transform="translate(-101.81 64.42) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="192.92" cy="100.51" r="3.58" transform="translate(-4.09 192.75) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="222.92" cy="96.51" r="3.58" transform="translate(10.87 215.02) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="198.25" cy="47.18" r="3.58" transform="translate(40.38 176.04) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="190.25" cy="133.18" r="3.58" transform="translate(-31.09 203.46) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="207.58" cy="151.85" r="3.58" transform="translate(-39.12 224.57) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="216.92" cy="205.85" r="3.58" transform="translate(-78.35 253.19) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="171.58" cy="183.18" r="3.58" transform="translate(-78.15 208.27) rotate(-52.61)"/>\n    <circle class="confetti--color--yellow" cx="212.92" cy="270.51" r="3.58" transform="translate(-131.3 275.41) rotate(-52.61)"/>\n    <circle class="confetti--color--blue" cx="33.58" cy="19.18" r="5.18" transform="translate(-2.05 34.22) rotate(-52.61)"/>\n    <circle class="confetti--color--blue" cx="11.58" cy="97.85" r="5.18" transform="translate(-73.19 47.63) rotate(-52.61)"/>\n    <circle class="confetti--color--blue" cx="42.92" cy="117.18" r="5.18" transform="translate(-76.25 80.12) rotate(-52.61)"/>\n    <circle class="confetti--color--blue" cx="11.58" cy="167.18" r="5.18" transform="translate(-128.28 74.87) rotate(-52.61)"/>\n    <circle class="confetti--color--blue" cx="184.92" cy="161.85" r="5.18" transform="translate(-55.96 210.49) rotate(-52.61)"/>\n    <circle class="confetti--color--blue" cx="214.25" cy="230.51" r="5.18" transform="translate(-99 260.76) rotate(-52.61)"/>\n    <circle class="confetti--color--blue" cx="12.92" cy="253.18" r="5.18" transform="translate(-196.08 109.7) rotate(-52.61)"/>\n    <circle class="confetti--color--blue" cx="209.58" cy="118.51" r="5.18" transform="translate(-11.85 213.07) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="40.92" cy="149.18" r="5.18" transform="translate(-102.46 91.1) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="22.92" cy="63.18" r="5.18" transform="translate(-41.2 43.02) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="11.58" cy="13.18" r="5.18" transform="translate(-5.92 14.38) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="70.92" cy="5.18" r="5.18" transform="translate(23.74 58.38) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="212.92" cy="22.51" r="5.18" transform="translate(65.74 178.01) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="211.58" cy="70.51" r="5.18" transform="translate(27.08 195.8) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="172.92" cy="117.18" r="5.18" transform="translate(-25.19 183.41) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="212.92" cy="177.18" r="5.18" transform="translate(-57.15 238.76) rotate(-52.61)"/>\n    <circle class="confetti--color--red" cx="12.92" cy="211.18" r="5.18" transform="translate(-162.71 93.21) rotate(-52.61)"/>\n  </svg>\n\n   <g monster-part part-name="outer" part-type="group" class="">\n    <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n    <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n        <rect class="rib" y="227.64" width="200.62" height="21.55"></rect>\n        <rect class="rib" y="264.11" width="200.62" height="21.55"></rect>\n        <rect class="rib" y="300.59" width="200.62" height="21.55"></rect>\n    </g>\n    <g monster-part part-group="body" part-type="container"></g>\n    <g class="head">\n         <ellipse monster-part part-name="head-figure" part-type="group" part-outline="true" class="head head--figure" cx="99.95" cy="67.37" rx="89.2" ry="67.38"></ellipse>\n         <g class="content">\n          <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" part-outline="true" class="ears">\n            <ellipse class="ear" cx="15" cy="90" rx="11" ry="13.33"/>\n            <ellipse class="ear" cx="186" cy="90" rx="11" ry="13.33"/>\n          </g>\n          <g monster-part part-group="ears" part-type="container"></g>\n\n            <g monster-part part-name="mouth" part-type="group" part-outline="true" class="jaws">\n               <g class="jaw">\n                  <rect class="jaw jaw--top" x="43.33" y="95.52" width="113.24" height="63.9"></rect>\n                  <rect class="jaw jaw--bottom" x="43.33" y="169.54" width="113.24" height="28.52"></rect>\n                  <g monster-part part-name="hidden-jaw" part-type="group" part-hidden="true" visibility="hidden">\n                    <rect class="jaw" x="43.33" y="149.54" width="113.24" height="28.52"></rect>\n                  </g>\n\n                  <path monster-part part-name="mouth-figure" class="mouth" d="M43.33,143h113.24v0h-113.24z"></path>\n                  <g monster-part part-name="teeth" part-type="group">\n                    <g monster-part part-name="teeth-top" part-type="group" class="teeth">\n                     <rect class="tooth" x="53.24" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="69.77" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth tooth--shown" x="86.3" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="102.83" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="119.37" y="143.29" width="10.75" height="10.75"></rect>\n                     <rect class="tooth" x="135.9" y="143.29" width="10.75" height="10.75"></rect>\n                   </g>\n                  </g>\n               </g>\n               <g class="jaw jaw--bottom">\n                  <g monster-part part-name="teeth" part-type="group">\n                    <g monster-part part-name="teeth-bottom" part-type="group" class="teeth">\n                      <rect class="tooth" x="53.24" y="178.43" width="10.75" height="10.75"></rect>\n                      <rect class="tooth" x="69.77" y="178.43" width="10.75" height="10.75"></rect>\n                      <rect class="tooth" x="86.3" y="178.43" width="10.75" height="10.75"></rect>\n                      <rect class="tooth  tooth--shown" x="102.83" y="178.43" width="10.75" height="10.75"></rect>\n                      <rect class="tooth" x="119.37" y="178.43" width="10.75" height="10.75"></rect>\n                      <rect class="tooth" x="135.9" y="178.43" width="10.75" height="10.75"></rect>\n                    </g>\n                  </g>\n               </g>\n\n            </g>\n            <svg width="139.9" height="25.56" x="30" y="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.32 20.25">\n              <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n                <line class="eyelash" x1="0.71" y1="8.19" x2="12.06" y2="19.54"/>\n                <line class="eyelash" x1="1.95" y1="4.45" x2="13.3" y2="15.8"/>\n                <line class="eyelash" x1="3.2" y1="0.71" x2="14.55" y2="12.06"/>\n                <line class="eyelash" x1="89.77" y1="12.06" x2="101.12" y2="0.71"/>\n                <line class="eyelash" x1="91.02" y1="15.8" x2="102.37" y2="4.45"/>\n                <line class="eyelash" x1="92.26" y1="19.54" x2="103.61" y2="8.19"/>\n              </g>\n            </svg>\n            <g monster-part part-name="eyes" part-type="group" class="eyes">\n               <g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--right">\n                  <circle class="eyeball" cx="129.44" cy="66.37" r="25.31"></circle>\n                  <circle class="pupil" cx="136.88" cy="58.14" r="10.09"></circle>\n               </g>\n               <g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--left">\n                  <circle class="eyeball" cx="70.45" cy="66.37" r="25.31"></circle>\n                  <circle class="pupil" cx="72.84" cy="76.61" r="10.09"></circle>\n               </g>\n            </g>\n            <g monster-part part-name="eyes-animation">\n              <clipPath id="eyeball--left-mask">\n                <circle monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes" class="eyeball eyeball--mask" cx="129.44" cy="66.37" r="25.31"></circle>\n              </clipPath>\n              <circle monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="129.44" cy="16" r="25.31"></circle>\n\n              <clipPath id="eyeball--right-mask">\n                <circle monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eyeball eyeball--mask" cx="70.45" cy="66.37" r="25.31"></circle>\n              </clipPath>\n              <circle monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="70.45" cy="16" r="25.31"></circle>\n            </g>\n\n            <g monster-part part-group="mouth" part-type="container"></g>\n            <g monster-part part-group="eyes" part-type="container"></g>\n            <g monster-part part-group="nose" part-type="container"></g>\n            <g monster-part part-name="nose" part-type="group">\n              <polygon class="nose" points="99.95 91.72 112.37 113.24 124.8 134.76 99.95 134.76 75.09 134.76 87.52 113.24 99.95 91.72"></polygon>\n            </g>\n         </g>\n         <g monster-part part-group="head-figure" part-type="container"></g>\n    </g>\n\n    <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/skeleton/skeleton.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
     ], SkeletonComponent);
     return SkeletonComponent;
-    var _a, _b, _c, _d, _e;
 }(__WEBPACK_IMPORTED_MODULE_1__monster_model__["a" /* MonsterModel */]));
 
 //# sourceMappingURL=skeleton.js.map
@@ -1799,6 +1801,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlienComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(295);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1820,6 +1823,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var AlienComponent = /** @class */ (function (_super) {
     __extends(AlienComponent, _super);
     function AlienComponent(el, renderer, componentFactoryResolver, injector, app) {
@@ -1828,14 +1832,81 @@ var AlienComponent = /** @class */ (function (_super) {
         _this.renderer = renderer;
         return _this;
     }
+    AlienComponent.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.loadAnimations(__WEBPACK_IMPORTED_MODULE_2__animations__["a" /* animations */]);
+        var lidLeft = this.getPart(function (p) { return p.name === 'lid' && p.mod === 'left'; });
+        var lidRight = this.getPart(function (p) { return p.name === 'lid' && p.mod === 'right'; });
+        var defaultSeq = function () {
+            if (_this.checkAnimationStack())
+                return;
+            _this.isAnimating = true;
+            __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].default(lidLeft, lidRight, function () {
+                _this.isAnimating = false;
+                _this.checkAnimationStack();
+                return;
+            });
+            return;
+        };
+        setInterval(function () {
+            if (_this.getEmotion() === 'default' && !_this.isAnimating) {
+                defaultSeq();
+            }
+            return;
+        }, 3000);
+    };
+    AlienComponent.prototype.animateJoyful = function (arg) {
+        var _this = this;
+        if (arg === void 0) { arg = true; }
+        if (this.isAnimating) {
+            return !this.animationsArr.find(function (_a) {
+                var emotion = _a.emotion, a = _a.arg;
+                return emotion === 'joyful' && a === arg;
+            }) ?
+                this.animationsArr.push({
+                    emotion: 'joyful',
+                    arg: arg,
+                    fn: function () { return _this.animateJoyful(arg); },
+                }) : null;
+        }
+        this.isAnimating = true;
+        var mouth = this.getPart(function (p) { return p.name === 'mouth-figure'; });
+        __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].joyful(mouth, arg, function () {
+            _this.isAnimating = false;
+        });
+        return;
+    };
+    AlienComponent.prototype.animateSad = function (arg, cb) {
+        var _this = this;
+        if (arg === void 0) { arg = true; }
+        if (this.isAnimating) {
+            return !this.animationsArr.find(function (_a) {
+                var emotion = _a.emotion, a = _a.arg;
+                return emotion === 'sad' && a === arg;
+            }) ?
+                this.animationsArr.push({
+                    emotion: 'sad',
+                    arg: arg,
+                    fn: function () { return _this.animateSad(arg, cb); },
+                }) : null;
+        }
+        this.isAnimating = true;
+        var mouth = this.getPart(function (p) { return p.name === 'mouth-figure'; });
+        __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].sad(mouth, arg, function () {
+            _this.isAnimating = false;
+            if (cb)
+                cb();
+        });
+        return;
+    };
     AlienComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'alien',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/alien/alien.html"*/'<svg class="alien svg-container" preserveAspectRatio="xMidYMax meet" viewBox="-20 -40 205.37 342.36" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n	<svg monster-part part-name="confetti" part-type="group" part-hidden="true" visibility="hidden" width="264.596" height="321.1" y="-60" x="-42" viewBox="0 0 228.1 276.81" xmlns="http://www.w3.org/2000/svg">\n		<circle class="confetti--color--purple" cx="175.8" cy="39.96" r="2.92" transform="translate(61.28 179.2) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="194.19" cy="132.36" r="2.92" transform="translate(-11.17 246.62) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="224.86" cy="111.15" r="2.92" transform="translate(24.71 262.33) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="187.58" cy="163.72" r="2.92" transform="translate(-42.85 258.01) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="61.52" cy="41.69" r="2.92" transform="translate(-3.32 78) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="2.92" cy="25.05" r="2.92" transform="translate(-20.79 16.43) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="46.86" cy="177.69" r="2.92" transform="translate(-132.99 139.93) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="165.5" cy="205.75" r="2.92" transform="translate(-92.61 261.46) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="37.5" cy="244.42" r="2.92" transform="translate(-197.8 168.38) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="203.62" cy="84.67" r="2.92" transform="translate(36.66 228.74) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="176.17" cy="4.22" r="4.21" transform="translate(93.43 159.8) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="100.62" cy="38.25" r="4.21" transform="translate(21.33 111.05) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="192.28" cy="62.29" r="4.21" transform="translate(50.41 206.25) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="11.09" cy="180.47" r="4.21" transform="translate(-155.21 109.49) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="223.89" cy="137.99" r="4.21" transform="translate(0.18 276.27) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="174.08" cy="244.59" r="4.21" transform="translate(-122.59 290.56) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="208.08" cy="265.26" r="4.21" transform="translate(-122.31 332.36) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="38.08" cy="272.59" r="4.21" transform="translate(-222.66 184.44) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="29.52" cy="34.36" r="4.21" transform="translate(-14.42 45.35) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="51.52" cy="215.03" r="4.21" transform="translate(-163.79 164.7) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="214.86" cy="27.69" r="4.41" transform="translate(93.79 207.34) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="6.19" cy="57.69" r="4.41" transform="translate(-48.16 37.36) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="18.86" cy="136.36" r="4.41" transform="translate(-111.49 92.09) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="195.52" cy="235.03" r="4.41" transform="translate(-102.21 304.45) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="10.91" cy="231.71" r="4.41" transform="translate(-201.11 137.6) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="222.6" cy="172.1" r="4.41" transform="translate(-31.02 293.94) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="167.52" cy="176.36" r="4.41" transform="translate(-65.22 247.06) rotate(-63.37)"/>\n	</svg>\n\n	<g monster-part part-name="outer" part-type="group" class="">\n		<g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n		<g monster-part part-name="body" part-type="group" part-outline="true" >\n			<ellipse class="body body--figure" cx="82.66" cy="285.78" rx="50.36" ry="139.24"></ellipse>\n		</g>\n\n		<g class="head">\n			<path monster-part part-name="head-figure" part-type="group" class="head head--figure" d="M82.67,153.65a39.12,39.12,0,0,1-33.88-19.56L5.25,58.69A39.13,39.13,0,0,1,39.13,0H126.2a39.13,39.13,0,0,1,33.88,58.69l-43.53,75.4A39.13,39.13,0,0,1,82.67,153.65Z"></path>\n			<g class="content">\n				<g  monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" class="ears">\n					<ellipse class="ear" cx="2" cy="60" rx="11" ry="13.33"/>\n					<ellipse class="ear" cx="163" cy="60" rx="11" ry="13.33"/>\n				</g>\n        <g monster-part part-group="ears" part-type="container"></g>\n\n				<g monster-part part-name="mouth" part-type="group">\n					<path monster-part part-name="mouth" part-type="element" part-group="mouth" class="mouth" d="M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z"></path>\n				</g>\n				<g monster-part part-name="eyes" part-type="group" class="eyes">\n					<g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">\n						<path class="eyeball" d="M25.19,26.89A52.14,52.14,0,0,0,77.36,79.06,52.14,52.14,0,0,0,25.19,26.89Z"></path>\n						<circle class="iris" cx="51.86" cy="53.61" r="15.32"></circle>\n						<circle class="pupil" cx="51.86" cy="53.61" r="7.21"></circle>\n					</g>\n					<g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--right">\n						<path class="eyeball" d="M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z"></path>\n						<circle class="iris" cx="113.53" cy="53.61" r="15.32"></circle>\n						<circle class="pupil" cx="113.53" cy="53.61" r="4.75"></circle>\n					</g>\n				</g>\n        <g monster-part part-group="eyes" part-type="container"></g>\n				<g monster-part part-name="nose" part-type="group" class="nose">\n					<circle class="nostril nostril--left" cx="76.75" cy="99.18" r="2.49"></circle>\n					<circle class="nostril nostril--right" cx="88.6" cy="99.18" r="2.49"></circle>\n				</g>\n			</g>\n			<g monster-part part-group="head-figure" part-type="container"></g>\n			<g monster-part part-group="mouth" part-type="container"></g>\n			<g monster-part part-group="nose" part-type="container"></g>\n		</g>\n\n		<g monster-part part-group="body" part-type="container"></g>\n\n		<g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n	</g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/alien/alien.html"*/
+            selector: 'alien',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/alien/alien.html"*/'<svg class="alien svg-container" preserveAspectRatio="xMidYMax meet" viewBox="-20 -40 205.37 342.36" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n	<svg monster-part part-name="confetti" part-type="group" part-hidden="true" visibility="hidden" width="264.596" height="321.1" y="-60" x="-42" viewBox="0 0 228.1 276.81" xmlns="http://www.w3.org/2000/svg">\n		<circle class="confetti--color--purple" cx="175.8" cy="39.96" r="2.92" transform="translate(61.28 179.2) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="194.19" cy="132.36" r="2.92" transform="translate(-11.17 246.62) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="224.86" cy="111.15" r="2.92" transform="translate(24.71 262.33) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="187.58" cy="163.72" r="2.92" transform="translate(-42.85 258.01) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="61.52" cy="41.69" r="2.92" transform="translate(-3.32 78) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="2.92" cy="25.05" r="2.92" transform="translate(-20.79 16.43) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="46.86" cy="177.69" r="2.92" transform="translate(-132.99 139.93) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="165.5" cy="205.75" r="2.92" transform="translate(-92.61 261.46) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="37.5" cy="244.42" r="2.92" transform="translate(-197.8 168.38) rotate(-63.37)"/>\n		<circle class="confetti--color--purple" cx="203.62" cy="84.67" r="2.92" transform="translate(36.66 228.74) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="176.17" cy="4.22" r="4.21" transform="translate(93.43 159.8) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="100.62" cy="38.25" r="4.21" transform="translate(21.33 111.05) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="192.28" cy="62.29" r="4.21" transform="translate(50.41 206.25) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="11.09" cy="180.47" r="4.21" transform="translate(-155.21 109.49) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="223.89" cy="137.99" r="4.21" transform="translate(0.18 276.27) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="174.08" cy="244.59" r="4.21" transform="translate(-122.59 290.56) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="208.08" cy="265.26" r="4.21" transform="translate(-122.31 332.36) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="38.08" cy="272.59" r="4.21" transform="translate(-222.66 184.44) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="29.52" cy="34.36" r="4.21" transform="translate(-14.42 45.35) rotate(-63.37)"/>\n		<circle class="confetti--color--yellow" cx="51.52" cy="215.03" r="4.21" transform="translate(-163.79 164.7) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="214.86" cy="27.69" r="4.41" transform="translate(93.79 207.34) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="6.19" cy="57.69" r="4.41" transform="translate(-48.16 37.36) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="18.86" cy="136.36" r="4.41" transform="translate(-111.49 92.09) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="195.52" cy="235.03" r="4.41" transform="translate(-102.21 304.45) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="10.91" cy="231.71" r="4.41" transform="translate(-201.11 137.6) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="222.6" cy="172.1" r="4.41" transform="translate(-31.02 293.94) rotate(-63.37)"/>\n		<circle class="confetti--color--red" cx="167.52" cy="176.36" r="4.41" transform="translate(-65.22 247.06) rotate(-63.37)"/>\n	</svg>\n\n	<g monster-part part-name="outer" part-type="group" class="">\n		<g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n		<g monster-part part-name="body" part-type="group" part-outline="true" >\n			<ellipse class="body body--figure" cx="82.66" cy="285.78" rx="50.36" ry="139.24"></ellipse>\n		</g>\n\n		<g class="head">\n			<path monster-part part-name="head-figure" part-type="group" class="head head--figure" d="M82.67,153.65a39.12,39.12,0,0,1-33.88-19.56L5.25,58.69A39.13,39.13,0,0,1,39.13,0H126.2a39.13,39.13,0,0,1,33.88,58.69l-43.53,75.4A39.13,39.13,0,0,1,82.67,153.65Z"></path>\n			<g class="content">\n				<g  monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" class="ears">\n					<ellipse class="ear" cx="2" cy="60" rx="11" ry="13.33"/>\n					<ellipse class="ear" cx="163" cy="60" rx="11" ry="13.33"/>\n				</g>\n        <g monster-part part-group="ears" part-type="container"></g>\n\n				<g monster-part part-name="mouth" part-type="group">\n					<path monster-part part-name="mouth-figure" part-type="element" part-group="mouth" class="mouth" d="M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z"></path>\n				</g>\n				<g monster-part part-name="eyes" part-type="group" class="eyes">\n					<g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">\n						<path class="eyeball" d="M25.19,26.89A52.14,52.14,0,0,0,77.36,79.06,52.14,52.14,0,0,0,25.19,26.89Z"></path>\n						<circle class="iris" cx="51.86" cy="53.61" r="15.32"></circle>\n						<circle class="pupil" cx="51.86" cy="53.61" r="7.21"></circle>\n					</g>\n					<g monster-part part-name="eye" part-name-mod="right" part-type="group" part-group="eyes" class="eye eye--right">\n						<path class="eyeball" d="M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z"></path>\n						<circle class="iris" cx="113.53" cy="53.61" r="15.32"></circle>\n						<circle class="pupil" cx="113.53" cy="53.61" r="4.75"></circle>\n					</g>\n				</g>\n				<g monster-part part-name="eyes-animation">\n					<clipPath id="eyeball--left-mask">\n						<path monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes" class="eye eye--mask" d="M25.19,26.89A52.14,52.14,0,0,0,77.36,79.06,52.14,52.14,0,0,0,25.19,26.89Z"></path>\n					</clipPath>\n					<path monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" d="M45,2a52.14,52.14,0,0,0,52.17,52.17a52.14,52.14,0,0,0,-52.17,-52.17z"></path>\n\n					<clipPath id="eyeball--right-mask">\n						<path monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eye eye--mask" d="M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z"></path>\n					</clipPath>\n					<path monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" d="M115.14,2a52.14,52.14,0,0,0,-52.14,52.17a52.14,52.14,0,0,0,52.14,-52.17z"></path>\n				</g>\n\n        <g monster-part part-group="eyes" part-type="container"></g>\n				<g monster-part part-name="nose" part-type="group" class="nose">\n					<circle class="nostril nostril--left" cx="76.75" cy="99.18" r="2.49"></circle>\n					<circle class="nostril nostril--right" cx="88.6" cy="99.18" r="2.49"></circle>\n				</g>\n			</g>\n			<g monster-part part-group="head-figure" part-type="container"></g>\n			<g monster-part part-group="mouth" part-type="container"></g>\n			<g monster-part part-group="nose" part-type="container"></g>\n		</g>\n\n		<g monster-part part-group="body" part-type="container"></g>\n\n		<g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n	</g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/alien/alien.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _e || Object])
     ], AlienComponent);
     return AlienComponent;
+    var _a, _b, _c, _d, _e;
 }(__WEBPACK_IMPORTED_MODULE_1__monster_model__["a" /* MonsterModel */]));
 
 //# sourceMappingURL=alien.js.map
@@ -2044,7 +2115,7 @@ var WolfComponent = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MummyComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(296);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2164,7 +2235,7 @@ var MummyComponent = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YagaComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(297);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2285,7 +2356,7 @@ var YagaComponent = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoctorComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(298);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2500,7 +2571,7 @@ var GhostComponent = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameFinistStateMachine; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__ = __webpack_require__(301);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_javascript_state_machine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_javascript_state_machine__);
 
 var GameFinistStateMachine = /** @class */ (function () {
@@ -2596,7 +2667,7 @@ var GameFinistStateMachine = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListnersHandler; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__listner_register_class__ = __webpack_require__(302);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -3105,10 +3176,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(354);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_select_background_bg_module__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_model_module__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(357);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_select__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_game_game__ = __webpack_require__(102);
@@ -3909,6 +3980,139 @@ var sequances = {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return animations; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sequances; });
 var animations = {
+    lidLeft: {
+        fn: function (p) { return p.name === 'lid' && p.mod === 'left'; },
+        close: function (l, cb) {
+            l.attr({
+                d: 'M45,2a52.14,52.14,0,0,0,52.17,52.17a52.14,52.14,0,0,0,-52.17,-52.17z',
+            });
+            l.animate({
+                d: 'M25.19,26.89a52.14,52.14,0,0,0,52.17,52.17a52.14,52.14,0,0,0,-52.17,-52.17z'
+            }, 42, cb);
+        },
+        open: function (l, cb) {
+            l.attr({
+                d: 'M25.19,26.89a52.14,52.14,0,0,0,52.17,52.17a52.14,52.14,0,0,0,-52.17,-52.17z',
+            });
+            l.animate({
+                d: 'M45,2a52.14,52.14,0,0,0,52.17,52.17a52.14,52.14,0,0,0,-52.17,-52.17z'
+            }, 42, cb);
+        },
+    },
+    lidRight: {
+        fn: function (p) { return p.name === 'lid' && p.mod === 'right'; },
+        close: function (l, cb) {
+            l.attr({
+                d: 'M115.14,2a52.14,52.14,0,0,0,-52.14,52.17a52.14,52.14,0,0,0,52.14,-52.17z',
+            });
+            l.animate({
+                d: 'M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z'
+            }, 42, cb);
+        },
+        open: function (l, cb) {
+            l.attr({
+                d: 'M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z',
+            });
+            l.animate({
+                d: 'M115.14,2a52.14,52.14,0,0,0,-52.14,52.17a52.14,52.14,0,0,0,52.14,-52.17z'
+            }, 42, cb);
+        },
+    },
+    mouth: {
+        fn: function (p) { return p.name === 'mouth-figure'; },
+        smileIn: function (instance, cb) {
+            instance.attr({
+                class: 'mouth fadeIn',
+                d: 'M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z'
+            });
+            instance.animate({
+                d: 'M49.75,116c18.26,30.66,47.82,30.66,66.08,0z'
+            }, 200, cb);
+        },
+        smileOut: function (instance, cb) {
+            instance.attr({
+                class: 'mouth fadeOut',
+                d: 'M49.75,116c18.26,30.66,47.82,30.66,66.08,0z'
+            });
+            instance.animate({
+                d: 'M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z'
+            }, 200, cb);
+        },
+        sadIn: function (instance, cb) {
+            instance.attr({
+                class: 'mouth fadeIn',
+                d: 'M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z'
+            });
+            instance.animate({
+                d: 'M60,136c12,-25,30,-25,45.08,0z'
+            }, 200, cb);
+        },
+        sadOut: function (instance, cb) {
+            instance.attr({
+                class: 'mouth fadeOut',
+                d: 'M60,136c12,-25,30,-25,45.08,0z'
+            });
+            instance.animate({
+                d: 'M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z'
+            }, 200, cb);
+        },
+    }
+};
+var sequances = {
+    joyful: function (mouth, isForward, cb) {
+        var config = {
+            mouth: isForward ? 'smileIn' : 'smileOut',
+        };
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 1) {
+                return cb();
+            }
+            return;
+        };
+        mouth.animations.run(config.mouth).onDisengage(afterFinish);
+        return;
+    },
+    sad: function (mouth, isForward, cb) {
+        var config = {
+            mouth: isForward ? 'sadIn' : 'sadOut',
+        };
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 1) {
+                return cb();
+            }
+            return;
+        };
+        mouth.animations.run(config.mouth).onDisengage(afterFinish);
+        return;
+    },
+    default: function (lidLeft, lidRight, cb) {
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 2) {
+                return cb();
+            }
+            return;
+        };
+        lidLeft.animations.run('close').delay(50).run('open').onDisengage(afterFinish);
+        lidRight.animations.run('close').delay(50).run('open').onDisengage(afterFinish);
+    },
+};
+
+//# sourceMappingURL=animations.js.map
+
+/***/ }),
+/* 296 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return animations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sequances; });
+var animations = {
     lid: {
         close: function (l, cb) {
             l.attr({ cy: 64 });
@@ -4013,7 +4217,7 @@ var sequances = {
 //# sourceMappingURL=animations.js.map
 
 /***/ }),
-/* 296 */
+/* 297 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4169,7 +4373,7 @@ var sequances = {
 //# sourceMappingURL=animations.js.map
 
 /***/ }),
-/* 297 */
+/* 298 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4297,12 +4501,12 @@ var sequances = {
 //# sourceMappingURL=animations.js.map
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Game; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cursor_position__ = __webpack_require__(300);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(183);
 
@@ -4349,7 +4553,7 @@ var Game = /** @class */ (function () {
 //# sourceMappingURL=game.service.js.map
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4394,8 +4598,8 @@ var CursorPosition = /** @class */ (function () {
 //# sourceMappingURL=cursor-position.js.map
 
 /***/ }),
-/* 300 */,
-/* 301 */
+/* 301 */,
+/* 302 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4471,12 +4675,12 @@ var ListnerRegister = /** @class */ (function () {
 //# sourceMappingURL=listner-register.class.js.map
 
 /***/ }),
-/* 302 */
+/* 303 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameLogic; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_repository__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__game_fsm__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listners_handler__ = __webpack_require__(183);
 
@@ -4551,12 +4755,12 @@ var GameLogic = /** @class */ (function () {
 //# sourceMappingURL=game-logic.js.map
 
 /***/ }),
-/* 303 */
+/* 304 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveElementRepository; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__active_element_model__ = __webpack_require__(305);
 
 var lib = {
     mouseEnterOnItem: function (item, ev) {
@@ -4685,7 +4889,7 @@ var ActiveElementRepository = /** @class */ (function () {
 //# sourceMappingURL=active-element.repository.js.map
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4793,7 +4997,6 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 //# sourceMappingURL=active-element.model.js.map
 
 /***/ }),
-/* 305 */,
 /* 306 */,
 /* 307 */,
 /* 308 */,
@@ -4818,16 +5021,17 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 /* 327 */,
 /* 328 */,
 /* 329 */,
-/* 330 */
+/* 330 */,
+/* 331 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monsters_monsters_module__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trinkets_trinkets_module__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game_module__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__item_holder_item_holder_module__ = __webpack_require__(354);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4856,7 +5060,7 @@ var ComponentsModule = /** @class */ (function () {
 //# sourceMappingURL=components.module.js.map
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4919,36 +5123,36 @@ var MonstersModule = /** @class */ (function () {
 //# sourceMappingURL=monsters.module.js.map
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(333);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hood_hood__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__glass_glass__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes_eyes__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hood_hood__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mole_mole__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__heart_heart__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__beard_beard__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__ = __webpack_require__(337);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dress_dress__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bra_bra__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__wig_wig__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lips_lips__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__egg_egg__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__flower_flower__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__bubble_bubble__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pigtail_pigtail__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__beard_beard__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__moustache_moustache__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__snivel_snivel__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dress_dress__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bra_bra__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__wig_wig__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lips_lips__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__lollipop_lollipop__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__egg_egg__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__earrings_earrings__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__necklace_necklace__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__flatulence_flatulence__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__flower_flower__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__bubble_bubble__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pigtail_pigtail__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__trinkets_component__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__trinket_host_directive__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__trinket_random_part_directive__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__trinket_random_part_directive__ = __webpack_require__(352);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__trinket_uniq_part_directive__ = __webpack_require__(164);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5000,7 +5204,7 @@ var TrinketsModule = /** @class */ (function () {
 //# sourceMappingURL=trinkets.module.js.map
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5045,7 +5249,7 @@ var GlassComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=glass.js.map
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5090,7 +5294,7 @@ var EyesComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=eyes.js.map
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5135,7 +5339,7 @@ var HoodComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=hood.js.map
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5180,7 +5384,7 @@ var BeardComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=beard.js.map
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5225,7 +5429,7 @@ var MoustacheComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=moustache.js.map
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5270,7 +5474,7 @@ var SnivelComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=snivel.js.map
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5315,7 +5519,7 @@ var DressComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=dress.js.map
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5360,7 +5564,7 @@ var BraComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=bra.js.map
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5405,7 +5609,7 @@ var WigComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=wig.js.map
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5450,7 +5654,7 @@ var LipsComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=lips.js.map
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5495,7 +5699,7 @@ var LollipopComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=lollipop.js.map
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5540,7 +5744,7 @@ var EggComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=egg.js.map
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5585,7 +5789,7 @@ var EarringsComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=earrings.js.map
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5630,7 +5834,7 @@ var NecklaceComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=necklace.js.map
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5675,7 +5879,7 @@ var FlatulenceComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=flatulence.js.map
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5720,7 +5924,7 @@ var FlowerComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=flower.js.map
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5765,7 +5969,7 @@ var BubbleComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=bubble.js.map
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5810,7 +6014,7 @@ var PigtailComponent = /** @class */ (function (_super) {
 //# sourceMappingURL=pigtail.js.map
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5862,7 +6066,7 @@ var TrinketRandomPartDirective = /** @class */ (function () {
 //# sourceMappingURL=trinket-random-part.directive.js.map
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5894,7 +6098,7 @@ var GameModule = /** @class */ (function () {
 //# sourceMappingURL=game.module.js.map
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5929,7 +6133,7 @@ var ItemHolderModule = /** @class */ (function () {
 //# sourceMappingURL=item-holder.module.js.map
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5965,7 +6169,7 @@ var BackgroundModule = /** @class */ (function () {
 //# sourceMappingURL=bg.module.js.map
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5996,7 +6200,7 @@ var ModelModule = /** @class */ (function () {
 //# sourceMappingURL=model.module.js.map
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

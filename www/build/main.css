@@ -25783,7 +25783,23 @@ alien .alien .head--figure, alien .alien .ear {
   fill: #6fc055;
 }
 
+alien .alien .eyeball--lid {
+  fill: #5a9837;
+}
+
 alien .alien .mouth {
+  fill: #f24943;
+}
+
+alien .alien .mouth.fadeIn {
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear;
+  fill: black;
+}
+
+alien .alien .mouth.fadeOut {
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear;
   fill: #f24943;
 }
 

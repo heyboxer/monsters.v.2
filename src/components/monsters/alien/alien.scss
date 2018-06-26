@@ -8,8 +8,22 @@ alien {
       fill: #6fc055;
     }
 
+    & .eyeball--lid {
+      fill: rgb(90, 152, 55);
+    }
+
     & .mouth {
-      fill: #f24943,
+      fill: #f24943;
+
+      &.fadeIn {
+        transition: fill .2s linear;
+        fill: black;
+      }
+
+      &.fadeOut {
+        transition: fill .2s linear;
+        fill: #f24943;
+      }
     }
 
     & .iris {

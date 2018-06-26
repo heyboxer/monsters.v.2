@@ -242,7 +242,10 @@ export abstract class MonsterModel implements AfterViewInit {
       this.close(name);
     });
 
-    this.getParts(p => p.animations).forEach(p => p.animations.recovery());
+    this.clearEmotion(() => {
+      this.getParts(p => p.animations).forEach(p => p.animations.recovery());
+    });
+
 
     return;
   }

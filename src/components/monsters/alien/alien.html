@@ -46,7 +46,7 @@
         <g monster-part part-group="ears" part-type="container"></g>
 
 				<g monster-part part-name="mouth" part-type="group">
-					<path monster-part part-name="mouth" part-type="element" part-group="mouth" class="mouth" d="M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z"></path>
+					<path monster-part part-name="mouth-figure" part-type="element" part-group="mouth" class="mouth" d="M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z"></path>
 				</g>
 				<g monster-part part-name="eyes" part-type="group" class="eyes">
 					<g monster-part part-name="eye" part-name-mod="left" part-type="group" part-group="eyes" class="eye eye--left">
@@ -60,6 +60,18 @@
 						<circle class="pupil" cx="113.53" cy="53.61" r="4.75"></circle>
 					</g>
 				</g>
+				<g monster-part part-name="eyes-animation">
+					<clipPath id="eyeball--left-mask">
+						<path monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes" class="eye eye--mask" d="M25.19,26.89A52.14,52.14,0,0,0,77.36,79.06,52.14,52.14,0,0,0,25.19,26.89Z"></path>
+					</clipPath>
+					<path monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" d="M45,2a52.14,52.14,0,0,0,52.17,52.17a52.14,52.14,0,0,0,-52.17,-52.17z"></path>
+
+					<clipPath id="eyeball--right-mask">
+						<path monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eye eye--mask" d="M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z"></path>
+					</clipPath>
+					<path monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" d="M115.14,2a52.14,52.14,0,0,0,-52.14,52.17a52.14,52.14,0,0,0,52.14,-52.17z"></path>
+				</g>
+
         <g monster-part part-group="eyes" part-type="container"></g>
 				<g monster-part part-name="nose" part-type="group" class="nose">
 					<circle class="nostril nostril--left" cx="76.75" cy="99.18" r="2.49"></circle>
