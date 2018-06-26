@@ -1,13 +1,3 @@
-// {original: 64, end: 118, begin: 132};
-// l.attr({cy: config.begin});
-// l.animate({cy: config.end}, 200, cb);
-
-// l.animate({cy: config.begin}, 200, () => {
-//   l.attr({cy: config.original});
-//   cb();
-//   return;
-// });
-
 const animations = {
   lid: {
     close: (l, cb) => {

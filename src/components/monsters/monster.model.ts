@@ -143,7 +143,10 @@ export abstract class MonsterModel implements AfterViewInit {
     const partNames = Object.keys(animations);
 
     partNames.forEach(name => {
-      this.getParts(part => part.name === name)
+      const { fn } = animations[name];
+      const find = fn ? fn : part => part.name === name;
+
+      this.getParts(find)
         .forEach(part => {
           return part.setAnimations(
             new AnimationSetController(
@@ -238,6 +241,8 @@ export abstract class MonsterModel implements AfterViewInit {
     this.getParts(p => p.hidden).forEach(({name}) => {
       this.close(name);
     });
+
+    this.getParts(p => p.animations).forEach(p => p.animations.recovery());
 
     return;
   }

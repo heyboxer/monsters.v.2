@@ -65,7 +65,7 @@
     <g monster-part part-group="body" part-type="container"></g>
     <g class="head">
         <g monster-part part-name="necklace" part-type="group">
-          <g monster-part part-name="head-figure" part-type="group" class="head-figure">
+          <g monster-part part-name="head-figure" part-type="group" part-outline="true" class="head-figure">
              <g class="shawl shawl--decor__shawl">
                 <path class="shawl-part" d="M96.38.07a196.7,196.7,0,0,1,0,278.33A196.7,196.7,0,0,1,96.38.07Z"></path>
                 <path class="shawl-part" d="M26.33,330.41A73.62,73.62,0,0,1,100,256.75,73.62,73.62,0,0,1,26.33,330.41Z"></path>
@@ -105,11 +105,25 @@
                <circle class="pupil" cx="112.78" cy="81" r="7.79"></circle>
             </g>
          </g>
+
+         <g monster-part part-name="eyes-animation">
+           <clipPath id="eyeball--left-mask">
+             <circle monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes"  class="eyeball eyeball--mask" cx="79.94" cy="81" r="11.98"></circle>
+           </clipPath>
+           <circle monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="79.94" cy="57" r="11.98"></circle>
+
+           <clipPath id="eyeball--right-mask">
+             <circle  monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eyeball eyeball--mask" cx="112.78" cy="81" r="15.2"></circle>
+           </clipPath>
+           <circle monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="112.78" cy="50.5" r="15.2"></circle>
+         </g>
+
 				 <g monster-part part-group="eyes" part-type="container"></g>
          <g monster-part part-name="mouth" part-type="group" class="mouth">
-            <rect class="mouth-figure" x="81.54" y="185.9" width="39.1" height="8.83"></rect>
-            <rect class="tooth" x="94.68" y="185.9" width="4.48" height="4.48"></rect>
-            <rect class="tooth" x="102.67" y="185.9" width="4.48" height="4.48"></rect>
+            <!-- <path monster-part part-name="mouth-figure" part-type="element" class="mouth-figure" d="M81.54,200c15.83,-20.83,41.45,-20.83,57.28,0z"></path> -->
+            <path monster-part part-name="mouth-figure" part-type="element" class="mouth-figure" d="M81.54,185.9h39.1v8.83h-39.1z"></path>
+            <rect monster-part part-name="tooth" part-type="element" class="tooth" x="94.68" y="185.9" width="4.48" height="4.48"></rect>
+            <rect monster-part part-name="tooth" part-type="element" class="tooth" x="102.67" y="185.9" width="4.48" height="4.48"></rect>
          </g>
          <g monster-part part-group="head-figure" part-type="container"></g>
          <g monster-part part-group="mouth" part-type="container"></g>

@@ -13,11 +13,17 @@ const once = fn => {
   };
 };
 
+class DelayModel extends AnimationModel {
+  constructor(private interval: number) {
+    super(null, (instance, callback) => setTimeout(callback, this.interval));
+  };
+}
+
 export class AnimationSetController {
   private animations: Map<string, AnimationModel>;
   private state: boolean = false;
   private current: AnimationModel | null = null;
-  private queue: AnimationModel[] = [];
+  private queue: (AnimationModel | DelayModel)[] = [];
   private queueCleared = new EventEmitter();
   private end = new EventEmitter();
 
@@ -90,7 +96,7 @@ export class AnimationSetController {
     return this.state;
   }
 
-  private getInQueue(animation: AnimationModel): void {
+  private getInQueue(animation: AnimationModel | DelayModel): void {
     this.queue.push(animation);
 
     return;
@@ -124,6 +130,31 @@ export class AnimationSetController {
     }
 
     animation.run();
+    return this;
+  }
+
+  public delay(interval: number): this {
+    const delay = new DelayModel(interval);
+
+    delay.onStart((animation) => {
+      this.setState(true);
+      this.setCurrent(animation);
+      return;
+    });
+
+    delay.onEnd((animation) => {
+      this.setState(false);
+      this.setCurrent(null);
+      return;
+    });
+
+    if(this.isAnimating()) {
+      this.getInQueue(delay);
+      return this;
+    }
+
+    delay.run();
+
     return this;
   }
 

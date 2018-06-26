@@ -33,6 +33,11 @@ yaga {
 
     & .eyeball {
       fill: #fff;
+
+      &--lid {
+        fill: #20654d;
+        stroke: none;
+      }
     }
 
     & .nose {

@@ -8,6 +8,13 @@ doctor {
       fill: #fff;
     }
 
+    & .eyeball {
+      &--lid {
+        fill: #ebba96;
+        stroke: none;
+      }
+    }
+
     & .hat {
       fill: #fff;
     }
@@ -28,6 +35,15 @@ doctor {
       fill: #f24943;
     }
 
+    & .fadeIn {
+       transition: fill .2s linear;
+       fill: black;
+    }
+
+    & .fadeOut {
+       transition: fill .2s linear;
+    }
+
     & .tooth {
       fill: #fff;
     }
@@ -46,6 +62,10 @@ doctor {
 
       &--right {
         stroke-width: 6.03px;
+      }
+
+      &--mask {
+        stroke: none;
       }
     }
   }

@@ -20,7 +20,7 @@ const joyfulAnimBefore = (monster, repo, instance) => {
   if(monster.getEmotion() === 'default' && onMonster) {
     monster.makeJoyful();
   } else if(hasSad) {
-    monster.setAnimationStack('joyful');
+    // monster.setAnimationStack('joyful');
   };
 
   return;
@@ -36,7 +36,7 @@ const joyfulAnimAfter = (monster, repo, instance) => {
   });
 
   if(filtered.length === 0 && monster.getEmotion() === 'joyful') {
-    monster.clearEmotion()
+    monster.clearEmotion();
   }
 }
 
