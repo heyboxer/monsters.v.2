@@ -26274,6 +26274,11 @@ yeti .yeti .body, yeti .yeti .ear {
   fill: #cdcdcd;
 }
 
+yeti .yeti .mouth-figure {
+  stroke: #f24943;
+  stroke-width: 3.8px;
+}
+
 yeti .yeti .eyelash {
   fill: none;
   stroke: #000;
@@ -26281,11 +26286,19 @@ yeti .yeti .eyelash {
   stroke-width: 0.5px;
 }
 
+yeti .yeti .eyeball--lid {
+  fill: #9a9b9b;
+}
+
 yeti .yeti .hair {
   fill: #9a9b9b;
 }
 
 yeti .yeti .face {
+  fill: #cdcdcd;
+}
+
+yeti .yeti .eyebrows {
   fill: #cdcdcd;
 }
 
@@ -26299,10 +26312,6 @@ yeti .yeti .ear {
 
 yeti .yeti .jaw {
   fill: #cdcdcd;
-}
-
-yeti .yeti .lips {
-  fill: #f24943;
 }
 
 yeti .yeti .tooth {

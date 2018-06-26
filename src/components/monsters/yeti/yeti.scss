@@ -8,6 +8,11 @@ yeti {
       fill: #cdcdcd;
     }
 
+    & .mouth-figure {
+      stroke: #f24943;
+      stroke-width: 3.8px;
+    }
+
 
     & .eyelash {
       fill:none;
@@ -16,11 +21,21 @@ yeti {
       stroke-width:0.5px;
     }
 
+    & .eyeball {
+      &--lid {
+        fill: #9a9b9b;
+      }
+    }
+
     & .hair {
       fill: #9a9b9b;
     }
 
     & .face {
+      fill: #cdcdcd;
+    }
+
+    & .eyebrows {
       fill: #cdcdcd;
     }
 
@@ -34,10 +49,6 @@ yeti {
 
     & .jaw {
       fill: #cdcdcd;
-    }
-
-    & .lips {
-      fill: #f24943;
     }
 
     & .tooth {
