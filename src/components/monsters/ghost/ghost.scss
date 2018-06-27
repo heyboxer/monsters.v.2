@@ -15,6 +15,10 @@ ghost {
 
     & .eyeball {
       fill: #fff;
+
+      &--lid {
+        fill: rgb(153, 207, 238);
+      }
     }
 
     & .ubula {
@@ -27,6 +31,20 @@ ghost {
 
     & .mouth {
       clip-path: url(#mouth-clip-path);
+
+      &--no-clip-path {
+        clip-path: none;
+      }
+
+      &-figure {
+        transition: stroke-width stroke .2s linear;
+
+        &--stroke {
+          transition: stroke-width stroke .2s linear;
+          stroke: #f24943;
+          stroke-width: 4px;
+        }
+      }
     }
   }
 }

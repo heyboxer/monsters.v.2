@@ -25948,6 +25948,10 @@ ghost .ghost .eyeball {
   fill: #fff;
 }
 
+ghost .ghost .eyeball--lid {
+  fill: #99cfee;
+}
+
 ghost .ghost .ubula {
   fill: #f24943;
 }
@@ -25959,6 +25963,23 @@ ghost .ghost .tooth {
 ghost .ghost .mouth {
   -webkit-clip-path: url(#mouth-clip-path);
   clip-path: url(#mouth-clip-path);
+}
+
+ghost .ghost .mouth--no-clip-path {
+  -webkit-clip-path: none;
+  clip-path: none;
+}
+
+ghost .ghost .mouth-figure {
+  -webkit-transition: stroke-width stroke .2s linear;
+  transition: stroke-width stroke .2s linear;
+}
+
+ghost .ghost .mouth-figure--stroke {
+  -webkit-transition: stroke-width stroke .2s linear;
+  transition: stroke-width stroke .2s linear;
+  stroke: #f24943;
+  stroke-width: 4px;
 }
 
 mummy .mummy {
