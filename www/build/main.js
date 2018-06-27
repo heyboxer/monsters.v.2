@@ -3724,8 +3724,26 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrinketsService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__heart_instance__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mole_instance__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hood_instance__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__heart_instance__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__snivel_instance__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__moustache_instance__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__beard_instance__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mole_instance__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__glass_instance__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__eyes_instance__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dress_instance__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bra_instance__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wig_instance__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lips_instance__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lollipop_instance__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__egg_instance__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__earrings_instance__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__necklace_instance__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__flatulence_instance__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__flower_instance__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__bubble_instance__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pigtail_instance__ = __webpack_require__(383);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3738,18 +3756,49 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var TrinketsService = /** @class */ (function () {
     function TrinketsService() {
     }
     TrinketsService.prototype.getTrinkets = function () {
         return [
-            // eyes,
-            __WEBPACK_IMPORTED_MODULE_2__mole_instance__["a" /* default */],
-            // moustache,
-            // lips,
-            // earrings,
-            // beard,
-            __WEBPACK_IMPORTED_MODULE_1__heart_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_8__eyes_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_6__mole_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_4__moustache_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_12__lips_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_15__earrings_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_5__beard_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_2__heart_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_9__dress_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_18__flower_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_11__wig_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_16__necklace_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_3__snivel_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_7__glass_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_13__lollipop_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_10__bra_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_20__pigtail_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_14__egg_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_17__flatulence_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_19__bubble_instance__["a" /* default */],
+            __WEBPACK_IMPORTED_MODULE_1__hood_instance__["a" /* default */],
         ];
     };
     TrinketsService = __decorate([
@@ -7656,6 +7705,4506 @@ var MyApp = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=app.component.js.map
+
+/***/ }),
+/* 364 */,
+/* 365 */,
+/* 366 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hood__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(162);
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 3,
+    component: __WEBPACK_IMPORTED_MODULE_0__hood__["a" /* HoodComponent */],
+    meta: {
+        container: 'head-figure',
+        getContainer: function () {
+            return this.container;
+        },
+        emotion: 'joyful',
+        uniq: true,
+        before: function (monster, repo, instance) {
+            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["b" /* joyfulAnimBefore */])(monster, repo, instance);
+            monster.open('confetti');
+        },
+        after: function (monster, repo, instance) {
+            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["a" /* joyfulAnimAfter */])(monster, repo, instance);
+            monster.close('confetti');
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 65.45;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 71.8;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 76.885;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 47.154;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 82.414;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 106.668;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 50.625;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 76.885;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 78.4;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 90.345;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 41.735;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 64.59;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 61.23;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 98.59;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 57.304;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 64.746;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 85.186;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 58.784;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 56.281;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 57.304;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 87.6;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 76.6;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 80.656;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 54.76;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + width - 61.23 + 10;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - 24;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - 32;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + 15;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + 49;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - 106.668 / 2) + width / 2) + 4;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + (width / 2);
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 1.5;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + (width / 2) - 5;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (90.345) / 2) + width / 2) + 50;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - 10;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + 34;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 20;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 16;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 14;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 10;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 22;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 15;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 41;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 20;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 10;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 30;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -10;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 6;
+                },
+            }
+        },
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 367 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__snivel__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(162);
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 8,
+    component: __WEBPACK_IMPORTED_MODULE_0__snivel__["a" /* SnivelComponent */],
+    meta: {
+        container: 'nose',
+        getContainer: function () {
+            return this.container;
+        },
+        emotion: 'sad',
+        before: __WEBPACK_IMPORTED_MODULE_1__lib__["d" /* sadAnimBefore */],
+        after: __WEBPACK_IMPORTED_MODULE_1__lib__["c" /* sadAnimAfter */],
+        uniq: true,
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 27;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 25;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 11;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 22;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 15 * 1.2;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 15;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 52.9;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 24;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 17;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 15;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 24;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 11.64;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 47;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 44;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 20;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 78;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 26 * 1.2;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 26;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 90.58;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 42;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 30;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 26;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 42;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 20.4;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + 20;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + width + 12.5;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + width - 7;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + width - 22;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (15 * 1.2) / 2) + width / 2;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (15) / 2) + width / 2) - 5;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (52.9) / 2) + width / 2) - 4.5;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - 24 / 2) + width / 2;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - 17 / 2) + width / 2;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 3.5) / 2) + width / 2;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - 24 / 2) + width / 2;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - 11.64 / 2) + width / 2;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 10;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height - 7;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 368 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moustache__ = __webpack_require__(344);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 7,
+    component: __WEBPACK_IMPORTED_MODULE_0__moustache__["a" /* MoustacheComponent */],
+    meta: {
+        container: 'mouth',
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster) {
+            if (monster.name === 'skeleton') {
+                monster.close('teeth-top');
+            }
+            else if (monster.name === 'doctor') {
+                monster.close('mouth-figure');
+            }
+            return;
+        },
+        after: function (monster) {
+            if (monster.name === 'skeleton') {
+                monster.open('teeth-top');
+            }
+            else if (monster.name === 'doctor') {
+                monster.open('mouth-figure');
+            }
+            return;
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 155;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 155;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 50;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 75;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 72;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 127;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 75.732 * 1.2;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 50;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 71;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 127;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 127;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 95.74;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 63;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 63;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 20;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 30;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 29;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 51;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 108.69 * 1.2;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 20;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 28;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 51;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 51;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 38.9;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 62.45000457763672;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 24.9296875;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 51.18359375;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 65.09000015258789;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 11.919998168945312;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 86.49579755859375;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 57.654296875;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 78.43000030517578;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 70.224609375;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 59.3700065612793;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 184.0300006866455;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 29.664999847412112;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 134;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 137.140625;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 126.8515625;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 160.89999389648438;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 202;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 107.79000091552734;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 100.44140625;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 179.5;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 102.5;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 60.010005950927734;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 103;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 185.1999969482422;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 369 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__beard__ = __webpack_require__(343);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 6,
+    component: __WEBPACK_IMPORTED_MODULE_0__beard__["a" /* BeardComponent */],
+    meta: {
+        container: 'mouth',
+        getContainer: function () {
+            return this.container;
+        },
+        before: function (monster) {
+            if (monster.name === 'wolf') {
+                monster.close('tongue');
+            }
+            else if (monster.name === 'skeleton') {
+                return;
+            }
+            else if (monster.name === 'spider') {
+                monster.close('mouth');
+                monster.close('mouth-decor');
+            }
+            else if (monster.name === 'mummy') {
+                monster.close('mouth');
+                monster.open('mouth-fraud');
+            }
+            else {
+                monster.close('mouth');
+            }
+            return;
+        },
+        after: function (monster) {
+            if (monster.name === 'wolf') {
+                monster.open('tongue');
+            }
+            else if (monster.name === 'skeleton') {
+                return;
+            }
+            else if (monster.name === 'spider') {
+                monster.open('mouth');
+                monster.open('mouth-decor');
+            }
+            else if (monster.name === 'mummy') {
+                monster.open('mouth');
+                monster.close('mouth-fraud');
+            }
+            else {
+                monster.open('mouth');
+            }
+            return;
+        },
+        uniq: true,
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 181.18;
+                },
+                zombie: function () { return 152; },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 119.562;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 119.56;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 119.56 * 1.2;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 94.648;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 113;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 113;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 200;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 183.75;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 160;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 58.36;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 164.06;
+                },
+                zombie: function () { return 72.1; },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 95.3;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 119.56;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 95.2 * 1.2;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 163.921;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 90.5;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 90.5;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 92.34;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 147.4;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 125;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 46.5;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 9.35800018310546;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 12;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 73;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 41.31000015258789;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 3.5;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 84.61099755859375;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 26.154296875;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 46.93000030517578;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 33.724609375;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 30.995006561279297;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 108;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 48.35499984741211;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 117.5199966430664;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 172.92578125;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 156.8515625;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 155.89999389648438;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 193;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 135.79000091552734;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 100.44140625;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 176;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 125;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 85;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 102;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 201.1999969482422;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 370 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__glass__ = __webpack_require__(340);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 2,
+    component: __WEBPACK_IMPORTED_MODULE_0__glass__["a" /* GlassComponent */],
+    meta: {
+        container: 'eyes',
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 2;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 231.61;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 250.48;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 139.4;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 139.42;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 145.293 * 1.2;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 178;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 134.12;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 146.2;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 234;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 145.29;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 75.79;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 2;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 106.96;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 67.44;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 48.89;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 48.89;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 123.953 * 1.2;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 70;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 50;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 78.2;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 82.1;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 60;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 26.578;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -15.67;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -24.35;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 26.75;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 5;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 45.27;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -6;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 36;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 57;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 5.75;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 18;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 39.64;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 30.75;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 80;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 68;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 143;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 96.13;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 16;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 81;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 38;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 38;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 55;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 171.58;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 371 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__eyes__ = __webpack_require__(341);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 1,
+    component: __WEBPACK_IMPORTED_MODULE_0__eyes__["a" /* EyesComponent */],
+    meta: {
+        container: 'eyes',
+        getContainer: function () {
+            return this.container;
+        },
+        before: function (monster) {
+            if (monster.name === 'vampire') {
+                monster.close('eye');
+            }
+            else if (!['vampire'].includes(monster.name)) {
+                monster.close('eyes');
+            }
+            return;
+        },
+        after: function (monster) {
+            if (monster.name === 'vampire') {
+                monster.open('eye');
+            }
+            else if (!['vampire'].includes(monster.name)) {
+                monster.open('eyes');
+            }
+            return;
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 164.42;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 155;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 155;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 78.2;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 81;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 83.95 * 1.2;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 197;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 62.59;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 111.6;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 106.5;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 134.8;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 73.414;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 75.93;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 49.5;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 49.5;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 24.97;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 25.9;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 26.8 * 1.2;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 62.9;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 17.315;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 35.6;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 34;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 43;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 23.414;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 17.74;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 8;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 55;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 58;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 35.48;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 82;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -16;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 71.5;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 78.5;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 70;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 33;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 40.8;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 28.41;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 65;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 65;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 70;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 130;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 88;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 25;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 100;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 60;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 50;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 66;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 159.2;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 372 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dress__ = __webpack_require__(346);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 9,
+    component: __WEBPACK_IMPORTED_MODULE_0__dress__["a" /* DressComponent */],
+    meta: {
+        container: 'body',
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster) {
+            if (['mummy', 'yaga', 'yeti', 'doctor', 'vampire', 'zombie', 'wolf'].includes(monster.name)) {
+                monster.close('body');
+            }
+            return;
+        },
+        after: function (monster) {
+            if (['mummy', 'yaga', 'yeti', 'doctor', 'vampire', 'zombie', 'wolf'].includes(monster.name)) {
+                monster.open('body');
+            }
+            ;
+            return;
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 245;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return width * 0.7;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return width * 1.3;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return width * 1.3;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return width;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return width;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return width * 1.44;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 140;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 217;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 318.25;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 326;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 159.49;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 210;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 121.5;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return height * 0.56;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return height * 1.3;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return height;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 190;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return height * 1.1;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 120;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 274;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 159.6;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 237;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 27.637;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width) / 2) + width / 2;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 25;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.3) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.3) / 2) + width / 2;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - width / 2) + width / 2;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - width / 2) + width / 2;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (width * 1.4) / 2) + width / 2) - 3;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (140) / 2) + width / 2;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (318.25) / 2) + width / 2;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - 326 / 2) + width / 2) + 7;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - 37;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 220;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 10;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 10;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 20;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 71;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 57;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 8;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 373 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bra__ = __webpack_require__(347);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 10,
+    component: __WEBPACK_IMPORTED_MODULE_0__bra__["a" /* BraComponent */],
+    meta: {
+        container: 'body',
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster) {
+            if (monster.name === 'bed') {
+                monster.close('eyes');
+            }
+            return;
+        },
+        after: function (monster) {
+            if (monster.name === 'bed') {
+                monster.open('eyes');
+            }
+            return;
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 160;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 204;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 79.1;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 200.69;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 139.95;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 93.99;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 146;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 70.86;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 194.5;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 220;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 332.8;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 65.47;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 71;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 50;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 58.25;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 110.29;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 101.45;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 47.97;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 173;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 45.46;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 69.8;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 145.5;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 137.75;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 35.973;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + 10;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (204) / 2) + width / 2) + 9;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (71.9) / 2) + width / 2) - 3.5;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 0;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - 93.99 / 2) + width / 2;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (146) / 2) + width / 2);
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (70.86) / 2) + width / 2;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (220) / 2) + width / 2) - 0.25;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + 1.5;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 148.5;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 105;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 20;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 2;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 10;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 20;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 15;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 80;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 82;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 22;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 60;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 374 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wig__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(162);
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 11,
+    component: __WEBPACK_IMPORTED_MODULE_0__wig__["a" /* WigComponent */],
+    meta: {
+        container: 'head-figure',
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        emotion: 'joyful',
+        before: function (monster, repo, instance) {
+            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["b" /* joyfulAnimBefore */])(monster, repo, instance);
+            if (monster.name === 'zombie') {
+                monster.close('hair');
+            }
+        },
+        after: function (monster, repo, instance) {
+            Object(__WEBPACK_IMPORTED_MODULE_1__lib__["a" /* joyfulAnimAfter */])(monster, repo, instance);
+            if (monster.name === 'zombie') {
+                monster.open('hair');
+            }
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 200;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 206.7;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 178.3;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 73.3;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 119.6;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 170.7;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 190.6;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 108.6;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 188.1;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 164.2;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 170.5;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 90.1;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 200;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 203.3;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 256.1;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 73.4;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 119.7;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 170.8;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 190.7;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 186.9;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 188.3;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 243.8;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 151.5;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 90.18;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 0;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (206.7) / 2) + width / 2;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (178.3) / 2) + width / 2) + 2;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (73.3) / 2) + width / 2;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - 119.7 / 2) + width / 2;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 45;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (190.7) / 2) + width / 2) - 3.5;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (108.6) / 2) + width / 2;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (188.1) / 2) + width / 2);
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (164.2) / 2) + width / 2) - 0.25;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - 15;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (90.1) / 2) + width / 2) - 10;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 20;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 10;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 7;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 30;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 20;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 40;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 30;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 30;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 5;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 7;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 33;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 20;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 375 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lips__ = __webpack_require__(349);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 12,
+    component: __WEBPACK_IMPORTED_MODULE_0__lips__["a" /* LipsComponent */],
+    meta: {
+        container: 'mouth',
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster, repo, instance) {
+            monster.open('eyelashes');
+            if (monster.name === 'skeleton') {
+                monster.close('teeth');
+                monster.open('hidden-jaw');
+            }
+            if (monster.name === 'zombie') {
+                monster.open('sad-eyes');
+            }
+            if (monster.name === 'mummy') {
+                monster.open('mouth-fraud');
+            }
+            if (monster.name === 'spider') {
+                monster.close('mouth-decor');
+            }
+            if (monster.name === 'wolf') {
+                monster.close('tongue');
+                monster.close('drooling');
+                monster.close('jaw');
+                monster.close('teeth');
+                monster.open('jaw-closed');
+            }
+            if (monster.name === 'vampire') {
+                monster.close('mouth-figure');
+                monster.close('teeth');
+            }
+            if (!['skeleton', 'wolf', 'vampire'].includes(monster.name)) {
+                monster.close('mouth');
+            }
+        },
+        after: function (monster, repo, instance) {
+            monster.close('eyelashes');
+            if (monster.name === 'skeleton') {
+                monster.open('teeth');
+                monster.close('hidden-jaw');
+            }
+            if (monster.name === 'zombie') {
+                monster.close('sad-eyes');
+            }
+            if (monster.name === 'mummy') {
+                monster.close('mouth-fraud');
+            }
+            if (monster.name === 'spider') {
+                monster.open('mouth-decor');
+            }
+            if (monster.name === 'wolf') {
+                monster.open('tongue');
+                monster.open('drooling');
+                monster.open('jaw');
+                monster.open('teeth');
+                monster.close('jaw-closed');
+            }
+            if (monster.name === 'vampire') {
+                monster.open('mouth-figure');
+                monster.open('teeth');
+            }
+            if (!['skeleton', 'wolf', 'vampire'].includes(monster.name)) {
+                monster.open('mouth');
+            }
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 99.84;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 89.5;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 122.3;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 73.3;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 74.8;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 117.876;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 94.78 * 1.4;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 56.56;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 93.325;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 137.74;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 79.76;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 41.571;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 80.52;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 76.5;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 94.6;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 73.4;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 85.62;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 119.6;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 59.46 * 1.4;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 94.4;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 41.1;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 90.24;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 31.785;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 27.56;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 50.03000457763672;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 84.62109375;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 69.53359375;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 61.540000915527344;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 38.019998168945314;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 72.99699755859375;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 24;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 75.15000030517578;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 87.062109375;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 54.00000656127929;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 73.78000068664551;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 56.74999984741211;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 105.5199966430664;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 132.140625;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 96.8515625;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 155.89999389648438;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 174.4300030517578;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 125.79000091552734;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 90;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 150.5;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 130.7890625;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 110.93000793457031;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 116.0022201538086;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 192.1999969482422;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 376 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lollipop__ = __webpack_require__(350);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 13,
+    component: __WEBPACK_IMPORTED_MODULE_0__lollipop__["a" /* LollipopComponent */],
+    meta: {
+        container: 'mouth',
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster, repo, instance) {
+        },
+        after: function (monster, repo, instance) {
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 69.96;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 99.1;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 101.163;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 36;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 36.07;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 113 * 1.2;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 75.84;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 74.68;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 91.884;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 98.34;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 36.06;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 63.77;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 104.667;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 72.6;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 89.37;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 124.9;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 66.44;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 140.9 * 1.2;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 70.92;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 72.17;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 44.3;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 64.22;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 95.2;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 34.39;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 84.97000457763673;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 84.62109375;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 89.23828125;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 94.63999938964844;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 57.384998168945316;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 57.13499755859375;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 71.68359375;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 27;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 131.724609375;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 84.59000396728516;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 209.9700006866455;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 67.86000061035156;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 160.5199966430664;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 187.140625;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 176.8515625;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 185.89999389648438;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 237.0699920654297;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 140.79000091552734;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 123.44140625;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 210.5;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 140.7890625;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 167.77001190185547;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 160.5500030517578;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 209.1999969482422;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 377 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__egg__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib__ = __webpack_require__(162);
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 14,
+    component: __WEBPACK_IMPORTED_MODULE_0__egg__["a" /* EggComponent */],
+    meta: {
+        container: { name: 'outer', mod: 'forward' },
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        emotion: 'sad',
+        before: __WEBPACK_IMPORTED_MODULE_1__lib__["d" /* sadAnimBefore */],
+        after: __WEBPACK_IMPORTED_MODULE_1__lib__["c" /* sadAnimAfter */],
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 225.9 * 1.1;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 238.8;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 210.98;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 222.231;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 228.369;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 159.738;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 199.879;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 234.296;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 241.66;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 205.639;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 228.77;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 242.647;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 266.416 * 1.1;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 220.19;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 246.6;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 212.065;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 208.781;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 237.555;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 246.747;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 235.648;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 257.487;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 259.417;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 233.316;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 231.647;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -25;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -20;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 5;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -30;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -40;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 70;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -20;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -20;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 10;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 20;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 5;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -20;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -10;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -10;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 30;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 80;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 50;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -20;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 40;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -20;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -10;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -5;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 20;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 378 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__earrings__ = __webpack_require__(352);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 15,
+    component: __WEBPACK_IMPORTED_MODULE_0__earrings__["a" /* EarringsComponent */],
+    meta: {
+        container: 'ears',
+        getContainer: function () {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster, repo, instance) {
+            monster.open('ears');
+        },
+        after: function (monster, repo, instance) {
+            if (!['doctor', 'vampire', 'yeti', 'wolf'].includes(monster.name)) {
+                monster.close('ears');
+            }
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 150.972 * 1.4;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 30.9;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 182.231 * 1.1;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 74.1;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 121.678 * 1.2;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 139.306 * 1.2;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 179.948 * 1.05;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 84.972 * 1.1;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 179.827;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 213.687;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 104.50;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 79.667;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 26.887 * 1.4;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 46.233;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 46.233 * 1.1;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 19.844;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 37.141 * 1.2;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 100.455 * 1.2;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 26.887 * 1.05;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 26.887 * 1.1;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 37.141;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 44.04;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 40.501;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 23.187;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (150.972 * 1.4) / 2) + width / 2;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (30.9) / 2) + width / 2;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (182.231 * 1.1) / 2) + width / 2;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (74.1 * 1.1) / 2) + width / 2) + 3;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (121.678 * 1.2) / 2) + width / 2;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (139.3 * 1.2) / 2) + width / 2;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (179.948 * 1.05) / 2) + width / 2;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (84.972 * 1.1) / 2) + width / 2;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (179.827) / 2) + width / 2;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (213.687) / 2) + width / 2;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (104.50) / 2) + width / 2;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (79.667) / 2) + width / 2;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 22;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 20;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 35;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 23;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 30;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 15;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 22;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 30;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 15;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 45;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 10;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 20;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 379 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__necklace__ = __webpack_require__(353);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 16,
+    component: __WEBPACK_IMPORTED_MODULE_0__necklace__["a" /* NecklaceComponent */],
+    meta: {
+        container: 'body',
+        getContainer: function (name) {
+            if (['yaga', 'bed'].includes(name)) {
+                return 'necklace';
+            }
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster, repo, instance) {
+        },
+        after: function (monster, repo, instance) {
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 201.947 * 1.2;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 107.787;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 47.372;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 71.389;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 96.519;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 161.664;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 95.425;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 112.848;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 133.37;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 214.32;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 171.669;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 39.916;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 103.88 * 1.2;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 55.445;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 24.368;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 43.312;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 49.649;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 146.575;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 67.599;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 58.048;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 68.605;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 112.984;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 107.837;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 25.98;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (201.947 * 1.2) / 2) + width / 2;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + 30;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (47.372) / 2) + width / 2) + 6;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + 32;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (96.519) / 2) + width / 2;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (161.664) / 2) + width / 2) - 20;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (95.425) / 2) + width / 2;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (112.848) / 2) + width / 2;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (133.37) / 2) + width / 2) + 10;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (214.32) / 2) + width / 2;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x + width - 171.669 + 10;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 80.75999450683594;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 40;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 35;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height - 43.312 - 60;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 8;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 75;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 2;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 60;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 95;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 140;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 30;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 218.74000549316406;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 380 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__flatulence__ = __webpack_require__(354);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 17,
+    component: __WEBPACK_IMPORTED_MODULE_0__flatulence__["a" /* FlatulenceComponent */],
+    meta: {
+        container: { name: 'outer', mod: 'forward' },
+        getContainer: function (name) {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster, repo, instance) {
+        },
+        after: function (monster, repo, instance) {
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 235.672 * 1.2;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 238.446;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 241.883;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 240.651 * 1.1;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 234.85;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 231.152;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 234.631;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 244.895;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 253.92;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 230.76;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 245.405;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 94.365;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 156.342 * 1.2;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 253.37;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 72.688;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 129.431 * 1.1;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 119.315;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 40.39;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 135.696;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 212.819;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 126.296;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 109.169;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 225.729;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 81.429;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -45;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 0;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 10;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -45;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -50;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 20;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -30;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -20;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 0;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 10;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 0;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 130;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 50;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 0;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 160;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 120;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 150;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 300;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 110;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 70;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -30;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -10;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 20;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 0;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 381 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__flower__ = __webpack_require__(355);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 18,
+    component: __WEBPACK_IMPORTED_MODULE_0__flower__["a" /* FlowerComponent */],
+    meta: {
+        container: 'head-figure',
+        getContainer: function (name) {
+            if (['bed'].includes(name)) {
+                return 'flower';
+            }
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster, repo, instance) {
+        },
+        after: function (monster, repo, instance) {
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 188.404 * 1.2;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 76.766;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 63.789;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 116;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 132.431 * 1.2;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 98.766 * 1.2;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 197.535;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 40.896;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 173.523;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 136.767 * 1.2;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 159.729;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 43.352;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 217.311 * 1.2;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 35.215;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 46.505;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 48.546;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 214.873 * 1.2;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 121.903 * 1.2;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 82.662;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 52.717;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 106.196;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 116.366 * 1.2;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 86.284;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 34.728;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -13;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 102.2;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 150;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 38.375;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 6;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (98.766 * 1.2) / 2) + width / 2;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (197.535) / 2) + width / 2;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (173.523) / 2) + width / 2) + 2;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 51;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 10;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 100;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -30;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 160;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 130;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 30;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 51;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 150;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 30;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 20;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 25;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return -31;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 160;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 225;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 382 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bubble__ = __webpack_require__(356);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 19,
+    component: __WEBPACK_IMPORTED_MODULE_0__bubble__["a" /* BubbleComponent */],
+    meta: {
+        container: { name: 'outer', mod: 'forward' },
+        getContainer: function (name) {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster, repo, instance) {
+        },
+        after: function (monster, repo, instance) {
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 217.362 * 1.2;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 67.189;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 176.488;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 173.703 * 1.1;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 175.86;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 150.093 * 1.2;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 67.189;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 185.098;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 67.189;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 166.299;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 74.115;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 174.086;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 192.661 * 1.2;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 51.553;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 64.122;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 177.235 * 1.1;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 209.593;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 143.048 * 1.2;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 51.553;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 173.499;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 51.553;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 134.702;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 217.648;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 86.03;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -35;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 30;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 50;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -10;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -15;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 40;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 15;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 20;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 170;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 40;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return 150;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return -10;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 0;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 190;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 170;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 58;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 80;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 145;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 135;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 100;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 100;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 100;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 15;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return 170;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
+
+/***/ }),
+/* 383 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pigtail__ = __webpack_require__(357);
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    id: 20,
+    component: __WEBPACK_IMPORTED_MODULE_0__pigtail__["a" /* PigtailComponent */],
+    meta: {
+        container: 'head-figure',
+        getContainer: function (name) {
+            return this.container;
+        },
+        uniq: true,
+        before: function (monster, repo, instance) {
+            if (monster.name === 'zombie') {
+                monster.close('hair');
+            }
+        },
+        after: function (monster, repo, instance) {
+            if (monster.name === 'zombie') {
+                monster.open('hair');
+            }
+        },
+        attr: {
+            width: {
+                default: function (_a) {
+                    var width = _a.width;
+                    return width * 1.5;
+                },
+                skeleton: function (_a) {
+                    var width = _a.width;
+                    return 163.087 * 1.2;
+                },
+                zombie: function (_a) {
+                    var width = _a.width;
+                    return 84.62;
+                },
+                mummy: function (_a) {
+                    var width = _a.width;
+                    return 163.545;
+                },
+                yaga: function (_a) {
+                    var width = _a.width;
+                    return 65.945;
+                },
+                doctor: function (_a) {
+                    var width = _a.width;
+                    return 212.546 * 1.2;
+                },
+                spider: function (_a) {
+                    var width = _a.width;
+                    return 138.76 * 1.2;
+                },
+                alien: function (_a) {
+                    var width = _a.width;
+                    return 167.427;
+                },
+                vampire: function (_a) {
+                    var width = _a.width;
+                    return 77.475;
+                },
+                yeti: function (_a) {
+                    var width = _a.width;
+                    return 169.779;
+                },
+                ghost: function (_a) {
+                    var width = _a.width;
+                    return 206.012;
+                },
+                wolf: function (_a) {
+                    var width = _a.width;
+                    return 26.76;
+                },
+                bed: function (_a) {
+                    var width = _a.width;
+                    return 86.072;
+                },
+            },
+            height: {
+                default: function (_a) {
+                    var height = _a.height;
+                    return height * 1.5;
+                },
+                skeleton: function (_a) {
+                    var height = _a.height;
+                    return 102.023 * 1.2;
+                },
+                zombie: function (_a) {
+                    var height = _a.height;
+                    return 56.403;
+                },
+                mummy: function (_a) {
+                    var height = _a.height;
+                    return 120.569;
+                },
+                yaga: function (_a) {
+                    var height = _a.height;
+                    return 109.793;
+                },
+                doctor: function (_a) {
+                    var height = _a.height;
+                    return 86.35 * 1.2;
+                },
+                spider: function (_a) {
+                    var height = _a.height;
+                    return 113.13 * 1.2;
+                },
+                alien: function (_a) {
+                    var height = _a.height;
+                    return 113.13;
+                },
+                vampire: function (_a) {
+                    var height = _a.height;
+                    return 92.33;
+                },
+                yeti: function (_a) {
+                    var height = _a.height;
+                    return 78.814;
+                },
+                ghost: function (_a) {
+                    var height = _a.height;
+                    return 123.434;
+                },
+                wolf: function (_a) {
+                    var height = _a.height;
+                    return 113.13;
+                },
+                bed: function (_a) {
+                    var height = _a.height;
+                    return 75.543;
+                },
+            },
+            x: {
+                default: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (width * 1.5) / 2) + width / 2;
+                },
+                skeleton: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (163.087 * 1.2) / 2) + width / 2;
+                },
+                zombie: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (84.62) / 2) + width / 2;
+                },
+                mummy: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (163.545) / 2) + width / 2;
+                },
+                yaga: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - 45;
+                },
+                doctor: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (212.546 * 1.2) / 2) + width / 2) + 5;
+                },
+                spider: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (138.76 * 1.2) / 2) + width / 2;
+                },
+                alien: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (167.427) / 2) + width / 2;
+                },
+                vampire: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - 77.475 + 26;
+                },
+                yeti: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (169.779) / 2) + width / 2;
+                },
+                ghost: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return (x - (206.012) / 2) + width / 2;
+                },
+                wolf: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return x - 10;
+                },
+                bed: function (_a) {
+                    var x = _a.x, width = _a.width;
+                    return ((x - (86.072) / 2) + width / 2) - 10;
+                },
+            },
+            y: {
+                default: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return (y - (height * 1.5) / 2) + height / 2;
+                },
+                skeleton: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 60;
+                },
+                zombie: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 6;
+                },
+                mummy: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 76;
+                },
+                yaga: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 150;
+                },
+                doctor: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y - 10;
+                },
+                spider: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 75;
+                },
+                alien: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 66;
+                },
+                vampire: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 80;
+                },
+                yeti: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + height - 78.814 + 18;
+                },
+                ghost: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 32;
+                },
+                wolf: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 35;
+                },
+                bed: function (_a) {
+                    var y = _a.y, height = _a.height;
+                    return y + 35;
+                },
+            }
+        }
+    }
+});
+//# sourceMappingURL=instance.js.map
 
 /***/ })
 ],[234]);
