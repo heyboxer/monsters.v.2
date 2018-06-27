@@ -26267,8 +26267,16 @@ wolf .wolf .ear {
   fill: #666;
 }
 
-wolf .wolf .eyeball-part {
+wolf .wolf .eyeball {
   fill: #f1ea35;
+}
+
+wolf .wolf .eyeball--lid {
+  fill: #666;
+}
+
+wolf .wolf .smile-part {
+  fill: #666;
 }
 
 wolf .wolf .tooth {

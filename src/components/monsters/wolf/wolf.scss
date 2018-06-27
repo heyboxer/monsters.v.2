@@ -34,8 +34,16 @@ wolf {
       fill: #666;
     }
 
-    & .eyeball-part {
+    & .eyeball {
       fill: #f1ea35;
+
+      &--lid {
+        fill: #666;
+      }
+    }
+
+    & .smile-part {
+      fill: #666;
     }
 
     & .tooth {

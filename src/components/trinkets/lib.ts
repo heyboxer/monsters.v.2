@@ -50,9 +50,18 @@ const sadAnimBefore = (monster, repo, instance) => {
   });
 
   const onMonster = monster.isOnMonster( instance.getBoundingClientRect() );
+  const emotion = monster.getEmotion();
 
-  if(filtered.length === 0 && monster.getEmotion() !== 'sad' && onMonster) {
-    monster.makeSad();
+  if(filtered.length === 0 &&  emotion !== 'sad' && onMonster) {
+    if(emotion === 'joyful') {
+      monster.clearEmotion(() => {
+        monster.makeSad();
+      });
+    } else {
+      monster.makeSad();
+    }
+    
+    return;
   };
 
   return;
