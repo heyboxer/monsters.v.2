@@ -25826,6 +25826,14 @@ bed .bed .eyeball {
   fill: #fff;
 }
 
+bed .bed .eyeball--lid {
+  fill: black;
+}
+
+bed .bed .mouth-figure {
+  fill: #F24943;
+}
+
 bed .bed .eyelash {
   fill: none;
   stroke: #fff;

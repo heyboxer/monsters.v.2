@@ -51,11 +51,12 @@
 
 
       <g monster-part part-name="flower" part-type="group">
-        <g monster-part part-name="head-figure" part-type="group">
+        <g monster-part part-name="head-figure" part-type="group" part-outline="true">
           <ellipse class="head-figure" cx="89.06" cy="176.45" rx="38.45" ry="62.44"/>
         </g>
       </g>
 
+      <path monster-part part-name="mouth-figure" class="mouth-figure" d="M94,209a0,0,0,0,1,-32.76,0z"></path>
       <g monster-part part-name="mouth" part-type="group" class="mouth">
         <polygon class="tooth" points="72.44 221 70.86 211.2 74.03 211.2 72.44 221"/>
         <polygon class="tooth" points="77.53 221 75.95 211.2 79.12 211.2 77.53 221"/>
@@ -90,6 +91,18 @@
         </g>
       </g>
 
+       <g monster-part part-name="eyes-animation">
+         <clipPath id="eyeball--left-mask">
+           <path monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes" class="eye eye--mask" d="M56.66,176.28a13.34,13.34,0,0,0,18.88,0A13.34,13.34,0,0,0,56.66,176.28Z" transform="translate(0 -0.4)"/>
+         </clipPath>
+         <path monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" d="M56.66,168.28a13.34,13.34,0,0,0,18.88,0a13.34,13.34,0,0,0,-18.88,0z" transform="translate(0 -0.4)"/>
+
+         <clipPath id="eyeball--right-mask">
+           <path monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eye eye--mask" d="M79.53,176.28a13.34,13.34,0,0,0,18.88,0A13.34,13.34,0,0,0,79.53,176.28Z" transform="translate(0 -0.4)"/>
+         </clipPath>
+         <path monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" d="M79.53,168.28a13.34,13.34,0,0,0,18.88,0a13.34,13.34,0,0,0,-18.88,0z" transform="translate(0 -0.4)"/>
+       </g>
+
       <g monster-part part-group="eyes" part-type="container"></g>
 
 
@@ -111,7 +124,7 @@
       </g>
     </g>
 
-    <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" part-outline="true" class="ears">
+    <g monster-part part-name="ears" part-type="group" part-hidden="true" visibility="hidden" class="ears">
       <ellipse cx="48" cy="180" rx="6.2" ry="11.97"/>
       <ellipse cx="113" cy="180" rx="6.2" ry="11.97"/>
     </g>
