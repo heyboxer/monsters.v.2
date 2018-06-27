@@ -2088,6 +2088,7 @@ var SpiderComponent = /** @class */ (function (_super) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VampireComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__monster_model__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__(362);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2109,6 +2110,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var VampireComponent = /** @class */ (function (_super) {
     __extends(VampireComponent, _super);
     function VampireComponent(el, renderer, componentFactoryResolver, injector, app) {
@@ -2117,14 +2119,82 @@ var VampireComponent = /** @class */ (function (_super) {
         _this.renderer = renderer;
         return _this;
     }
+    VampireComponent.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.loadAnimations(__WEBPACK_IMPORTED_MODULE_2__animations__["a" /* animations */]);
+        var lids = this.getParts(function (p) { return p.name === 'lid'; });
+        var defaultSeq = function () {
+            if (_this.checkAnimationStack())
+                return;
+            _this.isAnimating = true;
+            __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].default(lids, function () {
+                _this.isAnimating = false;
+                _this.checkAnimationStack();
+                return;
+            });
+            return;
+        };
+        setInterval(function () {
+            if (_this.getEmotion() === 'default' && !_this.isAnimating) {
+                defaultSeq();
+            }
+            return;
+        }, 3000);
+    };
+    VampireComponent.prototype.animateJoyful = function (arg) {
+        var _this = this;
+        if (arg === void 0) { arg = true; }
+        if (this.isAnimating) {
+            return !this.animationsArr.find(function (_a) {
+                var emotion = _a.emotion, a = _a.arg;
+                return emotion === 'joyful' && a === arg;
+            }) ?
+                this.animationsArr.push({
+                    emotion: 'joyful',
+                    arg: arg,
+                    fn: function () { return _this.animateJoyful(arg); },
+                }) : null;
+        }
+        this.isAnimating = true;
+        var mouth = this.getPart(function (p) { return p.name === 'mouth-figure'; });
+        __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].joyful(mouth, arg, function () {
+            _this.isAnimating = false;
+        });
+        return;
+    };
+    VampireComponent.prototype.animateSad = function (arg, cb) {
+        var _this = this;
+        if (arg === void 0) { arg = true; }
+        if (this.isAnimating) {
+            return !this.animationsArr.find(function (_a) {
+                var emotion = _a.emotion, a = _a.arg;
+                return emotion === 'sad' && a === arg;
+            }) ?
+                this.animationsArr.push({
+                    emotion: 'sad',
+                    arg: arg,
+                    fn: function () { return _this.animateSad(arg, cb); },
+                }) : null;
+        }
+        this.isAnimating = true;
+        var mouth = this.getPart(function (p) { return p.name === 'mouth-figure'; });
+        var lidRight = this.getPart(function (p) { return p.name === 'sad-eyelid' && p.mod === 'right'; });
+        var lidLeft = this.getPart(function (p) { return p.name === 'sad-eyelid' && p.mod === 'left'; });
+        __WEBPACK_IMPORTED_MODULE_2__animations__["b" /* sequances */].sad(mouth, lidLeft, lidRight, arg, function () {
+            _this.isAnimating = false;
+            if (cb)
+                cb();
+        });
+        return;
+    };
     VampireComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'vampire',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/vampire/vampire.html"*/'<svg class="dracula svg-container" viewBox="-10 -10 226.58 344.71" preserveAspectRatio="xMidYMax meet" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <svg monster-part part-name="confetti" part-type="group" part-hidden="true" visibility="hidden" width="288.52" height="307.32" y="0" x="-45" viewBox="0 0 240.44 256.1" xmlns="http://www.w3.org/2000/svg">\n    <circle class="confetti--color--purple" cx="24.71" cy="52.71" r="3.72" transform="translate(-31.83 38.86) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="50.05" cy="77.38" r="3.72" transform="translate(-41.6 67.76) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="5.38" cy="161.38" r="3.72" transform="translate(-123.62 64.26) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="9.38" cy="238.05" r="3.72" transform="translate(-181.81 95.91) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="188.05" cy="72.71" r="3.72" transform="translate(13.4 173.45) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="234.71" cy="8.71" r="3.72" transform="translate(80.59 185.95) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="233.38" cy="132.05" r="3.72" transform="translate(-15.91 230.82) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="194.71" cy="217.38" r="3.72" transform="translate(-96.73 232.49) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="236.71" cy="247.38" r="3.72" transform="translate(-104.45 276.35) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="16.05" cy="119.38" r="3.72" transform="translate(-86.95 56.93) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="5.38" cy="11.38" r="5.38" transform="translate(-6.86 8.43) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="76.71" cy="5.38" r="5.38" transform="translate(24.37 61.72) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="17.38" cy="87.38" r="5.38" transform="translate(-61.55 46.06) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="217.38" cy="102.71" r="5.38" transform="translate(0.96 207.45) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="20.71" cy="192.05" r="5.38" transform="translate(-141.78 87.61) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="202.71" cy="250.71" r="5.38" transform="translate(-119.7 251.12) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="230.05" cy="175.38" r="5.38" transform="translate(-50.88 244.36) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="60.71" cy="117.38" r="5.63" transform="translate(-68.77 90.95) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="194.71" cy="14.71" r="5.63" transform="translate(61.03 157.04) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="219.38" cy="51.38" r="5.63" transform="translate(41.67 189.89) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="194.05" cy="122.05" r="5.63" transform="translate(-22.77 196.48) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="231.58" cy="211" r="5.63" transform="translate(-78.04 258.81) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="40.25" cy="231" r="5.63" transform="translate(-164.83 117.32) rotate(-51.12)"/>\n  </svg>\n\n   <g monster-part part-name="outer" part-type="group" class="">\n      <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n      <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n         <polygon class="body-part body-part--top" points="145.49 266.49 61.06 266.49 -0.03 166.71 206.59 166.71 145.49 266.49"></polygon>\n         <polygon class="body-part body-part--bottom" points="145 266.49 61.06 266.49 -34.33 620.09 240.88 620.09 145.49 266"></polygon>\n      </g>\n      <g monster-part part-group="body" part-type="container"></g>\n      <g class="head">\n         <g monster-part part-name="head-figure" part-type="group" class="head-figure">\n            <path class="hair-part hair-part--back" d="M79.78,3.64A30.21,30.21,0,0,1,69.23,51a30.2,30.2,0,1,0,34.49,48.06A49.66,49.66,0,1,0,79.78,3.64Z"></path>\n            <ellipse class="face" cx="103.28" cy="141.3" rx="32.84" ry="101.27"></ellipse>\n            <path class="hair-part hair-part--forward" d="M115,29.3a44.77,44.77,0,0,1-44.8,44.8l9-19.38,19-19.81Z"></path>\n         </g>\n\n         <g monster-part part-name="ears" part-type="group" class="ears">\n            <ellipse class="ear ear--left" cx="71.4" cy="115.56" rx="13.66" ry="18.22"></ellipse>\n            <ellipse class="ear ear--right" cx="135.15" cy="115.56" rx="13.66" ry="18.22"></ellipse>\n         </g>\n         <g monster-part part-group="ears" part-type="container"></g>\n\n\n         <g monster-part part-name="mouth" part-type="group" class="mouth">\n            <g monster-part part-name="teeth" part-type="group" class="teeth">\n               <polygon class="tooth tooth--left" points="90.39 244.06 84.3 193.54 96.48 193.54 90.39 244.06"></polygon>\n               <polygon class="tooth tooth--right" points="116.67 244.06 110.58 193.54 122.75 193.54 116.67 244.06"></polygon>\n            </g>\n            <rect monster-part part-name="mouth-figure" part-type="element" class="mouth-figure" x="82" y="190.5" width="42.86" height="6.03"></rect>\n            <path class="blood decor__blood" d="M120.05,267.44a2.51,2.51,0,1,1-5,.13c0-1.57.9-8.55,2.27-8.59S120,265.87,120.05,267.44Z"></path>\n         </g>\n\n         <g monster-part part-group="mouth" part-type="container"></g>\n         <g monster-part part-group="nose" part-type="container"></g>\n         <g monster-part part-name="nose" part-type="group">\n           <rect class="nose" x="99.92" y="93.91" width="6.03" height="87.44"></rect>\n         </g>\n\n         <svg width="39" height="8.45" x="84" y="98" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.75 7.75">\n           <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n             <line class="eyelash" x1="0.5" x2="0.5" y2="7.75"/>\n             <line class="eyelash" x1="4.25" x2="4.25" y2="7.75"/>\n             <line class="eyelash" x1="8" x2="8" y2="7.75"/>\n             <line class="eyelash" x1="27.75" x2="27.75" y2="7.75"/>\n             <line class="eyelash" x1="31.5" x2="31.5" y2="7.75"/>\n             <line class="eyelash" x1="35.25" x2="35.25" y2="7.75"/>\n           </g>\n         </svg>\n\n         <g monster-part part-name="eyes" part-type="group" class="eyes">\n            <circle monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes" class="eye eye--left" cx="88.29" cy="108.56" r="6.46"></circle>\n            <circle monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eye eye--right" cx="118.01" cy="108.56" r="6.46"></circle>\n            <rect class="eyebrows" x="81.9" y="89.55" width="42.86" height="6.03"></rect>\n         </g>\n         <g monster-part part-group="eyes" part-type="container"></g>\n         <g monster-part part-group="head-figure" part-type="container"></g>\n      </g>\n\n      <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/vampire/vampire.html"*/
+            selector: 'vampire',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/vampire/vampire.html"*/'<svg class="dracula svg-container" viewBox="-10 -10 226.58 344.71" preserveAspectRatio="xMidYMax meet" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <svg monster-part part-name="confetti" part-type="group" part-hidden="true" visibility="hidden" width="288.52" height="307.32" y="0" x="-45" viewBox="0 0 240.44 256.1" xmlns="http://www.w3.org/2000/svg">\n    <circle class="confetti--color--purple" cx="24.71" cy="52.71" r="3.72" transform="translate(-31.83 38.86) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="50.05" cy="77.38" r="3.72" transform="translate(-41.6 67.76) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="5.38" cy="161.38" r="3.72" transform="translate(-123.62 64.26) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="9.38" cy="238.05" r="3.72" transform="translate(-181.81 95.91) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="188.05" cy="72.71" r="3.72" transform="translate(13.4 173.45) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="234.71" cy="8.71" r="3.72" transform="translate(80.59 185.95) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="233.38" cy="132.05" r="3.72" transform="translate(-15.91 230.82) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="194.71" cy="217.38" r="3.72" transform="translate(-96.73 232.49) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="236.71" cy="247.38" r="3.72" transform="translate(-104.45 276.35) rotate(-51.12)"/>\n    <circle class="confetti--color--purple" cx="16.05" cy="119.38" r="3.72" transform="translate(-86.95 56.93) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="5.38" cy="11.38" r="5.38" transform="translate(-6.86 8.43) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="76.71" cy="5.38" r="5.38" transform="translate(24.37 61.72) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="17.38" cy="87.38" r="5.38" transform="translate(-61.55 46.06) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="217.38" cy="102.71" r="5.38" transform="translate(0.96 207.45) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="20.71" cy="192.05" r="5.38" transform="translate(-141.78 87.61) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="202.71" cy="250.71" r="5.38" transform="translate(-119.7 251.12) rotate(-51.12)"/>\n    <circle class="confetti--color--yellow" cx="230.05" cy="175.38" r="5.38" transform="translate(-50.88 244.36) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="60.71" cy="117.38" r="5.63" transform="translate(-68.77 90.95) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="194.71" cy="14.71" r="5.63" transform="translate(61.03 157.04) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="219.38" cy="51.38" r="5.63" transform="translate(41.67 189.89) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="194.05" cy="122.05" r="5.63" transform="translate(-22.77 196.48) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="231.58" cy="211" r="5.63" transform="translate(-78.04 258.81) rotate(-51.12)"/>\n    <circle class="confetti--color--red" cx="40.25" cy="231" r="5.63" transform="translate(-164.83 117.32) rotate(-51.12)"/>\n  </svg>\n\n   <g monster-part part-name="outer" part-type="group" class="">\n      <g monster-part part-group="outer" part-type="container" part-name-mod="behind"></g>\n\n      <g monster-part part-name="body" part-type="group" part-outline="true" class="body">\n         <polygon class="body-part body-part--top" points="145.49 266.49 61.06 266.49 -0.03 166.71 206.59 166.71 145.49 266.49"></polygon>\n         <polygon class="body-part body-part--bottom" points="145 266.49 61.06 266.49 -34.33 620.09 240.88 620.09 145.49 266"></polygon>\n      </g>\n      <g monster-part part-group="body" part-type="container"></g>\n      <g class="head">\n         <g monster-part part-name="head-figure" part-type="group" class="head-figure">\n            <path class="hair-part hair-part--back" d="M79.78,3.64A30.21,30.21,0,0,1,69.23,51a30.2,30.2,0,1,0,34.49,48.06A49.66,49.66,0,1,0,79.78,3.64Z"></path>\n            <ellipse monster-part part-outline="true" class="face" cx="103.28" cy="141.3" rx="32.84" ry="101.27"></ellipse>\n            <path class="hair-part hair-part--forward" d="M115,29.3a44.77,44.77,0,0,1-44.8,44.8l9-19.38,19-19.81Z"></path>\n         </g>\n\n         <g monster-part part-name="ears" part-outline="true" part-type="group" class="ears">\n            <ellipse class="ear ear--left" cx="71.4" cy="115.56" rx="13.66" ry="18.22"></ellipse>\n            <ellipse class="ear ear--right" cx="135.15" cy="115.56" rx="13.66" ry="18.22"></ellipse>\n         </g>\n         <g monster-part part-group="ears" part-type="container"></g>\n\n\n         <g monster-part part-name="mouth" part-type="group" class="mouth">\n           <path monster-part part-name="mouth-figure" part-type="element" class="mouth-figure" d="M82,193.75v-6.03h42.86v6.03z"></path>\n\n            <g monster-part part-name="teeth" part-type="group" class="teeth">\n               <polygon class="tooth tooth--left" points="90.39 244.06 84.3 193.54 96.48 193.54 90.39 244.06"></polygon>\n               <polygon class="tooth tooth--right" points="116.67 244.06 110.58 193.54 122.75 193.54 116.67 244.06"></polygon>\n            </g>\n            <path class="blood decor__blood" d="M120.05,267.44a2.51,2.51,0,1,1-5,.13c0-1.57.9-8.55,2.27-8.59S120,265.87,120.05,267.44Z"></path>\n         </g>\n\n         <g monster-part part-group="mouth" part-type="container"></g>\n         <g monster-part part-group="nose" part-type="container"></g>\n         <g monster-part part-name="nose" part-type="group">\n           <rect class="nose" x="99.92" y="93.91" width="6.03" height="87.44"></rect>\n         </g>\n\n         <svg width="39" height="8.45" x="84" y="98" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.75 7.75">\n           <g monster-part part-name="eyelashes" part-type="group" part-hidden="true" visibility="hidden" class="eyelashes">\n             <line class="eyelash" x1="0.5" x2="0.5" y2="7.75"/>\n             <line class="eyelash" x1="4.25" x2="4.25" y2="7.75"/>\n             <line class="eyelash" x1="8" x2="8" y2="7.75"/>\n             <line class="eyelash" x1="27.75" x2="27.75" y2="7.75"/>\n             <line class="eyelash" x1="31.5" x2="31.5" y2="7.75"/>\n             <line class="eyelash" x1="35.25" x2="35.25" y2="7.75"/>\n           </g>\n         </svg>\n\n\n         <g monster-part part-name="eyes" part-type="group" class="eyes">\n            <circle monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes" class="eye eye--left" cx="88.29" cy="108.56" r="6.46"></circle>\n            <circle monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eye eye--right" cx="118.01" cy="108.56" r="6.46"></circle>\n            <rect class="eyebrows" x="81.9" y="89.55" width="42.86" height="6.03"></rect>\n         </g>\n         <g monster-part part-name="eyes-animation">\n           <clipPath id="eyeball--left-mask">\n             <circle monster-part part-name="eye" part-name-mod="left" part-type="element" part-group="eyes"  class="eyeball eyeball--mask" cx="88.29" cy="108.56" r="6.46"></circle>\n           </clipPath>\n           <circle monster-part part-name="lid" part-name-mod="left" part-type="element" part-group="eye" clip-path="url(#eyeball--left-mask)" class="eyeball eyeball--lid eyeball--left" cx="88.29" cy="95" r="6.46"></circle>\n\n           <clipPath id="eyeball--right-mask">\n             <circle monster-part part-name="eye" part-name-mod="right" part-type="element" part-group="eyes" class="eyeball eyeball--mask" class="eyeball" cx="118.01" cy="108.56" r="6.46"></circle>\n           </clipPath>\n           <circle monster-part part-name="lid" part-name-mod="right" part-type="element" part-group="eye" clip-path="url(#eyeball--right-mask)" class="eyeball eyeball--lid eyeball--right" cx="118.01" cy="95" r="6.46"></circle>\n         </g>\n\n         <polygon monster-part part-name="sad-eyelid" part-name-mod="left" class="sad-eyelid" points="80,100 80,100 80,100"/>\n         <polygon monster-part part-name="sad-eyelid" part-name-mod="right" class="sad-eyelid" points="127,100 127,100 127,100"/>\n\n         <g monster-part part-group="eyes" part-type="container"></g>\n         <g monster-part part-group="head-figure" part-type="container"></g>\n      </g>\n\n      <g monster-part part-group="outer" part-type="container" part-name-mod="forward"></g>\n   </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/monsters/vampire/vampire.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _e || Object])
     ], VampireComponent);
     return VampireComponent;
+    var _a, _b, _c, _d, _e;
 }(__WEBPACK_IMPORTED_MODULE_1__monster_model__["a" /* MonsterModel */]));
 
 //# sourceMappingURL=vampire.js.map
@@ -6654,6 +6724,180 @@ var MyApp = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=app.component.js.map
+
+/***/ }),
+/* 360 */,
+/* 361 */,
+/* 362 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return animations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sequances; });
+var animations = {
+    lid: {
+        close: function (l, cb) {
+            l.attr({ cy: 95 });
+            l.animate({ cy: 108.56, }, 42, cb);
+        },
+        open: function (l, cb) {
+            l.attr({ cy: 108.56 });
+            l.animate({ cy: 95, }, 84, cb);
+        },
+    },
+    lidLeft: {
+        fn: function (p) { return p.name === 'sad-eyelid' && p.mod === 'left'; },
+        frownIn: function (instance, cb) {
+            instance.attr({
+                points: '80,100 80,100 80,100',
+            });
+            instance.animate({
+                points: '80,100 95,100 80,113',
+            }, 200, cb);
+        },
+        frownOut: function (instance, cb) {
+            instance.attr({
+                points: '80,100 95,100 80,113',
+            });
+            instance.animate({
+                points: '80,100 80,100 80,100',
+            }, 200, cb);
+        },
+    },
+    lidRight: {
+        fn: function (p) { return p.name === 'sad-eyelid' && p.mod === 'right'; },
+        frownIn: function (instance, cb) {
+            instance.attr({
+                points: '127,100 127,100 127,100',
+            });
+            instance.animate({
+                points: '112,100 127,100 127,113',
+            }, 200, cb);
+        },
+        frownOut: function (instance, cb) {
+            instance.attr({
+                points: '112,100 127,100 127,113',
+            });
+            instance.animate({
+                points: '127,100 127,100 127,100',
+            }, 200, cb);
+        },
+    },
+    mouth: {
+        fn: function (p) { return p.name === 'mouth-figure'; },
+        narrowIn: function (instance, cb) {
+            instance.attr({
+                d: 'M82,193.75v-6.03h42.86v6.03z'
+            });
+            instance.animate({
+                d: 'M82,193.75v-1h42.86v1z'
+            }, 100, cb);
+        },
+        narrowOut: function (instance, cb) {
+            instance.attr({
+                d: 'M82,193.75v-1h42.86v1z'
+            });
+            instance.animate({
+                d: 'M82,193.75v-6.03h42.86v6.03z'
+            }, 100, cb);
+        },
+        smileIn: function (instance, cb) {
+            instance.attr({
+                d: 'M82,193.5c11,0,32,0,43,0z',
+                class: 'mouth-figure mouth-figure--black'
+            });
+            instance.animate({
+                d: 'M82,193.5c11,33,32,33,43,0z'
+            }, 100, cb);
+        },
+        smileOut: function (instance, cb) {
+            instance.attr({
+                d: 'M82,193.5c11,33,32,33,43,0z',
+                class: 'mouth-figure'
+            });
+            instance.animate({
+                d: 'M82,193.5c11,0,32,0,43,0z'
+            }, 100, cb);
+        },
+        sadIn: function (instance, cb) {
+            instance.attr({
+                d: 'M82,193.5c11,0,32,0,43,0z',
+                class: 'mouth-figure mouth-figure--red'
+            });
+            instance.animate({
+                d: 'M82,193.5c11,-9.34,32,-9.34,43,0z'
+            }, 100, cb);
+        },
+        sadOut: function (instance, cb) {
+            instance.attr({
+                d: 'M82,193.5c11,-9.34,32,-9.34,43,0z',
+                class: 'mouth-figure'
+            });
+            instance.animate({
+                d: 'M82,193.5c11,0,32,0,43,0z'
+            }, 100, cb);
+        },
+    },
+};
+var sequances = {
+    joyful: function (mouth, isForward, cb) {
+        var config = {
+            mouthFirst: isForward ? 'narrowIn' : 'narrowOut',
+            mouthSecond: isForward ? 'smileIn' : 'smileOut',
+        };
+        var seq = isForward ? [config.mouthFirst, config.mouthSecond] : [config.mouthSecond, config.mouthFirst];
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 1) {
+                return cb();
+            }
+            return;
+        };
+        var mouthSeq = seq.reduce(function (acc, el) {
+            return acc.run(el);
+        }, mouth.animations);
+        mouthSeq.onDisengage(afterFinish);
+        return;
+    },
+    sad: function (mouth, lidLeft, lidRight, isForward, cb) {
+        var config = {
+            mouthFirst: isForward ? 'narrowIn' : 'narrowOut',
+            mouthSecond: isForward ? 'sadIn' : 'sadOut',
+            lids: isForward ? 'frownIn' : 'frownOut',
+        };
+        var seq = isForward ? [config.mouthFirst, config.mouthSecond] : [config.mouthSecond, config.mouthFirst];
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 2) {
+                return cb();
+            }
+            return;
+        };
+        var mouthSeq = seq.reduce(function (acc, el) {
+            return acc.run(el);
+        }, mouth.animations);
+        mouthSeq.onDisengage(afterFinish);
+        lidLeft.animations.run(config.lids).onDisengage(afterFinish);
+        lidRight.animations.run(config.lids).onDisengage(afterFinish);
+        return;
+    },
+    default: function (lids, cb) {
+        var finished = 0;
+        var afterFinish = function () {
+            finished++;
+            if (finished === 2) {
+                return cb();
+            }
+            return;
+        };
+        lids.forEach(function (l) { return l.animations.run('close').delay(50).run('open').onDisengage(afterFinish); });
+        return;
+    },
+};
+
+//# sourceMappingURL=animations.js.map
 
 /***/ })
 ],[234]);

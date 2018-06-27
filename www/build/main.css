@@ -26156,6 +26156,10 @@ vampire .dracula .eyelash {
   stroke-width: 1px;
 }
 
+vampire .dracula .eyeball--lid {
+  fill: #9a5790;
+}
+
 vampire .dracula .ear {
   fill: #cf6cac;
 }
@@ -26172,8 +26176,26 @@ vampire .dracula .tooth {
   fill: #fff;
 }
 
+vampire .dracula .sad-eyelid {
+  fill: #cf6cac;
+}
+
 vampire .dracula .mouth-figure {
   fill: #8a4242;
+  -webkit-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
+}
+
+vampire .dracula .mouth-figure--black {
+  fill: black;
+  -webkit-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
+}
+
+vampire .dracula .mouth-figure--red {
+  fill: #F24943;
+  -webkit-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
 }
 
 vampire .dracula .blood {

@@ -19,6 +19,12 @@ vampire {
       stroke-width:1px;
     }
 
+    & .eyeball {
+      &--lid {
+        fill: #9a5790;
+      }
+    }
+
     & .ear {
       fill: #cf6cac;
     }
@@ -35,8 +41,22 @@ vampire {
       fill: #fff;
     }
 
+    & .sad-eyelid {
+      fill: #cf6cac;
+    }
+
     & .mouth-figure {
       fill: #8a4242;
+      transition: fill 0.2s linear;
+
+      &--black {
+        fill: black;
+        transition: fill 0.2s linear;
+      }
+      &--red {
+        fill: #F24943;
+        transition: fill 0.2s linear;
+      }
     }
 
     & .blood {
