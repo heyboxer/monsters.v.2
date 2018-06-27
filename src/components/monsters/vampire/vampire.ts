@@ -43,13 +43,13 @@ export class VampireComponent extends MonsterModel {
     }, 3000);
   }
 
-  protected animateJoyful(arg = true) {
+  protected animateJoyful(arg = true, cb?) {
     if(this.isAnimating) {
       return !this.animationsArr.find(({emotion, arg: a}) => emotion === 'joyful' && a === arg) ?
       this.animationsArr.push({
         emotion: 'joyful',
         arg,
-        fn: () => this.animateJoyful(arg),
+        fn: () => this.animateJoyful(arg, cb),
       }) : null;
     }
 
@@ -59,6 +59,8 @@ export class VampireComponent extends MonsterModel {
 
     sequances.joyful(mouth, arg, () => {
       this.isAnimating = false;
+
+      if(cb) cb();
     });
 
     return;
@@ -82,6 +84,7 @@ export class VampireComponent extends MonsterModel {
 
     sequances.sad(mouth, lidLeft, lidRight, arg, () => {
       this.isAnimating = false;
+
       if(cb) cb();
     })
 
