@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { SelectPage } from '../select/select';
@@ -10,13 +10,17 @@ import { SoundManagerService } from '../../components/sound-toggler/sound-manage
   selector: 'page-home',
   templateUrl: 'home.html',
 })
-export class HomePage {
+export class HomePage implements AfterViewInit {
 
   constructor(
     private soundManagerService: SoundManagerService,
     public navCtrl: NavController
   ) {
-    soundManagerService.setCurrent('door');
+  }
+
+  ngAfterViewInit() {
+    this.soundManagerService.setCurrent('door');
+    this.soundManagerService.play();
   }
 
   select() {

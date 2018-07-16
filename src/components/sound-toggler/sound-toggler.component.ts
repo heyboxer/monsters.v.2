@@ -7,10 +7,14 @@ import { SoundManagerService } from './sound-manager.service';
   templateUrl: 'sound-toggler.component.html',
   providers: [ SoundManagerService ]
 })
-export class SoundTogglerComponent {
+export class SoundTogglerComponent implements AfterViewInit {
   private iconName: string;
-  constructor(private soundManagerService: SoundManagerService) {
+  constructor(private soundManagerService: SoundManagerService) {}
+
+  ngAfterViewInit() {
     this.setIcon('on');
+
+    return;
   }
 
   private setIcon(name: string) {

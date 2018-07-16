@@ -469,7 +469,6 @@ var SoundManagerService = /** @class */ (function () {
     function SoundManagerService() {
         this.lib = __WEBPACK_IMPORTED_MODULE_1__sounds__["a" /* default */];
         this.setCurrent('door');
-        this.play();
     }
     SoundManagerService.prototype.setCurrent = function (name) {
         var playing = this.isPlaying();
@@ -880,8 +879,11 @@ var HomePage = /** @class */ (function () {
     function HomePage(soundManagerService, navCtrl) {
         this.soundManagerService = soundManagerService;
         this.navCtrl = navCtrl;
-        soundManagerService.setCurrent('door');
     }
+    HomePage.prototype.ngAfterViewInit = function () {
+        this.soundManagerService.setCurrent('door');
+        this.soundManagerService.play();
+    };
     HomePage.prototype.select = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__select_select__["a" /* SelectPage */]);
     };
@@ -889,10 +891,10 @@ var HomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/'<!--\n  Generated template for the HomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content class="container" padding fixed no-bounce>\n  <sound-toggler></sound-toggler>\n  <div class="image">\n    <img class="btn-play" (click)="select()" src="assets/imgs/home-page_play.svg" alt="hit the btn to play!" />\n  </div>\n  <img src="assets/imgs/home-page_logo.svg" alt="logotype" class="logo">\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _b || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -4201,6 +4203,9 @@ var SelectPage = /** @class */ (function () {
         this.platform = platform;
         this.monsters = this.repo.getMonsters().map(function (m) { return ({ name: m.name, id: m.id }); });
     }
+    SelectPage.prototype.ngOnDestroy = function () {
+        this.soundManagerService.setCurrent('door');
+    };
     SelectPage.prototype.ngAfterViewInit = function () {
         var _this = this;
         this.soundManagerService.setCurrent('menu');
@@ -4222,24 +4227,21 @@ var SelectPage = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__["a" /* BackgroundTabletComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__["a" /* BackgroundTabletComponent */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__["a" /* BackgroundTabletComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__background_background_tablet_component__["a" /* BackgroundTabletComponent */]) === "function" && _a || Object)
     ], SelectPage.prototype, "bg", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__["a" /* BackgroundMobileComponent */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__["a" /* BackgroundMobileComponent */])
+        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__["a" /* BackgroundMobileComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__background_background_mobile_component__["a" /* BackgroundMobileComponent */]) === "function" && _b || Object)
     ], SelectPage.prototype, "bgMobile", void 0);
     SelectPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'select-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/select/select.html"*/'<ion-content class="container" fixed no-bounce>\n  <div class="bg">\n    <div class="list" [class.mobile]="isIphone()">\n        <img *ngFor="let monster of monsters" (click)="beginGame(monster.id)" src="assets/imgs/monsters/{{monster.name}}.svg" alt="placholder" class="monsters monsters__{{monster.name}}" [style.left.px]="monster.left" [style.top.px]="monster.top">\n    </div>\n\n    <background-mobile *ngIf="isIphone(); else tablet"></background-mobile>\n    <ng-template #tablet>\n      <background-tablet></background-tablet>\n    </ng-template>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/select/select.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__["a" /* MonstersService */]],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_6__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */],
-            __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__["a" /* MonstersService */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
+        __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__["a" /* MonstersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_service__["a" /* MonstersService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _g || Object])
     ], SelectPage);
     return SelectPage;
+    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=select.js.map
@@ -12299,8 +12301,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SoundTogglerComponent = /** @class */ (function () {
     function SoundTogglerComponent(soundManagerService) {
         this.soundManagerService = soundManagerService;
-        this.setIcon('on');
     }
+    SoundTogglerComponent.prototype.ngAfterViewInit = function () {
+        this.setIcon('on');
+        return;
+    };
     SoundTogglerComponent.prototype.setIcon = function (name) {
         var icons = {
             on: 'md-volume-up',
@@ -12325,7 +12330,7 @@ var SoundTogglerComponent = /** @class */ (function () {
     };
     SoundTogglerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'sound-toggler',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/sound-toggler/sound-toggler.component.html"*/'<div (click)="toggle()" class="toggler">\n  <ion-icon name="{{iconName}}" class="md-volume-up"></ion-icon>\n</div>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/sound-toggler/sound-toggler.component.html"*/,
+            selector: 'sound-toggler',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/sound-toggler/sound-toggler.component.html"*/'<div (click)="toggle()" class="toggler">\n  <ion-icon name="{{iconName}}"></ion-icon>\n</div>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/sound-toggler/sound-toggler.component.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_1__sound_manager_service__["a" /* SoundManagerService */]]
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__sound_manager_service__["a" /* SoundManagerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__sound_manager_service__["a" /* SoundManagerService */]) === "function" && _a || Object])

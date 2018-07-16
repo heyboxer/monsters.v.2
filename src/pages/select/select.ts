@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, Renderer2, ViewChild, ChangeDetectorRef } from '@angular/core';
+import { Component, AfterViewInit, Renderer2, ViewChild, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { MonstersService } from '../../components/monsters/monsters.service';
@@ -14,7 +14,7 @@ import { SoundManagerService } from '../../components/sound-toggler/sound-manage
   templateUrl: 'select.html',
   providers: [ MonstersService ],
 })
-export class SelectPage implements AfterViewInit {
+export class SelectPage implements AfterViewInit, OnDestroy {
   private monsters: { name, top?, left? }[];
 
   @ViewChild(BackgroundTabletComponent) bg: BackgroundTabletComponent;
@@ -28,6 +28,10 @@ export class SelectPage implements AfterViewInit {
     private platform: Platform) {
       this.monsters = this.repo.getMonsters().map(m => ({ name: m.name, id: m.id }));
     }
+
+  ngOnDestroy() {
+    this.soundManagerService.setCurrent('door');
+  }
 
   ngAfterViewInit() {
     this.soundManagerService.setCurrent('menu');

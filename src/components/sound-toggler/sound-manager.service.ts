@@ -12,7 +12,6 @@ export class SoundManagerService {
   constructor() {
     this.lib = SOUNDS;
     this.setCurrent('door');
-    this.play();
   }
 
   public setCurrent(name) {
