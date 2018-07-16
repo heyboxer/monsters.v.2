@@ -60,7 +60,7 @@ const sadAnimBefore = (monster, repo, instance) => {
     } else {
       monster.makeSad();
     }
-    
+
     return;
   };
 

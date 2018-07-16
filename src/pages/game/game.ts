@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnInit, ViewChild, Renderer2, ContentChild, ViewContainerRef, ComponentFactoryResolver, Injector, ApplicationRef } from '@angular/core';
+import { Component, AfterViewInit, OnInit, ViewChild, Renderer2, ContentChild, ViewContainerRef, ComponentFactoryResolver, Injector, ApplicationRef, OnDestroy } from '@angular/core';
 import { TrinketsComponent } from '../../components/trinkets/trinkets.component';
 import { MonstersComponent } from '../../components/monsters/monsters.component';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -7,6 +7,8 @@ import { Game } from '../../components/game/game.service';
 import { GameLogic } from '../../components/game/game-logic';
 import { ItemHolderComponent } from '../../components/item-holder/item-holder.component';
 
+import { SoundManagerService } from '../../components/sound-toggler/sound-manager.service';
+
 
 @IonicPage()
 @Component({
@@ -14,7 +16,7 @@ import { ItemHolderComponent } from '../../components/item-holder/item-holder.co
   templateUrl: 'game.html',
   providers: [],
 })
-export class GamePage extends Game implements AfterViewInit {
+export class GamePage extends Game implements AfterViewInit, OnDestroy {
   private monsterId: string | number;
   private monster;
   private logic: GameLogic;
@@ -25,6 +27,7 @@ export class GamePage extends Game implements AfterViewInit {
 
   constructor(
     public navCtrl: NavController,
+    private soundManagerService: SoundManagerService,
     public params: NavParams,
     readonly renderer: Renderer2,
     private componentFactoryResolver: ComponentFactoryResolver,
@@ -35,8 +38,15 @@ export class GamePage extends Game implements AfterViewInit {
     this.monsterId = this.params.get('monster');
   }
 
+  ngOnDestroy() {
+    this.soundManagerService.setCurrent('menu');
+  }
+
   ngAfterViewInit() {
+    this.soundManagerService.setCurrent('characters');
+
     this.monster = this.monsterComponent.getCurrentMonster();
+
 
     const instances = this.trinkets.getInstances();
 

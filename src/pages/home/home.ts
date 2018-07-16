@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { SelectPage } from '../select/select';
+import { SoundManagerService } from '../../components/sound-toggler/sound-manager.service';
+
 
 @IonicPage()
 @Component({
@@ -10,8 +12,11 @@ import { SelectPage } from '../select/select';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(
+    private soundManagerService: SoundManagerService,
+    public navCtrl: NavController
+  ) {
+    soundManagerService.setCurrent('door');
   }
 
   select() {

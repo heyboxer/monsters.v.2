@@ -26439,6 +26439,22 @@ yeti .yeti .tooth {
   transition: fill .2s linear;
 }
 
+sound-toggler .toggler {
+  border: 1px solid white;
+  padding: 5px 10px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 100%;
+}
+
+sound-toggler ion-icon {
+  color: white;
+  cursor: pointer;
+  font-size: 28px;
+}
+
 .beard .cls-1 {
   fill: #97623f;
 }

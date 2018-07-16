@@ -7,6 +7,8 @@ import { GamePage } from '../game/game';
 import { BackgroundTabletComponent } from './background/background-tablet.component';
 import { BackgroundMobileComponent } from './background/background-mobile.component';
 
+import { SoundManagerService } from '../../components/sound-toggler/sound-manager.service';
+
 @Component({
   selector: 'select-page',
   templateUrl: 'select.html',
@@ -20,6 +22,7 @@ export class SelectPage implements AfterViewInit {
 
   constructor(
     public navCtrl: NavController,
+    private soundManagerService: SoundManagerService,
     private repo: MonstersService,
     private r: Renderer2,
     private platform: Platform) {
@@ -27,6 +30,8 @@ export class SelectPage implements AfterViewInit {
     }
 
   ngAfterViewInit() {
+    this.soundManagerService.setCurrent('menu');
+
     this.monsters = this.repo.getMonsters().map(m => {
       const { top, left } = this.isIphone() ? this.bgMobile.find(m.name) : this.bg.find(m.name);
       return { name: m.name, top: Math.floor(top), left: Math.floor(left), id: m.id };
