@@ -11869,9 +11869,9 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sound_model__ = __webpack_require__(350);
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-    'menu': new __WEBPACK_IMPORTED_MODULE_0__sound_model__["a" /* SoundModel */]('../assets/music/menu.mp3'),
-    'door': new __WEBPACK_IMPORTED_MODULE_0__sound_model__["a" /* SoundModel */]('../assets/music/door.mp3'),
-    'characters': new __WEBPACK_IMPORTED_MODULE_0__sound_model__["a" /* SoundModel */]('../assets/music/characters.mp3'),
+    'menu': new __WEBPACK_IMPORTED_MODULE_0__sound_model__["a" /* SoundModel */]('/assets/music/menu.mp3'),
+    'door': new __WEBPACK_IMPORTED_MODULE_0__sound_model__["a" /* SoundModel */]('/assets/music/door.mp3'),
+    'characters': new __WEBPACK_IMPORTED_MODULE_0__sound_model__["a" /* SoundModel */]('/assets/music/characters.mp3'),
 });
 //# sourceMappingURL=sounds.js.map
 
