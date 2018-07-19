@@ -9,8 +9,8 @@ export default () => {
 
 
   const path1 = {
-   	string: 'M60.4,46 c2,-25 -10,-32 -39.5,-23',
-     initialPoint: { x: 97.4, y: 64 },
+   	string: 'M14.75,4a1.75,1.75 0 1,0 3.5,0a1.75,1.75 0 1,0 -3.5,0',
+     initialPoint: { x: 16, y: 5 },
      getLength() {
      	return Snap.path.getTotalLength( this.string );
      },
@@ -21,34 +21,79 @@ export default () => {
      },
    }
 
-   const animation = ({start, end, element, getPoints, interval, callback, easing}) => {
+  const path2 = {
+   	string: 'M56.25,4a1.75,1.75 0 1,0 3.5,0a1.75,1.75 0 1,0 -3.5,0',
+     initialPoint: { x: 56.25, y: 3 },
+     getLength() {
+     	return Snap.path.getTotalLength( this.string );
+     },
+     getPoints(length) {
+     	const { x, y } = Snap.path.getPointAtLength( this.string, length );
+
+     	return { x: x - this.initialPoint.x, y: y - this.initialPoint.y };
+     },
+   }
+
+  const path3 = {
+   	string: 'M80.25,4a1.75,1.75 0 1,0 3.5,0a1.75,1.75 0 1,0 -3.5,0',
+     initialPoint: { x: 82.5, y: 5 },
+     getLength() {
+     	return Snap.path.getTotalLength( this.string );
+     },
+     getPoints(length) {
+     	const { x, y } = Snap.path.getPointAtLength( this.string, length );
+
+     	return { x: x - this.initialPoint.x, y: y - this.initialPoint.y };
+     },
+   }
+
+   const animation = ({start, end, element, getPoints, interval, callback }) => {
       return Snap.animate(start, end, (step) => {
        const { x,y } = getPoints(step);
 
        element.transform(`t${x},${y}`);
 
-     }, interval, easing, callback);
+     }, interval, callback);
    }
 
   const rotate = {
 
     first: function() {
-
-      first.animate({
-        transform: 'r360,16,4.5',
-      }, 1500, () => {
-        first.attr({ transform: 'r0,16,4.5' });
-
-        return this.first();
+      return animation({
+        start: 0,
+        end: path1.getLength(),
+        element: first,
+        getPoints: step => path1.getPoints(step),
+        interval: 1100,
+        callback: () => this.first(),
       });
-
-      return;
     },
-// M13.5,5a3,3 0 1,0 6,0a3,3 0 1,0 -6,0
+    second: function() {
+      return animation({
+        start: path2.getLength(),
+        end: 0,
+        element: second,
+        getPoints: step => path2.getPoints(step),
+        interval: 1500,
+        callback: () => this.second(),
+      });
+    },
+    third: function() {
+      return animation({
+        start: 0,
+        end: path3.getLength(),
+        element: third,
+        getPoints: step => path3.getPoints(step),
+        interval: 1300,
+        callback: () => this.third(),
+      });
+    },
 
   }
 
-  // rotate.first();
+  rotate.first();
+  rotate.second();
+  rotate.third();
 
   return;
 }

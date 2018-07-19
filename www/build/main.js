@@ -893,7 +893,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/'<!--\n  Generated template for the HomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content class="container" padding fixed no-bounce>\n  <sound-toggler></sound-toggler>\n  <div class="image">\n    <img class="btn-play" (click)="select()" src="assets/imgs/home-page_play.svg" alt="hit the btn to play!" />\n  </div>\n\n  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.44 9.34">\n    <defs>\n      <style>\n         .logo .cls-1{fill:#fff;} .logo .cls-2{fill:#f1ea35;} .logo .cls-3{fill:#00ad5e;}\n      </style>\n    </defs>\n    <g id="Layer_2" data-name="Layer 2">\n      <g id="Слой_2" data-name="Слой 2">\n        <path d="M0,.13H2.14L5,7.68,7.77.13H9.91V9.21H8.62V1.35h0l-3,7.86H4.32l-3-7.86h0V9.21H0Z" class="cls-1"/>\n        <path d="M19.75,1.38a4.94,4.94,0,0,1,1.12,3.3A5,5,0,0,1,19.75,8a4.1,4.1,0,0,1-3.24,1.36A4.1,4.1,0,0,1,13.27,8a5,5,0,0,1-1.12-3.31,4.94,4.94,0,0,1,1.12-3.3A4.06,4.06,0,0,1,16.51,0,4.06,4.06,0,0,1,19.75,1.38Z" class="cls-2"/>\n        <path d="M23,.13h1.76l4,7.32h0V.13h1.3V9.21H28.45l-4.1-7.47h0V9.21H23Z" class="cls-1"/>\n        <path d="M36.85,1.52a4,4,0,0,0-1.7-.38,2.25,2.25,0,0,0-1,.22,1,1,0,0,0-.54,1,1,1,0,0,0,.29.71,3.77,3.77,0,0,0,1.3.8l.34.17a3.58,3.58,0,0,1,1.57,1.21,2.59,2.59,0,0,1,.4,1.45,2.38,2.38,0,0,1-.88,2,3.38,3.38,0,0,1-2.3.7,5.78,5.78,0,0,1-2-.38l.13-1.19a5,5,0,0,0,1.88.43,1.86,1.86,0,0,0,1.32-.45,1.31,1.31,0,0,0,.45-1,1.24,1.24,0,0,0-.48-1A6.82,6.82,0,0,0,34.38,5l-.56-.29a3.5,3.5,0,0,1-1.27-1,2.23,2.23,0,0,1-.36-1.28,2.23,2.23,0,0,1,1-1.92A3.58,3.58,0,0,1,35.1,0,5.67,5.67,0,0,1,37,.32Z" class="cls-1"/>\n        <path d="M41.2,1.27H38.38V.13h6.93V1.27H42.5V9.21H41.2Z" class="cls-1"/>\n        <path d="M46.86.13h2.22A4.64,4.64,0,0,1,51.76.7a2.11,2.11,0,0,1,.83,1.8A2,2,0,0,1,52,4a2.27,2.27,0,0,1-1.27.64v0a1.33,1.33,0,0,1,.49.31,3.38,3.38,0,0,1,.39.6l1.71,3.62H51.84L50.45,6.06a1.47,1.47,0,0,0-.6-.74,2,2,0,0,0-.92-.14h-.78v4h-1.3ZM48.16,4h1.1a2.34,2.34,0,0,0,1.52-.44,1.25,1.25,0,0,0,.44-1,1.18,1.18,0,0,0-.6-1.1,2.74,2.74,0,0,0-1.22-.25H48.16Z" class="cls-1"/>\n        <path d="M62.19,1.38a4.94,4.94,0,0,1,1.12,3.3A5,5,0,0,1,62.19,8,4.54,4.54,0,0,1,55.7,8a5,5,0,0,1-1.12-3.31,4.94,4.94,0,0,1,1.12-3.3,4.51,4.51,0,0,1,6.49,0Z" class="cls-2"/>\n        <path d="M65.54.13h2.14l2.84,7.55L73.31.13h2.14V9.21h-1.3V1.35h0l-3,7.86H69.86l-3-7.86h0V9.21h-1.3Z" class="cls-1"/>\n        <path d="M85.29,1.38a4.94,4.94,0,0,1,1.12,3.3A5,5,0,0,1,85.29,8,4.54,4.54,0,0,1,78.8,8a5,5,0,0,1-1.12-3.31,4.94,4.94,0,0,1,1.12-3.3,4.51,4.51,0,0,1,6.49,0Z" class="cls-2"/>\n        <path d="M88.5.13h2.22A4.64,4.64,0,0,1,93.4.7a2.11,2.11,0,0,1,.83,1.8A2,2,0,0,1,93.64,4a2.27,2.27,0,0,1-1.27.64v0a1.33,1.33,0,0,1,.49.31,3.38,3.38,0,0,1,.39.6L95,9.21H93.48L92.09,6.06a1.47,1.47,0,0,0-.6-.74,2,2,0,0,0-.92-.14H89.8v4H88.5ZM89.8,4h1.1a2.34,2.34,0,0,0,1.52-.44,1.25,1.25,0,0,0,.44-1,1.18,1.18,0,0,0-.6-1.1A2.74,2.74,0,0,0,91,1.27H89.8Z" class="cls-1"/>\n        <path d="M96.75.13h2.37a4.13,4.13,0,0,1,2.49.66,2.4,2.4,0,0,1,.91,2,2.74,2.74,0,0,1-.61,1.8,3.25,3.25,0,0,1-2.6,1H98.05V9.21h-1.3Zm1.3,4.31h1.28A2.14,2.14,0,0,0,100.71,4a1.5,1.5,0,0,0,.44-1.12,1.44,1.44,0,0,0-.58-1.22,2.5,2.5,0,0,0-1.41-.38h-1.1Z" class="cls-1"/>\n        <path d="M104.44.13h1.3v3.8h4.33V.13h1.3V9.21h-1.3V5.07h-4.33V9.21h-1.3Z" class="cls-1"/>\n        <path d="M121.21,1.38a4.94,4.94,0,0,1,1.12,3.3A5,5,0,0,1,121.21,8a4.54,4.54,0,0,1-6.49,0,5,5,0,0,1-1.12-3.31,4.94,4.94,0,0,1,1.12-3.3,4.51,4.51,0,0,1,6.49,0Z" class="cls-2"/>\n        <path d="M128.6,1.52a4,4,0,0,0-1.7-.38,2.25,2.25,0,0,0-1,.22,1,1,0,0,0-.54,1,1,1,0,0,0,.29.71,3.77,3.77,0,0,0,1.3.8l.34.17a3.58,3.58,0,0,1,1.57,1.21,2.59,2.59,0,0,1,.4,1.45,2.38,2.38,0,0,1-.88,2,3.38,3.38,0,0,1-2.3.7A5.78,5.78,0,0,1,124,9l.13-1.19a5,5,0,0,0,1.88.43,1.86,1.86,0,0,0,1.32-.45,1.31,1.31,0,0,0,.45-1,1.24,1.24,0,0,0-.48-1A6.82,6.82,0,0,0,126.14,5l-.56-.29a3.5,3.5,0,0,1-1.27-1,2.23,2.23,0,0,1-.36-1.28,2.23,2.23,0,0,1,1-1.92A3.58,3.58,0,0,1,126.85,0a5.67,5.67,0,0,1,1.93.32Z" class="cls-1"/>\n        <path d="M131.37.13h5.07V1.27h-3.78V3.93h3.44V5.07h-3.44v3h3.78V9.21h-5.07Z" class="cls-1"/>\n        <g id="logo_eye_first">\n          <path d="M14.53,3.88a3.25,3.25,0,0,0-.59,1.91,3.24,3.24,0,0,0,.59,1.91,2,2,0,0,0,1.7.79,2,2,0,0,0,1.7-.79,3.24,3.24,0,0,0,.59-1.91,3.25,3.25,0,0,0-.59-1.91,2.21,2.21,0,0,0-3.4,0Z" class="cls-3"/>\n          <path d="M15.48,5a1.49,1.49,0,0,0,0,1.67,1,1,0,0,0,1.49,0A1.49,1.49,0,0,0,17,5a1,1,0,0,0-1.49,0Z"/>\n\n          <path d="M13.5,5a3,3 0 1,0 6,0a3,3 0 1,0 -6,0" stroke="red" fill="none"></path>\n        </g>\n        <g id="logo_eye_second">\n          <path d="M56,1.88a3.25,3.25,0,0,0-.59,1.91A3.24,3.24,0,0,0,56,5.69a2.21,2.21,0,0,0,3.4,0A3.24,3.24,0,0,0,60,3.79a3.25,3.25,0,0,0-.59-1.91,2.21,2.21,0,0,0-3.4,0Z" class="cls-3"/>\n          <path d="M57,3a1.42,1.42,0,0,0-.26.83,1.42,1.42,0,0,0,.26.83,1,1,0,0,0,1.49,0,1.42,1.42,0,0,0,.26-.83A1.42,1.42,0,0,0,58.44,3,1,1,0,0,0,57,3Z"/>\n        </g>\n        <g id="logo_eye_third">\n          <path d="M81,3.88a3.25,3.25,0,0,0-.59,1.91A3.24,3.24,0,0,0,81,7.7a2.21,2.21,0,0,0,3.4,0A3.24,3.24,0,0,0,85,5.79a3.25,3.25,0,0,0-.59-1.91,2.21,2.21,0,0,0-3.4,0Z" class="cls-3"/>\n          <path d="M82,5a1.49,1.49,0,0,0,0,1.67,1,1,0,0,0,1.49,0,1.49,1.49,0,0,0,0-1.67A1,1,0,0,0,82,5Z"/>\n        </g>\n        <g id="logo_eye_last">\n          <path d="M116.29,2.74a3.25,3.25,0,0,0-.59,1.91,3.24,3.24,0,0,0,.59,1.91,2.21,2.21,0,0,0,3.4,0,3.24,3.24,0,0,0,.59-1.91,3.25,3.25,0,0,0-.59-1.91,2.21,2.21,0,0,0-3.4,0Z" class="cls-3"/>\n          <path d="M117.25,3.81a1.49,1.49,0,0,0,0,1.67,1,1,0,0,0,1.49,0,1.49,1.49,0,0,0,0-1.67,1,1,0,0,0-1.49,0Z"/>\n        </g>\n\n        <rect width="2" height="2" x="0" y="0" fill="red"></rect>\n      </g>\n    </g>\n  </svg>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/'<!--\n  Generated template for the HomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content class="container" padding fixed no-bounce>\n  <sound-toggler></sound-toggler>\n  <div class="image">\n    <img class="btn-play" (click)="select()" src="assets/imgs/home-page_play.svg" alt="hit the btn to play!" />\n  </div>\n\n  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.44 9.34">\n    <defs>\n      <style>\n         .logo .cls-1{fill:#fff;} .logo .cls-2{fill:#f1ea35;} .logo .cls-3{fill:#00ad5e;}\n      </style>\n    </defs>\n    <g id="Layer_2" data-name="Layer 2">\n      <g id="Слой_2" data-name="Слой 2">\n        <path d="M0,.13H2.14L5,7.68,7.77.13H9.91V9.21H8.62V1.35h0l-3,7.86H4.32l-3-7.86h0V9.21H0Z" class="cls-1"/>\n        <path d="M19.75,1.38a4.94,4.94,0,0,1,1.12,3.3A5,5,0,0,1,19.75,8a4.1,4.1,0,0,1-3.24,1.36A4.1,4.1,0,0,1,13.27,8a5,5,0,0,1-1.12-3.31,4.94,4.94,0,0,1,1.12-3.3A4.06,4.06,0,0,1,16.51,0,4.06,4.06,0,0,1,19.75,1.38Z" class="cls-2"/>\n        <path d="M23,.13h1.76l4,7.32h0V.13h1.3V9.21H28.45l-4.1-7.47h0V9.21H23Z" class="cls-1"/>\n        <path d="M36.85,1.52a4,4,0,0,0-1.7-.38,2.25,2.25,0,0,0-1,.22,1,1,0,0,0-.54,1,1,1,0,0,0,.29.71,3.77,3.77,0,0,0,1.3.8l.34.17a3.58,3.58,0,0,1,1.57,1.21,2.59,2.59,0,0,1,.4,1.45,2.38,2.38,0,0,1-.88,2,3.38,3.38,0,0,1-2.3.7,5.78,5.78,0,0,1-2-.38l.13-1.19a5,5,0,0,0,1.88.43,1.86,1.86,0,0,0,1.32-.45,1.31,1.31,0,0,0,.45-1,1.24,1.24,0,0,0-.48-1A6.82,6.82,0,0,0,34.38,5l-.56-.29a3.5,3.5,0,0,1-1.27-1,2.23,2.23,0,0,1-.36-1.28,2.23,2.23,0,0,1,1-1.92A3.58,3.58,0,0,1,35.1,0,5.67,5.67,0,0,1,37,.32Z" class="cls-1"/>\n        <path d="M41.2,1.27H38.38V.13h6.93V1.27H42.5V9.21H41.2Z" class="cls-1"/>\n        <path d="M46.86.13h2.22A4.64,4.64,0,0,1,51.76.7a2.11,2.11,0,0,1,.83,1.8A2,2,0,0,1,52,4a2.27,2.27,0,0,1-1.27.64v0a1.33,1.33,0,0,1,.49.31,3.38,3.38,0,0,1,.39.6l1.71,3.62H51.84L50.45,6.06a1.47,1.47,0,0,0-.6-.74,2,2,0,0,0-.92-.14h-.78v4h-1.3ZM48.16,4h1.1a2.34,2.34,0,0,0,1.52-.44,1.25,1.25,0,0,0,.44-1,1.18,1.18,0,0,0-.6-1.1,2.74,2.74,0,0,0-1.22-.25H48.16Z" class="cls-1"/>\n        <path d="M62.19,1.38a4.94,4.94,0,0,1,1.12,3.3A5,5,0,0,1,62.19,8,4.54,4.54,0,0,1,55.7,8a5,5,0,0,1-1.12-3.31,4.94,4.94,0,0,1,1.12-3.3,4.51,4.51,0,0,1,6.49,0Z" class="cls-2"/>\n        <path d="M65.54.13h2.14l2.84,7.55L73.31.13h2.14V9.21h-1.3V1.35h0l-3,7.86H69.86l-3-7.86h0V9.21h-1.3Z" class="cls-1"/>\n        <path d="M85.29,1.38a4.94,4.94,0,0,1,1.12,3.3A5,5,0,0,1,85.29,8,4.54,4.54,0,0,1,78.8,8a5,5,0,0,1-1.12-3.31,4.94,4.94,0,0,1,1.12-3.3,4.51,4.51,0,0,1,6.49,0Z" class="cls-2"/>\n        <path d="M88.5.13h2.22A4.64,4.64,0,0,1,93.4.7a2.11,2.11,0,0,1,.83,1.8A2,2,0,0,1,93.64,4a2.27,2.27,0,0,1-1.27.64v0a1.33,1.33,0,0,1,.49.31,3.38,3.38,0,0,1,.39.6L95,9.21H93.48L92.09,6.06a1.47,1.47,0,0,0-.6-.74,2,2,0,0,0-.92-.14H89.8v4H88.5ZM89.8,4h1.1a2.34,2.34,0,0,0,1.52-.44,1.25,1.25,0,0,0,.44-1,1.18,1.18,0,0,0-.6-1.1A2.74,2.74,0,0,0,91,1.27H89.8Z" class="cls-1"/>\n        <path d="M96.75.13h2.37a4.13,4.13,0,0,1,2.49.66,2.4,2.4,0,0,1,.91,2,2.74,2.74,0,0,1-.61,1.8,3.25,3.25,0,0,1-2.6,1H98.05V9.21h-1.3Zm1.3,4.31h1.28A2.14,2.14,0,0,0,100.71,4a1.5,1.5,0,0,0,.44-1.12,1.44,1.44,0,0,0-.58-1.22,2.5,2.5,0,0,0-1.41-.38h-1.1Z" class="cls-1"/>\n        <path d="M104.44.13h1.3v3.8h4.33V.13h1.3V9.21h-1.3V5.07h-4.33V9.21h-1.3Z" class="cls-1"/>\n        <path d="M121.21,1.38a4.94,4.94,0,0,1,1.12,3.3A5,5,0,0,1,121.21,8a4.54,4.54,0,0,1-6.49,0,5,5,0,0,1-1.12-3.31,4.94,4.94,0,0,1,1.12-3.3,4.51,4.51,0,0,1,6.49,0Z" class="cls-2"/>\n        <path d="M128.6,1.52a4,4,0,0,0-1.7-.38,2.25,2.25,0,0,0-1,.22,1,1,0,0,0-.54,1,1,1,0,0,0,.29.71,3.77,3.77,0,0,0,1.3.8l.34.17a3.58,3.58,0,0,1,1.57,1.21,2.59,2.59,0,0,1,.4,1.45,2.38,2.38,0,0,1-.88,2,3.38,3.38,0,0,1-2.3.7A5.78,5.78,0,0,1,124,9l.13-1.19a5,5,0,0,0,1.88.43,1.86,1.86,0,0,0,1.32-.45,1.31,1.31,0,0,0,.45-1,1.24,1.24,0,0,0-.48-1A6.82,6.82,0,0,0,126.14,5l-.56-.29a3.5,3.5,0,0,1-1.27-1,2.23,2.23,0,0,1-.36-1.28,2.23,2.23,0,0,1,1-1.92A3.58,3.58,0,0,1,126.85,0a5.67,5.67,0,0,1,1.93.32Z" class="cls-1"/>\n        <path d="M131.37.13h5.07V1.27h-3.78V3.93h3.44V5.07h-3.44v3h3.78V9.21h-5.07Z" class="cls-1"/>\n\n        <g id="logo_eye_first">\n          <path d="M14.53,3.88a3.25,3.25,0,0,0-.59,1.91,3.24,3.24,0,0,0,.59,1.91,2,2,0,0,0,1.7.79,2,2,0,0,0,1.7-.79,3.24,3.24,0,0,0,.59-1.91,3.25,3.25,0,0,0-.59-1.91,2.21,2.21,0,0,0-3.4,0Z" class="cls-3"/>\n          <path d="M15.48,5a1.49,1.49,0,0,0,0,1.67,1,1,0,0,0,1.49,0A1.49,1.49,0,0,0,17,5a1,1,0,0,0-1.49,0Z"/>\n        </g>\n\n        <g id="logo_eye_second">\n          <path d="M56,1.88a3.25,3.25,0,0,0-.59,1.91A3.24,3.24,0,0,0,56,5.69a2.21,2.21,0,0,0,3.4,0A3.24,3.24,0,0,0,60,3.79a3.25,3.25,0,0,0-.59-1.91,2.21,2.21,0,0,0-3.4,0Z" class="cls-3"/>\n          <path d="M57,3a1.42,1.42,0,0,0-.26.83,1.42,1.42,0,0,0,.26.83,1,1,0,0,0,1.49,0,1.42,1.42,0,0,0,.26-.83A1.42,1.42,0,0,0,58.44,3,1,1,0,0,0,57,3Z"/>\n        </g>\n\n        <g id="logo_eye_third">\n          <path d="M81,3.88a3.25,3.25,0,0,0-.59,1.91A3.24,3.24,0,0,0,81,7.7a2.21,2.21,0,0,0,3.4,0A3.24,3.24,0,0,0,85,5.79a3.25,3.25,0,0,0-.59-1.91,2.21,2.21,0,0,0-3.4,0Z" class="cls-3"/>\n          <path d="M82,5a1.49,1.49,0,0,0,0,1.67,1,1,0,0,0,1.49,0,1.49,1.49,0,0,0,0-1.67A1,1,0,0,0,82,5Z"/>\n        </g>\n\n        <g id="logo_eye_last">\n          <path d="M116.29,2.74a3.25,3.25,0,0,0-.59,1.91,3.24,3.24,0,0,0,.59,1.91,2.21,2.21,0,0,0,3.4,0,3.24,3.24,0,0,0,.59-1.91,3.25,3.25,0,0,0-.59-1.91,2.21,2.21,0,0,0-3.4,0Z" class="cls-3"/>\n          <path d="M117.25,3.81a1.49,1.49,0,0,0,0,1.67,1,1,0,0,0,1.49,0,1.49,1.49,0,0,0,0-1.67,1,1,0,0,0-1.49,0Z"/>\n        </g>\n      </g>\n    </g>\n  </svg>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/home/home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
@@ -12081,8 +12081,30 @@ var SoundModel = /** @class */ (function () {
     var third = __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(document.getElementById('logo_eye_third'));
     var last = __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(document.getElementById('logo_eye_last'));
     var path1 = {
-        string: 'M60.4,46 c2,-25 -10,-32 -39.5,-23',
-        initialPoint: { x: 97.4, y: 64 },
+        string: 'M14.75,4a1.75,1.75 0 1,0 3.5,0a1.75,1.75 0 1,0 -3.5,0',
+        initialPoint: { x: 16, y: 5 },
+        getLength: function () {
+            return __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default.a.path.getTotalLength(this.string);
+        },
+        getPoints: function (length) {
+            var _a = __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default.a.path.getPointAtLength(this.string, length), x = _a.x, y = _a.y;
+            return { x: x - this.initialPoint.x, y: y - this.initialPoint.y };
+        },
+    };
+    var path2 = {
+        string: 'M56.25,4a1.75,1.75 0 1,0 3.5,0a1.75,1.75 0 1,0 -3.5,0',
+        initialPoint: { x: 56.25, y: 3 },
+        getLength: function () {
+            return __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default.a.path.getTotalLength(this.string);
+        },
+        getPoints: function (length) {
+            var _a = __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default.a.path.getPointAtLength(this.string, length), x = _a.x, y = _a.y;
+            return { x: x - this.initialPoint.x, y: y - this.initialPoint.y };
+        },
+    };
+    var path3 = {
+        string: 'M80.25,4a1.75,1.75 0 1,0 3.5,0a1.75,1.75 0 1,0 -3.5,0',
+        initialPoint: { x: 82.5, y: 5 },
         getLength: function () {
             return __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default.a.path.getTotalLength(this.string);
         },
@@ -12092,25 +12114,50 @@ var SoundModel = /** @class */ (function () {
         },
     };
     var animation = function (_a) {
-        var start = _a.start, end = _a.end, element = _a.element, getPoints = _a.getPoints, interval = _a.interval, callback = _a.callback, easing = _a.easing;
+        var start = _a.start, end = _a.end, element = _a.element, getPoints = _a.getPoints, interval = _a.interval, callback = _a.callback;
         return __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default.a.animate(start, end, function (step) {
             var _a = getPoints(step), x = _a.x, y = _a.y;
             element.transform("t" + x + "," + y);
-        }, interval, easing, callback);
+        }, interval, callback);
     };
     var rotate = {
         first: function () {
             var _this = this;
-            first.animate({
-                transform: 'r360,16,4.5',
-            }, 1500, function () {
-                first.attr({ transform: 'r0,16,4.5' });
-                return _this.first();
+            return animation({
+                start: 0,
+                end: path1.getLength(),
+                element: first,
+                getPoints: function (step) { return path1.getPoints(step); },
+                interval: 1100,
+                callback: function () { return _this.first(); },
             });
-            return;
+        },
+        second: function () {
+            var _this = this;
+            return animation({
+                start: path2.getLength(),
+                end: 0,
+                element: second,
+                getPoints: function (step) { return path2.getPoints(step); },
+                interval: 1500,
+                callback: function () { return _this.second(); },
+            });
+        },
+        third: function () {
+            var _this = this;
+            return animation({
+                start: 0,
+                end: path3.getLength(),
+                element: third,
+                getPoints: function (step) { return path3.getPoints(step); },
+                interval: 1300,
+                callback: function () { return _this.third(); },
+            });
         },
     };
-    // rotate.first();
+    rotate.first();
+    rotate.second();
+    rotate.third();
     return;
 });;
 //# sourceMappingURL=animations.js.map
