@@ -6,6 +6,7 @@ import { GamePage } from '../game/game';
 
 import { BackgroundTabletComponent } from './background/background-tablet.component';
 import { BackgroundMobileComponent } from './background/background-mobile.component';
+import runAnimations from './animations';
 
 import { SoundManagerService } from '../../components/sound-toggler/sound-manager.service';
 
@@ -16,6 +17,7 @@ import { SoundManagerService } from '../../components/sound-toggler/sound-manage
 })
 export class SelectPage implements AfterViewInit, OnDestroy {
   private monsters: { name, top?, left? }[];
+  private stopAnimations: Function;
 
   @ViewChild(BackgroundTabletComponent) bg: BackgroundTabletComponent;
   @ViewChild(BackgroundMobileComponent) bgMobile: BackgroundMobileComponent;
@@ -31,6 +33,7 @@ export class SelectPage implements AfterViewInit, OnDestroy {
 
   ngOnDestroy() {
     this.soundManagerService.setCurrent('door');
+    this.stopAnimations();
   }
 
   ngAfterViewInit() {
@@ -41,12 +44,9 @@ export class SelectPage implements AfterViewInit, OnDestroy {
       return { name: m.name, top: Math.floor(top), left: Math.floor(left), id: m.id };
     });
 
-    this.monsters.forEach(m => {
-      const el = document.getElementById(m.name);
-      // el.setAttribute('width', '100px');
-
-      // console.log(el);
-    });
+    setTimeout(() => {
+      this.stopAnimations = runAnimations();
+    }, 1000);
   }
 
   isIphone() {

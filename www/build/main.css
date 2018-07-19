@@ -27799,6 +27799,18 @@ select-page .cls-1 {
   fill: #003d4e;
 }
 
+select-page .monsters_window {
+  fill: #003d4e;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease;
+}
+
+select-page .monsters_window--yellow {
+  fill: yellow;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease;
+}
+
 select-page .bg {
   border-top: 22px solid #001826;
   position: absolute;
@@ -27827,6 +27839,7 @@ select-page .item {
 select-page .monsters {
   position: absolute;
   z-index: 10;
+  overflow: visible;
 }
 
 select-page .monsters__alien {
@@ -27841,6 +27854,7 @@ select-page .monsters__yaga {
   height: 20.805%;
   -webkit-transform: rotate(-20grad);
   transform: rotate(-20grad);
+  z-index: 11;
 }
 
 .mobile select-page .monsters__yaga {

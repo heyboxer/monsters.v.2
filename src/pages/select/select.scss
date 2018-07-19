@@ -8,6 +8,16 @@ select-page {
     fill: #003d4e;
   }
 
+  .monsters_window {
+    fill: #003d4e;
+    transition: fill .3s ease;
+
+    &--yellow {
+      fill: yellow;
+      transition: fill .3s ease;
+    }
+  }
+
   .bg {
     border-top: 22px solid $primary-dark-color;
     position: absolute;
@@ -36,6 +46,7 @@ select-page {
   .monsters {
     position: absolute;
     z-index: 10;
+    overflow: visible;
 
     &__alien {
       height: 19.38%;
@@ -47,6 +58,7 @@ select-page {
     &__yaga {
       height: 20.805%;
       transform: rotate(-20grad);
+      z-index: 11;
       .mobile & {
         height: 15.518%;
       }
