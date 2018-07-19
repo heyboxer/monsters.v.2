@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SelectPage } from '../select/select';
 import { SoundManagerService } from '../../components/sound-toggler/sound-manager.service';
 
+import runAnimation from './animations';
 
 @IonicPage()
 @Component({
@@ -21,6 +22,8 @@ export class HomePage implements AfterViewInit {
   ngAfterViewInit() {
     this.soundManagerService.setCurrent('door');
     this.soundManagerService.play();
+
+    runAnimation();
   }
 
   select() {
