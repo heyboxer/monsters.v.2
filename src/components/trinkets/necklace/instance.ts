@@ -1,8 +1,10 @@
 import { NecklaceComponent } from './necklace';
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 
 export default {
   id: 16,
   component: NecklaceComponent,
+  emotion: 'joyful',
   meta: {
     container: 'body',
     getContainer: function(name) {
@@ -13,8 +15,10 @@ export default {
     },
     uniq: true,
     before: (monster, repo, instance) => {
+      joyfulAnimBefore(monster, repo, instance, true);
     },
     after: (monster, repo, instance) => {
+      joyfulAnimAfter(monster, repo, instance, true);
     },
     attr: {
       width: {

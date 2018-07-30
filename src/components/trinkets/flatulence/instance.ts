@@ -1,4 +1,5 @@
 import { FlatulenceComponent } from './flatulence';
+import { sadAnimBefore, sadAnimAfter } from '../lib'
 
 export default {
   id: 17,
@@ -9,10 +10,12 @@ export default {
       return this.container;
     },
     uniq: true,
+    emotion: 'sad',
     before: (monster, repo, instance) => {
+      monster.makeSound('fart');
+      sadAnimBefore(monster, repo, instance, true, true);
     },
-    after: (monster, repo, instance) => {
-    },
+    after: (monster, repo, instance) => sadAnimAfter(monster, repo, instance, true),
     attr: {
       width: {
         default: ({width}) => width * 1.5,

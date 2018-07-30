@@ -25,6 +25,7 @@ select-page {
     height: 100%;
     top: 0;
     overflow: hidden;
+    z-index: -1;
   }
 
   .bg__content {

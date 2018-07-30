@@ -5,6 +5,17 @@ import { AnimationSetController } from './animation/animation-set.controller';
 // @ts-ignore: Unreachable code error
 import Snap from 'imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js';
 
+import { SoundManagerService } from '../sound-toggler/sound-manager.service';
+import SOUNDS from '../sound-toggler/sounds';
+
+class MonsterManagerService extends SoundManagerService {
+  constructor(lib) {
+    super();
+
+    this.lib = lib;
+  }
+}
+
 
 @Component({
 })
@@ -14,10 +25,31 @@ export abstract class MonsterModel implements AfterViewInit {
   protected emotion = 'default';
   protected isAnimating: boolean = false;
   protected animationsArr: {fn: Function, emotion: string, arg: boolean}[] = [];
+  private soundManager: MonsterManagerService;
 
-  constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef) {}
+  constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef) {
 
-  ngAfterViewInit() {}
+    const sounds = SOUNDS
+      .filter(n => n.monster === this.name)
+      .reduce((acc, cur) => {
+      return { ...acc, [cur.name] : cur.item };
+    }, {});;
+
+    this.soundManager = new MonsterManagerService( sounds );
+  }
+
+  ngAfterViewInit() {
+
+  }
+
+  public makeSound( name: string ) {
+    if(!this.soundManager || !this.soundManager.has( name )) return;
+
+    this.soundManager.setCurrent( name );
+    this.soundManager.play();
+
+    return;
+  }
 
   public getPartsArray() {
     return this.parts.toArray();

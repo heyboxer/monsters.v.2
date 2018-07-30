@@ -1,4 +1,5 @@
 import { DressComponent } from './dress';
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 
 export default {
   id: 9,
@@ -9,7 +10,10 @@ export default {
       return this.container;
     },
     uniq: true,
-    before: (monster) => {
+    emotion: 'joyful',
+    before: (monster, repo, instance) => {
+      joyfulAnimBefore(monster, repo, instance, true);
+
       if(
         ['mummy', 'yaga', 'yeti', 'doctor', 'vampire', 'zombie', 'wolf'].includes(monster.name)
       ) {
@@ -18,7 +22,9 @@ export default {
 
       return;
     },
-    after: (monster) => {
+    after: (monster, repo, instance) => {
+      joyfulAnimAfter(monster, repo, instance, true);
+
       if(
         ['mummy', 'yaga', 'yeti', 'doctor', 'vampire', 'zombie', 'wolf'].includes(monster.name)
       ) {

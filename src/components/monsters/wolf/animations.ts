@@ -51,6 +51,7 @@ const animations = {
       return
     },
     straight: (instance, cb) => {
+      console.log(instance);
       instance.attr({ transform: 'r-10' });
 
       instance.animate({
@@ -63,19 +64,19 @@ const animations = {
   eyeRight: {
     fn: p => p.name === 'eye' && p.mod === 'right',
     incline: (instance, cb) => {
-      instance.attr({ transform: 'r0' });
+      instance.attr({ transform: 'r0,0,0' });
 
       instance.animate({
-        transform: 'r10'
+        transform: 'r10,0,0'
       }, 200, cb);
 
-      return
+      return;
     },
     straight: (instance, cb) => {
-      instance.attr({ transform: 'r10' });
+      instance.attr({ transform: 'r10,0,0' });
 
       instance.animate({
-        transform: 'r0'
+        transform: 'r0,0,0'
       }, 200, cb);
 
       return
@@ -161,8 +162,6 @@ const sequances = {
       smileBottom: isForward? 'smileIn' : 'smileOut',
     }
 
-    console.log('joyful', isForward);
-
     let finished = 0;
 
     const afterFinish = () => {
@@ -200,8 +199,8 @@ const sequances = {
     };
 
     tongue.animations.run(config.tongue).onDisengage(afterFinish);
-    eyeLeft.animations.run(config.eyes).onDisengage(afterFinish);
-    eyeRight.animations.run(config.eyes).onDisengage(afterFinish);
+    // eyeLeft.animations.run(config.eyes).onDisengage(afterFinish);
+    // eyeRight.animations.run(config.eyes).onDisengage(afterFinish);
 
     return;
   },

@@ -10,8 +10,8 @@ export default {
       return this.container;
     },
     emotion: 'sad',
-    before: sadAnimBefore,
-    after: sadAnimAfter,
+    before: (monster, repo, instance) => sadAnimBefore(monster, repo, instance, true),
+    after: (monster, repo, instance) => sadAnimAfter(monster, repo, instance, true),
     uniq: true,
     attr: {
       width: {

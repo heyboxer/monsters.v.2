@@ -28,11 +28,13 @@ export class MonstersComponent implements OnInit, AfterViewInit {
     private monstersService: MonstersService,
     private viewContainerRef: ViewContainerRef,
     private renderer: Renderer2
-  ) {}
+  ) {
+  }
 
   ngOnInit() {
     this.monsters = this.monstersService.getMonsters();
     this.loadMonster(this.monsterId);
+
   }
 
   ngAfterViewInit() {

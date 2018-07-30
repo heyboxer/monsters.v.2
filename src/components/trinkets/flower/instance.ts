@@ -1,8 +1,11 @@
 import { FlowerComponent } from './flower';
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
+
 
 export default {
   id: 18,
   component: FlowerComponent,
+  emotion: 'joyful',
   meta: {
     container: 'head-figure',
     getContainer: function(name) {
@@ -14,8 +17,12 @@ export default {
     },
     uniq: true,
     before: (monster, repo, instance) => {
+      joyfulAnimBefore(monster, repo, instance, true);
+
     },
     after: (monster, repo, instance) => {
+      joyfulAnimAfter(monster, repo, instance, true);
+
     },
     attr: {
       width: {

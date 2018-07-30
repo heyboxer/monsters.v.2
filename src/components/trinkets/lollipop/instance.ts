@@ -10,7 +10,7 @@ export default {
     },
     uniq: true,
     before: (monster, repo, instance) => {
-
+      monster.makeSound('chupa');
     },
     after: (monster, repo, instance) => {
 

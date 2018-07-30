@@ -1,4 +1,4 @@
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 
 import { SoundManagerService } from './sound-manager.service';
 
@@ -9,7 +9,10 @@ import { SoundManagerService } from './sound-manager.service';
 })
 export class SoundTogglerComponent implements AfterViewInit {
   private iconName: string;
-  constructor(private soundManagerService: SoundManagerService) {}
+  @Input('manager') manager: SoundManagerService;
+
+  constructor() {
+  }
 
   ngAfterViewInit() {
     this.setIcon('on');
@@ -29,21 +32,21 @@ export class SoundTogglerComponent implements AfterViewInit {
   }
 
   public play() {
-    this.soundManagerService.play();
+    this.manager.play();
     this.setIcon('on');
 
     return;
   }
 
   public stop() {
-    this.soundManagerService.stop();
+    this.manager.stop();
     this.setIcon('off');
 
     return;
   }
 
   public toggle() {
-    this.soundManagerService.isPlaying() ? this.stop() : this.play();
+    this.manager.isPlaying() ? this.stop() : this.play();
 
     return;
   }

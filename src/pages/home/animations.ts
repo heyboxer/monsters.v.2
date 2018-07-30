@@ -64,7 +64,7 @@ export default () => {
         end: path1.getLength(),
         element: first,
         getPoints: step => path1.getPoints(step),
-        interval: 1100,
+        interval: 800,
         callback: () => this.first(),
       });
     },
@@ -74,7 +74,7 @@ export default () => {
         end: 0,
         element: second,
         getPoints: step => path2.getPoints(step),
-        interval: 1500,
+        interval: 1300,
         callback: () => this.second(),
       });
     },
@@ -84,7 +84,7 @@ export default () => {
         end: path3.getLength(),
         element: third,
         getPoints: step => path3.getPoints(step),
-        interval: 1300,
+        interval: 1000,
         callback: () => this.third(),
       });
     },

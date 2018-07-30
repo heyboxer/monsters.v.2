@@ -1,8 +1,10 @@
 import { PigtailComponent } from './pigtail';
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 
 export default {
   id: 20,
   component: PigtailComponent,
+  emotion: 'joyful',
   meta: {
     container: 'head-figure',
     getContainer: function(name) {
@@ -10,11 +12,15 @@ export default {
     },
     uniq: true,
     before: (monster, repo, instance) => {
+      joyfulAnimBefore(monster, repo, instance, true);
+
       if(monster.name === 'zombie') {
         monster.close('hair');
       }
     },
     after: (monster, repo, instance) => {
+      joyfulAnimAfter(monster, repo, instance, true);
+
       if(monster.name === 'zombie') {
         monster.open('hair');
       }

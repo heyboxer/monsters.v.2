@@ -26,6 +26,18 @@ export class HomePage implements AfterViewInit {
     runAnimation();
   }
 
+  public play() {
+    this.soundManagerService.play();
+  }
+
+  public stop() {
+    this.soundManagerService.stop();
+  }
+
+  public isPlaying() {
+    this.soundManagerService.isPlaying();
+  }
+
   select() {
     this.navCtrl.push(SelectPage);
   }

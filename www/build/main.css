@@ -27818,6 +27818,7 @@ select-page .bg {
   height: 100%;
   top: 0;
   overflow: hidden;
+  z-index: -1;
 }
 
 select-page .bg__content {

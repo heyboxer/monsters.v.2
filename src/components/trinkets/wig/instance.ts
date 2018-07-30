@@ -12,13 +12,13 @@ export default {
     uniq: true,
     emotion: 'joyful',
     before: (monster, repo, instance) => {
-      joyfulAnimBefore(monster, repo, instance);
+      joyfulAnimBefore(monster, repo, instance, true);
       if(monster.name === 'zombie') {
         monster.close('hair');
       }
     },
     after: (monster, repo, instance) => {
-      joyfulAnimAfter(monster, repo, instance);
+      joyfulAnimAfter(monster, repo, instance, true);
       if(monster.name === 'zombie') {
         monster.open('hair');
       }

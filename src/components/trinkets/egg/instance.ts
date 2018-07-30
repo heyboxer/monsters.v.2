@@ -11,8 +11,8 @@ export default {
     },
     uniq: true,
     emotion: 'sad',
-    before: sadAnimBefore,
-    after: sadAnimAfter,
+    before: (monster, repo, instance) => sadAnimBefore(monster, repo, instance, true),
+    after: (monster, repo, instance) => sadAnimAfter(monster, repo, instance, true),
     attr: {
       width: {
         default: ({width}) => width * 1.5,

@@ -1,4 +1,5 @@
 <ion-content class="container" fixed no-bounce>
+
   <div class="bg">
     <div class="list" [class.mobile]="isIphone()">
       <div *ngFor="let monster of monsters" [ngSwitch]="monster?.name">

@@ -6,12 +6,13 @@ import SOUNDS from './sounds';
 
 @Injectable()
 export class SoundManagerService {
-  private lib: { [key: string] : SoundModel };
-  private current: SoundModel;
+  protected lib: { [key: string] : SoundModel | SoundModel[] };
+  protected current: SoundModel;
 
   constructor() {
-    this.lib = SOUNDS;
-    this.setCurrent('door');
+    this.lib = SOUNDS.filter(n => !n.monster).reduce((acc, cur) => {
+      return { ...acc, [cur.name] : cur.item };
+    }, {});
   }
 
   public setCurrent(name) {
@@ -19,11 +20,21 @@ export class SoundManagerService {
 
     if(playing) this.stop();
 
-    this.current = this.lib[name];
+    this.current = this.lib[name] instanceof Array?
+    (() => {
+      const arr = (this.lib[name] as [SoundModel]);
+
+      return arr[ Math.round(Math.random() * (arr.length - 1)) ];
+    })() :
+    (this.lib[name] as SoundModel);
 
     if(playing) this.play();
 
     return this;
+  }
+
+  public has( name ) {
+    return !!this.lib[name];
   }
 
   public play() {

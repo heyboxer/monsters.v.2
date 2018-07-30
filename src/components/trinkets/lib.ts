@@ -1,7 +1,7 @@
-const joyfulAnimBefore = (monster, repo, instance) => {
+const joyfulAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => {
   const filtered = repo.getCopies().filter(i => {
       if(i.meta.onScreen) {
-        return i.onMonster && (i.meta.emotion);
+        return (i.onMonster || onMonsterDefault) && (i.meta.emotion);
       }
 
       return i.meta.emotion;
@@ -9,13 +9,16 @@ const joyfulAnimBefore = (monster, repo, instance) => {
 
   const hasSad = filtered.find(i => {
     if(i.meta.onScreen) {
-      return i.onMonster && (i.meta.emotion === 'sad');
+      return (i.onMonster  || onMonsterDefault) && (i.meta.emotion === 'sad');
     }
 
     return i.meta.emotion === 'sad';
   });
 
-  const onMonster = monster.isOnMonster( instance.getBoundingClientRect() );
+  const onMonster = onMonsterDefault || monster.isOnMonster( instance.getBoundingClientRect() );
+
+  if(onMonster && !nosound) monster.makeSound('joy');
+
 
   if(monster.getEmotion() === 'default' && onMonster) {
     monster.makeJoyful();
@@ -26,10 +29,10 @@ const joyfulAnimBefore = (monster, repo, instance) => {
   return;
 }
 
-const joyfulAnimAfter = (monster, repo, instance) => {
+const joyfulAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
   const filtered = repo.getCopies().filter(i => {
       if(i.meta.onScreen) {
-        return i.onMonster && i.meta.emotion;
+        return (i.onMonster  || onMonsterDefault) && i.meta.emotion;
       }
 
       return i.meta.emotion;
@@ -40,17 +43,19 @@ const joyfulAnimAfter = (monster, repo, instance) => {
   }
 }
 
-const sadAnimBefore = (monster, repo, instance) => {
+const sadAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => {
   const filtered = repo.getCopies().filter(i => {
       if(i.meta.onScreen) {
-        return i.onMonster && i.meta.emotion === 'sad';
+        return (i.onMonster || onMonsterDefault) && i.meta.emotion === 'sad';
       }
 
       return i.meta.emotion === 'sad';
   });
 
-  const onMonster = monster.isOnMonster( instance.getBoundingClientRect() );
+  const onMonster = onMonsterDefault || monster.isOnMonster( instance.getBoundingClientRect() );
   const emotion = monster.getEmotion();
+
+  if(onMonster && !nosound) monster.makeSound('sad');
 
   if(filtered.length === 0 &&  emotion !== 'sad' && onMonster) {
     if(emotion === 'joyful') {
@@ -67,10 +72,10 @@ const sadAnimBefore = (monster, repo, instance) => {
   return;
 }
 
-const sadAnimAfter = (monster, repo, instance) => {
+const sadAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
   const filtered = repo.getCopies().filter(i => {
       if(i.meta.onScreen) {
-        return i.onMonster && i.meta.emotion;
+        return (i.onMonster || onMonsterDefault) && i.meta.emotion;
       }
 
       return i.meta.emotion;
@@ -78,7 +83,7 @@ const sadAnimAfter = (monster, repo, instance) => {
 
   const filteredSad = filtered.filter(i => {
       if(i.meta.onScreen) {
-        return i.onMonster && i.meta.emotion === 'sad';
+        return (i.onMonster || onMonsterDefault) && i.meta.emotion === 'sad';
       }
 
       return i.meta.emotion === 'sad';
@@ -86,7 +91,7 @@ const sadAnimAfter = (monster, repo, instance) => {
 
   const hasJoyful = filtered.find(i => {
     if(i.meta.onScreen) {
-      return i.onMonster && (i.meta.emotion === 'joyful');
+      return (i.onMonster || onMonsterDefault) && (i.meta.emotion === 'joyful');
     }
 
     return i.meta.emotion === 'joyful';

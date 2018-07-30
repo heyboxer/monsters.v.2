@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 import hood from './hood/instance';
 import heart from './heart/instance';
 import snivel from './snivel/instance';

@@ -12,11 +12,12 @@ export default {
     emotion: 'joyful',
     uniq: true,
     before: (monster, repo, instance) => {
-      joyfulAnimBefore(monster, repo, instance);
+      monster.makeSound('party');
+      joyfulAnimBefore(monster, repo, instance, true, true);
       monster.open('confetti');
     },
     after: (monster, repo, instance) => {
-      joyfulAnimAfter(monster, repo, instance);
+      joyfulAnimAfter(monster, repo, instance, true);
       monster.close('confetti');
     },
     attr: {

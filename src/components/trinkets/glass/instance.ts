@@ -9,6 +9,9 @@ export default {
       return this.container;
     },
     uniq: true,
+    before: (monster, repo, instance) => {
+      monster.makeSound('glasses');
+    },
     attr: {
       width: {
         default: ({width}) => width * 2,

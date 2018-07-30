@@ -10,29 +10,12 @@ export default function () {
       const hand = Snap( document.getElementById('skeleton_hand') );
 
       hand.animate({
-        transform: 'r60,137,83'
-      }, 600, () => {
+        transform: 'r180,137,83'
+      }, 900, () => {
         setTimeout(() => {
           hand.animate({
             transform: 'r0,137,83'
-          }, 500, cb);
-        }, 150);
-      });
-
-      return;
-    },
-
-    (cb) => {
-
-      const hand = Snap( document.getElementById('monsters_doctor_hand') );
-
-      hand.animate({
-        transform: 'r-90,93,140'
-      }, 600, () => {
-        setTimeout(() => {
-          hand.animate({
-            transform: 'r0,93,140'
-          }, 500, cb);
+          }, 750, cb);
         }, 150);
       });
 
@@ -53,13 +36,17 @@ export default function () {
     },
 
     (cb) => {
-      const yaga = Snap( document.getElementById('monsters_yaga') );
 
-      yaga.animate({
-        transform: 'r360,110,350'
-      }, 1600, mina.easeinout, () => {
-        yaga.attr({ transform: 'r0,110,350' });
-        return cb();
+      const hand = Snap( document.getElementById('monsters_doctor_hand') );
+
+      hand.animate({
+        transform: 'r-45,93,140'
+      }, 300, () => {
+        setTimeout(() => {
+          hand.animate({
+            transform: 'r0,93,140'
+          }, 270, cb);
+        }, 350);
       });
 
       return;
@@ -76,6 +63,19 @@ export default function () {
             transform: 't0,0',
           }, 400, mina.easeout, cb);
         }, 250);
+      });
+
+      return;
+    },
+
+    (cb) => {
+      const yaga = Snap( document.getElementById('monsters_yaga') );
+
+      yaga.animate({
+        transform: 'r360,110,350'
+      }, 1600, mina.easeinout, () => {
+        yaga.attr({ transform: 'r0,110,350' });
+        return cb();
       });
 
       return;
