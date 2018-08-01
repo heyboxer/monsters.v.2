@@ -12,9 +12,12 @@ export default {
     before: (monster, repo, instance) => {
       monster.open('eyelashes');
 
+      monster.makeSound('joy');
+
       if(monster.name === 'skeleton') {
         monster.close('teeth');
-        monster.open('hidden-jaw');
+        monster.open('hidden-jaw-two');
+        monster.close('mouth-figure');
       }
 
       if(monster.name === 'zombie') {
@@ -51,7 +54,8 @@ export default {
 
       if(monster.name === 'skeleton') {
         monster.open('teeth');
-        monster.close('hidden-jaw');
+        monster.close('hidden-jaw-two');
+        monster.open('mouth-figure');
       }
 
       if(monster.name === 'zombie') {

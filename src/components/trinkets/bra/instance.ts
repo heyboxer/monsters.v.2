@@ -1,3 +1,4 @@
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 import { BraComponent } from './bra';
 
 export default {
@@ -9,17 +10,22 @@ export default {
       return this.container;
     },
     uniq: true,
-    before: (monster) => {
+    emotion: 'joyful',
+    before: (monster, repo, instance) => {
       if(monster.name === 'bed') {
         monster.close('eyes');
       }
 
+      joyfulAnimBefore(monster, repo, instance, true);
+
       return;
     },
-    after: (monster) => {
+    after: (monster, repo, instance) => {
       if(monster.name === 'bed') {
         monster.open('eyes');
       }
+
+      joyfulAnimAfter(monster, repo, instance);
 
       return;
     },
