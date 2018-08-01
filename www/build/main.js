@@ -429,7 +429,7 @@ var joyfulAnimAfter = function (monster, repo, instance, onMonsterDefault) {
     }
     ;
     var last = getLast(filtered);
-    if (last.meta.emotion !== 'joyful') {
+    if (last.meta.emotion !== 'joyful' && monster.emotion === 'joyful') {
         monster.clearEmotion(function () {
             monster.makeSad();
         });
@@ -472,7 +472,7 @@ var sadAnimAfter = function (monster, repo, instance, onMonsterDefault) {
     }
     ;
     var last = getLast(filtered);
-    if (last.meta.emotion !== 'sad') {
+    if (last.meta.emotion !== 'sad' && monster.emotion === 'sad') {
         monster.clearEmotion(function () {
             monster.makeJoyful();
         });

@@ -62,7 +62,7 @@ const joyfulAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
 
   const last = getLast(filtered);
 
-  if(last.meta.emotion !== 'joyful') {
+  if(last.meta.emotion !== 'joyful' && monster.emotion === 'joyful') {
     monster.clearEmotion(() => {
       monster.makeSad();
     });
@@ -120,7 +120,7 @@ const sadAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
 
   const last = getLast(filtered);
 
-  if(last.meta.emotion !== 'sad') {
+  if(last.meta.emotion !== 'sad' && monster.emotion === 'sad') {
     monster.clearEmotion(() => {
       monster.makeJoyful();
     });
