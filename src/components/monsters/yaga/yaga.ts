@@ -64,6 +64,7 @@ export class YagaComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     });
 
     return;
@@ -86,6 +87,7 @@ export class YagaComponent extends MonsterModel {
     sequances.sad(mouth, teeth, arg, () => {
       this.isAnimating = false;
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;

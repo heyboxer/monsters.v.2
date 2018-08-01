@@ -1,107 +1,134 @@
+const isEmotion = (monster, name : string) => {
+  return monster.getEmotion() === name;
+}
+
+const hasEmotion = (monster) => {
+  return !isEmotion(monster, 'default');
+}
+
+const getLast = (arr) => {
+  return arr[arr.length - 1];
+}
+
+const isOnMonster = (instance, monster) => {
+  return monster.isOnMonster( instance.getBoundingClientRect() );
+}
+
+
 const joyfulAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => {
   const filtered = repo.getCopies().filter(i => {
-      if(i.meta.onScreen) {
-        return (i.onMonster || onMonsterDefault) && (i.meta.emotion);
-      }
-
-      return i.meta.emotion;
-  });
-
-  const hasSad = filtered.find(i => {
     if(i.meta.onScreen) {
-      return (i.onMonster  || onMonsterDefault) && (i.meta.emotion === 'sad');
+      return isOnMonster(i.instance, monster) && i.meta.emotion;
     }
 
-    return i.meta.emotion === 'sad';
+    return i.meta.emotion;
   });
 
-  const onMonster = onMonsterDefault || monster.isOnMonster( instance.getBoundingClientRect() );
+  const onMonster = onMonsterDefault || isOnMonster(instance, monster);
 
   if(onMonster && !nosound) monster.makeSound('joy');
 
+  if(!hasEmotion(monster) && onMonster) {
+    return monster.makeJoyful();
+  } else if(!isEmotion(monster, 'joyful') && onMonster) {
+    monster.clearEmotion(() => {
+      monster.makeJoyful();
 
-  if(monster.getEmotion() === 'default' && onMonster) {
-    monster.makeJoyful();
-  } else if(hasSad) {
-    // monster.setAnimationStack('joyful');
-  };
+      return;
+    });
+
+    return;
+  }
 
   return;
-}
+
+};
 
 const joyfulAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
   const filtered = repo.getCopies().filter(i => {
-      if(i.meta.onScreen) {
-        return (i.onMonster  || onMonsterDefault) && i.meta.emotion;
-      }
 
-      return i.meta.emotion;
-  });
-
-  if(filtered.length === 0 && monster.getEmotion() === 'joyful') {
-    monster.clearEmotion();
-  }
-}
-
-const sadAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => {
-  const filtered = repo.getCopies().filter(i => {
-      if(i.meta.onScreen) {
-        return (i.onMonster || onMonsterDefault) && i.meta.emotion === 'sad';
-      }
-
-      return i.meta.emotion === 'sad';
-  });
-
-  const onMonster = onMonsterDefault || monster.isOnMonster( instance.getBoundingClientRect() );
-  const emotion = monster.getEmotion();
-
-  if(onMonster && !nosound) monster.makeSound('sad');
-
-  if(filtered.length === 0 &&  emotion !== 'sad' && onMonster) {
-    if(emotion === 'joyful') {
-      monster.clearEmotion(() => {
-        monster.makeSad();
-      });
-    } else {
-      monster.makeSad();
+    if(i.meta.onScreen) {
+      return isOnMonster(i.instance, monster) && i.meta.emotion;
     }
+
+    return i.meta.emotion;
+  });
+
+  if(filtered.length === 0) {
+    monster.clearEmotion();
 
     return;
   };
 
+  const last = getLast(filtered);
+
+  if(last.meta.emotion !== 'joyful') {
+    monster.clearEmotion(() => {
+      monster.makeSad();
+    });
+
+    return;
+  }
+
   return;
+};
+
+const sadAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => {
+  const filtered = repo.getCopies().filter(i => {
+    if(i.meta.onScreen) {
+      return isOnMonster(i.instance, monster) && i.meta.emotion;
+    }
+
+    return i.meta.emotion;
+  });
+
+  const onMonster = onMonsterDefault || isOnMonster(instance, monster);
+
+  if(onMonster && !nosound) monster.makeSound('sad');
+
+  if(!hasEmotion(monster) && onMonster) {
+    return monster.makeSad();
+  } else if(!isEmotion(monster, 'sad') && onMonster) {
+    monster.clearEmotion(() => {
+      monster.makeSad();
+
+      return;
+    });
+
+    return;
+  }
+
+  return;
+
 }
 
 const sadAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
   const filtered = repo.getCopies().filter(i => {
-      if(i.meta.onScreen) {
-        return (i.onMonster || onMonsterDefault) && i.meta.emotion;
-      }
 
-      return i.meta.emotion;
-  });
-
-  const filteredSad = filtered.filter(i => {
-      if(i.meta.onScreen) {
-        return (i.onMonster || onMonsterDefault) && i.meta.emotion === 'sad';
-      }
-
-      return i.meta.emotion === 'sad';
-  });
-
-  const hasJoyful = filtered.find(i => {
     if(i.meta.onScreen) {
-      return (i.onMonster || onMonsterDefault) && (i.meta.emotion === 'joyful');
+      return isOnMonster(i.instance, monster) && i.meta.emotion;
     }
 
-    return i.meta.emotion === 'joyful';
+    return i.meta.emotion;
   });
 
-  if(filteredSad.length === 0 && monster.getEmotion() === 'sad') {
+  if(filtered.length === 0) {
+    monster.clearEmotion();
+
+    return;
+  };
+
+  const last = getLast(filtered);
+
+  if(last.meta.emotion !== 'sad') {
     monster.clearEmotion(() => {
-      if(hasJoyful) monster.makeJoyful();
+      monster.makeJoyful();
     });
+
+    return;
   }
+
+  return;
 }
 
 export { joyfulAnimBefore, joyfulAnimAfter, sadAnimBefore, sadAnimAfter };

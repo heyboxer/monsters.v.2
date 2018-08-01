@@ -68,6 +68,7 @@ export class ZombieComponent extends MonsterModel implements AfterViewInit {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;
@@ -90,6 +91,7 @@ export class ZombieComponent extends MonsterModel implements AfterViewInit {
     sequances.sad(lids, mouth, arg, () => {
       this.isAnimating = false;
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;

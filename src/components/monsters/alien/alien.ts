@@ -63,6 +63,7 @@ export class AlienComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     });
 
     return;
@@ -83,7 +84,9 @@ export class AlienComponent extends MonsterModel {
 
     sequances.sad(mouth, arg, () => {
       this.isAnimating = false;
+      
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;

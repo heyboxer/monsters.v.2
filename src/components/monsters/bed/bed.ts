@@ -63,6 +63,7 @@ export class BedComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     });
 
     return;
@@ -86,6 +87,7 @@ export class BedComponent extends MonsterModel {
     sequances.sad(mouth, teeth, arg, () => {
       this.isAnimating = false;
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;

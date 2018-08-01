@@ -61,6 +61,7 @@ export class VampireComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     });
 
     return;
@@ -86,6 +87,7 @@ export class VampireComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;

@@ -64,6 +64,7 @@ export class DoctorComponent extends MonsterModel {
         this.isAnimating = false;
 
         if(cb) cb();
+        this.checkAnimationStack();
       });
 
       return;
@@ -85,6 +86,7 @@ export class DoctorComponent extends MonsterModel {
       sequances.sad(mouth, arg, () => {
         this.isAnimating = false;
         if(cb) cb();
+        this.checkAnimationStack();
       })
 
       return;

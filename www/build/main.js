@@ -382,92 +382,103 @@ var MonsterModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return joyfulAnimAfter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return sadAnimBefore; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return sadAnimAfter; });
+var isEmotion = function (monster, name) {
+    return monster.getEmotion() === name;
+};
+var hasEmotion = function (monster) {
+    return !isEmotion(monster, 'default');
+};
+var getLast = function (arr) {
+    return arr[arr.length - 1];
+};
+var isOnMonster = function (instance, monster) {
+    return monster.isOnMonster(instance.getBoundingClientRect());
+};
 var joyfulAnimBefore = function (monster, repo, instance, onMonsterDefault, nosound) {
     var filtered = repo.getCopies().filter(function (i) {
         if (i.meta.onScreen) {
-            return (i.onMonster || onMonsterDefault) && (i.meta.emotion);
+            return isOnMonster(i.instance, monster) && i.meta.emotion;
         }
         return i.meta.emotion;
     });
-    var hasSad = filtered.find(function (i) {
-        if (i.meta.onScreen) {
-            return (i.onMonster || onMonsterDefault) && (i.meta.emotion === 'sad');
-        }
-        return i.meta.emotion === 'sad';
-    });
-    var onMonster = onMonsterDefault || monster.isOnMonster(instance.getBoundingClientRect());
+    var onMonster = onMonsterDefault || isOnMonster(instance, monster);
     if (onMonster && !nosound)
         monster.makeSound('joy');
-    if (monster.getEmotion() === 'default' && onMonster) {
-        monster.makeJoyful();
+    if (!hasEmotion(monster) && onMonster) {
+        return monster.makeJoyful();
     }
-    else if (hasSad) {
-        // monster.setAnimationStack('joyful');
+    else if (!isEmotion(monster, 'joyful') && onMonster) {
+        monster.clearEmotion(function () {
+            monster.makeJoyful();
+            return;
+        });
+        return;
     }
-    ;
     return;
 };
 var joyfulAnimAfter = function (monster, repo, instance, onMonsterDefault) {
     var filtered = repo.getCopies().filter(function (i) {
         if (i.meta.onScreen) {
-            return (i.onMonster || onMonsterDefault) && i.meta.emotion;
+            return isOnMonster(i.instance, monster) && i.meta.emotion;
         }
         return i.meta.emotion;
     });
-    if (filtered.length === 0 && monster.getEmotion() === 'joyful') {
+    if (filtered.length === 0) {
         monster.clearEmotion();
+        return;
     }
+    ;
+    var last = getLast(filtered);
+    if (last.meta.emotion !== 'joyful') {
+        monster.clearEmotion(function () {
+            monster.makeSad();
+        });
+        return;
+    }
+    return;
 };
 var sadAnimBefore = function (monster, repo, instance, onMonsterDefault, nosound) {
     var filtered = repo.getCopies().filter(function (i) {
         if (i.meta.onScreen) {
-            return (i.onMonster || onMonsterDefault) && i.meta.emotion === 'sad';
+            return isOnMonster(i.instance, monster) && i.meta.emotion;
         }
-        return i.meta.emotion === 'sad';
+        return i.meta.emotion;
     });
-    var onMonster = onMonsterDefault || monster.isOnMonster(instance.getBoundingClientRect());
-    var emotion = monster.getEmotion();
+    var onMonster = onMonsterDefault || isOnMonster(instance, monster);
     if (onMonster && !nosound)
         monster.makeSound('sad');
-    if (filtered.length === 0 && emotion !== 'sad' && onMonster) {
-        if (emotion === 'joyful') {
-            monster.clearEmotion(function () {
-                monster.makeSad();
-            });
-        }
-        else {
+    if (!hasEmotion(monster) && onMonster) {
+        return monster.makeSad();
+    }
+    else if (!isEmotion(monster, 'sad') && onMonster) {
+        monster.clearEmotion(function () {
             monster.makeSad();
-        }
+            return;
+        });
         return;
     }
-    ;
     return;
 };
 var sadAnimAfter = function (monster, repo, instance, onMonsterDefault) {
     var filtered = repo.getCopies().filter(function (i) {
         if (i.meta.onScreen) {
-            return (i.onMonster || onMonsterDefault) && i.meta.emotion;
+            return isOnMonster(i.instance, monster) && i.meta.emotion;
         }
         return i.meta.emotion;
     });
-    var filteredSad = filtered.filter(function (i) {
-        if (i.meta.onScreen) {
-            return (i.onMonster || onMonsterDefault) && i.meta.emotion === 'sad';
-        }
-        return i.meta.emotion === 'sad';
-    });
-    var hasJoyful = filtered.find(function (i) {
-        if (i.meta.onScreen) {
-            return (i.onMonster || onMonsterDefault) && (i.meta.emotion === 'joyful');
-        }
-        return i.meta.emotion === 'joyful';
-    });
-    if (filteredSad.length === 0 && monster.getEmotion() === 'sad') {
-        monster.clearEmotion(function () {
-            if (hasJoyful)
-                monster.makeJoyful();
-        });
+    if (filtered.length === 0) {
+        monster.clearEmotion();
+        return;
     }
+    ;
+    var last = getLast(filtered);
+    if (last.meta.emotion !== 'sad') {
+        monster.clearEmotion(function () {
+            monster.makeJoyful();
+        });
+        return;
+    }
+    return;
 };
 
 //# sourceMappingURL=lib.js.map
@@ -2539,6 +2550,7 @@ var ZombieComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -2563,6 +2575,7 @@ var ZombieComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3283,6 +3296,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3309,6 +3323,7 @@ var SkeletonComponent = /** @class */ (function (_super) {
             arg ? _this.open('hidden-jaw') : _this.close('hidden-jaw');
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3406,6 +3421,7 @@ var AlienComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3429,6 +3445,7 @@ var AlienComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3527,6 +3544,7 @@ var BedComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3551,6 +3569,7 @@ var BedComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3648,6 +3667,7 @@ var SpiderComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3673,6 +3693,7 @@ var SpiderComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3769,6 +3790,7 @@ var VampireComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3794,6 +3816,7 @@ var VampireComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3893,6 +3916,7 @@ var WolfComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -3919,6 +3943,7 @@ var WolfComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4016,6 +4041,7 @@ var MummyComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4041,6 +4067,7 @@ var MummyComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4140,6 +4167,7 @@ var YagaComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4164,6 +4192,7 @@ var YagaComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4262,6 +4291,7 @@ var DoctorComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4285,6 +4315,7 @@ var DoctorComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4382,6 +4413,7 @@ var YetiComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4406,6 +4438,7 @@ var YetiComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4506,6 +4539,7 @@ var GhostComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };
@@ -4533,6 +4567,7 @@ var GhostComponent = /** @class */ (function (_super) {
             _this.isAnimating = false;
             if (cb)
                 cb();
+            _this.checkAnimationStack();
         });
         return;
     };

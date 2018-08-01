@@ -63,6 +63,7 @@ export class MummyComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     });
 
     return;
@@ -87,6 +88,7 @@ export class MummyComponent extends MonsterModel {
     sequances.sad(mouth, tooth, arg, () => {
       this.isAnimating = false;
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;

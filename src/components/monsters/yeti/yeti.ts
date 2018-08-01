@@ -63,6 +63,7 @@ export class YetiComponent extends MonsterModel {
         this.isAnimating = false;
 
         if(cb) cb();
+        this.checkAnimationStack();
       });
 
       return;
@@ -85,6 +86,7 @@ export class YetiComponent extends MonsterModel {
       sequances.sad(mouth, eyebrows, arg, () => {
         this.isAnimating = false;
         if(cb) cb();
+        this.checkAnimationStack();
       })
 
       return;

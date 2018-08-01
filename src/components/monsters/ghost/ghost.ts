@@ -65,6 +65,7 @@ export class GhostComponent extends MonsterModel {
         this.isAnimating = false;
 
         if(cb) cb();
+        this.checkAnimationStack();
       });
 
       return;
@@ -91,6 +92,7 @@ export class GhostComponent extends MonsterModel {
       sequances.sad(mouthFigure, mouth, ubula, teeth, smileTooth, arg, () => {
         this.isAnimating = false;
         if(cb) cb();
+        this.checkAnimationStack();
       })
 
       return;

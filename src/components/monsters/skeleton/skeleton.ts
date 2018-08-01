@@ -67,6 +67,7 @@ export class SkeletonComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     });
 
     return;
@@ -93,6 +94,7 @@ export class SkeletonComponent extends MonsterModel {
       arg ? this.open('hidden-jaw') : this.close('hidden-jaw');
 
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;

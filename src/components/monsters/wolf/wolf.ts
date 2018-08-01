@@ -66,6 +66,7 @@ export class WolfComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     });
 
     return;
@@ -91,6 +92,7 @@ export class WolfComponent extends MonsterModel {
     sequances.sad(eyeLeft, eyeRight, tongue, arg, () => {
       this.isAnimating = false;
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;

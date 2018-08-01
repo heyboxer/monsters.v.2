@@ -63,6 +63,7 @@ export class SpiderComponent extends MonsterModel {
       this.isAnimating = false;
 
       if(cb) cb();
+      this.checkAnimationStack();
     });
 
     return;
@@ -88,6 +89,7 @@ export class SpiderComponent extends MonsterModel {
     sequances.sad(mouthTop, mouthBottom, teeth, arg, () => {
       this.isAnimating = false;
       if(cb) cb();
+      this.checkAnimationStack();
     })
 
     return;
