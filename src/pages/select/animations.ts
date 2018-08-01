@@ -10,13 +10,13 @@ export default function () {
       const hand = Snap( document.getElementById('skeleton_hand') );
 
       hand.animate({
-        transform: 'r180,137,83'
-      }, 900, () => {
+        transform: 'r90,137,83'
+      }, 400, () => {
         setTimeout(() => {
           hand.animate({
             transform: 'r0,137,83'
-          }, 750, cb);
-        }, 150);
+          }, 350, cb);
+        }, 250);
       });
 
       return;
@@ -40,12 +40,12 @@ export default function () {
       const hand = Snap( document.getElementById('monsters_doctor_hand') );
 
       hand.animate({
-        transform: 'r-45,93,140'
-      }, 300, () => {
+        transform: 'r-135,93,140'
+      }, 600, () => {
         setTimeout(() => {
           hand.animate({
             transform: 'r0,93,140'
-          }, 270, cb);
+          }, 450, cb);
         }, 350);
       });
 

@@ -12624,13 +12624,13 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
         function (cb) {
             var hand = __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(document.getElementById('skeleton_hand'));
             hand.animate({
-                transform: 'r180,137,83'
-            }, 900, function () {
+                transform: 'r90,137,83'
+            }, 400, function () {
                 setTimeout(function () {
                     hand.animate({
                         transform: 'r0,137,83'
-                    }, 750, cb);
-                }, 150);
+                    }, 350, cb);
+                }, 250);
             });
             return;
         },
@@ -12647,12 +12647,12 @@ var ActiveElementDescendentModel = /** @class */ (function (_super) {
         function (cb) {
             var hand = __WEBPACK_IMPORTED_MODULE_0_imports_loader_this_window_fix_module_exports_0_snapsvg_dist_snap_svg_js___default()(document.getElementById('monsters_doctor_hand'));
             hand.animate({
-                transform: 'r-45,93,140'
-            }, 300, function () {
+                transform: 'r-135,93,140'
+            }, 600, function () {
                 setTimeout(function () {
                     hand.animate({
                         transform: 'r0,93,140'
-                    }, 270, cb);
+                    }, 450, cb);
                 }, 350);
             });
             return;
