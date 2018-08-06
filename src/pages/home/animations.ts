@@ -6,6 +6,7 @@ export default () => {
   const second = Snap( document.getElementById('logo_eye_second') );
   const third = Snap( document.getElementById('logo_eye_third') );
   const last = Snap( document.getElementById('logo_eye_last') );
+  const lastEyelash = Snap( document.getElementById('logo_eye_last_eyelash') );
 
 
   const path1 = {
@@ -94,6 +95,20 @@ export default () => {
   rotate.first();
   rotate.second();
   rotate.third();
+
+  const animateLastEyelash = () => lastEyelash.animate({
+    cy: 4.5,
+  }, 100, () => {
+    setTimeout(() => {
+      lastEyelash.animate({
+        cy: -5,
+      }, 150, () => {
+        setTimeout(animateLastEyelash, 900);
+      })
+    }, 50);
+  });
+
+  animateLastEyelash();
 
   return;
 }
