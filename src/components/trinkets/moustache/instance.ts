@@ -1,15 +1,22 @@
 import { MoustacheComponent } from './moustache';
+import { deleteAllEmotionElements } from '../lib';
 
 export default {
   id: 7,
   component: MoustacheComponent,
   meta: {
     container: 'mouth',
+    name: 'moustache',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
-    before: (monster) => {
+    before: ({monster, items, game}) => {
+      if(['ghost', 'skeleton', 'mummy'].includes(monster.name)) {
+        deleteAllEmotionElements(monster, game, items);
+      }
+
+
       if(monster.name === 'skeleton') {
         monster.close('teeth-top');
       } else if (monster.name === 'doctor') {
@@ -17,12 +24,13 @@ export default {
       }
       return;
     },
-    after: (monster) => {
+    after: ({monster, items, game}) => {
       if(monster.name === 'skeleton') {
         monster.open('teeth-top');
       } else if (monster.name === 'doctor') {
         monster.open('mouth-figure');
       }
+
       return;
     },
     attr: {

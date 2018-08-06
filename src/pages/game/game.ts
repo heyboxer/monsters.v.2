@@ -47,7 +47,6 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
 
     this.monster = this.monsterComponent.getCurrentMonster();
 
-
     const instances = this.trinkets.getInstances();
 
     const canPlace = (ev) => {
@@ -110,7 +109,13 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
           items.removeActiveElement(item);
           (item).deleteCopy();
 
-          after ? after(this.monster, items, item.instance) : null;
+          after ? after({
+            monster: this.monster,
+            items,
+            item,
+            instance: item.instance,
+            game: this,
+          }) : null;
 
           return;
         }
@@ -152,7 +157,13 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
             const style = `position: absolute; z-index: 11; ${position}`;
             this.renderer.setAttribute((instance as { node }).node, 'style', style);
 
-            before ? before(this.monster, items, (instance as { node }).node) : null;
+            before ? before({
+              monster: this.monster,
+              items,
+              item,
+              instance: (instance as { node }).node,
+              game: this,
+            }) : null;
 
             const copy = items.addActiveElementCopy(item, (instance as { node }).node);
 
@@ -170,8 +181,9 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
 
           return;
         }
-        item.meta.getContainer()
+
         const { content } = this.monster.getContainer(item.meta.getContainer(this.monster.name));
+
         const { element } = this.monster.getGroup(item.meta.getContainer(this.monster.name));
 
         if( content ) {
@@ -185,14 +197,26 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
           // this.renderer.removeClass(parent.instance, 'blocked');
 
           items.removeActiveElement(active);
-          after ? after(this.monster, items, item.instance) : null;
+          after ? after({
+            monster: this.monster,
+            items,
+            item,
+            instance: item.instance,
+            game: this,
+          }) : null;
         }
 
 
         this.monster.render(item.component, item.meta.getContainer(this.monster.name), (instance, ref) => {
 
           const func = (instance, async?: boolean) => {
-            before ? before(this.monster, items, instance) : null;
+            before ? before({
+              monster: this.monster,
+              items,
+              item,
+              instance,
+              game: this,
+            }) : null;
 
             const copy = items.addActiveElementCopy(item, instance);
 

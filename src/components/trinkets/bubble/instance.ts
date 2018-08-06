@@ -1,18 +1,24 @@
 import { BubbleComponent } from './bubble';
+import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 
 export default {
   id: 19,
   component: BubbleComponent,
   meta: {
     container: { name: 'outer', mod: 'forward' },
+    name: 'bubble',
     getContainer: function(name) {
       return this.container;
     },
     uniq: true,
-    before: (monster, repo, instance) => {
+    before: ({monster, items, instance, item}) => {
       monster.makeSound('song');
+
+      joyfulAnimBefore(monster, items, item, instance, true, true);
     },
-    after: (monster, repo, instance) => {
+    after: ({monster, items, instance, item}) => {
+
+      joyfulAnimAfter(monster, items, item, instance, true);
     },
     attr: {
       width: {

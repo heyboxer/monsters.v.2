@@ -5,6 +5,7 @@ import { joyfulAnimBefore, joyfulAnimAfter } from '../lib'
 export default {
   id: 18,
   component: FlowerComponent,
+  name: 'flatulence',
   emotion: 'joyful',
   meta: {
     container: 'head-figure',
@@ -16,12 +17,12 @@ export default {
       return this.container;
     },
     uniq: true,
-    before: (monster, repo, instance) => {
-      joyfulAnimBefore(monster, repo, instance, true);
+    before: ({monster, items, item, instance}) => {
+      joyfulAnimBefore(monster, items, item, instance, true);
 
     },
-    after: (monster, repo, instance) => {
-      joyfulAnimAfter(monster, repo, instance, true);
+    after: ({monster, items, item, instance}) => {
+      joyfulAnimAfter(monster, items, item, instance, true);
 
     },
     attr: {

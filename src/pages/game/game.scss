@@ -5,6 +5,102 @@ page-game {
     background-color: $primary-dark-color;
   }
 
+  @keyframes middle-screen {
+    0% {
+      opacity: 1;
+    }
+
+    99% {
+      opacity: 0;
+      z-index: 10;
+    }
+
+    100% {
+      opacity: 0;
+      z-index: -1;
+      display: none;
+    }
+  }
+
+  & .middle-screen {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    opacity: 1;
+    animation-name: middle-screen;
+    animation-duration: 0.75s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-1 {
+      background-image: url("../assets/imgs/middle-screen/alien.svg");
+      background-size: auto 60%;
+    }
+    &-2 {
+      background-image: url("../assets/imgs/middle-screen/zombie.svg");
+      background-size: auto 56%;
+      background-color: #f46540;
+    }
+    &-3 {
+      background-image: url("../assets/imgs/middle-screen/skeleton.svg");
+      background-size: auto 62%;
+    }
+    &-4 {
+      background-image: url("../assets/imgs/middle-screen/spider.svg");
+      background-size: auto 77%;
+      background-color: #f1ea35;
+      background-position-y: top;
+    }
+    &-5 {
+      background-image: url("../assets/imgs/middle-screen/vampire.svg");
+      background-size: auto 62%;
+      background-color: #3b457e;
+    }
+    &-6 {
+      background-image: url("../assets/imgs/middle-screen/wolf.svg");
+      // background-size: auto 37%;
+      background-size: 81% auto;
+      background-color: #4eb959;
+    }
+    &-7 {
+      background-image: url("../assets/imgs/middle-screen/mummy.svg");
+      background-size: auto 56%;
+      background-color: #3f2721;
+    }
+    &-8 {
+      background-image: url("../assets/imgs/middle-screen/yaga.svg");
+      background-size: auto 56%;
+      background-color: #72538e;
+    }
+    &-9 {
+      background-image: url("../assets/imgs/middle-screen/doctor.svg");
+      background-size: auto 79%;
+      background-color: #f24943;
+    }
+    &-10 {
+      background-image: url("../assets/imgs/middle-screen/yeti.svg");
+      background-size: auto 61%;
+      background-color: #fff;
+    }
+    &-11 {
+      background-image: url("../assets/imgs/middle-screen/ghost.svg");
+      background-size: auto 56%;
+    }
+
+    &-12 {
+      background-image: url("../assets/imgs/middle-screen/bed.svg");
+      // background-size: auto 45%;
+      background-size: 80% auto;
+      background-color: #003D4E;
+    }
+  }
+
   #on-screen {
     position: relative;
     overflow: hidden;

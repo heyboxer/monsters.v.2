@@ -5,10 +5,11 @@ export default       {
   component: EyesComponent,
   meta: {
     container: 'eyes',
+    name: 'eyes',
     getContainer: function() {
       return this.container;
     },
-    before: (monster) => {
+    before: ({monster}) => {
       if(monster.name === 'vampire') {
         monster.close('eye');
       } else if(!['vampire'].includes(monster.name)) {
@@ -17,7 +18,7 @@ export default       {
 
       return;
     },
-    after: (monster) => {
+    after: ({monster}) => {
       if(monster.name === 'vampire') {
         monster.open('eye');
       } else if(!['vampire'].includes(monster.name)) {

@@ -5,11 +5,12 @@ export default {
   component: GlassComponent,
   meta: {
     container: 'eyes',
+    name: 'glass',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
-    before: (monster, repo, instance) => {
+    before: ({monster, repo, instance}) => {
       monster.makeSound('glasses');
     },
     attr: {

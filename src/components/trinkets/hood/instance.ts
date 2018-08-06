@@ -6,18 +6,19 @@ export default {
   component: HoodComponent,
   meta: {
     container: 'head-figure',
+    name: 'hood',
     getContainer: function() {
       return this.container;
     },
     emotion: 'joyful',
     uniq: true,
-    before: (monster, repo, instance) => {
+    before: ({monster, items, item, instance}) => {
       monster.makeSound('party');
-      joyfulAnimBefore(monster, repo, instance, true, true);
+      joyfulAnimBefore(monster, items, item, instance, true, true);
       monster.open('confetti');
     },
-    after: (monster, repo, instance) => {
-      joyfulAnimAfter(monster, repo, instance, true);
+    after: ({monster, items, instance, item}) => {
+      joyfulAnimAfter(monster, items, item, instance, true);
       monster.close('confetti');
     },
     attr: {

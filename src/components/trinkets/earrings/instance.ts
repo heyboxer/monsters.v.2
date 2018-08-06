@@ -5,14 +5,15 @@ export default {
   component: EarringsComponent,
   meta: {
     container: 'ears',
+    name: 'earrings',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
-    before: (monster, repo, instance) => {
+    before: ({monster, items, instance}) => {
       monster.open('ears');
     },
-    after: (monster, repo, instance) => {
+    after: ({monster, items, instance}) => {
       if(!['doctor', 'vampire', 'yeti', 'wolf'].includes(monster.name)) {
         monster.close('ears');
       }

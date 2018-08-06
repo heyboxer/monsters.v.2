@@ -11,11 +11,11 @@ export default {
     },
     uniq: true,
     emotion: 'sad',
-    before: (monster, repo, instance) => {
+    before: ({monster, items, item, instance}) => {
       monster.makeSound('fart');
-      sadAnimBefore(monster, repo, instance, true, true);
+      sadAnimBefore(monster, items, item, instance, true, true);
     },
-    after: (monster, repo, instance) => sadAnimAfter(monster, repo, instance, true),
+    after: ({monster, items, item, instance}) => sadAnimAfter(monster, items, item, instance, true),
     attr: {
       width: {
         default: ({width}) => width * 1.5,

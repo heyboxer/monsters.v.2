@@ -10,16 +10,17 @@ export default {
     getContainer: function(name) {
       return this.container;
     },
+    name: 'pigtail',
     uniq: true,
-    before: (monster, repo, instance) => {
-      joyfulAnimBefore(monster, repo, instance, true);
+    before: ({monster, items, item, instance}) => {
+      joyfulAnimBefore(monster, items, item, instance, true);
 
       if(monster.name === 'zombie') {
         monster.close('hair');
       }
     },
-    after: (monster, repo, instance) => {
-      joyfulAnimAfter(monster, repo, instance, true);
+    after: ({monster, items, item, instance}) => {
+      joyfulAnimAfter(monster, items, item, instance, true);
 
       if(monster.name === 'zombie') {
         monster.open('hair');

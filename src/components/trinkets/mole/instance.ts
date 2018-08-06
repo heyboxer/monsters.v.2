@@ -6,13 +6,14 @@ export default {
   component: MoleComponent,
   meta: {
     onScreen: true,
+    name: 'mole',
     multiple: true,
     emotion: 'sad',
     random: true,
     getContainer: function() {
       return null;
     },
-    before: sadAnimBefore,
-    after: sadAnimAfter,
+    before: ({ monster, items, item, instance}) => sadAnimBefore(monster, items, item, instance),
+    after: ({ monster, items, item, instance}) => sadAnimAfter(monster, items, item, instance),
   }
 };

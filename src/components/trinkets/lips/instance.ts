@@ -5,11 +5,12 @@ export default {
   component: LipsComponent,
   meta: {
     container: 'mouth',
+    name: 'lips',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
-    before: (monster, repo, instance) => {
+    before: ({monster, repo, instance}) => {
       monster.open('eyelashes');
 
       monster.makeSound('joy');
@@ -49,7 +50,7 @@ export default {
         monster.close('mouth');
       }
     },
-    after: (monster, repo, instance) => {
+    after: ({monster, repo, instance}) => {
       monster.close('eyelashes');
 
       if(monster.name === 'skeleton') {

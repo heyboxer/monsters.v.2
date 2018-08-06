@@ -6,13 +6,14 @@ export default {
   component: DressComponent,
   meta: {
     container: 'body',
+    name: 'dress',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
     emotion: 'joyful',
-    before: (monster, repo, instance) => {
-      joyfulAnimBefore(monster, repo, instance, true);
+    before: ({monster, items, item, instance}) => {
+      joyfulAnimBefore(monster, items, item, instance, true);
 
       if(
         ['mummy', 'yaga', 'yeti', 'doctor', 'vampire', 'zombie', 'wolf'].includes(monster.name)
@@ -22,8 +23,8 @@ export default {
 
       return;
     },
-    after: (monster, repo, instance) => {
-      joyfulAnimAfter(monster, repo, instance, true);
+    after: ({monster, items, item, instance}) => {
+      joyfulAnimAfter(monster, items, item, instance, true);
 
       if(
         ['mummy', 'yaga', 'yeti', 'doctor', 'vampire', 'zombie', 'wolf'].includes(monster.name)

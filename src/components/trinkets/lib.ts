@@ -14,8 +14,55 @@ const isOnMonster = (instance, monster) => {
   return monster.isOnMonster( instance.getBoundingClientRect() );
 }
 
+const clearItem = (monster, items, item, game?) => {
+  const { onScreen, after } = item.meta;
 
-const joyfulAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => {
+  if(!onScreen) {
+    monster.clear(item.meta.getContainer( monster.name ));
+  } else {
+    game.monsterComponent.remove(item.instance);
+  }
+
+  items.removeActiveElement(item);
+  item.deleteCopy();
+
+  after ? after({
+    monster,
+    items,
+    item,
+    instance: item.instance
+  }) : null;
+
+  return;
+}
+
+const clearInterferingParts = (monster, items) => {
+  if(['ghost'].includes(monster.name)) {
+    const lollipop = items.getCopies().find(i => i.meta.name === 'lollipop');
+
+    if(!lollipop) return;
+
+    clearItem(monster, items, lollipop);
+
+    return;
+  }
+
+  if(['ghost', 'skeleton', 'mummy'].includes(monster.name)) {
+    const moustache = items.getCopies().find(i => i.meta.name === 'moustache');
+
+    if(!moustache) return;
+
+    clearItem(monster, items, moustache);
+
+    return;
+  }
+};
+
+
+const joyfulAnimBefore = (monster, repo, item, instance, onMonsterDefault?, nosound?) => {
+
+  clearInterferingParts(monster, repo);
+
   const filtered = repo.getCopies().filter(i => {
     if(i.meta.onScreen) {
       return isOnMonster(i.instance, monster) && i.meta.emotion;
@@ -44,7 +91,7 @@ const joyfulAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) 
 
 };
 
-const joyfulAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
+const joyfulAnimAfter = (monster, repo, item, instance, onMonsterDefault?) => {
   const filtered = repo.getCopies().filter(i => {
 
     if(i.meta.onScreen) {
@@ -73,7 +120,7 @@ const joyfulAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
   return;
 };
 
-const sadAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => {
+const sadAnimBefore = (monster, repo, item, instance, onMonsterDefault?, nosound?) => {
   const filtered = repo.getCopies().filter(i => {
     if(i.meta.onScreen) {
       return isOnMonster(i.instance, monster) && i.meta.emotion;
@@ -81,6 +128,8 @@ const sadAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => 
 
     return i.meta.emotion;
   });
+
+  clearInterferingParts(monster, repo);
 
   const onMonster = onMonsterDefault || isOnMonster(instance, monster);
 
@@ -102,7 +151,7 @@ const sadAnimBefore = (monster, repo, instance, onMonsterDefault?, nosound?) => 
 
 }
 
-const sadAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
+const sadAnimAfter = (monster, repo, item, instance, onMonsterDefault?,) => {
   const filtered = repo.getCopies().filter(i => {
 
     if(i.meta.onScreen) {
@@ -131,4 +180,12 @@ const sadAnimAfter = (monster, repo, instance, onMonsterDefault?) => {
   return;
 }
 
-export { joyfulAnimBefore, joyfulAnimAfter, sadAnimBefore, sadAnimAfter };
+const deleteAllEmotionElements = (monster, game, items) => {
+  const emotionElements = items.getCopies().filter(i => i.meta.emotion && (!i.meta.onScreen || i.onMonster));
+
+  emotionElements.forEach(item => clearItem(monster, items, item, game));
+
+  return;
+}
+
+export { joyfulAnimBefore, joyfulAnimAfter, sadAnimBefore, sadAnimAfter, deleteAllEmotionElements };

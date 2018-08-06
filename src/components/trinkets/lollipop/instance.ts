@@ -1,18 +1,24 @@
 import { LollipopComponent } from './lollipop';
+import { deleteAllEmotionElements } from '../lib';
 
 export default {
   id: 13,
   component: LollipopComponent,
   meta: {
     container: 'mouth',
+    name: 'lollipop',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
-    before: (monster, repo, instance) => {
+    before: ({monster, items, instance, game}) => {
       monster.makeSound('chupa');
+
+      if(['ghost'].includes(monster.name)) {
+        deleteAllEmotionElements(monster, game, items);
+      }
     },
-    after: (monster, repo, instance) => {
+    after: ({monster, repo, instance}) => {
 
     },
     attr: {

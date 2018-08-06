@@ -6,13 +6,14 @@ export default {
   component: EggComponent,
   meta: {
     container: { name: 'outer', mod: 'forward' },
+    name: 'egg',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
     emotion: 'sad',
-    before: (monster, repo, instance) => sadAnimBefore(monster, repo, instance, true),
-    after: (monster, repo, instance) => sadAnimAfter(monster, repo, instance, true),
+    before: ({monster, items, instance, item}) => sadAnimBefore(monster, items, item, instance, true),
+    after: ({monster, items, instance, item}) => sadAnimAfter(monster, items, item, instance, true),
     attr: {
       width: {
         default: ({width}) => width * 1.5,

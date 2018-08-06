@@ -6,26 +6,27 @@ export default {
   component: BraComponent,
   meta: {
     container: 'body',
+    name: 'bra',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
     emotion: 'joyful',
-    before: (monster, repo, instance) => {
+    before: ({monster, items, instance, item}) => {
       if(monster.name === 'bed') {
         monster.close('eyes');
       }
 
-      joyfulAnimBefore(monster, repo, instance, true);
+      joyfulAnimBefore(monster, items, item, instance, true);
 
       return;
     },
-    after: (monster, repo, instance) => {
+    after: ({monster, items, instance, item}) => {
       if(monster.name === 'bed') {
         monster.open('eyes');
       }
 
-      joyfulAnimAfter(monster, repo, instance);
+      joyfulAnimAfter(monster, items, item, instance);
 
       return;
     },

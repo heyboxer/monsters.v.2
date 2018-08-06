@@ -6,19 +6,20 @@ export default {
   component: WigComponent,
   meta: {
     container: 'head-figure',
+    name: 'wig',
     getContainer: function() {
       return this.container;
     },
     uniq: true,
     emotion: 'joyful',
-    before: (monster, repo, instance) => {
-      joyfulAnimBefore(monster, repo, instance, true);
+    before: ({monster, items, instance, item}) => {
+      joyfulAnimBefore(monster, items, item, instance, true);
       if(monster.name === 'zombie') {
         monster.close('hair');
       }
     },
-    after: (monster, repo, instance) => {
-      joyfulAnimAfter(monster, repo, instance, true);
+    after: ({monster, items, instance, item}) => {
+      joyfulAnimAfter(monster, items, item, instance, true);
       if(monster.name === 'zombie') {
         monster.open('hair');
       }

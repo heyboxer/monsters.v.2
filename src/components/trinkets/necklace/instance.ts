@@ -7,6 +7,7 @@ export default {
   emotion: 'joyful',
   meta: {
     container: 'body',
+    name: 'necklace',
     getContainer: function(name) {
       if(['yaga', 'bed'].includes(name)) {
         return 'necklace';
@@ -14,11 +15,12 @@ export default {
       return this.container;
     },
     uniq: true,
-    before: (monster, repo, instance) => {
-      joyfulAnimBefore(monster, repo, instance, true);
+    emotion: 'joyful',
+    before: ({monster, items, instance, item}) => {
+      joyfulAnimBefore(monster, items, item, instance, true);
     },
-    after: (monster, repo, instance) => {
-      joyfulAnimAfter(monster, repo, instance, true);
+    after: ({monster, items, instance, item}) => {
+      joyfulAnimAfter(monster, items, item, instance, true);
     },
     attr: {
       width: {

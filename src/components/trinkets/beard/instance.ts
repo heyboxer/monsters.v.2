@@ -5,10 +5,11 @@ export default {
   component: BeardComponent,
   meta: {
     container: 'mouth',
+    name: 'beard',
     getContainer: function() {
       return this.container;
     },
-    before: (monster) => {
+    before: ({monster}) => {
       if(monster.name === 'wolf') {
         monster.close('tongue');
       } else if(monster.name === 'skeleton') {
@@ -24,7 +25,7 @@ export default {
       }
       return;
     },
-    after: (monster) => {
+    after: ({monster}) => {
       if(monster.name === 'wolf') {
         monster.open('tongue');
       } else if(monster.name === 'skeleton') {
