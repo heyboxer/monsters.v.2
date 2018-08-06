@@ -38,16 +38,27 @@ const clearItem = (monster, items, item, game?) => {
 
 const clearInterferingParts = (monster, items) => {
   if(['ghost'].includes(monster.name)) {
-    const lollipop = items.getCopies().find(i => i.meta.name === 'lollipop');
+    (() => {
+      const lollipop = items.getCopies().find(i => i.meta.name === 'lollipop');
 
-    if(!lollipop) return;
+      if(!lollipop) return;
 
-    clearItem(monster, items, lollipop);
+      return clearItem(monster, items, lollipop);
+    })();
+
+    (() => {
+      const moustache = items.getCopies().find(i => i.meta.name === 'moustache');
+
+      if(!moustache) return;
+
+      return clearItem(monster, items, moustache);
+    })();
 
     return;
   }
 
-  if(['ghost', 'skeleton', 'mummy'].includes(monster.name)) {
+
+  if(['skeleton', 'mummy'].includes(monster.name)) {
     const moustache = items.getCopies().find(i => i.meta.name === 'moustache');
 
     if(!moustache) return;
@@ -56,6 +67,8 @@ const clearInterferingParts = (monster, items) => {
 
     return;
   }
+
+  return;
 };
 
 

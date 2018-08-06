@@ -11,6 +11,7 @@ export default {
       return this.container;
     },
     uniq: true,
+    emotion: 'joyful',
     before: ({monster, items, instance, item}) => {
       monster.makeSound('song');
 

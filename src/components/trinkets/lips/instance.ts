@@ -38,6 +38,7 @@ export default {
         monster.close('drooling');
         monster.close('jaw');
         monster.close('teeth');
+        monster.close('smile-part');
         monster.open('jaw-closed');
       }
 
@@ -76,6 +77,7 @@ export default {
         monster.open('drooling');
         monster.open('jaw');
         monster.open('teeth');
+        monster.open('smile-part');
         monster.close('jaw-closed');
       }
 
