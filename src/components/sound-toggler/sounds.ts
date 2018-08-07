@@ -6,21 +6,21 @@ export default [
     monster: false,
     item: new SoundModel('assets/music/menu.mp3', function() {
       return this.sound.play();
-    }),
+    }).setVolume(0.025),
   },
   {
     name: 'door',
     monster: false,
     item: new SoundModel('assets/music/door.mp3', function() {
       return this.sound.play();
-    }),
+    }).setVolume(0.025),
   },
   {
     name: 'characters',
     monster: false,
     item: new SoundModel('assets/music/characters.mp3', function() {
       return this.sound.play();
-    }),
+    }).setVolume(0.025),
   },
   {
     name: 'chupa',

@@ -103,7 +103,7 @@ export default () => {
       lastEyelash.animate({
         cy: -5,
       }, 150, () => {
-        setTimeout(animateLastEyelash, 900);
+        setTimeout(animateLastEyelash, 2000);
       })
     }, 50);
   });

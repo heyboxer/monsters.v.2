@@ -13,20 +13,20 @@ const animations = {
     fn: (p) => p.name === 'sad-eyelid' && p.mod === 'left',
     frownIn:  (instance, cb) => {
       instance.attr({
-        points: '80,100 80,100 80,100',
+        d: 'M80,100 80,100 80,100z',
       });
 
       instance.animate({
-        points: '80,100 95,100 80,113',
+        d: 'M80,100 95,100 80,113z',
       }, 200, cb)
     },
     frownOut:  (instance, cb) => {
       instance.attr({
-        points: '80,100 95,100 80,113',
+        d: 'M80,100 95,100 80,113z',
       });
 
       instance.animate({
-        points: '80,100 80,100 80,100',
+        d: 'M80,100 80,100 80,100z',
       }, 200, cb)
     },
   },
@@ -34,20 +34,20 @@ const animations = {
     fn: (p) => p.name === 'sad-eyelid' && p.mod === 'right',
     frownIn:  (instance, cb) => {
       instance.attr({
-        points: '127,100 127,100 127,100',
+        d: 'M127,100 127,100 127,100z',
       });
 
       instance.animate({
-        points: '112,100 127,100 127,113',
+        d: 'M112,100 127,100 127,113z',
       }, 200, cb)
     },
     frownOut:  (instance, cb) => {
       instance.attr({
-        points: '112,100 127,100 127,113',
+        d: 'M112,100 127,100 127,113z',
       });
 
       instance.animate({
-        points: '127,100 127,100 127,100',
+        d: 'M127,100 127,100 127,100z',
       }, 200, cb)
     },
   },
@@ -157,7 +157,7 @@ const sequances = {
     const afterFinish = () => {
       finished++;
 
-      if(finished === 2) {
+      if(finished === 3) {
         return cb();
       }
 

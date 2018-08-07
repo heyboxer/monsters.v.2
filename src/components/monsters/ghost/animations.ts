@@ -151,7 +151,7 @@ const sequances = {
     const afterFinish = () => {
       finished++;
 
-      if(finished === 1) {
+      if(finished === 4) {
         return cb();
       }
 

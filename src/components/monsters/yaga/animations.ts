@@ -101,7 +101,7 @@ const sequances = {
     const afterFinish = () => {
       finished++;
 
-      if(finished === 3) {
+      if(finished === teeth.length + 1) {
         return cb();
       }
 
@@ -130,7 +130,7 @@ const sequances = {
     const afterFinish = () => {
       finished++;
 
-      if(finished === 1) {
+      if(finished === teeth.length + 1) {
         return cb();
       }
 
