@@ -45,7 +45,7 @@ page-game {
     background-color: black;
     z-index: 10;
     opacity: 1;
-    animation-name: middle-screen-lining;
+    animation-name: middle-screen;
     animation-duration: 0.75s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
@@ -59,7 +59,7 @@ page-game {
       background-color: black;
       z-index: 1;
       opacity: 1;
-      animation-name: middle-screen;
+      animation-name: middle-screen-lining;
       animation-duration: 0.75s;
       animation-delay: 2.5s;
       animation-fill-mode: forwards;

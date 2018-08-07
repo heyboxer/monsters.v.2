@@ -27663,8 +27663,8 @@ page-game .middle-screen {
   background-color: black;
   z-index: 10;
   opacity: 1;
-  -webkit-animation-name: middle-screen-lining;
-  animation-name: middle-screen-lining;
+  -webkit-animation-name: middle-screen;
+  animation-name: middle-screen;
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-animation-delay: 5s;
@@ -27682,8 +27682,8 @@ page-game .middle-screen:before {
   background-color: black;
   z-index: 1;
   opacity: 1;
-  -webkit-animation-name: middle-screen;
-  animation-name: middle-screen;
+  -webkit-animation-name: middle-screen-lining;
+  animation-name: middle-screen-lining;
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-animation-delay: 2.5s;
