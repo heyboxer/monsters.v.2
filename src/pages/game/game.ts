@@ -54,7 +54,8 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
 
       this.stepsTimer = setTimeout(() => {
         this.soundManagerService.setCurrent('characters');
-      }, 2000);
+        this.soundManagerService.play();
+      }, 2500);
     }, 3000);
 
 
