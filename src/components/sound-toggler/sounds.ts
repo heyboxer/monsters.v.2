@@ -25,7 +25,7 @@ export default [
   {
     name: 'steps',
     monster: false,
-    item: new SoundModel('assets/music/steps-1.mp3').setVolume(0.5),
+    item: new SoundModel('assets/music/steps-2.mp3').setVolume(0.5),
   },
   {
     name: 'chupa',

@@ -4,19 +4,19 @@
     <item-holder></item-holder>
     <div id="nb-target" class="screen zombie__screen">
       <div id="on-screen">
+        <button ion-button icon-only outline class="btn-close" (click)="endGame()">
+          <ion-icon name="close" class="icon-close"></ion-icon>
+        </button>
+
+        <button ion-button icon-only outline class="btn-reset" (click)="reset()">
+          <ion-icon name="refresh" class="icon-reset"></ion-icon>
+        </button>
         <monster [monsterId]="monsterId"></monster>
       </div>
     </div>
     <div id="panel" class="panel-container">
       <trinkets></trinkets>
     </div>
-    <button ion-button icon-only outline class="btn-close" (click)="endGame()">
-      <ion-icon name="close" class="icon-close"></ion-icon>
-    </button>
-
-    <button ion-button icon-only outline class="btn-reset" (click)="reset()">
-      <ion-icon name="refresh" class="icon-reset"></ion-icon>
-    </button>
   </div>
   <div id="active-ct"></div>
 </ion-content>
