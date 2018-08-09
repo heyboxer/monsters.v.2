@@ -23,6 +23,11 @@ export default [
     }).setVolume(0.025),
   },
   {
+    name: 'steps',
+    monster: false,
+    item: new SoundModel('assets/music/steps-1.mp3').setVolume(0.5),
+  },
+  {
     name: 'chupa',
     monster: 'skeleton',
     item: new SoundModel('assets/music/skeleton-chupa.mp3'),

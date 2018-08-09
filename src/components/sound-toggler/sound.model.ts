@@ -1,10 +1,11 @@
 export class SoundModel {
   private sound: HTMLMediaElement;
+  private callback: Function;
 
   constructor(url, callback?) {
     this.sound = new Audio(url);
 
-    if(callback) this.sound.addEventListener('ended', callback.bind(this));
+    if(callback) this.setCallback(callback);
   }
 
   public play() {
@@ -22,6 +23,12 @@ export class SoundModel {
 
   public setVolume(value : number) {
     this.sound.volume = value;
+
+    return this;
+  }
+
+  public setCallback(cb: Function) {
+    this.sound.addEventListener('ended', cb.bind(this));
 
     return this;
   }

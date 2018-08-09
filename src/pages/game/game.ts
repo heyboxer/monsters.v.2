@@ -20,6 +20,7 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
   private monsterId: string | number;
   private monster;
   private logic: GameLogic;
+  private stepsTimer;
 
   @ViewChild( TrinketsComponent ) trinkets: TrinketsComponent;
   @ViewChild( MonstersComponent ) monsterComponent: MonstersComponent;
@@ -39,11 +40,23 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    clearTimeout(this.stepsTimer);
     this.soundManagerService.setCurrent('menu');
+    this.soundManagerService.play();
   }
 
   ngAfterViewInit() {
-    this.soundManagerService.setCurrent('characters');
+    this.soundManagerService.stop();
+
+    this.stepsTimer = setTimeout(() => {
+      this.soundManagerService.setCurrent('steps');
+      this.soundManagerService.play();
+
+      this.stepsTimer = setTimeout(() => {
+        this.soundManagerService.setCurrent('characters');
+      }, 2000);
+    }, 3000);
+
 
     this.monster = this.monsterComponent.getCurrentMonster();
 
