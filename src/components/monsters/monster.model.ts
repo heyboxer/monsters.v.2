@@ -18,6 +18,7 @@ class MonsterManagerService extends SoundManagerService {
 
 
 @Component({
+  providers: [ SoundManagerService ]
 })
 export abstract class MonsterModel implements AfterViewInit {
   @ViewChildren(MonsterPartDirective) parts: QueryList<MonsterPartDirective>;
@@ -25,9 +26,9 @@ export abstract class MonsterModel implements AfterViewInit {
   protected emotion = 'default';
   protected isAnimating: boolean = false;
   protected animationsArr: {fn: Function, emotion: string, arg: boolean}[] = [];
-  private soundManager: MonsterManagerService;
+  private monsterSoundManager: MonsterManagerService;
 
-  constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef) {
+  constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef, private soundManager: SoundManagerService) {
 
     const sounds = SOUNDS
       .filter(n => n.monster === this.name)
@@ -35,7 +36,7 @@ export abstract class MonsterModel implements AfterViewInit {
       return { ...acc, [cur.name] : cur.item };
     }, {});;
 
-    this.soundManager = new MonsterManagerService( sounds );
+    this.monsterSoundManager = new MonsterManagerService( sounds );
   }
 
   ngAfterViewInit() {
@@ -43,10 +44,10 @@ export abstract class MonsterModel implements AfterViewInit {
   }
 
   public makeSound( name: string ) {
-    if(!this.soundManager || !this.soundManager.has( name )) return;
+    if(!this.monsterSoundManager || !this.monsterSoundManager.has( name ) || this.soundManager.isOff()) return;
 
-    this.soundManager.setCurrent( name );
-    this.soundManager.play();
+    this.monsterSoundManager.setCurrent( name );
+    this.monsterSoundManager.play();
 
     return;
   }

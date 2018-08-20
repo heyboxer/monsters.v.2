@@ -1,17 +1,36 @@
 sound-toggler {
   & .toggler {
-    border: 1px solid white;
-    padding: 5px 10px;
     display: inline-block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border-radius: 100%;
   }
 
-  & ion-icon {
-    color: white;
-    cursor: pointer;
-    font-size: 28px;
+  & .btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url('../assets/icon/icon__sound--grey.svg');
+    background-size: 40px 38px;
+
+    &--no-sound {
+      background-image: url('../assets/icon/icon__no-sound--grey.svg');
+    }
+  }
+
+  &.btn--white .btn {
+    background-image: url('../assets/icon/icon__sound--white.svg');
+
+    &--no-sound {
+      background-image: url('../assets/icon/icon__no-sound--white.svg');
+    }
+  }
+  &.btn--id--10 .btn {
+    background-image: url('../assets/icon/icon__sound--black.svg');
+
+    &--no-sound {
+      background-image: url('../assets/icon/icon__no-sound--black.svg');
+    }
   }
 }

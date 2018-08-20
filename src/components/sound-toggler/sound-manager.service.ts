@@ -8,11 +8,32 @@ import SOUNDS from './sounds';
 export class SoundManagerService {
   protected lib: { [key: string] : SoundModel | SoundModel[] };
   protected current: SoundModel;
+  protected state: Boolean = true;
 
   constructor() {
     this.lib = SOUNDS.filter(n => !n.monster).reduce((acc, cur) => {
       return { ...acc, [cur.name] : cur.item };
     }, {});
+  }
+
+  public turn(state: ('on' | 'off')) {
+    switch (state) {
+      case 'on':
+        this.state = true;
+        break;
+      case 'off':
+        this.state = false;
+        break;
+      default:
+        this.state = false;
+        break;
+    }
+
+    return;
+  }
+
+  public isOff() {
+    return this.state === false;
   }
 
   public setCurrent(name) {
@@ -28,7 +49,7 @@ export class SoundManagerService {
     })() :
     (this.lib[name] as SoundModel);
 
-    if(playing) this.play();
+    if(playing && !this.isOff()) this.play();
 
     return this;
   }
@@ -38,7 +59,7 @@ export class SoundManagerService {
   }
 
   public play() {
-    if(!this.isPlaying()) this.current.play();
+    if(!this.isPlaying() && !this.isOff()) this.current.play();
 
     return this;
   }

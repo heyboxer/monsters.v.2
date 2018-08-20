@@ -1,5 +1,6 @@
 import { Component, ElementRef, Renderer2, ComponentFactoryResolver, Injector, ApplicationRef, AfterViewInit } from '@angular/core';
 import { MonsterModel } from '../monster.model';
+import { SoundManagerService } from '../../sound-toggler/sound-manager.service';
 
 import { AnimationSetController } from '../animation/animation-set.controller';
 import { animations, sequances } from './animations';
@@ -14,8 +15,8 @@ import Snap from 'imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist
 })
 export class ZombieComponent extends MonsterModel implements AfterViewInit {
   constructor(el: ElementRef, protected renderer: Renderer2,  componentFactoryResolver: ComponentFactoryResolver, injector: Injector,
-  app: ApplicationRef) {
-    super('zombie', el.nativeElement, componentFactoryResolver, injector, app);
+  app: ApplicationRef, manager: SoundManagerService) {
+    super('zombie', el.nativeElement, componentFactoryResolver, injector, app, manager);
   }
 
   ngAfterViewInit() {

@@ -2,15 +2,15 @@ import { Component, ElementRef, Renderer2, ComponentFactoryResolver, Injector, A
 import { MonsterModel } from '../monster.model';
 import { MonsterPartDirective } from '../monster-part.directive';
 import { animations, sequances } from './animations';
-
+import { SoundManagerService } from '../../sound-toggler/sound-manager.service';
 @Component({
   selector: 'ghost',
   templateUrl: 'ghost.html'
 })
 export class GhostComponent extends MonsterModel {
   constructor(private el: ElementRef, protected renderer: Renderer2,  componentFactoryResolver: ComponentFactoryResolver, injector: Injector,
-  app: ApplicationRef) {
-    super('ghost', el.nativeElement, componentFactoryResolver, injector, app);
+  app: ApplicationRef, manager: SoundManagerService) {
+    super('ghost', el.nativeElement, componentFactoryResolver, injector, app, manager);
   }
 
 

@@ -170,35 +170,6 @@ page-game {
 
   }
 
-  .btn-close {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 40px;
-    height: 40px;
-
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 30;
-  }
-
-  .icon-close {
-    transform: scale(1.25);
-  }
-
-  .btn-reset {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    width: 30px;
-    height: 30px;
-
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 30;
-    opacity: .5;
-  }
-
   .icon-reset {
     transform: scale(1, -1) rotate(-90deg);
   }
@@ -210,6 +181,68 @@ page-game {
     flex: 1;
 
     display: block;
+
+    &__btns {
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: 10px;
+
+    }
+
+    &__btn-group {
+      width: 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      &--align {
+        &--right {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    &--reset {
+      background-image: url('../assets/icon/icon__clear--white.svg');
+      background-size: 37.6px 40px;
+    }
+
+    &--home {
+      background-image: url('../assets/icon/icon__home--white.svg');
+      background-size: 24.7px 40px;
+      margin-right: 5px;
+    }
+
+    &--id {
+      &--10 {
+        &.btn--reset {
+          background-image: url('../assets/icon/icon__clear--black.svg');
+        }
+      }
+      &--10 {
+        &.btn--home {
+          background-image: url('../assets/icon/icon__home--black.svg');
+        }
+      }
+    }
+  }
+
+  .icon-close {
+    transform: scale(1.25);
   }
 
   .placeholder {

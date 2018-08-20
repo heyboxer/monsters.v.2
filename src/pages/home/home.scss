@@ -4,6 +4,12 @@ page-home {
     background-color: hsl(0, 0, 0);
   }
 
+  .btn-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  }
+
   .image { // ratio: 2.14
     position: absolute;
     width: 231.8px; //108.3
@@ -23,12 +29,26 @@ page-home {
     transform: translateX(-50%);
   }
 
-  .logo {
+  .logotypes {
     position: absolute;
+    left: 50%;
+    bottom: 11.7%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 70%;
+  }
+
+  .logo {
     width: 291.9px; //136.4
     height: 19.9px; //9.3
-    bottom: 11.7%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 50px;
+  }
+
+  .copyright {
+    width: 300px;
+    height: auto;
+    align-self: flex-start;
   }
 }

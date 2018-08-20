@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, Input } from '@angular/core';
 
 import { SoundManagerService } from './sound-manager.service';
+// import { Sound}
 
 @Component({
   selector: 'sound-toggler',
@@ -22,8 +23,8 @@ export class SoundTogglerComponent implements AfterViewInit {
 
   private setIcon(name: string) {
     const icons = {
-      on: 'md-volume-up',
-      off: 'md-volume-off',
+      on: 'btn',
+      off: 'btn btn--no-sound',
     };
 
     this.iconName = icons[name] || icons.on;
@@ -32,6 +33,7 @@ export class SoundTogglerComponent implements AfterViewInit {
   }
 
   public play() {
+    this.manager.turn('on');
     this.manager.play();
     this.setIcon('on');
 
@@ -39,6 +41,7 @@ export class SoundTogglerComponent implements AfterViewInit {
   }
 
   public stop() {
+    this.manager.turn('off');
     this.manager.stop();
     this.setIcon('off');
 
@@ -46,7 +49,9 @@ export class SoundTogglerComponent implements AfterViewInit {
   }
 
   public toggle() {
-    this.manager.isPlaying() ? this.stop() : this.play();
+    console.log(this.manager.isOff());
+
+    !this.manager.isOff() ? this.stop() : this.play();
 
     return;
   }
