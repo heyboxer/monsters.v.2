@@ -1,23 +1,39 @@
 page-home {
   .container {
     position: relative;
+    display: flex;
+    flex-flow: column nowrap;
     background-color: hsl(0, 0, 0);
+  }
+
+  .scroll-content {
+    overflow: hidden;
+  }
+
+  .imgs-group {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    height: calc(100% - 44px);
   }
 
   .btn-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    height: 44px;
   }
 
-  .image { // ratio: 2.14
-    position: absolute;
-    width: 231.8px; //108.3
-    height: 424.2px; //198.2
-    top: 8%;
-    left: 50%;
-    transform: translateX(-50%);
+  .door { // ratio: 2.14
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 340px; //108.3
+    max-height: 623px; //198.2
     background: transparent url('../assets/imgs/home-page_scary-door.svg') no-repeat center;
+    margin-bottom: 20px;
   }
 
   .btn-play {
@@ -30,23 +46,22 @@ page-home {
   }
 
   .logotypes {
-    position: absolute;
-    left: 50%;
-    bottom: 11.7%;
-    transform: translateX(-50%);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 70%;
+    width: 100%;
   }
 
   .logo {
-    width: 291.9px; //136.4
-    height: 19.9px; //9.3
+    max-width: 82%; //136.4
+    max-height: auto; //9.3
+    max-width: 600px;
+    width: auto;
+    height: auto;
     margin-bottom: 50px;
   }
 
-  .copyright {
+  .company-logo {
     width: 300px;
     height: auto;
     align-self: flex-start;

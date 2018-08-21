@@ -44,7 +44,7 @@ export abstract class MonsterModel implements AfterViewInit {
   }
 
   public makeSound( name: string ) {
-    if(!this.monsterSoundManager || !this.monsterSoundManager.has( name ) || this.soundManager.isOff()) return;
+    if(!this.monsterSoundManager || !this.monsterSoundManager.has( name )) return; // if you do not want to play sound effects while music is turned off add this.soundManager.isOff() in condition.
 
     this.monsterSoundManager.setCurrent( name );
     this.monsterSoundManager.play();

@@ -27991,7 +27991,41 @@ page-game .blocked {
 
 page-home .container {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   background-color: black;
+}
+
+page-home .scroll-content {
+  overflow: hidden;
+}
+
+page-home .imgs-group {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: calc(100% - 44px);
 }
 
 page-home .btn-container {
@@ -28008,17 +28042,17 @@ page-home .btn-container {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  height: 44px;
 }
 
-page-home .image {
-  position: absolute;
-  width: 231.8px;
-  height: 424.2px;
-  top: 8%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+page-home .door {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 340px;
+  max-height: 623px;
   background: transparent url("../assets/imgs/home-page_scary-door.svg") no-repeat center;
+  margin-bottom: 20px;
 }
 
 page-home .btn-play {
@@ -28032,11 +28066,6 @@ page-home .btn-play {
 }
 
 page-home .logotypes {
-  position: absolute;
-  left: 50%;
-  bottom: 11.7%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28050,16 +28079,19 @@ page-home .logotypes {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 70%;
+  width: 100%;
 }
 
 page-home .logo {
-  width: 291.9px;
-  height: 19.9px;
+  max-width: 82%;
+  max-height: auto;
+  max-width: 600px;
+  width: auto;
+  height: auto;
   margin-bottom: 50px;
 }
 
-page-home .copyright {
+page-home .company-logo {
   width: 300px;
   height: auto;
   -webkit-align-self: flex-start;

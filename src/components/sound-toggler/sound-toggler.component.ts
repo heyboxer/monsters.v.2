@@ -16,8 +16,8 @@ export class SoundTogglerComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.setIcon('on');
-
+    this.manager.isOff() ? this.setIcon('off') : this.setIcon('on');
+    
     return;
   }
 
@@ -49,8 +49,6 @@ export class SoundTogglerComponent implements AfterViewInit {
   }
 
   public toggle() {
-    console.log(this.manager.isOff());
-
     !this.manager.isOff() ? this.stop() : this.play();
 
     return;
