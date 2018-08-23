@@ -29,7 +29,8 @@ page-home {
   .door { // ratio: 2.14
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 70%;
+    flex-grow: 1;
     max-width: 340px; //108.3
     max-height: 623px; //198.2
     background: transparent url('../assets/imgs/home-page_scary-door.svg') no-repeat center;
@@ -54,7 +55,7 @@ page-home {
 
   .logo {
     max-width: 82%; //136.4
-    max-height: auto; //9.3
+    max-height: 100%; //9.3
     max-width: 600px;
     width: auto;
     height: auto;
