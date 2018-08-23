@@ -28093,6 +28093,7 @@ page-home .logo {
   width: auto;
   height: auto;
   margin-bottom: 50px;
+  min-height: 30px;
 }
 
 page-home .company-logo {
