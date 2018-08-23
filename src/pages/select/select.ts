@@ -41,6 +41,7 @@ export class SelectPage implements AfterViewInit, OnDestroy {
 
     this.monsters = this.repo.getMonsters().map(m => {
       const { top, left } = this.isIphone() ? this.bgMobile.find(m.name) : this.bg.find(m.name);
+
       return { name: m.name, top: Math.floor(top), left: Math.floor(left), id: m.id };
     });
 
@@ -51,6 +52,7 @@ export class SelectPage implements AfterViewInit, OnDestroy {
 
   isIphone() {
     return this.platform.is('iphone');
+    // return true;
   }
 
   beginGame(monster) {

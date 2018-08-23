@@ -4,6 +4,26 @@ select-page {
     background-color: #003d4e;
   }
 
+  .select-page__monster {
+    transform: translate(-50%, calc(-100% - 22px));
+
+    &--ghost {
+      transform: translate(-50%, calc(-100% - 22px)) rotate(30deg);
+    }
+
+    &--yaga {
+      transform: translate(-50%, calc(-100% - 22px)) rotate(-25grad);
+    }
+
+    &--spider {
+      transform: translate(-50%, -22px);
+    }
+
+    &--skeleton {
+      transform: translate(-50%, -58%);
+    }
+  }
+
   .cls-1 {
     fill: #003d4e;
   }
@@ -44,96 +64,110 @@ select-page {
     position: absolute;
   }
 
+  & .mobile .monsters {
+    &__alien {
+      height: 14.443%;
+    }
+
+    &__yaga {
+      height: 14.5%;
+    }
+
+    &__skeleton {
+     height: 14.5%;
+   }
+
+    &__mummy {
+    height: 14.476%;
+   }
+
+   &__spider {
+     height: 13.462%;
+   }
+
+   &__ghost {
+     height: 13.816%;
+   }
+
+   &__doctor {
+     height: 16.06%;
+   }
+
+   &__bed {
+     height: 10.2%;
+   }
+
+   &__wolf {
+     height: 9.271%;
+   }
+
+   &__yeti {
+     height: 14.868%;
+   }
+
+   &__vampire {
+     height: 15.4%;
+   }
+
+   &__zombie {
+     height: 16.463%;
+   }
+  }
+
+
   .monsters {
     position: absolute;
     z-index: 10;
     overflow: visible;
+    // outline: 1px solid red;
 
     &__alien {
-      height: 19.38%;
-      .mobile & {
-        height: 14.443%;
-      }
+      height: 19.75%;
     }
 
     &__yaga {
       height: 20.805%;
-      transform: rotate(-20grad);
       z-index: 11;
-      .mobile & {
-        height: 15.518%;
-      }
     }
 
     &__skeleton {
-      height: 18.251%;
-      .mobile & {
-        height: 13.602%;
-      }
+      height: 19%;
     }
 
     &__mummy {
-      height: 19.425%;
-      .mobile & {
-        height: 14.476%;
-      }
+      height: 19.75%;
     }
 
     &__spider {
       height: 18.063%;
-      .mobile & {
-        height: 13.462%;
-      }
     }
 
     &__ghost {
-      transform: rotate(30deg);
       height: 18.523%;
-      .mobile & {
-        height: 13.816%;
-      }
     }
 
     &__doctor {
       height: 21.549%;
-      .mobile & {
-        height: 16.06%;
-      }
     }
 
     &__bed {
-      height: 13.694%;
-      .mobile & {
-        height: 10.2%;
-      }
+      height: 14.5%;
     }
 
     &__wolf {
       height: 12.439%;
-      .mobile & {
-        height: 9.271%;
-      }
     }
 
     &__yeti {
       height: 19.951%;
-      .mobile & {
-        height: 14.868%;
-      }
     }
 
     &__vampire {
       height: 21%;
-      .mobile & {
-        height: 15.4%;
-      }
     }
 
     &__zombie {
-      height: 22.09%;
-      .mobile & {
-        height: 16.463%;
-      }
+      height: 22.5%;
     }
 
   }

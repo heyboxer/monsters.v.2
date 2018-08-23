@@ -1,9 +1,9 @@
 <ion-content class="container" fixed no-bounce>
 
   <div class="bg">
-    <div class="list" [class.mobile]="isIphone()">
+    <div [ngClass]="{'list': true, 'mobile': isIphone()}">
       <div *ngFor="let monster of monsters" [ngSwitch]="monster?.name">
-        <svg *ngSwitchCase="'alien'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.51 218.46" (click)="beginGame(monster.id)" class="monsters monsters__alien" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'alien'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.51 218.46" (click)="beginGame(monster.id)" class="monsters monsters__alien select-page__monster" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__alien .cls-1{fill:#6fc055;}
@@ -36,7 +36,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'zombie'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.36 197.35" (click)="beginGame(monster.id)" class="monsters monsters__zombie" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'zombie'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.36 197.35" (click)="beginGame(monster.id)" class="monsters monsters__zombie select-page__monster" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__zombie .cls-1 { fill: #fff; } .monsters__zombie .cls-2 { fill: #f24943; } .monsters__zombie .cls-3 { fill: black; } .monsters__zombie .cls-4 { fill: #cdcdcd; } .monsters__zombie .cls-5 { fill: #00ad5e; } .monsters__zombie .cls-6 { fill: #20654d; } .monsters__zombie .cls-7 { fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 0.51px; }
@@ -103,7 +103,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'skeleton'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.03 222.79" (click)="beginGame(monster.id)" class="monsters monsters__skeleton" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'skeleton'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.03 222.79" (click)="beginGame(monster.id)" class="monsters monsters__skeleton select-page__monster select-page__monster--skeleton" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__skeleton .cls-1{fill:#fff;}.monsters__skeleton .cls-2{fill:#231300;}.monsters__skeleton .cls-3{fill:#f24942;}
@@ -181,7 +181,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'spider'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.59 64.05" (click)="beginGame(monster.id)" class="monsters monsters__spider" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'spider'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.59 64.05" (click)="beginGame(monster.id)" class="monsters monsters__spider select-page__monster select-page__monster--spider" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__spider .cls-1, .monsters__spider .cls-2 { fill: none; stroke: #000; stroke-miterlimit: 10; } .monsters__spider .cls-1 { stroke-width: 0.5px; } .monsters__spider .cls-2 { stroke-width: 0.75px; } .monsters__spider .cls-3 { fill: #058d5a; } .monsters__spider .cls-4 { fill: #000; } .monsters__spider .cls-5 { fill: #fff; }
@@ -224,7 +224,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'vampire'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.28 220.67" (click)="beginGame(monster.id)" class="monsters monsters__vampire" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'vampire'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.28 220.67" (click)="beginGame(monster.id)" class="monsters monsters__vampire select-page__monster" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__vampire .cls-1 { fill: #000; } .monsters__vampire .cls-2 { fill: #cf6cac; } .monsters__vampire .cls-3 { fill: #9a5790; } .monsters__vampire .cls-4 { fill: #fff; } .monsters__vampire .cls-5 { fill: #8a4242; } .monsters__vampire .cls-6 { fill: #f24943; }
@@ -255,7 +255,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'wolf'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.66 130.85"  (click)="beginGame(monster.id)" class="monsters monsters__wolf" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'wolf'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.66 130.85"  (click)="beginGame(monster.id)" class="monsters monsters__wolf select-page__monster" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__wolf .cls-1 { fill: #f24942; } .monsters__wolf .cls-3 { fill: #666; } .monsters__wolf .cls-4 { fill: #f1ea35; } .monsters__wolf .cls-5 { fill: #80b7e5; }
@@ -308,7 +308,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'mummy'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.36 200.97" (click)="beginGame(monster.id)" class="monsters monsters__mummy" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'mummy'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.36 200.97" (click)="beginGame(monster.id)" class="monsters monsters__mummy select-page__monster" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__mummy .cls-1{fill:#ffd7a5;}.monsters__mummy .cls-2{fill:#e1b285;}.monsters__mummy .cls-3{fill:#b48d69;}.monsters__mummy .cls-4{fill:none;}.monsters__mummy .cls-5{fill:#f24943;}.monsters__mummy .cls-6{fill:#fff;}
@@ -406,7 +406,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'doctor'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.51 282.94" (click)="beginGame(monster.id)" class="monsters monsters__doctor" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'doctor'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.51 282.94" (click)="beginGame(monster.id)" class="monsters monsters__doctor select-page__monster" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__doctor .cls-1 { fill: black; }
@@ -484,7 +484,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'yeti'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.6 217.96" (click)="beginGame(monster.id)" class="monsters monsters__yeti" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'yeti'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.6 217.96" (click)="beginGame(monster.id)" class="monsters monsters__yeti select-page__monster" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__yeti .cls-1 { fill: #cdcdcd; } .monsters__yeti .cls-2 { fill: #9a9b9b; } .monsters__yeti .cls-3 { fill: #f24943; } .monsters__yeti .cls-4 { fill: #fff; }
@@ -524,7 +524,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'ghost'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.46 200.7" (click)="beginGame(monster.id)" class="monsters monsters__ghost" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'ghost'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.46 200.7" (click)="beginGame(monster.id)" class="monsters monsters__ghost select-page__monster select-page__monster--ghost" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__ghost .cls-1{fill:none;}.monsters__ghost .cls-2{fill:#b7e3ee;}.monsters__ghost .cls-3{fill:#fff;}.monsters__ghost .cls-4{fill:#231300;}.monsters__ghost .cls-5{clip-path:url(#clip-path);}.monsters__ghost .cls-6{fill:#f24943;}
@@ -552,7 +552,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'bed'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.21 48.56" (click)="beginGame(monster.id)" class="monsters monsters__bed" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'bed'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.21 48.56" (click)="beginGame(monster.id)" class="monsters monsters__bed select-page__monster" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__bed .cls-1 { fill: #4c4c4c; } .monsters__bed .cls-3 { fill: #fff; } .monsters__bed .cls-4 { fill: #f24943; } .monsters__bed .cls-5 { fill: #9a9b9b; } .monsters__bed .cls-6 { fill: #00bcc5; }
@@ -603,7 +603,7 @@
           </g>
         </svg>
 
-        <svg *ngSwitchCase="'yaga'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.9 199.52" (click)="beginGame(monster.id)" class="monsters monsters__yaga" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
+        <svg *ngSwitchCase="'yaga'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.9 199.52" (click)="beginGame(monster.id)" class="monsters monsters__yaga select-page__monster select-page__monster--yaga" preserveAspectRatio="xMidYMid meet" [style.left.px]="monster.left" [style.top.px]="monster.top">
           <defs>
             <style>
               .monsters__yaga .cls-1 { fill: #20654d; } .monsters__yaga .cls-3 { fill: #00b15d; } .monsters__yaga .cls-4 { fill: #fff; } .monsters__yaga .cls-5 { fill: #f24943; }
