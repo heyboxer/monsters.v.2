@@ -1,5 +1,5 @@
 page-game {
-  height: auto;
+  height: 100vh;
 
   & .content {
     background-color: $primary-dark-color;
@@ -165,8 +165,8 @@ page-game {
     overflow: hidden;
     display: flex;
     flex-flow: column nowrap;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 
   }
 
@@ -179,7 +179,6 @@ page-game {
     z-index: 0;
     width: 100%;
     flex: 1;
-
     display: block;
 
     &__btns {
@@ -271,18 +270,19 @@ page-game {
   .panel {
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 175px;
     // background-color: $primary-light-color;
     // border-bottom: 25px solid $primary-color;
     // border-top: 1px solid $primary-dark-color;
     background-color: black;
-    border-bottom: 25px solid dimgrey;
+    // border-bottom: 25px solid dimgrey;
     // border-top: 1px solid lightgrey;
     list-style: none;
     margin: 0;
     padding: 10px;
     align-items: center;
     overflow-y: auto;
+    box-sizing: border-box;
 
     &__item{
       flex-shrink: 0;
@@ -301,11 +301,15 @@ page-game {
     &-container {
       position: relative;
       z-index: 0;
-      flex: 0 0 200px;
+      // flex: 0 0 200px;
     }
   }
 
     .blocked {
       opacity: 0.5;
     }
+
+  .scroll-content {
+    // overflow-y: hidden;
+  }
 }

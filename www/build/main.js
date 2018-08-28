@@ -888,7 +888,7 @@ var GamePage = /** @class */ (function (_super) {
         this.logic.setFns('onItemClick', setHolderPosition, function (items, item, ev) {
             var _a = item.meta, after = _a.after, multiple = _a.multiple, onScreen = _a.onScreen, random = _a.random;
             if (item.isCopy()) {
-                var parent = item.isCopy();
+                var parent_1 = item.isCopy();
                 var container_1 = item.meta.getContainer(_this.monster.name);
                 if (!onScreen) {
                     _this.monster.hide(container_1);
@@ -903,7 +903,7 @@ var GamePage = /** @class */ (function (_super) {
                         _this.monsterComponent.remove(item.instance);
                     };
                 }
-                var holderInstance_1 = _this.holder.loadComponent(parent.component);
+                var holderInstance_1 = _this.holder.loadComponent(parent_1.component);
                 if (random) {
                     holderInstance_1.load(item.randomArr);
                 }
@@ -970,7 +970,7 @@ var GamePage = /** @class */ (function (_super) {
                 var contentElement = content.node.children.item(0);
                 var active = items.findActiveElementByInstance(contentElement);
                 var after = active.meta.after;
-                var parent = active.isCopy();
+                var parent_2 = active.isCopy();
                 // parent.activate();
                 // this.renderer.removeClass(parent.instance, 'blocked');
                 items.removeActiveElement(active);
@@ -1050,25 +1050,30 @@ var GamePage = /** @class */ (function (_super) {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__components_trinkets_trinkets_component__["a" /* TrinketsComponent */])
     ], GamePage.prototype, "trinkets", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]),
-        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */]) === "function" && _b || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__components_monsters_monsters_component__["a" /* MonstersComponent */])
     ], GamePage.prototype, "monsterComponent", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]),
-        __metadata("design:type", typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */]) === "function" && _c || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_6__components_item_holder_item_holder_component__["a" /* ItemHolderComponent */])
     ], GamePage.prototype, "holder", void 0);
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-game',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <div class="middle-screen middle-screen-{{monsterId}}"></div>\n    <item-holder></item-holder>\n    <div id="nb-target" class="screen zombie__screen">\n      <div id="on-screen">\n        <div class="screen__btns">\n          <div class="screen__btn-group">\n            <button class="btn btn--home btn--id--{{monsterId}}" (click)="endGame()"></button>\n\n            <sound-toggler [manager]="soundManagerService" class="btn--white btn--id--{{monsterId}}"></sound-toggler>\n          </div>\n\n          <div class="screen__btn-group screen__btn-group--align--right">\n            <button class="btn btn--reset btn--id--{{monsterId}}" (click)="reset()"></button>\n          </div>\n        </div>\n\n        <monster [monsterId]="monsterId"></monster>\n      </div>\n    </div>\n    <div id="panel" class="panel-container">\n      <trinkets></trinkets>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/pages/game/game.html"*/,
             providers: [],
         }),
-        __metadata("design:paramtypes", [typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_7__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]) === "function" && _k || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_7__components_sound_toggler_sound_manager_service__["a" /* SoundManagerService */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injector */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */]])
     ], GamePage);
     return GamePage;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 }(__WEBPACK_IMPORTED_MODULE_4__components_game_game_service__["a" /* Game */]));
 
 //# sourceMappingURL=game.js.map
@@ -2401,11 +2406,11 @@ var MonstersComponent = /** @class */ (function () {
     ], MonstersComponent.prototype, "monsterId", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__monsters_host_directive__["a" /* MonstersHostDirective */])
     ], MonstersComponent.prototype, "monsterHost", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */]),
-        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */]) === "function" && _b || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__monsters_screen_directive__["a" /* MonstersScreenDirective */])
     ], MonstersComponent.prototype, "screen", void 0);
     MonstersComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -2417,10 +2422,12 @@ var MonstersComponent = /** @class */ (function () {
                 '[class.monster]': 'true',
             }
         }),
-        __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]) === "function" && _f || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_3__monsters_service__["a" /* MonstersService */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewContainerRef */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* Renderer2 */]])
     ], MonstersComponent);
     return MonstersComponent;
-    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=monsters.component.js.map
