@@ -4,15 +4,15 @@
     <item-holder></item-holder>
     <div id="nb-target" class="screen zombie__screen">
       <div id="on-screen">
-        <div class="screen__btns">
+        <div class="screen__btns screen__btns--monster--{{monsterId}}">
           <div class="screen__btn-group">
-            <button class="btn btn--home btn--id--{{monsterId}}" (click)="endGame()"></button>
+            <button class="btn btn--home " (click)="endGame()"></button>
 
-            <sound-toggler [manager]="soundManagerService" class="btn--white btn--id--{{monsterId}}"></sound-toggler>
+            <sound-toggler [manager]="soundManagerService" class="btn--white"></sound-toggler>
           </div>
 
           <div class="screen__btn-group screen__btn-group--align--right">
-            <button class="btn btn--reset btn--id--{{monsterId}}" (click)="reset()"></button>
+            <button class="btn btn--reset" (click)="reset()"></button>
           </div>
         </div>
 

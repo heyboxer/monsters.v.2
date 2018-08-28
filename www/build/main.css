@@ -27879,6 +27879,25 @@ page-game .screen__btns {
   padding: 10px;
 }
 
+page-game .screen__btns--monster--12 .btn {
+  width: 30px;
+  height: 30px;
+}
+
+page-game .screen__btns--monster--12 .btn--home {
+  background-size: 19.7px 30px;
+}
+
+page-game .screen__btns--monster--12 .btn--reset {
+  background-size: 27.6px 30px;
+}
+
+page-game .screen__btns--monster--12 sound-toggler .btn {
+  background-size: 30px 28px;
+  width: 30px;
+  height: 30px;
+}
+
 page-game .screen__btn-group {
   width: 50%;
   display: -webkit-box;

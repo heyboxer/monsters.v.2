@@ -190,6 +190,29 @@ page-game {
       justify-content: space-between;
       padding: 10px;
 
+      &--monster--12 {
+        & .btn {
+
+          width: 30px;
+          height: 30px;
+
+          &--home {
+            background-size: 19.7px 30px;
+          }
+
+          &--reset {
+            background-size: 27.6px 30px;
+          }
+
+
+        }
+
+        & sound-toggler .btn {
+          background-size: 30px 28px;
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
 
     &__btn-group {
@@ -203,6 +226,8 @@ page-game {
           justify-content: flex-end;
         }
       }
+
+
     }
   }
 
