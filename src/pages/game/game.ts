@@ -64,7 +64,8 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
     const instances = this.trinkets.getInstances();
 
     const canPlace = (ev) => {
-      const { clientX, clientY } = (ev as MouseEvent);
+      // const { clientX, clientY } = (ev as MouseEvent);
+      const { clientX, clientY } = ((ev as TouchEvent).touches.item(0));
       const dashboard = document.getElementById('panel');
       const top = dashboard.offsetTop;
       const bottom = top + dashboard.offsetHeight;
@@ -85,7 +86,8 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
     this.logic = new GameLogic(this.renderer, instances, canPlace);
 
     const setHolderPosition = (ref, item, event) => {
-      const { clientX: x, clientY: y } = (event as MouseEvent);
+      // const { clientX: x, clientY: y } = (event as MouseEvent);
+      const { clientX: x, clientY: y } = (event.touches.item(0));
       const { width, height } = this.holder.getSize();
       const { width: instanceW, height: instanceH } = item.instance.getBoundingClientRect();
 
@@ -101,18 +103,32 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
 
     this.logic.setFns(
       'onItemClick',
+      setHolderPosition,
       (items, item, ev) => {
         const { after, multiple, onScreen, random } = item.meta;
 
         if(item.isCopy()) {
 
           const parent = item.isCopy();
+          const container = item.meta.getContainer(this.monster.name);
 
           if(!onScreen) {
-            this.monster.clear(item.meta.getContainer(this.monster.name));
+
+            this.monster.hide( container );
+
+            item.meta.callback = () => {
+              this.monster.clear( container );
+              this.monster.show( container );
+            };
+
           } else {
-            this.monsterComponent.remove(item.instance);
+            this.monsterComponent.hide(item.instance);
+
+            item.meta.callback = () => {
+              this.monsterComponent.remove(item.instance);
+            };
           }
+
 
           const holderInstance = this.holder.loadComponent(parent.component);
 
@@ -149,7 +165,6 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
 
         return;
       },
-      setHolderPosition,
     );
 
     this.logic.setFns(
@@ -157,6 +172,15 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
       () => {
         this.holder.clear();
       },
+      (items, item, ev) => {
+        const { onScreen, callback } = item.meta;
+
+        callback ? callback() : null;
+
+        item.meta.callback = null;
+
+        return;
+      }
     );
 
     this.logic.setFns(

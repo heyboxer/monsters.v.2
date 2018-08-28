@@ -77,6 +77,14 @@ export class MonstersComponent implements OnInit, AfterViewInit {
     return this;
   }
 
+  public hide(instance) {
+    if(!this.onScreen.find(({instance: i}) => i === instance)) return;
+
+    this.renderer.setStyle(instance, 'display', 'none');
+
+    return this;
+  }
+
   public clearAll() {
     this.screen.viewContainerRef.clear();
     return this;

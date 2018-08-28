@@ -152,7 +152,9 @@ export abstract class MonsterModel implements AfterViewInit {
       const { element } = (c as { element });
 
       const children = Array.from(element.children).forEach(e => {
-        return this.renderer.removeChild(element, e);
+        return element.removeChild(e);
+
+        // return this.renderer.removeChild(element, e);
       });
 
       (c as { content }).content = null;
@@ -160,6 +162,34 @@ export abstract class MonsterModel implements AfterViewInit {
       return this;
     });
 
+  }
+
+  public hide(name) {
+    const containers = this.getContainer(name, true);
+
+    return (containers as Object[]).forEach(c => {
+      const { element } = (c as { element });
+
+      const children = Array.from(element.children).forEach(e => {
+        return this.renderer.setAttribute(e, 'visibility', 'hidden');
+      });
+
+      return this;
+    });
+  }
+
+  public show(name) {
+    const containers = this.getContainer(name, true);
+
+    return (containers as Object[]).forEach(c => {
+      const { element } = (c as { element });
+
+      const children = Array.from(element.children).forEach(e => {
+        return this.renderer.setAttribute(e, 'visibility', 'visible');
+      });
+
+      return this;
+    });
   }
 
   protected checkAnimationStack() {

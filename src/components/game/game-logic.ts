@@ -1,12 +1,12 @@
-import { Renderer2, ComponentRef } from '@angular/core';
+import { Renderer2 } from '@angular/core';
 
-import { ActiveElementModel, ActiveElementDescendentModel } from './active-element.model';
+import { ActiveElementModel } from './active-element.model';
 import { ActiveElementRepository } from './active-element.repository'
 import { GameFinistStateMachine } from './game-fsm';
 import { ListnersHandler } from './listners-handler';
 
 export class GameLogic {
-  private fsm = new GameFinistStateMachine();
+  private fsm: GameFinistStateMachine;
   private listners: ListnersHandler;
   private items: ActiveElementModel[] = [];
   private repo: ActiveElementRepository;
@@ -16,6 +16,9 @@ export class GameLogic {
     items: { node, component }[],
     dashboard: Function,
   ){
+
+    this.fsm = new GameFinistStateMachine();
+
     this.listners = new ListnersHandler(this.r);
 
     this.repo = new ActiveElementRepository(this.fsm, dashboard, items);
@@ -30,8 +33,8 @@ export class GameLogic {
     this.fsm.setFns(
       'unselect',
       this.itemMouseLeaveListner.bind(this, false, null),
-      this.itemsMouseEnterListners.bind(this, true),
       this.itemMouseDownListner.bind(this, false),
+      this.itemsMouseEnterListners.bind(this, true),
     );
 
     this.fsm.setFns(
@@ -56,6 +59,7 @@ export class GameLogic {
       this.itemsMouseEnterListners.bind(this, true),
     );
   };
+
 
   public start() : this {
     this.itemsMouseEnterListners(true);
@@ -83,7 +87,7 @@ export class GameLogic {
 
     return items.forEach(
       item => this.makeListner(arg)(
-        item.instance, 'mouseenter', item.getFn('mouseEnterOnItem')
+        item.instance, 'touchstart', item.getFn('mouseEnterOnItem')
       )
     );
   }
@@ -92,27 +96,29 @@ export class GameLogic {
     const item = this.repo.getCurrent();
 
     return this.makeListner(arg)(
-        item.instance, 'mouseleave', item.getFn('mouseLeaveFromItem')
+        item.instance, 'touchend', item.getFn('mouseLeaveFromItem')
       );
   }
 
   private itemMouseDownListner = (arg: boolean) => {
     const item = this.repo.getCurrent();
 
-    return this.makeListner(arg)(window, 'mousedown', item.getFn('mouseDown'));
+    return this.makeListner(arg)(window, 'touchmove', item.getFn('mouseDown'));
   }
 
   private itemMouseUpListner = (arg: boolean) => {
     const item = this.repo.getCurrent();
 
-    return this.makeListner(arg)(window, 'mouseup', item.getFn('mouseUp'));
+    return this.makeListner(arg)(window, 'touchend', item.getFn('mouseUp'));
   }
 
   private listenCursorPosition = (arg: boolean) => {
+    console.log(this.listners);
+
     const item = this.repo.getCurrent();
 
     return this.makeListner(arg)(
-      window, 'mousemove', item.getFn('handleCursorPosition')
+      window, 'touchmove', item.getFn('handleCursorPosition')
     );
   }
 

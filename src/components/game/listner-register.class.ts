@@ -30,9 +30,12 @@ class Listner {
   }
 
   public compare(listner: ListnerConfig) :boolean {
-    return !Object.keys(listner).find(v => {
+
+    const res = !Object.keys(listner).find(v => {
       return listner[v] !== this[v];
     });
+
+    return res;
   }
 }
 

@@ -20,7 +20,8 @@ export class GameFinistStateMachine {
       transitions: [
         { name: 'select', from: 'idle', to: 'itemSelected' },
         { name: 'unselect', from: 'itemSelected', to: 'idle' },
-        { name: 'grab', from: 'itemSelected', to: 'draggedOut' },
+        { name: 'grabOut', from: 'itemSelected', to: 'draggedOut' },
+        { name: 'grabIn', from: 'itemSelected', to: 'draggedIn' },
         { name: 'moveIn', from: 'draggedOut', to: 'draggedIn' },
         { name: 'moveOut', from: 'draggedIn', to: 'draggedOut' },
         { name: 'destroy', from: 'draggedOut', to: 'idle' },
@@ -29,7 +30,8 @@ export class GameFinistStateMachine {
       methods: {
         onSelect: this.stateMethodsHandler('select'),
         onUnselect: this.stateMethodsHandler('unselect'),
-        onGrab: this.stateMethodsHandler('grab'),
+        onGrabOut: this.stateMethodsHandler('grab'),
+        onGrabIn: this.stateMethodsHandler('grab'),
         onMoveIn: this.stateMethodsHandler('moveIn'),
         onMoveOut: this.stateMethodsHandler('moveOut'),
         onDestroy: this.stateMethodsHandler('destroy'),
@@ -60,36 +62,50 @@ export class GameFinistStateMachine {
   }
 
   select() {
+    console.log('select');
     this.state.select();
     return this;
   }
 
   unselect() {
+    console.log('unselect');
     this.state.unselect();
     return this;
   }
 
-  grab() {
-    this.state.grab();
+  grabOut() {
+    console.log('grabOut');
+
+    this.state.grabOut();
+    return this;
+  }
+  grabIn() {
+    console.log('grabIn');
+
+    this.state.grabIn();
     return this;
   }
 
   moveOut() {
+    console.log('moveOut');
     this.state.moveOut();
     return this;
   }
 
   moveIn() {
+    console.log('moveIn');
     this.state.moveIn();
     return this;
   }
 
   destroy() {
+    console.log('destroy');
     this.state.destroy();
     return this;
   }
 
   place() {
+    console.log('place');
     this.state.place();
     return this;
   }
