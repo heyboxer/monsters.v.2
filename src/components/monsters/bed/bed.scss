@@ -4,6 +4,10 @@ bed {
     bottom: 0;
     overflow: visible;
 
+    @media (max-width: 450px) {
+      height: 90%;
+    }
+
     & .tooth,
     & .nostril {
       fill: #4c4c4c;
