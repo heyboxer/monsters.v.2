@@ -7,6 +7,8 @@ import { ElementComponentModel } from '../../../model/element-component.model';
 })
 export class HeartComponent extends ElementComponentModel {
   constructor(element: ElementRef) {
-    super('heart', element.nativeElement);
+    super();
+
+    this.make('heart', element.nativeElement)
   }
 }

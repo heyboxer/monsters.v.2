@@ -9,6 +9,8 @@ import { TrinketUniqModel } from '../trinket-uniq.model';
 })
 export class BubbleComponent extends TrinketUniqModel {
   constructor(element: ElementRef) {
-    super('bubble', element.nativeElement);
+    super();
+
+    this.make('bubble', element.nativeElement);
   }
 }

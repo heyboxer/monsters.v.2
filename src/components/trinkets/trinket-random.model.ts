@@ -6,10 +6,11 @@ import { TrinketUniqModel } from './trinket-uniq.model';
 
 
 @Component({
+  template: '',
 })
 export class TrinketRandomModel extends TrinketUniqModel  {
-  constructor(name, element){
-    super(name, element);
+  constructor(){
+    super();
   }
 
   public randomize = (cb?) => {

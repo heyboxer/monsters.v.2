@@ -11,7 +11,9 @@ import { animations, sequances } from './animations';
 export class VampireComponent extends MonsterModel {
   constructor(private el: ElementRef, protected renderer: Renderer2,  componentFactoryResolver: ComponentFactoryResolver, injector: Injector,
   app: ApplicationRef, manager: SoundManagerService) {
-    super('vampire', el.nativeElement, componentFactoryResolver, injector, app, manager);
+    super(componentFactoryResolver, injector, app, manager);
+
+    this.make('vampire', el.nativeElement);
   }
 
   ngAfterViewInit() {

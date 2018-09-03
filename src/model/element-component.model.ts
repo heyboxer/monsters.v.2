@@ -4,13 +4,16 @@ import { ElementModel } from './element.model';
 
 
 @Component({
+  template: '',
   // providers: [ElementRepository]
 })
 export class ElementComponentModel implements OnInit, OnDestroy {
   private repo = ElementRepository;
   protected element: ElementModel;
+  private name: string;
+  protected node: HTMLElement;
 
-    constructor(private name: string, public node: HTMLElement) {
+    constructor() {
     };
 
     ngOnInit() {
@@ -21,6 +24,11 @@ export class ElementComponentModel implements OnInit, OnDestroy {
     ngOnDestroy() {
       this.repo.removeById(this.element.getId());
     };
+
+    protected make(name, node) {
+      this.name = name;
+      this.node = node;
+    }
 
     private add(element: ElementModel) {
       return this.repo.add(element);

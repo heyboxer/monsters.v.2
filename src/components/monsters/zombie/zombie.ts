@@ -16,7 +16,9 @@ import Snap from 'imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist
 export class ZombieComponent extends MonsterModel implements AfterViewInit {
   constructor(el: ElementRef, protected renderer: Renderer2,  componentFactoryResolver: ComponentFactoryResolver, injector: Injector,
   app: ApplicationRef, manager: SoundManagerService) {
-    super('zombie', el.nativeElement, componentFactoryResolver, injector, app, manager);
+    super(componentFactoryResolver, injector, app, manager);
+
+    this.make('zombie', el.nativeElement);
   }
 
   ngAfterViewInit() {

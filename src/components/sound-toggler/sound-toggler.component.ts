@@ -1,7 +1,6 @@
 import { Component, AfterViewInit, Input } from '@angular/core';
 
 import { SoundManagerService } from './sound-manager.service';
-// import { Sound}
 
 @Component({
   selector: 'sound-toggler',
@@ -17,7 +16,7 @@ export class SoundTogglerComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.manager.isOff() ? this.setIcon('off') : this.setIcon('on');
-    
+
     return;
   }
 

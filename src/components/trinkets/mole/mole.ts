@@ -9,6 +9,8 @@ import { TrinketRandomModel } from '../trinket-random.model';
 })
 export class MoleComponent extends TrinketRandomModel {
   constructor(element: ElementRef) {
-    super('mole', element.nativeElement);
+    super();
+
+    this.make('mole', element.nativeElement);
   }
 }

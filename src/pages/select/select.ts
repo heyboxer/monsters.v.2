@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Renderer2, ViewChild, ChangeDetectorRef, OnDestroy } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Platform, IonicPage } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { MonstersService } from '../../components/monsters/monsters.service';
 import { GamePage } from '../game/game';
@@ -10,6 +10,7 @@ import runAnimations from './animations';
 
 import { SoundManagerService } from '../../components/sound-toggler/sound-manager.service';
 
+@IonicPage()
 @Component({
   selector: 'select-page',
   templateUrl: 'select.html',

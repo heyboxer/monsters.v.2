@@ -28,10 +28,10 @@ import { GamePage } from '../pages/game/game';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
     ComponentsModule,
     BackgroundModule,
-    ModelModule
+    ModelModule,
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

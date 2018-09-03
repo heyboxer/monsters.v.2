@@ -12,7 +12,9 @@ import { animations, sequances } from './animations';
 export class YetiComponent extends MonsterModel {
   constructor(private el: ElementRef, protected renderer: Renderer2,  componentFactoryResolver: ComponentFactoryResolver, injector: Injector,
     app: ApplicationRef, manager: SoundManagerService) {
-      super('yeti', el.nativeElement, componentFactoryResolver, injector, app, manager);
+      super(componentFactoryResolver, injector, app, manager);
+
+      this.make('yeti', el.nativeElement);
     }
 
 

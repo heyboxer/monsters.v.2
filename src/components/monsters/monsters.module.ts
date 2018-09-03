@@ -14,14 +14,14 @@ import { DoctorComponent } from './doctor/doctor';
 import { YetiComponent } from './yeti/yeti';
 import { GhostComponent } from './ghost/ghost';
 
-
+import { MonsterModel } from './monster.model';
 import { MonstersComponent } from './monsters.component';
 import { MonstersHostDirective } from './monsters-host.directive';
 import { MonstersScreenDirective } from './monsters-screen.directive';
 import { MonsterPartDirective } from './monster-part.directive';
 
 @NgModule({
-	declarations: [ZombieComponent, SkeletonComponent, AlienComponent, BedComponent, SpiderComponent, VampireComponent,WolfComponent, MummyComponent, YagaComponent, DoctorComponent, YetiComponent, GhostComponent, MonstersComponent, MonstersHostDirective, MonstersScreenDirective, MonsterPartDirective],
+	declarations: [ZombieComponent, SkeletonComponent, AlienComponent, BedComponent, SpiderComponent, VampireComponent,WolfComponent, MummyComponent, YagaComponent, DoctorComponent, YetiComponent, GhostComponent, MonstersComponent, MonstersHostDirective, MonstersScreenDirective, MonsterPartDirective, MonsterModel ],
 	providers: [],
 	entryComponents: [ZombieComponent, SkeletonComponent, AlienComponent, BedComponent, SpiderComponent, VampireComponent,WolfComponent, YagaComponent, DoctorComponent, YetiComponent, MummyComponent, GhostComponent,],
 	exports: [MonstersComponent]

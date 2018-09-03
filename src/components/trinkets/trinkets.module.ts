@@ -22,13 +22,15 @@ import { FlowerComponent } from './flower/flower';
 import { BubbleComponent } from './bubble/bubble';
 import { PigtailComponent } from './pigtail/pigtail';
 
+import { TrinketUniqModel } from './trinket-uniq.model';
+import { TrinketRandomModel } from './trinket-random.model';
 import { TrinketsComponent } from './trinkets.component';
 import { TrinketHostDirective } from './trinket-host.directive';
 import { TrinketRandomPartDirective } from './trinket-random-part.directive';
 import { TrinketUniqPartDirective } from './trinket-uniq-part.directive';
 
 @NgModule({
-	declarations: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, LollipopComponent, EggComponent, EarringsComponent, NecklaceComponent, FlatulenceComponent, FlowerComponent, BubbleComponent, PigtailComponent, TrinketsComponent, TrinketHostDirective, TrinketRandomPartDirective, TrinketUniqPartDirective ],
+	declarations: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, LollipopComponent, EggComponent, EarringsComponent, NecklaceComponent, FlatulenceComponent, FlowerComponent, BubbleComponent, PigtailComponent, TrinketsComponent, TrinketHostDirective, TrinketRandomPartDirective, TrinketUniqPartDirective, TrinketUniqModel, TrinketRandomModel ],
 	providers: [],
 	imports: [ CommonModule ],
 	entryComponents: [ GlassComponent, EyesComponent, HoodComponent, MoleComponent, HeartComponent, BeardComponent, MoustacheComponent, SnivelComponent, DressComponent, BraComponent, WigComponent, LipsComponent, EggComponent, EarringsComponent, NecklaceComponent, FlatulenceComponent, BubbleComponent, LollipopComponent, PigtailComponent, FlowerComponent, ],

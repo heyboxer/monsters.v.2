@@ -9,6 +9,8 @@ import { TrinketUniqModel } from '../trinket-uniq.model';
 })
 export class LollipopComponent extends TrinketUniqModel {
   constructor(element: ElementRef) {
-    super('lollipop', element.nativeElement);
+    super();
+
+    this.make('lollipop', element.nativeElement);
   }
 }

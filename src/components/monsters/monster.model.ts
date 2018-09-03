@@ -18,17 +18,20 @@ class MonsterManagerService extends SoundManagerService {
 
 
 @Component({
+  template: '',
   providers: [ SoundManagerService ]
 })
-export abstract class MonsterModel implements AfterViewInit {
+export class MonsterModel implements AfterViewInit {
   @ViewChildren(MonsterPartDirective) parts: QueryList<MonsterPartDirective>;
   protected renderer: Renderer2;
   protected emotion = 'default';
   protected isAnimating: boolean = false;
   protected animationsArr: {fn: Function, emotion: string, arg: boolean}[] = [];
   private monsterSoundManager: MonsterManagerService;
+  private name: any;
+  protected element: HTMLElement;
 
-  constructor(private name, protected element: HTMLElement, private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef, private soundManager: SoundManagerService) {
+  constructor(private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef, private soundManager: SoundManagerService) {
 
     const sounds = SOUNDS
       .filter(n => n.monster === this.name)
@@ -41,6 +44,11 @@ export abstract class MonsterModel implements AfterViewInit {
 
   ngAfterViewInit() {
 
+  }
+
+  public make(name, element) {
+    this.name = name;
+    this.element = element;
   }
 
   public makeSound( name: string ) {

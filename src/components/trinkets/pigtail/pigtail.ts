@@ -9,6 +9,8 @@ import { TrinketUniqModel } from '../trinket-uniq.model';
 })
 export class PigtailComponent extends TrinketUniqModel {
   constructor(element: ElementRef) {
-    super('pigtail', element.nativeElement);
+    super();
+
+    this.make('pigtail', element.nativeElement);
   }
 }

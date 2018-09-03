@@ -3,7 +3,6 @@ import { Component, Input, OnInit, AfterViewInit, ViewChild, ComponentFactoryRes
 import { MonstersHostDirective } from './monsters-host.directive';
 import { MonstersScreenDirective } from './monsters-screen.directive';
 import { MonstersService } from './monsters.service';
-import { MonsterModel } from './monster.model';
 
 @Component({
   selector: 'monster',

@@ -5,7 +5,6 @@ import { SelectPage } from './select';
 
 @NgModule({
   declarations: [
-    SelectPage,
   ],
   imports: [
     IonicPageModule.forChild(SelectPage),

@@ -2,7 +2,7 @@ import { Component, ViewChildren, QueryList } from '@angular/core';
 import { BackgroundAnchorDirective } from './bg.directive';
 
 @Component({
-
+  template: '',
 })
 export class BackgroundComponent {
   @ViewChildren(BackgroundAnchorDirective) anchors: QueryList<BackgroundAnchorDirective>;

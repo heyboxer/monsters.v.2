@@ -9,6 +9,8 @@ import { TrinketUniqModel } from '../trinket-uniq.model';
 })
 export class FlatulenceComponent extends TrinketUniqModel {
   constructor(element: ElementRef) {
-    super('flatulence', element.nativeElement);
+    super();
+
+    this.make('flatulence', element.nativeElement);
   }
 }

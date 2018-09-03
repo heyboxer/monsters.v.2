@@ -10,7 +10,9 @@ import { SoundManagerService } from '../../sound-toggler/sound-manager.service';
 export class GhostComponent extends MonsterModel {
   constructor(private el: ElementRef, protected renderer: Renderer2,  componentFactoryResolver: ComponentFactoryResolver, injector: Injector,
   app: ApplicationRef, manager: SoundManagerService) {
-    super('ghost', el.nativeElement, componentFactoryResolver, injector, app, manager);
+    super(componentFactoryResolver, injector, app, manager);
+
+    this.make('ghost', el.nativeElement);
   }
 
 

@@ -9,6 +9,8 @@ import { TrinketUniqModel } from '../trinket-uniq.model';
 })
 export class DressComponent extends TrinketUniqModel {
   constructor(element: ElementRef) {
-    super('dress', element.nativeElement);
+    super();
+
+    this.make('dress', element.nativeElement);
   }
 }

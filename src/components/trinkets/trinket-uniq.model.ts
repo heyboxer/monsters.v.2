@@ -6,14 +6,15 @@ import { ElementComponentModel } from '../../model/element-component.model';
 
 
 @Component({
+  template: '',
 })
 export class TrinketUniqModel extends ElementComponentModel implements AfterViewInit {
   protected afterInit: Function[] = [];
   protected initiated: boolean = false;
 
   @ViewChildren(TrinketUniqPartDirective) protected parts: QueryList<TrinketUniqPartDirective>;
-  constructor(name, element){
-    super(name, element);
+  constructor(){
+    super();
   }
 
   ngAfterViewInit() {
