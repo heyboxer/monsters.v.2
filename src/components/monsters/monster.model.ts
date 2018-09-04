@@ -33,13 +33,6 @@ export class MonsterModel implements AfterViewInit {
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver, private injector: Injector, private app: ApplicationRef, private soundManager: SoundManagerService) {
 
-    const sounds = SOUNDS
-      .filter(n => n.monster === this.name)
-      .reduce((acc, cur) => {
-      return { ...acc, [cur.name] : cur.item };
-    }, {});;
-
-    this.monsterSoundManager = new MonsterManagerService( sounds );
   }
 
   ngAfterViewInit() {
@@ -49,6 +42,14 @@ export class MonsterModel implements AfterViewInit {
   public make(name, element) {
     this.name = name;
     this.element = element;
+
+    const sounds = SOUNDS
+      .filter(n => n.monster === this.name)
+      .reduce((acc, cur) => {
+      return { ...acc, [cur.name] : cur.item };
+    }, {});;
+
+    this.monsterSoundManager = new MonsterManagerService( sounds );
   }
 
   public makeSound( name: string ) {

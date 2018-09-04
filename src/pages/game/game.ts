@@ -40,12 +40,15 @@ export class GamePage extends Game implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.navCtrl.swipeBackEnabled = true;
+
     clearTimeout(this.stepsTimer);
     this.soundManagerService.setCurrent('menu');
     this.soundManagerService.play();
   }
 
   ngAfterViewInit() {
+    this.navCtrl.swipeBackEnabled = false;
     this.soundManagerService.stop();
 
     this.stepsTimer = setTimeout(() => {

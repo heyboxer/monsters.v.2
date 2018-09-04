@@ -113,8 +113,6 @@ export class GameLogic {
   }
 
   private listenCursorPosition = (arg: boolean) => {
-    console.log(this.listners);
-
     const item = this.repo.getCurrent();
 
     return this.makeListner(arg)(

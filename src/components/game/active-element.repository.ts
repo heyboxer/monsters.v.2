@@ -12,8 +12,6 @@ const lib: { [key: string] : (item: ActiveElementModel, ev: Event) => void } = {
     return;
   },
   handleCursorPosition: function(item, ev) {
-    console.log('handleCursorPosition');
-
     this.callbacks.onItemDragging.forEach(fn => fn(this, item, ev));
 
     if(this.onDashboard(ev)) {
@@ -38,7 +36,6 @@ const lib: { [key: string] : (item: ActiveElementModel, ev: Event) => void } = {
   },
 
   mouseUp: function(item, ev) {
-    // console.log('mouseUp');
     this.callbacks.afterItemDropped.forEach(fn => fn(this, item, ev));
 
     if(this.fsm.isDraggedIn()) {

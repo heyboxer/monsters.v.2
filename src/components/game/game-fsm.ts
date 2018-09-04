@@ -62,50 +62,42 @@ export class GameFinistStateMachine {
   }
 
   select() {
-    console.log('select');
     this.state.select();
     return this;
   }
 
   unselect() {
-    console.log('unselect');
     this.state.unselect();
     return this;
   }
 
   grabOut() {
-    console.log('grabOut');
 
     this.state.grabOut();
     return this;
   }
   grabIn() {
-    console.log('grabIn');
 
     this.state.grabIn();
     return this;
   }
 
   moveOut() {
-    console.log('moveOut');
     this.state.moveOut();
     return this;
   }
 
   moveIn() {
-    console.log('moveIn');
     this.state.moveIn();
     return this;
   }
 
   destroy() {
-    console.log('destroy');
     this.state.destroy();
     return this;
   }
 
   place() {
-    console.log('place');
     this.state.place();
     return this;
   }
