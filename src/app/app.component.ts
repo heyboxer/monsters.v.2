@@ -13,13 +13,12 @@ export class MyApp {
   rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
-    statusBar.hide();
 
     platform.ready().then(() => {
+      statusBar.hide();
+      splashScreen.hide();
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-
-      splashScreen.hide();
     });
   }
 }
