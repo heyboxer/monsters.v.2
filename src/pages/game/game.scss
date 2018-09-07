@@ -253,18 +253,14 @@ page-game {
       background-size: 24.7px 40px;
       margin-right: 5px;
     }
+  }
 
-    &--id {
-      &--10 {
-        &.btn--reset {
-          background-image: url('../assets/icon/icon__clear--black.svg');
-        }
-      }
-      &--10 {
-        &.btn--home {
-          background-image: url('../assets/icon/icon__home--black.svg');
-        }
-      }
+  .screen__btns--monster--10 .btn {
+    &--reset {
+      background-image: url('../assets/icon/icon__clear--black.svg');
+    }
+    &--home {
+      background-image: url('../assets/icon/icon__home--black.svg');
     }
   }
 

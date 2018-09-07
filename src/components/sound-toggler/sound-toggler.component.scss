@@ -26,7 +26,8 @@ sound-toggler {
       background-image: url('../assets/icon/icon__no-sound--white.svg');
     }
   }
-  &.btn--id--10 .btn {
+
+  .screen__btns--monster--10 & .btn {
     background-image: url('../assets/icon/icon__sound--black.svg');
 
     &--no-sound {
