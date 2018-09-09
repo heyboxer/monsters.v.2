@@ -14,6 +14,8 @@ export class SoundManagerService {
     this.lib = SOUNDS.filter(n => !n.monster).reduce((acc, cur) => {
       return { ...acc, [cur.name] : cur.item };
     }, {});
+
+
   }
 
   public turn(state: ('on' | 'off')) {

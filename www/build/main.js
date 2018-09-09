@@ -12210,7 +12210,7 @@ var animations = {
                 d: 'M82.73,132.72l101.97,0l-5.7,43.29l-92,0z'
             }, 200, function () {
                 instance.attr({
-                    d: 'M82.73,132.72l101.97,0l0,43.29l-101.97,0z'
+                    d: 'M82.73,132.72l101.97,0l-5.7,43.29l-92,0z'
                 });
                 return cb();
             });
@@ -13622,7 +13622,8 @@ var SoundTogglerModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SoundTogglerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sound_manager_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sound_manager_service__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13634,8 +13635,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var SoundTogglerComponent = /** @class */ (function () {
-    function SoundTogglerComponent() {
+    function SoundTogglerComponent(platform) {
+        var _this = this;
+        this.platform = platform;
+        this.beenPaused = false;
+        this.platform.ready().then(function () {
+            _this.platform.pause.subscribe(function () {
+                if (_this.manager.isPlaying()) {
+                    _this.stop();
+                    _this.beenPaused = true;
+                }
+                return;
+            });
+            _this.platform.resume.subscribe(function () {
+                if (_this.beenPaused) {
+                    _this.play();
+                    _this.beenPaused = false;
+                }
+                return;
+            });
+        });
     }
     SoundTogglerComponent.prototype.ngAfterViewInit = function () {
         this.manager.isOff() ? this.setIcon('off') : this.setIcon('on');
@@ -13667,16 +13688,17 @@ var SoundTogglerComponent = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])('manager'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__sound_manager_service__["a" /* SoundManagerService */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__sound_manager_service__["a" /* SoundManagerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__sound_manager_service__["a" /* SoundManagerService */]) === "function" && _a || Object)
     ], SoundTogglerComponent.prototype, "manager", void 0);
     SoundTogglerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sound-toggler',template:/*ion-inline-start:"/home/ned4ded/dev/monsters.v.2/src/components/sound-toggler/sound-toggler.component.html"*/'<div (click)="toggle()" class="toggler">\n  <button class="btn {{iconName}}"></button>\n</div>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters.v.2/src/components/sound-toggler/sound-toggler.component.html"*/,
-            providers: [__WEBPACK_IMPORTED_MODULE_1__sound_manager_service__["a" /* SoundManagerService */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_2__sound_manager_service__["a" /* SoundManagerService */]]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _b || Object])
     ], SoundTogglerComponent);
     return SoundTogglerComponent;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=sound-toggler.component.js.map
@@ -13782,11 +13804,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var MyApp = /** @class */ (function () {
     function MyApp(platform, statusBar, splashScreen) {
         this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
-        statusBar.hide();
         platform.ready().then(function () {
+            statusBar.hide();
+            splashScreen.hide();
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
-            splashScreen.hide();
         });
     }
     MyApp = __decorate([

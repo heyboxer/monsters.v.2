@@ -26482,11 +26482,11 @@ sound-toggler.btn--white .btn--no-sound {
   background-image: url("../assets/icon/icon__no-sound--white.svg");
 }
 
-sound-toggler.btn--id--10 .btn {
+.screen__btns--monster--10 sound-toggler .btn {
   background-image: url("../assets/icon/icon__sound--black.svg");
 }
 
-sound-toggler.btn--id--10 .btn--no-sound {
+.screen__btns--monster--10 sound-toggler .btn--no-sound {
   background-image: url("../assets/icon/icon__no-sound--black.svg");
 }
 
@@ -27945,11 +27945,11 @@ page-game .btn--home {
   margin-right: 5px;
 }
 
-page-game .btn--id--10.btn--reset {
+page-game .screen__btns--monster--10 .btn--reset {
   background-image: url("../assets/icon/icon__clear--black.svg");
 }
 
-page-game .btn--id--10.btn--home {
+page-game .screen__btns--monster--10 .btn--home {
   background-image: url("../assets/icon/icon__home--black.svg");
 }
 

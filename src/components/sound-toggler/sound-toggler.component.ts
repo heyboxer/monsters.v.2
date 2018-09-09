@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, Input } from '@angular/core';
+import { Platform } from 'ionic-angular';
 
 import { SoundManagerService } from './sound-manager.service';
 
@@ -9,9 +10,32 @@ import { SoundManagerService } from './sound-manager.service';
 })
 export class SoundTogglerComponent implements AfterViewInit {
   private iconName: string;
+  private beenPaused: boolean = false;
+
   @Input('manager') manager: SoundManagerService;
 
-  constructor() {
+  constructor(public platform: Platform) {
+    this.platform.ready().then(() => {
+      this.platform.pause.subscribe(() => {
+        if(this.manager.isPlaying()) {
+          this.stop();
+
+          this.beenPaused = true;
+        }
+
+        return;
+      });
+
+      this.platform.resume.subscribe(() => {
+        if(this.beenPaused) {
+          this.play();
+
+          this.beenPaused = false;
+        }
+
+        return;
+      });
+    });
   }
 
   ngAfterViewInit() {
