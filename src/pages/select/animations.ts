@@ -99,7 +99,6 @@ export default function () {
       windows.forEach(w => {
         w.classList.add('monsters_window--yellow');
 
-
         return setTimeout(() => {
           w.classList.remove('monsters_window--yellow');
 
